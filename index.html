@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Nauka Polskiego - Flashcards & Cas Polonais</title>
+  
+  <!-- Configuration PWA & Icônes -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#dc2626">
+  
+  <!-- Optimisations spécifiques iOS / iPhone -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Nauka Polskiego">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192.png">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇵🇱</text></svg>">
+</head>
+<body>
+
+  <!-- EN-TÊTE PRINCIPAL -->
+  <header>
+    <div class="header-container">
+      <div class="logo-area">
+        <div class="flag-badge">
+          <div class="flag-white"></div>
+          <div class="flag-red"></div>
+        </div>
+        <h1 class="app-title">Nauka <span>Polskiego</span></h1>
+      </div>
+
+      <!-- Navigation par Onglets -->
+      <nav class="nav-tabs">
+        <button class="tab-btn active" data-tab="quiz-tab">
+          <span>🎯</span> Quiz QCM
+        </button>
+        <button class="tab-btn" data-tab="flashcard-tab">
+          <span>🎴</span> Flashcards
+        </button>
+        <button class="tab-btn" data-tab="typing-tab">
+          <span>✍️</span> Écriture
+        </button>
+        <button class="tab-btn" data-tab="cases-tab">
+          <span>🧩</span> Jeu des Cas
+        </button>
+        <button class="tab-btn" data-tab="manager-tab">
+          <span>📚</span> Vocabulaire (<span id="stat-total-cards">146</span>)
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main>
+    <!-- Barre de Contrôles & Réglages Globaux -->
+    <section class="controls-bar">
+      <!-- Choix du sens d'apprentissage -->
+      <div class="control-group">
+        <label for="direction-select">🔄 Sens :</label>
+        <select id="direction-select">
+          <option value="mixed" selected>🔀 Mixte (Aléatoire)</option>
+          <option value="pl-fr">🇵🇱 Polonais &rarr; 🇫🇷 Français</option>
+          <option value="fr-pl">🇫🇷 Français &rarr; 🇵🇱 Polonais</option>
+        </select>
+      </div>
+
+      <!-- Filtre Catégorie -->
+      <div class="control-group">
+        <label for="category-select">🏷️ Catégorie :</label>
+        <select id="category-select">
+          <option value="all">Toutes les catégories</option>
+        </select>
+      </div>
+
+      <!-- Mode de répétition / Algorithme -->
+      <div class="control-group">
+        <label for="algorithm-select">🧠 Tirage :</label>
+        <select id="algorithm-select">
+          <option value="adaptive" selected>📈 Adaptatif (Priorité aux erreurs)</option>
+          <option value="mistakes-only">🚨 Uniquement mes erreurs</option>
+          <option value="random">🎲 Aléatoire simple</option>
+        </select>
+      </div>
+
+      <!-- Option Audio automatique -->
+      <div class="control-group">
+        <label style="cursor: pointer; display: flex; align-items: center; gap: 0.35rem;">
+          <input type="checkbox" id="auto-audio-toggle">
+          <span>🔊 Prononcer auto</span>
+        </label>
+      </div>
+
+      <!-- Statistiques en direct -->
+      <div class="stats-pill" style="display:flex; flex-direction:column; align-items:flex-start; gap:0.25rem;">
+        <div style="display:flex; align-items:center; gap:0.4rem; font-size:0.85rem;">
+          <span>Score : <strong id="stat-score">0 / 0</strong></span>
+          <span>•</span>
+          <span>Série : <strong id="stat-streak" class="streak-icon">0 🔥</strong></span>
+        </div>
+        <div style="font-size:0.75rem; color:var(--text-muted); display:flex; gap:0.45rem; align-items:center;">
+          <span title="Mots maîtrisés">🟢 <strong id="stat-mastered" style="color:#16a34a;">0</strong></span>
+          <span title="Mots en cours d'apprentissage">🟡 <strong id="stat-learning" style="color:#d97706;">0</strong></span>
+          <span title="Mots à revoir (erreurs)">🔴 <strong id="stat-review" style="color:#dc2626;">0</strong></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Raccourcis d'exercices thématiques ciblés -->
+    <div class="quick-modes-bar">
+      <span style="font-weight:600; font-size:0.85rem; color:var(--text-muted); display:inline-flex; align-items:center; gap:0.25rem;">
+        ⚡ Exercices rapides :
+      </span>
+      <button class="pill-filter-btn" id="btn-quick-mistakes" onclick="setAlgorithmMode('mistakes-only')" style="border-color:#fecaca; color:#b91c1c;" title="S'entraîner uniquement sur les mots ayant fait l'objet d'erreurs">
+        🚨 Mes mots à revoir (<span id="btn-quick-mistakes-count">0</span>)
+      </button>
+      <button class="pill-filter-btn" id="btn-quick-time-numbers" onclick="setQuickExercise('time-and-numbers')" title="S'entraîner uniquement sur les nombres (0-10), jours, mois et saisons">
+        🎯 Nombres, Jours, Mois & Saisons (35)
+      </button>
+      <button class="pill-filter-btn active" id="btn-quick-all" onclick="setQuickExercise('all')" title="S'entraîner sur tout le vocabulaire">
+        🌟 Tout le vocabulaire (146)
+      </button>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- ONGLET 1 : QUIZ QCM (AVEC 4 CHOIX & DISTRACTEURS) -->
+    <!-- ============================================== -->
+    <section id="quiz-tab" class="tab-content active">
+      <div class="quiz-container">
+        <!-- Carte Question -->
+        <div class="question-card">
+          <div style="display:flex; justify-content:center; gap:0.5rem; align-items:center; margin-bottom:0.75rem;">
+            <span class="question-category" id="quiz-category-tag">Catégorie</span>
+            <span id="quiz-card-mastery" class="badge-mastery mastery-new">Nouveau</span>
+          </div>
+          <div class="direction-indicator" id="quiz-direction-label">
+            🇵🇱 Polonais &rarr; 🇫🇷 Français
+          </div>
+          <h2 class="question-text" id="quiz-question-text">Chargement de la question...</h2>
+          <div id="quiz-gender-info" style="font-size: 0.85rem; color: #0369a1; background: #f0f9ff; border: 1px solid #bae6fd; padding: 4px 12px; border-radius: 6px; display: none; margin: 0.5rem auto; max-width: fit-content; font-weight: 500;"></div>
+          <button class="audio-btn" id="quiz-audio-btn" title="Écouter la prononciation en polonais">
+            🔊
+          </button>
+        </div>
+
+        <!-- 4 Options de Réponses -->
+        <div class="options-grid" id="quiz-options-container">
+          <!-- Les 4 options seront injectées ici en JavaScript -->
+        </div>
+
+        <!-- Feedback & Bouton Suivant -->
+        <div id="quiz-feedback" class="quiz-feedback-box" style="display: none;">
+          <div class="feedback-text" id="quiz-feedback-msg"></div>
+          <button class="btn-primary" id="quiz-next-btn" style="display: none;">
+            Suivant ➔ <span style="font-size:0.75rem; opacity:0.8; margin-left:4px;">[Espace]</span>
+          </button>
+        </div>
+
+        <div style="text-align: center; margin-top: 1rem; font-size: 0.8rem; color: var(--text-muted);">
+          Astuce clavier : utilisez les touches <strong>1</strong>, <strong>2</strong>, <strong>3</strong>, <strong>4</strong> pour répondre, puis <strong>Espace</strong> pour continuer.
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- ONGLET 2 : FLASHCARDS (3D RECTO/VERSO) -->
+    <!-- ============================================== -->
+    <section id="flashcard-tab" class="tab-content">
+      <div class="flashcard-wrapper">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">
+          <span id="fc-counter">1 / 56</span>
+          <span>Cliquez sur la carte ou [Espace] pour la retourner</span>
+        </div>
+
+        <!-- Carte 3D Flip -->
+        <div class="flashcard-3d" id="flashcard-3d">
+          <!-- Face Avant (Recto) -->
+          <div class="flashcard-face flashcard-front">
+            <div style="display:flex; justify-content:center; gap:0.5rem; align-items:center; margin-bottom:0.5rem;">
+              <span class="question-category" id="fc-front-category">Général</span>
+              <span id="fc-card-mastery" class="badge-mastery mastery-new">Nouveau</span>
+            </div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;" id="fc-front-lang">
+              🇵🇱 POLONAIS
+            </div>
+            <h2 style="font-size: 1.85rem; font-weight: 700; margin-bottom: 0.5rem;" id="fc-front-text">...</h2>
+            <div id="fc-front-gender" style="font-size: 0.85rem; color: #0369a1; background: #f0f9ff; padding: 4px 10px; border-radius: 6px; margin-bottom: 0.75rem; display: none;"></div>
+            <button class="audio-btn" id="fc-audio-btn-front" title="Écouter la prononciation">
+              🔊
+            </button>
+            <div class="hint-flip">
+              <span>🔄 Cliquez pour voir la traduction</span>
+            </div>
+          </div>
+
+          <!-- Face Arrière (Verso) -->
+          <div class="flashcard-face flashcard-back">
+            <span class="question-category" id="fc-back-category">Général</span>
+            <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;" id="fc-back-lang">
+              🇫🇷 FRANÇAIS
+            </div>
+            <h2 style="font-size: 1.85rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--primary);" id="fc-back-text">...</h2>
+            <div id="fc-back-gender" style="font-size: 0.85rem; color: #0369a1; background: #f0f9ff; padding: 4px 10px; border-radius: 6px; margin-bottom: 0.75rem; display: none;"></div>
+            <button class="audio-btn" id="fc-audio-btn-back" title="Écouter la prononciation" style="display: none;">
+              🔊
+            </button>
+            <div class="hint-flip">
+              <span>🔄 Cliquez pour revenir</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Actions Flashcard -->
+        <div class="flashcard-actions">
+          <button class="btn-again" id="fc-again-btn" title="Raccourci : Flèche Gauche">
+            🔄 À revoir [←]
+          </button>
+          <button class="btn-secondary" id="fc-flip-btn">
+            Retourner [Espace]
+          </button>
+          <button class="btn-knew" id="fc-knew-btn" title="Raccourci : Flèche Droite">
+            ✅ Je savais ! [→]
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- ONGLET 3 : MODE ÉCRITURE & DICTÉE -->
+    <!-- ============================================== -->
+    <section id="typing-tab" class="tab-content">
+      <div class="typing-container">
+        <div style="display:flex; justify-content:center; gap:0.5rem; align-items:center; margin-bottom:0.5rem;">
+          <span class="question-category" id="typing-category">Adjectifs</span>
+          <span id="typing-card-mastery" class="badge-mastery mastery-new">Nouveau</span>
+        </div>
+        <div style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem;">
+          Traduisez en polonais :
+        </div>
+        <h2 style="font-size: 1.85rem; font-weight: 700; margin-bottom: 0.75rem;" id="typing-prompt">...</h2>
+        <div id="typing-gender-hint" style="font-size: 0.85rem; color: #0369a1; background: #f0f9ff; border: 1px solid #bae6fd; padding: 6px 12px; border-radius: 8px; margin: 0.5rem auto 1rem auto; max-width: 500px; display: none;"></div>
+
+        <!-- Clavier d'appoint pour les lettres polonaises -->
+        <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">
+          Caractères spéciaux polonais (cliquez pour insérer) :
+        </div>
+        <div class="special-keys" id="special-keys-container">
+          <!-- Rempli en JS -->
+        </div>
+
+        <!-- Champ de saisie -->
+        <input type="text" class="input-typing" id="typing-input" placeholder="Tapez la réponse en polonais..." autocomplete="off">
+
+        <div id="typing-feedback" style="display: none; margin: 1rem 0; padding: 1rem; border-radius: 8px; background: #f8fafc; border: 1px solid var(--border);"></div>
+
+        <div style="display: flex; justify-content: center; gap: 0.75rem;">
+          <button class="btn-primary" id="typing-submit-btn">Vérifier ➔</button>
+          <button class="btn-primary" id="typing-next-btn" style="display: none;">Question suivante ➔</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- ONGLET 4 : JEU DES CAS GRAMMATICAUX (PRZYPADKI) -->
+    <!-- ============================================== -->
+    <section id="cases-tab" class="tab-content">
+      <div class="cases-container">
+        <!-- Barre de sélection du cas à travailler -->
+        <div class="cases-filter-bar">
+          <span style="font-weight:600; font-size:0.85rem; color:var(--text-muted); display:inline-flex; align-items:center; gap:0.25rem;">
+            🏛️ Travailler un cas :
+          </span>
+          <button class="pill-filter-btn active" id="case-pill-all" onclick="setCaseCategoryFilter('all')">
+            🌟 Tous les cas (<span id="case-count-all">0</span>)
+          </button>
+          <button class="pill-filter-btn" id="case-pill-Biernik" onclick="setCaseCategoryFilter('Biernik')" title="Accusatif : complément d'objet direct (poproszę, lubię, mam...)">
+            🎯 Biernik - Accusatif (<span id="case-count-biernik">0</span>)
+          </button>
+          <button class="pill-filter-btn" id="case-pill-Narzędnik" onclick="setCaseCategoryFilter('Narzędnik')" title="Instrumental : accompagnement (z), métier / nationalité après być">
+            🎯 Narzędnik - Instrumental (<span id="case-count-narzednik">0</span>)
+          </button>
+          <button class="pill-filter-btn" id="case-pill-Miejscownik" onclick="setCaseCategoryFilter('Miejscownik')" title="Locatif : lieu où l'on se trouve (w, na, o)">
+            🎯 Miejscownik - Locatif (<span id="case-count-miejscownik">0</span>)
+          </button>
+          <button class="pill-filter-btn" id="case-pill-Dopełniacz" onclick="setCaseCategoryFilter('Dopełniacz')" title="Génitif : négation (nie mam), prépositions bez, do, dla">
+            🎯 Dopełniacz - Génitif (<span id="case-count-dopelniacz">0</span>)
+          </button>
+        </div>
+
+        <!-- Carte Défi du Cas (Mot + Cas + Choix) -->
+        <div class="case-card">
+          <!-- En-tête : Cas demandé et statistiques -->
+          <div class="case-header">
+            <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;">
+              <span style="font-size:0.85rem; color:var(--text-muted); font-weight:600;">Déclinez au :</span>
+              <span class="badge-case-name" id="case-badge-name">🏛️ BIERNIK (Accusatif)</span>
+            </div>
+            <span class="case-stats-badge">Score : <strong id="case-score-val" style="color:var(--text-main);">0 / 0</strong> • Série : <strong id="case-streak-val" class="streak-icon">0 🔥</strong></span>
+          </div>
+
+          <!-- Mot à décliner au centre -->
+          <div class="case-word-section">
+            <div style="font-size:0.8rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.25rem;">
+              Mot de départ (Nominatif) :
+            </div>
+            <h2 class="case-word-main" id="case-base-word">kawa</h2>
+            <div class="case-word-info">
+              <span id="case-word-gender" class="case-gender-pill">nom féminin</span>
+              <span>•</span>
+              <span>Sens : <strong id="case-word-meaning" style="color:var(--text-main);">café</strong></span>
+            </div>
+          </div>
+
+          <!-- Exemple de contexte en phrase -->
+          <div class="case-example-sentence" id="case-example-box">
+            <span style="font-size:0.85rem; color:var(--text-muted); font-weight:600; margin-right:4px;">Exemple d'usage :</span>
+            <span id="case-sentence-before">Poproszę </span><span class="case-gap-slot" id="case-gap-slot">[ ... ]</span><span id="case-sentence-after">, proszę.</span>
+            <button class="btn-icon" id="case-audio-btn" title="Écouter la phrase polonaise" style="display:none; vertical-align:middle; margin-left:6px;">🔊</button>
+          </div>
+
+          <!-- Grille des 4 choix (purs et sans aucune étiquette à droite) -->
+          <div class="case-options-grid" id="case-options-container">
+            <!-- Rempli en JavaScript -->
+          </div>
+
+          <!-- Feedback pédagogique & explications de la règle -->
+          <div id="case-feedback-box" class="case-feedback-box" style="display: none;">
+            <div id="case-feedback-title" style="font-weight:700; font-size:1.1rem; margin-bottom:0.4rem;"></div>
+            <div id="case-feedback-explanation" style="font-size:0.95rem; line-height:1.55; color:#334155; margin-bottom:0.85rem;"></div>
+            <button class="btn-primary" id="case-next-btn" onclick="startNewCaseQuestion()">
+              Question suivante ➔ <span style="font-size:0.75rem; opacity:0.8; margin-left:4px;">[Espace]</span>
+            </button>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 1rem; font-size: 0.8rem; color: var(--text-muted);">
+          Astuce clavier : utilisez les touches <strong>1</strong>, <strong>2</strong>, <strong>3</strong>, <strong>4</strong> pour choisir une terminaison, puis <strong>Espace</strong> pour continuer.
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- ONGLET 5 : GESTIONNAIRE DE VOCABULAIRE -->
+    <!-- ============================================== -->
+    <section id="manager-tab" class="tab-content">
+      <div class="manager-container">
+        <!-- Formulaire d'Ajout d'une nouvelle carte -->
+        <div class="add-card-form">
+          <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem; color: #0f172a; display: flex; align-items: center; gap: 0.5rem;">
+            <span>➕</span> Ajouter une nouvelle carte de vocabulaire
+          </h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+            Entrez le mot ou la phrase et sa traduction. Vous pouvez préciser les genres ou les mauvaises réponses si vous le souhaitez (sinon le système les gère automatiquement).
+          </p>
+
+          <form id="add-card-form" onsubmit="handleAddCardSubmit(event)">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="card-pl-input">🇵🇱 Mot ou phrase en polonais *</label>
+                <input type="text" id="card-pl-input" placeholder="ex: mały" required>
+              </div>
+
+              <div class="form-group">
+                <label for="card-fr-input">🇫🇷 Traduction en français *</label>
+                <input type="text" id="card-fr-input" placeholder="ex: petit" required>
+              </div>
+
+              <div class="form-group">
+                <label for="card-category-input">Catégorie</label>
+                <select id="card-category-input">
+                  <option value="Expressions & Phrases">Expressions & Phrases</option>
+                  <option value="Couleurs">Couleurs</option>
+                  <option value="Adjectifs">Adjectifs</option>
+                  <option value="Voyage & Aéroport">Voyage & Aéroport</option>
+                  <option value="Nourriture & Café">Nourriture & Café</option>
+                  <option value="Autre">+ Nouvelle catégorie...</option>
+                </select>
+                <input type="text" id="card-new-cat-input" placeholder="Nom de la nouvelle catégorie..." style="margin-top: 0.4rem; display: none;">
+              </div>
+
+              <div class="form-group">
+                <label for="card-gender-input">💡 Précision genres (optionnel)</label>
+                <input type="text" id="card-gender-input" placeholder="ex: m: mały | f: mała | n: małe">
+              </div>
+
+              <div class="form-group">
+                <label for="card-dist-pl-input">
+                  Mauvaises réponses PL (optionnel, séparées par des virgules)
+                </label>
+                <input type="text" id="card-dist-pl-input" placeholder="ex: Dobry wieczór, Do widzenia, Cześć">
+              </div>
+
+              <div class="form-group" style="grid-column: 1 / -1;">
+                <label for="card-dist-fr-input">
+                  Mauvaises réponses FR (optionnel, séparées par des virgules)
+                </label>
+                <input type="text" id="card-dist-fr-input" placeholder="ex: Bonsoir, Au revoir, Salut">
+              </div>
+            </div>
+
+            <button type="submit" class="btn-primary">
+              💾 Enregistrer cette carte
+            </button>
+          </form>
+        </div>
+
+        <!-- Barre d'outils du tableau -->
+        <div class="manager-header">
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 700;">Liste des cartes mémoires</h3>
+            <span id="table-count-label" style="font-size: 0.85rem; color: var(--text-muted);">...</span>
+          </div>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center;">
+            <input type="text" id="table-search-input" placeholder="🔍 Rechercher..." oninput="renderCardsTable()" style="max-width: 150px;">
+            <select id="table-filter-mastery" onchange="renderCardsTable()" style="max-width: 160px; font-size:0.85rem;">
+              <option value="all">Tous les statuts</option>
+              <option value="review">🔴 À revoir (erreurs)</option>
+              <option value="learning">🟡 En apprentissage</option>
+              <option value="mastered">🟢 Maîtrisés</option>
+              <option value="new">⚪ Non vus</option>
+            </select>
+            <button class="btn-secondary" onclick="exportCardsToJson()" title="Sauvegarder vos cartes sur votre ordinateur">
+              📥 Exporter
+            </button>
+            <label class="btn-secondary" style="cursor: pointer;" title="Restaurer un fichier de cartes">
+              📤 Importer
+              <input type="file" id="import-json-input" accept=".json" style="display: none;" onchange="importCardsFromJson(event)">
+            </label>
+            <button class="btn-secondary" onclick="resetMasteryStats()" title="Remettre à zéro les compteurs d'erreurs et de réussite">
+              📊 Reset stats
+            </button>
+            <button class="btn-secondary" onclick="resetToDefaultCards()" style="color: var(--danger); border-color: #fecaca;" title="Revenir au set de départ">
+              🔄 Réinitialiser
+            </button>
+          </div>
+        </div>
+
+        <!-- Tableau des cartes -->
+        <div class="cards-table-wrapper">
+          <table class="cards-table">
+            <thead>
+              <tr>
+                <th style="width: 22%;">🇵🇱 Polonais</th>
+                <th style="width: 22%;">🇫🇷 Français</th>
+                <th style="width: 18%;">Catégorie</th>
+                <th style="width: 20%;">Statut de Maîtrise</th>
+                <th style="width: 10%;">Historique</th>
+                <th style="width: 8%;">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="cards-table-body">
+              <!-- Rempli en JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Nauka Polskiego • Application d'apprentissage du polonais avec flashcards intelligentes, QCM et synthèse vocale.
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    // Gestion du champ 'Autre' catégorie dans le formulaire d'ajout
+    const catSelect = document.getElementById("card-category-input");
+    const newCatInput = document.getElementById("card-new-cat-input");
+    if (catSelect && newCatInput) {
+      catSelect.addEventListener("change", () => {
+        if (catSelect.value === "Autre") {
+          newCatInput.style.display = "block";
+          newCatInput.focus();
+        } else {
+          newCatInput.style.display = "none";
+        }
+      });
+    }
+  </script>
+</body>
+</html>
