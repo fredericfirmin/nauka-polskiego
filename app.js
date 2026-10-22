@@ -80,10 +80,21 @@ function registerServiceWorker() {
         .register("./sw.js")
         .then((reg) => {
           console.log("PWA Service Worker actif :", reg.scope);
+          // Forcer la recherche de mise à jour à chaque ouverture (vital sur iOS PWA)
+          reg.update();
         })
         .catch((err) => {
           console.warn("Service Worker :", err);
         });
+
+      // Si un nouveau Service Worker s'active, recharger automatiquement pour appliquer les styles
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener("controllerchange", () => {
+        if (!refreshing) {
+          refreshing = true;
+          window.location.reload();
+        }
+      });
     });
   }
 }
