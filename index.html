@@ -47,6 +47,9 @@
         <button class="tab-btn" data-tab="cases-tab">
           <span>🧩</span> Jeu des Cas
         </button>
+        <button class="tab-btn" data-tab="possessives-tab">
+          <span>👑</span> Possessifs
+        </button>
         <button class="tab-btn" data-tab="manager-tab">
           <span>📚</span> Vocabulaire (<span id="stat-total-cards">161</span>)
         </button>
@@ -372,7 +375,111 @@
     </section>
 
     <!-- ============================================== -->
-    <!-- ONGLET 5 : GESTIONNAIRE DE VOCABULAIRE -->
+    <!-- ONGLET 5 : MODULE POSSESSIFS & DÉMONSTRATIFS -->
+    <!-- ============================================== -->
+    <section id="possessives-tab" class="tab-content">
+      <div class="cases-container">
+        <!-- Barre de sélection du niveau de difficulté -->
+        <div class="cases-filter-bar">
+          <span style="font-weight:600; font-size:0.85rem; color:var(--text-muted); display:inline-flex; align-items:center; gap:0.25rem;">
+            📊 Niveau :
+          </span>
+          <button class="pill-filter-btn active" id="poss-level-pill-all" onclick="setPossLevelFilter('all')">
+            🌟 Tous les niveaux (<span id="poss-count-all">0</span>)
+          </button>
+          <button class="pill-filter-btn" id="poss-level-pill-1" onclick="setPossLevelFilter(1)" title="Niveau 1 : Formes de base au Nominatif (accords masculin, féminin, neutre, pluriel)">
+            🟢 Niveau 1 : Nominatif de base (<span id="poss-count-l1">0</span>)
+          </button>
+          <button class="pill-filter-btn" id="poss-level-pill-2" onclick="setPossLevelFilter(2)" title="Niveau 2 : Déclinaisons dans les cas (Accusatif, Instrumental, Génitif, Locatif)">
+            🔵 Niveau 2 : Déclinaisons & Cas (<span id="poss-count-l2">0</span>)
+          </button>
+          <button class="pill-filter-btn btn-case-cheatsheet-trigger" id="poss-cheatsheet-btn" onclick="openPossCheatSheetModal()" title="Consulter le tableau aide-mémoire complet des possessifs et démonstratifs">
+            📖 Tableau aide-mémoire
+          </button>
+        </div>
+
+        <!-- Filtre de type de pronom : Tous / 1ère / 2ème / 3ème invariables / Réfléchi / Démonstratifs -->
+        <div class="cases-type-filter-bar">
+          <span style="font-weight:600; font-size:0.8rem; color:var(--text-muted); display:inline-flex; align-items:center; gap:0.25rem;">
+            🎯 Pronom :
+          </span>
+          <button class="pill-type-btn active" id="poss-cat-all" onclick="setPossCategoryFilter('all')">
+            Tous (<span id="poss-cat-count-all">0</span>)
+          </button>
+          <button class="pill-type-btn" id="poss-cat-1st" onclick="setPossCategoryFilter('1st')" title="1ère personne (mój, nasz)">
+            👤 1ère pers. (mój, nasz) (<span id="poss-cat-count-1st">0</span>)
+          </button>
+          <button class="pill-type-btn" id="poss-cat-2nd" onclick="setPossCategoryFilter('2nd')" title="2ème personne (twój, wasz)">
+            👥 2ème pers. (twój, wasz) (<span id="poss-cat-count-2nd">0</span>)
+          </button>
+          <button class="pill-type-btn" id="poss-cat-3rd" onclick="setPossCategoryFilter('3rd-invariable')" title="3ème personne invariables (jego, jej, ich)">
+            🔒 3ème pers. (jego, jej, ich) (<span id="poss-cat-count-3rd">0</span>)
+          </button>
+          <button class="pill-type-btn" id="poss-cat-reflexive" onclick="setPossCategoryFilter('reflexive')" title="Réfléchi (swój - le sien propre)">
+            🔄 Réfléchi (swój) (<span id="poss-cat-count-reflexive">0</span>)
+          </button>
+          <button class="pill-type-btn" id="poss-cat-demonstrative" onclick="setPossCategoryFilter('demonstrative')" title="Démonstratifs (ten, ta, to, tej, tego, tym...)">
+            👉 Démonstratifs (ten, ta, to...) (<span id="poss-cat-count-demonstrative">0</span>)
+          </button>
+        </div>
+
+        <!-- Carte Défi Possessif -->
+        <div class="case-card">
+          <!-- En-tête : Niveau / Cas et statistiques -->
+          <div class="case-header">
+            <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;">
+              <span style="font-size:0.85rem; color:var(--text-muted); font-weight:600;">Défi :</span>
+              <span class="badge-case-name case-biernik" id="poss-badge-level">🟢 NIVEAU 1 • NOMINATIF</span>
+              <button type="button" class="btn-case-hint" id="poss-header-hint-btn" onclick="openPossCheatSheetModal()" title="Voir les règles et tableaux des possessifs">
+                💡 Aide-mémoire
+              </button>
+            </div>
+            <span class="case-stats-badge">Score : <strong id="poss-score-val" style="color:var(--text-main);">0 / 0</strong> <button onclick="resetPossSessionScore()" title="Remettre le score de session à zéro" style="background:none; border:none; cursor:pointer; padding:0 2px; font-size:0.8rem; opacity:0.65; transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.65'">🔄</button> • Série : <strong id="poss-streak-val" class="streak-icon">0 🔥</strong></span>
+          </div>
+
+          <!-- Sens attendu et contexte du nom -->
+          <div class="case-word-section">
+            <div style="font-size:0.8rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.25rem;">
+              Sens attendu en français :
+            </div>
+            <h2 class="case-word-main" id="poss-target-meaning">mon</h2>
+            <div class="case-word-info">
+              <span id="poss-noun-context" class="case-gender-pill">brat (nom masculin singulier)</span>
+              <span>•</span>
+              <span>Cas : <strong id="poss-case-label" style="color:var(--text-main);">Nominatif</strong></span>
+            </div>
+          </div>
+
+          <!-- Phrase avec trou à compléter -->
+          <div class="case-example-sentence" id="poss-example-box">
+            <span style="font-size:0.85rem; color:var(--text-muted); font-weight:600; margin-right:4px;">Complétez la phrase :</span>
+            <span id="poss-sentence-before">To jest </span><span class="case-gap-slot" id="poss-gap-slot">[ ... ]</span><span id="poss-sentence-after"> brat.</span>
+            <button class="btn-icon" id="poss-audio-btn" title="Écouter la phrase polonaise" style="display:none; vertical-align:middle; margin-left:6px;">🔊</button>
+          </div>
+
+          <!-- Grille des 4 choix -->
+          <div class="case-options-grid" id="poss-options-container">
+            <!-- Rempli en JavaScript -->
+          </div>
+
+          <!-- Feedback pédagogique & explications de la règle -->
+          <div id="poss-feedback-box" class="case-feedback-box" style="display: none;">
+            <div id="poss-feedback-title" style="font-weight:700; font-size:1.1rem; margin-bottom:0.4rem;"></div>
+            <div id="poss-feedback-explanation" style="font-size:0.95rem; line-height:1.55; color:#334155; margin-bottom:0.85rem;"></div>
+            <button class="btn-primary" id="poss-next-btn" onclick="startNewPossQuestion()">
+              Question suivante ➔ <span style="font-size:0.75rem; opacity:0.8; margin-left:4px;">[Espace]</span>
+            </button>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 1rem; font-size: 0.8rem; color: var(--text-muted);">
+          Astuce clavier : utilisez les touches <strong>1</strong>, <strong>2</strong>, <strong>3</strong>, <strong>4</strong> pour choisir un pronom, puis <strong>Espace</strong> pour continuer.
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- ONGLET 6 : GESTIONNAIRE DE VOCABULAIRE -->
     <!-- ============================================== -->
     <section id="manager-tab" class="tab-content">
       <div class="manager-container">
@@ -527,6 +634,42 @@
 
       <!-- Corps du modal avec contenu dynamique -->
       <div class="modal-body" id="modal-cheatsheet-content">
+        <!-- Rempli dynamiquement en JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- MODAL AIDE-MÉMOIRE DES POSSESSIFS & DÉMONSTRATIFS -->
+  <!-- ============================================== -->
+  <div id="poss-cheatsheet-modal" class="modal-overlay" style="display:none;" onclick="handlePossModalBackdropClick(event)">
+    <div class="modal-dialog case-modal-dialog" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div style="display:flex; align-items:center; gap:0.6rem;">
+          <span style="font-size:1.35rem;">👑</span>
+          <div>
+            <h3 style="margin:0; font-size:1.15rem; font-weight:700; color:#0f172a;">Aide-Mémoire des Possessifs & Démonstratifs</h3>
+            <p style="margin:0; font-size:0.75rem; color:var(--text-muted);">Mój, Twój, Nasz, Wasz, Jego, Jej, Ich, Swój & Démonstratifs (Ten, Ta, To, Tej...)</p>
+          </div>
+        </div>
+        <button class="modal-close-btn" onclick="closePossCheatSheetModal()" title="Fermer [Échap]">✕</button>
+      </div>
+
+      <!-- Onglets de sélection dans le modal -->
+      <div class="modal-case-tabs" id="modal-poss-tabs">
+        <button class="modal-tab-btn active" data-posstab="rules" onclick="switchPossCheatSheetTab('rules')">
+          🌟 Règles d'Or & Synthèse
+        </button>
+        <button class="modal-tab-btn" data-posstab="nominative" onclick="switchPossCheatSheetTab('nominative')">
+          📝 Niveau 1 : Nominatif de Base
+        </button>
+        <button class="modal-tab-btn" data-posstab="cases" onclick="switchPossCheatSheetTab('cases')">
+          🏛️ Niveau 2 : Déclinaisons & Cas
+        </button>
+      </div>
+
+      <!-- Corps du modal avec contenu dynamique -->
+      <div class="modal-body" id="modal-poss-cheatsheet-content">
         <!-- Rempli dynamiquement en JS -->
       </div>
     </div>

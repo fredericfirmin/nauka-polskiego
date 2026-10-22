@@ -733,6 +733,18 @@ select:focus, input[type="text"]:focus, textarea:focus {
   border-color: #fde68a;
 }
 
+.poss-level-1 {
+  background: #f0fdf4;
+  color: #15803d;
+  border-color: #bbf7d0;
+}
+
+.poss-level-2 {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-color: #bfdbfe;
+}
+
 .case-stats-badge {
   font-size: 0.85rem;
   color: var(--text-muted);

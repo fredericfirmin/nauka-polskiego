@@ -4399,3 +4399,1212 @@ const POLISH_CASES_GUIDE = {
 };
 
 
+// ==========================================
+// MODULE : POSSESSIFS & DÉMONSTRATIFS POLONAIS
+// ==========================================
+
+const POSSESSIVE_CHALLENGES = [
+  // ------------------------------------------
+  // NIVEAU 1 : FORMES DE BASE (NOMINATIF / ACCORDS EN GENRE ET NOMBRE)
+  // ------------------------------------------
+  {
+    id: "poss-l1-1",
+    level: 1,
+    category: "1st-sg",
+    categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "brat (nom masculin)",
+    targetMeaning: "mon",
+    sentenceBefore: "To jest ",
+    sentenceAfter: " brat.",
+    gapWord: "mój",
+    fullSentence: "To jest mój brat.",
+    translationFr: "C'est mon frère.",
+    ruleExplanation: "<strong>brat</strong> est un nom masculin singulier au Nominatif. Pour 'mon', la forme masculine est <strong>mój</strong> (féminin : <em>moja</em>, neutre : <em>moje</em>).",
+    options: [
+      { word: "mój", isCorrect: true, note: "Masculin singulier" },
+      { word: "moja", isCorrect: false, note: "Féminin singulier" },
+      { word: "moje", isCorrect: false, note: "Neutre singulier / Pluriel non-viril" },
+      { word: "moim", isCorrect: false, note: "Instrumental / Locatif" }
+    ]
+  },
+  {
+    id: "poss-l1-2",
+    level: 1,
+    category: "1st-sg",
+    categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "siostra (nom féminin)",
+    targetMeaning: "ma",
+    sentenceBefore: "To jest ",
+    sentenceAfter: " siostra.",
+    gapWord: "moja",
+    fullSentence: "To jest moja siostra.",
+    translationFr: "C'est ma sœur.",
+    ruleExplanation: "<strong>siostra</strong> est un nom féminin singulier au Nominatif. Pour 'ma', la forme féminine est <strong>moja</strong>.",
+    options: [
+      { word: "moja", isCorrect: true, note: "Féminin singulier" },
+      { word: "mój", isCorrect: false, note: "Masculin singulier" },
+      { word: "moje", isCorrect: false, note: "Neutre singulier" },
+      { word: "mojej", isCorrect: false, note: "Génitif / Datif / Locatif" }
+    ]
+  },
+  {
+    id: "poss-l1-3",
+    level: 1,
+    category: "1st-sg",
+    categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "auto (nom neutre)",
+    targetMeaning: "mon",
+    sentenceBefore: "To jest ",
+    sentenceAfter: " auto.",
+    gapWord: "moje",
+    fullSentence: "To jest moje auto.",
+    translationFr: "C'est ma voiture.",
+    ruleExplanation: "<strong>auto</strong> est un nom neutre singulier (terminé en <em>-o</em>). Pour 'mon' au neutre, la forme est <strong>moje</strong>.",
+    options: [
+      { word: "moje", isCorrect: true, note: "Neutre singulier" },
+      { word: "mój", isCorrect: false, note: "Masculin singulier" },
+      { word: "moja", isCorrect: false, note: "Féminin singulier" },
+      { word: "moim", isCorrect: false, note: "Instrumental / Locatif" }
+    ]
+  },
+  {
+    id: "poss-l1-4",
+    level: 1,
+    category: "1st-sg",
+    categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "rodzice (nom masculin viril / personnes)",
+    targetMeaning: "mes",
+    sentenceBefore: "To są ",
+    sentenceAfter: " rodzice.",
+    gapWord: "moi",
+    fullSentence: "To są moi rodzice.",
+    translationFr: "Ce sont mes parents.",
+    ruleExplanation: "<strong>rodzice</strong> (les parents) désigne un groupe contenant des hommes (pluriel viril / <em>męskoosobowy</em>). La forme spéciale au nominatif pluriel viril est <strong>moi</strong> (et non <em>moje</em>).",
+    options: [
+      { word: "moi", isCorrect: true, note: "Pluriel viril (hommes / personnes)" },
+      { word: "moje", isCorrect: false, note: "Pluriel non-viril (choses, femmes)" },
+      { word: "mój", isCorrect: false, note: "Singulier masculin" },
+      { word: "moich", isCorrect: false, note: "Génitif / Accusatif pluriel" }
+    ]
+  },
+  {
+    id: "poss-l1-5",
+    level: 1,
+    category: "1st-sg",
+    categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "książki (nom féminin / choses au pluriel)",
+    targetMeaning: "mes",
+    sentenceBefore: "To są ",
+    sentenceAfter: " książki.",
+    gapWord: "moje",
+    fullSentence: "To są moje książki.",
+    translationFr: "Ce sont mes livres.",
+    ruleExplanation: "<strong>książki</strong> (les livres) est un nom pluriel non-viril (objets/choses). La forme de 'mes' pour le non-viril est <strong>moje</strong>.",
+    options: [
+      { word: "moje", isCorrect: true, note: "Pluriel non-viril" },
+      { word: "moi", isCorrect: false, note: "Pluriel viril (réservé aux personnes masculines)" },
+      { word: "moja", isCorrect: false, note: "Féminin singulier" },
+      { word: "moim", isCorrect: false, note: "Instrumental singulier" }
+    ]
+  },
+  {
+    id: "poss-l1-6",
+    level: 1,
+    category: "2nd-sg",
+    categoryLabelFr: "2ème pers. sg (Ton / Ta / Tes)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "pies (nom masculin)",
+    targetMeaning: "ton",
+    sentenceBefore: "Czy to jest ",
+    sentenceAfter: " pies?",
+    gapWord: "twój",
+    fullSentence: "Czy to jest twój pies?",
+    translationFr: "Est-ce que c'est ton chien ?",
+    ruleExplanation: "<strong>pies</strong> est masculin singulier au Nominatif. Pour 'ton', la forme masculine est <strong>twój</strong>.",
+    options: [
+      { word: "twój", isCorrect: true, note: "Masculin singulier" },
+      { word: "twoja", isCorrect: false, note: "Féminin singulier" },
+      { word: "twoje", isCorrect: false, note: "Neutre singulier" },
+      { word: "twoim", isCorrect: false, note: "Instrumental / Locatif" }
+    ]
+  },
+  {
+    id: "poss-l1-7",
+    level: 1,
+    category: "2nd-sg",
+    categoryLabelFr: "2ème pers. sg (Ton / Ta / Tes)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "mama (nom féminin)",
+    targetMeaning: "ta",
+    sentenceBefore: "Gdzie mieszka ",
+    sentenceAfter: " mama?",
+    gapWord: "twoja",
+    fullSentence: "Gdzie mieszka twoja mama?",
+    translationFr: "Où habite ta maman ?",
+    ruleExplanation: "<strong>mama</strong> est féminin singulier au Nominatif. La forme correspondante pour 'ta' est <strong>twoja</strong>.",
+    options: [
+      { word: "twoja", isCorrect: true, note: "Féminin singulier" },
+      { word: "twój", isCorrect: false, note: "Masculin singulier" },
+      { word: "twoje", isCorrect: false, note: "Neutre singulier" },
+      { word: "twojej", isCorrect: false, note: "Génitif / Datif / Locatif" }
+    ]
+  },
+  {
+    id: "poss-l1-8",
+    level: 1,
+    category: "2nd-sg",
+    categoryLabelFr: "2ème pers. sg (Ton / Ta / Tes)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "mieszkanie (nom neutre)",
+    targetMeaning: "ton",
+    sentenceBefore: "To jest ",
+    sentenceAfter: " nowe mieszkanie.",
+    gapWord: "twoje",
+    fullSentence: "To jest twoje nowe mieszkanie.",
+    translationFr: "C'est ton nouvel appartement.",
+    ruleExplanation: "<strong>mieszkanie</strong> est neutre (se termine par <em>-e</em>). La forme neutre pour 'ton' est <strong>twoje</strong>.",
+    options: [
+      { word: "twoje", isCorrect: true, note: "Neutre singulier" },
+      { word: "twój", isCorrect: false, note: "Masculin singulier" },
+      { word: "twoja", isCorrect: false, note: "Féminin singulier" },
+      { word: "twoim", isCorrect: false, note: "Instrumental singulier" }
+    ]
+  },
+  {
+    id: "poss-l1-9",
+    level: 1,
+    category: "2nd-sg",
+    categoryLabelFr: "2ème pers. sg (Ton / Ta / Tes)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "przyjaciele (nom masculin viril pl)",
+    targetMeaning: "tes",
+    sentenceBefore: "To są ",
+    sentenceAfter: " przyjaciele.",
+    gapWord: "twoi",
+    fullSentence: "To są twoi przyjaciele.",
+    translationFr: "Ce sont tes amis.",
+    ruleExplanation: "<strong>przyjaciele</strong> (les amis) est au pluriel viril (hommes/personnes). On utilise la désinence virile <strong>twoi</strong>.",
+    options: [
+      { word: "twoi", isCorrect: true, note: "Pluriel viril" },
+      { word: "twoje", isCorrect: false, note: "Pluriel non-viril" },
+      { word: "twój", isCorrect: false, note: "Singulier masculin" },
+      { word: "twoich", isCorrect: false, note: "Génitif / Accusatif pluriel" }
+    ]
+  },
+  {
+    id: "poss-l1-10",
+    level: 1,
+    category: "1st-pl",
+    categoryLabelFr: "1ère pers. pl (Notre / Nos)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "syn (nom masculin)",
+    targetMeaning: "notre",
+    sentenceBefore: "To jest ",
+    sentenceAfter: " syn.",
+    gapWord: "nasz",
+    fullSentence: "To jest nasz syn.",
+    translationFr: "C'est notre fils.",
+    ruleExplanation: "<strong>syn</strong> est masculin singulier au Nominatif. La forme pour 'notre' au masculin est <strong>nasz</strong>.",
+    options: [
+      { word: "nasz", isCorrect: true, note: "Masculin singulier" },
+      { word: "nasza", isCorrect: false, note: "Féminin singulier" },
+      { word: "nasze", isCorrect: false, note: "Neutre singulier" },
+      { word: "naszym", isCorrect: false, note: "Instrumental / Locatif" }
+    ]
+  },
+  {
+    id: "poss-l1-11",
+    level: 1,
+    category: "1st-pl",
+    categoryLabelFr: "1ère pers. pl (Notre / Nos)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "rodzina (nom féminin)",
+    targetMeaning: "notre",
+    sentenceBefore: "",
+    sentenceAfter: " rodzina mieszka w Krakowie.",
+    gapWord: "Nasza",
+    fullSentence: "Nasza rodzina mieszka w Krakowie.",
+    translationFr: "Notre famille habite à Cracovie.",
+    ruleExplanation: "<strong>rodzina</strong> est féminin singulier au Nominatif. Pour 'notre' au féminin, on utilise <strong>Nasza</strong>.",
+    options: [
+      { word: "Nasza", isCorrect: true, note: "Féminin singulier" },
+      { word: "Nasz", isCorrect: false, note: "Masculin singulier" },
+      { word: "Nasze", isCorrect: false, note: "Neutre singulier" },
+      { word: "Naszej", isCorrect: false, note: "Génitif / Locatif" }
+    ]
+  },
+  {
+    id: "poss-l1-12",
+    level: 1,
+    category: "1st-pl",
+    categoryLabelFr: "1ère pers. pl (Notre / Nos)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "mieszkanie (nom neutre)",
+    targetMeaning: "notre",
+    sentenceBefore: "To jest ",
+    sentenceAfter: " nowe mieszkanie.",
+    gapWord: "nasze",
+    fullSentence: "To jest nasze nowe mieszkanie.",
+    translationFr: "C'est notre nouvel appartement.",
+    ruleExplanation: "<strong>mieszkanie</strong> est neutre. La forme neutre pour 'notre' est <strong>nasze</strong>.",
+    options: [
+      { word: "nasze", isCorrect: true, note: "Neutre singulier" },
+      { word: "nasz", isCorrect: false, note: "Masculin singulier" },
+      { word: "nasza", isCorrect: false, note: "Féminin singulier" },
+      { word: "nasi", isCorrect: false, note: "Pluriel viril" }
+    ]
+  },
+  {
+    id: "poss-l1-13",
+    level: 1,
+    category: "1st-pl",
+    categoryLabelFr: "1ère pers. pl (Notre / Nos)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "nauczyciele (nom viril pl)",
+    targetMeaning: "nos",
+    sentenceBefore: "",
+    sentenceAfter: " nauczyciele są bardzo cierpliwi.",
+    gapWord: "Nasi",
+    fullSentence: "Nasi nauczyciele są bardzo cierpliwi.",
+    translationFr: "Nos professeurs sont très patients.",
+    ruleExplanation: "<strong>nauczyciele</strong> (les enseignants) est masculin viril au pluriel. La forme virile pour 'nos' est <strong>Nasi</strong>.",
+    options: [
+      { word: "Nasi", isCorrect: true, note: "Pluriel viril" },
+      { word: "Nasze", isCorrect: false, note: "Pluriel non-viril" },
+      { word: "Nasz", isCorrect: false, note: "Singulier masculin" },
+      { word: "Naszych", isCorrect: false, note: "Génitif pluriel" }
+    ]
+  },
+  {
+    id: "poss-l1-14",
+    level: 1,
+    category: "2nd-pl",
+    categoryLabelFr: "2ème pers. pl (Votre / Vos)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "dom (nom masculin)",
+    targetMeaning: "votre",
+    sentenceBefore: "Czy to jest ",
+    sentenceAfter: " dom?",
+    gapWord: "wasz",
+    fullSentence: "Czy to jest wasz dom?",
+    translationFr: "Est-ce que c'est votre maison ?",
+    ruleExplanation: "<strong>dom</strong> est masculin singulier au Nominatif. La forme pour 'votre' au masculin est <strong>wasz</strong>.",
+    options: [
+      { word: "wasz", isCorrect: true, note: "Masculin singulier" },
+      { word: "wasza", isCorrect: false, note: "Féminin singulier" },
+      { word: "wasze", isCorrect: false, note: "Neutre singulier" },
+      { word: "waszym", isCorrect: false, note: "Instrumental singulier" }
+    ]
+  },
+  {
+    id: "poss-l1-15",
+    level: 1,
+    category: "2nd-pl",
+    categoryLabelFr: "2ème pers. pl (Votre / Vos)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "córka (nom féminin)",
+    targetMeaning: "votre",
+    sentenceBefore: "Gdzie studiuje ",
+    sentenceAfter: " córka?",
+    gapWord: "wasza",
+    fullSentence: "Gdzie studiuje wasza córka?",
+    translationFr: "Où étudie votre fille ?",
+    ruleExplanation: "<strong>córka</strong> est féminin singulier au Nominatif. La forme pour 'votre' au féminin est <strong>wasza</strong>.",
+    options: [
+      { word: "wasza", isCorrect: true, note: "Féminin singulier" },
+      { word: "wasz", isCorrect: false, note: "Masculin singulier" },
+      { word: "wasze", isCorrect: false, note: "Neutre singulier" },
+      { word: "waszej", isCorrect: false, note: "Génitif / Locatif" }
+    ]
+  },
+  {
+    id: "poss-l1-16",
+    level: 1,
+    category: "2nd-pl",
+    categoryLabelFr: "2ème pers. pl (Votre / Vos)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "znajomi (nom viril pl)",
+    targetMeaning: "vos",
+    sentenceBefore: "",
+    sentenceAfter: " znajomi już przyszli.",
+    gapWord: "Wasi",
+    fullSentence: "Wasi znajomi już przyszli.",
+    translationFr: "Vos connaissances / amis sont déjà arrivés.",
+    ruleExplanation: "<strong>znajomi</strong> est masculin viril pluriel. La forme pour 'vos' au pluriel viril est <strong>Wasi</strong>.",
+    options: [
+      { word: "Wasi", isCorrect: true, note: "Pluriel viril" },
+      { word: "Wasze", isCorrect: false, note: "Pluriel non-viril" },
+      { word: "Wasz", isCorrect: false, note: "Singulier masculin" },
+      { word: "Waszych", isCorrect: false, note: "Génitif pluriel" }
+    ]
+  },
+  {
+    id: "poss-l1-17",
+    level: 1,
+    category: "3rd-invariable",
+    categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "ojciec (nom masculin) - possesseur masculin (lui)",
+    targetMeaning: "son (à lui)",
+    sentenceBefore: "To jest ",
+    sentenceAfter: " ojciec.",
+    gapWord: "jego",
+    fullSentence: "To jest jego ojciec.",
+    translationFr: "C'est son père (le père de lui).",
+    ruleExplanation: "La 3ème personne du singulier avec un possesseur masculin ('lui / son') est <strong>jego</strong>. Règle d'or : <strong>jego est invariable</strong> et ne change jamais quel que soit le genre ou le cas !",
+    options: [
+      { word: "jego", isCorrect: true, note: "Invariable (possesseur masculin : son / sa / ses)" },
+      { word: "jej", isCorrect: false, note: "Possesseur féminin (son / sa à elle)" },
+      { word: "swój", isCorrect: false, note: "Réfléchi (quand le sujet possède l'objet)" },
+      { word: "on", isCorrect: false, note: "Pronom personnel sujet 'il'" }
+    ]
+  },
+  {
+    id: "poss-l1-18",
+    level: 1,
+    category: "3rd-invariable",
+    categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "żona (nom féminin) - possesseur masculin (lui)",
+    targetMeaning: "sa (à lui)",
+    sentenceBefore: "To jest ",
+    sentenceAfter: " żona.",
+    gapWord: "jego",
+    fullSentence: "To jest jego żona.",
+    translationFr: "C'est sa femme (la femme de lui).",
+    ruleExplanation: "Même si <strong>żona</strong> est un nom féminin, le possesseur est un homme, donc on utilise <strong>jego</strong> (qui reste invariable : pas de forme *jega ni *jegoja) !",
+    options: [
+      { word: "jego", isCorrect: true, note: "Invariable (possesseur masculin)" },
+      { word: "jej", isCorrect: false, note: "Possesseur féminin" },
+      { word: "jegoja", isCorrect: false, note: "Forme inexistante" },
+      { word: "swoja", isCorrect: false, note: "Réfléchi" }
+    ]
+  },
+  {
+    id: "poss-l1-19",
+    level: 1,
+    category: "3rd-invariable",
+    categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "brat (nom masculin) - possesseur féminin (elle)",
+    targetMeaning: "son (à elle)",
+    sentenceBefore: "",
+    sentenceAfter: " brat mieszka w Warszawie.",
+    gapWord: "Jej",
+    fullSentence: "Jej brat mieszka w Warszawie.",
+    translationFr: "Son frère (à elle) habite à Varsovie.",
+    ruleExplanation: "Quand le possesseur est une femme ('elle / son'), on emploie <strong>Jej</strong>. Tout comme <em>jego</em>, <strong>jej est invariable</strong> !",
+    options: [
+      { word: "Jej", isCorrect: true, note: "Invariable (possesseur féminin : son / sa / ses)" },
+      { word: "Jego", isCorrect: false, note: "Possesseur masculin (à lui)" },
+      { word: "Ich", isCorrect: false, note: "Possesseur pluriel (leur)" },
+      { word: "Ona", isCorrect: false, note: "Pronom sujet 'elle'" }
+    ]
+  },
+  {
+    id: "poss-l1-20",
+    level: 1,
+    category: "3rd-invariable",
+    categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "dom (nom masculin) - possesseur pluriel (eux)",
+    targetMeaning: "leur",
+    sentenceBefore: "To jest ",
+    sentenceAfter: " dom.",
+    gapWord: "ich",
+    fullSentence: "To jest ich dom.",
+    translationFr: "C'est leur maison.",
+    ruleExplanation: "Pour 'leur / leurs' (possesseur au pluriel : eux/elles), on utilise <strong>ich</strong>. Comme <em>jego</em> et <em>jej</em>, <strong>ich est 100% invariable</strong> !",
+    options: [
+      { word: "ich", isCorrect: true, note: "Invariable (leur / leurs)" },
+      { word: "jego", isCorrect: false, note: "Possesseur singulier masculin (son / sa)" },
+      { word: "jej", isCorrect: false, note: "Possesseur singulier féminin (son / sa)" },
+      { word: "oni", isCorrect: false, note: "Pronom sujet 'ils'" }
+    ]
+  },
+  {
+    id: "poss-l1-21",
+    level: 1,
+    category: "demonstrative",
+    categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "pan (nom masculin)",
+    targetMeaning: "ce",
+    sentenceBefore: "",
+    sentenceAfter: " pan jest lekarzem.",
+    gapWord: "Ten",
+    fullSentence: "Ten pan jest lekarzem.",
+    translationFr: "Ce monsieur est médecin.",
+    ruleExplanation: "Pour 'ce / cet' devant un nom masculin singulier au Nominatif, on emploie le démonstratif <strong>Ten</strong>.",
+    options: [
+      { word: "Ten", isCorrect: true, note: "Masculin singulier" },
+      { word: "Ta", isCorrect: false, note: "Féminin singulier (cette)" },
+      { word: "To", isCorrect: false, note: "Neutre singulier (ce / cela)" },
+      { word: "Tej", isCorrect: false, note: "Génitif / Locatif féminin" }
+    ]
+  },
+  {
+    id: "poss-l1-22",
+    level: 1,
+    category: "demonstrative",
+    categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "restauracja (nom féminin)",
+    targetMeaning: "cette",
+    sentenceBefore: "",
+    sentenceAfter: " restauracja jest bardzo dobra.",
+    gapWord: "Ta",
+    fullSentence: "Ta restauracja jest bardzo dobra.",
+    translationFr: "Ce restaurant est très bon.",
+    ruleExplanation: "<strong>restauracja</strong> est féminin singulier au Nominatif. Pour 'cette', on emploie <strong>Ta</strong>.",
+    options: [
+      { word: "Ta", isCorrect: true, note: "Féminin singulier (cette)" },
+      { word: "Ten", isCorrect: false, note: "Masculin singulier (ce)" },
+      { word: "To", isCorrect: false, note: "Neutre singulier" },
+      { word: "Te", isCorrect: false, note: "Pluriel non-viril (ces)" }
+    ]
+  },
+  {
+    id: "poss-l1-23",
+    level: 1,
+    category: "demonstrative",
+    categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "miasto (nom neutre)",
+    targetMeaning: "cette",
+    sentenceBefore: "",
+    sentenceAfter: " miasto jest piękne.",
+    gapWord: "To",
+    fullSentence: "To miasto jest piękne.",
+    translationFr: "Cette ville est belle.",
+    ruleExplanation: "<strong>miasto</strong> est neutre (se termine par <em>-o</em>). Le démonstratif neutre singulier au Nominatif est <strong>To</strong>.",
+    options: [
+      { word: "To", isCorrect: true, note: "Neutre singulier" },
+      { word: "Ten", isCorrect: false, note: "Masculin singulier" },
+      { word: "Ta", isCorrect: false, note: "Féminin singulier" },
+      { word: "Te", isCorrect: false, note: "Pluriel non-viril" }
+    ]
+  },
+  {
+    id: "poss-l1-24",
+    level: 1,
+    category: "demonstrative",
+    categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "mężczyźni (nom viril pl)",
+    targetMeaning: "ces",
+    sentenceBefore: "",
+    sentenceAfter: " mężczyźni pracują tutaj.",
+    gapWord: "Ci",
+    fullSentence: "Ci mężczyźni pracują tutaj.",
+    translationFr: "Ces hommes travaillent ici.",
+    ruleExplanation: "Au pluriel viril (groupe d'hommes), le démonstratif 'ces' prend la forme spéciale <strong>Ci</strong>.",
+    options: [
+      { word: "Ci", isCorrect: true, note: "Pluriel viril (hommes)" },
+      { word: "Te", isCorrect: false, note: "Pluriel non-viril (femmes, choses)" },
+      { word: "Ten", isCorrect: false, note: "Singulier masculin" },
+      { word: "Tych", isCorrect: false, note: "Génitif pluriel" }
+    ]
+  },
+  {
+    id: "poss-l1-25",
+    level: 1,
+    category: "demonstrative",
+    categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "kobiety (nom non-viril pl)",
+    targetMeaning: "ces",
+    sentenceBefore: "",
+    sentenceAfter: " kobiety to znane aktorki.",
+    gapWord: "Te",
+    fullSentence: "Te kobiety to znane aktorki.",
+    translationFr: "Ces femmes sont des actrices connues.",
+    ruleExplanation: "Au pluriel non-viril (femmes, enfants, animaux, objets), le démonstratif 'ces' prend la forme <strong>Te</strong>.",
+    options: [
+      { word: "Te", isCorrect: true, note: "Pluriel non-viril" },
+      { word: "Ci", isCorrect: false, note: "Pluriel viril" },
+      { word: "Ta", isCorrect: false, note: "Singulier féminin" },
+      { word: "Tych", isCorrect: false, note: "Génitif pluriel" }
+    ]
+  },
+  {
+    id: "poss-l1-26",
+    level: 1,
+    category: "reflexive",
+    categoryLabelFr: "Réfléchi (swój - le sien propre)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "gust (nom masculin)",
+    targetMeaning: "son propre",
+    sentenceBefore: "Każdy człowiek ma ",
+    sentenceAfter: " własny gust.",
+    gapWord: "swój",
+    fullSentence: "Każdy człowiek ma swój własny gust.",
+    translationFr: "Chaque homme a son propre goût.",
+    ruleExplanation: "Lorsque l'objet possédé appartient au sujet de la phrase ('chacun a son propre...'), le polonais emploie le possessif réfléchi <strong>swój</strong> (féminin : <em>swoja</em>, neutre : <em>swoje</em>).",
+    options: [
+      { word: "swój", isCorrect: true, note: "Réfléchi masculin singulier" },
+      { word: "jego", isCorrect: false, note: "Possesseur tiers (à un autre que le sujet)" },
+      { word: "swoja", isCorrect: false, note: "Réfléchi féminin singulier" },
+      { word: "swoim", isCorrect: false, note: "Instrumental singulier" }
+    ]
+  },
+
+  // ------------------------------------------
+  // NIVEAU 2 : DÉCLINAISONS & CAS (BIERNIK, NARZĘDNIK, DOPEŁNIACZ, MIEJSCOWNIK)
+  // ------------------------------------------
+  {
+    id: "poss-l2-1",
+    level: 2,
+    category: "2nd-sg",
+    categoryLabelFr: "2ème pers. sg (Ton / Ta / Tes)",
+    targetCase: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    nounContext: "brat (nom masculin animé, COD)",
+    targetMeaning: "ton",
+    sentenceBefore: "Znam ",
+    sentenceAfter: " brata od wielu lat.",
+    gapWord: "twojego",
+    fullSentence: "Znam twojego brata od wielu lat.",
+    translationFr: "Je connais ton frère depuis de nombreuses années.",
+    ruleExplanation: "Le verbe <em>znać</em> demande l'<strong>Accusatif (Biernik)</strong>. Pour un masculin animé (personne), la terminaison de l'adjectif/possessif est <strong>-ego</strong> : <em>twojego brata</em> (comme le génitif).",
+    options: [
+      { word: "twojego", isCorrect: true, note: "Accusatif masculin animé (-ego)" },
+      { word: "twój", isCorrect: false, note: "Nominatif / Accusatif inanimé" },
+      { word: "twoim", isCorrect: false, note: "Instrumental / Locatif (-im)" },
+      { word: "twojemu", isCorrect: false, note: "Datif (-emu)" }
+    ]
+  },
+  {
+    id: "poss-l2-2",
+    level: 2,
+    category: "demonstrative",
+    categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
+    targetCase: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    nounContext: "stół (nom masculin inanimé, COD)",
+    targetMeaning: "cette",
+    sentenceBefore: "Kupuję ",
+    sentenceAfter: " duży stół do jadalni.",
+    gapWord: "ten",
+    fullSentence: "Kupuję ten duży stół do jadalni.",
+    translationFr: "J'achète cette grande table pour la salle à manger.",
+    ruleExplanation: "À l'<strong>Accusatif</strong>, un nom masculin inanimé (objet) et son démonstratif restent identiques au Nominatif ! On utilise donc <strong>ten</strong> (et non *tego).",
+    options: [
+      { word: "ten", isCorrect: true, note: "Accusatif masculin inanimé (= Nominatif)" },
+      { word: "tego", isCorrect: false, note: "Accusatif masculin animé (-ego)" },
+      { word: "tym", isCorrect: false, note: "Instrumental / Locatif" },
+      { word: "to", isCorrect: false, note: "Neutre singulier" }
+    ]
+  },
+  {
+    id: "poss-l2-3",
+    level: 2,
+    category: "1st-sg",
+    categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
+    targetCase: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    nounContext: "mama (nom féminin, COD)",
+    targetMeaning: "ma",
+    sentenceBefore: "Bardzo kocham ",
+    sentenceAfter: " mamę.",
+    gapWord: "moją",
+    fullSentence: "Bardzo kocham moją mamę.",
+    translationFr: "J'aime beaucoup ma maman.",
+    ruleExplanation: "À l'<strong>Accusatif (Biernik)</strong>, un possessif féminin prend la terminaison <strong>-ą</strong> : <em>moja &rarr; moją</em> (qui s'accorde avec <em>mamę</em>).",
+    options: [
+      { word: "moją", isCorrect: true, note: "Accusatif féminin (-ą)" },
+      { word: "moja", isCorrect: false, note: "Nominatif féminin (-a)" },
+      { word: "mojej", isCorrect: false, note: "Génitif / Locatif féminin (-ej)" },
+      { word: "moim", isCorrect: false, note: "Instrumental masculin" }
+    ]
+  },
+  {
+    id: "poss-l2-4",
+    level: 2,
+    category: "demonstrative",
+    categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
+    targetCase: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    nounContext: "książka (nom féminin, COD)",
+    targetMeaning: "ce",
+    sentenceBefore: "Czytam właśnie ",
+    sentenceAfter: " nową książkę.",
+    gapWord: "tę",
+    fullSentence: "Czytam właśnie tę nową książkę.",
+    translationFr: "Je lis justement ce nouveau livre.",
+    ruleExplanation: "À l'<strong>Accusatif féminin</strong>, la forme standard soutenue du démonstratif <em>ta</em> est <strong>tę</strong> (ou couramment <em>tą</em>), en accord avec <em>książkę</em>.",
+    options: [
+      { word: "tę", isCorrect: true, note: "Accusatif féminin régulier (ta &rarr; tę)" },
+      { word: "ta", isCorrect: false, note: "Nominatif féminin" },
+      { word: "tej", isCorrect: false, note: "Génitif / Datif / Locatif féminin" },
+      { word: "tym", isCorrect: false, note: "Instrumental masculin" }
+    ]
+  },
+  {
+    id: "poss-l2-5",
+    level: 2,
+    category: "reflexive",
+    categoryLabelFr: "Réfléchi (swój - le sien propre)",
+    targetCase: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    nounContext: "dziewczyna (nom féminin, COD du sujet Adam)",
+    targetMeaning: "sa (sa propre)",
+    sentenceBefore: "Adam bardzo kocha ",
+    sentenceAfter: " dziewczynę.",
+    gapWord: "swoją",
+    fullSentence: "Adam bardzo kocha swoją dziewczynę.",
+    translationFr: "Adam aime beaucoup sa copine.",
+    ruleExplanation: "Le sujet Adam aime sa <em>propre</em> copine. On utilise le réfléchi <strong>swoją</strong> à l'Accusatif féminin (-ą). Si on disait <em>jego dziewczynę</em>, cela signifierait qu'Adam aime la copine d'un autre homme !",
+    options: [
+      { word: "swoją", isCorrect: true, note: "Réfléchi accusatif féminin (sa propre copine)" },
+      { word: "jego", isCorrect: false, note: "Indique la copine d'un AUTRE homme" },
+      { word: "swojej", isCorrect: false, note: "Génitif / Locatif féminin" },
+      { word: "swoja", isCorrect: false, note: "Nominatif féminin" }
+    ]
+  },
+  {
+    id: "poss-l2-6",
+    level: 2,
+    category: "1st-sg",
+    categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
+    targetCase: "Narzędnik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    nounContext: "brat (nom masculin avec la préposition z)",
+    targetMeaning: "mon",
+    sentenceBefore: "Idę na spacer z ",
+    sentenceAfter: " bratem.",
+    gapWord: "moim",
+    fullSentence: "Idę na spacer z moim bratem.",
+    translationFr: "Je vais me promener avec mon frère.",
+    ruleExplanation: "La préposition <strong>z</strong> (avec) exige l'<strong>Instrumental (Narzędnik)</strong>. Pour un possessif masculin singulier, la terminaison est <strong>-im</strong> : <em>z moim bratem</em>.",
+    options: [
+      { word: "moim", isCorrect: true, note: "Instrumental masculin singulier (-im)" },
+      { word: "mój", isCorrect: false, note: "Nominatif masculin" },
+      { word: "mojego", isCorrect: false, note: "Génitif / Accusatif animé" },
+      { word: "moją", isCorrect: false, note: "Instrumental féminin" }
+    ]
+  },
+  {
+    id: "poss-l2-7",
+    level: 2,
+    category: "2nd-sg",
+    categoryLabelFr: "2ème pers. sg (Ton / Ta / Tes)",
+    targetCase: "Narzędnik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    nounContext: "mama (nom féminin avec z)",
+    targetMeaning: "ta",
+    sentenceBefore: "Chętnie porozmawiam z ",
+    sentenceAfter: " mamą.",
+    gapWord: "twoją",
+    fullSentence: "Chętnie porozmawiam z twoją mamą.",
+    translationFr: "Je parlerai volontiers avec ta maman.",
+    ruleExplanation: "À l'<strong>Instrumental (Narzędnik)</strong> après <em>z</em>, le féminin se termine par <strong>-ą</strong> tant pour le possessif que pour le nom : <em>z twoją mamą</em>.",
+    options: [
+      { word: "twoją", isCorrect: true, note: "Instrumental féminin (-ą)" },
+      { word: "twoja", isCorrect: false, note: "Nominatif féminin" },
+      { word: "twojej", isCorrect: false, note: "Génitif / Locatif féminin" },
+      { word: "twoim", isCorrect: false, note: "Instrumental masculin" }
+    ]
+  },
+  {
+    id: "poss-l2-8",
+    level: 2,
+    category: "demonstrative",
+    categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
+    targetCase: "Narzędnik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    nounContext: "pan (nom masculin avec z)",
+    targetMeaning: "ce",
+    sentenceBefore: "Właśnie rozmawiam z ",
+    sentenceAfter: " panem.",
+    gapWord: "tym",
+    fullSentence: "Właśnie rozmawiam z tym panem.",
+    translationFr: "Je parle justement avec ce monsieur.",
+    ruleExplanation: "À l'<strong>Instrumental masculin</strong>, le démonstratif <em>ten</em> devient <strong>tym</strong> (z tym panem).",
+    options: [
+      { word: "tym", isCorrect: true, note: "Instrumental masculin (-ym)" },
+      { word: "ten", isCorrect: false, note: "Nominatif masculin" },
+      { word: "tego", isCorrect: false, note: "Génitif masculin" },
+      { word: "tej", isCorrect: false, note: "Génitif / Locatif féminin" }
+    ]
+  },
+  {
+    id: "poss-l2-9",
+    level: 2,
+    category: "demonstrative",
+    categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
+    targetCase: "Narzędnik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    nounContext: "dziewczyna (nom féminin avec z)",
+    targetMeaning: "cette",
+    sentenceBefore: "Podróżuję po Europie z ",
+    sentenceAfter: " miłą dziewczyną.",
+    gapWord: "tą",
+    fullSentence: "Podróżuję po Europie z tą miłą dziewczyną.",
+    translationFr: "Je voyage en Europe avec cette fille sympathique.",
+    ruleExplanation: "À l'<strong>Instrumental féminin</strong>, le démonstratif <em>ta</em> devient <strong>tą</strong> (avec la désinence nasale <em>-ą</em> : <em>z tą dziewczyną</em>).",
+    options: [
+      { word: "tą", isCorrect: true, note: "Instrumental féminin (-ą)" },
+      { word: "ta", isCorrect: false, note: "Nominatif féminin" },
+      { word: "tej", isCorrect: false, note: "Génitif / Locatif féminin" },
+      { word: "tym", isCorrect: false, note: "Instrumental masculin" }
+    ]
+  },
+  {
+    id: "poss-l2-10",
+    level: 2,
+    category: "1st-pl",
+    categoryLabelFr: "1ère pers. pl (Notre / Nos)",
+    targetCase: "Narzędnik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    nounContext: "dziecko (nom neutre avec z)",
+    targetMeaning: "notre",
+    sentenceBefore: "Idziemy do parku z ",
+    sentenceAfter: " dzieckiem.",
+    gapWord: "naszym",
+    fullSentence: "Idziemy do parku z naszym dzieckiem.",
+    translationFr: "Nous allons au parc avec notre enfant.",
+    ruleExplanation: "À l'<strong>Instrumental</strong>, le masculin et le neutre partagent la même terminaison <strong>-im / -ym</strong> : <em>z naszym dzieckiem</em>.",
+    options: [
+      { word: "naszym", isCorrect: true, note: "Instrumental neutre & masculin (-ym)" },
+      { word: "nasze", isCorrect: false, note: "Nominatif neutre" },
+      { word: "naszego", isCorrect: false, note: "Génitif neutre" },
+      { word: "naszą", isCorrect: false, note: "Instrumental féminin" }
+    ]
+  },
+  {
+    id: "poss-l2-11",
+    level: 2,
+    category: "1st-sg",
+    categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
+    targetCase: "Narzędnik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    nounContext: "przyjaciele (nom pluriel avec z)",
+    targetMeaning: "mes",
+    sentenceBefore: "W weekend spotykam się z ",
+    sentenceAfter: " przyjaciółmi.",
+    gapWord: "moimi",
+    fullSentence: "W weekend spotykam się z moimi przyjaciółmi.",
+    translationFr: "Ce week-end je vois mes amis.",
+    ruleExplanation: "À l'<strong>Instrumental pluriel</strong>, la terminaison est universellement <strong>-ymi / -imi</strong> : <em>z moimi przyjaciółmi</em>.",
+    options: [
+      { word: "moimi", isCorrect: true, note: "Instrumental pluriel (-imi)" },
+      { word: "moi", isCorrect: false, note: "Nominatif pluriel viril" },
+      { word: "moich", isCorrect: false, note: "Génitif / Locatif pluriel" },
+      { word: "moim", isCorrect: false, note: "Instrumental singulier masculin" }
+    ]
+  },
+  {
+    id: "poss-l2-12",
+    level: 2,
+    category: "3rd-invariable",
+    categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
+    targetCase: "Narzędnik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    nounContext: "siostra (nom féminin avec z) - possesseur masculin (lui)",
+    targetMeaning: "sa (à lui)",
+    sentenceBefore: "Idę do kina z ",
+    sentenceAfter: " siostrą.",
+    gapWord: "jego",
+    fullSentence: "Idę do kina z jego siostrą.",
+    translationFr: "Je vais au cinéma avec sa sœur (la sœur de lui).",
+    ruleExplanation: "Même après la préposition <em>z</em> et avec un nom à l'Instrumental (<em>siostrą</em>), le possessif de la 3e personne reste <strong>jego</strong> car <strong>les possessifs de 3e personne sont invariables</strong> !",
+    options: [
+      { word: "jego", isCorrect: true, note: "Invariable (ne prend jamais -m ni -ą)" },
+      { word: "jegą", isCorrect: false, note: "Forme inexistante" },
+      { word: "swoją", isCorrect: false, note: "Réfléchi (impliquerait ma propre sœur)" },
+      { word: "jej", isCorrect: false, note: "Possesseur féminin" }
+    ]
+  },
+  {
+    id: "poss-l2-13",
+    level: 2,
+    category: "reflexive",
+    categoryLabelFr: "Réfléchi (swój - le sien propre)",
+    targetCase: "Narzędnik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    nounContext: "szef (nom masculin avec z) - sujet Piotr",
+    targetMeaning: "son (son propre)",
+    sentenceBefore: "Piotr rozmawia ze ",
+    sentenceAfter: " szefem.",
+    gapWord: "swoim",
+    fullSentence: "Piotr rozmawia ze swoim szefem.",
+    translationFr: "Piotr discute avec son patron.",
+    ruleExplanation: "Piotr parle avec son <em>propre</em> patron. À l'Instrumental masculin, le réfléchi <em>swój</em> prend la terminaison <strong>-im</strong> : <em>ze swoim szefem</em>.",
+    options: [
+      { word: "swoim", isCorrect: true, note: "Instrumental réfléchi masculin (-im)" },
+      { word: "swój", isCorrect: false, note: "Nominatif masculin" },
+      { word: "jego", isCorrect: false, note: "Signifierait le patron d'un autre homme" },
+      { word: "swojego", isCorrect: false, note: "Génitif masculin" }
+    ]
+  },
+  {
+    id: "poss-l2-14",
+    level: 2,
+    category: "2nd-sg",
+    categoryLabelFr: "2ème pers. sg (Ton / Ta / Tes)",
+    targetCase: "Dopełniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    nounContext: "numer (nom masculin inanimé sous la négation)",
+    targetMeaning: "ton",
+    sentenceBefore: "Niestety nie mam ",
+    sentenceAfter: " numeru telefonu.",
+    gapWord: "twojego",
+    fullSentence: "Niestety nie mam twojego numeru telefonu.",
+    translationFr: "Malheureusement je n'ai pas ton numéro de téléphone.",
+    ruleExplanation: "Sous la <strong>négation (nie mam)</strong>, le COD passe au <strong>Génitif (Dopełniacz)</strong>. L'adjectif/possessif masculin singulier prend obligatoirement la désinence <strong>-ego</strong> : <em>twojego numeru</em>.",
+    options: [
+      { word: "twojego", isCorrect: true, note: "Génitif masculin singulier (-ego)" },
+      { word: "twój", isCorrect: false, note: "Nominatif (forme affirmative)" },
+      { word: "twoim", isCorrect: false, note: "Instrumental / Locatif" },
+      { word: "twojemu", isCorrect: false, note: "Datif" }
+    ]
+  },
+  {
+    id: "poss-l2-15",
+    level: 2,
+    category: "1st-sg",
+    categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
+    targetCase: "Dopełniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    nounContext: "torebka (nom féminin après le verbe szukać)",
+    targetMeaning: "ma",
+    sentenceBefore: "Gdzie ona jest? Szukam ",
+    sentenceAfter: " torebki.",
+    gapWord: "mojej",
+    fullSentence: "Gdzie ona jest? Szukam mojej torebki.",
+    translationFr: "Où est-il ? Je cherche mon sac à main.",
+    ruleExplanation: "Le verbe <strong>szukać</strong> (chercher) régit toujours le <strong>Génitif (Dopełniacz)</strong>. Au féminin singulier, le possessif se termine par <strong>-ej</strong> : <em>mojej torebki</em>.",
+    options: [
+      { word: "mojej", isCorrect: true, note: "Génitif féminin singulier (-ej)" },
+      { word: "moją", isCorrect: false, note: "Accusatif / Instrumental féminin (-ą)" },
+      { word: "moja", isCorrect: false, note: "Nominatif féminin" },
+      { word: "moim", isCorrect: false, note: "Instrumental masculin" }
+    ]
+  },
+  {
+    id: "poss-l2-16",
+    level: 2,
+    category: "demonstrative",
+    categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
+    targetCase: "Dopełniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    nounContext: "pani (nom féminin de possession : 'de cette dame')",
+    targetMeaning: "cette",
+    sentenceBefore: "To jest samochód ",
+    sentenceAfter: " pani.",
+    gapWord: "tej",
+    fullSentence: "To jest samochód tej pani.",
+    translationFr: "C'est la voiture de cette dame.",
+    ruleExplanation: "La possession ('de...') se traduit par le <strong>Génitif (Dopełniacz)</strong>. Le démonstratif féminin <em>ta</em> devient <strong>tej</strong> au Génitif (<em>samochód tej pani</em>). C'est exactement cette forme <strong>tej</strong> qui pose souvent question !",
+    options: [
+      { word: "tej", isCorrect: true, note: "Génitif féminin singulier (ta &rarr; tej)" },
+      { word: "ta", isCorrect: false, note: "Nominatif féminin" },
+      { word: "tą", isCorrect: false, note: "Instrumental féminin" },
+      { word: "tego", isCorrect: false, note: "Génitif masculin" }
+    ]
+  },
+  {
+    id: "poss-l2-17",
+    level: 2,
+    category: "demonstrative",
+    categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
+    targetCase: "Dopełniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    nounContext: "człowiek (nom masculin sous la négation)",
+    targetMeaning: "ce",
+    sentenceBefore: "Zupełnie nie znam ",
+    sentenceAfter: " człowieka.",
+    gapWord: "tego",
+    fullSentence: "Zupełnie nie znam tego człowieka.",
+    translationFr: "Je ne connais absolument pas cet homme.",
+    ruleExplanation: "Sous la négation (<em>nie znam</em>), le COD masculin passe au Génitif. Le démonstratif <em>ten</em> devient <strong>tego</strong> (<em>tego człowieka</em>).",
+    options: [
+      { word: "tego", isCorrect: true, note: "Génitif masculin singulier (ten &rarr; tego)" },
+      { word: "ten", isCorrect: false, note: "Nominatif masculin" },
+      { word: "tym", isCorrect: false, note: "Instrumental / Locatif" },
+      { word: "tej", isCorrect: false, note: "Génitif féminin" }
+    ]
+  },
+  {
+    id: "poss-l2-18",
+    level: 2,
+    category: "1st-pl",
+    categoryLabelFr: "1ère pers. pl (Notre / Nos)",
+    targetCase: "Dopełniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    nounContext: "dziecko (nom neutre après dla)",
+    targetMeaning: "notre",
+    sentenceBefore: "To jest piękny prezent dla ",
+    sentenceAfter: " dziecka.",
+    gapWord: "naszego",
+    fullSentence: "To jest piękny prezent dla naszego dziecka.",
+    translationFr: "C'est un beau cadeau pour notre enfant.",
+    ruleExplanation: "La préposition <strong>dla</strong> (pour) régit le <strong>Génitif (Dopełniacz)</strong>. Au neutre singulier, la terminaison est <strong>-ego</strong> : <em>naszego dziecka</em>.",
+    options: [
+      { word: "naszego", isCorrect: true, note: "Génitif neutre singulier (-ego)" },
+      { word: "nasze", isCorrect: false, note: "Nominatif / Accusatif neutre" },
+      { word: "naszym", isCorrect: false, note: "Instrumental / Locatif" },
+      { word: "naszej", isCorrect: false, note: "Génitif féminin" }
+    ]
+  },
+  {
+    id: "poss-l2-19",
+    level: 2,
+    category: "2nd-sg",
+    categoryLabelFr: "2ème pers. sg (Ton / Ta / Tes)",
+    targetCase: "Dopełniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    nounContext: "pomoc (nom féminin après bez)",
+    targetMeaning: "ta",
+    sentenceBefore: "Nie dam rady bez ",
+    sentenceAfter: " pomocy.",
+    gapWord: "twojej",
+    fullSentence: "Nie dam rady bez twojej pomocy.",
+    translationFr: "Je n'y arriverai pas sans ton aide.",
+    ruleExplanation: "La préposition <strong>bez</strong> (sans) exige le <strong>Génitif</strong>. Au féminin singulier, on a <strong>twojej pomocy</strong> (désinence <strong>-ej</strong>).",
+    options: [
+      { word: "twojej", isCorrect: true, note: "Génitif féminin (-ej)" },
+      { word: "twoją", isCorrect: false, note: "Accusatif / Instrumental" },
+      { word: "twoja", isCorrect: false, note: "Nominatif" },
+      { word: "twoim", isCorrect: false, note: "Instrumental masculin" }
+    ]
+  },
+  {
+    id: "poss-l2-20",
+    level: 2,
+    category: "3rd-invariable",
+    categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
+    targetCase: "Dopełniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    nounContext: "ojciec (nom masculin après nie ma)",
+    targetMeaning: "leur",
+    sentenceBefore: "W domu nie ma dziś ",
+    sentenceAfter: " ojca.",
+    gapWord: "ich",
+    fullSentence: "W domu nie ma dziś ich ojca.",
+    translationFr: "Aujourd'hui, leur père n'est pas à la maison.",
+    ruleExplanation: "Même après <em>nie ma</em> (qui commande le Génitif : <em>ojca</em>), le possessif pluriel <strong>ich</strong> reste rigoureusement <strong>inchangé (invariable)</strong> !",
+    options: [
+      { word: "ich", isCorrect: true, note: "Invariable (ne prend pas -ego)" },
+      { word: "ichego", isCorrect: false, note: "Forme inexistante" },
+      { word: "jego", isCorrect: false, note: "Possesseur singulier (son/sa)" },
+      { word: "ichnego", isCorrect: false, note: "Forme familière / incorrecte" }
+    ]
+  },
+  {
+    id: "poss-l2-21",
+    level: 2,
+    category: "1st-sg",
+    categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
+    targetCase: "Miejscownik",
+    caseLabelFr: "Locatif (Miejscownik)",
+    nounContext: "pokój (nom masculin de lieu avec w)",
+    targetMeaning: "mon",
+    sentenceBefore: "Uczę się w ",
+    sentenceAfter: " pokoju.",
+    gapWord: "moim",
+    fullSentence: "Uczę się w moim pokoju.",
+    translationFr: "J'étudie dans ma chambre.",
+    ruleExplanation: "Pour indiquer le lieu où l'on est avec la préposition <strong>w</strong> (dans), on emploie le <strong>Locatif (Miejscownik)</strong>. Pour un possessif masculin, la désinence est <strong>-im</strong> : <em>w moim pokoju</em>.",
+    options: [
+      { word: "moim", isCorrect: true, note: "Locatif masculin singulier (-im)" },
+      { word: "mój", isCorrect: false, note: "Nominatif masculin" },
+      { word: "mojego", isCorrect: false, note: "Génitif masculin" },
+      { word: "mojej", isCorrect: false, note: "Locatif féminin" }
+    ]
+  },
+  {
+    id: "poss-l2-22",
+    level: 2,
+    category: "demonstrative",
+    categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
+    targetCase: "Miejscownik",
+    caseLabelFr: "Locatif (Miejscownik)",
+    nounContext: "kawiarnia (nom féminin de lieu avec w)",
+    targetMeaning: "cette",
+    sentenceBefore: "Spotkajmy się w ",
+    sentenceAfter: " kawiarni.",
+    gapWord: "tej",
+    fullSentence: "Spotkajmy się w tej kawiarni.",
+    translationFr: "Retrouvons-nous dans ce café.",
+    ruleExplanation: "Au <strong>Locatif féminin</strong> après <em>w</em>, le démonstratif <em>ta</em> devient <strong>tej</strong> (<em>w tej kawiarni</em>). Retenez cette règle essentielle : le féminin singulier prend <strong>-ej</strong> au Génitif, au Datif et au Locatif !",
+    options: [
+      { word: "tej", isCorrect: true, note: "Locatif féminin singulier (ta &rarr; tej)" },
+      { word: "ta", isCorrect: false, note: "Nominatif féminin" },
+      { word: "tą", isCorrect: false, note: "Instrumental féminin" },
+      { word: "tym", isCorrect: false, note: "Locatif masculin" }
+    ]
+  },
+  {
+    id: "poss-l2-23",
+    level: 2,
+    category: "demonstrative",
+    categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
+    targetCase: "Miejscownik",
+    caseLabelFr: "Locatif (Miejscownik)",
+    nounContext: "rok (nom masculin de temps avec w)",
+    targetMeaning: "cette",
+    sentenceBefore: "W ",
+    sentenceAfter: " roku planuję wyjazd do Polski.",
+    gapWord: "tym",
+    fullSentence: "W tym roku planuję wyjazd do Polski.",
+    translationFr: "Cette année, je prévois un voyage en Pologne.",
+    ruleExplanation: "Pour dire 'cette année' (en cette année), le polonais utilise le <strong>Locatif masculin</strong> : <em>W tym roku</em> (ten &rarr; tym).",
+    options: [
+      { word: "tym", isCorrect: true, note: "Locatif masculin singulier (ten &rarr; tym)" },
+      { word: "ten", isCorrect: false, note: "Nominatif masculin" },
+      { word: "tego", isCorrect: false, note: "Génitif masculin" },
+      { word: "tej", isCorrect: false, note: "Locatif féminin" }
+    ]
+  },
+  {
+    id: "poss-l2-24",
+    level: 2,
+    category: "1st-pl",
+    categoryLabelFr: "1ère pers. pl (Notre / Nos)",
+    targetCase: "Miejscownik",
+    caseLabelFr: "Locatif (Miejscownik)",
+    nounContext: "przyszłość (nom féminin après o)",
+    targetMeaning: "notre",
+    sentenceBefore: "Często myślę o ",
+    sentenceAfter: " wspólnej przyszłości.",
+    gapWord: "naszej",
+    fullSentence: "Często myślę o naszej wspólnej przyszłości.",
+    translationFr: "Je pense souvent à notre avenir commun.",
+    ruleExplanation: "La préposition <strong>o</strong> (au sujet de / à propos de) régit le <strong>Locatif (Miejscownik)</strong>. Au féminin singulier, on a <strong>naszej</strong> (terminaison <strong>-ej</strong>).",
+    options: [
+      { word: "naszej", isCorrect: true, note: "Locatif féminin singulier (-ej)" },
+      { word: "naszą", isCorrect: false, note: "Instrumental / Accusatif" },
+      { word: "nasza", isCorrect: false, note: "Nominatif" },
+      { word: "naszym", isCorrect: false, note: "Locatif masculin" }
+    ]
+  },
+  {
+    id: "poss-l2-25",
+    level: 2,
+    category: "3rd-invariable",
+    categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
+    targetCase: "Miejscownik",
+    caseLabelFr: "Locatif (Miejscownik)",
+    nounContext: "dom (nom masculin de lieu avec w) - possesseur féminin (elle)",
+    targetMeaning: "sa (à elle)",
+    sentenceBefore: "Byliśmy wczoraj w ",
+    sentenceAfter: " domu.",
+    gapWord: "jej",
+    fullSentence: "Byliśmy wczoraj w jej domu.",
+    translationFr: "Nous étions hier dans sa maison (chez elle).",
+    ruleExplanation: "Même au Locatif avec la préposition <em>w</em> (<em>w domu</em>), le possessif féminin de 3ème personne reste <strong>jej</strong>, car il est totalement <strong>invariable</strong> !",
+    options: [
+      { word: "jej", isCorrect: true, note: "Invariable (possesseur féminin)" },
+      { word: "jego", isCorrect: false, note: "Possesseur masculin (à lui)" },
+      { word: "swoim", isCorrect: false, note: "Réfléchi masculin (notre propre maison)" },
+      { word: "ona", isCorrect: false, note: "Pronom sujet" }
+    ]
+  }
+];
+
+const POSSESSIVE_CHEATSHEET = {
+  goldenRules: [
+    {
+      title: "1. Accord en Genre et en Nombre (1ère & 2ème personnes)",
+      text: "Comme les adjectifs, <em>mój, twój, nasz, wasz</em> s'accordent en <strong>genre</strong> (masculin, féminin, neutre) et en <strong>nombre</strong> (singulier, pluriel viril, pluriel non-viril) avec le nom qu'ils accompagnent, PAS avec la personne qui parle !"
+    },
+    {
+      title: "2. La Règle d'Or des Invariables (3ème personne) : JEGO, JEJ, ICH",
+      text: "Les possessifs de 3ème personne <strong>nie odmieniają się</strong> (ne se déclinent JAMAIS) ! Ils restent 100% identiques quel que soit le cas, le genre ou le nombre :<br>• <strong>jego</strong> = son/sa/ses (possesseur homme) : <em>jego brat, jego żona, z jego bratem, nie ma jego psa</em>.<br>• <strong>jej</strong> = son/sa/ses (possesseur femme) : <em>jej mąż, jej siostra, w jej domu</em>.<br>• <strong>ich</strong> = leur/leurs (possesseurs au pluriel) : <em>ich dom, ich dzieci, z ich psem</em>."
+    },
+    {
+      title: "3. Le Réfléchi Magique : SWÓJ",
+      text: "En polonais, quand l'objet appartient au <strong>sujet de la phrase</strong>, on emploie obligatoirement <strong>swój</strong> (swoja, swoje...) :<br>• <em>Piotr kocha <strong>swoją</strong> żonę</em> = Piotr aime sa (propre) femme.<br>• <em>Piotr kocha <strong>jego</strong> żonę</em> = Piotr aime la femme d'un autre homme !"
+    },
+    {
+      title: "4. Les Démonstratifs (TEN, TA, TO, TEJ...)",
+      text: "Les démonstratifs suivent exactement les terminaisons des adjectifs :<br>• <strong>Masculin</strong> : <em>ten</em> (Nom.) &rarr; <em>tego</em> (Gén./Acc. animé) &rarr; <em>tym</em> (Inst./Loc.)<br>• <strong>Féminin</strong> : <em>ta</em> (Nom.) &rarr; <em>tę/tą</em> (Acc.) &rarr; <strong>tej</strong> (Gén./Loc.) &rarr; <em>tą</em> (Inst.)<br>• <strong>Neutre</strong> : <em>to</em> (Nom./Acc.) &rarr; <em>tego</em> (Gén.) &rarr; <em>tym</em> (Inst./Loc.)"
+    }
+  ],
+  nominativeTable: [
+    { person: "1ère sg (Mon)", m: "mój", f: "moja", n: "moje", virilPl: "moi", nonVirilPl: "moje" },
+    { person: "2ème sg (Ton)", m: "twój", f: "twoja", n: "twoje", virilPl: "twoi", nonVirilPl: "twoje" },
+    { person: "3ème sg masc (Son à lui)", m: "jego", f: "jego", n: "jego", virilPl: "jego", nonVirilPl: "jego", note: "🔒 Invariable" },
+    { person: "3ème sg fém (Son à elle)", m: "jej", f: "jej", n: "jej", virilPl: "jej", nonVirilPl: "jej", note: "🔒 Invariable" },
+    { person: "1ère pl (Notre)", m: "nasz", f: "nasza", n: "nasze", virilPl: "nasi", nonVirilPl: "nasze" },
+    { person: "2ème pl (Votre)", m: "wasz", f: "wasza", n: "wasze", virilPl: "wasi", nonVirilPl: "wasze" },
+    { person: "3ème pl (Leur)", m: "ich", f: "ich", n: "ich", virilPl: "ich", nonVirilPl: "ich", note: "🔒 Invariable" },
+    { person: "Réfléchi (Son propre)", m: "swój", f: "swoja", n: "swoje", virilPl: "swoi", nonVirilPl: "swoje" },
+    { person: "Démonstratif (Ce / Cette)", m: "ten", f: "ta", n: "to", virilPl: "ci", nonVirilPl: "te" }
+  ],
+  casesTable: [
+    {
+      caseName: "Biernik (Accusatif)",
+      role: "Complément d'Objet Direct (COD)",
+      mInan: "mój / twój / nasz / ten",
+      mAnim: "mojego / twojego / naszego / tego (-ego)",
+      f: "moją / twoją / naszą / tę (-ą / -ę)",
+      n: "moje / twoje / nasze / to (-e / -o)",
+      plViril: "moich / twoich / naszych / tych (-ich / -ych)",
+      example: "Widzę <strong>twojego</strong> brata. Mam <strong>tę</strong> książkę."
+    },
+    {
+      caseName: "Narzędnik (Instrumental)",
+      role: "Accompagnement (z), moyen, après być",
+      mInan: "moim / twoim / naszym / tym (-im / -ym)",
+      mAnim: "moim / twoim / naszym / tym (-im / -ym)",
+      f: "moją / twoją / naszą / tą (-ą)",
+      n: "moim / twoim / naszym / tym (-im / -ym)",
+      plViril: "moimi / twoimi / naszymi / tymi (-imi / -ymi)",
+      example: "Spaceruję z <strong>moim</strong> psem. Rozmawiam z <strong>tą</strong> panią."
+    },
+    {
+      caseName: "Dopełniacz (Génitif)",
+      role: "Négation, possession (de), bez, do, dla",
+      mInan: "mojego / twojego / naszego / tego (-ego)",
+      mAnim: "mojego / twojego / naszego / tego (-ego)",
+      f: "mojej / twojej / naszej / <strong>tej</strong> (-ej)",
+      n: "mojego / twojego / naszego / tego (-ego)",
+      plViril: "moich / twoich / naszych / tych (-ich / -ych)",
+      example: "Nie mam <strong>twojego</strong> numeru. To jest dom <strong>tej</strong> kobiety."
+    },
+    {
+      caseName: "Miejscownik (Locatif)",
+      role: "Lieu où l'on se trouve (w, na, o)",
+      mInan: "moim / twoim / naszym / tym (-im / -ym)",
+      mAnim: "moim / twoim / naszym / tym (-im / -ym)",
+      f: "mojej / twojej / naszej / <strong>tej</strong> (-ej)",
+      n: "moim / twoim / naszym / tym (-im / -ym)",
+      plViril: "moich / twoich / naszych / tych (-ich / -ych)",
+      example: "W <strong>moim</strong> pokoju. Spotkajmy się w <strong>tej</strong> kawiarni."
+    }
+  ]
+};

@@ -38,6 +38,15 @@ let caseTotal = 0;
 let caseStreak = 0;
 let caseAnswered = false;
 
+// État Module Possessifs & Démonstratifs
+let currentPossLevelFilter = "all"; // "all", 1, 2
+let currentPossCategoryFilter = "all"; // "all", "1st", "2nd", "3rd-invariable", "reflexive", "demonstrative"
+let currentPossChallenge = null;
+let possScore = 0;
+let possTotal = 0;
+let possStreak = 0;
+let possAnswered = false;
+
 // Audio en cours
 let currentAudioElement = null;
 
@@ -50,6 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initFlashcards();
   initTyping();
   initCases();
+  initPossessives();
   renderCardsTable();
   setupSpecialKeys();
   setupKeyboardShortcuts();
@@ -58,6 +68,8 @@ document.addEventListener("DOMContentLoaded", () => {
   updateQuizStatsCounters();
   updateTypingStatsCounters();
   updateCaseStatsCounters();
+  updatePossStatsCounters();
+  updatePossCounts();
   registerServiceWorker();
 });
 
@@ -261,6 +273,8 @@ function initTabs() {
         startNewTypingQuestion();
       } else if (targetTab === "cases-tab") {
         if (!currentCaseChallenge) startNewCaseQuestion();
+      } else if (targetTab === "possessives-tab") {
+        if (!currentPossChallenge) startNewPossQuestion();
       } else if (targetTab === "manager-tab") {
         renderCardsTable();
       }
@@ -805,6 +819,7 @@ function resetSessionScore() {
   resetQuizSessionScore();
   resetTypingSessionScore();
   resetCaseSessionScore();
+  resetPossSessionScore();
 }
 
 // ==========================================
@@ -2118,6 +2133,7 @@ function setupKeyboardShortcuts() {
     const quizTabActive = document.getElementById("quiz-tab").classList.contains("active");
     const flashcardTabActive = document.getElementById("flashcard-tab").classList.contains("active");
     const casesTabActive = document.getElementById("cases-tab") && document.getElementById("cases-tab").classList.contains("active");
+    const possTabActive = document.getElementById("possessives-tab") && document.getElementById("possessives-tab").classList.contains("active");
 
     if (quizTabActive) {
       if (["1", "2", "3", "4"].includes(e.key)) {
@@ -2157,6 +2173,21 @@ function setupKeyboardShortcuts() {
           nextBtn.click();
         }
       }
+    } else if (possTabActive) {
+      if (["1", "2", "3", "4"].includes(e.key)) {
+        const index = parseInt(e.key, 10);
+        const btn = document.querySelector(`.poss-option-btn[data-index="${index}"]`);
+        if (btn && !btn.disabled) {
+          btn.click();
+        }
+      } else if (e.key === " " || e.key === "Enter") {
+        const feedbackBox = document.getElementById("poss-feedback-box");
+        const nextBtn = document.getElementById("poss-next-btn");
+        if (feedbackBox && feedbackBox.style.display !== "none" && nextBtn) {
+          e.preventDefault();
+          nextBtn.click();
+        }
+      }
     }
   });
 }
@@ -2168,8 +2199,490 @@ function shuffleArray(arr) {
   }
 }
 
+// ==========================================
+// MODULE : POSSESSIFS & DÉMONSTRATIFS
+// ==========================================
+
+function initPossessives() {
+  updatePossCounts();
+  startNewPossQuestion();
+  const audioBtn = document.getElementById("poss-audio-btn");
+  if (audioBtn) {
+    audioBtn.addEventListener("click", () => {
+      if (currentPossChallenge) {
+        speakPolish(currentPossChallenge.fullSentence);
+      }
+    });
+  }
+}
+
+function updatePossCounts() {
+  if (typeof POSSESSIVE_CHALLENGES === "undefined") return;
+
+  const total = POSSESSIVE_CHALLENGES.length;
+  const l1Count = POSSESSIVE_CHALLENGES.filter(c => c.level === 1).length;
+  const l2Count = POSSESSIVE_CHALLENGES.filter(c => c.level === 2).length;
+
+  const countAll = document.getElementById("poss-count-all");
+  const countL1 = document.getElementById("poss-count-l1");
+  const countL2 = document.getElementById("poss-count-l2");
+
+  if (countAll) countAll.innerText = total;
+  if (countL1) countL1.innerText = l1Count;
+  if (countL2) countL2.innerText = l2Count;
+
+  // Catégories
+  const cat1st = POSSESSIVE_CHALLENGES.filter(c => c.category === "1st-sg" || c.category === "1st-pl").length;
+  const cat2nd = POSSESSIVE_CHALLENGES.filter(c => c.category === "2nd-sg" || c.category === "2nd-pl").length;
+  const cat3rd = POSSESSIVE_CHALLENGES.filter(c => c.category === "3rd-invariable").length;
+  const catReflexive = POSSESSIVE_CHALLENGES.filter(c => c.category === "reflexive").length;
+  const catDemonstrative = POSSESSIVE_CHALLENGES.filter(c => c.category === "demonstrative").length;
+
+  const elCatAll = document.getElementById("poss-cat-count-all");
+  const elCat1st = document.getElementById("poss-cat-count-1st");
+  const elCat2nd = document.getElementById("poss-cat-count-2nd");
+  const elCat3rd = document.getElementById("poss-cat-count-3rd");
+  const elCatReflexive = document.getElementById("poss-cat-count-reflexive");
+  const elCatDemonstrative = document.getElementById("poss-cat-count-demonstrative");
+
+  if (elCatAll) elCatAll.innerText = total;
+  if (elCat1st) elCat1st.innerText = cat1st;
+  if (elCat2nd) elCat2nd.innerText = cat2nd;
+  if (elCat3rd) elCat3rd.innerText = cat3rd;
+  if (elCatReflexive) elCatReflexive.innerText = catReflexive;
+  if (elCatDemonstrative) elCatDemonstrative.innerText = catDemonstrative;
+}
+
+function setPossLevelFilter(level) {
+  currentPossLevelFilter = level;
+
+  // Mettre à jour boutons pilules de niveau
+  const pills = document.querySelectorAll("#possessives-tab .cases-filter-bar .pill-filter-btn");
+  pills.forEach(p => p.classList.remove("active"));
+
+  const targetId = level === "all" ? "poss-level-pill-all" : `poss-level-pill-${level}`;
+  const activePill = document.getElementById(targetId);
+  if (activePill) activePill.classList.add("active");
+
+  startNewPossQuestion();
+}
+
+function setPossCategoryFilter(category) {
+  currentPossCategoryFilter = category;
+
+  // Mettre à jour boutons pilules de catégorie
+  const pills = document.querySelectorAll("#possessives-tab .cases-type-filter-bar .pill-type-btn");
+  pills.forEach(p => p.classList.remove("active"));
+
+  let targetId = "poss-cat-all";
+  if (category === "1st") targetId = "poss-cat-1st";
+  else if (category === "2nd") targetId = "poss-cat-2nd";
+  else if (category === "3rd-invariable") targetId = "poss-cat-3rd";
+  else if (category === "reflexive") targetId = "poss-cat-reflexive";
+  else if (category === "demonstrative") targetId = "poss-cat-demonstrative";
+
+  const activePill = document.getElementById(targetId);
+  if (activePill) activePill.classList.add("active");
+
+  startNewPossQuestion();
+}
+
+function getFilteredPossChallenges() {
+  if (typeof POSSESSIVE_CHALLENGES === "undefined" || POSSESSIVE_CHALLENGES.length === 0) return [];
+
+  return POSSESSIVE_CHALLENGES.filter(c => {
+    // Filtre de niveau (1 ou 2)
+    if (currentPossLevelFilter !== "all" && c.level !== currentPossLevelFilter) {
+      return false;
+    }
+    // Filtre de catégorie
+    if (currentPossCategoryFilter !== "all") {
+      if (currentPossCategoryFilter === "1st") {
+        if (c.category !== "1st-sg" && c.category !== "1st-pl") return false;
+      } else if (currentPossCategoryFilter === "2nd") {
+        if (c.category !== "2nd-sg" && c.category !== "2nd-pl") return false;
+      } else if (c.category !== currentPossCategoryFilter) {
+        return false;
+      }
+    }
+    return true;
+  });
+}
+
+function startNewPossQuestion() {
+  possAnswered = false;
+  const pool = getFilteredPossChallenges();
+
+  if (pool.length === 0) {
+    const meaningEl = document.getElementById("poss-target-meaning");
+    if (meaningEl) meaningEl.innerText = "Aucun défi dans cette sélection";
+    return;
+  }
+
+  // Éviter de répéter immédiatement la même question
+  let candidates = pool.filter(c => !currentPossChallenge || c.id !== currentPossChallenge.id);
+  if (candidates.length === 0) candidates = pool;
+
+  currentPossChallenge = candidates[Math.floor(Math.random() * candidates.length)];
+
+  // Mise à jour de l'en-tête (badge niveau / cas)
+  const badgeEl = document.getElementById("poss-badge-level");
+  if (badgeEl) {
+    const levelClass = currentPossChallenge.level === 1 ? "poss-level-1" : "poss-level-2";
+    const levelIcon = currentPossChallenge.level === 1 ? "🟢" : "🔵";
+    badgeEl.className = `badge-case-name ${levelClass}`;
+    badgeEl.innerHTML = `${levelIcon} NIVEAU ${currentPossChallenge.level} • ${currentPossChallenge.caseLabelFr.toUpperCase()}`;
+  }
+
+  // Sens attendu et contexte du nom
+  const meaningEl = document.getElementById("poss-target-meaning");
+  const nounContextEl = document.getElementById("poss-noun-context");
+  const caseLabelEl = document.getElementById("poss-case-label");
+
+  if (meaningEl) meaningEl.innerText = `« ${currentPossChallenge.targetMeaning} »`;
+  if (nounContextEl) nounContextEl.innerText = currentPossChallenge.nounContext;
+  if (caseLabelEl) caseLabelEl.innerText = currentPossChallenge.caseLabelFr;
+
+  // Phrase avec le trou
+  const beforeEl = document.getElementById("poss-sentence-before");
+  const gapEl = document.getElementById("poss-gap-slot");
+  const afterEl = document.getElementById("poss-sentence-after");
+
+  if (beforeEl) beforeEl.innerText = currentPossChallenge.sentenceBefore;
+  if (gapEl) {
+    gapEl.innerText = "[ ... ]";
+    gapEl.className = "case-gap-slot";
+  }
+  if (afterEl) afterEl.innerText = currentPossChallenge.sentenceAfter;
+
+  // Cacher audio et feedback
+  const audioBtn = document.getElementById("poss-audio-btn");
+  if (audioBtn) audioBtn.style.display = "none";
+
+  const feedbackBox = document.getElementById("poss-feedback-box");
+  if (feedbackBox) feedbackBox.style.display = "none";
+
+  renderPossOptions();
+}
+
+function renderPossOptions() {
+  const container = document.getElementById("poss-options-container");
+  if (!container || !currentPossChallenge) return;
+  container.innerHTML = "";
+
+  const options = [...currentPossChallenge.options];
+  shuffleArray(options);
+
+  const letters = ["A", "B", "C", "D"];
+
+  options.forEach((opt, idx) => {
+    const btn = document.createElement("button");
+    btn.className = "case-option-btn poss-option-btn";
+    btn.setAttribute("data-index", idx + 1);
+
+    btn.innerHTML = `
+      <span class="case-option-letter">${letters[idx]}</span>
+      <div class="case-option-content" style="display:flex; align-items:baseline; gap:0.5rem;">
+        <span class="case-fullword" style="font-weight:700; font-size:1.15rem;">${opt.word}</span>
+      </div>
+    `;
+
+    btn.addEventListener("click", () => handlePossOptionClick(btn, opt));
+    container.appendChild(btn);
+  });
+}
+
+function handlePossOptionClick(selectedBtn, selectedOption) {
+  if (possAnswered || !currentPossChallenge) return;
+  possAnswered = true;
+
+  possTotal++;
+  const isCorrect = selectedOption.isCorrect;
+  const allBtns = document.querySelectorAll(".poss-option-btn");
+
+  allBtns.forEach(btn => {
+    btn.disabled = true;
+  });
+
+  const gapEl = document.getElementById("poss-gap-slot");
+  const audioBtn = document.getElementById("poss-audio-btn");
+  const feedbackBox = document.getElementById("poss-feedback-box");
+  const titleEl = document.getElementById("poss-feedback-title");
+  const expEl = document.getElementById("poss-feedback-explanation");
+  const nextBtn = document.getElementById("poss-next-btn");
+
+  if (isCorrect) {
+    possScore++;
+    possStreak++;
+    selectedBtn.classList.add("correct");
+
+    if (gapEl) {
+      gapEl.innerText = selectedOption.word;
+      gapEl.className = "case-gap-slot filled-correct";
+    }
+
+    if (titleEl) {
+      titleEl.innerHTML = `<span style="color:var(--success);">✅ Excellent ! Dobrze !</span>`;
+    }
+  } else {
+    possStreak = 0;
+    selectedBtn.classList.add("wrong");
+
+    // Trouver et surligner le bon bouton
+    const correctOpt = currentPossChallenge.options.find(o => o.isCorrect);
+    allBtns.forEach(btn => {
+      const fullWordSpan = btn.querySelector(".case-fullword");
+      if (fullWordSpan && correctOpt && fullWordSpan.innerText.trim() === correctOpt.word.trim()) {
+        btn.classList.add("correct");
+      }
+    });
+
+    if (gapEl) {
+      gapEl.innerText = currentPossChallenge.gapWord;
+      gapEl.className = "case-gap-slot filled-wrong";
+    }
+
+    if (titleEl) {
+      titleEl.innerHTML = `<span style="color:var(--danger);">❌ Incorrect.</span> La bonne réponse était : <strong>${currentPossChallenge.gapWord}</strong>`;
+    }
+  }
+
+  // Révélation de la règle
+  if (expEl) {
+    expEl.innerHTML = `
+      <div style="font-size:1.1rem; font-weight:700; color:#0f172a; margin-bottom:0.4rem;">
+        🇵🇱 ${currentPossChallenge.fullSentence}
+      </div>
+      <div style="font-size:0.95rem; color:var(--text-muted); font-style:italic; margin-bottom:0.65rem;">
+        🇫🇷 "${currentPossChallenge.translationFr}"
+      </div>
+      <div style="background:#f8fafc; border-left:3px solid var(--primary); padding:0.65rem 0.85rem; border-radius:0 6px 6px 0; font-size:0.9rem; line-height:1.55; color:#334155;">
+        ${currentPossChallenge.ruleExplanation}
+      </div>
+    `;
+  }
+
+  // Activer l'audio
+  if (audioBtn) {
+    audioBtn.style.display = "inline-flex";
+    speakPolish(currentPossChallenge.fullSentence);
+  }
+
+  if (feedbackBox) {
+    feedbackBox.style.display = "block";
+  }
+
+  if (nextBtn) {
+    nextBtn.focus();
+  }
+
+  updatePossStatsCounters();
+}
+
+function updatePossStatsCounters() {
+  const scoreEl = document.getElementById("poss-score-val");
+  const streakEl = document.getElementById("poss-streak-val");
+
+  if (scoreEl) scoreEl.innerText = `${possScore} / ${possTotal}`;
+  if (streakEl) streakEl.innerText = `${possStreak} 🔥`;
+}
+
+function resetPossSessionScore() {
+  possScore = 0;
+  possTotal = 0;
+  possStreak = 0;
+  updatePossStatsCounters();
+}
+
+// ------------------------------------------
+// MODAL AIDE-MÉMOIRE DES POSSESSIFS
+// ------------------------------------------
+
+function openPossCheatSheetModal(targetTab = "rules") {
+  const modal = document.getElementById("poss-cheatsheet-modal");
+  if (!modal) return;
+  modal.style.display = "flex";
+  switchPossCheatSheetTab(targetTab);
+}
+
+function closePossCheatSheetModal() {
+  const modal = document.getElementById("poss-cheatsheet-modal");
+  if (modal) modal.style.display = "none";
+}
+
+function handlePossModalBackdropClick(event) {
+  if (event.target.id === "poss-cheatsheet-modal") {
+    closePossCheatSheetModal();
+  }
+}
+
+function switchPossCheatSheetTab(tabKey) {
+  const tabBtns = document.querySelectorAll("#modal-poss-tabs .modal-tab-btn");
+  tabBtns.forEach(btn => {
+    if (btn.getAttribute("data-posstab") === tabKey) {
+      btn.classList.add("active");
+    } else {
+      btn.classList.remove("active");
+    }
+  });
+
+  const contentContainer = document.getElementById("modal-poss-cheatsheet-content");
+  if (!contentContainer) return;
+
+  if (tabKey === "rules") {
+    contentContainer.innerHTML = renderPossRulesView();
+  } else if (tabKey === "nominative") {
+    contentContainer.innerHTML = renderPossNominativeTableView();
+  } else if (tabKey === "cases") {
+    contentContainer.innerHTML = renderPossCasesTableView();
+  }
+}
+
+function renderPossRulesView() {
+  if (typeof POSSESSIVE_CHEATSHEET === "undefined") return "";
+
+  return `
+    <div style="display:flex; flex-direction:column; gap:1.25rem;">
+      <div style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:10px; padding:1rem 1.25rem;">
+        <h4 style="margin:0 0 0.5rem 0; color:#1d4ed8; font-size:1.05rem;">🌟 Les 4 Piliers des Possessifs & Démonstratifs Polonais</h4>
+        <p style="margin:0; font-size:0.9rem; color:#1e3a8a; line-height:1.5;">
+          Pour maîtriser les possessifs polonais (<em>mój, nasz, twój, jego, tej...</em>), il suffit de comprendre 4 logiques simples :
+        </p>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1rem;">
+        ${POSSESSIVE_CHEATSHEET.goldenRules.map(rule => `
+          <div style="background:white; border:1px solid var(--border); border-radius:8px; padding:1rem; box-shadow:0 1px 3px rgba(0,0,0,0.05);">
+            <div style="font-weight:700; color:#0f172a; font-size:0.95rem; margin-bottom:0.4rem; display:flex; align-items:center; gap:0.4rem;">
+              ${rule.title}
+            </div>
+            <div style="font-size:0.88rem; line-height:1.55; color:#334155;">
+              ${rule.text}
+            </div>
+          </div>
+        `).join("")}
+      </div>
+
+      <div style="display:flex; justify-content:center; gap:0.75rem; flex-wrap:wrap; margin-top:0.5rem;">
+        <button type="button" class="btn-primary" onclick="switchPossCheatSheetTab('nominative')">
+          📝 Voir le Tableau du Nominatif de Base &rarr;
+        </button>
+        <button type="button" class="btn-secondary" onclick="switchPossCheatSheetTab('cases')">
+          🏛️ Voir le Tableau des Déclinaisons & Cas &rarr;
+        </button>
+      </div>
+    </div>
+  `;
+}
+
+function renderPossNominativeTableView() {
+  if (typeof POSSESSIVE_CHEATSHEET === "undefined") return "";
+
+  return `
+    <div>
+      <div style="margin-bottom:1rem;">
+        <h4 style="margin:0 0 0.35rem 0; font-size:1.1rem; color:#0f172a;">📝 Niveau 1 : Formes de Base au Nominatif (Sujet)</h4>
+        <p style="margin:0; font-size:0.85rem; color:var(--text-muted);">
+          Notez bien que les possessifs s'accordent en genre et en nombre avec le nom possédé. Remarquez la forme spéciale du pluriel viril (réservée aux groupes contenant des hommes) et la totale invariance de <em>jego, jej, ich</em>.
+        </p>
+      </div>
+
+      <div class="cheat-table-wrap">
+        <table class="cheat-table">
+          <thead>
+            <tr>
+              <th style="width:20%;">Personne / Pronom</th>
+              <th style="width:16%;">Masculin (ten)</th>
+              <th style="width:16%;">Féminin (ta)</th>
+              <th style="width:16%;">Neutre (to)</th>
+              <th style="width:16%;">Pluriel Viril (hommes)</th>
+              <th style="width:16%;">Pluriel Non-viril</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${POSSESSIVE_CHEATSHEET.nominativeTable.map(row => `
+              <tr>
+                <td><strong>${row.person}</strong></td>
+                <td><strong style="color:var(--primary);">${row.m}</strong></td>
+                <td><strong style="color:#d946ef;">${row.f}</strong></td>
+                <td><strong style="color:#0284c7;">${row.n}</strong></td>
+                <td><strong style="color:#16a34a;">${row.virilPl}</strong></td>
+                <td><strong style="color:#ea580c;">${row.nonVirilPl}</strong> ${row.note ? `<span style="font-size:0.75rem; display:block; color:#64748b;">${row.note}</span>` : ""}</td>
+              </tr>
+            `).join("")}
+          </tbody>
+        </table>
+      </div>
+
+      <div style="background:#fefce8; border:1px solid #fef08a; border-radius:8px; padding:0.85rem 1rem; margin-top:1rem; font-size:0.88rem; color:#854d0e; line-height:1.5;">
+        💡 <strong>Mémo express :</strong> Féminin = terminaison <strong>-a</strong> (moja, twoja, nasza, wasza, ta) • Neutre = terminaison <strong>-e</strong> (moje, twoje, nasze, wasze, to) • Pluriel viril = terminaison <strong>-i</strong> (moi, twoi, nasi, wasi, ci).
+      </div>
+    </div>
+  `;
+}
+
+function renderPossCasesTableView() {
+  if (typeof POSSESSIVE_CHEATSHEET === "undefined") return "";
+
+  return `
+    <div>
+      <div style="margin-bottom:1rem;">
+        <h4 style="margin:0 0 0.35rem 0; font-size:1.1rem; color:#0f172a;">🏛️ Niveau 2 : Déclinaisons dans les Cas Grammaticaux</h4>
+        <p style="margin:0; font-size:0.85rem; color:var(--text-muted);">
+          Voici les terminaisons clés appliquées aux possessifs et au démonstratif (<em>ten &rarr; tego, tej, tym, tą...</em>). Rappel : <strong>jego, jej, ich</strong> restent strictement invariables dans tous ces cas !
+        </p>
+      </div>
+
+      <div class="cheat-table-wrap">
+        <table class="cheat-table">
+          <thead>
+            <tr>
+              <th style="width:18%;">Cas & Rôle</th>
+              <th style="width:16%;">Masculin Animé</th>
+              <th style="width:16%;">Masculin Inanimé</th>
+              <th style="width:16%;">Féminin</th>
+              <th style="width:16%;">Neutre</th>
+              <th style="width:18%;">Exemple concret</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${POSSESSIVE_CHEATSHEET.casesTable.map(row => `
+              <tr>
+                <td>
+                  <strong>${row.caseName}</strong>
+                  <div style="font-size:0.75rem; color:var(--text-muted); font-weight:normal;">${row.role}</div>
+                </td>
+                <td><strong style="color:#1e40af;">${row.mAnim}</strong></td>
+                <td><strong style="color:#0f766e;">${row.mInan}</strong></td>
+                <td><strong style="color:#be185d;">${row.f}</strong></td>
+                <td><strong style="color:#0284c7;">${row.n}</strong></td>
+                <td style="font-size:0.82rem; font-style:italic;">${row.example}</td>
+              </tr>
+            `).join("")}
+          </tbody>
+        </table>
+      </div>
+
+      <div style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px; padding:0.85rem 1rem; margin-top:1rem; font-size:0.88rem; color:#166534; line-height:1.5;">
+        🎯 <strong>Les 3 terminaisons magiques à retenir :</strong><br>
+        1. <strong>Féminin Génitif / Datif / Locatif :</strong> toujours en <strong>-ej</strong> &rarr; <em>mojej, twojej, naszej, <strong>tej</strong> (cette / de cette)</em> !<br>
+        2. <strong>Féminin Accusatif & Instrumental :</strong> toujours en <strong>-ą</strong> &rarr; <em>moją, twoją, naszą, tą</em>.<br>
+        3. <strong>Masculin & Neutre Instrumental / Locatif :</strong> toujours en <strong>-im / -ym</strong> &rarr; <em>moim, twoim, naszym, tym</em>.
+      </div>
+    </div>
+  `;
+}
+
 // Expositions globales pour les événements HTML inline
 window.resetQuizSessionScore = resetQuizSessionScore;
 window.resetTypingSessionScore = resetTypingSessionScore;
 window.resetCaseSessionScore = resetCaseSessionScore;
+window.resetPossSessionScore = resetPossSessionScore;
 window.resetSessionScore = resetSessionScore;
+window.openPossCheatSheetModal = openPossCheatSheetModal;
+window.closePossCheatSheetModal = closePossCheatSheetModal;
+window.handlePossModalBackdropClick = handlePossModalBackdropClick;
+window.switchPossCheatSheetTab = switchPossCheatSheetTab;
+window.setPossLevelFilter = setPossLevelFilter;
+window.setPossCategoryFilter = setPossCategoryFilter;
+window.startNewPossQuestion = startNewPossQuestion;
