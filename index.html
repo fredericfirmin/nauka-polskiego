@@ -17,7 +17,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192.png">
   
-  <link rel="stylesheet" href="style.css?v=11">
+  <link rel="stylesheet" href="style.css?v=12">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇵🇱</text></svg>">
 </head>
 <body>
@@ -33,25 +33,37 @@
         <h1 class="app-title">Nauka <span>Polskiego</span></h1>
       </div>
 
-      <!-- Navigation par Onglets -->
+      <!-- Navigation par Onglets (Top bar sur ordi, Bottom Bar native sur mobile) -->
       <nav class="nav-tabs">
         <button class="tab-btn active" data-tab="quiz-tab">
-          <span>🎯</span> Quiz QCM
+          <span class="tab-icon">🎯</span>
+          <span class="tab-label-desktop">Quiz QCM</span>
+          <span class="tab-label-mobile">QCM</span>
         </button>
         <button class="tab-btn" data-tab="flashcard-tab">
-          <span>🎴</span> Flashcards
+          <span class="tab-icon">🎴</span>
+          <span class="tab-label-desktop">Flashcards</span>
+          <span class="tab-label-mobile">Cartes</span>
         </button>
         <button class="tab-btn" data-tab="typing-tab">
-          <span>✍️</span> Écriture
+          <span class="tab-icon">✍️</span>
+          <span class="tab-label-desktop">Écriture</span>
+          <span class="tab-label-mobile">Écriture</span>
         </button>
         <button class="tab-btn" data-tab="cases-tab">
-          <span>🧩</span> Jeu des Cas
+          <span class="tab-icon">🧩</span>
+          <span class="tab-label-desktop">Jeu des Cas</span>
+          <span class="tab-label-mobile">Cas</span>
         </button>
         <button class="tab-btn" data-tab="possessives-tab">
-          <span>👑</span> Possessifs
+          <span class="tab-icon">👑</span>
+          <span class="tab-label-desktop">Possessifs</span>
+          <span class="tab-label-mobile">Possessifs</span>
         </button>
         <button class="tab-btn" data-tab="manager-tab">
-          <span>📚</span> Vocabulaire (<span id="stat-total-cards">161</span>)
+          <span class="tab-icon">📚</span>
+          <span class="tab-label-desktop">Vocabulaire (<span id="stat-total-cards">161</span>)</span>
+          <span class="tab-label-mobile">Mots (<span id="stat-total-cards-mob">161</span>)</span>
         </button>
       </nav>
     </div>
@@ -680,8 +692,8 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="data.js?v=11"></script>
-  <script src="app.js?v=11"></script>
+  <script src="data.js?v=12"></script>
+  <script src="app.js?v=12"></script>
   <script>
     // Gestion du champ 'Autre' catégorie dans le formulaire d'ajout
     const catSelect = document.getElementById("card-category-input");

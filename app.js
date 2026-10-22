@@ -823,7 +823,9 @@ function resetQuizSessionScore() {
 
 function updateStatsCounters() {
   const totalCardsEl = document.getElementById("stat-total-cards");
+  const totalCardsMobEl = document.getElementById("stat-total-cards-mob");
   if (totalCardsEl) totalCardsEl.innerText = cards.length;
+  if (totalCardsMobEl) totalCardsMobEl.innerText = cards.length;
 }
 
 function resetSessionScore() {

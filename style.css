@@ -129,6 +129,14 @@ header {
   box-shadow: 0 2px 5px rgba(0,0,0,0.06);
 }
 
+.tab-label-desktop {
+  display: inline;
+}
+
+.tab-label-mobile {
+  display: none;
+}
+
 /* Main Container */
 main {
   max-width: 1000px;
@@ -1323,20 +1331,24 @@ footer {
    ======================================================== */
 
 @media (max-width: 768px) {
-  /* En-tête compact et adapté à la Dynamic Island / encoche */
+  /* En-tête mobile épuré et compact */
   .app-header {
-    padding-top: calc(0.6rem + env(safe-area-inset-top, 0px));
-    padding-bottom: 0.6rem;
-    padding-left: calc(0.75rem + env(safe-area-inset-left, 0px));
-    padding-right: calc(0.75rem + env(safe-area-inset-right, 0px));
+    padding-top: calc(0.5rem + env(safe-area-inset-top, 0px));
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
 
   .header-container {
-    gap: 0.5rem;
+    justify-content: center;
+    gap: 0;
   }
 
   .logo-area {
-    width: 100%;
+    width: auto;
     justify-content: center;
   }
 
@@ -1344,33 +1356,81 @@ footer {
     font-size: 1.15rem;
   }
 
-  /* Barre d'onglets défilante horizontale tactile (scroll fluide) */
-  .nav-tabs {
-    width: 100%;
-    overflow-x: auto;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    padding: 4px;
-    gap: 4px;
-    border-radius: 10px;
-  }
-
-  .nav-tabs::-webkit-scrollbar {
+  /* BARRE DE NAVIGATION MOBILE FIXÉE EN BAS (NATIVE iOS BOTTOM BAR) */
+  .tab-label-desktop {
     display: none;
   }
 
-  .tab-btn {
-    flex-shrink: 0;
-    padding: 0.45rem 0.75rem;
-    font-size: 0.82rem;
+  .tab-label-mobile {
+    display: block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    line-height: 1;
+    white-space: nowrap;
   }
 
-  /* Conteneur principal plein écran confortable */
+  .nav-tabs {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.94);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    backdrop-filter: blur(20px) saturate(180%);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.06);
+    padding: 6px 2px calc(8px + env(safe-area-inset-bottom, 0px)) 2px;
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+    overflow: visible;
+    gap: 1px;
+  }
+
+  .tab-btn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 1px;
+    gap: 3px;
+    font-size: 0.65rem;
+    color: #64748b;
+    border-radius: 10px;
+    background: transparent;
+    border: none;
+    box-shadow: none !important;
+    transition: all 0.15s ease;
+    min-width: 0;
+  }
+
+  .tab-btn .tab-icon {
+    font-size: 1.25rem;
+    line-height: 1;
+    display: block;
+  }
+
+  .tab-btn.active {
+    color: var(--primary);
+    background: rgba(220, 38, 38, 0.08);
+    font-weight: 700;
+  }
+
+  .tab-btn.active .tab-icon {
+    transform: scale(1.15);
+    transition: transform 0.15s ease;
+  }
+
+  /* Conteneur principal avec dégagement généreux pour la Bottom Bar */
   main {
-    margin: 0.75rem auto 1.5rem auto;
-    padding: 0 0.5rem;
-    padding-bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+    margin: 0.75rem auto;
+    padding: 0 0.65rem;
+    padding-bottom: calc(85px + env(safe-area-inset-bottom, 0px)) !important;
   }
 
   /* Cartes de jeu et formulaires adaptés */
