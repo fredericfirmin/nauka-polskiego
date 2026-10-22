@@ -1,5 +1,5 @@
-const STORAGE_KEY = "nauka_polskiego_cards_v7";
-const LEGACY_STORAGE_KEY = "nauka_polskiego_cards_v6";
+const STORAGE_KEY = "nauka_polskiego_cards_v8";
+const LEGACY_STORAGE_KEY = "nauka_polskiego_cards_v7";
 
 // État global de l'application
 let cards = [];
@@ -28,6 +28,7 @@ let typingDirection = "fr-pl";
 
 // État Jeu des Cas (Przypadki)
 let currentCaseFilter = "all";
+let currentCaseTypeFilter = "all"; // "all", "noun", "adjective", "plural"
 let currentCaseChallenge = null;
 let caseScore = 0;
 let caseTotal = 0;
@@ -76,13 +77,23 @@ function registerServiceWorker() {
 function loadCards() {
   let saved = localStorage.getItem(STORAGE_KEY);
   if (!saved) {
-    saved = localStorage.getItem(LEGACY_STORAGE_KEY);
+    // Parcourt les versions antérieures pour garantir la conservation des cartes ajoutées manuellement
+    for (let v = 20; v >= 1; v--) {
+      const candidate = localStorage.getItem(`nauka_polskiego_cards_v${v}`);
+      if (candidate) {
+        saved = candidate;
+        break;
+      }
+    }
+    if (!saved) {
+      saved = localStorage.getItem("nauka_polskiego_cards");
+    }
   }
 
   if (saved) {
     try {
       cards = JSON.parse(saved);
-      // Synchroniser avec les nouvelles définitions de genres et de réponses acceptées
+      // Synchroniser avec les nouvelles définitions officielles tout en préservant les cartes personnalisées
       synchronizeWithDefaultCards();
     } catch (e) {
       console.error("Erreur lecture localStorage, restauration", e);
@@ -762,6 +773,13 @@ function updateStatsCounters() {
   if (totalCardsEl) totalCardsEl.innerText = cards.length;
 }
 
+function resetSessionScore() {
+  score = 0;
+  totalAnswers = 0;
+  streak = 0;
+  updateStatsCounters();
+}
+
 // ==========================================
 // MODE FLASHCARD (3D FLIP)
 // ==========================================
@@ -1025,6 +1043,25 @@ function normalizeText(str) {
 }
 
 /**
+ * Retire les signes diacritiques polonais pour tolérer la frappe
+ * sans clavier polonais ou avec substitution courante (ź/ż/z, ł/l, etc.).
+ */
+function stripPolishDiacritics(str) {
+  if (!str) return "";
+  return str
+    .replace(/[ąĄ]/g, "a")
+    .replace(/[ćĆ]/g, "c")
+    .replace(/[ęĘ]/g, "e")
+    .replace(/[łŁ]/g, "l")
+    .replace(/[ńŃ]/g, "n")
+    .replace(/[óÓ]/g, "o")
+    .replace(/[śŚ]/g, "s")
+    .replace(/[źŹżŻ]/g, "z")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
+
+/**
  * Distance de Damerau-Levenshtein
  * Prend en compte l'inversion de 2 lettres adjacentes (ex: "stopni" vs "spotni" = distance 1)
  */
@@ -1082,11 +1119,27 @@ function checkTypingAnswer() {
     }
   }
 
-  // 2. Si pas d'égalité stricte, vérification par distance (tolérance aux inversions / typos légères)
+  // 2. Vérification avec diacritiques polonais normalisés (ex: źle -> złe, taksowka -> taksówka, etc.)
+  let isDiacriticMatch = false;
+  let diacriticMatchCandidate = null;
+
+  if (!isExactMatch) {
+    const strippedUser = stripPolishDiacritics(normalizedUser);
+    for (const cand of candidateAnswers) {
+      const strippedCand = stripPolishDiacritics(normalizeText(cand));
+      if (strippedCand === strippedUser) {
+        isDiacriticMatch = true;
+        diacriticMatchCandidate = cand;
+        break;
+      }
+    }
+  }
+
+  // 3. Si pas d'égalité stricte ni diacritique, vérification par distance Levenshtein
   let bestDistance = Infinity;
   let closestAnswer = typingCard.pl;
 
-  if (!isExactMatch) {
+  if (!isExactMatch && !isDiacriticMatch) {
     for (const cand of candidateAnswers) {
       const normCand = normalizeText(cand);
       const dist = damerauLevenshtein(normalizedUser, normCand);
@@ -1095,16 +1148,18 @@ function checkTypingAnswer() {
         closestAnswer = cand;
       }
     }
+  } else if (isDiacriticMatch) {
+    closestAnswer = diacriticMatchCandidate;
   }
 
-  // Seuil de tolérance :
-  // - Chaîne de moins de 5 caractères : distance max 0 (exacte)
-  // - Mot moyen (5 à 9 caractères) : distance max 1 (ex: spotni vs stopni)
-  // - Phrase longue (10 caractères et +) : distance max 2 (ex: coquille légère sur une lettre ou inversion)
+  // Seuil de tolérance Levenshtein :
+  // - Chaîne courte (moins de 4 caractères) : distance max 0
+  // - Mot moyen (4 à 8 caractères) : distance max 1 (ex: spotni vs stopni)
+  // - Phrase longue (9 caractères et +) : distance max 2
   const candLength = normalizeText(closestAnswer).length;
-  const maxAllowedDistance = candLength < 5 ? 0 : (candLength < 10 ? 1 : 2);
+  const maxAllowedDistance = candLength < 4 ? 0 : (candLength < 9 ? 1 : 2);
 
-  const isToleratedMatch = !isExactMatch && (bestDistance <= maxAllowedDistance);
+  const isLevenshteinMatch = !isExactMatch && !isDiacriticMatch && (bestDistance <= maxAllowedDistance);
   const feedbackBox = document.getElementById("typing-feedback");
 
   totalAnswers++;
@@ -1121,7 +1176,20 @@ function checkTypingAnswer() {
       ${typingCard.genderNotes ? `<div style="font-size:0.85rem; color:var(--text-muted); margin-top:0.35rem;">💡 ${typingCard.genderNotes}</div>` : ""}
     `;
     speakPolish(bestMatch);
-  } else if (isToleratedMatch) {
+  } else if (isDiacriticMatch) {
+    recordCardResult(typingCard.id, true);
+    score++;
+    streak++;
+    feedbackBox.innerHTML = `
+      <div style="color: var(--success); font-weight:700; font-size:1.15rem; margin-bottom:0.35rem;">
+        ✅ Bonne réponse acceptée ! (Attention aux accents polonais)
+      </div>
+      <div>La graphie polonaise exacte est : <strong style="color:var(--primary); font-size:1.1rem;">${closestAnswer}</strong></div>
+      <div style="font-size:0.85rem; color:var(--text-muted); margin-top:0.3rem;">Votre saisie : <em>${rawInput}</em></div>
+      ${typingCard.genderNotes ? `<div style="font-size:0.85rem; color:var(--text-muted); margin-top:0.35rem;">💡 ${typingCard.genderNotes}</div>` : ""}
+    `;
+    speakPolish(closestAnswer);
+  } else if (isLevenshteinMatch) {
     recordCardResult(typingCard.id, true);
     score++;
     streak++;
@@ -1137,7 +1205,9 @@ function checkTypingAnswer() {
   } else {
     recordCardResult(typingCard.id, false);
     streak = 0;
-    const expectedWord = typingCard.pl;
+    const expectedWord = (closestAnswer && closestAnswer !== typingCard.pl)
+      ? `${closestAnswer} (forme standard : ${typingCard.pl})`
+      : typingCard.pl;
     feedbackBox.innerHTML = `
       <div style="color: var(--danger); font-weight:700; font-size:1.15rem; margin-bottom:0.35rem;">
         ❌ Pas tout à fait...
@@ -1146,7 +1216,7 @@ function checkTypingAnswer() {
       <div style="font-size:0.85rem; color:var(--text-muted); margin-top:0.3rem;">Votre saisie : <em>${rawInput || "(vide)"}</em></div>
       ${typingCard.genderNotes ? `<div style="font-size:0.85rem; color:var(--text-muted); margin-top:0.35rem;">💡 ${typingCard.genderNotes}</div>` : ""}
     `;
-    speakPolish(expectedWord);
+    speakPolish(closestAnswer || typingCard.pl);
   }
 
   updateStatsCounters();
@@ -1175,6 +1245,13 @@ function initCases() {
   }
 }
 
+function isSameCase(caseA, caseB) {
+  if (!caseA || !caseB) return false;
+  const a = caseA.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  const b = caseB.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  return a === b;
+}
+
 function updateCaseCounts() {
   const elAll = document.getElementById("case-count-all");
   const elBiernik = document.getElementById("case-count-biernik");
@@ -1182,19 +1259,30 @@ function updateCaseCounts() {
   const elMiejscownik = document.getElementById("case-count-miejscownik");
   const elDopelniacz = document.getElementById("case-count-dopelniacz");
 
+  // Compteurs par type de cible
+  const elTypeAll = document.getElementById("case-type-count-all");
+  const elTypeNoun = document.getElementById("case-type-count-noun");
+  const elTypeAdj = document.getElementById("case-type-count-adjective");
+  const elTypePlural = document.getElementById("case-type-count-plural");
+
   if (typeof CASE_CHALLENGES === "undefined") return;
 
   if (elAll) elAll.innerText = CASE_CHALLENGES.length;
-  if (elBiernik) elBiernik.innerText = CASE_CHALLENGES.filter(c => c.caseName === "Biernik").length;
-  if (elNarzednik) elNarzednik.innerText = CASE_CHALLENGES.filter(c => c.caseName === "Narzędnik").length;
-  if (elMiejscownik) elMiejscownik.innerText = CASE_CHALLENGES.filter(c => c.caseName === "Miejscownik").length;
-  if (elDopelniacz) elDopelniacz.innerText = CASE_CHALLENGES.filter(c => c.caseName === "Dopełniacz").length;
+  if (elBiernik) elBiernik.innerText = CASE_CHALLENGES.filter(c => isSameCase(c.caseName, "Biernik")).length;
+  if (elNarzednik) elNarzednik.innerText = CASE_CHALLENGES.filter(c => isSameCase(c.caseName, "Narzednik") || isSameCase(c.caseName, "Narzędnik")).length;
+  if (elMiejscownik) elMiejscownik.innerText = CASE_CHALLENGES.filter(c => isSameCase(c.caseName, "Miejscownik")).length;
+  if (elDopelniacz) elDopelniacz.innerText = CASE_CHALLENGES.filter(c => isSameCase(c.caseName, "Dopelniacz") || isSameCase(c.caseName, "Dopełniacz")).length;
+
+  if (elTypeAll) elTypeAll.innerText = CASE_CHALLENGES.length;
+  if (elTypeNoun) elTypeNoun.innerText = CASE_CHALLENGES.filter(c => c.targetType !== "adjective" && !c.isPlural).length;
+  if (elTypeAdj) elTypeAdj.innerText = CASE_CHALLENGES.filter(c => c.targetType === "adjective").length;
+  if (elTypePlural) elTypePlural.innerText = CASE_CHALLENGES.filter(c => c.isPlural || (c.gender && c.gender.toLowerCase().includes("pluriel"))).length;
 }
 
 function setCaseCategoryFilter(filterName) {
   currentCaseFilter = filterName;
 
-  // Mettre à jour l'état visuel des boutons pilules
+  // Mettre à jour l'état visuel des boutons pilules de cas
   const pills = document.querySelectorAll(".cases-filter-bar .pill-filter-btn");
   pills.forEach(p => p.classList.remove("active"));
 
@@ -1206,17 +1294,56 @@ function setCaseCategoryFilter(filterName) {
   startNewCaseQuestion();
 }
 
+function setCaseTypeFilter(typeName) {
+  currentCaseTypeFilter = typeName;
+
+  // Mettre à jour l'état visuel des boutons de type (Tous / Noms / Adjectifs / Pluriels)
+  const pills = document.querySelectorAll(".cases-type-filter-bar .pill-type-btn");
+  pills.forEach(p => p.classList.remove("active"));
+
+  const activePill = document.getElementById(`case-type-${typeName}`);
+  if (activePill) {
+    activePill.classList.add("active");
+  }
+
+  startNewCaseQuestion();
+}
+
 function getFilteredCaseChallenges() {
   if (typeof CASE_CHALLENGES === "undefined" || CASE_CHALLENGES.length === 0) return [];
-  if (currentCaseFilter === "all") {
-    return CASE_CHALLENGES;
-  }
-  return CASE_CHALLENGES.filter(c => c.caseName === currentCaseFilter);
+
+  return CASE_CHALLENGES.filter(c => {
+    // 1. Filtre par cas
+    const caseMatch = currentCaseFilter === "all" || isSameCase(c.caseName, currentCaseFilter);
+    if (!caseMatch) return false;
+
+    // 2. Filtre par type de cible (Noms singulier, Adjectifs, Pluriels)
+    if (currentCaseTypeFilter === "adjective") return c.targetType === "adjective";
+    if (currentCaseTypeFilter === "noun") return c.targetType !== "adjective" && !c.isPlural;
+    if (currentCaseTypeFilter === "plural") return c.isPlural === true || (c.gender && c.gender.toLowerCase().includes("pluriel"));
+
+    return true;
+  });
 }
 
 function startNewCaseQuestion() {
   const deck = getFilteredCaseChallenges();
-  if (deck.length === 0) return;
+  const optionsContainer = document.getElementById("case-options-container");
+
+  if (deck.length === 0) {
+    if (optionsContainer) {
+      optionsContainer.innerHTML = `
+        <div style="grid-column: 1 / -1; padding: 2.5rem 1.5rem; color: var(--text-muted); text-align: center; background:#f8fafc; border-radius:12px; border:1px dashed var(--border);">
+          <div style="font-size:2rem; margin-bottom:0.5rem;">🔍</div>
+          <p style="font-size: 1rem; font-weight:600; color:#334155; margin-bottom: 0.75rem;">
+            Aucun exercice ne correspond à cette combinaison de filtres.
+          </p>
+          <button class="btn-primary" onclick="setCaseTypeFilter('all')">Voir tous les types pour ce cas</button>
+        </div>
+      `;
+    }
+    return;
+  }
 
   // Éviter de répéter immédiatement la même question
   let nextChallenge = deck[Math.floor(Math.random() * deck.length)];
@@ -1253,8 +1380,18 @@ function startNewCaseQuestion() {
   const transEl = document.getElementById("case-translation-fr");
 
   if (baseWordEl) baseWordEl.innerText = currentCaseChallenge.gapWord;
-  if (genderEl) genderEl.innerText = `nom ${currentCaseChallenge.gender}`;
-  if (meaningEl) meaningEl.innerText = `"${currentCaseChallenge.translationFr}"`;
+  if (genderEl) {
+    const rawGender = currentCaseChallenge.gender || "général";
+    const displayGender = (rawGender.startsWith("adjectif") || rawGender.startsWith("nom") || rawGender.startsWith("pluriel"))
+      ? rawGender
+      : (currentCaseChallenge.targetType === "adjective" ? `adjectif ${rawGender}` : `nom ${rawGender}`);
+    genderEl.innerText = displayGender;
+  }
+  if (meaningEl) {
+    meaningEl.innerText = currentCaseChallenge.gapWordMeaning
+      ? currentCaseChallenge.gapWordMeaning
+      : `"${currentCaseChallenge.translationFr}"`;
+  }
   if (transEl) transEl.innerText = `"${currentCaseChallenge.translationFr}"`;
 
   // Cacher audio et feedback
@@ -1381,6 +1518,263 @@ function updateCaseStatsCounters() {
 
   if (scoreEl) scoreEl.innerText = `${caseScore} / ${caseTotal}`;
   if (streakEl) streakEl.innerText = `${caseStreak} 🔥`;
+}
+
+function resetCaseSessionScore() {
+  caseScore = 0;
+  caseTotal = 0;
+  caseStreak = 0;
+  updateCaseStatsCounters();
+}
+
+// ==========================================
+// AIDE-MÉMOIRE & TABLEAUX DES CAS POLONAIS
+// ==========================================
+
+function openCaseCheatSheetModal(caseKey) {
+  const modal = document.getElementById("case-cheatsheet-modal");
+  if (!modal) return;
+  modal.style.display = "flex";
+
+  const targetTab = caseKey ? resolveCaseCanonicalKey(caseKey) : "all";
+  switchCheatSheetTab(targetTab);
+}
+
+function closeCaseCheatSheetModal() {
+  const modal = document.getElementById("case-cheatsheet-modal");
+  if (modal) {
+    modal.style.display = "none";
+  }
+}
+
+function openActiveCaseGuide() {
+  if (currentCaseChallenge && currentCaseChallenge.caseName) {
+    openCaseCheatSheetModal(currentCaseChallenge.caseName);
+  } else if (currentCaseFilter && currentCaseFilter !== "all") {
+    openCaseCheatSheetModal(currentCaseFilter);
+  } else {
+    openCaseCheatSheetModal("all");
+  }
+}
+
+function handleModalBackdropClick(e) {
+  if (e.target && e.target.id === "case-cheatsheet-modal") {
+    closeCaseCheatSheetModal();
+  }
+}
+
+function resolveCaseCanonicalKey(key) {
+  if (!key) return "all";
+  const k = key.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  if (k.includes("biernik") || k.includes("accusatif")) return "Biernik";
+  if (k.includes("narzednik") || k.includes("instrumental")) return "Narzednik";
+  if (k.includes("miejscownik") || k.includes("locatif")) return "Miejscownik";
+  if (k.includes("dopelniacz") || k.includes("genitif")) return "Dopelniacz";
+  return "all";
+}
+
+function switchCheatSheetTab(tabKey) {
+  const canonical = resolveCaseCanonicalKey(tabKey);
+  const tabBtns = document.querySelectorAll("#modal-case-tabs .modal-tab-btn");
+  tabBtns.forEach(btn => {
+    const btnCase = btn.getAttribute("data-case");
+    if (btnCase === canonical || (canonical === "all" && btnCase === "all")) {
+      btn.classList.add("active");
+    } else {
+      btn.classList.remove("active");
+    }
+  });
+
+  const contentEl = document.getElementById("modal-cheatsheet-content");
+  if (!contentEl) return;
+
+  if (canonical === "all") {
+    contentEl.innerHTML = renderGlobalCheatSheetView();
+  } else if (typeof POLISH_CASES_GUIDE !== "undefined" && POLISH_CASES_GUIDE[canonical]) {
+    contentEl.innerHTML = renderSingleCaseGuideView(POLISH_CASES_GUIDE[canonical]);
+  } else {
+    contentEl.innerHTML = renderGlobalCheatSheetView();
+  }
+}
+
+function renderGlobalCheatSheetView() {
+  return `
+    <div class="cheat-case-banner">
+      <div class="cheat-case-title">
+        <span>📊</span> Tableau Comparatif des 4 Cas Principaux
+      </div>
+      <p style="margin:0; font-size:0.9rem; color:#475569;">
+        Synthèse rapide des rôles, déclencheurs et terminaisons au singulier et au pluriel. Cliquez sur un cas pour voir son guide détaillé avec exemples.
+      </p>
+    </div>
+
+    <div class="cheat-table-wrapper">
+      <table class="cheat-table">
+        <thead>
+          <tr>
+            <th style="min-width:130px;">Cas & Question</th>
+            <th style="min-width:145px;">Rôle & Prépositions</th>
+            <th>Féminin sg.</th>
+            <th>Masculin sg.</th>
+            <th>Neutre sg.</th>
+            <th>Pluriel</th>
+            <th style="min-width:150px;">Exemple type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong style="color:#1d4ed8;">🏛️ Biernik</strong><br>
+              <span style="font-size:0.75rem; color:#64748b;">Accusatif</span><br>
+              <em style="font-size:0.75rem;">Kogo? Co?</em>
+            </td>
+            <td>
+              <strong>COD</strong> (mieć, lubić, chcieć, poproszę, pić, czytać)<br>
+              Direction : <strong>na / w</strong>
+            </td>
+            <td><strong>-ę</strong><br><small style="color:#64748b;">kawę, pizzę</small></td>
+            <td>
+              Animé : <strong>-a</strong> <small>(brata)</small><br>
+              Inan. : <strong>-ø</strong> <small>(chleb)</small>
+            </td>
+            <td><strong>-o / -e</strong><br><small style="color:#64748b;">invariable</small></td>
+            <td>
+              <span title="Non-viril (femmes, animaux, objets)">Non-viril : <strong>-y / -e / -a</strong> <small style="color:#64748b;">(walizki, psy)</small></span><br>
+              <span title="Viril / Masculin personnel (hommes, groupes mixtes)">Viril : <strong>-ów / -i</strong> <small style="color:#1d4ed8;">= Génitif pl. (studentów)</small></span>
+            </td>
+            <td><em>Poproszę <strong>kawę</strong>.</em></td>
+          </tr>
+          <tr>
+            <td>
+              <strong style="color:#6d28d9;">🤝 Narzędnik</strong><br>
+              <span style="font-size:0.75rem; color:#64748b;">Instrumental</span><br>
+              <em style="font-size:0.75rem;">Z kim? Z czym?</em>
+            </td>
+            <td>
+              Accompagnement : <strong>z / ze</strong><br>
+              Métier après <strong>być</strong><br>
+              Moyen de transport
+            </td>
+            <td><strong>-ą</strong><br><small style="color:#64748b;">kawą, cytryną</small></td>
+            <td><strong>-em / -iem</strong><br><small style="color:#64748b;">bratem, serem</small></td>
+            <td><strong>-em / -iem</strong><br><small style="color:#64748b;">mlekiem</small></td>
+            <td><strong>-ami</strong><br><small style="color:#64748b;">studentami</small></td>
+            <td><em>Kawa z <strong>mlekiem</strong>.</em></td>
+          </tr>
+          <tr>
+            <td>
+              <strong style="color:#0f766e;">📍 Miejscownik</strong><br>
+              <span style="font-size:0.75rem; color:#64748b;">Locatif</span><br>
+              <em style="font-size:0.75rem;">W czym? Na czym? O kim?</em>
+            </td>
+            <td>
+              Lieu statique : <strong>w, na</strong><br>
+              Sujet de discussion : <strong>o</strong><br>
+              Proximité : <strong>przy</strong>
+            </td>
+            <td><strong>-e / -i / -y</strong><br><small style="color:#64748b;">Polsce, stacji</small></td>
+            <td><strong>-e / -u</strong><br><small style="color:#64748b;">stole, hotelu</small></td>
+            <td><strong>-e / -u</strong><br><small style="color:#64748b;">kinie, biurze</small></td>
+            <td><strong>-ach</strong><br><small style="color:#64748b;">miastach, pokojach</small></td>
+            <td><em>Mieszkam w <strong>Polsce</strong>.</em></td>
+          </tr>
+          <tr>
+            <td>
+              <strong style="color:#b45309;">🎯 Dopełniacz</strong><br>
+              <span style="font-size:0.75rem; color:#64748b;">Génitif</span><br>
+              <em style="font-size:0.75rem;">Kogo? Czego?</em>
+            </td>
+            <td>
+              <strong>Négation (nie mam)</strong><br>
+              Absence : <strong>nie ma</strong><br>
+              Prépositions : <strong>do, z, dla, bez</strong>
+            </td>
+            <td><strong>-y / -i</strong><br><small style="color:#64748b;">kawy, Francji</small></td>
+            <td>
+              Animé : <strong>-a</strong> <small>(brata)</small><br>
+              Inan. : <strong>-u / -a</strong> <small>(cukru, chleba)</small>
+            </td>
+            <td><strong>-a</strong><br><small style="color:#64748b;">ciasta, piwa</small></td>
+            <td>
+              Masc. : <strong>-ów</strong><br>
+              Fém./Neut. : <strong>-ø</strong> <small>(osób)</small>
+            </td>
+            <td><em>Kawa bez <strong>cukru</strong>.</em><br><em>Nie mam <strong>czasu</strong>.</em></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:0.65rem; margin-top:1rem;">
+      <button type="button" class="btn-secondary" onclick="switchCheatSheetTab('Biernik')" style="text-align:left; padding:0.65rem 0.85rem;">
+        🏛️ <strong>Biernik (Accusatif)</strong> &rarr;
+      </button>
+      <button type="button" class="btn-secondary" onclick="switchCheatSheetTab('Narzednik')" style="text-align:left; padding:0.65rem 0.85rem;">
+        🤝 <strong>Narzędnik (Instrumental)</strong> &rarr;
+      </button>
+      <button type="button" class="btn-secondary" onclick="switchCheatSheetTab('Miejscownik')" style="text-align:left; padding:0.65rem 0.85rem;">
+        📍 <strong>Miejscownik (Locatif)</strong> &rarr;
+      </button>
+      <button type="button" class="btn-secondary" onclick="switchCheatSheetTab('Dopelniacz')" style="text-align:left; padding:0.65rem 0.85rem;">
+        🎯 <strong>Dopełniacz (Génitif)</strong> &rarr;
+      </button>
+    </div>
+  `;
+}
+
+function renderSingleCaseGuideView(guide) {
+  return `
+    <div class="cheat-case-banner">
+      <div class="cheat-case-title">
+        <span>${guide.icon}</span> ${guide.title}
+      </div>
+      <div class="cheat-case-question">${guide.question}</div>
+      <p style="margin:0; font-size:0.92rem; color:#334155; font-weight:500;">
+        ${guide.summary}
+      </p>
+    </div>
+
+    <div class="cheat-section-title">⚡ Déclencheurs & Quand l'employer</div>
+    <ul style="margin:0 0 1.25rem 1.2rem; padding:0; font-size:0.9rem; color:#334155; line-height:1.65;">
+      ${guide.triggers.map(t => `<li style="margin-bottom:0.35rem;">${t}</li>`).join("")}
+    </ul>
+
+    <div class="cheat-section-title">📐 Tableau des terminaisons régulières</div>
+    <div class="cheat-table-wrapper">
+      <table class="cheat-table">
+        <thead>
+          <tr>
+            <th>Genre / Catégorie</th>
+            <th>Terminaison Nom</th>
+            <th>Terminaison Adjectif</th>
+            <th>Remarques</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${guide.endings.map(e => `
+            <tr>
+              <td><strong>${e.category}</strong></td>
+              <td style="color:var(--primary); font-size:0.95rem;">${e.noun}</td>
+              <td style="color:#0369a1;">${e.adj}</td>
+              <td style="font-size:0.8rem; color:#64748b;">${e.note}</td>
+            </tr>
+          `).join("")}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="cheat-section-title">💬 Exemples types en contexte</div>
+    <div class="cheat-examples-grid">
+      ${guide.examples.map(ex => `
+        <div class="cheat-example-item">
+          <div style="font-size:0.95rem; color:#0f172a; margin-bottom:0.2rem;">${ex.pl}</div>
+          <div style="font-size:0.82rem; color:var(--text-muted);">${ex.fr}</div>
+        </div>
+      `).join("")}
+    </div>
+
+    ${guide.tip ? `<div class="cheat-tip-box">${guide.tip}</div>` : ""}
+  `;
 }
 
 function setupSpecialKeys() {
@@ -1666,6 +2060,15 @@ function showAudioNotification(msg) {
 
 function setupKeyboardShortcuts() {
   document.addEventListener("keydown", (e) => {
+    // Fermeture du modal aide-mémoire sur Échap
+    const cheatModal = document.getElementById("case-cheatsheet-modal");
+    if (cheatModal && cheatModal.style.display !== "none") {
+      if (e.key === "Escape") {
+        closeCaseCheatSheetModal();
+        return;
+      }
+    }
+
     if (["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement.tagName)) {
       return;
     }

@@ -967,7 +967,7 @@ const INITIAL_CARDS = [
     fr: "mauvais",
     category: "Adjectifs",
     genderNotes: "m: zły | f: zła | n: złe",
-    acceptedPl: ["zły", "zła", "złe"],
+    acceptedPl: ["zły", "zła", "złe", "źle", "zly", "zla", "zle"],
     acceptedFr: ["mauvais", "mauvaise"],
     distractorsPl: ["dobry", "brudny", "trudny"],
     distractorsFr: ["bon", "sale", "difficile"]
@@ -1580,6 +1580,481 @@ const INITIAL_CARDS = [
     acceptedFr: ["carte postale", "la carte postale", "une carte postale"],
     distractorsPl: ["list", "znaczek", "paczka"],
     distractorsFr: ["lettre", "timbre", "colis"]
+  },
+
+  // ==========================================
+  // COURS DU 21.10 - NOUVELLES PHRASES & DIALOGUES
+  // ==========================================
+  {
+    id: "phr-21-1",
+    pl: "Skąd jesteś?",
+    fr: "D'où viens-tu ?",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Skąd jesteś", "Skad jestes"],
+    acceptedFr: ["D'où viens-tu", "D ou viens-tu", "Tu viens d'où", "Tu viens d ou"],
+    distractorsPl: ["Gdzie mieszkasz?", "Dokąd jedziesz?", "Kim jesteś?"],
+    distractorsFr: ["Où habites-tu ?", "Où vas-tu ?", "Qui es-tu ?"]
+  },
+  {
+    id: "phr-21-2",
+    pl: "Jestem z Francji.",
+    fr: "Je viens de France.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Jestem z Francji"],
+    acceptedFr: ["Je viens de France", "Je suis de France"],
+    distractorsPl: ["Mieszkam w Polsce.", "Jadę do Francji.", "Znam Francję."],
+    distractorsFr: ["J'habite en Pologne.", "Je vais en France.", "Je connais la France."]
+  },
+  {
+    id: "phr-21-3",
+    pl: "Plecak jest czarny i mały.",
+    fr: "Le sac à dos est noir et petit.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Plecak jest czarny i mały", "Plecak jest czarny i maly"],
+    acceptedFr: ["Le sac à dos est noir et petit", "Le sac a dos est noir et petit"],
+    distractorsPl: ["Walizka jest czarna i duża.", "Plecak jest czerwony i nowy.", "Torba jest brązowa i lekka."],
+    distractorsFr: ["La valise est noire et grande.", "Le sac à dos est rouge et neuf.", "Le sac est marron et léger."]
+  },
+  {
+    id: "phr-21-4",
+    pl: "Jabłko jest czerwone i świeże.",
+    fr: "La pomme est rouge et fraîche.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Jabłko jest czerwone i świeże", "Jablko jest czerwone i swieze"],
+    acceptedFr: ["La pomme est rouge et fraîche", "La pomme est rouge et fraiche"],
+    distractorsPl: ["Jabłko jest zielone i stare.", "Ciasto jest słodkie i ciepłe.", "Chleb jest świeży i dobry."],
+    distractorsFr: ["La pomme est verte et vieille.", "Le gâteau est sucré et chaud.", "Le pain est frais et bon."]
+  },
+  {
+    id: "phr-21-5",
+    pl: "Jest szesnaście stopni we Francji.",
+    fr: "Il fait 16 degrés en France.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Jest szesnaście stopni we Francji", "Jest 16 stopni we Francji", "Jest szesnascie stopni we Francji"],
+    acceptedFr: ["Il fait 16 degrés en France", "Il fait seize degrés en France", "Il fait 16 degres en France"],
+    distractorsPl: ["W Polsce jest siedem stopni.", "Dziś jest zimno we Francji.", "Jest dwadzieścia stopni we Francji."],
+    distractorsFr: ["En Pologne il fait sept degrés.", "Aujourd'hui il fait froid en France.", "Il fait vingt degrés en France."]
+  },
+  {
+    id: "phr-21-6",
+    pl: "Kawa jest ciepła i bez cukru.",
+    fr: "Le café est chaud et sans sucre.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Kawa jest ciepła i bez cukru", "Kawa jest ciepla i bez cukru"],
+    acceptedFr: ["Le café est chaud et sans sucre", "Le cafe est chaud et sans sucre"],
+    distractorsPl: ["Kawa jest zimna i z mlekiem.", "Herbata jest gorąca i z cukrem.", "Kawa jest mocna i bez mleka."],
+    distractorsFr: ["Le café est froid et avec du lait.", "Le thé est chaud et avec du sucre.", "Le café est fort et sans lait."]
+  },
+  {
+    id: "phr-21-7",
+    pl: "Krzesło jest stare, ale wygodne.",
+    fr: "La chaise est vieille, mais confortable.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Krzesło jest stare, ale wygodne", "Krzeslo jest stare, ale wygodne", "Krzesło jest stare ale wygodne"],
+    acceptedFr: ["La chaise est vieille, mais confortable", "La chaise est vieille mais confortable"],
+    distractorsPl: ["Stół jest nowy, ale mały.", "Krzesło jest nowoczesne i ładne.", "Łóżko jest duże, ale twarde."],
+    distractorsFr: ["La table est neuve, mais petite.", "La chaise est moderne et jolie.", "Le lit est grand, mais dur."]
+  },
+  {
+    id: "phr-21-8",
+    pl: "Ciasto czekoladowe jest smaczne i tanie.",
+    fr: "Le gâteau au chocolat est bon et pas cher.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Ciasto czekoladowe jest smaczne i tanie"],
+    acceptedFr: ["Le gâteau au chocolat est bon et pas cher", "Le gateau au chocolat est bon et pas cher", "Le gâteau au chocolat est délicieux et bon marché"],
+    distractorsPl: ["Kawa jest smaczna i tania.", "Ciastko jest słodkie i drogie.", "Jabłecznik jest ciepły i tani."],
+    distractorsFr: ["Le café est bon et pas cher.", "Le biscuit est sucré et cher.", "La tarte aux pommes est chaude et pas chère."]
+  },
+  {
+    id: "phr-21-9",
+    pl: "Kelnerka nosi niebieską i żółtą sukienkę.",
+    fr: "La serveuse porte une robe bleue et jaune.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Kelnerka nosi niebieską i żółtą sukienkę", "Kelnerka nosi niebieska i zolta sukienke"],
+    acceptedFr: ["La serveuse porte une robe bleue et jaune"],
+    distractorsPl: ["Kelner nosi czarne spodnie.", "Dziewczyna nosi czerwoną sukienkę.", "Kobieta ma niebieską torbę."],
+    distractorsFr: ["Le serveur porte un pantalon noir.", "La fille porte une robe rouge.", "La femme a un sac bleu."]
+  },
+  {
+    id: "phr-21-10",
+    pl: "Chciałbym dwa bilety do Nowego Jorku, proszę.",
+    fr: "Je voudrais deux billets pour New York, s'il vous plaît.",
+    category: "Phrases & Quotidien",
+    genderNotes: "Locuteur masc. : Chciałbym | Locutrice fém. : Chciałabym",
+    acceptedPl: [
+      "Chciałbym dwa bilety do Nowego Jorku, proszę",
+      "Chciałabym dwa bilety do Nowego Jorku, proszę",
+      "Chcialbym dwa bilety do Nowego Jorku, prosze"
+    ],
+    acceptedFr: [
+      "Je voudrais deux billets pour New York, s'il vous plaît",
+      "Je voudrais deux billets pour New York, s il vous plait"
+    ],
+    distractorsPl: ["Poproszę jeden bilet do Paryża.", "Chciałbym kupić bilet do Francji.", "Poproszę dwa bilety normalne."],
+    distractorsFr: ["Un billet pour Paris, s'il vous plaît.", "Je voudrais acheter un billet pour la France.", "Deux billets plein tarif, s'il vous plaît."]
+  },
+
+  // ==========================================
+  // COURS DU 21.10 - VOCABULAIRE GÉNÉRAL
+  // ==========================================
+  {
+    id: "voc-21-1",
+    pl: "powtórzyć",
+    fr: "répéter",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["powtórzyć", "powtorzyc"],
+    acceptedFr: ["répéter", "repeter"],
+    distractorsPl: ["powiedzieć", "napisać", "zrozumieć"],
+    distractorsFr: ["dire", "écrire", "comprendre"]
+  },
+  {
+    id: "voc-21-2",
+    pl: "sukienka",
+    fr: "robe",
+    category: "Objets du quotidien",
+    acceptedPl: ["sukienka"],
+    acceptedFr: ["robe", "la robe", "une robe"],
+    distractorsPl: ["spódnica", "koszula", "kurtka"],
+    distractorsFr: ["jupe", "chemise", "veste"]
+  },
+  {
+    id: "voc-21-3",
+    pl: "kelnerka",
+    fr: "serveuse",
+    category: "Nourriture & Café",
+    acceptedPl: ["kelnerka"],
+    acceptedFr: ["serveuse", "la serveuse", "une serveuse"],
+    distractorsPl: ["kelner", "kierowca", "nauczycielka"],
+    distractorsFr: ["serveur", "chauffeur", "enseignante"]
+  },
+  {
+    id: "voc-21-4",
+    pl: "tani",
+    fr: "pas cher, bon marché",
+    category: "Adjectifs",
+    genderNotes: "m: tani | f: tania | n: tanie",
+    acceptedPl: ["tani", "tania", "tanie"],
+    acceptedFr: ["pas cher", "bon marché", "bon marche", "pas chère", "pas chere"],
+    distractorsPl: ["drogi", "dobry", "cenny"],
+    distractorsFr: ["cher", "bon", "précieux"]
+  },
+  {
+    id: "voc-21-5",
+    pl: "dokąd",
+    fr: "vers où (direction)",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["dokąd", "dokad"],
+    acceptedFr: ["vers où", "où", "ou", "vers ou"],
+    distractorsPl: ["skąd", "gdzie", "kiedy"],
+    distractorsFr: ["d'où", "où (statique)", "quand"]
+  },
+  {
+    id: "voc-21-6",
+    pl: "skąd",
+    fr: "d'où",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["skąd", "skad"],
+    acceptedFr: ["d'où", "d ou"],
+    distractorsPl: ["dokąd", "gdzie", "dlaczego"],
+    distractorsFr: ["vers où", "où", "pourquoi"]
+  },
+  {
+    id: "voc-21-7",
+    pl: "dużo",
+    fr: "beaucoup",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["dużo", "duzo"],
+    acceptedFr: ["beaucoup"],
+    distractorsPl: ["mało", "bardzo", "trochę"],
+    distractorsFr: ["peu", "très", "un peu"]
+  },
+  {
+    id: "voc-21-8",
+    pl: "niezależność",
+    fr: "indépendance",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["niezależność", "niezaleznosc"],
+    acceptedFr: ["indépendance", "independance", "l'indépendance"],
+    distractorsPl: ["wolność", "spokój", "pomoc"],
+    distractorsFr: ["liberté", "calme", "aide"]
+  },
+
+  // ==========================================
+  // COURS DU 21.10 - EN TAXI & EN VILLE
+  // ==========================================
+  {
+    id: "taxi-1",
+    pl: "taksówka",
+    fr: "taxi",
+    category: "Voyage & Aéroport",
+    acceptedPl: ["taksówka", "taksowka"],
+    acceptedFr: ["taxi", "le taxi", "un taxi"],
+    distractorsPl: ["autobus", "pociąg", "samolot"],
+    distractorsFr: ["bus", "train", "avion"]
+  },
+  {
+    id: "taxi-2",
+    pl: "kierowca",
+    fr: "chauffeur, conducteur",
+    category: "Voyage & Aéroport",
+    acceptedPl: ["kierowca"],
+    acceptedFr: ["chauffeur", "conducteur", "le chauffeur"],
+    distractorsPl: ["kelner", "pracownik", "pilot"],
+    distractorsFr: ["serveur", "employé", "pilote"]
+  },
+  {
+    id: "taxi-3",
+    pl: "Dokąd jedziemy?",
+    fr: "Où allons-nous ?",
+    category: "Voyage & Aéroport",
+    acceptedPl: ["Dokąd jedziemy", "Dokad jedziemy"],
+    acceptedFr: ["Où allons-nous", "Ou allons-nous", "On va où"],
+    distractorsPl: ["Skąd jedziemy?", "Dokąd lecisz?", "Gdzie jesteśmy?"],
+    distractorsFr: ["D'où venons-nous ?", "Où voles-tu ?", "Où sommes-nous ?"]
+  },
+  {
+    id: "taxi-4",
+    pl: "Proszę jechać na ulicę Lipową.",
+    fr: "S'il vous plaît, allez rue Lipowa.",
+    category: "Voyage & Aéroport",
+    acceptedPl: ["Proszę jechać na ulicę Lipową", "Prosze jechac na ulice Lipowa"],
+    acceptedFr: ["S'il vous plaît, allez rue Lipowa", "Allez rue Lipowa s'il vous plaît", "S il vous plait allez rue Lipowa"],
+    distractorsPl: ["Proszę czekać na ulicy Lipowej.", "Gdzie jest ulica Lipowa?", "Proszę skręcić w lewo."],
+    distractorsFr: ["Veuillez attendre rue Lipowa.", "Où est la rue Lipowa ?", "Veuillez tourner à gauche."]
+  },
+  {
+    id: "taxi-5",
+    pl: "jechać",
+    fr: "aller (en véhicule), rouler",
+    category: "Voyage & Aéroport",
+    genderNotes: "ja jadę (je vais), my jedziemy (nous allons)",
+    acceptedPl: ["jechać", "jechac"],
+    acceptedFr: ["aller", "aller en véhicule", "rouler"],
+    distractorsPl: ["lecieć", "iść", "biegać"],
+    distractorsFr: ["voler (en avion)", "aller à pied", "courir"]
+  },
+  {
+    id: "taxi-6",
+    pl: "przejazd",
+    fr: "trajet, course",
+    category: "Voyage & Aéroport",
+    acceptedPl: ["przejazd"],
+    acceptedFr: ["trajet", "course", "le trajet", "la course"],
+    distractorsPl: ["bilet", "lot", "podróż"],
+    distractorsFr: ["billet", "vol", "voyage"]
+  },
+  {
+    id: "taxi-7",
+    pl: "Ile kosztuje przejazd?",
+    fr: "Combien coûte le trajet ?",
+    category: "Voyage & Aéroport",
+    acceptedPl: ["Ile kosztuje przejazd"],
+    acceptedFr: ["Combien coûte le trajet", "Combien coute le trajet", "Combien coûte la course"],
+    distractorsPl: ["Ile kosztuje bilet?", "Ile płacę?", "Ile to kosztuje?"],
+    distractorsFr: ["Combien coûte le billet ?", "Combien je paie ?", "Combien ça coûte ?"]
+  },
+  {
+    id: "taxi-8",
+    pl: "ulica",
+    fr: "rue (abrév. ul.)",
+    category: "Voyage & Aéroport",
+    acceptedPl: ["ulica", "ul"],
+    acceptedFr: ["rue", "la rue", "une rue"],
+    distractorsPl: ["aleja", "plac", "osiedle"],
+    distractorsFr: ["avenue", "place", "quartier"]
+  },
+  {
+    id: "taxi-9",
+    pl: "aleja",
+    fr: "avenue, allée (abrév. al.)",
+    category: "Voyage & Aéroport",
+    acceptedPl: ["aleja", "al"],
+    acceptedFr: ["avenue", "allée", "allee", "l'avenue"],
+    distractorsPl: ["ulica", "plac", "droga"],
+    distractorsFr: ["rue", "place", "route"]
+  },
+  {
+    id: "taxi-10",
+    pl: "osiedle",
+    fr: "quartier, lotissement, cité (abrév. os.)",
+    category: "Voyage & Aéroport",
+    acceptedPl: ["osiedle", "os"],
+    acceptedFr: ["quartier", "lotissement", "cité", "le quartier"],
+    distractorsPl: ["miasto", "ulica", "centrum"],
+    distractorsFr: ["ville", "rue", "centre-ville"]
+  },
+  {
+    id: "taxi-11",
+    pl: "plac",
+    fr: "place (abrév. pl.)",
+    category: "Voyage & Aéroport",
+    acceptedPl: ["plac", "pl"],
+    acceptedFr: ["place", "la place", "une place"],
+    distractorsPl: ["park", "ulica", "budynek"],
+    distractorsFr: ["parc", "rue", "bâtiment"]
+  },
+  {
+    id: "taxi-12",
+    pl: "Chciałbym jechać na aleję Niezależności.",
+    fr: "Je voudrais aller sur l'avenue de l'Indépendance.",
+    category: "Voyage & Aéroport",
+    genderNotes: "Locuteur masc. : Chciałbym | Locutrice fém. : Chciałabym",
+    acceptedPl: [
+      "Chciałbym jechać na aleję Niezależności",
+      "Chciałabym jechać na aleję Niezależności",
+      "Chcialbym jechac na aleje Niezaleznosci"
+    ],
+    acceptedFr: [
+      "Je voudrais aller sur l'avenue de l'Indépendance",
+      "Je voudrais aller avenue de l'Indépendance",
+      "Je voudrais aller sur l avenue de l Independance"
+    ],
+    distractorsPl: [
+      "Proszę jechać na ulicę Lipową.",
+      "Chciałbym kupić bilet do Francji.",
+      "Dokąd jedziemy dzisiaj?"
+    ],
+    distractorsFr: [
+      "S'il vous plaît, allez rue Lipowa.",
+      "Je voudrais acheter un billet pour la France.",
+      "Où allons-nous aujourd'hui ?"
+    ]
+  },
+
+  // ==========================================
+  // COURS DU 21.10 - AU MUSÉE & ORIENTATION
+  // ==========================================
+  {
+    id: "muz-1",
+    pl: "muzeum",
+    fr: "musée",
+    category: "Voyage & Aéroport",
+    acceptedPl: ["muzeum"],
+    acceptedFr: ["musée", "musee", "le musée"],
+    distractorsPl: ["kino", "teatr", "restauracja"],
+    distractorsFr: ["cinéma", "théâtre", "restaurant"]
+  },
+  {
+    id: "muz-2",
+    pl: "bilet normalny",
+    fr: "billet plein tarif",
+    category: "Voyage & Aéroport",
+    acceptedPl: ["bilet normalny"],
+    acceptedFr: ["billet plein tarif", "plein tarif", "billet normal"],
+    distractorsPl: ["bilet ulgowy", "karta pokładowa", "znaczek"],
+    distractorsFr: ["billet tarif réduit", "carte d'embarquement", "timbre"]
+  },
+  {
+    id: "muz-3",
+    pl: "bilet ulgowy",
+    fr: "billet tarif réduit",
+    category: "Voyage & Aéroport",
+    acceptedPl: ["bilet ulgowy"],
+    acceptedFr: ["billet tarif réduit", "tarif réduit", "billet étudiant", "billet etudiant"],
+    distractorsPl: ["bilet normalny", "bilet miesięczny", "rezerwacja"],
+    distractorsFr: ["billet plein tarif", "abonnement mensuel", "réservation"]
+  },
+  {
+    id: "muz-4",
+    pl: "ulgowy",
+    fr: "à tarif réduit (avec réduction)",
+    category: "Adjectifs",
+    genderNotes: "m: ulgowy | f: ulgowa | n: ulgowe",
+    acceptedPl: ["ulgowy", "ulgowa", "ulgowe"],
+    acceptedFr: ["à tarif réduit", "tarif reduit", "avec reduction", "réduit", "reduit"],
+    distractorsPl: ["normalny", "drogi", "darmowy"],
+    distractorsFr: ["normal", "cher", "gratuit"]
+  },
+  {
+    id: "muz-5",
+    pl: "wejście",
+    fr: "entrée",
+    category: "Voyage & Aéroport",
+    acceptedPl: ["wejście", "wejscie"],
+    acceptedFr: ["entrée", "entree", "l'entrée"],
+    distractorsPl: ["wyjście", "drzwi", "okno"],
+    distractorsFr: ["sortie", "porte", "fenêtre"]
+  },
+  {
+    id: "muz-6",
+    pl: "wyjście",
+    fr: "sortie",
+    category: "Voyage & Aéroport",
+    acceptedPl: ["wyjście", "wyjscie"],
+    acceptedFr: ["sortie", "la sortie", "une sortie"],
+    distractorsPl: ["wejście", "bramka", "korytarz"],
+    distractorsFr: ["entrée", "porte d'embarquement", "couloir"]
+  },
+  {
+    id: "muz-7",
+    pl: "Nie ma wyjścia.",
+    fr: "Il n'y a pas d'issue (pas le choix).",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Nie ma wyjścia", "Nie ma wyjscia"],
+    acceptedFr: ["Il n'y a pas d'issue", "Il n y a pas d issue", "Pas d'issue", "Pas le choix"],
+    distractorsPl: ["Gdzie jest wyjście?", "Wyjście jest tam.", "Nie ma problemu."],
+    distractorsFr: ["Où est la sortie ?", "La sortie est là-bas.", "Pas de problème."]
+  },
+  {
+    id: "muz-8",
+    pl: "Wyjście jest tam!",
+    fr: "La sortie est là-bas !",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Wyjście jest tam", "Wyjscie jest tam"],
+    acceptedFr: ["La sortie est là-bas", "La sortie est la-bas"],
+    distractorsPl: ["Wejście jest po lewej.", "To kosztuje dwadzieścia złotych.", "Proszę czekać tutaj."],
+    distractorsFr: ["L'entrée est à gauche.", "Ça coûte vingt zlotys.", "Veuillez attendre ici."]
+  },
+  {
+    id: "muz-9",
+    pl: "po lewej stronie",
+    fr: "sur le côté gauche, à gauche",
+    category: "Voyage & Aéroport",
+    acceptedPl: ["po lewej stronie", "po lewej"],
+    acceptedFr: ["sur le côté gauche", "à gauche", "sur le cote gauche", "a gauche"],
+    distractorsPl: ["po prawej stronie", "prosto", "niedaleko"],
+    distractorsFr: ["sur le côté droit", "tout droit", "pas loin"]
+  },
+  {
+    id: "muz-10",
+    pl: "po prawej stronie",
+    fr: "sur le côté droit, à droite",
+    category: "Voyage & Aéroport",
+    acceptedPl: ["po prawej stronie", "po prawej"],
+    acceptedFr: ["sur le côté droit", "à droite", "sur le cote droit", "a droite"],
+    distractorsPl: ["po lewej stronie", "z tyłu", "blisko"],
+    distractorsFr: ["sur le côté gauche", "derrière", "près"]
+  },
+  {
+    id: "muz-11",
+    pl: "potrzebować",
+    fr: "avoir besoin de",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["potrzebować", "potrzebowac"],
+    acceptedFr: ["avoir besoin de", "avoir besoin"],
+    distractorsPl: ["pomagać", "prosić", "zamawiać"],
+    distractorsFr: ["aider", "demander", "commander"]
+  },
+  {
+    id: "muz-12",
+    pl: "Potrzebuje Pan pomocy?",
+    fr: "Avez-vous besoin d'aide ? (à un homme)",
+    category: "Phrases & Quotidien",
+    genderNotes: "À un homme : Potrzebuje Pan pomocy? | À une femme : Potrzebuje Pani pomocy?",
+    acceptedPl: ["Potrzebuje Pan pomocy", "Potrzebuje Pani pomocy", "Potrzebuje pan pomocy", "Potrzebuje pani pomocy"],
+    acceptedFr: ["Avez-vous besoin d'aide", "Avez vous besoin d aide", "Vous avez besoin d'aide"],
+    distractorsPl: ["W czym mogę pomóc?", "Czy mogę prosić o pomoc?", "Czy ma Pan bilet?"],
+    distractorsFr: ["En quoi puis-je vous aider ?", "Puis-je demander de l'aide ?", "Avez-vous un billet ?"]
+  },
+  {
+    id: "muz-13",
+    pl: "oto",
+    fr: "voici",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["oto"],
+    acceptedFr: ["voici", "voila", "voilà"],
+    distractorsPl: ["tam", "tutaj", "gdzie"],
+    distractorsFr: ["là-bas", "ici", "où"]
   }
 ];
 
@@ -2463,6 +2938,1464 @@ const CASE_CHALLENGES = [
       { ending: "-y", word: "osoby", isCorrect: false, note: "Génitif singulier (-y)" },
       { ending: "-ach", word: "osobach", isCorrect: false, note: "Locatif pluriel (-ach)" }
     ]
+  },
+  {
+    id: "case-b-13",
+    caseName: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    caseBadgeClass: "case-biernik",
+    sentenceBefore: "Kelnerka nosi niebieską i żółtą sukienk",
+    sentenceAfter: ".",
+    gapWord: "sukienka",
+    gender: "féminin",
+    correctEnding: "-ę",
+    fullCorrectWord: "sukienkę",
+    fullSentence: "Kelnerka nosi niebieską i żółtą sukienkę.",
+    translationFr: "La serveuse porte une robe bleue et jaune.",
+    ruleExplanation: "Après le verbe <strong>nosić</strong> (porter des vêtements), le COD passe à l'<strong>Accusatif (Biernik)</strong>. Pour un nom féminin en <em>-a</em>, la terminaison devient <strong>-ę</strong> : <em>sukienka</em> &rarr; <strong>sukienkę</strong>.",
+    options: [
+      { ending: "-ę", word: "sukienkę", isCorrect: true, note: "Accusatif COD (-ę)" },
+      { ending: "-ą", word: "sukienką", isCorrect: false, note: "Instrumental (-ą)" },
+      { ending: "-i", word: "sukienki", isCorrect: false, note: "Génitif singulier (-i)" },
+      { ending: "-ie", word: "sukience", isCorrect: false, note: "Locatif / Datif (-e)" }
+    ]
+  },
+  {
+    id: "case-b-14",
+    caseName: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    caseBadgeClass: "case-biernik",
+    sentenceBefore: "Proszę jechać na ulic",
+    sentenceAfter: " Lipową.",
+    gapWord: "ulica",
+    gender: "féminin",
+    correctEnding: "-ę",
+    fullCorrectWord: "ulicę",
+    fullSentence: "Proszę jechać na ulicę Lipową.",
+    translationFr: "S'il vous plaît, allez rue Lipowa.",
+    ruleExplanation: "Après <strong>jechać na + destination</strong> (mouvement ou direction vers un lieu), on emploie l'<strong>Accusatif</strong> : <em>ulica Lipowa</em> &rarr; <strong>na ulicę Lipową</strong>.",
+    options: [
+      { ending: "-ę", word: "ulicę", isCorrect: true, note: "Accusatif de mouvement (-ę)" },
+      { ending: "-y", word: "ulicy", isCorrect: false, note: "Génitif singulier (-y)" },
+      { ending: "-ą", word: "ulicą", isCorrect: false, note: "Instrumental (-ą)" },
+      { ending: "-e", word: "ulice", isCorrect: false, note: "Nominatif pluriel (-e)" }
+    ]
+  },
+  {
+    id: "case-d-13",
+    caseName: "Dopełniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "Potrzebuje Pan pomoc",
+    sentenceAfter: "?",
+    gapWord: "pomoc",
+    gender: "féminin (se terminant par consonne)",
+    correctEnding: "-y",
+    fullCorrectWord: "pomocy",
+    fullSentence: "Potrzebuje Pan pomocy?",
+    translationFr: "Avez-vous besoin d'aide ?",
+    ruleExplanation: "En polonais, le verbe <strong>potrzebować</strong> (avoir besoin de) régit toujours le <strong>Génitif (Dopełniacz)</strong> : le féminin <em>pomoc</em> prend la désinence <strong>-y</strong> : <strong>pomocy</strong>.",
+    options: [
+      { ending: "-y", word: "pomocy", isCorrect: true, note: "Génitif après potrzebować (-y)" },
+      { ending: "-ą", word: "pomocą", isCorrect: false, note: "Instrumental (-ą)" },
+      { ending: "-e", word: "pomoce", isCorrect: false, note: "Pluriel (-e)" },
+      { ending: "-i", word: "pomoci", isCorrect: false, note: "Désinence palatale non applicable" }
+    ]
+  },
+
+  // ------------------------------------------
+  // NOUVELLES PHRASES : MIEJSCOWNIK (LOCATIF)
+  // ------------------------------------------
+  {
+    id: "case-m-9",
+    caseName: "Miejscownik",
+    caseLabelFr: "Locatif (Miejscownik)",
+    caseBadgeClass: "case-miejscownik",
+    sentenceBefore: "Spotykamy się w kawiarn",
+    sentenceAfter: ".",
+    gapWord: "kawiarnia",
+    gender: "féminin",
+    correctEnding: "-i",
+    fullCorrectWord: "kawiarni",
+    fullSentence: "Spotykamy się w kawiarni.",
+    translationFr: "Nous nous retrouvons au café.",
+    ruleExplanation: "Après la préposition statique <strong>w</strong> (dans), les noms féminins terminés par <em>-ia</em> prennent la terminaison <strong>-i</strong> au Locatif : <em>kawiarnia</em> &rarr; <strong>w kawiarni</strong>.",
+    options: [
+      { ending: "-i", word: "kawiarni", isCorrect: true, note: "Locatif après 'w' (-i)" },
+      { ending: "-ę", word: "kawiarnię", isCorrect: false, note: "Accusatif (-ę)" },
+      { ending: "-ą", word: "kawiarnią", isCorrect: false, note: "Instrumental (-ą)" },
+      { ending: "-e", word: "kawiarnie", isCorrect: false, note: "Nominatif pluriel (-e)" }
+    ]
+  },
+  {
+    id: "case-m-10",
+    caseName: "Miejscownik",
+    caseLabelFr: "Locatif (Miejscownik)",
+    caseBadgeClass: "case-miejscownik",
+    sentenceBefore: "Czekam na pana w hotel",
+    sentenceAfter: ".",
+    gapWord: "hotel",
+    gender: "masculin inanimé",
+    correctEnding: "-u",
+    fullCorrectWord: "hotelu",
+    fullSentence: "Czekam na pana w hotelu.",
+    translationFr: "Je vous attends à l'hôtel.",
+    ruleExplanation: "Pour de nombreux noms masculins inanimés en consonne (notamment d'origine étrangère ou terminés par consonne molle/durcie), le Locatif après <strong>w</strong> prend <strong>-u</strong> : <em>hotel</em> &rarr; <strong>w hotelu</strong>.",
+    options: [
+      { ending: "-u", word: "hotelu", isCorrect: true, note: "Locatif après 'w' (-u)" },
+      { ending: "-em", word: "hotelem", isCorrect: false, note: "Instrumental (-em)" },
+      { ending: "-e", word: "hotele", isCorrect: false, note: "Nominatif pluriel (-e)" },
+      { ending: "-owi", word: "hotelowi", isCorrect: false, note: "Datif singulier (-owi)" }
+    ]
+  },
+  {
+    id: "case-m-11",
+    caseName: "Miejscownik",
+    caseLabelFr: "Locatif (Miejscownik)",
+    caseBadgeClass: "case-miejscownik",
+    sentenceBefore: "Jesteśmy teraz w kin",
+    sentenceAfter: ".",
+    gapWord: "kino",
+    gender: "neutre",
+    correctEnding: "-ie",
+    fullCorrectWord: "kinie",
+    fullSentence: "Jesteśmy teraz w kinie.",
+    translationFr: "Nous sommes maintenant au cinéma.",
+    ruleExplanation: "Pour le nom neutre <em>kino</em>, la consonne <em>n</em> s'adoucit en <em>ni</em> devant la désinence de Locatif <strong>-e</strong> : <em>kino</em> &rarr; <strong>w kinie</strong>.",
+    options: [
+      { ending: "-ie", word: "kinie", isCorrect: true, note: "Locatif régulier (-ie)" },
+      { ending: "-em", word: "kinem", isCorrect: false, note: "Instrumental (-em)" },
+      { ending: "-u", word: "kinu", isCorrect: false, note: "Datif singulier (-u)" },
+      { ending: "-a", word: "kina", isCorrect: false, note: "Génitif singulier (-a)" }
+    ]
+  },
+  {
+    id: "case-m-12",
+    caseName: "Miejscownik",
+    caseLabelFr: "Locatif (Miejscownik)",
+    caseBadgeClass: "case-miejscownik",
+    sentenceBefore: "Książka leży na stol",
+    sentenceAfter: ".",
+    gapWord: "stół",
+    gender: "masculin inanimé",
+    correctEnding: "-e",
+    fullCorrectWord: "stole",
+    fullSentence: "Książka leży na stole.",
+    translationFr: "Le livre est posé sur la table.",
+    ruleExplanation: "Après la préposition statique <strong>na</strong> (sur), le nom masculin <em>stół</em> subit une alternance vocalique <em>ó &rarr; o</em> et la palatalisation de <em>ł &rarr; l</em> devant la terminaison <strong>-e</strong> : <em>stół</em> &rarr; <strong>na stole</strong>.",
+    options: [
+      { ending: "-e", word: "stole", isCorrect: true, note: "Locatif avec alternance ó/o (-e)" },
+      { ending: "-em", word: "stołem", isCorrect: false, note: "Instrumental (-em)" },
+      { ending: "-u", word: "stołu", isCorrect: false, note: "Génitif singulier (-u)" },
+      { ending: "-owi", word: "stołowi", isCorrect: false, note: "Datif singulier (-owi)" }
+    ]
+  },
+  {
+    id: "case-m-13",
+    caseName: "Miejscownik",
+    caseLabelFr: "Locatif (Miejscownik)",
+    caseBadgeClass: "case-miejscownik",
+    sentenceBefore: "Rozmawiamy o nowym film",
+    sentenceAfter: ".",
+    gapWord: "film",
+    gender: "masculin inanimé",
+    correctEnding: "-ie",
+    fullCorrectWord: "filmie",
+    fullSentence: "Rozmawiamy o nowym filmie.",
+    translationFr: "Nous parlons du nouveau film.",
+    ruleExplanation: "Après la préposition <strong>o</strong> (au sujet de, à propos de), on emploie toujours le <strong>Locatif</strong> : <em>film</em> prend la terminaison <strong>-ie</strong> : <strong>o filmie</strong>.",
+    options: [
+      { ending: "-ie", word: "filmie", isCorrect: true, note: "Locatif après 'o' (-ie)" },
+      { ending: "-em", word: "filmem", isCorrect: false, note: "Instrumental (-em)" },
+      { ending: "-u", word: "filmu", isCorrect: false, note: "Génitif singulier (-u)" },
+      { ending: "-owi", word: "filmowi", isCorrect: false, note: "Datif singulier (-owi)" }
+    ]
+  },
+  {
+    id: "case-m-14",
+    caseName: "Miejscownik",
+    caseLabelFr: "Locatif (Miejscownik)",
+    caseBadgeClass: "case-miejscownik",
+    sentenceBefore: "Mój brat pracuje w biurz",
+    sentenceAfter: ".",
+    gapWord: "biuro",
+    gender: "neutre",
+    correctEnding: "-e",
+    fullCorrectWord: "biurze",
+    fullSentence: "Mój brat pracuje w biurze.",
+    translationFr: "Mon frère travaille au bureau.",
+    ruleExplanation: "Pour le nom neutre <em>biuro</em>, la consonne <em>r</em> s'adoucit en <em>rz</em> devant la terminaison de Locatif <strong>-e</strong> : <em>biuro</em> &rarr; <strong>w biurze</strong>.",
+    options: [
+      { ending: "-e", word: "biurze", isCorrect: true, note: "Locatif avec alternance r/rz (-e)" },
+      { ending: "-em", word: "biurem", isCorrect: false, note: "Instrumental (-em)" },
+      { ending: "-u", word: "biuru", isCorrect: false, note: "Datif singulier (-u)" },
+      { ending: "-a", word: "biura", isCorrect: false, note: "Génitif singulier (-a)" }
+    ]
+  },
+  {
+    id: "case-m-15",
+    caseName: "Miejscownik",
+    caseLabelFr: "Locatif (Miejscownik)",
+    caseBadgeClass: "case-miejscownik",
+    sentenceBefore: "Mój syn studiuje na uniwersyteci",
+    sentenceAfter: ".",
+    gapWord: "uniwersytet",
+    gender: "masculin inanimé",
+    correctEnding: "-e",
+    fullCorrectWord: "uniwersytecie",
+    fullSentence: "Mój syn studiuje na uniwersytecie.",
+    translationFr: "Mon fils étudie à l'université.",
+    ruleExplanation: "Après la préposition <strong>na</strong> pour désigner l'institution, le nom masculin <em>uniwersytet</em> voit son <em>t</em> final se palataliser en <em>ci</em> devant <strong>-e</strong> : <strong>na uniwersytecie</strong>.",
+    options: [
+      { ending: "-e", word: "uniwersytecie", isCorrect: true, note: "Locatif avec palatalisation t/ci (-e)" },
+      { ending: "-em", word: "uniwersytetem", isCorrect: false, note: "Instrumental (-em)" },
+      { ending: "-u", word: "uniwersytetu", isCorrect: false, note: "Génitif singulier (-u)" },
+      { ending: "-owi", word: "uniwersytetowi", isCorrect: false, note: "Datif singulier (-owi)" }
+    ]
+  },
+  {
+    id: "case-m-16",
+    caseName: "Miejscownik",
+    caseLabelFr: "Locatif (Miejscownik)",
+    caseBadgeClass: "case-miejscownik",
+    sentenceBefore: "Czekam na ciebie na stacj",
+    sentenceAfter: ".",
+    gapWord: "stacja",
+    gender: "féminin",
+    correctEnding: "-i",
+    fullCorrectWord: "stacji",
+    fullSentence: "Czekam na ciebie na stacji.",
+    translationFr: "Je t'attends à la gare.",
+    ruleExplanation: "Après la préposition statique <strong>na</strong> (à la gare), les noms féminins en <em>-cja</em> prennent la terminaison de Locatif <strong>-i</strong> : <em>stacja</em> &rarr; <strong>na stacji</strong>.",
+    options: [
+      { ending: "-i", word: "stacji", isCorrect: true, note: "Locatif après 'na' (-i)" },
+      { ending: "-ę", word: "stację", isCorrect: false, note: "Accusatif de mouvement (-ę)" },
+      { ending: "-ą", word: "stacją", isCorrect: false, note: "Instrumental (-ą)" },
+      { ending: "-e", word: "stacje", isCorrect: false, note: "Nominatif pluriel (-e)" }
+    ]
+  },
+  {
+    id: "case-m-17",
+    caseName: "Miejscownik",
+    caseLabelFr: "Locatif (Miejscownik)",
+    caseBadgeClass: "case-miejscownik",
+    sentenceBefore: "Klucze i portfel są w plecak",
+    sentenceAfter: ".",
+    gapWord: "plecak",
+    gender: "masculin inanimé",
+    correctEnding: "-u",
+    fullCorrectWord: "plecaku",
+    fullSentence: "Klucze i portfel są w plecaku.",
+    translationFr: "Les clés et le portefeuille sont dans le sac à dos.",
+    ruleExplanation: "Pour les noms masculins se terminant par une consonne vélaire (<em>k, g, ch</em>), le Locatif prend systématiquement la terminaison <strong>-u</strong> : <em>plecak</em> &rarr; <strong>w plecaku</strong>.",
+    options: [
+      { ending: "-u", word: "plecaku", isCorrect: true, note: "Locatif pour les mots en -k (-u)" },
+      { ending: "-iem", word: "plecakiem", isCorrect: false, note: "Instrumental (-iem)" },
+      { ending: "-a", word: "plecaka", isCorrect: false, note: "Génitif singulier (-a)" },
+      { ending: "-e", word: "plecace", isCorrect: false, note: "Forme inexistante" }
+    ]
+  },
+
+  // ------------------------------------------
+  // NOUVELLES PHRASES : NARZĘDNIK (INSTRUMENTAL)
+  // ------------------------------------------
+  {
+    id: "case-n-9",
+    caseName: "Narzednik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    caseBadgeClass: "case-narzednik",
+    sentenceBefore: "Poproszę kanapkę z ser",
+    sentenceAfter: ".",
+    gapWord: "ser",
+    gender: "masculin inanimé",
+    correctEnding: "-em",
+    fullCorrectWord: "serem",
+    fullSentence: "Poproszę kanapkę z serem.",
+    translationFr: "Un sandwich au fromage, s'il vous plaît.",
+    ruleExplanation: "Après la préposition <strong>z</strong> (avec), les noms masculins singuliers prennent la terminaison d'Instrumental <strong>-em</strong> : <em>ser</em> &rarr; <strong>z serem</strong>.",
+    options: [
+      { ending: "-em", word: "serem", isCorrect: true, note: "Instrumental après 'z' (-em)" },
+      { ending: "-a", word: "sera", isCorrect: false, note: "Génitif singulier (-a)" },
+      { ending: "-ze", word: "serze", isCorrect: false, note: "Locatif singulier (-e)" },
+      { ending: "-owi", word: "serowi", isCorrect: false, note: "Datif singulier (-owi)" }
+    ]
+  },
+  {
+    id: "case-n-10",
+    caseName: "Narzednik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    caseBadgeClass: "case-narzednik",
+    sentenceBefore: "Lubię gorącą herbatę z cytryn",
+    sentenceAfter: ".",
+    gapWord: "cytryna",
+    gender: "féminin",
+    correctEnding: "-ą",
+    fullCorrectWord: "cytryną",
+    fullSentence: "Lubię gorącą herbatę z cytryną.",
+    translationFr: "J'aime le thé chaud avec du citron.",
+    ruleExplanation: "Après la préposition <strong>z</strong> (avec), les noms féminins singuliers prennent la désinence nasale <strong>-ą</strong> à l'Instrumental : <em>cytryna</em> &rarr; <strong>z cytryną</strong>.",
+    options: [
+      { ending: "-ą", word: "cytryną", isCorrect: true, note: "Instrumental féminin régulier (-ą)" },
+      { ending: "-ę", word: "cytrynę", isCorrect: false, note: "Accusatif singulier (-ę)" },
+      { ending: "-y", word: "cytryny", isCorrect: false, note: "Génitif singulier (-y)" },
+      { ending: "-ie", word: "cytrynie", isCorrect: false, note: "Locatif singulier (-ie)" }
+    ]
+  },
+  {
+    id: "case-n-11",
+    caseName: "Narzednik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    caseBadgeClass: "case-narzednik",
+    sentenceBefore: "Mój ojciec jest dobrym kierowc",
+    sentenceAfter: ".",
+    gapWord: "kierowca",
+    gender: "masculin (terminé en -a)",
+    correctEnding: "-ą",
+    fullCorrectWord: "kierowcą",
+    fullSentence: "Mój ojciec jest dobrym kierowcą.",
+    translationFr: "Mon père est un bon conducteur / chauffeur.",
+    ruleExplanation: "Après le verbe <strong>być</strong> (être) pour exprimer un métier ou un statut, on emploie l'<strong>Instrumental</strong>. Bien que masculin, <em>kierowca</em> se terminant par <em>-a</em> suit la désinence <strong>-ą</strong> : <strong>kierowcą</strong>.",
+    options: [
+      { ending: "-ą", word: "kierowcą", isCorrect: true, note: "Instrumental des masculins en -a (-ą)" },
+      { ending: "-em", word: "kierowcem", isCorrect: false, note: "Désinence masculine standard" },
+      { ending: "-ę", word: "kierowcę", isCorrect: false, note: "Accusatif singulier (-ę)" },
+      { ending: "-y", word: "kierowcy", isCorrect: false, note: "Génitif singulier (-y)" }
+    ]
+  },
+  {
+    id: "case-n-12",
+    caseName: "Narzednik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    caseBadgeClass: "case-narzednik",
+    sentenceBefore: "Marek jest pilnym student",
+    sentenceAfter: ".",
+    gapWord: "student",
+    gender: "masculin",
+    correctEnding: "-em",
+    fullCorrectWord: "studentem",
+    fullSentence: "Marek jest pilnym studentem.",
+    translationFr: "Marek est un étudiant appliqué.",
+    ruleExplanation: "Après le verbe d'état <strong>być</strong> (être), la profession ou la condition passe à l'<strong>Instrumental</strong> : <em>student</em> &rarr; <strong>studentem</strong> (adjectif accordé : <em>pilnym</em>).",
+    options: [
+      { ending: "-em", word: "studentem", isCorrect: true, note: "Instrumental masculin régulier (-em)" },
+      { ending: "-a", word: "studenta", isCorrect: false, note: "Génitif / Accusatif (-a)" },
+      { ending: "-cie", word: "studencie", isCorrect: false, note: "Locatif singulier (-e)" },
+      { ending: "-owi", word: "studentowi", isCorrect: false, note: "Datif singulier (-owi)" }
+    ]
+  },
+  {
+    id: "case-n-13",
+    caseName: "Narzednik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    caseBadgeClass: "case-narzednik",
+    sentenceBefore: "Bardzo interesuję się sport",
+    sentenceAfter: ".",
+    gapWord: "sport",
+    gender: "masculin inanimé",
+    correctEnding: "-em",
+    fullCorrectWord: "sportem",
+    fullSentence: "Bardzo interesuję się sportem.",
+    translationFr: "Je m'intéresse beaucoup au sport.",
+    ruleExplanation: "Le verbe <strong>interesować się</strong> (s'intéresser à) se construit obligatoirement avec l'<strong>Instrumental (Narzędnik)</strong> : <em>sport</em> &rarr; <strong>sportem</strong>.",
+    options: [
+      { ending: "-em", word: "sportem", isCorrect: true, note: "Instrumental après interesować się (-em)" },
+      { ending: "-u", word: "sportu", isCorrect: false, note: "Génitif singulier (-u)" },
+      { ending: "-cie", word: "sporcie", isCorrect: false, note: "Locatif singulier (-e)" },
+      { ending: "-a", word: "sporta", isCorrect: false, note: "Désinence erronée" }
+    ]
+  },
+  {
+    id: "case-n-14",
+    caseName: "Narzednik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    caseBadgeClass: "case-narzednik",
+    sentenceBefore: "Codziennie rano jeżdżę do biura autobus",
+    sentenceAfter: ".",
+    gapWord: "autobus",
+    gender: "masculin inanimé",
+    correctEnding: "-em",
+    fullCorrectWord: "autobusem",
+    fullSentence: "Codziennie rano jeżdżę do biura autobusem.",
+    translationFr: "Tous les matins je vais au bureau en bus.",
+    ruleExplanation: "En polonais, le moyen de transport utilisé pour se déplacer se met directement à l'<strong>Instrumental sans préposition</strong> : <em>autobus</em> &rarr; <strong>autobusem</strong>.",
+    options: [
+      { ending: "-em", word: "autobusem", isCorrect: true, note: "Instrumental de moyen de transport (-em)" },
+      { ending: "-ie", word: "autobusie", isCorrect: false, note: "Locatif après 'w' (-ie)" },
+      { ending: "-u", word: "autobusu", isCorrect: false, note: "Génitif singulier (-u)" },
+      { ending: "-y", word: "autobusy", isCorrect: false, note: "Nominatif pluriel (-y)" }
+    ]
+  },
+  {
+    id: "case-n-15",
+    caseName: "Narzednik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    caseBadgeClass: "case-narzednik",
+    sentenceBefore: "Do Poznania najchętniej jeżdżę pociąg",
+    sentenceAfter: ".",
+    gapWord: "pociąg",
+    gender: "masculin inanimé",
+    correctEnding: "-iem",
+    fullCorrectWord: "pociągiem",
+    fullSentence: "Do Poznania najchętniej jeżdżę pociągiem.",
+    translationFr: "Pour Poznań, je voyage de préférence en train.",
+    ruleExplanation: "À l'Instrumental, les noms masculins terminés par <em>-k</em> ou <em>-g</em> prennent la désinence adoucie <strong>-iem</strong> : <em>pociąg</em> &rarr; <strong>pociągiem</strong>.",
+    options: [
+      { ending: "-iem", word: "pociągiem", isCorrect: true, note: "Instrumental adouci après g (-iem)" },
+      { ending: "-em", word: "pociągem", isCorrect: false, note: "Graphie sans adoucissement i" },
+      { ending: "-u", word: "pociągu", isCorrect: false, note: "Génitif / Locatif (-u)" },
+      { ending: "-a", word: "pociąga", isCorrect: false, note: "Forme erronée" }
+    ]
+  },
+  {
+    id: "case-n-16",
+    caseName: "Narzednik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    caseBadgeClass: "case-narzednik",
+    sentenceBefore: "Właśnie rozmawiam przez telefon z brac",
+    sentenceAfter: ".",
+    gapWord: "brat",
+    gender: "masculin",
+    correctEnding: "-em",
+    fullCorrectWord: "bratem",
+    fullSentence: "Właśnie rozmawiam przez telefon z bratem.",
+    translationFr: "Je suis justement en train de parler au téléphone avec mon frère.",
+    ruleExplanation: "Après la préposition <strong>z</strong> (avec), les noms masculins prennent <strong>-em</strong> : <em>brat</em> &rarr; <strong>z bratem</strong>.",
+    options: [
+      { ending: "-em", word: "bratem", isCorrect: true, note: "Instrumental après 'z' (-em)" },
+      { ending: "-a", word: "brata", isCorrect: false, note: "Génitif / Accusatif (-a)" },
+      { ending: "-u", word: "bratu", isCorrect: false, note: "Datif singulier (-u)" },
+      { ending: "-ie", word: "bracie", isCorrect: false, note: "Locatif singulier (-ie)" }
+    ]
+  },
+  {
+    id: "case-n-17",
+    caseName: "Narzednik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    caseBadgeClass: "case-narzednik",
+    sentenceBefore: "Wieczorem idę na spacer z ps",
+    sentenceAfter: ".",
+    gapWord: "pies",
+    gender: "masculin animé",
+    correctEnding: "-em",
+    fullCorrectWord: "psem",
+    fullSentence: "Wieczorem idę na spacer z psem.",
+    translationFr: "Le soir, je vais me promener avec le chien.",
+    ruleExplanation: "Le mot masculin irrégulier <em>pies</em> perd son <em>e</em> mobile lors de la déclinaison et prend la terminaison d'Instrumental <strong>-em</strong> après <strong>z</strong> : <em>pies</em> &rarr; <strong>z psem</strong>.",
+    options: [
+      { ending: "-em", word: "psem", isCorrect: true, note: "Instrumental avec e mobile (-em)" },
+      { ending: "-esem", word: "piesem", isCorrect: false, note: "Forme sans contraction" },
+      { ending: "-a", word: "psa", isCorrect: false, note: "Génitif / Accusatif (-a)" },
+      { ending: "-ie", word: "psie", isCorrect: false, note: "Locatif singulier (-ie)" }
+    ]
+  },
+
+  // ------------------------------------------
+  // NOUVELLES PHRASES : BIERNIK (ACCUSATIF)
+  // ------------------------------------------
+  {
+    id: "case-b-15",
+    caseName: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    caseBadgeClass: "case-biernik",
+    sentenceBefore: "W upalny dzień chętnie piję zimną wod",
+    sentenceAfter: ".",
+    gapWord: "woda",
+    gender: "féminin",
+    correctEnding: "-ę",
+    fullCorrectWord: "wodę",
+    fullSentence: "W upalny dzień chętnie piję zimną wodę.",
+    translationFr: "Les jours de chaleur, je bois volontiers de l'eau fraîche.",
+    ruleExplanation: "Après le verbe transitif <strong>pić</strong> (boire), le complément d'objet direct est à l'<strong>Accusatif (Biernik)</strong>. Pour un nom féminin en <em>-a</em>, la terminaison est <strong>-ę</strong> : <em>woda</em> &rarr; <strong>wodę</strong>.",
+    options: [
+      { ending: "-ę", word: "wodę", isCorrect: true, note: "Accusatif féminin COD (-ę)" },
+      { ending: "-ą", word: "wodą", isCorrect: false, note: "Instrumental (-ą)" },
+      { ending: "-y", word: "wody", isCorrect: false, note: "Génitif singulier (-y)" },
+      { ending: "-zie", word: "wodzie", isCorrect: false, note: "Locatif singulier (-ie)" }
+    ]
+  },
+  {
+    id: "case-b-16",
+    caseName: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    caseBadgeClass: "case-biernik",
+    sentenceBefore: "Kelner przynosi pyszną pizz",
+    sentenceAfter: ".",
+    gapWord: "pizza",
+    gender: "féminin",
+    correctEnding: "-ę",
+    fullCorrectWord: "pizzę",
+    fullSentence: "Kelner przynosi pyszną pizzę.",
+    translationFr: "Le serveur apporte une délicieuse pizza.",
+    ruleExplanation: "Le COD du verbe <strong>przynosić</strong> (apporter) se met à l'<strong>Accusatif</strong> : le féminin en <em>-a</em> devient <strong>-ę</strong> : <em>pizza</em> &rarr; <strong>pizzę</strong>.",
+    options: [
+      { ending: "-ę", word: "pizzę", isCorrect: true, note: "Accusatif féminin COD (-ę)" },
+      { ending: "-ą", word: "pizzą", isCorrect: false, note: "Instrumental (-ą)" },
+      { ending: "-y", word: "pizzy", isCorrect: false, note: "Génitif singulier (-y)" },
+      { ending: "-ie", word: "pizzie", isCorrect: false, note: "Locatif singulier (-ie)" }
+    ]
+  },
+  {
+    id: "case-b-17",
+    caseName: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    caseBadgeClass: "case-biernik",
+    sentenceBefore: "W pociągu czytam ciekawą książk",
+    sentenceAfter: ".",
+    gapWord: "książka",
+    gender: "féminin",
+    correctEnding: "-ę",
+    fullCorrectWord: "książkę",
+    fullSentence: "W pociągu czytam ciekawą książkę.",
+    translationFr: "Dans le train, je lis un livre intéressant.",
+    ruleExplanation: "Après le verbe <strong>czytać</strong> (lire), le COD féminin prend la terminaison d'Accusatif <strong>-ę</strong> : <em>książka</em> &rarr; <strong>książkę</strong> (accordé avec <em>ciekawą</em>).",
+    options: [
+      { ending: "-ę", word: "książkę", isCorrect: true, note: "Accusatif féminin COD (-ę)" },
+      { ending: "-ą", word: "książką", isCorrect: false, note: "Instrumental (-ą)" },
+      { ending: "-i", word: "książki", isCorrect: false, note: "Génitif singulier (-i)" },
+      { ending: "-ce", word: "książce", isCorrect: false, note: "Locatif / Datif (-e)" }
+    ]
+  },
+  {
+    id: "case-b-18",
+    caseName: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    caseBadgeClass: "case-biernik",
+    sentenceBefore: "W kawiarni widzę twojego brat",
+    sentenceAfter: ".",
+    gapWord: "brat",
+    gender: "masculin animé (personne)",
+    correctEnding: "-a",
+    fullCorrectWord: "brata",
+    fullSentence: "W kawiarni widzę twojego brata.",
+    translationFr: "Au café, je vois ton frère.",
+    ruleExplanation: "À l'Accusatif singulier, les noms <strong>masculins animés</strong> (personnes et animaux) prennent la même terminaison que le Génitif : la désinence <strong>-a</strong> : <em>brat</em> &rarr; <strong>widzę brata</strong>.",
+    options: [
+      { ending: "-a", word: "brata", isCorrect: true, note: "Accusatif masculin animé (-a)" },
+      { ending: "-em", word: "bratem", isCorrect: false, note: "Instrumental (-em)" },
+      { ending: "", word: "brat", isCorrect: false, note: "Nominatif / Masculin inanimé" },
+      { ending: "-u", word: "bratu", isCorrect: false, note: "Datif singulier (-u)" }
+    ]
+  },
+  {
+    id: "case-b-19",
+    caseName: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    caseBadgeClass: "case-biernik",
+    sentenceBefore: "Pracownik lotniska sprawdza mój paszport",
+    sentenceAfter: ".",
+    gapWord: "paszport",
+    gender: "masculin inanimé (objet)",
+    correctEnding: "",
+    fullCorrectWord: "paszport",
+    fullSentence: "Pracownik lotniska sprawdza mój paszport.",
+    translationFr: "L'employé de l'aéroport vérifie mon passeport.",
+    ruleExplanation: "Pour les noms <strong>masculins inanimés</strong> (objets, lieux, concepts), la forme d'<strong>Accusatif est identique au Nominatif</strong> (désinence zéro) : <em>paszport</em> &rarr; <strong>paszport</strong>.",
+    options: [
+      { ending: "invariable", word: "paszport", isCorrect: true, note: "Accusatif inanimé = Nominatif" },
+      { ending: "-u", word: "paszportu", isCorrect: false, note: "Génitif singulier (-u)" },
+      { ending: "-em", word: "paszportem", isCorrect: false, note: "Instrumental (-em)" },
+      { ending: "-cie", word: "paszporcie", isCorrect: false, note: "Locatif singulier (-ie)" }
+    ]
+  },
+  {
+    id: "case-b-20",
+    caseName: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    caseBadgeClass: "case-biernik",
+    sentenceBefore: "Jutro w południe jadę na lotnisk",
+    sentenceAfter: ".",
+    gapWord: "lotnisko",
+    gender: "neutre",
+    correctEnding: "-o",
+    fullCorrectWord: "lotnisko",
+    fullSentence: "Jutro w południe jadę na lotnisko.",
+    translationFr: "Demain à midi je vais à l'aéroport.",
+    ruleExplanation: "Après <strong>na + mouvement</strong> (destination), on utilise l'Accusatif. Pour les noms <strong>neutres</strong>, l'Accusatif reste identique au Nominatif : <strong>na lotnisko</strong> (à ne pas confondre avec le lieu statique : <em>na lotnisku</em> au Locatif !).",
+    options: [
+      { ending: "-o", word: "lotnisko", isCorrect: true, note: "Accusatif neutre de direction (-o)" },
+      { ending: "-u", word: "lotnisku", isCorrect: false, note: "Locatif statique 'na' (-u)" },
+      { ending: "-em", word: "lotniskiem", isCorrect: false, note: "Instrumental (-em)" },
+      { ending: "-a", word: "lotniska", isCorrect: false, note: "Génitif singulier (-a)" }
+    ]
+  },
+
+  // ------------------------------------------
+  // NOUVELLES PHRASES : DOPEŁNIACZ (GÉNITIF)
+  // ------------------------------------------
+  {
+    id: "case-d-14",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "Rano nie piję kaw",
+    sentenceAfter: ".",
+    gapWord: "kawa",
+    gender: "féminin",
+    correctEnding: "-y",
+    fullCorrectWord: "kawy",
+    fullSentence: "Rano nie piję kawy.",
+    translationFr: "Le matin, je ne bois pas de café.",
+    ruleExplanation: "Règle clé en polonais : <strong>la négation d'une phrase transitive transforme l'Accusatif en Génitif (Dopełniacz)</strong>. Affirmation : <em>piję kawę</em> (Accusatif) &rarr; Négation : <strong>nie piję kawy</strong> (Génitif en -y).",
+    options: [
+      { ending: "-y", word: "kawy", isCorrect: true, note: "Génitif après négation (-y)" },
+      { ending: "-ę", word: "kawę", isCorrect: false, note: "Accusatif affirmatif (-ę)" },
+      { ending: "-ą", word: "kawą", isCorrect: false, note: "Instrumental (-ą)" },
+      { ending: "-ie", word: "kawie", isCorrect: false, note: "Locatif / Datif (-ie)" }
+    ]
+  },
+  {
+    id: "case-d-15",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "Niestety dzisiaj nie mam czas",
+    sentenceAfter: ".",
+    gapWord: "czas",
+    gender: "masculin inanimé",
+    correctEnding: "-u",
+    fullCorrectWord: "czasu",
+    fullSentence: "Niestety dzisiaj nie mam czasu.",
+    translationFr: "Malheureusement aujourd'hui je n'ai pas le temps.",
+    ruleExplanation: "Après la négation <strong>nie mam</strong> (je n'ai pas), le nom abstrait masculin <em>czas</em> passe au Génitif et prend la désinence <strong>-u</strong> : <strong>nie mam czasu</strong>.",
+    options: [
+      { ending: "-u", word: "czasu", isCorrect: true, note: "Génitif après négation (-u)" },
+      { ending: "", word: "czas", isCorrect: false, note: "Nominatif / Accusatif" },
+      { ending: "-em", word: "czasem", isCorrect: false, note: "Instrumental (-em)" },
+      { ending: "-ie", word: "czasie", isCorrect: false, note: "Locatif singulier (-ie)" }
+    ]
+  },
+  {
+    id: "case-d-16",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "Poproszę szklankę zimnej wod",
+    sentenceAfter: ".",
+    gapWord: "woda",
+    gender: "féminin",
+    correctEnding: "-y",
+    fullCorrectWord: "wody",
+    fullSentence: "Poproszę szklankę zimnej wody.",
+    translationFr: "Un verre d'eau fraîche, s'il vous plaît.",
+    ruleExplanation: "Après un substantif de quantité ou de récipient (comme <em>szklanka, butelka, litr</em>), le contenu s'exprime au <strong>Génitif</strong> : <em>woda</em> &rarr; <strong>szklankę wody</strong>.",
+    options: [
+      { ending: "-y", word: "wody", isCorrect: true, note: "Génitif de quantité (-y)" },
+      { ending: "-ę", word: "wodę", isCorrect: false, note: "Accusatif singulier (-ę)" },
+      { ending: "-ą", word: "wodą", isCorrect: false, note: "Instrumental (-ą)" },
+      { ending: "-zie", word: "wodzie", isCorrect: false, note: "Locatif singulier (-ie)" }
+    ]
+  },
+  {
+    id: "case-d-17",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "W kawiarni nie ma już ciast",
+    sentenceAfter: " czekoladowego.",
+    gapWord: "ciasto",
+    gender: "neutre",
+    correctEnding: "-a",
+    fullCorrectWord: "ciasta",
+    fullSentence: "W kawiarni nie ma już ciasta czekoladowego.",
+    translationFr: "Au café, il n'y a plus de gâteau au chocolat.",
+    ruleExplanation: "La locution d'absence <strong>nie ma</strong> (il n'y a pas) impose obligatoirement le <strong>Génitif</strong>. Pour un nom neutre en <em>-o</em>, la désinence est <strong>-a</strong> : <em>ciasto</em> &rarr; <strong>nie ma ciasta</strong>.",
+    options: [
+      { ending: "-a", word: "ciasta", isCorrect: true, note: "Génitif après 'nie ma' (-a)" },
+      { ending: "-o", word: "ciasto", isCorrect: false, note: "Nominatif / Accusatif (-o)" },
+      { ending: "-em", word: "ciastem", isCorrect: false, note: "Instrumental (-em)" },
+      { ending: "-cie", word: "cieście", isCorrect: false, note: "Locatif singulier (-ie)" }
+    ]
+  },
+  {
+    id: "case-d-18",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "Kupiłem prezent dla mojej siostr",
+    sentenceAfter: ".",
+    gapWord: "siostra",
+    gender: "féminin",
+    correctEnding: "-y",
+    fullCorrectWord: "siostry",
+    fullSentence: "Kupiłem prezent dla mojej siostry.",
+    translationFr: "J'ai acheté un cadeau pour ma sœur.",
+    ruleExplanation: "La préposition <strong>dla</strong> (pour le destinataire) exige systématiquement le <strong>Génitif (Dopełniacz)</strong> : le nom féminin <em>siostra</em> prend <strong>-y</strong> : <strong>dla siostry</strong>.",
+    options: [
+      { ending: "-y", word: "siostry", isCorrect: true, note: "Génitif après 'dla' (-y)" },
+      { ending: "-ę", word: "siostrę", isCorrect: false, note: "Accusatif singulier (-ę)" },
+      { ending: "-ą", word: "siostrą", isCorrect: false, note: "Instrumental (-ą)" },
+      { ending: "-ze", word: "siostrze", isCorrect: false, note: "Datif / Locatif (-e)" }
+    ]
+  },
+  {
+    id: "case-d-19",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "Jest już późno, wracam do dom",
+    sentenceAfter: ".",
+    gapWord: "dom",
+    gender: "masculin inanimé",
+    correctEnding: "-u",
+    fullCorrectWord: "domu",
+    fullSentence: "Jest już późno, wracam do domu.",
+    translationFr: "Il est déjà tard, je rentre à la maison.",
+    ruleExplanation: "Après la préposition <strong>do</strong> (vers / à), on utilise le <strong>Génitif</strong>. Pour le nom masculin <em>dom</em>, la terminaison est <strong>-u</strong> : <strong>do domu</strong>.",
+    options: [
+      { ending: "-u", word: "domu", isCorrect: true, note: "Génitif après 'do' (-u)" },
+      { ending: "", word: "dom", isCorrect: false, note: "Nominatif / Accusatif" },
+      { ending: "-em", word: "domem", isCorrect: false, note: "Instrumental (-em)" },
+      { ending: "-owi", word: "domowi", isCorrect: false, note: "Datif singulier (-owi)" }
+    ]
+  },
+
+  // ------------------------------------------
+  // DÉFIS ADJECTIFS (BIERNIK, NARZĘDNIK, MIEJSCOWNIK, DOPEŁNIACZ)
+  // ------------------------------------------
+  {
+    id: "case-adj-b-1",
+    caseName: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    caseBadgeClass: "case-biernik",
+    sentenceBefore: "Poproszę czarn",
+    sentenceAfter: " kawę, bez mleka.",
+    gapWord: "czarny",
+    gapWordMeaning: "noir",
+    targetType: "adjective",
+    gender: "adjectif féminin",
+    correctEnding: "-ą",
+    fullCorrectWord: "czarną",
+    fullSentence: "Poproszę czarną kawę, bez mleka.",
+    translationFr: "Un café noir, sans lait, s'il vous plaît.",
+    ruleExplanation: "À l'<strong>Accusatif singulier</strong>, l'adjectif féminin prend la terminaison nasale <strong>-ą</strong> (contrairement au nom qui prend <em>-ę</em>) : <em>czarny</em> &rarr; <strong>czarną kawę</strong>.",
+    options: [
+      { ending: "-ą", word: "czarną", isCorrect: true, note: "Accusatif adjectif féminin (-ą)" },
+      { ending: "-ę", word: "czarnę", isCorrect: false, note: "Désinence du nom appliquée à tort à l'adjectif" },
+      { ending: "-ej", word: "czarnej", isCorrect: false, note: "Génitif / Locatif féminin (-ej)" },
+      { ending: "-a", word: "czarna", isCorrect: false, note: "Nominatif féminin (-a)" }
+    ]
+  },
+  {
+    id: "case-adj-b-2",
+    caseName: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    caseBadgeClass: "case-biernik",
+    sentenceBefore: "W kawiarni spotykam twojego dobr",
+    sentenceAfter: " brata.",
+    gapWord: "dobry",
+    gapWordMeaning: "bon / cher",
+    targetType: "adjective",
+    gender: "adjectif masculin animé",
+    correctEnding: "-ego",
+    fullCorrectWord: "dobrego",
+    fullSentence: "W kawiarni spotykam twojego dobrego brata.",
+    translationFr: "Au café, je rencontre ton bon frère.",
+    ruleExplanation: "Pour les <strong>masculins animés</strong> (personnes et animaux) à l'Accusatif, l'adjectif prend la même terminaison qu'au Génitif : <strong>-ego</strong> (<em>dobrego brata</em>).",
+    options: [
+      { ending: "-ego", word: "dobrego", isCorrect: true, note: "Accusatif masculin animé (-ego)" },
+      { ending: "-y", word: "dobry", isCorrect: false, note: "Nominatif / Masculin inanimé" },
+      { ending: "-ym", word: "dobrym", isCorrect: false, note: "Instrumental / Locatif (-ym)" },
+      { ending: "-emu", word: "dobremu", isCorrect: false, note: "Datif masculin (-emu)" }
+    ]
+  },
+  {
+    id: "case-adj-b-3",
+    caseName: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    caseBadgeClass: "case-biernik",
+    sentenceBefore: "Kupuję now",
+    sentenceAfter: " plecak na podróż.",
+    gapWord: "nowy",
+    gapWordMeaning: "nouveau / neuf",
+    targetType: "adjective",
+    gender: "adjectif masculin inanimé",
+    correctEnding: "-y",
+    fullCorrectWord: "nowy",
+    fullSentence: "Kupuję nowy plecak na podróż.",
+    translationFr: "J'achète un nouveau sac à dos pour le voyage.",
+    ruleExplanation: "Pour les <strong>masculins inanimés</strong> (objets, concepts), l'adjectif à l'Accusatif est <strong>identique au Nominatif</strong> : <em>nowy</em> &rarr; <strong>nowy plecak</strong>.",
+    options: [
+      { ending: "-y", word: "nowy", isCorrect: true, note: "Accusatif masculin inanimé = Nominatif" },
+      { ending: "-ego", word: "nowego", isCorrect: false, note: "Accusatif animé / Génitif (-ego)" },
+      { ending: "-ym", word: "nowym", isCorrect: false, note: "Instrumental (-ym)" },
+      { ending: "-a", word: "nowa", isCorrect: false, note: "Féminin (-a)" }
+    ]
+  },
+  {
+    id: "case-adj-b-4",
+    caseName: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    caseBadgeClass: "case-biernik",
+    sentenceBefore: "W upalny dzień chętnie piję zimn",
+    sentenceAfter: " piwo.",
+    gapWord: "zimny",
+    gapWordMeaning: "froid / frais",
+    targetType: "adjective",
+    gender: "adjectif neutre",
+    correctEnding: "-e",
+    fullCorrectWord: "zimne",
+    fullSentence: "W upalny dzień chętnie piję zimne piwo.",
+    translationFr: "Les jours de chaleur, je bois volontiers une bière fraîche.",
+    ruleExplanation: "Pour les noms <strong>neutres</strong>, l'adjectif à l'Accusatif reste <strong>identique au Nominatif</strong> en <strong>-e</strong> : <em>zimny</em> &rarr; <strong>zimne piwo</strong>.",
+    options: [
+      { ending: "-e", word: "zimne", isCorrect: true, note: "Accusatif neutre (-e)" },
+      { ending: "-ą", word: "zimną", isCorrect: false, note: "Féminin accusatif (-ą)" },
+      { ending: "-ego", word: "zimnego", isCorrect: false, note: "Génitif neutre (-ego)" },
+      { ending: "-ym", word: "zimnym", isCorrect: false, note: "Instrumental (-ym)" }
+    ]
+  },
+  {
+    id: "case-adj-n-1",
+    caseName: "Narzednik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    caseBadgeClass: "case-narzednik",
+    sentenceBefore: "Rozmawiam z moją dobr",
+    sentenceAfter: " przyjaciółką.",
+    gapWord: "dobry",
+    gapWordMeaning: "bon / cher",
+    targetType: "adjective",
+    gender: "adjectif féminin",
+    correctEnding: "-ą",
+    fullCorrectWord: "dobrą",
+    fullSentence: "Rozmawiam z moją dobrą przyjaciółką.",
+    translationFr: "Je discute avec ma bonne amie.",
+    ruleExplanation: "À l'<strong>Instrumental singulier</strong> féminin, l'adjectif et le nom riment tous deux en <strong>-ą</strong> : <em>dobry</em> &rarr; <strong>z dobrą przyjaciółką</strong>.",
+    options: [
+      { ending: "-ą", word: "dobrą", isCorrect: true, note: "Instrumental féminin régulier (-ą)" },
+      { ending: "-ej", word: "dobrej", isCorrect: false, note: "Génitif / Locatif (-ej)" },
+      { ending: "-ym", word: "dobrym", isCorrect: false, note: "Masculin / Neutre (-ym)" },
+      { ending: "-e", word: "dobre", isCorrect: false, note: "Neutre / Pluriel" }
+    ]
+  },
+  {
+    id: "case-adj-n-2",
+    caseName: "Narzednik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    caseBadgeClass: "case-narzednik",
+    sentenceBefore: "Poproszę kawę z ciepł",
+    sentenceAfter: " mlekiem.",
+    gapWord: "ciepły",
+    gapWordMeaning: "chaud / tiède",
+    targetType: "adjective",
+    gender: "adjectif neutre",
+    correctEnding: "-ym",
+    fullCorrectWord: "ciepłym",
+    fullSentence: "Poproszę kawę z ciepłym mlekiem.",
+    translationFr: "Un café avec du lait tiède, s'il vous plaît.",
+    ruleExplanation: "À l'<strong>Instrumental</strong> masculin et neutre après <em>z</em> (avec), l'adjectif prend la terminaison <strong>-ym</strong> (ou <em>-im</em> après k/g) : <em>ciepły</em> &rarr; <strong>z ciepłym mlekiem</strong>.",
+    options: [
+      { ending: "-ym", word: "ciepłym", isCorrect: true, note: "Instrumental masculin/neutre (-ym)" },
+      { ending: "-em", word: "ciepłem", isCorrect: false, note: "Désinence du nom appliquée à tort à l'adjectif" },
+      { ending: "-ego", word: "ciepłego", isCorrect: false, note: "Génitif (-ego)" },
+      { ending: "-ą", word: "ciepłą", isCorrect: false, note: "Féminin (-ą)" }
+    ]
+  },
+  {
+    id: "case-adj-n-3",
+    caseName: "Narzednik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    caseBadgeClass: "case-narzednik",
+    sentenceBefore: "Mój wujek jest bardzo mił",
+    sentenceAfter: " kierowcą.",
+    gapWord: "miły",
+    gapWordMeaning: "aimable / gentil",
+    targetType: "adjective",
+    gender: "adjectif masculin",
+    correctEnding: "-ym",
+    fullCorrectWord: "miłym",
+    fullSentence: "Mój wujek jest bardzo miłym kierowcą.",
+    translationFr: "Mon oncle est un chauffeur très aimable.",
+    ruleExplanation: "Après le verbe <em>być</em>, même si le nom masculin en <em>-a</em> (kierowca) prend <em>-ą</em>, l'adjectif masculin garde sa terminaison régulière d'Instrumental <strong>-ym</strong> : <strong>miłym kierowcą</strong>.",
+    options: [
+      { ending: "-ym", word: "miłym", isCorrect: true, note: "Instrumental adjectif masculin (-ym)" },
+      { ending: "-ą", word: "miłą", isCorrect: false, note: "Accord faussé par la terminaison en -a du nom" },
+      { ending: "-ego", word: "miłego", isCorrect: false, note: "Génitif (-ego)" },
+      { ending: "-y", word: "miły", isCorrect: false, note: "Nominatif (-y)" }
+    ]
+  },
+  {
+    id: "case-adj-m-1",
+    caseName: "Miejscownik",
+    caseLabelFr: "Locatif (Miejscownik)",
+    caseBadgeClass: "case-miejscownik",
+    sentenceBefore: "Mieszkam w mał",
+    sentenceAfter: " kawalerce w centrum.",
+    gapWord: "mały",
+    gapWordMeaning: "petit",
+    targetType: "adjective",
+    gender: "adjectif féminin",
+    correctEnding: "-ej",
+    fullCorrectWord: "małej",
+    fullSentence: "Mieszkam w małej kawalerce w centrum.",
+    translationFr: "J'habite dans un petit studio en centre-ville.",
+    ruleExplanation: "Au <strong>Locatif singulier</strong> féminin après <em>w / na</em>, l'adjectif prend la terminaison <strong>-ej</strong> : <em>mały</em> &rarr; <strong>w małej kawalerce</strong>.",
+    options: [
+      { ending: "-ej", word: "małej", isCorrect: true, note: "Locatif adjectif féminin (-ej)" },
+      { ending: "-ą", word: "małą", isCorrect: false, note: "Accusatif / Instrumental (-ą)" },
+      { ending: "-e", word: "małe", isCorrect: false, note: "Neutre / Pluriel" },
+      { ending: "-ym", word: "małym", isCorrect: false, note: "Masculin / Neutre (-ym)" }
+    ]
+  },
+  {
+    id: "case-adj-m-2",
+    caseName: "Miejscownik",
+    caseLabelFr: "Locatif (Miejscownik)",
+    caseBadgeClass: "case-miejscownik",
+    sentenceBefore: "Klucze leżą na duż",
+    sentenceAfter: " stole.",
+    gapWord: "duży",
+    gapWordMeaning: "grand",
+    targetType: "adjective",
+    gender: "adjectif masculin",
+    correctEnding: "-ym",
+    fullCorrectWord: "dużym",
+    fullSentence: "Klucze leżą na dużym stole.",
+    translationFr: "Les clés sont posées sur la grande table.",
+    ruleExplanation: "Au <strong>Locatif singulier</strong> masculin et neutre (après <em>na, w, o</em>), l'adjectif prend la terminaison <strong>-ym</strong> : <em>duży</em> &rarr; <strong>na dużym stole</strong>.",
+    options: [
+      { ending: "-ym", word: "dużym", isCorrect: true, note: "Locatif adjectif masculin/neutre (-ym)" },
+      { ending: "-em", word: "dużem", isCorrect: false, note: "Forme inexistante" },
+      { ending: "-ego", word: "dużego", isCorrect: false, note: "Génitif (-ego)" },
+      { ending: "-ej", word: "dużej", isCorrect: false, note: "Féminin (-ej)" }
+    ]
+  },
+  {
+    id: "case-adj-m-3",
+    caseName: "Miejscownik",
+    caseLabelFr: "Locatif (Miejscownik)",
+    caseBadgeClass: "case-miejscownik",
+    sentenceBefore: "Spotkanie odbywa się w now",
+    sentenceAfter: " muzeum.",
+    gapWord: "nowy",
+    gapWordMeaning: "nouveau",
+    targetType: "adjective",
+    gender: "adjectif neutre",
+    correctEnding: "-ym",
+    fullCorrectWord: "nowym",
+    fullSentence: "Spotkanie odbywa się w nowym muzeum.",
+    translationFr: "La réunion a lieu dans le nouveau musée.",
+    ruleExplanation: "Même si le mot <em>muzeum</em> reste invariable au singulier, l'adjectif neutre qui l'accompagne s'accorde au Locatif avec <strong>-ym</strong> : <strong>w nowym muzeum</strong>.",
+    options: [
+      { ending: "-ym", word: "nowym", isCorrect: true, note: "Locatif adjectif neutre (-ym)" },
+      { ending: "-e", word: "nowe", isCorrect: false, note: "Nominatif neutre (-e)" },
+      { ending: "-ego", word: "nowego", isCorrect: false, note: "Génitif neutre (-ego)" },
+      { ending: "-ej", word: "nowej", isCorrect: false, note: "Féminin (-ej)" }
+    ]
+  },
+  {
+    id: "case-adj-d-1",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "Rano nie piję zimn",
+    sentenceAfter: " kawy.",
+    gapWord: "zimny",
+    gapWordMeaning: "froid",
+    targetType: "adjective",
+    gender: "adjectif féminin",
+    correctEnding: "-ej",
+    fullCorrectWord: "zimnej",
+    fullSentence: "Rano nie piję zimnej kawy.",
+    translationFr: "Le matin, je ne bois pas de café froid.",
+    ruleExplanation: "Au <strong>Génitif singulier</strong> féminin (après négation, <em>do, bez, dla</em>), l'adjectif prend la terminaison <strong>-ej</strong> : <em>zimny</em> &rarr; <strong>zimnej kawy</strong>.",
+    options: [
+      { ending: "-ej", word: "zimnej", isCorrect: true, note: "Génitif adjectif féminin (-ej)" },
+      { ending: "-ą", word: "zimną", isCorrect: false, note: "Accusatif / Instrumental (-ą)" },
+      { ending: "-a", word: "zimna", isCorrect: false, note: "Nominatif (-a)" },
+      { ending: "-ego", word: "zimnego", isCorrect: false, note: "Masculin / Neutre (-ego)" }
+    ]
+  },
+  {
+    id: "case-adj-d-2",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "Dzisiaj niestety nie mam woln",
+    sentenceAfter: " czasu.",
+    gapWord: "wolny",
+    gapWordMeaning: "libre",
+    targetType: "adjective",
+    gender: "adjectif masculin",
+    correctEnding: "-ego",
+    fullCorrectWord: "wolnego",
+    fullSentence: "Dzisiaj niestety nie mam wolnego czasu.",
+    translationFr: "Aujourd'hui malheureusement je n'ai pas de temps libre.",
+    ruleExplanation: "Au <strong>Génitif singulier</strong> masculin et neutre, l'adjectif prend la terminaison <strong>-ego</strong> : <em>wolny</em> &rarr; <strong>wolnego czasu</strong>.",
+    options: [
+      { ending: "-ego", word: "wolnego", isCorrect: true, note: "Génitif adjectif masculin (-ego)" },
+      { ending: "-y", word: "wolny", isCorrect: false, note: "Nominatif (-y)" },
+      { ending: "-ym", word: "wolnym", isCorrect: false, note: "Instrumental / Locatif (-ym)" },
+      { ending: "-ej", word: "wolnej", isCorrect: false, note: "Féminin (-ej)" }
+    ]
+  },
+  {
+    id: "case-adj-d-3",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "W kawiarni nie ma już śwież",
+    sentenceAfter: " ciasta.",
+    gapWord: "świeży",
+    gapWordMeaning: "frais",
+    targetType: "adjective",
+    gender: "adjectif neutre",
+    correctEnding: "-ego",
+    fullCorrectWord: "świeżego",
+    fullSentence: "W kawiarni nie ma już świeżego ciasta.",
+    translationFr: "Au café, il n'y a plus de gâteau frais.",
+    ruleExplanation: "Après la formule d'absence <em>nie ma</em>, l'adjectif neutre passe au Génitif avec la désinence <strong>-ego</strong> : <em>świeży</em> &rarr; <strong>świeżego ciasta</strong>.",
+    options: [
+      { ending: "-ego", word: "świeżego", isCorrect: true, note: "Génitif neutre (-ego)" },
+      { ending: "-e", word: "świeże", isCorrect: false, note: "Nominatif neutre (-e)" },
+      { ending: "-ym", word: "świeżym", isCorrect: false, note: "Instrumental (-ym)" },
+      { ending: "-ej", word: "świeżej", isCorrect: false, note: "Féminin (-ej)" }
+    ]
+  },
+
+  // ------------------------------------------
+  // DÉFIS PLURIELS (NOMS ET ADJECTIFS)
+  // ------------------------------------------
+  {
+    id: "case-pl-b-1",
+    caseName: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    caseBadgeClass: "case-biernik",
+    sentenceBefore: "Na lotnisko zabieram dwie duż",
+    sentenceAfter: " walizki.",
+    gapWord: "duży",
+    gapWordMeaning: "grand",
+    targetType: "adjective",
+    isPlural: true,
+    gender: "adjectif pluriel non-viril",
+    correctEnding: "-e",
+    fullCorrectWord: "duże",
+    fullSentence: "Na lotnisko zabieram dwie duże walizki.",
+    translationFr: "J'emporte deux grandes valises à l'aéroport.",
+    ruleExplanation: "À l'<strong>Accusatif pluriel</strong> non-viril (objets, femmes, animaux), l'adjectif prend la terminaison <strong>-e</strong> : <em>duży</em> &rarr; <strong>duże walizki</strong>.",
+    options: [
+      { ending: "-e", word: "duże", isCorrect: true, note: "Accusatif pluriel non-viril (-e)" },
+      { ending: "-ych", word: "dużych", isCorrect: false, note: "Génitif / Locatif pluriel (-ych)" },
+      { ending: "-ą", word: "dużą", isCorrect: false, note: "Féminin singulier (-ą)" },
+      { ending: "-ymi", word: "dużymi", isCorrect: false, note: "Instrumental pluriel (-ymi)" }
+    ]
+  },
+  {
+    id: "case-pl-b-2",
+    caseName: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    caseBadgeClass: "case-biernik",
+    sentenceBefore: "Poproszę dwa bilet",
+    sentenceAfter: " do Paryża.",
+    gapWord: "bilet",
+    gapWordMeaning: "billet",
+    targetType: "noun",
+    isPlural: true,
+    gender: "nom masculin pluriel",
+    correctEnding: "-y",
+    fullCorrectWord: "bilety",
+    fullSentence: "Poproszę dwa bilety do Paryża.",
+    translationFr: "Deux billets pour Paris, s'il vous plaît.",
+    ruleExplanation: "Après le chiffre <em>dwa</em> (deux) pour un masculin inanimé, le nom prend la forme du Nominatif/Accusatif pluriel en <strong>-y</strong> : <em>bilet</em> &rarr; <strong>dwa bilety</strong>.",
+    options: [
+      { ending: "-y", word: "bilety", isCorrect: true, note: "Accusatif pluriel inanimé (-y)" },
+      { ending: "-ów", word: "biletów", isCorrect: false, note: "Génitif pluriel (pour 5 et plus) (-ów)" },
+      { ending: "-e", word: "bilete", isCorrect: false, note: "Désinence erronée" },
+      { ending: "-ach", word: "biletach", isCorrect: false, note: "Locatif pluriel (-ach)" }
+    ]
+  },
+  {
+    id: "case-pl-n-1",
+    caseName: "Narzednik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    caseBadgeClass: "case-narzednik",
+    sentenceBefore: "Mój profesor rozmawia ze student",
+    sentenceAfter: ".",
+    gapWord: "student",
+    gapWordMeaning: "étudiant",
+    targetType: "noun",
+    isPlural: true,
+    gender: "nom pluriel",
+    correctEnding: "-ami",
+    fullCorrectWord: "studentami",
+    fullSentence: "Mój profesor rozmawia ze studentami.",
+    translationFr: "Mon professeur discute avec les étudiants.",
+    ruleExplanation: "À l'<strong>Instrumental pluriel</strong>, la terminaison universelle pour quasiment tous les noms (masculins, féminins, neutres) est <strong>-ami</strong> : <em>student</em> &rarr; <strong>ze studentami</strong>.",
+    options: [
+      { ending: "-ami", word: "studentami", isCorrect: true, note: "Instrumental pluriel régulier (-ami)" },
+      { ending: "-om", word: "studentom", isCorrect: false, note: "Datif pluriel (-om)" },
+      { ending: "-ów", word: "studentów", isCorrect: false, note: "Génitif pluriel (-ów)" },
+      { ending: "-ach", word: "studentach", isCorrect: false, note: "Locatif pluriel (-ach)" }
+    ]
+  },
+  {
+    id: "case-pl-n-2",
+    caseName: "Narzednik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    caseBadgeClass: "case-narzednik",
+    sentenceBefore: "Po Polsce najchętniej podróżuję pociąg",
+    sentenceAfter: ".",
+    gapWord: "pociąg",
+    gapWordMeaning: "train",
+    targetType: "noun",
+    isPlural: true,
+    gender: "nom masculin pluriel",
+    correctEnding: "-ami",
+    fullCorrectWord: "pociągami",
+    fullSentence: "Po Polsce najchętniej podróżuję pociągami.",
+    translationFr: "En Pologne, je voyage de préférence en train (par les trains).",
+    ruleExplanation: "À l'<strong>Instrumental pluriel</strong>, le moyen de transport prend la terminaison <strong>-ami</strong> : <em>pociąg</em> &rarr; <strong>pociągami</strong>.",
+    options: [
+      { ending: "-ami", word: "pociągami", isCorrect: true, note: "Instrumental pluriel (-ami)" },
+      { ending: "-ach", word: "pociągach", isCorrect: false, note: "Locatif pluriel (-ach)" },
+      { ending: "-ów", word: "pociągów", isCorrect: false, note: "Génitif pluriel (-ów)" },
+      { ending: "-om", word: "pociągom", isCorrect: false, note: "Datif pluriel (-om)" }
+    ]
+  },
+  {
+    id: "case-pl-n-3",
+    caseName: "Narzednik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    caseBadgeClass: "case-narzednik",
+    sentenceBefore: "Spotykam się z now",
+    sentenceAfter: " przyjaciółmi.",
+    gapWord: "nowy",
+    gapWordMeaning: "nouveau",
+    targetType: "adjective",
+    isPlural: true,
+    gender: "adjectif pluriel",
+    correctEnding: "-ymi",
+    fullCorrectWord: "nowymi",
+    fullSentence: "Spotykam się z nowymi przyjaciółmi.",
+    translationFr: "Je retrouve de nouveaux amis.",
+    ruleExplanation: "À l'<strong>Instrumental pluriel</strong>, les adjectifs prennent la terminaison <strong>-ymi</strong> (ou <em>-imi</em> après k/g) : <em>nowy</em> &rarr; <strong>z nowymi przyjaciółmi</strong>.",
+    options: [
+      { ending: "-ymi", word: "nowymi", isCorrect: true, note: "Instrumental adjectif pluriel (-ymi)" },
+      { ending: "-ych", word: "nowych", isCorrect: false, note: "Génitif / Locatif pluriel (-ych)" },
+      { ending: "-ami", word: "nowami", isCorrect: false, note: "Désinence du nom appliquée à tort à l'adjectif" },
+      { ending: "-ym", word: "nowym", isCorrect: false, note: "Singulier (-ym)" }
+    ]
+  },
+  {
+    id: "case-pl-m-1",
+    caseName: "Miejscownik",
+    caseLabelFr: "Locatif (Miejscownik)",
+    caseBadgeClass: "case-miejscownik",
+    sentenceBefore: "Często śpię w tanich hotel",
+    sentenceAfter: ".",
+    gapWord: "hotel",
+    gapWordMeaning: "hôtel",
+    targetType: "noun",
+    isPlural: true,
+    gender: "nom masculin pluriel",
+    correctEnding: "-ach",
+    fullCorrectWord: "hotelach",
+    fullSentence: "Często śpię w tanich hotelach.",
+    translationFr: "Je dors souvent dans des hôtels bon marché.",
+    ruleExplanation: "Au <strong>Locatif pluriel</strong>, la terminaison universelle pour tous les noms (masculins, féminins, neutres) après <em>w / na</em> est <strong>-ach</strong> : <em>hotel</em> &rarr; <strong>w hotelach</strong>.",
+    options: [
+      { ending: "-ach", word: "hotelach", isCorrect: true, note: "Locatif pluriel universel (-ach)" },
+      { ending: "-ami", word: "hotelami", isCorrect: false, note: "Instrumental pluriel (-ami)" },
+      { ending: "-ów", word: "hotelów", isCorrect: false, note: "Génitif pluriel (-ów)" },
+      { ending: "-om", word: "hotelom", isCorrect: false, note: "Datif pluriel (-om)" }
+    ]
+  },
+  {
+    id: "case-pl-m-2",
+    caseName: "Miejscownik",
+    caseLabelFr: "Locatif (Miejscownik)",
+    caseBadgeClass: "case-miejscownik",
+    sentenceBefore: "Rozmawiamy o polskich tradycj",
+    sentenceAfter: ".",
+    gapWord: "tradycja",
+    gapWordMeaning: "tradition",
+    targetType: "noun",
+    isPlural: true,
+    gender: "nom féminin pluriel",
+    correctEnding: "-ach",
+    fullCorrectWord: "tradycjach",
+    fullSentence: "Rozmawiamy o polskich tradycjach.",
+    translationFr: "Nous parlons des traditions polonaises.",
+    ruleExplanation: "Après la préposition <em>o</em> (à propos de), le nom féminin au Locatif pluriel prend toujours <strong>-ach</strong> : <em>tradycja</em> &rarr; <strong>o tradycjach</strong>.",
+    options: [
+      { ending: "-ach", word: "tradycjach", isCorrect: true, note: "Locatif pluriel (-ach)" },
+      { ending: "-ami", word: "tradycjami", isCorrect: false, note: "Instrumental pluriel (-ami)" },
+      { ending: "-i", word: "tradycji", isCorrect: false, note: "Génitif / Locatif singulier (-i)" },
+      { ending: "-e", word: "tradycje", isCorrect: false, note: "Nominatif pluriel (-e)" }
+    ]
+  },
+  {
+    id: "case-pl-m-3",
+    caseName: "Miejscownik",
+    caseLabelFr: "Locatif (Miejscownik)",
+    caseBadgeClass: "case-miejscownik",
+    sentenceBefore: "Mieszkamy w dobr",
+    sentenceAfter: " hotelach.",
+    gapWord: "dobry",
+    gapWordMeaning: "bon",
+    targetType: "adjective",
+    isPlural: true,
+    gender: "adjectif pluriel",
+    correctEnding: "-ych",
+    fullCorrectWord: "dobrych",
+    fullSentence: "Mieszkamy w dobrych hotelach.",
+    translationFr: "Nous logeons dans de bons hôtels.",
+    ruleExplanation: "Au <strong>Locatif pluriel</strong>, les adjectifs prennent la terminaison <strong>-ych</strong> (ou <em>-ich</em>) : <em>dobry</em> &rarr; <strong>w dobrych hotelach</strong>.",
+    options: [
+      { ending: "-ych", word: "dobrych", isCorrect: true, note: "Locatif adjectif pluriel (-ych)" },
+      { ending: "-ach", word: "dobrach", isCorrect: false, note: "Désinence du nom appliquée à tort" },
+      { ending: "-ymi", word: "dobrymi", isCorrect: false, note: "Instrumental pluriel (-ymi)" },
+      { ending: "-ym", word: "dobrym", isCorrect: false, note: "Singulier (-ym)" }
+    ]
+  },
+  {
+    id: "case-pl-d-1",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "W kasie nie ma już wolnych bilet",
+    sentenceAfter: ".",
+    gapWord: "bilet",
+    gapWordMeaning: "billet",
+    targetType: "noun",
+    isPlural: true,
+    gender: "nom masculin pluriel",
+    correctEnding: "-ów",
+    fullCorrectWord: "biletów",
+    fullSentence: "W kasie nie ma już wolnych biletów.",
+    translationFr: "Au guichet, il n'y a plus de billets disponibles.",
+    ruleExplanation: "Au <strong>Génitif pluriel</strong> après <em>nie ma</em>, la majorité des noms masculins prennent la terminaison <strong>-ów</strong> : <em>bilet</em> &rarr; <strong>nie ma biletów</strong>.",
+    options: [
+      { ending: "-ów", word: "biletów", isCorrect: true, note: "Génitif pluriel masculin (-ów)" },
+      { ending: "-y", word: "bilety", isCorrect: false, note: "Nominatif / Accusatif pluriel (-y)" },
+      { ending: "-ach", word: "biletach", isCorrect: false, note: "Locatif pluriel (-ach)" },
+      { ending: "-om", word: "biletom", isCorrect: false, note: "Datif pluriel (-om)" }
+    ]
+  },
+  {
+    id: "case-pl-d-2",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "Poproszę dwa kilogramy jabł",
+    sentenceAfter: ".",
+    gapWord: "jabłko",
+    gapWordMeaning: "pomme",
+    targetType: "noun",
+    isPlural: true,
+    gender: "nom neutre pluriel",
+    correctEnding: "-ek",
+    fullCorrectWord: "jabłek",
+    fullSentence: "Poproszę dwa kilogramy jabłek.",
+    translationFr: "Deux kilos de pommes, s'il vous plaît.",
+    ruleExplanation: "Après une unité de quantité (<em>dwa kilogramy</em>), le Génitif pluriel des neutres et féminins prend très souvent la <strong>désinence zéro</strong> avec insertion d'un <em>e</em> euphonique : <em>jabłko</em> &rarr; <strong>jabłek</strong>.",
+    options: [
+      { ending: "-ek", word: "jabłek", isCorrect: true, note: "Génitif pluriel désinence zéro (-ek)" },
+      { ending: "-ków", word: "jabłków", isCorrect: false, note: "Désinence masculine appliquée à tort" },
+      { ending: "-ka", word: "jabłka", isCorrect: false, note: "Nominatif pluriel (-a)" },
+      { ending: "-kach", word: "jabłkach", isCorrect: false, note: "Locatif pluriel (-ach)" }
+    ]
+  },
+  {
+    id: "case-pl-d-3",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "W restauracji nie ma już woln",
+    sentenceAfter: " stolików.",
+    gapWord: "wolny",
+    gapWordMeaning: "libre / disponible",
+    targetType: "adjective",
+    isPlural: true,
+    gender: "adjectif pluriel",
+    correctEnding: "-ych",
+    fullCorrectWord: "wolnych",
+    fullSentence: "W restauracji nie ma już wolnych stolików.",
+    translationFr: "Au restaurant, il n'y a plus de tables libres.",
+    ruleExplanation: "Au <strong>Génitif pluriel</strong> après <em>nie ma</em>, les adjectifs prennent la terminaison <strong>-ych</strong> (ou <em>-ich</em>) : <em>wolny</em> &rarr; <strong>wolnych stolików</strong>.",
+    options: [
+      { ending: "-ych", word: "wolnych", isCorrect: true, note: "Génitif adjectif pluriel (-ych)" },
+      { ending: "-e", word: "wolne", isCorrect: false, note: "Nominatif pluriel (-e)" },
+      { ending: "-ów", word: "wolnów", isCorrect: false, note: "Désinence du nom appliquée à l'adjectif" },
+      { ending: "-ymi", word: "wolnymi", isCorrect: false, note: "Instrumental pluriel (-ymi)" }
+    ]
+  },
+  {
+    id: "case-pl-b-3",
+    caseName: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    caseBadgeClass: "case-biernik",
+    sentenceBefore: "W auli uniwersytetu widzę now",
+    sentenceAfter: " studentów.",
+    gapWord: "nowy",
+    gapWordMeaning: "nouveau",
+    targetType: "adjective",
+    isPlural: true,
+    gender: "adjectif pluriel viril (masculin personnel)",
+    correctEnding: "-ych",
+    fullCorrectWord: "nowych",
+    fullSentence: "W auli uniwersytetu widzę nowych studentów.",
+    translationFr: "Dans l'amphithéâtre de l'université, je vois de nouveaux étudiants.",
+    ruleExplanation: "À l'<strong>Accusatif pluriel viril</strong> (hommes ou groupes contenant au moins un homme), l'adjectif prend la même désinence qu'au Génitif pluriel : <strong>-ych / -ich</strong> : <em>nowy</em> &rarr; <strong>nowych studentów</strong> (contrairement au non-viril qui prendrait <em>-e</em> : <em>nowe walizki</em>).",
+    options: [
+      { ending: "-ych", word: "nowych", isCorrect: true, note: "Accusatif pluriel viril = Génitif (-ych)" },
+      { ending: "-e", word: "nowe", isCorrect: false, note: "Accusatif pluriel non-viril (choses, femmes)" },
+      { ending: "-ymi", word: "nowymi", isCorrect: false, note: "Instrumental pluriel (-ymi)" },
+      { ending: "-ego", word: "nowego", isCorrect: false, note: "Singulier animé (-ego)" }
+    ]
+  },
+  {
+    id: "case-pl-b-4",
+    caseName: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    caseBadgeClass: "case-biernik",
+    sentenceBefore: "Znam tych dwóch sympatycznych Polak",
+    sentenceAfter: ".",
+    gapWord: "Polak",
+    gapWordMeaning: "Polonais (personne)",
+    targetType: "noun",
+    isPlural: true,
+    gender: "nom masculin viril pluriel",
+    correctEnding: "-ów",
+    fullCorrectWord: "Polaków",
+    fullSentence: "Znam tych dwóch sympatycznych Polaków.",
+    translationFr: "Je connais ces deux Polonais sympathiques.",
+    ruleExplanation: "À l'<strong>Accusatif pluriel</strong>, les noms masculins personnels (pluriel viril) prennent la terminaison de Génitif pluriel <strong>-ów</strong> : <em>Polak</em> &rarr; <strong>Polaków</strong> (<em>Znam tych Polaków</em>).",
+    options: [
+      { ending: "-ów", word: "Polaków", isCorrect: true, note: "Accusatif pluriel viril = Génitif (-ów)" },
+      { ending: "-y", word: "Polacy", isCorrect: false, note: "Nominatif pluriel viril (Polacy)" },
+      { ending: "-ami", word: "Polakami", isCorrect: false, note: "Instrumental pluriel (-ami)" },
+      { ending: "-ach", word: "Polakach", isCorrect: false, note: "Locatif pluriel (-ach)" }
+    ]
   }
 ];
+
+// ==========================================
+// GUIDE & TABLEAUX AIDE-MÉMOIRE DES CAS POLONAIS
+// ==========================================
+
+const POLISH_CASES_GUIDE = {
+  Biernik: {
+    id: "Biernik",
+    caseName: "Biernik",
+    title: "Biernik (Accusatif)",
+    icon: "🏛️",
+    badgeClass: "case-biernik",
+    question: "Kogo? Co? (Qui ? Quoi ?)",
+    summary: "Cas du Complément d'Objet Direct (COD) pour ce qu'on a, aime, boit, mange, veut, commande, et pour les destinations de mouvement (na / w).",
+    triggers: [
+      "Verbes d'action et de possession transitifs affirmatifs : <strong>mieć</strong> (avoir), <strong>lubić</strong> (aimer), <strong>chcieć</strong> (vouloir), <strong>poproszę</strong> (je voudrais), <strong>zamawiać</strong> (commander), <strong>pić</strong> (boire), <strong>jeść</strong> (manger), <strong>czytać</strong> (lire), <strong>widzieć</strong> (voir), <strong>nosić</strong> (porter)...",
+      "Direction et mouvement vers un lieu : préposition <strong>na + lieu</strong> (<em>na ulicę, na pocztę, na stację, na lotnisko</em>) ou <strong>w + mouvement</strong>."
+    ],
+    endings: [
+      { category: "Féminin singulier", noun: "<strong>-ę</strong> (kawa &rarr; kawę, pizza &rarr; pizzę)", adj: "<strong>-ą</strong> (dobrą kawę)", note: "Seule la terminaison du nom prend -ę, l'adjectif garde -ą." },
+      { category: "Masculin animé (personne, animal)", noun: "<strong>-a</strong> (brat &rarr; brata, pies &rarr; psa)", adj: "<strong>-ego</strong> (dobrego brata)", note: "Identique au Génitif singulier." },
+      { category: "Masculin inanimé (chose, lieu, objet)", noun: "<strong>-ø invariable</strong> (chleb, paszport, plecak)", adj: "<strong>-y / -i</strong> (czarny plecak)", note: "Identique au Nominatif de départ." },
+      { category: "Neutre singulier", noun: "<strong>-o / -e invariable</strong> (jabłko, ciasto, kino)", adj: "<strong>-e</strong> (dobre ciasto)", note: "Identique au Nominatif de départ." },
+      { category: "Pluriel viril / masculin personnel (hommes, groupes)", noun: "<strong>-ów / -i / -y</strong> (studentów, Polaków, braci)", adj: "<strong>-ych / -ich</strong> (nowych studentów)", note: "Forme 100 % IDENTIQUE au Génitif pluriel ! (ex: Znam tych studentów)." },
+      { category: "Pluriel non-viril (femmes, animaux, objets)", noun: "<strong>-y / -e / -a</strong> (kobiety, psy, walizki)", adj: "<strong>-e</strong> (nowe walizki, czarne psy)", note: "Forme 100 % IDENTIQUE au Nominatif pluriel ! (ex: Mam dwie walizki)." }
+    ],
+    examples: [
+      { pl: "Poproszę <strong>kawę</strong> z mlekiem.", fr: "Un café avec du lait, s'il vous plaît." },
+      { pl: "Mam <strong>syna</strong> i <strong>córkę</strong>.", fr: "J'ai un fils et une fille." },
+      { pl: "Proszę jechać na <strong>ulicę Lipową</strong>.", fr: "S'il vous plaît, allez rue Lipowa." },
+      { pl: "W auli uniwersytetu widzę <strong>nowych studentów</strong>.", fr: "Dans l'amphi, je vois de nouveaux étudiants (pluriel viril = génitif pl.)." },
+      { pl: "Na lotnisko zabieram <strong>dwie duże walizki</strong>.", fr: "J'emporte deux grandes valises (pluriel non-viril = nominatif pl.)." }
+    ],
+    tip: "💡 Règle clé du Pluriel à l'Accusatif : Le <strong>pluriel viril</strong> (hommes ou groupes contenant au moins un homme) est identique au <strong>Génitif pluriel</strong> (noms en <em>-ów</em>, adjectifs en <em>-ych/-ich</em> : <em>Widzę dobrych studentów</em>). À l'inverse, le <strong>pluriel non-viril</strong> (femmes, animaux, objets) est identique au <strong>Nominatif pluriel</strong> (adjectifs en <em>-e</em> : <em>Widzę nowe walizki / czarne psy</em>) !"
+  },
+
+  Narzednik: {
+    id: "Narzednik",
+    caseName: "Narzednik",
+    title: "Narzędnik (Instrumental)",
+    icon: "🤝",
+    badgeClass: "case-narzednik",
+    question: "Z kim? Z czym? (Avec qui ? Avec quoi ?) / Kim? Czym? (En quoi ? Par quoi ?)",
+    summary: "Cas de l'accompagnement (avec qui/quoi), des moyens de transport, des métiers et nationalités avec être (być), et des centres d'intérêt.",
+    triggers: [
+      "Préposition <strong>z / ze</strong> (avec quelqu'un, avec un aliment) : <em>kawa z mlekiem, herbata z cytryną, spacer z psem, rozmowa z bratem</em>.",
+      "Métier, profession ou nationalité après le verbe <strong>być</strong> (être) : <em>Jestem Francuzem, Anna jest kelnerką, Mój ojciec jest kierowcą</em>.",
+      "Verbe <strong>interesować się</strong> (s'intéresser à) : <em>Interesuję się muzyką, interesuję się sportem</em>.",
+      "Moyen de transport utilisé pour se déplacer (sans préposition) : <em>jechać autobusem, pociągiem, samochodem, taksówką</em>."
+    ],
+    endings: [
+      { category: "Féminin singulier", noun: "<strong>-ą</strong> (kawa &rarr; kawą, cytryna &rarr; cytryną)", adj: "<strong>-ą</strong> (czarną kawą)", note: "Harmonie parfaite : nom et adjectif riment tous deux en -ą." },
+      { category: "Masculin singulier", noun: "<strong>-em</strong> (mlekiem, bratem, serem)", adj: "<strong>-ym / -im</strong> (dobrym studentem)", note: "Prend <em>-iem</em> après k ou g (pociąg &rarr; pociągiem). Les masculins en -a prennent <em>-ą</em> (kierowcą)." },
+      { category: "Neutre singulier", noun: "<strong>-em</strong> (mleko &rarr; mlekiem, okno &rarr; oknem)", adj: "<strong>-ym / -im</strong> (zimnym mlekiem)", note: "Même terminaison que pour le masculin." },
+      { category: "Pluriel (tous genres)", noun: "<strong>-ami</strong> (studentami, książkami)", adj: "<strong>-ymi / -imi</strong> (nowymi samochodami)", note: "Désinence universelle très régulière." }
+    ],
+    examples: [
+      { pl: "Poproszę kawę z <strong>mlekiem</strong> i z <strong>cukrem</strong>.", fr: "Un café avec du lait et du sucre, s'il vous plaît." },
+      { pl: "Jestem <strong>Francuzem</strong>, a Anna jest <strong>kelnerką</strong>.", fr: "Je suis Français, et Anna est serveuse." },
+      { pl: "Do pracy jeżdżę <strong>autobusem</strong> lub <strong>pociągiem</strong>.", fr: "Je vais au travail en bus ou en train." },
+      { pl: "Bardzo interesuję się <strong>językiem polskim</strong>.", fr: "Je m'intéresse beaucoup à la langue polonaise." },
+      { pl: "Idę na spacer z <strong>psem</strong>.", fr: "Je vais me promener avec le chien." }
+    ],
+    tip: "💡 Astuce : Au féminin singulier, l'Instrumental fait rimer le nom et l'adjectif en <strong>-ą / -ą</strong> (<em>z moją siostrą</em>), alors que l'Accusatif oppose <strong>-ą / -ę</strong> (<em>widzę moją siostrę</em>)."
+  },
+
+  Miejscownik: {
+    id: "Miejscownik",
+    caseName: "Miejscownik",
+    title: "Miejscownik (Locatif)",
+    icon: "📍",
+    badgeClass: "case-miejscownik",
+    question: "O kim? O czym? (De qui ? De quoi ?) / W czym? Na czym? (Où ? Dans quoi ? Sur quoi ?)",
+    summary: "Cas du lieu statique (où l'on est, où l'on habite, où l'on travaille) et du sujet de discussion avec 'o'. Ne s'emploie JAMAIS sans préposition.",
+    triggers: [
+      "Préposition statique <strong>w / we</strong> (dans, en) : <em>w Polsce, we Francji, w kawiarni, w hotelu, w biurze</em>.",
+      "Préposition statique <strong>na</strong> (sur, ou lieu ouvert / service public) : <em>na lotnisku, na poczcie, na stacji, na stole</em>.",
+      "Préposition <strong>o</strong> (au sujet de, à propos de) : <em>rozmawiamy o filmie, myślę o wakacjach</em>.",
+      "Prépositions de proximité <strong>przy</strong> (près de) et <strong>po</strong> (après, selon)."
+    ],
+    endings: [
+      { category: "Féminin singulier", noun: "<strong>-e</strong> (après consonne dure : Polska &rarr; w Polsce, poczta &rarr; na poczcie) ou <strong>-i / -y</strong> (après consonne molle ou -ia : kawiarnia &rarr; w kawiarni, Francja &rarr; we Francji)", adj: "<strong>-ej</strong> (w małej kawiarni)", note: "Attention aux alternances (k &rarr; c : Polska &rarr; w Polsce, t &rarr; ci : poczta &rarr; na poczcie)." },
+      { category: "Masculin singulier", noun: "<strong>-e</strong> (après consonne dure avec adoucissement : stół &rarr; na stole, film &rarr; o filmie) ou <strong>-u</strong> (après k, g, ch ou consonne molle : hotel &rarr; w hotelu, plecak &rarr; w plecaku)", adj: "<strong>-ym / -im</strong> (w nowym hotelu)", note: "Alternances fréquentes (ł &rarr; l : stół &rarr; na stole, r &rarr; rz : teatr &rarr; w teatrze)." },
+      { category: "Neutre singulier", noun: "<strong>-e</strong> (biuro &rarr; w biurze, kino &rarr; w kinie) ou <strong>-u</strong> (mieszkanie &rarr; w mieszkaniu)", adj: "<strong>-ym / -im</strong> (w dużym kinie)", note: "Mêmes règles d'alternance que pour le masculin." },
+      { category: "Pluriel (tous genres)", noun: "<strong>-ach</strong> (w miastach, w hotelach, na wakacjach)", adj: "<strong>-ych / -ich</strong> (w małych pokojach)", note: "Désinence -ach universelle pour tous les genres." }
+    ],
+    examples: [
+      { pl: "Mieszkam we <strong>Francji</strong>, ale teraz jestem w <strong>Polsce</strong>.", fr: "J'habite en France, mais maintenant je suis en Pologne." },
+      { pl: "Spotykamy się w <strong>kawiarni</strong> na <strong>stacji</strong>.", fr: "Nous nous retrouvons au café à la gare." },
+      { pl: "Książka i klucze leżą na <strong>stole</strong>.", fr: "Le livre et les clés sont posés sur la table." },
+      { pl: "Mój brat pracuje w <strong>biurze</strong> w <strong>hotelu</strong>.", fr: "Mon frère travaille dans un bureau à l'hôtel." },
+      { pl: "Rozmawiamy o nowym <strong>filmie</strong>.", fr: "Nous parlons du nouveau film." }
+    ],
+    tip: "⚠️ Mouvement vs Statique : Avec <strong>w</strong> et <strong>na</strong>, si on est sur place (statique), c'est le <strong>Locatif</strong> (<em>jestem w kinie, jestem na poczcie</em>). Si on s'y déplace (mouvement), c'est l'<strong>Accusatif</strong> (<em>idę na pocztę</em>) ou <strong>do + Génitif</strong> (<em>idę do kina</em>) !"
+  },
+
+  Dopelniacz: {
+    id: "Dopelniacz",
+    caseName: "Dopelniacz",
+    title: "Dopełniacz (Génitif)",
+    icon: "🎯",
+    badgeClass: "case-dopelniacz",
+    question: "Kogo? Czego? (De qui ? De quoi ? De quoi manque-t-on ?)",
+    summary: "Cas roi de la grammaire polonaise : négation obligatoire, absence (nie ma), direction (do), provenance (z), manque (bez), attribution (dla) et quantités.",
+    triggers: [
+      "<strong>La Négation</strong> (remplace obligatoirement l'Accusatif) : <em>Nie mam czasu, Nie piję kawy, Nie mam syna</em>.",
+      "L'absence avec <strong>nie ma</strong> (il n'y a pas) : <em>Nie ma chleba, Nie ma problemu, Nie ma wyjścia</em>.",
+      "Préposition <strong>do</strong> (vers / à destination de) : <em>jadę do Polski, do Francji, do domu, do Paryża</em>.",
+      "Préposition <strong>z / ze</strong> (de / provenance d'un lieu) : <em>jestem z Francji, wracam z pracy</em>.",
+      "Préposition <strong>bez</strong> (sans) : <em>kawa bez cukru, herbata bez mleka</em>.",
+      "Préposition <strong>dla</strong> (pour le bénéficiaire) : <em>prezent dla siostry, stolik dla dwóch osób</em>.",
+      "Mots de quantité et récipients : <em>szklanka wody, kilogram jabłek, dużo czasu</em>."
+    ],
+    endings: [
+      { category: "Féminin singulier", noun: "<strong>-y</strong> (kawa &rarr; kawy, siostra &rarr; siostry) ou <strong>-i</strong> (après k, g ou -ia : Polska &rarr; do Polski, Francja &rarr; z Francji)", adj: "<strong>-ej</strong> (dobrej kawy)", note: "Même désinence que le Locatif pour les féminins en -ia." },
+      { category: "Masculin singulier", noun: "<strong>-a</strong> (personnes, animaux, objets définis : brata, psa, chleba) ou <strong>-u</strong> (matières, notions abstraites, moyens de transport, pays : cukru, czasu, domu)", adj: "<strong>-ego</strong> (dobrego brata, nowego domu)", note: "Les masculins animés partagent cette forme avec leur Accusatif." },
+      { category: "Neutre singulier", noun: "<strong>-a</strong> (piwo &rarr; piwa, ciasto &rarr; ciasta, mleko &rarr; mleka)", adj: "<strong>-ego</strong> (zimnego piwa)", note: "Régularité quasi-absolue en -a." },
+      { category: "Pluriel", noun: "Masculins : <strong>-ów</strong> (studentów, biletów) | Féminins et neutres : <strong>-ø désinence zéro</strong> (osoba &rarr; osób, jabłko &rarr; jabłek) ou <strong>-i/-y</strong>", adj: "<strong>-ych / -ich</strong> (nowych biletów)", note: "Ex : Stolik dla ilu osób? (de osoba &rarr; osób)." }
+    ],
+    examples: [
+      { pl: "Jestem z <strong>Francji</strong> i jadę do <strong>Polski</strong>.", fr: "Je viens de France et je vais en Pologne." },
+      { pl: "Niestety dzisiaj nie mam <strong>czasu</strong>.", fr: "Malheureusement aujourd'hui je n'ai pas le temps." },
+      { pl: "Poproszę kawę bez <strong>cukru</strong> i szklankę <strong>wody</strong>.", fr: "Un café sans sucre et un verre d'eau, s'il vous plaît." },
+      { pl: "W tej kawiarni nie ma już <strong>miejsca</strong>.", fr: "Dans ce café, il n'y a plus de place." },
+      { pl: "To jest prezent dla mojej <strong>siostry</strong>.", fr: "C'est un cadeau pour ma sœur." }
+    ],
+    tip: "💡 Négation = Génitif : C'est le réflexe numéro un en polonais. Dès que vous ajoutez <em>nie</em> devant un verbe transitif (avoir, aimer, connaître, boire, manger), le COD passe obligatoirement au Génitif !"
+  }
+};
+
 

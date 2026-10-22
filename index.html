@@ -48,7 +48,7 @@
           <span>🧩</span> Jeu des Cas
         </button>
         <button class="tab-btn" data-tab="manager-tab">
-          <span>📚</span> Vocabulaire (<span id="stat-total-cards">146</span>)
+          <span>📚</span> Vocabulaire (<span id="stat-total-cards">161</span>)
         </button>
       </nav>
     </div>
@@ -98,8 +98,9 @@
       <div class="stats-pill" style="display:flex; flex-direction:column; align-items:flex-start; gap:0.25rem;">
         <div style="display:flex; align-items:center; gap:0.4rem; font-size:0.85rem;">
           <span>Score : <strong id="stat-score">0 / 0</strong></span>
+          <button onclick="resetSessionScore()" title="Remettre le score de session à zéro" style="background:none; border:none; cursor:pointer; padding:0 2px; font-size:0.8rem; opacity:0.65; transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.65'">🔄</button>
           <span>•</span>
-          <span>Série : <strong id="stat-streak" class="streak-icon">0 🔥</strong></span>
+          <span title="Bonnes réponses consécutives d'affilée">Série : <strong id="stat-streak" class="streak-icon">0 🔥</strong></span>
         </div>
         <div style="font-size:0.75rem; color:var(--text-muted); display:flex; gap:0.45rem; align-items:center;">
           <span title="Mots maîtrisés">🟢 <strong id="stat-mastered" style="color:#16a34a;">0</strong></span>
@@ -288,6 +289,28 @@
           <button class="pill-filter-btn" id="case-pill-Dopełniacz" onclick="setCaseCategoryFilter('Dopełniacz')" title="Génitif : négation (nie mam), prépositions bez, do, dla">
             🎯 Dopełniacz - Génitif (<span id="case-count-dopelniacz">0</span>)
           </button>
+          <button class="pill-filter-btn btn-case-cheatsheet-trigger" id="case-cheatsheet-btn" onclick="openCaseCheatSheetModal()" title="Consulter le tableau aide-mémoire complet des cas polonais">
+            📖 Tableau aide-mémoire
+          </button>
+        </div>
+
+        <!-- Filtre de type de cible : Tous / Noms / Adjectifs / Pluriels -->
+        <div class="cases-type-filter-bar">
+          <span style="font-weight:600; font-size:0.8rem; color:var(--text-muted); display:inline-flex; align-items:center; gap:0.25rem;">
+            🎯 Type :
+          </span>
+          <button class="pill-type-btn active" id="case-type-all" onclick="setCaseTypeFilter('all')">
+            Tous (<span id="case-type-count-all">0</span>)
+          </button>
+          <button class="pill-type-btn" id="case-type-noun" onclick="setCaseTypeFilter('noun')">
+            📝 Noms singulier (<span id="case-type-count-noun">0</span>)
+          </button>
+          <button class="pill-type-btn" id="case-type-adjective" onclick="setCaseTypeFilter('adjective')">
+            🎨 Adjectifs (<span id="case-type-count-adjective">0</span>)
+          </button>
+          <button class="pill-type-btn" id="case-type-plural" onclick="setCaseTypeFilter('plural')">
+            👥 Pluriels (<span id="case-type-count-plural">0</span>)
+          </button>
         </div>
 
         <!-- Carte Défi du Cas (Mot + Cas + Choix) -->
@@ -297,8 +320,11 @@
             <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;">
               <span style="font-size:0.85rem; color:var(--text-muted); font-weight:600;">Déclinez au :</span>
               <span class="badge-case-name" id="case-badge-name">🏛️ BIERNIK (Accusatif)</span>
+              <button type="button" class="btn-case-hint" id="case-header-hint-btn" onclick="openActiveCaseGuide()" title="Voir les règles et terminaisons de ce cas">
+                💡 Aide-mémoire
+              </button>
             </div>
-            <span class="case-stats-badge">Score : <strong id="case-score-val" style="color:var(--text-main);">0 / 0</strong> • Série : <strong id="case-streak-val" class="streak-icon">0 🔥</strong></span>
+            <span class="case-stats-badge">Score : <strong id="case-score-val" style="color:var(--text-main);">0 / 0</strong> <button onclick="resetCaseSessionScore()" title="Remettre le score de session à zéro" style="background:none; border:none; cursor:pointer; padding:0 2px; font-size:0.8rem; opacity:0.65; transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.65'">🔄</button> • Série : <strong id="case-streak-val" class="streak-icon">0 🔥</strong></span>
           </div>
 
           <!-- Mot à décliner au centre -->
@@ -460,6 +486,48 @@
       </div>
     </section>
   </main>
+
+  <!-- ============================================== -->
+  <!-- MODAL AIDE-MÉMOIRE DES CAS POLONAIS (PRZYPADKI) -->
+  <!-- ============================================== -->
+  <div id="case-cheatsheet-modal" class="modal-overlay" style="display:none;" onclick="handleModalBackdropClick(event)">
+    <div class="modal-dialog case-modal-dialog" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div style="display:flex; align-items:center; gap:0.6rem;">
+          <span style="font-size:1.35rem;">📖</span>
+          <div>
+            <h3 style="margin:0; font-size:1.15rem; font-weight:700; color:#0f172a;">Aide-Mémoire des Cas Polonais</h3>
+            <p style="margin:0; font-size:0.75rem; color:var(--text-muted);">Terminaisons, règles, déclinaisons par genre et exemples</p>
+          </div>
+        </div>
+        <button class="modal-close-btn" onclick="closeCaseCheatSheetModal()" title="Fermer [Échap]">✕</button>
+      </div>
+
+      <!-- Onglets de sélection du cas dans le modal -->
+      <div class="modal-case-tabs" id="modal-case-tabs">
+        <button class="modal-tab-btn active" data-case="all" onclick="switchCheatSheetTab('all')">
+          📊 Tableau Général
+        </button>
+        <button class="modal-tab-btn" data-case="Biernik" onclick="switchCheatSheetTab('Biernik')">
+          🏛️ Biernik (Accusatif)
+        </button>
+        <button class="modal-tab-btn" data-case="Narzednik" onclick="switchCheatSheetTab('Narzednik')">
+          🤝 Narzędnik (Instrumental)
+        </button>
+        <button class="modal-tab-btn" data-case="Miejscownik" onclick="switchCheatSheetTab('Miejscownik')">
+          📍 Miejscownik (Locatif)
+        </button>
+        <button class="modal-tab-btn" data-case="Dopelniacz" onclick="switchCheatSheetTab('Dopelniacz')">
+          🎯 Dopełniacz (Génitif)
+        </button>
+      </div>
+
+      <!-- Corps du modal avec contenu dynamique -->
+      <div class="modal-body" id="modal-cheatsheet-content">
+        <!-- Rempli dynamiquement en JS -->
+      </div>
+    </div>
+  </div>
 
   <footer>
     Nauka Polskiego • Application d'apprentissage du polonais avec flashcards intelligentes, QCM et synthèse vocale.
