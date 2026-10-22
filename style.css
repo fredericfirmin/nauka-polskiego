@@ -681,6 +681,8 @@ select:focus, input[type="text"]:focus, textarea:focus {
   position: relative;
 }
 
+.quiz-header,
+.typing-header,
 .case-header {
   display: flex;
   justify-content: space-between;

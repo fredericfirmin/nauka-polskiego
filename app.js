@@ -13,9 +13,9 @@ let currentQuizCard = null;
 let currentQuizDirection = "pl-fr";
 let currentQuizOptions = [];
 let quizAnswered = false;
-let score = 0;
-let streak = 0;
-let totalAnswers = 0;
+let quizScore = 0;
+let quizTotal = 0;
+let quizStreak = 0;
 
 // État Flashcard
 let flashcardIndex = 0;
@@ -25,6 +25,9 @@ let isFlipped = false;
 // État Écriture
 let typingCard = null;
 let typingDirection = "fr-pl";
+let typingScore = 0;
+let typingTotal = 0;
+let typingStreak = 0;
 
 // État Jeu des Cas (Przypadki)
 let currentCaseFilter = "all";
@@ -52,6 +55,9 @@ document.addEventListener("DOMContentLoaded", () => {
   setupKeyboardShortcuts();
   updateMasteryCounters();
   updateStatsCounters();
+  updateQuizStatsCounters();
+  updateTypingStatsCounters();
+  updateCaseStatsCounters();
   registerServiceWorker();
 });
 
@@ -233,6 +239,18 @@ function initTabs() {
       const targetElement = document.getElementById(targetTab);
       if (targetElement) {
         targetElement.classList.add("active");
+      }
+
+      // Masquer / afficher la barre de réglages et raccourcis de vocabulaire selon l'onglet
+      const vocabControls = document.getElementById("vocab-controls-section");
+      const vocabQuickModes = document.getElementById("vocab-quick-modes-section");
+      const isVocabMode = (targetTab === "quiz-tab" || targetTab === "flashcard-tab" || targetTab === "typing-tab");
+
+      if (vocabControls) {
+        vocabControls.style.display = isVocabMode ? "" : "none";
+      }
+      if (vocabQuickModes) {
+        vocabQuickModes.style.display = isVocabMode ? "" : "none";
       }
 
       if (targetTab === "quiz-tab") {
@@ -717,7 +735,7 @@ function handleQuizOptionClick(selectedBtn, selectedText, correctAnswer) {
   if (quizAnswered) return;
   quizAnswered = true;
 
-  totalAnswers++;
+  quizTotal++;
   const isCorrect = (selectedText.trim().toLowerCase() === correctAnswer.trim().toLowerCase());
   const allOptionBtns = document.querySelectorAll(".option-btn");
 
@@ -739,15 +757,15 @@ function handleQuizOptionClick(selectedBtn, selectedText, correctAnswer) {
   if (isCorrect) {
     selectedBtn.classList.add("correct");
     selectedBtn.classList.add("pulse-correct");
-    score++;
-    streak++;
+    quizScore++;
+    quizStreak++;
     feedbackMsg.innerHTML = `<span style="color: var(--success); font-weight:700;">✅ Excellent ! Dobrze !</span>`;
     if (currentQuizDirection === "fr-pl") {
       speakPolish(correctAnswer);
     }
   } else {
     selectedBtn.classList.add("wrong");
-    streak = 0;
+    quizStreak = 0;
     feedbackMsg.innerHTML = `<span style="color: var(--danger); font-weight:700;">❌ Incorrect.</span> La bonne réponse était : <strong>${correctAnswer}</strong>`;
     if (currentQuizDirection === "fr-pl") {
       speakPolish(correctAnswer);
@@ -760,24 +778,33 @@ function handleQuizOptionClick(selectedBtn, selectedText, correctAnswer) {
   nextBtn.style.display = "inline-flex";
   nextBtn.focus();
 
-  updateStatsCounters();
+  updateQuizStatsCounters();
+}
+
+function updateQuizStatsCounters() {
+  const scoreEl = document.getElementById("quiz-score-val");
+  const streakEl = document.getElementById("quiz-streak-val");
+
+  if (scoreEl) scoreEl.innerText = `${quizScore} / ${quizTotal}`;
+  if (streakEl) streakEl.innerText = `${quizStreak} 🔥`;
+}
+
+function resetQuizSessionScore() {
+  quizScore = 0;
+  quizTotal = 0;
+  quizStreak = 0;
+  updateQuizStatsCounters();
 }
 
 function updateStatsCounters() {
-  const scoreEl = document.getElementById("stat-score");
-  const streakEl = document.getElementById("stat-streak");
   const totalCardsEl = document.getElementById("stat-total-cards");
-
-  if (scoreEl) scoreEl.innerText = `${score} / ${totalAnswers}`;
-  if (streakEl) streakEl.innerText = `${streak} 🔥`;
   if (totalCardsEl) totalCardsEl.innerText = cards.length;
 }
 
 function resetSessionScore() {
-  score = 0;
-  totalAnswers = 0;
-  streak = 0;
-  updateStatsCounters();
+  resetQuizSessionScore();
+  resetTypingSessionScore();
+  resetCaseSessionScore();
 }
 
 // ==========================================
@@ -1162,12 +1189,12 @@ function checkTypingAnswer() {
   const isLevenshteinMatch = !isExactMatch && !isDiacriticMatch && (bestDistance <= maxAllowedDistance);
   const feedbackBox = document.getElementById("typing-feedback");
 
-  totalAnswers++;
+  typingTotal++;
 
   if (isExactMatch) {
     recordCardResult(typingCard.id, true);
-    score++;
-    streak++;
+    typingScore++;
+    typingStreak++;
     feedbackBox.innerHTML = `
       <div style="color: var(--success); font-weight:700; font-size:1.15rem; margin-bottom:0.35rem;">
         ✅ Parfait ! Bardzo dobrze !
@@ -1178,8 +1205,8 @@ function checkTypingAnswer() {
     speakPolish(bestMatch);
   } else if (isDiacriticMatch) {
     recordCardResult(typingCard.id, true);
-    score++;
-    streak++;
+    typingScore++;
+    typingStreak++;
     feedbackBox.innerHTML = `
       <div style="color: var(--success); font-weight:700; font-size:1.15rem; margin-bottom:0.35rem;">
         ✅ Bonne réponse acceptée ! (Attention aux accents polonais)
@@ -1191,8 +1218,8 @@ function checkTypingAnswer() {
     speakPolish(closestAnswer);
   } else if (isLevenshteinMatch) {
     recordCardResult(typingCard.id, true);
-    score++;
-    streak++;
+    typingScore++;
+    typingStreak++;
     feedbackBox.innerHTML = `
       <div style="color: var(--success); font-weight:700; font-size:1.15rem; margin-bottom:0.35rem;">
         ✅ Bonne réponse acceptée ! (Petite coquille détectée)
@@ -1204,7 +1231,7 @@ function checkTypingAnswer() {
     speakPolish(closestAnswer);
   } else {
     recordCardResult(typingCard.id, false);
-    streak = 0;
+    typingStreak = 0;
     const expectedWord = (closestAnswer && closestAnswer !== typingCard.pl)
       ? `${closestAnswer} (forme standard : ${typingCard.pl})`
       : typingCard.pl;
@@ -1219,13 +1246,28 @@ function checkTypingAnswer() {
     speakPolish(closestAnswer || typingCard.pl);
   }
 
-  updateStatsCounters();
+  updateTypingStatsCounters();
 
   feedbackBox.style.display = "block";
   inputEl.disabled = true;
   document.getElementById("typing-submit-btn").style.display = "none";
   document.getElementById("typing-next-btn").style.display = "inline-flex";
   document.getElementById("typing-next-btn").focus();
+}
+
+function updateTypingStatsCounters() {
+  const scoreEl = document.getElementById("typing-score-val");
+  const streakEl = document.getElementById("typing-streak-val");
+
+  if (scoreEl) scoreEl.innerText = `${typingScore} / ${typingTotal}`;
+  if (streakEl) streakEl.innerText = `${typingStreak} 🔥`;
+}
+
+function resetTypingSessionScore() {
+  typingScore = 0;
+  typingTotal = 0;
+  typingStreak = 0;
+  updateTypingStatsCounters();
 }
 
 // ==========================================
@@ -2125,3 +2167,9 @@ function shuffleArray(arr) {
     [arr[i], arr[j]] = [arr[j], arr[i]];
   }
 }
+
+// Expositions globales pour les événements HTML inline
+window.resetQuizSessionScore = resetQuizSessionScore;
+window.resetTypingSessionScore = resetTypingSessionScore;
+window.resetCaseSessionScore = resetCaseSessionScore;
+window.resetSessionScore = resetSessionScore;

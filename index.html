@@ -57,7 +57,7 @@
   <!-- CONTENU PRINCIPAL -->
   <main>
     <!-- Barre de Contrôles & Réglages Globaux -->
-    <section class="controls-bar">
+    <section class="controls-bar" id="vocab-controls-section">
       <!-- Choix du sens d'apprentissage -->
       <div class="control-group">
         <label for="direction-select">🔄 Sens :</label>
@@ -96,13 +96,10 @@
 
       <!-- Statistiques en direct -->
       <div class="stats-pill" style="display:flex; flex-direction:column; align-items:flex-start; gap:0.25rem;">
-        <div style="display:flex; align-items:center; gap:0.4rem; font-size:0.85rem;">
-          <span>Score : <strong id="stat-score">0 / 0</strong></span>
-          <button onclick="resetSessionScore()" title="Remettre le score de session à zéro" style="background:none; border:none; cursor:pointer; padding:0 2px; font-size:0.8rem; opacity:0.65; transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.65'">🔄</button>
-          <span>•</span>
-          <span title="Bonnes réponses consécutives d'affilée">Série : <strong id="stat-streak" class="streak-icon">0 🔥</strong></span>
+        <div style="font-size:0.75rem; color:var(--text-muted); font-weight:600; text-transform:uppercase; letter-spacing:0.04em;">
+          Maîtrise globale
         </div>
-        <div style="font-size:0.75rem; color:var(--text-muted); display:flex; gap:0.45rem; align-items:center;">
+        <div style="font-size:0.8rem; color:var(--text-muted); display:flex; gap:0.55rem; align-items:center;">
           <span title="Mots maîtrisés">🟢 <strong id="stat-mastered" style="color:#16a34a;">0</strong></span>
           <span title="Mots en cours d'apprentissage">🟡 <strong id="stat-learning" style="color:#d97706;">0</strong></span>
           <span title="Mots à revoir (erreurs)">🔴 <strong id="stat-review" style="color:#dc2626;">0</strong></span>
@@ -111,7 +108,7 @@
     </section>
 
     <!-- Raccourcis d'exercices thématiques ciblés -->
-    <div class="quick-modes-bar">
+    <div class="quick-modes-bar" id="vocab-quick-modes-section">
       <span style="font-weight:600; font-size:0.85rem; color:var(--text-muted); display:inline-flex; align-items:center; gap:0.25rem;">
         ⚡ Exercices rapides :
       </span>
@@ -133,9 +130,12 @@
       <div class="quiz-container">
         <!-- Carte Question -->
         <div class="question-card">
-          <div style="display:flex; justify-content:center; gap:0.5rem; align-items:center; margin-bottom:0.75rem;">
-            <span class="question-category" id="quiz-category-tag">Catégorie</span>
-            <span id="quiz-card-mastery" class="badge-mastery mastery-new">Nouveau</span>
+          <div class="quiz-header" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.85rem; flex-wrap:wrap; gap:0.5rem; border-bottom:1px solid var(--border); padding-bottom:0.75rem;">
+            <div style="display:flex; align-items:center; gap:0.5rem;">
+              <span class="question-category" id="quiz-category-tag" style="margin-bottom:0;">Catégorie</span>
+              <span id="quiz-card-mastery" class="badge-mastery mastery-new">Nouveau</span>
+            </div>
+            <span class="case-stats-badge">Score : <strong id="quiz-score-val" style="color:var(--text-main);">0 / 0</strong> <button onclick="resetQuizSessionScore()" title="Remettre le score QCM à zéro" style="background:none; border:none; cursor:pointer; padding:0 2px; font-size:0.8rem; opacity:0.65; transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.65'">🔄</button> • Série : <strong id="quiz-streak-val" class="streak-icon">0 🔥</strong></span>
           </div>
           <div class="direction-indicator" id="quiz-direction-label">
             🇵🇱 Polonais &rarr; 🇫🇷 Français
@@ -234,9 +234,12 @@
     <!-- ============================================== -->
     <section id="typing-tab" class="tab-content">
       <div class="typing-container">
-        <div style="display:flex; justify-content:center; gap:0.5rem; align-items:center; margin-bottom:0.5rem;">
-          <span class="question-category" id="typing-category">Adjectifs</span>
-          <span id="typing-card-mastery" class="badge-mastery mastery-new">Nouveau</span>
+        <div class="typing-header" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.85rem; flex-wrap:wrap; gap:0.5rem; border-bottom:1px solid var(--border); padding-bottom:0.75rem;">
+          <div style="display:flex; align-items:center; gap:0.5rem;">
+            <span class="question-category" id="typing-category" style="margin-bottom:0;">Adjectifs</span>
+            <span id="typing-card-mastery" class="badge-mastery mastery-new">Nouveau</span>
+          </div>
+          <span class="case-stats-badge">Score : <strong id="typing-score-val" style="color:var(--text-main);">0 / 0</strong> <button onclick="resetTypingSessionScore()" title="Remettre le score d'écriture à zéro" style="background:none; border:none; cursor:pointer; padding:0 2px; font-size:0.8rem; opacity:0.65; transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.65'">🔄</button> • Série : <strong id="typing-streak-val" class="streak-icon">0 🔥</strong></span>
         </div>
         <div style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem;">
           Traduisez en polonais :
