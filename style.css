@@ -166,12 +166,12 @@ main {
   white-space: nowrap;
 }
 
-select, input[type="text"], textarea {
+select, input[type="text"], input[type="search"], textarea {
   padding: 0.45rem 0.85rem;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border);
   background: white;
-  font-size: 0.9rem;
+  font-size: 16px; /* Empêche le zoom auto intempestif sur iOS Safari */
   color: var(--text-main);
   outline: none;
   transition: var(--transition);
@@ -1315,4 +1315,255 @@ footer {
   font-size: 0.85rem;
   color: var(--text-muted);
   background: white;
+}
+
+/* ========================================================
+   OPTIMISATIONS RESPONSIVE SMARTPHONE & iOS / iPhone
+   (Actif uniquement sur écrans <= 768px, ordinateur intact)
+   ======================================================== */
+
+@media (max-width: 768px) {
+  /* En-tête compact et adapté à la Dynamic Island / encoche */
+  .app-header {
+    padding-top: calc(0.6rem + env(safe-area-inset-top, 0px));
+    padding-bottom: 0.6rem;
+    padding-left: calc(0.75rem + env(safe-area-inset-left, 0px));
+    padding-right: calc(0.75rem + env(safe-area-inset-right, 0px));
+  }
+
+  .header-container {
+    gap: 0.5rem;
+  }
+
+  .logo-area {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .app-title {
+    font-size: 1.15rem;
+  }
+
+  /* Barre d'onglets défilante horizontale tactile (scroll fluide) */
+  .nav-tabs {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 4px;
+    gap: 4px;
+    border-radius: 10px;
+  }
+
+  .nav-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tab-btn {
+    flex-shrink: 0;
+    padding: 0.45rem 0.75rem;
+    font-size: 0.82rem;
+  }
+
+  /* Conteneur principal plein écran confortable */
+  main {
+    margin: 0.75rem auto 1.5rem auto;
+    padding: 0 0.5rem;
+    padding-bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* Cartes de jeu et formulaires adaptés */
+  .question-card,
+  .case-card,
+  .typing-container,
+  .add-card-form,
+  .cards-manager {
+    padding: 1.25rem 0.85rem;
+    border-radius: 14px;
+    margin-bottom: 1rem;
+  }
+
+  .question-text,
+  .case-word-main,
+  #typing-prompt {
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+
+  /* Grille des boutons de réponse en 1 colonne tactile */
+  .options-grid,
+  .case-options-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.65rem;
+  }
+
+  .option-btn,
+  .case-option-btn {
+    padding: 0.85rem 0.95rem;
+    font-size: 0.95rem;
+    min-height: 48px;
+    border-radius: 10px;
+  }
+
+  /* Bandeaux d'en-tête de carte (titre + score) */
+  .quiz-header,
+  .typing-header,
+  .case-header {
+    margin-bottom: 0.85rem;
+    padding-bottom: 0.65rem;
+    gap: 0.5rem;
+  }
+
+  .case-stats-badge {
+    font-size: 0.78rem;
+    padding: 0.25rem 0.6rem;
+  }
+
+  .badge-case-name {
+    font-size: 0.78rem;
+    padding: 0.25rem 0.65rem;
+  }
+
+  /* Barres de filtres à défilement horizontal fluide */
+  .cases-filter-bar,
+  .cases-type-filter-bar,
+  .quick-modes-bar {
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 0 0.2rem 0.35rem 0.2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .cases-filter-bar::-webkit-scrollbar,
+  .cases-type-filter-bar::-webkit-scrollbar,
+  .quick-modes-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .pill-filter-btn,
+  .pill-type-btn {
+    flex-shrink: 0;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.78rem;
+  }
+
+  /* Barre de réglages généraux (Sens, Catégorie, Tirage) */
+  .controls-bar {
+    padding: 0.75rem 0.85rem;
+    gap: 0.65rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .control-group {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .control-group select {
+    max-width: 65%;
+  }
+
+  /* Flashcards sur mobile */
+  .flashcard-3d {
+    min-height: 240px;
+  }
+
+  .flashcard-face {
+    padding: 1.5rem 1rem;
+  }
+
+  .flashcard-front h2,
+  .flashcard-back h2 {
+    font-size: 1.6rem;
+  }
+
+  .flashcard-actions {
+    flex-wrap: nowrap;
+    gap: 0.4rem;
+  }
+
+  .flashcard-actions button {
+    flex: 1;
+    padding: 0.65rem 0.5rem;
+    font-size: 0.82rem;
+  }
+
+  /* Clavier virtuel lettres polonaises */
+  .special-keys {
+    gap: 0.25rem;
+  }
+
+  .special-key-btn {
+    min-width: 32px;
+    height: 38px;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.95rem;
+  }
+
+  .input-typing {
+    font-size: 1.15rem;
+    padding: 0.65rem;
+  }
+
+  /* Modaux Aide-Mémoire façon 'Bottom Sheet' native iOS */
+  .modal-overlay {
+    padding: 0;
+    align-items: flex-end;
+  }
+
+  .case-modal-dialog {
+    max-height: 90vh;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .modal-header {
+    padding: 0.85rem 1rem;
+  }
+
+  .modal-body {
+    padding: 0.85rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .modal-case-tabs {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 0.4rem;
+  }
+
+  .modal-case-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .modal-tab-btn {
+    flex-shrink: 0;
+    font-size: 0.8rem;
+    padding: 0.35rem 0.7rem;
+  }
+
+  /* Tableaux d'aide-mémoire et gestionnaire avec scroll doux */
+  .cheat-table-wrap,
+  .cards-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .cheat-table th,
+  .cheat-table td {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.82rem;
+  }
+
+  /* Footer adapté à la barre de gestes iPhone */
+  footer {
+    padding-bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px));
+  }
 }
