@@ -77,7 +77,7 @@ function registerServiceWorker() {
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
       navigator.serviceWorker
-        .register("./sw.js")
+        .register("./sw.js?v=15")
         .then((reg) => {
           console.log("PWA Service Worker actif :", reg.scope);
           // Forcer la recherche de mise à jour à chaque ouverture (vital sur iOS PWA)
@@ -1315,11 +1315,24 @@ function initCases() {
   }
 }
 
+function resolveCaseCanonicalKey(key) {
+  if (!key) return "all";
+  const k = String(key).toLowerCase();
+  if (k.includes("biern") || k.includes("accusatif")) return "Biernik";
+  if (k.includes("narz") || k.includes("instrumental")) return "Narzednik";
+  if (k.includes("miejsc") || k.includes("locatif")) return "Miejscownik";
+  if (k.includes("dop") || k.includes("genitif")) return "Dopelniacz";
+  return "all";
+}
+
 function isSameCase(caseA, caseB) {
   if (!caseA || !caseB) return false;
-  const a = caseA.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  const b = caseB.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  return a === b;
+  const canonicalA = resolveCaseCanonicalKey(caseA);
+  const canonicalB = resolveCaseCanonicalKey(caseB);
+  if (canonicalA !== "all" && canonicalB !== "all") {
+    return canonicalA === canonicalB;
+  }
+  return canonicalA === canonicalB;
 }
 
 function updateCaseCounts() {
@@ -1633,15 +1646,6 @@ function handleModalBackdropClick(e) {
   }
 }
 
-function resolveCaseCanonicalKey(key) {
-  if (!key) return "all";
-  const k = key.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  if (k.includes("biernik") || k.includes("accusatif")) return "Biernik";
-  if (k.includes("narzednik") || k.includes("instrumental")) return "Narzednik";
-  if (k.includes("miejscownik") || k.includes("locatif")) return "Miejscownik";
-  if (k.includes("dopelniacz") || k.includes("genitif")) return "Dopelniacz";
-  return "all";
-}
 
 function switchCheatSheetTab(tabKey) {
   const canonical = resolveCaseCanonicalKey(tabKey);
