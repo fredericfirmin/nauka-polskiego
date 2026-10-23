@@ -77,7 +77,7 @@ function registerServiceWorker() {
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
       navigator.serviceWorker
-        .register("./sw.js?v=17")
+        .register("./sw.js?v=18")
         .then((reg) => {
           console.log("PWA Service Worker actif :", reg.scope);
           // Forcer la recherche de mise à jour à chaque ouverture (vital sur iOS PWA)
@@ -2058,12 +2058,16 @@ function getPolishVoice() {
   const voices = (window.speechSynthesis && window.speechSynthesis.getVoices()) || cachedVoices;
   if (!voices || voices.length === 0) return null;
 
-  // 1. Chercher d'abord une voix polonaise exacte (pl-PL, pl_PL, pl)
-  let v = voices.find(v => v.lang && v.lang.toLowerCase().replace("_", "-").startsWith("pl"));
+  // 1. Chercher d'abord spécifiquement "Zosia" (la voix iOS polonaise de prédilection de l'utilisateur)
+  let v = voices.find(v => v.name && /zosia/i.test(v.name));
   if (v) return v;
 
-  // 2. Chercher par nom contenant "Polish", "Polski", "Zosia", "Paulina", "Krzysztof", "Ewa", "Maja", "Jan"
-  v = voices.find(v => v.name && /polish|polski|zosia|paulina|krzysztof|ewa|jan/i.test(v.name));
+  // 2. Chercher par code langue polonais exact (pl-PL, pl_PL, pl)
+  v = voices.find(v => v.lang && v.lang.toLowerCase().replace("_", "-").startsWith("pl"));
+  if (v) return v;
+
+  // 3. Chercher par autres noms fréquents (Siri, Paulina, Krzysztof, Ewa, Maja, Jan, Polish, Polski)
+  v = voices.find(v => v.name && /polish|polski|siri|paulina|krzysztof|ewa|jan/i.test(v.name));
   if (v) return v;
 
   return null;
@@ -2073,7 +2077,7 @@ function speakPolish(text) {
   if (!text) return;
   const cleanText = text.trim();
 
-  // 1. Arrêter tout audio ou synthèse vocale en cours
+  // 1. Arrêter tout audio en cours
   if (currentAudioElement) {
     try {
       currentAudioElement.pause();
@@ -2081,53 +2085,42 @@ function speakPolish(text) {
     } catch (e) {}
     currentAudioElement = null;
   }
-  if ("speechSynthesis" in window) {
-    try {
-      window.speechSynthesis.cancel();
-    } catch (e) {}
+
+  const isApple = /(iPhone|iPad|iPod|Macintosh)/i.test(navigator.userAgent);
+
+  // 2. SUR IPHONE / IPAD / MAC :
+  // Déclencher la synthèse vocale (Zosia / Siri) IMMÉDIATEMENT ET DE FAÇON SYNCHRONE !
+  // Crucial sur Safari iOS : tout délai asynchrone (comme attendre l'échec d'un appel réseau Google)
+  // détruit l'autorisation du geste tactile de l'utilisateur et rend Zosia muette.
+  if (isApple && "speechSynthesis" in window) {
+    playPolishSpeechSynthesis(cleanText);
+    return;
   }
 
-  // 2. Essai prioritaire : Google Translate TTS (prononciation native parfaite, fonctionne directement sous Windows sans pack de voix)
-  try {
-    const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=pl&client=tw-ob&q=${encodeURIComponent(cleanText)}`;
-    const audio = new Audio(url);
-    currentAudioElement = audio;
-
-    const playPromise = audio.play();
-    if (playPromise !== undefined) {
-      playPromise
-        .then(() => {
-          // Lecture Google réussie !
-        })
-        .catch(err => {
-          console.warn("Google TTS indisponible ou bloqué, repli sur synthèse locale :", err);
-          fallbackToPolishSpeechSynthesis(cleanText);
-        });
-      return;
-    }
-  } catch (err) {
-    console.warn("Erreur Google TTS :", err);
-    fallbackToPolishSpeechSynthesis(cleanText);
-  }
+  // 3. SUR WINDOWS / PC / ANDROID :
+  // Utiliser Google Translate TTS en priorité (prononciation native humaine de haute fidélité
+  // sans dépendre d'un pack de langue Windows local)
+  playGoogleTTS(cleanText);
 }
 
-function fallbackToPolishSpeechSynthesis(text) {
+function playPolishSpeechSynthesis(text) {
   if (!("speechSynthesis" in window)) {
     showAudioNotification("La synthèse vocale n'est pas supportée sur ce navigateur.");
     return;
   }
 
-  const isApple = /(iPhone|iPad|iPod|Macintosh)/i.test(navigator.userAgent);
-  const polishVoice = getPolishVoice();
-
-  // Si on est sur Windows/Android et qu'aucune voix polonaise locale n'est installée
-  if (!polishVoice && !isApple) {
-    showPlatformVoiceHelp();
-    return;
-  }
-
   try {
+    // Si la synthèse vocale est en pause (bug fréquent Safari iOS), on réveille le moteur
+    if (window.speechSynthesis.paused) {
+      window.speechSynthesis.resume();
+    }
+    // Ne pas appeler cancel() brutalement sur iOS si rien ne tourne, cela peut annuler le speak() suivant
+    if (window.speechSynthesis.speaking) {
+      window.speechSynthesis.cancel();
+    }
+
     const utterance = new SpeechSynthesisUtterance(text);
+    const polishVoice = getPolishVoice();
     if (polishVoice) {
       utterance.voice = polishVoice;
     }
@@ -2146,6 +2139,30 @@ function fallbackToPolishSpeechSynthesis(text) {
   } catch (err) {
     console.error("Erreur SpeechSynthesis :", err);
     showPlatformVoiceHelp();
+  }
+}
+
+function playGoogleTTS(cleanText) {
+  try {
+    const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=pl&client=tw-ob&q=${encodeURIComponent(cleanText)}`;
+    const audio = new Audio(url);
+    currentAudioElement = audio;
+
+    const playPromise = audio.play();
+    if (playPromise !== undefined) {
+      playPromise
+        .then(() => {
+          // Lecture Google réussie !
+        })
+        .catch(err => {
+          console.warn("Google TTS indisponible ou bloqué, repli sur synthèse vocale locale :", err);
+          playPolishSpeechSynthesis(cleanText);
+        });
+      return;
+    }
+  } catch (err) {
+    console.warn("Erreur Google TTS :", err);
+    playPolishSpeechSynthesis(cleanText);
   }
 }
 

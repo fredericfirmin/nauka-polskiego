@@ -1,4 +1,4 @@
-const CACHE_NAME = "nauka-polskiego-v17";
+const CACHE_NAME = "nauka-polskiego-v18";
 const STATIC_ASSETS = [
   "./",
   "./index.html",
