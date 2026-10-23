@@ -77,7 +77,7 @@ function registerServiceWorker() {
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
       navigator.serviceWorker
-        .register("./sw.js?v=18")
+        .register("./sw.js?v=19")
         .then((reg) => {
           console.log("PWA Service Worker actif :", reg.scope);
           // Forcer la recherche de mise à jour à chaque ouverture (vital sur iOS PWA)
@@ -2058,19 +2058,42 @@ function getPolishVoice() {
   const voices = (window.speechSynthesis && window.speechSynthesis.getVoices()) || cachedVoices;
   if (!voices || voices.length === 0) return null;
 
-  // 1. Chercher d'abord spécifiquement "Zosia" (la voix iOS polonaise de prédilection de l'utilisateur)
-  let v = voices.find(v => v.name && /zosia/i.test(v.name));
-  if (v) return v;
+  // Filtrer toutes les voix polonaises disponibles
+  const polishVoices = voices.filter(v => {
+    const langMatch = v.lang && v.lang.toLowerCase().replace("_", "-").startsWith("pl");
+    const nameMatch = v.name && /polish|polski|zosia|krzysztof|siri|paulina|ewa|maja|jan/i.test(v.name);
+    return langMatch || nameMatch;
+  });
 
-  // 2. Chercher par code langue polonais exact (pl-PL, pl_PL, pl)
-  v = voices.find(v => v.lang && v.lang.toLowerCase().replace("_", "-").startsWith("pl"));
-  if (v) return v;
+  if (polishVoices.length === 0) return null;
 
-  // 3. Chercher par autres noms fréquents (Siri, Paulina, Krzysztof, Ewa, Maja, Jan, Polish, Polski)
-  v = voices.find(v => v.name && /polish|polski|siri|paulina|krzysztof|ewa|jan/i.test(v.name));
-  if (v) return v;
+  // Hiérarchie de qualité sur Apple / Windows / Android :
+  // 1. Zosia (Premium) — qualité maximale Apple Neural (très naturelle)
+  let best = polishVoices.find(v => /zosia/i.test(v.name) && /premium/i.test(v.name));
+  if (best) return best;
 
-  return null;
+  // 2. Zosia (Améliorée / Enhanced)
+  best = polishVoices.find(v => /zosia/i.test(v.name) && /amélior|enhanced/i.test(v.name));
+  if (best) return best;
+
+  // 3. Zosia standard
+  best = polishVoices.find(v => /zosia/i.test(v.name));
+  if (best) return best;
+
+  // 4. Krzysztof (Premium / Amélioré / Enhanced)
+  best = polishVoices.find(v => /krzysztof/i.test(v.name) && /premium|amélior|enhanced/i.test(v.name));
+  if (best) return best;
+
+  // 5. Krzysztof standard
+  best = polishVoices.find(v => /krzysztof/i.test(v.name));
+  if (best) return best;
+
+  // 6. Toute autre voix polonaise de qualité Premium / Améliorée
+  best = polishVoices.find(v => /premium|enhanced|amélior/i.test(v.name));
+  if (best) return best;
+
+  // 7. Première voix polonaise disponible
+  return polishVoices[0];
 }
 
 function speakPolish(text) {
