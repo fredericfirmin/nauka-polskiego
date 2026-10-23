@@ -77,7 +77,7 @@ function registerServiceWorker() {
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
       navigator.serviceWorker
-        .register("./sw.js?v=15")
+        .register("./sw.js?v=17")
         .then((reg) => {
           console.log("PWA Service Worker actif :", reg.scope);
           // Forcer la recherche de mise à jour à chaque ouverture (vital sur iOS PWA)
@@ -2039,26 +2039,55 @@ function deleteCard(id) {
 // VÉRITABLE PRONONCIATION POLONAISE AUTHENTIQUE
 // ==========================================
 
-/**
- * Joue la prononciation avec une VRAIE voix polonaise native :
- * 1. D'abord via le flux audio officiel polonais de Google Translate TTS (parfaitement authentique).
- * 2. En repli local, UNIQUEMENT si le système dispose d'une voix polonaise installée.
- * 3. Si aucune voix polonaise n'est installée, NE JAMAIS jouer avec la voix anglaise US !
- */
+// ==========================================
+// AUDIO & SYNTHÈSE VOCALE POLONAISE
+// ==========================================
+
+let cachedVoices = [];
+function initVoices() {
+  if ("speechSynthesis" in window) {
+    cachedVoices = window.speechSynthesis.getVoices() || [];
+    window.speechSynthesis.onvoiceschanged = () => {
+      cachedVoices = window.speechSynthesis.getVoices() || [];
+    };
+  }
+}
+initVoices();
+
+function getPolishVoice() {
+  const voices = (window.speechSynthesis && window.speechSynthesis.getVoices()) || cachedVoices;
+  if (!voices || voices.length === 0) return null;
+
+  // 1. Chercher d'abord une voix polonaise exacte (pl-PL, pl_PL, pl)
+  let v = voices.find(v => v.lang && v.lang.toLowerCase().replace("_", "-").startsWith("pl"));
+  if (v) return v;
+
+  // 2. Chercher par nom contenant "Polish", "Polski", "Zosia", "Paulina", "Krzysztof", "Ewa", "Maja", "Jan"
+  v = voices.find(v => v.name && /polish|polski|zosia|paulina|krzysztof|ewa|jan/i.test(v.name));
+  if (v) return v;
+
+  return null;
+}
+
 function speakPolish(text) {
   if (!text) return;
   const cleanText = text.trim();
 
-  // Arrêter tout audio en cours
+  // 1. Arrêter tout audio ou synthèse vocale en cours
   if (currentAudioElement) {
-    currentAudioElement.pause();
+    try {
+      currentAudioElement.pause();
+      currentAudioElement.currentTime = 0;
+    } catch (e) {}
     currentAudioElement = null;
   }
   if ("speechSynthesis" in window) {
-    window.speechSynthesis.cancel();
+    try {
+      window.speechSynthesis.cancel();
+    } catch (e) {}
   }
 
-  // 1. Essai avec Google Translate TTS (voix native polonaise de haute fidélité)
+  // 2. Essai prioritaire : Google Translate TTS (prononciation native parfaite, fonctionne directement sous Windows sans pack de voix)
   try {
     const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=pl&client=tw-ob&q=${encodeURIComponent(cleanText)}`;
     const audio = new Audio(url);
@@ -2066,35 +2095,73 @@ function speakPolish(text) {
 
     const playPromise = audio.play();
     if (playPromise !== undefined) {
-      playPromise.catch(err => {
-        // En cas de blocage CORS/réseau, basculer sur SpeechSynthesis LOCAL mais STRICTEMENT polonais
-        fallbackToStrictPolishVoice(cleanText);
-      });
+      playPromise
+        .then(() => {
+          // Lecture Google réussie !
+        })
+        .catch(err => {
+          console.warn("Google TTS indisponible ou bloqué, repli sur synthèse locale :", err);
+          fallbackToPolishSpeechSynthesis(cleanText);
+        });
       return;
     }
   } catch (err) {
-    fallbackToStrictPolishVoice(cleanText);
+    console.warn("Erreur Google TTS :", err);
+    fallbackToPolishSpeechSynthesis(cleanText);
   }
 }
 
-function fallbackToStrictPolishVoice(text) {
-  if (!("speechSynthesis" in window)) return;
-
-  const voices = window.speechSynthesis.getVoices();
-  // Chercher UNIQUEMENT une voix polonaise réelle
-  const polishVoice = voices.find(v => v.lang && v.lang.toLowerCase().replace("_", "-").startsWith("pl"));
-
-  if (!polishVoice) {
-    console.warn("Aucune voix polonaise installée sur votre système d'exploitation. Voix anglaise bloquée.");
-    showAudioNotification("Voix polonaise non disponible sur ce navigateur. Pour l'activer hors-ligne, installez le pack linguistique Polonais dans les paramètres de Windows.");
+function fallbackToPolishSpeechSynthesis(text) {
+  if (!("speechSynthesis" in window)) {
+    showAudioNotification("La synthèse vocale n'est pas supportée sur ce navigateur.");
     return;
   }
 
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.voice = polishVoice;
-  utterance.lang = "pl-PL";
-  utterance.rate = 0.9;
-  window.speechSynthesis.speak(utterance);
+  const isApple = /(iPhone|iPad|iPod|Macintosh)/i.test(navigator.userAgent);
+  const polishVoice = getPolishVoice();
+
+  // Si on est sur Windows/Android et qu'aucune voix polonaise locale n'est installée
+  if (!polishVoice && !isApple) {
+    showPlatformVoiceHelp();
+    return;
+  }
+
+  try {
+    const utterance = new SpeechSynthesisUtterance(text);
+    if (polishVoice) {
+      utterance.voice = polishVoice;
+    }
+    utterance.lang = "pl-PL";
+    utterance.rate = 0.88;
+    utterance.pitch = 1.0;
+
+    utterance.onerror = (e) => {
+      console.warn("SpeechSynthesis error:", e.error, e);
+      if (e.error === "language-unavailable" || e.error === "voice-unavailable") {
+        showPlatformVoiceHelp();
+      }
+    };
+
+    window.speechSynthesis.speak(utterance);
+  } catch (err) {
+    console.error("Erreur SpeechSynthesis :", err);
+    showPlatformVoiceHelp();
+  }
+}
+
+function showPlatformVoiceHelp() {
+  const isApple = /(iPhone|iPad|iPod|Macintosh)/i.test(navigator.userAgent);
+  const isAndroid = /Android/i.test(navigator.userAgent);
+
+  let msg = "";
+  if (isApple) {
+    msg = "Pour activer la voix polonaise sur iPhone : Réglages > Accessibilité > Contenu énoncé > Voix > Polonais (téléchargez gratuitement la voix Zosia ou Siri).";
+  } else if (isAndroid) {
+    msg = "Pour activer la voix polonaise sur Android : Paramètres > Accessibilité > Sortie de synthèse vocale > Moteur Google > Télécharger les voix en polonais.";
+  } else {
+    msg = "Pour activer la voix polonaise hors-ligne sur Windows : Paramètres > Heure et langue > Voix > Ajouter une voix (Polonais).";
+  }
+  showAudioNotification(msg);
 }
 
 function showAudioNotification(msg) {
@@ -2104,28 +2171,32 @@ function showAudioNotification(msg) {
     notif.id = "audio-notif-toast";
     notif.style.cssText = `
       position: fixed;
-      bottom: 20px;
-      right: 20px;
+      bottom: calc(75px + env(safe-area-inset-bottom, 0px));
+      left: 16px;
+      right: 16px;
+      max-width: 440px;
+      margin: 0 auto;
       background: #1e293b;
-      color: white;
-      padding: 12px 18px;
-      border-radius: 10px;
+      color: #f8fafc;
+      padding: 14px 18px;
+      border-radius: 12px;
       font-size: 0.85rem;
-      max-width: 320px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      line-height: 1.45;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
       z-index: 9999;
       display: flex;
-      align-items: center;
-      gap: 10px;
+      align-items: flex-start;
+      gap: 12px;
       animation: fadeIn 0.3s ease;
+      border-left: 4px solid var(--accent, #3b82f6);
     `;
     document.body.appendChild(notif);
   }
-  notif.innerHTML = `⚠️ <span>${msg}</span>`;
+  notif.innerHTML = `📢 <span>${msg}</span>`;
   notif.style.display = "flex";
   setTimeout(() => {
     if (notif) notif.style.display = "none";
-  }, 4500);
+  }, 5500);
 }
 
 // ==========================================
