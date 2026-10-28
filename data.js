@@ -2055,6 +2055,936 @@ const INITIAL_CARDS = [
     acceptedFr: ["voici", "voila", "voilà"],
     distractorsPl: ["tam", "tutaj", "gdzie"],
     distractorsFr: ["là-bas", "ici", "où"]
+  },
+  // ==========================================
+  // COURS DU 27.10 - EXPRESSIONS & DIALOGUES
+  // ==========================================
+  {
+    id: "phr-27-1",
+    pl: "Co nowego?",
+    fr: "Quoi de neuf ?",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Co nowego"],
+    acceptedFr: ["Quoi de neuf", "Quoi de nouveau"],
+    distractorsPl: ["Jak się masz?", "Co robisz?", "Co słychać?"],
+    distractorsFr: ["Comment vas-tu ?", "Que fais-tu ?", "Qu'est-ce qu'on raconte ?"]
+  },
+  {
+    id: "phr-27-2",
+    pl: "Nic nowego!",
+    fr: "Rien de neuf !",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Nic nowego"],
+    acceptedFr: ["Rien de neuf", "Rien de nouveau"],
+    distractorsPl: ["Wszystko dobrze!", "Dużo pracy!", "Nie wiem!"],
+    distractorsFr: ["Tout va bien !", "Beaucoup de travail !", "Je ne sais pas !"]
+  },
+  {
+    id: "phr-27-3",
+    pl: "Po staremu!",
+    fr: "Comme d'habitude ! / Rien de changé !",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Po staremu"],
+    acceptedFr: ["Comme d'habitude", "Rien de changé", "Comme avant", "Toujours pareil"],
+    distractorsPl: ["Świetnie!", "Bardzo dobrze!", "Niestety nie!"],
+    distractorsFr: ["Super !", "Très bien !", "Malheureusement non !"]
+  },
+  {
+    id: "phr-27-4",
+    pl: "Mam dwie walizki i plecak na dziś.",
+    fr: "J'ai deux valises et un sac à dos pour aujourd'hui.",
+    category: "Voyage & Aéroport",
+    acceptedPl: ["Mam dwie walizki i plecak na dziś", "Mam dwie walizki i plecak na dzis"],
+    acceptedFr: ["J'ai deux valises et un sac à dos pour aujourd'hui", "J ai deux valises et un sac a dos pour aujourd hui"],
+    distractorsPl: ["Mam jedną walizkę i torbę.", "Nie mam żadnego bagażu.", "Mam dwa duże plecaki."],
+    distractorsFr: ["J'ai une valise et un sac.", "Je n'ai aucun bagage.", "J'ai deux grands sacs à dos."]
+  },
+  {
+    id: "phr-27-5",
+    pl: "Trzy plus cztery to siedem i dziesięć minus osiem to dwa.",
+    fr: "Trois plus quatre font sept et dix moins huit font deux.",
+    category: "Nombres",
+    acceptedPl: [
+      "Trzy plus cztery to siedem i dziesięć minus osiem to dwa",
+      "Trzy plus cztery to siedem i dziesiec minus osiem to dwa"
+    ],
+    acceptedFr: [
+      "Trois plus quatre font sept et dix moins huit font deux",
+      "Trois plus quatre ça fait sept et dix moins huit ça fait deux",
+      "Trois plus quatre ca fait sept et dix moins huit ca fait deux"
+    ],
+    distractorsPl: [
+      "Dwa plus pięć to siedem i osiem minus trzy to pięć.",
+      "Cztery plus cztery to osiem i dziesięć minus sześć to cztery.",
+      "Sześć plus jeden to siedem i dziesięć minus dwa to osiem."
+    ],
+    distractorsFr: [
+      "Deux plus cinq font sept et huit moins trois font cinq.",
+      "Quatre plus quatre font huit et dix moins six font quatre.",
+      "Six plus un font sept et dix moins deux font huit."
+    ]
+  },
+  {
+    id: "phr-27-6",
+    pl: "Dzień dobry, chciałbym kupić bilet ulgowy do muzeum.",
+    fr: "Bonjour, je voudrais acheter un billet à tarif réduit pour le musée.",
+    category: "Voyage & Aéroport",
+    genderNotes: "Homme : chciałbym | Femme : chciałabym",
+    acceptedPl: [
+      "Dzień dobry, chciałbym kupić bilet ulgowy do muzeum",
+      "Dzień dobry, chciałabym kupić bilet ulgowy do muzeum",
+      "Dzien dobry, chcialbym kupic bilet ulgowy do muzeum"
+    ],
+    acceptedFr: [
+      "Bonjour, je voudrais acheter un billet à tarif réduit pour le musée",
+      "Bonjour, je voudrais acheter un billet tarif reduit pour le musee",
+      "Bonjour je voudrais acheter un billet à tarif réduit pour le musée"
+    ],
+    distractorsPl: [
+      "Dzień dobry, poproszę dwa bilety normalne do kina.",
+      "Dzień dobry, chcę wysłać list do Francji.",
+      "Dzień dobry, proszę jechać na ulicę Lipową."
+    ],
+    distractorsFr: [
+      "Bonjour, deux billets plein tarif pour le cinéma s'il vous plaît.",
+      "Bonjour, je veux envoyer une lettre en France.",
+      "Bonjour, veuillez aller rue Lipowa."
+    ]
+  },
+  {
+    id: "phr-27-7",
+    pl: "Czy potrzebuje pani pomocy?",
+    fr: "Avez-vous besoin d'aide, madame ?",
+    category: "Phrases & Quotidien",
+    genderNotes: "À une femme : pani | À un homme : pan (Czy potrzebuje pan pomocy?)",
+    acceptedPl: ["Czy potrzebuje pani pomocy", "Czy potrzebuje pan pomocy"],
+    acceptedFr: [
+      "Avez-vous besoin d'aide, madame",
+      "Avez vous besoin d aide madame",
+      "Avez-vous besoin d'aide",
+      "Est-ce que vous avez besoin d'aide, madame"
+    ],
+    distractorsPl: ["W czym mogę pomóc?", "Czy mogę prosić o bilet?", "Gdzie jest pomoc?"],
+    distractorsFr: ["En quoi puis-je vous aider ?", "Puis-je demander un billet ?", "Où est l'aide ?"]
+  },
+  {
+    id: "phr-27-8",
+    pl: "Gdzie jest wejście, proszę? Jest po lewej, niedaleko wyjścia.",
+    fr: "Où est l'entrée, s'il vous plaît ? Elle est à gauche, près de la sortie.",
+    category: "Voyage & Aéroport",
+    acceptedPl: [
+      "Gdzie jest wejście, proszę? Jest po lewej, niedaleko wyjścia",
+      "Gdzie jest wejscie, prosze? Jest po lewej, niedaleko wyjscia"
+    ],
+    acceptedFr: [
+      "Où est l'entrée, s'il vous plaît ? Elle est à gauche, près de la sortie",
+      "Ou est l entree s il vous plait ? Elle est a gauche pres de la sortie",
+      "Où est l'entrée s'il vous plaît ? Elle est à gauche près de la sortie"
+    ],
+    distractorsPl: [
+      "Gdzie jest wyjście, proszę? Jest po prawej stronie.",
+      "Gdzie jest kasa biletowa? Jest na wprost wejścia.",
+      "Czy wejście jest otwarte? Tak, po lewej stronie."
+    ],
+    distractorsFr: [
+      "Où est la sortie, s'il vous plaît ? Elle est sur le côté droit.",
+      "Où est la billetterie ? Elle est en face de l'entrée.",
+      "Est-ce que l'entrée est ouverte ? Oui, à gauche."
+    ]
+  },
+  {
+    id: "phr-27-9",
+    pl: "Chciałbym powtórzyć adres : plac Centralny, numer dwadzieścia dwa.",
+    fr: "Je voudrais répéter l'adresse : place Centrale, numéro vingt-deux.",
+    category: "Voyage & Aéroport",
+    acceptedPl: [
+      "Chciałbym powtórzyć adres : plac Centralny, numer dwadzieścia dwa",
+      "Chcialbym powtorzyc adres : plac Centralny, numer dwadziescia dwa"
+    ],
+    acceptedFr: [
+      "Je voudrais répéter l'adresse : place Centrale, numéro vingt-deux",
+      "Je voudrais repeter l adresse : place Centrale, numero vingt deux",
+      "Je voudrais répéter l'adresse place Centrale numéro 22"
+    ],
+    distractorsPl: [
+      "Proszę powtórzyć nazwisko i numer telefonu.",
+      "Proszę jechać na ulicę Lipową, numer dziesięć.",
+      "Gdzie jest plac Centralny w tym mieście?"
+    ],
+    distractorsFr: [
+      "Veuillez répéter le nom de famille et le numéro de téléphone.",
+      "Veuillez aller rue Lipowa, numéro dix.",
+      "Où se trouve la place Centrale dans cette ville ?"
+    ]
+  },
+  {
+    id: "phr-27-10",
+    pl: "dwadzieścia przez trzynaście (20/13)",
+    fr: "vingt sur treize (adresse : numéro 20, appartement 13)",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["dwadzieścia przez trzynaście", "dwadziescia przez trzynascie", "20/13"],
+    acceptedFr: ["vingt sur treize", "20 sur 13", "numéro 20 appartement 13"],
+    distractorsPl: ["dwadzieścia i trzynaście", "trzynaście przez dwadzieścia", "dwadzieścia trzy"],
+    distractorsFr: ["vingt et treize", "treize sur vingt", "vingt-trois"]
+  },
+
+  // ==========================================
+  // COURS DU 27.10 - NOMBRES, CENTAINES & MILLIERS
+  // ==========================================
+  {
+    id: "num-27-1",
+    pl: "rok",
+    fr: "an, année",
+    category: "Nombres",
+    acceptedPl: ["rok"],
+    acceptedFr: ["an", "année", "annee", "l'année"],
+    distractorsPl: ["miesiąc", "tydzień", "dzień"],
+    distractorsFr: ["mois", "semaine", "jour"]
+  },
+  {
+    id: "num-27-2",
+    pl: "teraz",
+    fr: "maintenant",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["teraz"],
+    acceptedFr: ["maintenant", "actuellement"],
+    distractorsPl: ["wczoraj", "jutro", "zawsze"],
+    distractorsFr: ["hier", "demain", "toujours"]
+  },
+  {
+    id: "num-27-3",
+    pl: "Jaki jest teraz rok?",
+    fr: "En quelle année sommes-nous maintenant ?",
+    category: "Nombres",
+    acceptedPl: ["Jaki jest teraz rok"],
+    acceptedFr: ["En quelle année sommes-nous maintenant", "Quelle année sommes-nous", "Quel est l'an actuel"],
+    distractorsPl: ["Który jest dzisiaj dzień?", "Która jest godzina?", "Kiedy masz urodziny?"],
+    distractorsFr: ["Quel jour sommes-nous aujourd'hui ?", "Quelle heure est-il ?", "Quand as-tu ton anniversaire ?"]
+  },
+  {
+    id: "num-27-4",
+    pl: "W jakim roku się urodziłeś?",
+    fr: "En quelle année es-tu né ?",
+    category: "Nombres",
+    genderNotes: "À un homme : urodziłeś | À une femme : urodziłaś",
+    acceptedPl: ["W jakim roku się urodziłeś", "W jakim roku sie urodziles", "W jakim roku się urodziłaś"],
+    acceptedFr: ["En quelle année es-tu né", "En quelle annee es-tu ne", "En quelle année es-tu née"],
+    distractorsPl: ["Ile masz lat?", "Gdzie się urodziłeś?", "Kiedy masz urodziny?"],
+    distractorsFr: ["Quel âge as-tu ?", "Où es-tu né ?", "Quand est ton anniversaire ?"]
+  },
+  {
+    id: "num-27-5",
+    pl: "dwadzieścia",
+    fr: "20 (vingt)",
+    category: "Nombres",
+    acceptedPl: ["dwadzieścia", "dwadziescia", "20"],
+    acceptedFr: ["20", "vingt"],
+    distractorsPl: ["dwanaście", "dwieście", "trzydzieści"],
+    distractorsFr: ["douze", "deux cents", "trente"]
+  },
+  {
+    id: "num-27-6",
+    pl: "trzydzieści",
+    fr: "30 (trente)",
+    category: "Nombres",
+    acceptedPl: ["trzydzieści", "trzydziesci", "30"],
+    acceptedFr: ["30", "trente"],
+    distractorsPl: ["trzynaście", "trzysta", "czterdzieści"],
+    distractorsFr: ["treize", "trois cents", "quarante"]
+  },
+  {
+    id: "num-27-7",
+    pl: "czterdzieści",
+    fr: "40 (quarante)",
+    category: "Nombres",
+    acceptedPl: ["czterdzieści", "czterdziesci", "40"],
+    acceptedFr: ["40", "quarante"],
+    distractorsPl: ["czternaście", "czterysta", "pięćdziesiąt"],
+    distractorsFr: ["quatorze", "quatre cents", "cinquante"]
+  },
+  {
+    id: "num-27-8",
+    pl: "pięćdziesiąt",
+    fr: "50 (cinquante)",
+    category: "Nombres",
+    acceptedPl: ["pięćdziesiąt", "piecdziesiat", "50"],
+    acceptedFr: ["50", "cinquante"],
+    distractorsPl: ["piętnaście", "pięćset", "sześćdziesiąt"],
+    distractorsFr: ["quinze", "cinq cents", "soixante"]
+  },
+  {
+    id: "num-27-9",
+    pl: "sześćdziesiąt",
+    fr: "60 (soixante)",
+    category: "Nombres",
+    acceptedPl: ["sześćdziesiąt", "szescdziesiat", "60"],
+    acceptedFr: ["60", "soixante"],
+    distractorsPl: ["szesnaście", "sześćset", "siedemdziesiąt"],
+    distractorsFr: ["seize", "six cents", "soixante-dix"]
+  },
+  {
+    id: "num-27-10",
+    pl: "siedemdziesiąt",
+    fr: "70 (soixante-dix)",
+    category: "Nombres",
+    acceptedPl: ["siedemdziesiąt", "siedemdziesiat", "70"],
+    acceptedFr: ["70", "soixante-dix", "septante"],
+    distractorsPl: ["siedemnaście", "siedemset", "osiemdziesiąt"],
+    distractorsFr: ["dix-sept", "sept cents", "quatre-vingts"]
+  },
+  {
+    id: "num-27-11",
+    pl: "osiemdziesiąt",
+    fr: "80 (quatre-vingts)",
+    category: "Nombres",
+    acceptedPl: ["osiemdziesiąt", "osiemdziesiat", "80"],
+    acceptedFr: ["80", "quatre-vingts", "quatre-vingt", "huitante"],
+    distractorsPl: ["osiemnaście", "osiemset", "dziewięćdziesiąt"],
+    distractorsFr: ["dix-huit", "huit cents", "quatre-vingt-dix"]
+  },
+  {
+    id: "num-27-12",
+    pl: "dziewięćdziesiąt",
+    fr: "90 (quatre-vingt-dix)",
+    category: "Nombres",
+    acceptedPl: ["dziewięćdziesiąt", "dziewiecdziesiat", "90"],
+    acceptedFr: ["90", "quatre-vingt-dix", "nonante"],
+    distractorsPl: ["dziewiętnaście", "dziewięćset", "sto"],
+    distractorsFr: ["dix-neuf", "neuf cents", "cent"]
+  },
+  {
+    id: "num-27-13",
+    pl: "sto",
+    fr: "100 (cent)",
+    category: "Nombres",
+    acceptedPl: ["sto", "100"],
+    acceptedFr: ["100", "cent"],
+    distractorsPl: ["dziesięć", "dwieście", "tysiąc"],
+    distractorsFr: ["dix", "deux cents", "mille"]
+  },
+  {
+    id: "num-27-14",
+    pl: "dwieście",
+    fr: "200 (deux cents)",
+    category: "Nombres",
+    acceptedPl: ["dwieście", "dwiescie", "200"],
+    acceptedFr: ["200", "deux cents", "deux cent"],
+    distractorsPl: ["dwadzieścia", "trzysta", "dwa tysiące"],
+    distractorsFr: ["vingt", "trois cents", "deux mille"]
+  },
+  {
+    id: "num-27-15",
+    pl: "trzysta",
+    fr: "300 (trois cents)",
+    category: "Nombres",
+    acceptedPl: ["trzysta", "300"],
+    acceptedFr: ["300", "trois cents", "trois cent"],
+    distractorsPl: ["trzydzieści", "czterysta", "trzy tysiące"],
+    distractorsFr: ["trente", "quatre cents", "trois mille"]
+  },
+  {
+    id: "num-27-16",
+    pl: "czterysta",
+    fr: "400 (quatre cents)",
+    category: "Nombres",
+    acceptedPl: ["czterysta", "400"],
+    acceptedFr: ["400", "quatre cents", "quatre cent"],
+    distractorsPl: ["czterdzieści", "pięćset", "dwa tysiące"],
+    distractorsFr: ["quarante", "cinq cents", "deux mille"]
+  },
+  {
+    id: "num-27-17",
+    pl: "pięćset",
+    fr: "500 (cinq cents)",
+    category: "Nombres",
+    acceptedPl: ["pięćset", "piecset", "500"],
+    acceptedFr: ["500", "cinq cents", "cinq cent"],
+    distractorsPl: ["pięćdziesiąt", "sześćset", "pięć tysięcy"],
+    distractorsFr: ["cinquante", "six cents", "cinq mille"]
+  },
+  {
+    id: "num-27-18",
+    pl: "sześćset",
+    fr: "600 (six cents)",
+    category: "Nombres",
+    acceptedPl: ["sześćset", "szescset", "600"],
+    acceptedFr: ["600", "six cents", "six cent"],
+    distractorsPl: ["sześćdziesiąt", "siedemset", "sześć tysięcy"],
+    distractorsFr: ["soixante", "sept cents", "six mille"]
+  },
+  {
+    id: "num-27-19",
+    pl: "siedemset",
+    fr: "700 (sept cents)",
+    category: "Nombres",
+    acceptedPl: ["siedemset", "700"],
+    acceptedFr: ["700", "sept cents", "sept cent"],
+    distractorsPl: ["siedemdziesiąt", "osiemset", "siedem tysięcy"],
+    distractorsFr: ["soixante-dix", "huit cents", "sept mille"]
+  },
+  {
+    id: "num-27-20",
+    pl: "osiemset",
+    fr: "800 (huit cents)",
+    category: "Nombres",
+    acceptedPl: ["osiemset", "800"],
+    acceptedFr: ["800", "huit cents", "huit cent"],
+    distractorsPl: ["osiemdziesiąt", "dziewięćset", "osiem tysięcy"],
+    distractorsFr: ["quatre-vingts", "neuf cents", "huit mille"]
+  },
+  {
+    id: "num-27-21",
+    pl: "dziewięćset",
+    fr: "900 (neuf cents)",
+    category: "Nombres",
+    acceptedPl: ["dziewięćset", "dziewiecset", "900"],
+    acceptedFr: ["900", "neuf cents", "neuf cent"],
+    distractorsPl: ["dziewięćdziesiąt", "tysiąc", "dziewięć tysięcy"],
+    distractorsFr: ["quatre-vingt-dix", "mille", "neuf mille"]
+  },
+  {
+    id: "num-27-22",
+    pl: "tysiąc",
+    fr: "1 000 (mille)",
+    category: "Nombres",
+    acceptedPl: ["tysiąc", "tysiac", "1000", "1 000"],
+    acceptedFr: ["1000", "1 000", "mille"],
+    distractorsPl: ["sto", "dwa tysiące", "milion"],
+    distractorsFr: ["cent", "deux mille", "million"]
+  },
+  {
+    id: "num-27-23",
+    pl: "dwa tysiące",
+    fr: "2 000 (deux mille)",
+    category: "Nombres",
+    acceptedPl: ["dwa tysiące", "dwa tysiace", "2000", "2 000"],
+    acceptedFr: ["2000", "2 000", "deux mille"],
+    distractorsPl: ["tysiąc", "trzy tysiące", "dwieście"],
+    distractorsFr: ["mille", "trois mille", "deux cents"]
+  },
+  {
+    id: "num-27-24",
+    pl: "pięć tysięcy",
+    fr: "5 000 (cinq mille)",
+    category: "Nombres",
+    acceptedPl: ["pięć tysięcy", "piec tysiecy", "5000", "5 000"],
+    acceptedFr: ["5000", "5 000", "cinq mille"],
+    distractorsPl: ["pięćset", "dwa tysiące", "siedem tysięcy"],
+    distractorsFr: ["cinq cents", "deux mille", "sept mille"]
+  },
+  {
+    id: "num-27-25",
+    pl: "sześćset siedemdziesiąt osiem",
+    fr: "678 (six cent soixante-dix-huit)",
+    category: "Nombres",
+    acceptedPl: ["sześćset siedemdziesiąt osiem", "szescset siedemdziesiat osiem", "678"],
+    acceptedFr: ["678", "six cent soixante-dix-huit", "six cent soixante dix huit"],
+    distractorsPl: ["siedemset sześćdziesiąt osiem", "pięćset siedemdziesiąt sześć", "sześćset osiemdziesiąt siedem"],
+    distractorsFr: ["sept cent soixante-huit", "cinq cent soixante-seize", "six cent quatre-vingt-sept"]
+  },
+  {
+    id: "num-27-26",
+    pl: "trzy tysiące dwieście czternaście",
+    fr: "3 214 (trois mille deux cent quatorze)",
+    category: "Nombres",
+    acceptedPl: ["trzy tysiące dwieście czternaście", "trzy tysiace dwiescie czternascie", "3214", "3 214"],
+    acceptedFr: ["3214", "3 214", "trois mille deux cent quatorze"],
+    distractorsPl: ["trzy tysiące sto dwadzieścia cztery", "dwa tysiące trzysta czternaście", "cztery tysiące dwieście trzynaście"],
+    distractorsFr: ["trois mille cent vingt-quatre", "deux mille trois cent quatorze", "quatre mille deux cent treize"]
+  },
+  {
+    id: "num-27-27",
+    pl: "dwa tysiące dwadzieścia sześć",
+    fr: "2 026 (deux mille vingt-six - année 2026)",
+    category: "Nombres",
+    acceptedPl: ["dwa tysiące dwadzieścia sześć", "dwa tysiace dwadziescia szesc", "2026", "2 026"],
+    acceptedFr: ["2026", "2 026", "deux mille vingt-six", "deux mille vingt six"],
+    distractorsPl: ["dwa tysiące dwadzieścia cztery", "dwa tysiące szesnaście", "tysiąc dziewięćset dziewięćdziesiąt sześć"],
+    distractorsFr: ["deux mille vingt-quatre", "deux mille seize", "mille neuf cent quatre-vingt-seize"]
+  },
+  {
+    id: "num-27-28",
+    pl: "tysiąc dziewięćset dziewięćdziesiąt dziewięć",
+    fr: "1 999 (mille neuf cent quatre-vingt-dix-neuf - année 1999)",
+    category: "Nombres",
+    acceptedPl: [
+      "tysiąc dziewięćset dziewięćdziesiąt dziewięć",
+      "tysiac dziewiecset dziewiecdziesiat dziewiec",
+      "1999",
+      "1 999"
+    ],
+    acceptedFr: [
+      "1999",
+      "1 999",
+      "mille neuf cent quatre-vingt-dix-neuf",
+      "mille neuf cent nonante neuf"
+    ],
+    distractorsPl: [
+      "tysiąc dziewięćset osiemdziesiąt dziewięć",
+      "dwa tysiące dziewięć",
+      "tysiąc osiemset dziewięćdziesiąt dziewięć"
+    ],
+    distractorsFr: [
+      "mille neuf cent quatre-vingt-neuf",
+      "deux mille neuf",
+      "mille huit cent quatre-vingt-dix-neuf"
+    ]
+  },
+
+  // ==========================================
+  // COURS DU 27.10 - FAIRE CONNAISSANCE (POZNANIE NOWEJ OSOBY)
+  // ==========================================
+  {
+    id: "ren-27-1",
+    pl: "miasto",
+    fr: "ville",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["miasto"],
+    acceptedFr: ["ville", "la ville", "une ville"],
+    distractorsPl: ["państwo", "wieś", "ulica"],
+    distractorsFr: ["pays", "campagne, village", "rue"]
+  },
+  {
+    id: "ren-27-2",
+    pl: "trochę",
+    fr: "un peu",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["trochę", "troche"],
+    acceptedFr: ["un peu"],
+    distractorsPl: ["dużo", "bardzo", "zawsze"],
+    distractorsFr: ["beaucoup", "très", "toujours"]
+  },
+  {
+    id: "ren-27-3",
+    pl: "język ojczysty",
+    fr: "langue maternelle",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["język ojczysty", "jezyk ojczysty"],
+    acceptedFr: ["langue maternelle", "la langue maternelle"],
+    distractorsPl: ["język obcy", "język polski", "język francuski"],
+    distractorsFr: ["langue étrangère", "langue polonaise", "langue française"]
+  },
+  {
+    id: "ren-27-4",
+    pl: "ojciec",
+    fr: "père",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["ojciec"],
+    acceptedFr: ["père", "pere", "le père"],
+    distractorsPl: ["syn", "brat", "mąż"],
+    distractorsFr: ["fils", "frère", "mari"]
+  },
+  {
+    id: "ren-27-5",
+    pl: "Francuski to mój język ojczysty.",
+    fr: "Le français est ma langue maternelle.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Francuski to mój język ojczysty", "Francuski to moj jezyk ojczysty"],
+    acceptedFr: ["Le français est ma langue maternelle", "Le francais est ma langue maternelle"],
+    distractorsPl: ["Polski to mój język obcy.", "Uczę się języka francuskiego.", "Mój ojciec mówi po francusku."],
+    distractorsFr: ["Le polonais est ma langue étrangère.", "J'apprends la langue française.", "Mon père parle français."]
+  },
+  {
+    id: "ren-27-6",
+    pl: "uczyć się",
+    fr: "apprendre (pour soi-même, étudier)",
+    category: "Phrases & Quotidien",
+    genderNotes: "ja uczę się (j'apprends), ty uczysz się (tu apprends)",
+    acceptedPl: ["uczyć się", "uczyc sie"],
+    acceptedFr: ["apprendre", "étudier", "etudier"],
+    distractorsPl: ["uczyć", "mówić", "czytać"],
+    distractorsFr: ["enseigner (apprendre à qqn)", "parler", "lire"]
+  },
+  {
+    id: "ren-27-7",
+    pl: "uczyć",
+    fr: "enseigner (apprendre à quelqu'un)",
+    category: "Phrases & Quotidien",
+    genderNotes: "ja uczę (j'enseigne) vs ja uczę się (j'apprends)",
+    acceptedPl: ["uczyć", "uczyc"],
+    acceptedFr: ["enseigner", "apprendre à quelqu'un"],
+    distractorsPl: ["uczyć się", "wiedzieć", "pracować"],
+    distractorsFr: ["apprendre (étudier)", "savoir", "travailler"]
+  },
+  {
+    id: "ren-27-8",
+    pl: "Uczę się polskiego, bo mam polską dziewczynę.",
+    fr: "J'apprends le polonais parce que j'ai une copine polonaise.",
+    category: "Phrases & Quotidien",
+    acceptedPl: [
+      "Uczę się polskiego, bo mam polską dziewczynę",
+      "Ucze sie polskiego, bo mam polska dziewczyne",
+      "Uczę się polskiego bo mam polską dziewczynę"
+    ],
+    acceptedFr: [
+      "J'apprends le polonais parce que j'ai une copine polonaise",
+      "J'apprends le polonais car j'ai une petite amie polonaise",
+      "J apprends le polonais parce que j ai une copine polonaise"
+    ],
+    distractorsPl: [
+      "Mój brat uczy się angielskiego w szkole.",
+      "Mieszkam w Polsce, bo lubię polskie jedzenie.",
+      "Uczę się hiszpańskiego z moją dziewczyną."
+    ],
+    distractorsFr: [
+      "Mon frère apprend l'anglais à l'école.",
+      "J'habite en Pologne parce que j'aime la nourriture polonaise.",
+      "J'apprends l'espagnol avec ma copine."
+    ]
+  },
+  {
+    id: "ren-27-9",
+    pl: "Co lubisz jeść? Lubię jeść pierogi z mięsem i kapustą.",
+    fr: "Qu'aimes-tu manger ? J'aime manger des pierogi à la viande et au chou.",
+    category: "Nourriture & Café",
+    acceptedPl: [
+      "Co lubisz jeść? Lubię jeść pierogi z mięsem i kapustą",
+      "Co lubisz jesc? Lubie jesc pierogi z miesem i kapusta"
+    ],
+    acceptedFr: [
+      "Qu'aimes-tu manger ? J'aime manger des pierogi à la viande et au chou",
+      "Qu aime tu manger ? J aime manger des pierogi a la viande et au chou",
+      "Qu'est-ce que tu aimes manger ? J'aime manger des pierogi à la viande et au chou"
+    ],
+    distractorsPl: [
+      "Co zamawiasz? Poproszę zupę pomidorową i herbatę.",
+      "Co lubisz pić? Lubię pić sok jabłkowy i kawę.",
+      "Gdzie jesz obiad? Jem w polskiej restauracji."
+    ],
+    distractorsFr: [
+      "Que commandes-tu ? Une soupe à la tomate et un thé s'il vous plaît.",
+      "Qu'aimes-tu boire ? J'aime boire du jus de pomme et du café.",
+      "Où manges-tu à midi ? Je mange dans un restaurant polonais."
+    ]
+  },
+  {
+    id: "ren-27-10",
+    pl: "już",
+    fr: "déjà",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["już", "juz"],
+    acceptedFr: ["déjà", "deja"],
+    distractorsPl: ["jeszcze", "zawsze", "teraz"],
+    distractorsFr: ["encore", "toujours", "maintenant"]
+  },
+  {
+    id: "ren-27-11",
+    pl: "Byłeś już w Polsce?",
+    fr: "Es-tu déjà allé en Pologne ? (à un homme)",
+    category: "Voyage & Aéroport",
+    genderNotes: "À un homme : Byłeś | À une femme : Byłaś",
+    acceptedPl: ["Byłeś już w Polsce", "Byles juz w Polsce", "Byłaś już w Polsce"],
+    acceptedFr: [
+      "Es-tu déjà allé en Pologne",
+      "Es tu deja alle en Pologne",
+      "Tu es déjà allé en Pologne",
+      "Es-tu déjà allée en Pologne"
+    ],
+    distractorsPl: ["Kiedy jedziesz do Polski?", "Mieszkasz w Polsce?", "Znasz Warszawę?"],
+    distractorsFr: ["Quand vas-tu en Pologne ?", "Habites-tu en Pologne ?", "Connais-tu Varsovie ?"]
+  },
+  {
+    id: "ren-27-12",
+    pl: "Byłem we Wrocławiu i w Krakowie.",
+    fr: "Je suis allé à Wrocław et à Cracovie. (homme)",
+    category: "Voyage & Aéroport",
+    genderNotes: "Locuteur masc. : Byłem | Locutrice fém. : Byłam",
+    acceptedPl: [
+      "Byłem we Wrocławiu i w Krakowie",
+      "Bylem we Wroclawiu i w Krakowie",
+      "Byłam we Wrocławiu i w Krakowie"
+    ],
+    acceptedFr: [
+      "Je suis allé à Wrocław et à Cracovie",
+      "Je suis alle a Wroclaw et a Cracovie",
+      "Je suis allée à Wrocław et à Cracovie"
+    ],
+    distractorsPl: [
+      "Mieszkam w Warszawie i w Poznaniu.",
+      "Jadę do Gdańska i do Krakowa.",
+      "Znam Wrocław i Warszawę."
+    ],
+    distractorsFr: [
+      "J'habite à Varsovie et à Poznań.",
+      "Je vais à Gdańsk et à Cracovie.",
+      "Je connais Wrocław et Varsovie."
+    ]
+  },
+  {
+    id: "ren-27-13",
+    pl: "podróżować",
+    fr: "voyager",
+    category: "Voyage & Aéroport",
+    acceptedPl: ["podróżować", "podrozowac"],
+    acceptedFr: ["voyager"],
+    distractorsPl: ["pracować", "zwiedzać", "odpoczywać"],
+    distractorsFr: ["travailler", "visiter", "se reposer"]
+  },
+  {
+    id: "ren-27-14",
+    pl: "Lubisz podróżować?",
+    fr: "Aimes-tu voyager ?",
+    category: "Voyage & Aéroport",
+    acceptedPl: ["Lubisz podróżować", "Lubisz podrozowac"],
+    acceptedFr: ["Aimes-tu voyager", "Aimes tu voyager", "Tu aimes voyager"],
+    distractorsPl: ["Gdzie lubisz jeździć?", "Czy masz walizkę?", "Dokąd lecisz?"],
+    distractorsFr: ["Où aimes-tu aller ?", "As-tu une valise ?", "Vers où voles-tu ?"]
+  },
+  {
+    id: "ren-27-15",
+    pl: "Moje hobby to gitara.",
+    fr: "Mon hobby est la guitare.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Moje hobby to gitara"],
+    acceptedFr: ["Mon hobby est la guitare", "Mon passe-temps est la guitare"],
+    distractorsPl: ["Moje hobby to język polski.", "Lubię słuchać rocka.", "Gram w tenisa."],
+    distractorsFr: ["Mon hobby est la langue polonaise.", "J'aime écouter du rock.", "Je joue au tennis."]
+  },
+  {
+    id: "ren-27-16",
+    pl: "zwierzęta",
+    fr: "les animaux",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["zwierzęta", "zwierzeta"],
+    acceptedFr: ["les animaux", "animaux", "des animaux"],
+    distractorsPl: ["owoce", "ludzie", "rzeczy"],
+    distractorsFr: ["fruits", "gens, personnes", "choses"]
+  },
+  {
+    id: "ren-27-17",
+    pl: "Masz jakieś zwierzęta? Mam dwa psy.",
+    fr: "As-tu des animaux ? J'ai deux chiens.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Masz jakieś zwierzęta? Mam dwa psy", "Masz jakies zwierzeta? Mam dwa psy"],
+    acceptedFr: [
+      "As-tu des animaux ? J'ai deux chiens",
+      "As tu des animaux ? J ai deux chiens",
+      "Tu as des animaux ? J'ai deux chiens"
+    ],
+    distractorsPl: [
+      "Lubisz psy i koty?",
+      "Mam jednego psa i dwa koty.",
+      "Czy to jest twój mały pies?"
+    ],
+    distractorsFr: [
+      "Aimes-tu les chiens et les chats ?",
+      "J'ai un chien et deux chats.",
+      "Est-ce ton petit chien ?"
+    ]
+  },
+  {
+    id: "ren-27-18",
+    pl: "Mój ulubiony owoc to truskawka.",
+    fr: "Mon fruit préféré est la fraise.",
+    category: "Fruits & Légumes",
+    acceptedPl: ["Mój ulubiony owoc to truskawka", "Moj ulubiony owoc to truskawka"],
+    acceptedFr: ["Mon fruit préféré est la fraise", "Mon fruit prefere est la fraise"],
+    distractorsPl: ["Mój ulubiony owoc to jabłko.", "Moje ulubione warzywo to marchewka.", "Lubię arbuzy i banany."],
+    distractorsFr: ["Mon fruit préféré est la pomme.", "Mon légume préféré est la carotte.", "J'aime les pastèques et les bananes."]
+  },
+  {
+    id: "ren-27-19",
+    pl: "Jaki jest twój ulubiony film?",
+    fr: "Quel est ton film préféré ?",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Jaki jest twój ulubiony film", "Jaki jest twoj ulubiony film"],
+    acceptedFr: ["Quel est ton film préféré", "Quel est ton film prefere", "Quel est votre film préféré"],
+    distractorsPl: ["Jaki jest twój ulubiony zespół?", "Jaka jest twoja ulubiona książka?", "Co robisz wieczorem?"],
+    distractorsFr: ["Quel est ton groupe préféré ?", "Quel est ton livre préféré ?", "Que fais-tu ce soir ?"]
+  },
+
+  // ==========================================
+  // COURS DU 27.10 - FRUITS & LÉGUMES (WARZYWA I OWOCE)
+  // ==========================================
+  {
+    id: "veg-27-1",
+    pl: "truskawka",
+    fr: "fraise",
+    category: "Fruits & Légumes",
+    acceptedPl: ["truskawka"],
+    acceptedFr: ["fraise", "la fraise", "une fraise"],
+    distractorsPl: ["malina", "wiśnia", "jabłko"],
+    distractorsFr: ["framboise", "cerise", "pomme"]
+  },
+  {
+    id: "veg-27-2",
+    pl: "malina",
+    fr: "framboise",
+    category: "Fruits & Légumes",
+    acceptedPl: ["malina"],
+    acceptedFr: ["framboise", "la framboise", "une framboise"],
+    distractorsPl: ["truskawka", "wiśnia", "arbuz"],
+    distractorsFr: ["fraise", "cerise", "pastèque"]
+  },
+  {
+    id: "veg-27-3",
+    pl: "arbuz",
+    fr: "pastèque",
+    category: "Fruits & Légumes",
+    acceptedPl: ["arbuz"],
+    acceptedFr: ["pastèque", "pasteque", "la pastèque"],
+    distractorsPl: ["dynia", "ananas", "kokos"],
+    distractorsFr: ["citrouille", "ananas", "noix de coco"]
+  },
+  {
+    id: "veg-27-4",
+    pl: "kokos",
+    fr: "noix de coco",
+    category: "Fruits & Légumes",
+    acceptedPl: ["kokos"],
+    acceptedFr: ["noix de coco", "coco", "la noix de coco"],
+    distractorsPl: ["ananas", "kiwi", "banan"],
+    distractorsFr: ["ananas", "kiwi", "banane"]
+  },
+  {
+    id: "veg-27-5",
+    pl: "gruszka",
+    fr: "poire",
+    category: "Fruits & Légumes",
+    acceptedPl: ["gruszka"],
+    acceptedFr: ["poire", "la poire", "une poire"],
+    distractorsPl: ["jabłko", "truskawka", "wiśnia"],
+    distractorsFr: ["pomme", "fraise", "cerise"]
+  },
+  {
+    id: "veg-27-6",
+    pl: "ananas",
+    fr: "ananas",
+    category: "Fruits & Légumes",
+    acceptedPl: ["ananas"],
+    acceptedFr: ["ananas", "l'ananas", "un ananas"],
+    distractorsPl: ["banan", "arbuz", "kokos"],
+    distractorsFr: ["banane", "pastèque", "noix de coco"]
+  },
+  {
+    id: "veg-27-7",
+    pl: "banan",
+    fr: "banane",
+    category: "Fruits & Légumes",
+    acceptedPl: ["banan"],
+    acceptedFr: ["banane", "la banane", "une banane"],
+    distractorsPl: ["cytryna", "ananas", "gruszka"],
+    distractorsFr: ["citron", "ananas", "poire"]
+  },
+  {
+    id: "veg-27-8",
+    pl: "kiwi",
+    fr: "kiwi",
+    category: "Fruits & Légumes",
+    acceptedPl: ["kiwi"],
+    acceptedFr: ["kiwi", "le kiwi", "un kiwi"],
+    distractorsPl: ["jabłko", "gruszka", "awokado"],
+    distractorsFr: ["pomme", "poire", "avocat"]
+  },
+  {
+    id: "veg-27-9",
+    pl: "wiśnia",
+    fr: "cerise",
+    category: "Fruits & Légumes",
+    acceptedPl: ["wiśnia", "wisnia"],
+    acceptedFr: ["cerise", "la cerise", "une cerise"],
+    distractorsPl: ["truskawka", "malina", "jabłko"],
+    distractorsFr: ["fraise", "framboise", "pomme"]
+  },
+  {
+    id: "veg-27-10",
+    pl: "pomidor",
+    fr: "tomate",
+    category: "Fruits & Légumes",
+    acceptedPl: ["pomidor"],
+    acceptedFr: ["tomate", "la tomate", "une tomate"],
+    distractorsPl: ["ogórek", "papryka", "cebula"],
+    distractorsFr: ["concombre", "poivron", "oignon"]
+  },
+  {
+    id: "veg-27-11",
+    pl: "cebula",
+    fr: "oignon",
+    category: "Fruits & Légumes",
+    acceptedPl: ["cebula"],
+    acceptedFr: ["oignon", "l'oignon", "un oignon"],
+    distractorsPl: ["czosnek", "marchewka", "ziemniak"],
+    distractorsFr: ["ail", "carotte", "pomme de terre"]
+  },
+  {
+    id: "veg-27-12",
+    pl: "grzyb",
+    fr: "champignon",
+    category: "Fruits & Légumes",
+    acceptedPl: ["grzyb"],
+    acceptedFr: ["champignon", "le champignon", "un champignon"],
+    distractorsPl: ["bakłażan", "kalafior", "dynia"],
+    distractorsFr: ["aubergine", "chou-fleur", "citrouille"]
+  },
+  {
+    id: "veg-27-13",
+    pl: "bakłażan",
+    fr: "aubergine",
+    category: "Fruits & Légumes",
+    acceptedPl: ["bakłażan", "baklazan"],
+    acceptedFr: ["aubergine", "l'aubergine", "une aubergine"],
+    distractorsPl: ["cukinia", "papryka", "pomidor"],
+    distractorsFr: ["courgette", "poivron", "tomate"]
+  },
+  {
+    id: "veg-27-14",
+    pl: "kalafior",
+    fr: "chou-fleur",
+    category: "Fruits & Légumes",
+    acceptedPl: ["kalafior"],
+    acceptedFr: ["chou-fleur", "chou fleur", "le chou-fleur"],
+    distractorsPl: ["kapusta", "brokuł", "sałata"],
+    distractorsFr: ["chou", "brocoli", "salade"]
+  },
+  {
+    id: "veg-27-15",
+    pl: "awokado",
+    fr: "avocat (le fruit)",
+    category: "Fruits & Légumes",
+    acceptedPl: ["awokado"],
+    acceptedFr: ["avocat", "l'avocat", "un avocat"],
+    distractorsPl: ["kiwi", "ogórek", "gruszka"],
+    distractorsFr: ["kiwi", "concombre", "poire"]
+  },
+  {
+    id: "veg-27-16",
+    pl: "papryka",
+    fr: "poivron",
+    category: "Fruits & Légumes",
+    acceptedPl: ["papryka"],
+    acceptedFr: ["poivron", "le poivron", "un poivron"],
+    distractorsPl: ["pomidor", "marchewka", "cebula"],
+    distractorsFr: ["tomate", "carotte", "oignon"]
+  },
+  {
+    id: "veg-27-17",
+    pl: "dynia",
+    fr: "citrouille, potiron",
+    category: "Fruits & Légumes",
+    acceptedPl: ["dynia"],
+    acceptedFr: ["citrouille", "potiron", "la citrouille"],
+    distractorsPl: ["arbuz", "melon", "kalafior"],
+    distractorsFr: ["pastèque", "melon", "chou-fleur"]
+  },
+  {
+    id: "veg-27-18",
+    pl: "sałata",
+    fr: "salade, laitue",
+    category: "Fruits & Légumes",
+    acceptedPl: ["sałata", "salata"],
+    acceptedFr: ["salade", "laitue", "la salade"],
+    distractorsPl: ["kapusta", "szpinak", "rzodkiewka"],
+    distractorsFr: ["chou", "épinard", "radis"]
+  },
+  {
+    id: "veg-27-19",
+    pl: "rzodkiewka",
+    fr: "radis",
+    category: "Fruits & Légumes",
+    acceptedPl: ["rzodkiewka"],
+    acceptedFr: ["radis", "le radis", "un radis"],
+    distractorsPl: ["marchewka", "burak", "cebula"],
+    distractorsFr: ["carotte", "betterave", "oignon"]
   }
 ];
 
@@ -5348,6 +6278,201 @@ const CASE_CHALLENGES = [
       { ending: "-ych", word: "europejskych", isCorrect: false, note: "Orthographe erronée (y après k)" },
       { ending: "-imi", word: "europejskimi", isCorrect: false, note: "Instrumental pluriel (-imi)" },
       { ending: "-ie", word: "europejskie", isCorrect: false, note: "Nominatif pluriel (-e)" }
+    ]
+  },
+  // ----------------------------------------------------
+  // DÉFIS DU COURS DU 27.10 (PRZYPADKI)
+  // ----------------------------------------------------
+  {
+    id: "case-d-30",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "Czy potrzebuje pani pomoc",
+    sentenceAfter: "?",
+    gapWord: "pomoc",
+    gapWordMeaning: "aide",
+    targetType: "noun",
+    isPlural: false,
+    gender: "nom féminin singulier",
+    correctEnding: "-y",
+    fullCorrectWord: "pomocy",
+    fullSentence: "Czy potrzebuje pani pomocy?",
+    translationFr: "Avez-vous besoin d'aide, madame ?",
+    ruleExplanation: "Le verbe <em>potrzebować</em> (avoir besoin de) exige obligatoirement le <strong>Génitif</strong>. Pour le nom féminin <em>pomoc</em> (terminé par une consonne affriquée), la terminaison de Génitif singulier est <strong>-y</strong> : <em>pomoc</em> &rarr; <strong>pomocy</strong>.",
+    options: [
+      { ending: "-y", word: "pomocy", isCorrect: true, note: "Génitif singulier féminin après potrzebować (-y)" },
+      { ending: "-ę", word: "pomocę", isCorrect: false, note: "Terminaison erronée" },
+      { ending: "-ą", word: "pomocą", isCorrect: false, note: "Instrumental singulier (-ą)" },
+      { ending: "-ø", word: "pomoc", isCorrect: false, note: "Nominatif / Accusatif singulier" }
+    ]
+  },
+  {
+    id: "case-d-31",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "Wejście jest po lewej stronie, niedaleko wyjści",
+    sentenceAfter: ".",
+    gapWord: "wyjście",
+    gapWordMeaning: "sortie",
+    targetType: "noun",
+    isPlural: false,
+    gender: "nom neutre singulier",
+    correctEnding: "-a",
+    fullCorrectWord: "wyjścia",
+    fullSentence: "Wejście jest po lewej stronie, niedaleko wyjścia.",
+    translationFr: "L'entrée est à gauche, près de la sortie.",
+    ruleExplanation: "La préposition <em>niedaleko</em> (près de, pas loin de) exige toujours le <strong>Génitif</strong>. Les noms neutres en <em>-e</em> prennent régulièrement la terminaison <strong>-a</strong> : <em>wyjście</em> &rarr; <strong>wyjścia</strong>.",
+    options: [
+      { ending: "-a", word: "wyjścia", isCorrect: true, note: "Génitif singulier neutre après niedaleko (-a)" },
+      { ending: "-e", word: "wyjście", isCorrect: false, note: "Nominatif / Accusatif singulier" },
+      { ending: "-em", word: "wyjściem", isCorrect: false, note: "Instrumental singulier (-em)" },
+      { ending: "-u", word: "wyjściu", isCorrect: false, note: "Locatif / Datif singulier (-u)" }
+    ]
+  },
+  {
+    id: "case-d-32",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "Od trzech miesięcy uczę się języka polskieg",
+    sentenceAfter: ".",
+    gapWord: "polski",
+    gapWordMeaning: "polonais",
+    targetType: "adjective",
+    isPlural: false,
+    gender: "adjectif masculin singulier",
+    correctEnding: "-ego",
+    fullCorrectWord: "polskiego",
+    fullSentence: "Od trzech miesięcy uczę się języka polskiego.",
+    translationFr: "Depuis trois mois, j'apprends la langue polonaise.",
+    ruleExplanation: "Le verbe pronominal <em>uczyć się</em> (apprendre, étudier) régit le <strong>Génitif</strong>. L'adjectif masculin singulier prend la terminaison <strong>-ego</strong> : <em>polski</em> &rarr; <strong>języka polskiego</strong>.",
+    options: [
+      { ending: "-ego", word: "polskiego", isCorrect: true, note: "Génitif singulier adjectif masculin après uczyć się (-ego)" },
+      { ending: "-i", word: "polski", isCorrect: false, note: "Nominatif / Accusatif singulier masculin inanimé" },
+      { ending: "-im", word: "polskim", isCorrect: false, note: "Instrumental / Locatif singulier (-im)" },
+      { ending: "-emu", word: "polskiemu", isCorrect: false, note: "Datif singulier (-emu)" }
+    ]
+  },
+  {
+    id: "case-b-36",
+    caseName: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    caseBadgeClass: "case-biernik",
+    sentenceBefore: "Dzień dobry, chciałbym jechać na alej",
+    sentenceAfter: " Niezależności, proszę.",
+    gapWord: "aleja",
+    gapWordMeaning: "avenue, allée",
+    targetType: "noun",
+    isPlural: false,
+    gender: "nom féminin singulier",
+    correctEnding: "-ę",
+    fullCorrectWord: "aleję",
+    fullSentence: "Dzień dobry, chciałbym jechać na aleję Niezależności, proszę.",
+    translationFr: "Bonjour, je voudrais aller à l'avenue de l'Indépendance, s'il vous plaît.",
+    ruleExplanation: "Avec un verbe de mouvement (<em>jechać</em>) et la préposition <strong>na</strong> indiquant la direction, on emploie l'<strong>Accusatif</strong> (Biernik). Les noms féminins en <em>-a</em> prennent la terminaison <strong>-ę</strong> : <em>aleja</em> &rarr; <strong>na aleję</strong>.",
+    options: [
+      { ending: "-ę", word: "aleję", isCorrect: true, note: "Accusatif singulier féminin de direction (-ę)" },
+      { ending: "-i", word: "alei", isCorrect: false, note: "Génitif ou Locatif singulier" },
+      { ending: "-ą", word: "aleją", isCorrect: false, note: "Instrumental singulier (-ą)" },
+      { ending: "-a", word: "aleja", isCorrect: false, note: "Nominatif singulier (-a)" }
+    ]
+  },
+  {
+    id: "case-b-37",
+    caseName: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    caseBadgeClass: "case-biernik",
+    sentenceBefore: "Ile kosztuje przejazd na ulic",
+    sentenceAfter: " Lipową?",
+    gapWord: "ulica",
+    gapWordMeaning: "rue",
+    targetType: "noun",
+    isPlural: false,
+    gender: "nom féminin singulier",
+    correctEnding: "-ę",
+    fullCorrectWord: "ulicę",
+    fullSentence: "Ile kosztuje przejazd na ulicę Lipową?",
+    translationFr: "Combien coûte le trajet jusqu'à la rue Lipowa ?",
+    ruleExplanation: "Après la préposition <strong>na</strong> exprimant la destination d'un trajet (<em>przejazd na...</em>), le nom féminin se met à l'<strong>Accusatif</strong> en <strong>-ę</strong> : <em>ulica</em> &rarr; <strong>na ulicę Lipową</strong>.",
+    options: [
+      { ending: "-ę", word: "ulicę", isCorrect: true, note: "Accusatif singulier féminin de destination (-ę)" },
+      { ending: "-y", word: "ulicy", isCorrect: false, note: "Génitif ou Locatif singulier (na ulicy = dans la rue, statique)" },
+      { ending: "-ą", word: "ulicą", isCorrect: false, note: "Instrumental singulier (-ą)" },
+      { ending: "-e", word: "ulice", isCorrect: false, note: "Nominatif / Accusatif pluriel (-e)" }
+    ]
+  },
+  {
+    id: "case-b-38",
+    caseName: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    caseBadgeClass: "case-biernik",
+    sentenceBefore: "Uczę się polskiego, bo mam polsk",
+    sentenceAfter: " dziewczynę.",
+    gapWord: "polski",
+    gapWordMeaning: "polonais",
+    targetType: "adjective",
+    isPlural: false,
+    gender: "adjectif féminin singulier",
+    correctEnding: "-ą",
+    fullCorrectWord: "polską",
+    fullSentence: "Uczę się polskiego, bo mam polską dziewczynę.",
+    translationFr: "J'apprends le polonais parce que j'ai une copine polonaise.",
+    ruleExplanation: "Après le verbe de possession <em>mieć</em> (avoir), le COD se décline à l'<strong>Accusatif</strong> (Biernik). L'adjectif féminin s'accorde avec <em>dziewczynę</em> et prend la terminaison <strong>-ą</strong> : <em>polska</em> &rarr; <strong>polską dziewczynę</strong>.",
+    options: [
+      { ending: "-ą", word: "polską", isCorrect: true, note: "Accusatif singulier féminin adjectif (-ą)" },
+      { ending: "-ej", word: "polskiej", isCorrect: false, note: "Génitif / Locatif féminin (-ej)" },
+      { ending: "-a", word: "polska", isCorrect: false, note: "Nominatif féminin (-a)" },
+      { ending: "-e", word: "polskie", isCorrect: false, note: "Neutre ou pluriel non-viril" }
+    ]
+  },
+  {
+    id: "case-m-32",
+    caseName: "Miejscownik",
+    caseLabelFr: "Locatif (Miejscownik)",
+    caseBadgeClass: "case-miejscownik",
+    sentenceBefore: "W zeszłym roku byłem we Wrocław",
+    sentenceAfter: " i w Krakowie.",
+    gapWord: "Wrocław",
+    gapWordMeaning: "Wrocław (ville de Pologne)",
+    targetType: "noun",
+    isPlural: false,
+    gender: "nom masculin inanimé singulier",
+    correctEnding: "-iu",
+    fullCorrectWord: "Wrocławiu",
+    fullSentence: "W zeszłym roku byłem we Wrocławiu i w Krakowie.",
+    translationFr: "L'année dernière, je suis allé à Wrocław et à Cracovie.",
+    ruleExplanation: "Pour exprimer le lieu où l'on se trouve avec <em>w / we</em>, on utilise le <strong>Locatif</strong> (Miejscownik). Les noms masculins terminés par la consonne douce <em>-w</em> prennent la terminaison <strong>-iu</strong> : <em>Wrocław</em> &rarr; <strong>we Wrocławiu</strong>.",
+    options: [
+      { ending: "-iu", word: "Wrocławiu", isCorrect: true, note: "Locatif singulier masculin en consonne douce (-iu)" },
+      { ending: "-ie", word: "Wrocławie", isCorrect: false, note: "Forme incorrecte" },
+      { ending: "-a", word: "Wrocławia", isCorrect: false, note: "Génitif singulier (-a)" },
+      { ending: "-em", word: "Wrocławiem", isCorrect: false, note: "Instrumental singulier (-em)" }
+    ]
+  },
+  {
+    id: "case-n-16",
+    caseName: "Narzednik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    caseBadgeClass: "case-narzednik",
+    sentenceBefore: "Na obiad lubię jeść pierogi z kapust",
+    sentenceAfter: " i mięsem.",
+    gapWord: "kapusta",
+    gapWordMeaning: "chou",
+    targetType: "noun",
+    isPlural: false,
+    gender: "nom féminin singulier",
+    correctEnding: "-ą",
+    fullCorrectWord: "kapustą",
+    fullSentence: "Na obiad lubię jeść pierogi z kapustą i mięsem.",
+    translationFr: "Pour le déjeuner, j'aime manger des pierogi au chou et à la viande.",
+    ruleExplanation: "La préposition <em>z / ze</em> (avec, à la garniture de) exige l'<strong>Instrumental</strong> (Narzędnik). Les noms féminins se terminent invariablement par <strong>-ą</strong> : <em>kapusta</em> &rarr; <strong>z kapustą</strong>.",
+    options: [
+      { ending: "-ą", word: "kapustą", isCorrect: true, note: "Instrumental singulier féminin après z (-ą)" },
+      { ending: "-y", word: "kapusty", isCorrect: false, note: "Génitif singulier (-y)" },
+      { ending: "-ę", word: "kapustę", isCorrect: false, note: "Accusatif singulier (-ę)" },
+      { ending: "-ie", word: "kapuście", isCorrect: false, note: "Locatif singulier (-ie)" }
     ]
   }
 ];
