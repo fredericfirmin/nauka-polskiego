@@ -18,17 +18,17 @@ Il n'y a **aucune installation ni dépendance requise** !
 
 ### 1. 🏛️ Module Défi des Cas Polonais (*Przypadki*)
 Entraînement contextualisé pour maîtriser les 4 déclinaisons fondamentales :
-- **152 phrases et défis grammaticaux** rédigés en polonais courant :
+- **160 phrases et défis grammaticaux** rédigés en polonais courant :
   - **Biernik (Accusatif)** : complément d'objet direct, verbes d'action, destinations de mouvement (*na / w*).
-  - **Narzędnik (Instrumental)** : accompagnement (*z / ze*), profession, nationalité, état après *być*.
-  - **Miejscownik (Locatif)** : lieu où l'on se trouve (*w, na, o, po, przy*).
-  - **Dopełniacz (Génitif)** : négation (*nie ma, nie widzę*), quantité, prépositions (*do, z, bez, dla, od*, *niedaleko*, verbe *potrzebować*).
+  - **Narzędnik (Instrumental)** : accompagnement (*z / ze*), profession, nationalité, état après *być* (*jest Polką*, *jest owocem*, *jestem Francuzem*).
+  - **Miejscownik (Locatif)** : lieu où l'on se trouve (*w, na, o, po, przy*), villes en consonnes chuintantes (*w Paryżu*).
+  - **Dopełniacz (Génitif)** : négation (*nie ma, nie widzę*), verbes de recherche (*szukać chleba / truskawek*), prépositions (*obok warzyw / jabłek*, *do, z, bez, dla, od*, *niedaleko*, *potrzebować*), possession (*mąż Anny*), quantité (*dużo kuzynów i kuzynek*).
 - **Filtres croisés avancés** :
   - Par cas : *Tous*, *Biernik*, *Narzędnik*, *Miejscownik*, *Dopełniacz*.
   - Par catégorie grammaticale : *Tous*, *Noms singulier*, *Adjectifs*, *Pluriels*.
-- **Prise en charge approfondie des pluriels (49 défis)** :
+- **Prise en charge approfondie des pluriels (52 défis)** :
   - Distinction essentielle entre **pluriel viril (masculin personnel)** et **non-viril**.
-  - Génitif pluriel complet (19 défis) : masculins en `-ów`, neutres et féminins à désinence zéro `-ø` et `e` mobile, irréguliers fréquents (*pieniędzy, dzieci, ludzi, miesięcy, dni*).
+  - Génitif pluriel complet (21 défis) : masculins en `-ów`, neutres et féminins à désinence zéro `-ø` et `e` mobile (*warzyw*, *truskawek*), irréguliers fréquents (*pieniędzy, dzieci, ludzi, miesięcy, dni*).
 - **Tableau aide-mémoire interactif** : consultation à tout moment des terminaisons régulières, exceptions, questions de cas (*Kogo? Co?*, *Kim? Czym?*...) et exemples concrets.
 - **Explications pédagogiques instantanées** après chaque validation.
 
@@ -36,7 +36,8 @@ Entraînement contextualisé pour maîtriser les 4 déclinaisons fondamentales :
 
 ### 2. 👥 Module Adjectifs Possessifs (*Zaimki dzierżawcze*)
 Module dédié à l'apprentissage et à la manipulation des possessifs :
-- Couvre toutes les personnes : **mój**, **twój**, **jego**, **jej**, **nasz**, **wasz**, **ich** ainsi que le réfléchi indispensable **swój**.
+- **62 défis interactifs** couvrant toutes les personnes : **mój**, **twój**, **jego**, **jej**, **nasz**, **wasz**, **ich** ainsi que le réfléchi indispensable **swój**.
+- Intégration complète de l'**Exercice 6b (cours du 29/10)** : *moja mama, mój ojciec, jego siostra, jego brat, jej dzieci, jej mąż Stefan, twój długopis, nasz autobus, wasza córka, wasz syn, ich nauczycielka*.
 - Déclinaison par cas (Nominatif, Accusatif, Instrumental, Locatif, Génitif) et par genre (masculin animé/inanimé/viril, féminin, neutre, pluriels).
 - **Filtres par niveau et catégorie** :
   - Niveaux : *Tous*, *Débutant (Nominatif de base)*, *Intermédiaire (Accusatif / Instrumental)*, *Avancé (Locatif / Génitif / Pluriels)*.
@@ -46,10 +47,12 @@ Module dédié à l'apprentissage et à la manipulation des possessifs :
 ---
 
 ### 3. 🎯 Mode Quiz & Flashcards de Vocabulaire
-- **Base riche de 265 cartes de vocabulaire** réparties par thématiques pratiques :
+- **Base riche de 330 cartes de vocabulaire** réparties par thématiques pratiques :
+  - *La Famille* (30 cartes complètes issues de l'arbre généalogique du 29/10 : *prababcia, pradziadek, babcia, dziadek, mama, tata, wujek, ciocia, brat, siostra, mąż, żona, kuzyn, kuzynka, syn, córka, bratanek, bratanica, siostrzeniec, siostrzenica, jedynak, jedynaczka*, etc.)
+  - *Magasin d'alimentation & Dialogue* (*Szukam chleba, Owoce są obok warzyw, Poproszę kilogram jabłek, Ile kosztują jabłka?, obok, po prawej stronie, niektórzy, myśleć*)
+  - *Phrases, Travail & Quotidien* (*Pracujesz dzisiaj? Tak, pracuję, to zależy, mniej więcej, Urodziłem się w 1999, Uczę się polskiego, bo moja dziewczyna jest Polką, Jestem Francuzem / Polakiem*)
   - *Fruits & Légumes* (20 cartes complètes avec fraise, framboise, pastèque, poivron, etc.)
   - *Nombres* (39 cartes : dizaines, centaines, milliers, années 1999/2026 et calculs)
-  - *Phrases & Quotidien* (salutations, expressions *Co nowego?*, *Po staremu!*, faire connaissance)
   - *Voyage & Aéroport*, *Nourriture & Café*, *Objets du quotidien*, *Adjectifs*, *Couleurs*, *La Poste*...
 - **Quiz QCM 4 choix** : 1 bonne réponse et 3 faux choix crédibles (distracteurs intelligents générés par catégorie).
 - **Flashcards 3D** : animation fluide de bascule recto/verso avec auto-évaluation (*Je savais* / *À revoir*).

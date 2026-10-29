@@ -2985,6 +2985,656 @@ const INITIAL_CARDS = [
     acceptedFr: ["radis", "le radis", "un radis"],
     distractorsPl: ["marchewka", "burak", "cebula"],
     distractorsFr: ["carotte", "betterave", "oignon"]
+  },
+  {
+    id: "fam-29-1",
+    pl: "mama",
+    fr: "maman",
+    category: "La Famille",
+    acceptedPl: ["mama"],
+    acceptedFr: ["maman", "la maman", "mère"],
+    distractorsPl: ["tata", "babcia", "ciocia"],
+    distractorsFr: ["papa", "grand-mère", "tante"]
+  },
+  {
+    id: "fam-29-2",
+    pl: "tata",
+    fr: "papa",
+    category: "La Famille",
+    acceptedPl: ["tata"],
+    acceptedFr: ["papa", "le papa", "père"],
+    distractorsPl: ["mama", "dziadek", "wujek"],
+    distractorsFr: ["maman", "grand-père", "oncle"]
+  },
+  {
+    id: "fam-29-3",
+    pl: "babcia",
+    fr: "grand-mère",
+    category: "La Famille",
+    acceptedPl: ["babcia"],
+    acceptedFr: ["grand-mère", "la grand-mère", "mamie"],
+    distractorsPl: ["prababcia", "dziadek", "mama"],
+    distractorsFr: ["arrière-grand-mère", "grand-père", "maman"]
+  },
+  {
+    id: "fam-29-4",
+    pl: "dziadek",
+    fr: "grand-père",
+    category: "La Famille",
+    acceptedPl: ["dziadek"],
+    acceptedFr: ["grand-père", "le grand-père", "papy"],
+    distractorsPl: ["pradziadek", "babcia", "tata"],
+    distractorsFr: ["arrière-grand-père", "grand-mère", "papa"]
+  },
+  {
+    id: "fam-29-5",
+    pl: "prababcia",
+    fr: "arrière-grand-mère",
+    category: "La Famille",
+    acceptedPl: ["prababcia"],
+    acceptedFr: ["arrière-grand-mère", "l'arrière-grand-mère", "arriere grand-mere"],
+    distractorsPl: ["babcia", "pradziadek", "ciocia"],
+    distractorsFr: ["grand-mère", "arrière-grand-père", "tante"]
+  },
+  {
+    id: "fam-29-6",
+    pl: "pradziadek",
+    fr: "arrière-grand-père",
+    category: "La Famille",
+    acceptedPl: ["pradziadek"],
+    acceptedFr: ["arrière-grand-père", "l'arrière-grand-père", "arriere grand-pere"],
+    distractorsPl: ["dziadek", "prababcia", "wujek"],
+    distractorsFr: ["grand-père", "arrière-grand-mère", "oncle"]
+  },
+  {
+    id: "fam-29-7",
+    pl: "wujek",
+    fr: "oncle",
+    category: "La Famille",
+    acceptedPl: ["wujek"],
+    acceptedFr: ["oncle", "l'oncle", "tonton"],
+    distractorsPl: ["ciocia", "dziadek", "brat"],
+    distractorsFr: ["tante", "grand-père", "frère"]
+  },
+  {
+    id: "fam-29-8",
+    pl: "ciocia",
+    fr: "tante",
+    category: "La Famille",
+    acceptedPl: ["ciocia"],
+    acceptedFr: ["tante", "la tante", "tatie"],
+    distractorsPl: ["wujek", "babcia", "siostra"],
+    distractorsFr: ["oncle", "grand-mère", "sœur"]
+  },
+  {
+    id: "fam-29-9",
+    pl: "brat",
+    fr: "frère",
+    category: "La Famille",
+    acceptedPl: ["brat"],
+    acceptedFr: ["frère", "le frère", "un frère"],
+    distractorsPl: ["siostra", "syn", "kuzyn"],
+    distractorsFr: ["sœur", "fils", "cousin"]
+  },
+  {
+    id: "fam-29-10",
+    pl: "siostra",
+    fr: "sœur",
+    category: "La Famille",
+    acceptedPl: ["siostra"],
+    acceptedFr: ["sœur", "soeur", "la sœur", "la soeur"],
+    distractorsPl: ["brat", "córka", "kuzynka"],
+    distractorsFr: ["frère", "fille", "cousine"]
+  },
+  {
+    id: "fam-29-11",
+    pl: "mąż",
+    fr: "mari, époux",
+    category: "La Famille",
+    acceptedPl: ["mąż", "maz"],
+    acceptedFr: ["mari", "époux", "le mari", "l'époux"],
+    distractorsPl: ["żona", "ojciec", "wujek"],
+    distractorsFr: ["femme", "père", "oncle"]
+  },
+  {
+    id: "fam-29-12",
+    pl: "żona",
+    fr: "femme, épouse",
+    category: "La Famille",
+    acceptedPl: ["żona", "zona"],
+    acceptedFr: ["femme", "épouse", "la femme", "l'épouse"],
+    distractorsPl: ["mąż", "matka", "ciocia"],
+    distractorsFr: ["mari", "mère", "tante"]
+  },
+  {
+    id: "fam-29-13",
+    pl: "kuzyn",
+    fr: "cousin",
+    category: "La Famille",
+    acceptedPl: ["kuzyn"],
+    acceptedFr: ["cousin", "le cousin", "un cousin"],
+    distractorsPl: ["kuzynka", "brat", "wujek"],
+    distractorsFr: ["cousine", "frère", "oncle"]
+  },
+  {
+    id: "fam-29-14",
+    pl: "kuzynka",
+    fr: "cousine",
+    category: "La Famille",
+    acceptedPl: ["kuzynka"],
+    acceptedFr: ["cousine", "la cousine", "une cousine"],
+    distractorsPl: ["kuzyn", "siostra", "ciocia"],
+    distractorsFr: ["cousin", "sœur", "tante"]
+  },
+  {
+    id: "fam-29-15",
+    pl: "żona kuzyna",
+    fr: "la femme du cousin",
+    category: "La Famille",
+    acceptedPl: ["żona kuzyna", "zona kuzyna"],
+    acceptedFr: ["la femme du cousin", "femme du cousin", "l'épouse du cousin"],
+    distractorsPl: ["mąż kuzynki", "siostra kuzyna", "żona brata"],
+    distractorsFr: ["le mari de la cousine", "la sœur du cousin", "la femme du frère"]
+  },
+  {
+    id: "fam-29-16",
+    pl: "syn",
+    fr: "fils",
+    category: "La Famille",
+    acceptedPl: ["syn"],
+    acceptedFr: ["fils", "le fils", "un fils"],
+    distractorsPl: ["córka", "brat", "wnuk"],
+    distractorsFr: ["fille", "frère", "petit-fils"]
+  },
+  {
+    id: "fam-29-17",
+    pl: "córka",
+    fr: "fille (enfant)",
+    category: "La Famille",
+    acceptedPl: ["córka", "corka"],
+    acceptedFr: ["fille", "la fille", "une fille"],
+    distractorsPl: ["syn", "siostra", "wnuczka"],
+    distractorsFr: ["fils", "sœur", "petite-fille"]
+  },
+  {
+    id: "fam-29-18",
+    pl: "bratanek",
+    fr: "neveu (fils du frère)",
+    category: "La Famille",
+    acceptedPl: ["bratanek"],
+    acceptedFr: ["neveu", "neveu (fils du frère)", "le neveu"],
+    distractorsPl: ["bratanica", "siostrzeniec", "kuzyn"],
+    distractorsFr: ["nièce (fille du frère)", "neveu (fils de la sœur)", "cousin"]
+  },
+  {
+    id: "fam-29-19",
+    pl: "bratanica",
+    fr: "nièce (fille du frère)",
+    category: "La Famille",
+    acceptedPl: ["bratanica"],
+    acceptedFr: ["nièce", "nièce (fille du frère)", "la nièce"],
+    distractorsPl: ["bratanek", "siostrzenica", "kuzynka"],
+    distractorsFr: ["neveu (fils du frère)", "nièce (fille de la sœur)", "cousine"]
+  },
+  {
+    id: "fam-29-20",
+    pl: "siostrzeniec",
+    fr: "neveu (fils de la sœur)",
+    category: "La Famille",
+    acceptedPl: ["siostrzeniec"],
+    acceptedFr: ["neveu", "neveu (fils de la sœur)", "le neveu"],
+    distractorsPl: ["siostrzenica", "bratanek", "syn"],
+    distractorsFr: ["nièce (fille de la sœur)", "neveu (fils du frère)", "fils"]
+  },
+  {
+    id: "fam-29-21",
+    pl: "siostrzenica",
+    fr: "nièce (fille de la sœur)",
+    category: "La Famille",
+    acceptedPl: ["siostrzenica"],
+    acceptedFr: ["nièce", "nièce (fille de la sœur)", "la nièce"],
+    distractorsPl: ["siostrzeniec", "bratanica", "córka"],
+    distractorsFr: ["neveu (fils de la sœur)", "nièce (fille du frère)", "fille"]
+  },
+  {
+    id: "fam-29-22",
+    pl: "jedynak",
+    fr: "fils unique",
+    category: "La Famille",
+    acceptedPl: ["jedynak"],
+    acceptedFr: ["fils unique", "un fils unique", "enfant unique"],
+    distractorsPl: ["jedynaczka", "bliźniak", "syn"],
+    distractorsFr: ["fille unique", "jumeau", "fils"]
+  },
+  {
+    id: "fam-29-23",
+    pl: "jedynaczka",
+    fr: "fille unique",
+    category: "La Famille",
+    acceptedPl: ["jedynaczka"],
+    acceptedFr: ["fille unique", "une fille unique", "enfant unique"],
+    distractorsPl: ["jedynak", "bliźniaczka", "córka"],
+    distractorsFr: ["fils unique", "jumelle", "fille"]
+  },
+  {
+    id: "fam-29-24",
+    pl: "Mąż Anny ma na imię Henryk.",
+    fr: "Le mari d'Anna s'appelle Henryk.",
+    category: "La Famille",
+    acceptedPl: ["Mąż Anny ma na imię Henryk", "Maz Anny ma na imie Henryk"],
+    acceptedFr: ["Le mari d'Anna s'appelle Henryk", "Le mari d'Anna est Henryk"],
+    distractorsPl: ["Brat Anny ma na imię Henryk.", "Syn Anny ma na imię Henryk.", "Ojciec Anny ma na imię Henryk."],
+    distractorsFr: ["Le frère d'Anna s'appelle Henryk.", "Le fils d'Anna s'appelle Henryk.", "Le père d'Anna s'appelle Henryk."]
+  },
+  {
+    id: "fam-29-25",
+    pl: "Jak ma na imię mąż Anny?",
+    fr: "Comment s'appelle le mari d'Anna ?",
+    category: "La Famille",
+    acceptedPl: ["Jak ma na imię mąż Anny?", "Jak ma na imie maz Anny?"],
+    acceptedFr: ["Comment s'appelle le mari d'Anna ?", "Quel est le nom du mari d'Anna ?"],
+    distractorsPl: ["Jak ma na imię brat Anny?", "Kim jest mąż Anny?", "Gdzie mieszka mąż Anny?"],
+    distractorsFr: ["Comment s'appelle le frère d'Anna ?", "Qui est le mari d'Anna ?", "Où habite le mari d'Anna ?"]
+  },
+  {
+    id: "fam-29-26",
+    pl: "Mam dwóch braci.",
+    fr: "J'ai deux frères.",
+    category: "La Famille",
+    acceptedPl: ["Mam dwóch braci", "Mam dwoch braci"],
+    acceptedFr: ["J'ai deux frères", "J'ai 2 frères"],
+    distractorsPl: ["Mam dwie siostry.", "Mam dwóch synów.", "Mam dwóch kuzynów."],
+    distractorsFr: ["J'ai deux sœurs.", "J'ai deux fils.", "J'ai deux cousins."]
+  },
+  {
+    id: "fam-29-27",
+    pl: "Mam dużo kuzynów i kuzynek.",
+    fr: "J'ai beaucoup de cousins et de cousines.",
+    category: "La Famille",
+    acceptedPl: ["Mam dużo kuzynów i kuzynek", "Mam duzo kuzynow i kuzynek"],
+    acceptedFr: ["J'ai beaucoup de cousins et de cousines", "J'ai beaucoup de cousins et cousines"],
+    distractorsPl: ["Mam mało kuzynów i kuzynek.", "Nie mam kuzynów ani kuzynek.", "Mam wielu braci i sióstr."],
+    distractorsFr: ["J'ai peu de cousins et de cousines.", "Je n'ai pas de cousins ni de cousines.", "J'ai beaucoup de frères et sœurs."]
+  },
+  {
+    id: "fam-29-28",
+    pl: "Mój ulubiony kuzyn",
+    fr: "Mon cousin préféré",
+    category: "La Famille",
+    acceptedPl: ["Mój ulubiony kuzyn", "Moj ulubiony kuzyn"],
+    acceptedFr: ["Mon cousin préféré", "Mon cousin prefere"],
+    distractorsPl: ["Moja ulubiona kuzynka", "Mój ulubiony brat", "Mój najlepszy przyjaciel"],
+    distractorsFr: ["Ma cousine préférée", "Mon frère préféré", "Mon meilleur ami"]
+  },
+  {
+    id: "fam-29-29",
+    pl: "Moja ulubiona kuzynka",
+    fr: "Ma cousine préférée",
+    category: "La Famille",
+    acceptedPl: ["Moja ulubiona kuzynka"],
+    acceptedFr: ["Ma cousine préférée", "Ma cousine preferee"],
+    distractorsPl: ["Mój ulubiony kuzyn", "Moja ulubiona siostra", "Moja najlepsza przyjaciółka"],
+    distractorsFr: ["Mon cousin préféré", "Ma sœur préférée", "Ma meilleure amie"]
+  },
+  {
+    id: "fam-29-30",
+    pl: "Którego lubisz najbardziej?",
+    fr: "Lequel préfères-tu ?",
+    category: "La Famille",
+    acceptedPl: ["Którego lubisz najbardziej?", "Ktorego lubisz najbardziej?"],
+    acceptedFr: ["Lequel préfères-tu ?", "Lequel aimes-tu le plus ?", "Qui préfères-tu ?"],
+    distractorsPl: ["Co lubisz najbardziej?", "Gdzie lubisz jeździć?", "Kiedy przyjedziesz?"],
+    distractorsFr: ["Qu'aimes-tu le plus ?", "Où aimes-tu aller ?", "Quand viens-tu ?"]
+  },
+  {
+    id: "trav-29-1",
+    pl: "Pracujesz dzisiaj?",
+    fr: "Tu travailles aujourd'hui ?",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Pracujesz dzisiaj?"],
+    acceptedFr: ["Tu travailles aujourd'hui ?", "Travailles-tu aujourd'hui ?"],
+    distractorsPl: ["Gdzie pracujesz dzisiaj?", "Co robisz dzisiaj?", "Odpoczywasz dzisiaj?"],
+    distractorsFr: ["Où travailles-tu aujourd'hui ?", "Que fais-tu aujourd'hui ?", "Tu te reposes aujourd'hui ?"]
+  },
+  {
+    id: "trav-29-2",
+    pl: "Tak, pracuję.",
+    fr: "Oui, je travaille.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Tak, pracuję", "Tak, pracuje"],
+    acceptedFr: ["Oui, je travaille", "Oui je travaille"],
+    distractorsPl: ["Nie, nie pracuję.", "Tak, studiuję.", "Nie, odpoczywam."],
+    distractorsFr: ["Non, je ne travaille pas.", "Oui, j'étudie.", "Non, je me repose."]
+  },
+  {
+    id: "trav-29-3",
+    pl: "Ile godzin?",
+    fr: "Combien d'heures ?",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Ile godzin?"],
+    acceptedFr: ["Combien d'heures ?", "Combien d heures ?"],
+    distractorsPl: ["Która godzina?", "Ile kosztuje?", "Ile masz lat?"],
+    distractorsFr: ["Quelle heure est-il ?", "Combien ça coûte ?", "Quel âge as-tu ?"]
+  },
+  {
+    id: "trav-29-4",
+    pl: "godzina",
+    fr: "heure",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["godzina"],
+    acceptedFr: ["heure", "l'heure", "une heure"],
+    distractorsPl: ["minuta", "dzień", "rok"],
+    distractorsFr: ["minute", "jour", "année"]
+  },
+  {
+    id: "trav-29-5",
+    pl: "to zależy",
+    fr: "ça dépend",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["to zależy", "to zalezy"],
+    acceptedFr: ["ça dépend", "ca depend"],
+    distractorsPl: ["to możliwe", "to prawda", "to dobrze"],
+    distractorsFr: ["c'est possible", "c'est vrai", "c'est bien"]
+  },
+  {
+    id: "trav-29-6",
+    pl: "mniej więcej",
+    fr: "plus ou moins, environ",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["mniej więcej", "mniej wiecej"],
+    acceptedFr: ["plus ou moins", "environ", "à peu près"],
+    distractorsPl: ["bardzo dużo", "bardzo mało", "dokładnie tak"],
+    distractorsFr: ["beaucoup", "très peu", "exactement comme ça"]
+  },
+  {
+    id: "trav-29-7",
+    pl: "do",
+    fr: "jusqu'à, vers (préposition + génitif)",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["do"],
+    acceptedFr: ["jusqu'à", "vers", "à", "en direction de"],
+    distractorsPl: ["od", "z", "bez"],
+    distractorsFr: ["depuis", "de / avec", "sans"]
+  },
+  {
+    id: "trav-29-8",
+    pl: "kraj",
+    fr: "pays",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["kraj"],
+    acceptedFr: ["pays", "le pays", "un pays"],
+    distractorsPl: ["miasto", "ulica", "świat"],
+    distractorsFr: ["ville", "rue", "monde"]
+  },
+  {
+    id: "trav-29-9",
+    pl: "Urodziłem się w tysiąc dziewięćset dziewięćdziesiąt dziewiątym.",
+    fr: "Je suis né en 1999.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Urodziłem się w tysiąc dziewięćset dziewięćdziesiąt dziewiątym", "Urodzilem sie w tysiac dziewiecset dziewiecdziesiat dziewiatym"],
+    acceptedFr: ["Je suis né en 1999", "Je suis ne en 1999"],
+    distractorsPl: ["Urodziłem się w dwa tysiące dwudziestym.", "Mam dwadzieścia pięć lat.", "Urodziłem się w Nicei."],
+    distractorsFr: ["Je suis né en 2020.", "J'ai 25 ans.", "Je suis né à Nice."]
+  },
+  {
+    id: "trav-29-10",
+    pl: "Jestem z Francji, z Nicei.",
+    fr: "Je viens de France, de Nice.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Jestem z Francji, z Nicei"],
+    acceptedFr: ["Je viens de France, de Nice", "Je suis de France, de Nice"],
+    distractorsPl: ["Mieszkam w Paryżu.", "Jestem z Polski, z Warszawy.", "Lecę do Francji."],
+    distractorsFr: ["J'habite à Paris.", "Je viens de Pologne, de Varsovie.", "Je vole vers la France."]
+  },
+  {
+    id: "trav-29-11",
+    pl: "Mieszkam w Paryżu.",
+    fr: "J'habite à Paris.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Mieszkam w Paryżu", "Mieszkam w Paryzu"],
+    acceptedFr: ["J'habite à Paris", "J'habite a Paris", "Je vis à Paris"],
+    distractorsPl: ["Mieszkam w Nicei.", "Mieszkam w Warszawie.", "Jestem w Paryżu."],
+    distractorsFr: ["J'habite à Nice.", "J'habite à Varsovie.", "Je suis à Paris."]
+  },
+  {
+    id: "trav-29-12",
+    pl: "Mówię po francusku i trochę po polsku.",
+    fr: "Je parle français et un peu polonais.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Mówię po francusku i trochę po polsku", "Mowie po francusku i troche po polsku"],
+    acceptedFr: ["Je parle français et un peu polonais", "Je parle francais et un peu polonais"],
+    distractorsPl: ["Mówię tylko po angielsku.", "Uczę się hiszpańskiego.", "Znam biegle język polski."],
+    distractorsFr: ["Je parle seulement anglais.", "J'apprends l'espagnol.", "Je parle couramment la langue polonaise."]
+  },
+  {
+    id: "trav-29-13",
+    pl: "Dlaczego uczysz się polskiego?",
+    fr: "Pourquoi apprends-tu le polonais ?",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Dlaczego uczysz się polskiego?", "Dlaczego uczysz sie polskiego?"],
+    acceptedFr: ["Pourquoi apprends-tu le polonais ?", "Pourquoi tu apprends le polonais ?"],
+    distractorsPl: ["Jak długo uczysz się polskiego?", "Gdzie uczysz się polskiego?", "Czy lubisz język polski?"],
+    distractorsFr: ["Depuis combien de temps apprends-tu le polonais ?", "Où apprends-tu le polonais ?", "Aimes-tu la langue polonaise ?"]
+  },
+  {
+    id: "trav-29-14",
+    pl: "Uczę się polskiego, bo moja dziewczyna jest Polką.",
+    fr: "J'apprends le polonais parce que ma copine est polonaise.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Uczę się polskiego, bo moja dziewczyna jest Polką", "Ucze sie polskiego, bo moja dziewczyna jest Polka"],
+    acceptedFr: ["J'apprends le polonais parce que ma copine est polonaise", "J'apprends le polonais car ma copine est polonaise"],
+    distractorsPl: ["Uczę się polskiego dla mojej pracy.", "Moja dziewczyna uczy się francuskiego.", "Mieszkam w Polsce od roku."],
+    distractorsFr: ["J'apprends le polonais pour mon travail.", "Ma copine apprend le français.", "J'habite en Pologne depuis un an."]
+  },
+  {
+    id: "fam-29-31",
+    pl: "Polka",
+    fr: "une Polonaise",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Polka"],
+    acceptedFr: ["une Polonaise", "Polonaise", "la Polonaise"],
+    distractorsPl: ["Polak", "Francuzka", "Hiszpanka"],
+    distractorsFr: ["un Polonais", "une Française", "une Espagnole"]
+  },
+  {
+    id: "fam-29-32",
+    pl: "Polak",
+    fr: "un Polonais",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Polak"],
+    acceptedFr: ["un Polonais", "Polonais", "le Polonais"],
+    distractorsPl: ["Polka", "Francuz", "Hiszpan"],
+    distractorsFr: ["une Polonaise", "un Français", "un Espagnol"]
+  },
+  {
+    id: "trav-29-15",
+    pl: "Jestem Francuzem, jestem Polakiem.",
+    fr: "Je suis Français, je suis Polonais (Instrumental).",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Jestem Francuzem, jestem Polakiem"],
+    acceptedFr: ["Je suis Français, je suis Polonais", "Je suis Francais, je suis Polonais"],
+    distractorsPl: ["Jestem z Francji i z Polski.", "Jestem Francuzką, jestem Polką.", "Mówię po francusku i po polsku."],
+    distractorsFr: ["Je viens de France et de Pologne.", "Je suis Française, je suis Polonaise.", "Je parle français et polonais."]
+  },
+  {
+    id: "trav-29-16",
+    pl: "Mam dwa psy i lubię podróżować.",
+    fr: "J'ai deux chiens et j'aime voyager.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Mam dwa psy i lubię podróżować", "Mam dwa psy i lubie podrozowac"],
+    acceptedFr: ["J'ai deux chiens et j'aime voyager", "J'ai 2 chiens et j'aime voyager"],
+    distractorsPl: ["Mam jednego kota i lubię czytać.", "Mam dwa koty i lubię gotować.", "Nie mam zwierząt."],
+    distractorsFr: ["J'ai un chat et j'aime lire.", "J'ai deux chats et j'aime cuisiner.", "Je n'ai pas d'animaux."]
+  },
+  {
+    id: "sklep-29-1",
+    pl: "Szukam chleba.",
+    fr: "Je cherche du pain.",
+    category: "Nourriture & Café",
+    acceptedPl: ["Szukam chleba"],
+    acceptedFr: ["Je cherche du pain", "Je cherche le pain"],
+    distractorsPl: ["Kupuję chleb.", "Poproszę chleb.", "Gdzie jest mleko?"],
+    distractorsFr: ["J'achète du pain.", "Du pain, s'il vous plaît.", "Où est le lait ?"]
+  },
+  {
+    id: "sklep-29-2",
+    pl: "Chleb jest tam, po prawej stronie.",
+    fr: "Le pain est là-bas, sur le côté droit.",
+    category: "Nourriture & Café",
+    acceptedPl: ["Chleb jest tam, po prawej stronie"],
+    acceptedFr: ["Le pain est là-bas, sur le côté droit", "Le pain est la-bas a droite"],
+    distractorsPl: ["Chleb jest po lewej stronie.", "Chleb jest obok kasy.", "Nie ma już chleba."],
+    distractorsFr: ["Le pain est sur le côté gauche.", "Le pain est à côté de la caisse.", "Il n'y a plus de pain."]
+  },
+  {
+    id: "sklep-29-3",
+    pl: "Gdzie są owoce?",
+    fr: "Où sont les fruits ?",
+    category: "Nourriture & Café",
+    acceptedPl: ["Gdzie są owoce?", "Gdzie sa owoce?"],
+    acceptedFr: ["Où sont les fruits ?", "Ou sont les fruits ?"],
+    distractorsPl: ["Gdzie są warzywa?", "Ile kosztują owoce?", "Czy są świeże owoce?"],
+    distractorsFr: ["Où sont les légumes ?", "Combien coûtent les fruits ?", "Y a-t-il des fruits frais ?"]
+  },
+  {
+    id: "sklep-29-4",
+    pl: "Owoce są obok warzyw.",
+    fr: "Les fruits sont à côté des légumes.",
+    category: "Nourriture & Café",
+    acceptedPl: ["Owoce są obok warzyw", "Owoce sa obok warzyw"],
+    acceptedFr: ["Les fruits sont à côté des légumes", "Les fruits sont a cote des legumes"],
+    distractorsPl: ["Owoce są obok pieczywa.", "Warzywa są po prawej stronie.", "Owoce są daleko."],
+    distractorsFr: ["Les fruits sont à côté des pains.", "Les légumes sont à droite.", "Les fruits sont loin."]
+  },
+  {
+    id: "sklep-29-5",
+    pl: "Poproszę kilogram jabłek.",
+    fr: "Un kilo de pommes, s'il vous plaît.",
+    category: "Nourriture & Café",
+    acceptedPl: ["Poproszę kilogram jabłek", "Poprosze kilogram jablek"],
+    acceptedFr: ["Un kilo de pommes, s'il vous plaît", "Un kilo de pommes s'il vous plait"],
+    distractorsPl: ["Poproszę dwa kilogramy jabłek.", "Poproszę kilo truskawek.", "Ile kosztuje kilogram jabłek?"],
+    distractorsFr: ["Deux kilos de pommes, s'il vous plaît.", "Un kilo de fraises, s'il vous plaît.", "Combien coûte un kilo de pommes ?"]
+  },
+  {
+    id: "sklep-29-6",
+    pl: "Ile kosztują jabłka?",
+    fr: "Combien coûtent les pommes ?",
+    category: "Nourriture & Café",
+    acceptedPl: ["Ile kosztują jabłka?", "Ile kosztuja jablka?"],
+    acceptedFr: ["Combien coûtent les pommes ?", "Combien coutent les pommes ?"],
+    distractorsPl: ["Ile kosztuje chleb?", "Czy to są jabłka?", "Gdzie są jabłka?"],
+    distractorsFr: ["Combien coûte le pain ?", "Est-ce que ce sont des pommes ?", "Où sont les pommes ?"]
+  },
+  {
+    id: "sklep-29-7",
+    pl: "obok",
+    fr: "à côté de (préposition + génitif)",
+    category: "Nourriture & Café",
+    acceptedPl: ["obok"],
+    acceptedFr: ["à côté de", "a cote de", "à côté"],
+    distractorsPl: ["daleko od", "przed", "za"],
+    distractorsFr: ["loin de", "devant", "derrière"]
+  },
+  {
+    id: "sklep-29-8",
+    pl: "Szukam truskawek.",
+    fr: "Je cherche des fraises.",
+    category: "Nourriture & Café",
+    acceptedPl: ["Szukam truskawek"],
+    acceptedFr: ["Je cherche des fraises", "Je cherche les fraises"],
+    distractorsPl: ["Kupuję truskawki.", "Lubię truskawki.", "Szukam jabłek."],
+    distractorsFr: ["J'achète des fraises.", "J'aime les fraises.", "Je cherche des pommes."]
+  },
+  {
+    id: "sklep-29-9",
+    pl: "obok jabłek",
+    fr: "à côté des pommes",
+    category: "Nourriture & Café",
+    acceptedPl: ["obok jabłek", "obok jablek"],
+    acceptedFr: ["à côté des pommes", "a cote des pommes"],
+    distractorsPl: ["obok warzyw", "obok chleba", "obok kasy"],
+    distractorsFr: ["à côté des légumes", "à côté du pain", "à côté de la caisse"]
+  },
+  {
+    id: "sklep-29-10",
+    pl: "po prawej stronie",
+    fr: "sur le côté droit, à droite",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["po prawej stronie", "po prawej"],
+    acceptedFr: ["sur le côté droit", "à droite", "sur la droite"],
+    distractorsPl: ["po lewej stronie", "na wprost", "z tyłu"],
+    distractorsFr: ["sur le côté gauche", "tout droit", "à l'arrière"]
+  },
+  {
+    id: "sklep-29-11",
+    pl: "po lewej stronie",
+    fr: "sur le côté gauche, à gauche",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["po lewej stronie", "po lewej"],
+    acceptedFr: ["sur le côté gauche", "à gauche", "sur la gauche"],
+    distractorsPl: ["po prawej stronie", "na wprost", "obok"],
+    distractorsFr: ["sur le côté droit", "tout droit", "à côté"]
+  },
+  {
+    id: "sklep-29-12",
+    pl: "Niektórzy mówią, że pomidor to owoc.",
+    fr: "Certains disent que la tomate est un fruit.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Niektórzy mówią, że pomidor to owoc", "Niektorzy mowia, ze pomidor to owoc"],
+    acceptedFr: ["Certains disent que la tomate est un fruit", "Certaines personnes disent que la tomate est un fruit"],
+    distractorsPl: ["Wszyscy wiedzą, że pomidor to warzywo.", "Myślę, że pomidor to owoc.", "Pomidor to czerwone warzywo."],
+    distractorsFr: ["Tout le monde sait que la tomate est un légume.", "Je pense que la tomate est un fruit.", "La tomate est un légume rouge."]
+  },
+  {
+    id: "sklep-29-13",
+    pl: "niektórzy",
+    fr: "certains, quelques-uns",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["niektórzy", "niektorzy"],
+    acceptedFr: ["certains", "quelques-uns", "certaines personnes"],
+    distractorsPl: ["wszyscy", "nikt", "każdy"],
+    distractorsFr: ["tous", "personne", "chacun"]
+  },
+  {
+    id: "sklep-29-14",
+    pl: "Co myślisz?",
+    fr: "Qu'en penses-tu ?",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Co myślisz?", "Co myslisz?"],
+    acceptedFr: ["Qu'en penses-tu ?", "Qu'est-ce que tu en penses ?", "Que penses-tu ?"],
+    distractorsPl: ["Co robisz?", "Co mówisz?", "Co wiesz?"],
+    distractorsFr: ["Que fais-tu ?", "Que dis-tu ?", "Que sais-tu ?"]
+  },
+  {
+    id: "sklep-29-15",
+    pl: "myśleć",
+    fr: "penser, réfléchir",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["myśleć", "myslec"],
+    acceptedFr: ["penser", "réfléchir"],
+    distractorsPl: ["mówić", "wiedzieć", "widzieć"],
+    distractorsFr: ["parler", "savoir", "voir"]
+  },
+  {
+    id: "sklep-29-16",
+    pl: "Myślę, że...",
+    fr: "Je pense que...",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Myślę, że", "Mysle, ze"],
+    acceptedFr: ["Je pense que", "Je trouve que"],
+    distractorsPl: ["Wiem, że...", "Mówię, że...", "Widzę, że..."],
+    distractorsFr: ["Je sais que...", "Je dis que...", "Je vois que..."]
+  },
+  {
+    id: "sklep-29-17",
+    pl: "warzywa",
+    fr: "les légumes",
+    category: "Nourriture & Café",
+    acceptedPl: ["warzywa"],
+    acceptedFr: ["légumes", "les légumes", "legumes"],
+    distractorsPl: ["owoce", "pieczywo", "napoje"],
+    distractorsFr: ["fruits", "pains", "boissons"]
   }
 ];
 
@@ -6452,7 +7102,7 @@ const CASE_CHALLENGES = [
     ]
   },
   {
-    id: "case-n-16",
+    id: "case-n-18",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -6473,6 +7123,358 @@ const CASE_CHALLENGES = [
       { ending: "-y", word: "kapusty", isCorrect: false, note: "Génitif singulier (-y)" },
       { ending: "-ę", word: "kapustę", isCorrect: false, note: "Accusatif singulier (-ę)" },
       { ending: "-ie", word: "kapuście", isCorrect: false, note: "Locatif singulier (-ie)" }
+    ]
+  },
+  {
+    id: "case-d-33",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "Dzień dobry. Szukam chleb",
+    sentenceAfter: ".",
+    gapWord: "chleb",
+    gapWordMeaning: "pain",
+    targetType: "noun",
+    isPlural: false,
+    gender: "nom masculin inanimé singulier",
+    correctEnding: "-a",
+    fullCorrectWord: "chleba",
+    fullSentence: "Dzień dobry. Szukam chleba.",
+    translationFr: "Bonjour. Je cherche du pain.",
+    ruleExplanation: "Le verbe <strong>szukać</strong> (chercher) exige systématiquement le <strong>Génitif</strong> (Dopełniacz). Les noms masculins inanimés prennent le plus souvent la désinence <strong>-a</strong> : <em>chleb</em> &rarr; <strong>chleba</strong>.",
+    options: [
+      {
+        ending: "-a",
+        word: "chleba",
+        isCorrect: true,
+        note: "Génitif singulier après szukać (-a)"
+      },
+      {
+        ending: "-u",
+        word: "chlebu",
+        isCorrect: false,
+        note: "Datif singulier (-u)"
+      },
+      {
+        ending: "-em",
+        word: "chlebem",
+        isCorrect: false,
+        note: "Instrumental singulier (-em)"
+      },
+      {
+        ending: "-ie",
+        word: "chlebie",
+        isCorrect: false,
+        note: "Locatif singulier (-ie)"
+      }
+    ]
+  },
+  {
+    id: "case-pl-d-19",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "Klientka mówi w sklepie: przepraszam, szukam truskawe",
+    sentenceAfter: ".",
+    gapWord: "truskawki",
+    gapWordMeaning: "fraises",
+    targetType: "noun",
+    isPlural: true,
+    gender: "nom féminin pluriel",
+    correctEnding: "-k",
+    fullCorrectWord: "truskawek",
+    fullSentence: "Klientka mówi w sklepie: przepraszam, szukam truskawek.",
+    translationFr: "La cliente dit dans le magasin : excusez-moi, je cherche des fraises.",
+    ruleExplanation: "Avec <em>szukać</em>, le complément est au <strong>Génitif</strong>. Pour un nom féminin pluriel en <em>-ka</em> (<em>truskawka</em> &rarr; <em>truskawki</em>), le génitif pluriel perd sa terminaison et insère une voyelle mobile <strong>-e-</strong> euphonique avant le <em>-k</em> : <strong>truskawek</strong>.",
+    options: [
+      {
+        ending: "-ek",
+        word: "truskawek",
+        isCorrect: true,
+        note: "Génitif pluriel féminin à désinence zéro avec e mobile (-ek)"
+      },
+      {
+        ending: "-ki",
+        word: "truskawki",
+        isCorrect: false,
+        note: "Nominatif / Accusatif pluriel (-i)"
+      },
+      {
+        ending: "-ków",
+        word: "truskawków",
+        isCorrect: false,
+        note: "Désinence masculine (-ów)"
+      },
+      {
+        ending: "-kom",
+        word: "truskawkom",
+        isCorrect: false,
+        note: "Datif pluriel (-om)"
+      }
+    ]
+  },
+  {
+    id: "case-pl-d-20",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "Gdzie są owoce? Owoce są obok warzy",
+    sentenceAfter: ".",
+    gapWord: "warzywa",
+    gapWordMeaning: "légumes",
+    targetType: "noun",
+    isPlural: true,
+    gender: "nom neutre pluriel",
+    correctEnding: "-w",
+    fullCorrectWord: "warzyw",
+    fullSentence: "Gdzie są owoce? Owoce są obok warzyw.",
+    translationFr: "Où sont les fruits ? Les fruits sont à côté des légumes.",
+    ruleExplanation: "La préposition de lieu <strong>obok</strong> (à côté de) régit obligatoirement le <strong>Génitif</strong> (Dopełniacz). Pour le nom pluriel <em>warzywa</em> (légumes), le génitif pluriel est à désinence zéro : <strong>warzyw</strong>.",
+    options: [
+      {
+        ending: "-w",
+        word: "warzyw",
+        isCorrect: true,
+        note: "Génitif pluriel après obok (désinence zéro -w)"
+      },
+      {
+        ending: "-wa",
+        word: "warzywa",
+        isCorrect: false,
+        note: "Nominatif / Accusatif pluriel (-a)"
+      },
+      {
+        ending: "-wami",
+        word: "warzywami",
+        isCorrect: false,
+        note: "Instrumental pluriel (-ami)"
+      },
+      {
+        ending: "-wom",
+        word: "warzywom",
+        isCorrect: false,
+        note: "Datif pluriel (-om)"
+      }
+    ]
+  },
+  {
+    id: "case-n-19",
+    caseName: "Narzednik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    caseBadgeClass: "case-narzednik",
+    sentenceBefore: "Uczę się polskiego, bo moja dziewczyna jest Polk",
+    sentenceAfter: ".",
+    gapWord: "Polka",
+    gapWordMeaning: "une Polonaise",
+    targetType: "noun",
+    isPlural: false,
+    gender: "nom féminin singulier",
+    correctEnding: "-ą",
+    fullCorrectWord: "Polką",
+    fullSentence: "Uczę się polskiego, bo moja dziewczyna jest Polką.",
+    translationFr: "J'apprends le polonais car ma copine est polonaise.",
+    ruleExplanation: "Après le verbe <em>być</em> (être) désignant une nationalité ou une identité, le nom se décline à l'<strong>Instrumental</strong> (Narzędnik). Les noms féminins singuliers prennent la terminaison <strong>-ą</strong> : <em>Polka</em> &rarr; <strong>Polką</strong>.",
+    options: [
+      {
+        ending: "-ą",
+        word: "Polką",
+        isCorrect: true,
+        note: "Instrumental singulier féminin d'identité (-ą)"
+      },
+      {
+        ending: "-ę",
+        word: "Polkę",
+        isCorrect: false,
+        note: "Accusatif singulier (-ę)"
+      },
+      {
+        ending: "-i",
+        word: "Polki",
+        isCorrect: false,
+        note: "Génitif singulier (-i)"
+      },
+      {
+        ending: "-a",
+        word: "Polka",
+        isCorrect: false,
+        note: "Nominatif de base (-a)"
+      }
+    ]
+  },
+  {
+    id: "case-n-20",
+    caseName: "Narzednik",
+    caseLabelFr: "Instrumental (Narzędnik)",
+    caseBadgeClass: "case-narzednik",
+    sentenceBefore: "Niektórzy mówią, że pomidor jest owoc",
+    sentenceAfter: ".",
+    gapWord: "owoc",
+    gapWordMeaning: "fruit",
+    targetType: "noun",
+    isPlural: false,
+    gender: "nom masculin inanimé singulier",
+    correctEnding: "-em",
+    fullCorrectWord: "owocem",
+    fullSentence: "Niektórzy mówią, że pomidor jest owocem.",
+    translationFr: "Certains disent que la tomate est un fruit.",
+    ruleExplanation: "Après <em>być</em> (<em>jest</em>), l'attribut prend l'<strong>Instrumental</strong>. Les noms masculins singuliers prennent la terminaison <strong>-em</strong> : <em>owoc</em> &rarr; <strong>owocem</strong>.",
+    options: [
+      {
+        ending: "-em",
+        word: "owocem",
+        isCorrect: true,
+        note: "Instrumental singulier masculin après być (-em)"
+      },
+      {
+        ending: "-a",
+        word: "owoca",
+        isCorrect: false,
+        note: "Génitif singulier (-a)"
+      },
+      {
+        ending: "-u",
+        word: "owocu",
+        isCorrect: false,
+        note: "Locatif singulier (-u)"
+      },
+      {
+        ending: "-ie",
+        word: "owocie",
+        isCorrect: false,
+        note: "Forme incorrecte"
+      }
+    ]
+  },
+  {
+    id: "case-m-33",
+    caseName: "Miejscownik",
+    caseLabelFr: "Locatif (Miejscownik)",
+    caseBadgeClass: "case-miejscownik",
+    sentenceBefore: "Jestem z Francji, mieszkam w Paryż",
+    sentenceAfter: ".",
+    gapWord: "Paryż",
+    gapWordMeaning: "Paris",
+    targetType: "noun",
+    isPlural: false,
+    gender: "nom masculin inanimé singulier",
+    correctEnding: "-u",
+    fullCorrectWord: "Paryżu",
+    fullSentence: "Jestem z Francji, mieszkam w Paryżu.",
+    translationFr: "Je viens de France, j'habite à Paris.",
+    ruleExplanation: "Pour exprimer le lieu où l'on habite avec la préposition <em>w</em> (dans / à), on emploie le <strong>Locatif</strong> (Miejscownik). Les noms masculins terminés par une consonne chuintante comme <em>-ż</em> prennent la terminaison <strong>-u</strong> : <em>Paryż</em> &rarr; <strong>w Paryżu</strong>.",
+    options: [
+      {
+        ending: "-u",
+        word: "Paryżu",
+        isCorrect: true,
+        note: "Locatif singulier masculin en consonne chuintante (-u)"
+      },
+      {
+        ending: "-e",
+        word: "Paryże",
+        isCorrect: false,
+        note: "Forme incorrecte"
+      },
+      {
+        ending: "-em",
+        word: "Paryżem",
+        isCorrect: false,
+        note: "Instrumental singulier (-em)"
+      },
+      {
+        ending: "-a",
+        word: "Paryża",
+        isCorrect: false,
+        note: "Génitif singulier (-a)"
+      }
+    ]
+  },
+  {
+    id: "case-pl-d-21",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "Mam dużą rodzinę: mam dużo kuzyn",
+    sentenceAfter: " i kuzynek.",
+    gapWord: "kuzyn",
+    gapWordMeaning: "cousin",
+    targetType: "noun",
+    isPlural: true,
+    gender: "nom masculin personnel pluriel",
+    correctEnding: "-ów",
+    fullCorrectWord: "kuzynów",
+    fullSentence: "Mam dużą rodzinę: mam dużo kuzynów i kuzynek.",
+    translationFr: "J'ai une grande famille : j'ai beaucoup de cousins et de cousines.",
+    ruleExplanation: "L'adverbe de quantité <strong>dużo</strong> (beaucoup de) régit le <strong>Génitif pluriel</strong>. Les noms masculins prennent régulièrement la terminaison <strong>-ów</strong> : <em>kuzyn</em> &rarr; <strong>kuzynów</strong>.",
+    options: [
+      {
+        ending: "-ów",
+        word: "kuzynów",
+        isCorrect: true,
+        note: "Génitif pluriel masculin régulier après dużo (-ów)"
+      },
+      {
+        ending: "-i",
+        word: "kuzyni",
+        isCorrect: false,
+        note: "Nominatif pluriel viril (-i)"
+      },
+      {
+        ending: "-om",
+        word: "kuzynom",
+        isCorrect: false,
+        note: "Datif pluriel (-om)"
+      },
+      {
+        ending: "-ami",
+        word: "kuzynami",
+        isCorrect: false,
+        note: "Instrumental pluriel (-ami)"
+      }
+    ]
+  },
+  {
+    id: "case-d-34",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "Jak ma na imię mąż Ann",
+    sentenceAfter: "?",
+    gapWord: "Anna",
+    gapWordMeaning: "Anna",
+    targetType: "noun",
+    isPlural: false,
+    gender: "nom propre féminin singulier",
+    correctEnding: "-y",
+    fullCorrectWord: "Anny",
+    fullSentence: "Jak ma na imię mąż Anny?",
+    translationFr: "Comment s'appelle le mari d'Anna ?",
+    ruleExplanation: "Pour exprimer la relation de possession (le mari <em>d'Anna</em>), on utilise le <strong>Génitif</strong> (Dopełniacz). Pour un prénom féminin en <em>-a</em> précédé d'une consonne dure, la désinence est <strong>-y</strong> : <em>Anna</em> &rarr; <strong>Anny</strong> (mąż Anny).",
+    options: [
+      {
+        ending: "-y",
+        word: "Anny",
+        isCorrect: true,
+        note: "Génitif singulier féminin de possession (-y)"
+      },
+      {
+        ending: "-ie",
+        word: "Annie",
+        isCorrect: false,
+        note: "Datif / Locatif singulier (-ie)"
+      },
+      {
+        ending: "-ę",
+        word: "Annę",
+        isCorrect: false,
+        note: "Accusatif singulier (-ę)"
+      },
+      {
+        ending: "-ą",
+        word: "Anną",
+        isCorrect: false,
+        note: "Instrumental singulier (-ą)"
+      }
     ]
   }
 ];
@@ -7185,6 +8187,424 @@ const POSSESSIVE_CHALLENGES = [
       { word: "jego", isCorrect: false, note: "Possesseur tiers (à un autre que le sujet)" },
       { word: "swoja", isCorrect: false, note: "Réfléchi féminin singulier" },
       { word: "swoim", isCorrect: false, note: "Instrumental singulier" }
+    ]
+  },
+  {
+    id: "poss-l1-27",
+    level: 1,
+    category: "1st-sg",
+    categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "ojciec (nom masculin) - possesseur ja",
+    targetMeaning: "mon",
+    sentenceBefore: "Jestem pół Polką, pół Francuzką. Moja mama jest z Polski, a ",
+    sentenceAfter: " ojciec z Francji.",
+    gapWord: "mój",
+    fullSentence: "Jestem pół Polką, pół Francuzką. Moja mama jest z Polski, a mój ojciec z Francji.",
+    translationFr: "Je suis à moitié polonaise, à moitié française. Ma mère vient de Pologne, et mon père de France.",
+    ruleExplanation: "Pour un possesseur à la 1ère personne du singulier (<em>ja</em>) avec un nom masculin au nominatif (<em>ojciec</em>), la forme requise est <strong>mój</strong>.",
+    options: [
+      {
+        word: "mój",
+        isCorrect: true,
+        note: "Nominatif masculin singulier"
+      },
+      {
+        word: "moja",
+        isCorrect: false,
+        note: "Nominatif féminin singulier (mama)"
+      },
+      {
+        word: "moje",
+        isCorrect: false,
+        note: "Nominatif neutre singulier"
+      },
+      {
+        word: "nasz",
+        isCorrect: false,
+        note: "1ère personne du pluriel (notre)"
+      }
+    ]
+  },
+  {
+    id: "poss-l1-28",
+    level: 1,
+    category: "1st-sg",
+    categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "mama (nom féminin) - possesseur ja",
+    targetMeaning: "ma",
+    sentenceBefore: "Jestem pół Polką, pół Francuzką. ",
+    sentenceAfter: " mama jest z Polski, a mój ojciec z Francji.",
+    gapWord: "Moja",
+    fullSentence: "Jestem pół Polką, pół Francuzką. Moja mama jest z Polski, a mój ojciec z Francji.",
+    translationFr: "Je suis à moitié polonaise, à moitié française. Ma mère vient de Pologne, et mon père de France.",
+    ruleExplanation: "Pour un possesseur à la 1ère personne (<em>ja</em>) devant un nom féminin (<em>mama</em>), le possessif au nominatif s'accorde en <strong>moja</strong>.",
+    options: [
+      {
+        word: "Moja",
+        isCorrect: true,
+        note: "Nominatif féminin singulier"
+      },
+      {
+        word: "Mój",
+        isCorrect: false,
+        note: "Nominatif masculin singulier"
+      },
+      {
+        word: "Moje",
+        isCorrect: false,
+        note: "Nominatif neutre singulier"
+      },
+      {
+        word: "Nasza",
+        isCorrect: false,
+        note: "1ère personne du pluriel (notre)"
+      }
+    ]
+  },
+  {
+    id: "poss-l1-29",
+    level: 1,
+    category: "3rd-invariable",
+    categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "siostra (nom féminin) - possesseur on (Piotr)",
+    targetMeaning: "sa (à lui)",
+    sentenceBefore: "On ma na imię Piotr. ",
+    sentenceAfter: " siostra ma na imię Ania, a jego brat Michał.",
+    gapWord: "Jego",
+    fullSentence: "On ma na imię Piotr. Jego siostra ma na imię Ania, a jego brat Michał.",
+    translationFr: "Il s'appelle Piotr. Sa sœur s'appelle Ania et son frère Michał.",
+    ruleExplanation: "Le possesseur est masculin de 3ème personne (Piotr / on). Le possessif polonais correspondant est <strong>jego</strong>, totalement invariable quel que soit le genre du nom possédé (<em>jego siostra, jego brat</em>).",
+    options: [
+      {
+        word: "Jego",
+        isCorrect: true,
+        note: "Invariable pour possesseur masculin (on)"
+      },
+      {
+        word: "Jej",
+        isCorrect: false,
+        note: "Possesseur féminin (ona / à elle)"
+      },
+      {
+        word: "Swój",
+        isCorrect: false,
+        note: "Réfléchi masculin"
+      },
+      {
+        word: "Ich",
+        isCorrect: false,
+        note: "Possesseur pluriel (leur)"
+      }
+    ]
+  },
+  {
+    id: "poss-l1-30",
+    level: 1,
+    category: "3rd-invariable",
+    categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "brat (nom masculin) - possesseur on (Piotr)",
+    targetMeaning: "son (à lui)",
+    sentenceBefore: "On ma na imię Piotr. Jego siostra ma na imię Ania, a ",
+    sentenceAfter: " brat Michał.",
+    gapWord: "jego",
+    fullSentence: "On ma na imię Piotr. Jego siostra ma na imię Ania, a jego brat Michał.",
+    translationFr: "Il s'appelle Piotr. Sa sœur s'appelle Ania et son frère Michał.",
+    ruleExplanation: "Le possessif renvoie à Piotr (possesseur masculin de 3e personne). La forme invariable est <strong>jego</strong> : <em>jego brat</em>.",
+    options: [
+      {
+        word: "jego",
+        isCorrect: true,
+        note: "Invariable pour possesseur masculin (on)"
+      },
+      {
+        word: "jej",
+        isCorrect: false,
+        note: "Possesseur féminin (ona)"
+      },
+      {
+        word: "twój",
+        isCorrect: false,
+        note: "2ème personne du singulier"
+      },
+      {
+        word: "mój",
+        isCorrect: false,
+        note: "1ère personne du singulier"
+      }
+    ]
+  },
+  {
+    id: "poss-l1-31",
+    level: 1,
+    category: "3rd-invariable",
+    categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "dzieci (nom pluriel non-viril) - possesseur pani Łukawska (elle)",
+    targetMeaning: "ses (à elle)",
+    sentenceBefore: "Na tej fotografii jest pani Łukawska. ",
+    sentenceAfter: " dzieci mają na imię Julia i Adam.",
+    gapWord: "Jej",
+    fullSentence: "Na tej fotografii jest pani Łukawska. Jej dzieci mają na imię Julia i Adam.",
+    translationFr: "Sur cette photo, il y a madame Łukawska. Ses enfants s'appellent Julia et Adam.",
+    ruleExplanation: "Le possesseur est féminin singulier (<em>pani Łukawska / ona</em>). Le possessif correspondant est <strong>jej</strong>, strictement invariable : <em>jej dzieci</em> (ses enfants).",
+    options: [
+      {
+        word: "Jej",
+        isCorrect: true,
+        note: "Invariable pour possesseur féminin (ona)"
+      },
+      {
+        word: "Jego",
+        isCorrect: false,
+        note: "Possesseur masculin (on)"
+      },
+      {
+        word: "Ich",
+        isCorrect: false,
+        note: "Possesseur pluriel (oni)"
+      },
+      {
+        word: "Nasze",
+        isCorrect: false,
+        note: "1ère personne du pluriel (nos)"
+      }
+    ]
+  },
+  {
+    id: "poss-l1-32",
+    level: 1,
+    category: "3rd-invariable",
+    categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "mąż (nom masculin) - possesseur pani Łukawska (elle)",
+    targetMeaning: "son mari (à elle)",
+    sentenceBefore: "Na fotografii jest pani Łukawska. A ten niski pan to ",
+    sentenceAfter: " mąż Stefan.",
+    gapWord: "jej",
+    fullSentence: "Na fotografii jest pani Łukawska. A ten niski pan to jej mąż Stefan.",
+    translationFr: "Sur la photo, il y a madame Łukawska. Et ce monsieur de petite taille est son mari Stefan.",
+    ruleExplanation: "Puisque le possesseur est féminin (<em>ona / pani Łukawska</em>), on utilise l'invariable <strong>jej</strong>, même si <em>mąż</em> est un nom masculin : <em>jej mąż</em>.",
+    options: [
+      {
+        word: "jej",
+        isCorrect: true,
+        note: "Invariable pour possesseur féminin (ona)"
+      },
+      {
+        word: "jego",
+        isCorrect: false,
+        note: "Possesseur masculin (on)"
+      },
+      {
+        word: "swój",
+        isCorrect: false,
+        note: "Réfléchi (inapproprié avec être démonstratif 'to...')"
+      },
+      {
+        word: "wasz",
+        isCorrect: false,
+        note: "2ème personne du pluriel"
+      }
+    ]
+  },
+  {
+    id: "poss-l1-33",
+    level: 1,
+    category: "2nd-sg",
+    categoryLabelFr: "2ème pers. sg (Ton / Ta / Tes)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "długopis (nom masculin inanimé) - possesseur ty",
+    targetMeaning: "ton",
+    sentenceBefore: "Przepraszam, czy to ",
+    sentenceAfter: " długopis?",
+    gapWord: "twój",
+    fullSentence: "Przepraszam, czy to twój długopis?",
+    translationFr: "Pardon, est-ce votre / ton stylo ?",
+    ruleExplanation: "Pour le possesseur à la 2ème personne du singulier (<em>ty</em>) avec un nom masculin au nominatif (<em>długopis</em>), la forme correcte est <strong>twój</strong>.",
+    options: [
+      {
+        word: "twój",
+        isCorrect: true,
+        note: "Nominatif masculin singulier"
+      },
+      {
+        word: "twoja",
+        isCorrect: false,
+        note: "Nominatif féminin singulier"
+      },
+      {
+        word: "twoje",
+        isCorrect: false,
+        note: "Nominatif neutre singulier"
+      },
+      {
+        word: "twoim",
+        isCorrect: false,
+        note: "Instrumental / Locatif"
+      }
+    ]
+  },
+  {
+    id: "poss-l1-34",
+    level: 1,
+    category: "1st-pl",
+    categoryLabelFr: "1ère pers. pl (Notre / Nos)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "autobus (nom masculin inanimé) - possesseur my",
+    targetMeaning: "notre",
+    sentenceBefore: "Czy to ",
+    sentenceAfter: " autobus? Musimy jechać numerem 124.",
+    gapWord: "nasz",
+    fullSentence: "Czy to nasz autobus? Musimy jechać numerem 124.",
+    translationFr: "Est-ce notre bus ? Nous devons prendre le numéro 124.",
+    ruleExplanation: "Pour la 1ère personne du pluriel (<em>my</em>) devant un nom masculin singulier au nominatif (<em>autobus</em>), la forme est <strong>nasz</strong> (féminin: <em>nasza</em>, neutre: <em>nasze</em>).",
+    options: [
+      {
+        word: "nasz",
+        isCorrect: true,
+        note: "Nominatif masculin singulier"
+      },
+      {
+        word: "nasza",
+        isCorrect: false,
+        note: "Nominatif féminin singulier"
+      },
+      {
+        word: "nasze",
+        isCorrect: false,
+        note: "Nominatif neutre singulier"
+      },
+      {
+        word: "wasz",
+        isCorrect: false,
+        note: "2ème personne du pluriel (votre)"
+      }
+    ]
+  },
+  {
+    id: "poss-l1-35",
+    level: 1,
+    category: "2nd-pl",
+    categoryLabelFr: "2ème pers. pl (Votre / Vos)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "córka (nom féminin) - possesseur wy",
+    targetMeaning: "votre",
+    sentenceBefore: "Czy to ",
+    sentenceAfter: " córka i wasz syn? Bardzo ładne dzieci.",
+    gapWord: "wasza",
+    fullSentence: "Czy to wasza córka i wasz syn? Bardzo ładne dzieci.",
+    translationFr: "Est-ce votre fille et votre fils ? De très beaux enfants.",
+    ruleExplanation: "Devant un nom féminin singulier au nominatif (<em>córka</em>), le possessif de 2ème personne du pluriel (<em>wy</em>) s'accorde en <strong>wasza</strong>.",
+    options: [
+      {
+        word: "wasza",
+        isCorrect: true,
+        note: "Nominatif féminin singulier"
+      },
+      {
+        word: "wasz",
+        isCorrect: false,
+        note: "Nominatif masculin singulier"
+      },
+      {
+        word: "wasze",
+        isCorrect: false,
+        note: "Nominatif neutre singulier"
+      },
+      {
+        word: "twoja",
+        isCorrect: false,
+        note: "2ème personne du singulier (ta fille)"
+      }
+    ]
+  },
+  {
+    id: "poss-l1-36",
+    level: 1,
+    category: "2nd-pl",
+    categoryLabelFr: "2ème pers. pl (Votre / Vos)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "syn (nom masculin animé) - possesseur wy",
+    targetMeaning: "votre",
+    sentenceBefore: "Czy to wasza córka i ",
+    sentenceAfter: " syn? Bardzo ładne dzieci.",
+    gapWord: "wasz",
+    fullSentence: "Czy to wasza córka i wasz syn? Bardzo ładne dzieci.",
+    translationFr: "Est-ce votre fille et votre fils ? De très beaux enfants.",
+    ruleExplanation: "Devant un nom masculin singulier au nominatif (<em>syn</em>), le possessif de 2ème personne du pluriel (<em>wy</em>) prend la forme <strong>wasz</strong>.",
+    options: [
+      {
+        word: "wasz",
+        isCorrect: true,
+        note: "Nominatif masculin singulier"
+      },
+      {
+        word: "wasza",
+        isCorrect: false,
+        note: "Nominatif féminin singulier"
+      },
+      {
+        word: "wasze",
+        isCorrect: false,
+        note: "Nominatif neutre singulier"
+      },
+      {
+        word: "twój",
+        isCorrect: false,
+        note: "2ème personne du singulier (ton fils)"
+      }
+    ]
+  },
+  {
+    id: "poss-l1-37",
+    level: 1,
+    category: "3rd-invariable",
+    categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "nauczycielka (nom féminin) - possesseurs Filip i Tomasz (oni)",
+    targetMeaning: "leur",
+    sentenceBefore: "Filip i Tomasz są bardzo sympatyczni. ",
+    sentenceAfter: " nauczycielka bardzo ich lubi.",
+    gapWord: "Ich",
+    fullSentence: "Filip i Tomasz są bardzo sympatyczni. Ich nauczycielka bardzo ich lubi.",
+    translationFr: "Filip et Tomasz sont très sympathiques. Leur institutrice les aime beaucoup.",
+    ruleExplanation: "Pour un possesseur au pluriel de 3ème personne (<em>oni / one</em>), le possessif est l'invariable <strong>ich</strong> (leur / leurs) quel que soit le genre ou le nombre du nom possédé.",
+    options: [
+      {
+        word: "Ich",
+        isCorrect: true,
+        note: "Invariable pour possesseur pluriel (oni / one)"
+      },
+      {
+        word: "Jego",
+        isCorrect: false,
+        note: "Possesseur singulier masculin (il)"
+      },
+      {
+        word: "Jej",
+        isCorrect: false,
+        note: "Possesseur singulier féminin (elle)"
+      },
+      {
+        word: "Nasza",
+        isCorrect: false,
+        note: "1ère personne du pluriel (notre)"
+      }
     ]
   },
 
