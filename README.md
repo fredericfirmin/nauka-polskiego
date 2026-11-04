@@ -18,17 +18,19 @@ Il n'y a **aucune installation ni dépendance requise** !
 
 ### 1. 🏛️ Module Défi des Cas Polonais (*Przypadki*)
 Entraînement contextualisé pour maîtriser les 4 déclinaisons fondamentales :
-- **160 phrases et défis grammaticaux** rédigés en polonais courant :
-  - **Biernik (Accusatif)** : complément d'objet direct, verbes d'action, destinations de mouvement (*na / w*).
-  - **Narzędnik (Instrumental)** : accompagnement (*z / ze*), profession, nationalité, état après *być* (*jest Polką*, *jest owocem*, *jestem Francuzem*).
-  - **Miejscownik (Locatif)** : lieu où l'on se trouve (*w, na, o, po, przy*), villes en consonnes chuintantes (*w Paryżu*).
-  - **Dopełniacz (Génitif)** : négation (*nie ma, nie widzę*), verbes de recherche (*szukać chleba / truskawek*), prépositions (*obok warzyw / jabłek*, *do, z, bez, dla, od*, *niedaleko*, *potrzebować*), possession (*mąż Anny*), quantité (*dużo kuzynów i kuzynek*).
+- **172 phrases et défis grammaticaux** rédigés en polonais courant :
+  - **Filtre dédié par date d'import** : bouton *« ✨ Nouveautés 03/11 »* pour s'entraîner uniquement sur les défis issus du dernier cours !
+  - **Biernik (Accusatif)** : complément d'objet direct (*proponuję środę*), accusatif temporel des jours (*w czwartek, w środę, we wtorek*), accusatif pluriel viril (*dwóch braci*).
+  - **Narzędnik (Instrumental)** : accompagnement (*z / ze*), métier, nationalité, état après *być* (*jest Polką*, *jest owocem*, *jestem Francuzem*).
+  - **Miejscownik (Locatif)** : lieu et réunions (*na tym spotkaniu*), villes (*w Paryżu*), prépositions (*w, na, o, po, przy*).
+  - **Dopełniacz (Génitif)** : après *po lewej stronie* (*po lewej stronie domu*), prénoms féminins en *-ia* (*mąż Marii*), locution *w sprawie* (*w sprawie spotkania*), unités monétaires après 5+ (*złotych, groszy*), années (*35 lat* vs *22 lata*), négation (*nie ma*), recherche (*szukać chleba / truskawek*), prépositions (*obok warzyw / jabłek*).
 - **Filtres croisés avancés** :
   - Par cas : *Tous*, *Biernik*, *Narzędnik*, *Miejscownik*, *Dopełniacz*.
   - Par catégorie grammaticale : *Tous*, *Noms singulier*, *Adjectifs*, *Pluriels*.
-- **Prise en charge approfondie des pluriels (52 défis)** :
+  - Par nouveautés : *✨ Nouveautés 03/11 (12 défis)*.
+- **Prise en charge approfondie des pluriels (56 défis)** :
   - Distinction essentielle entre **pluriel viril (masculin personnel)** et **non-viril**.
-  - Génitif pluriel complet (21 défis) : masculins en `-ów`, neutres et féminins à désinence zéro `-ø` et `e` mobile (*warzyw*, *truskawek*), irréguliers fréquents (*pieniędzy, dzieci, ludzi, miesięcy, dni*).
+  - Génitif pluriel complet (24 défis) : masculins en `-ów`, neutres et féminins à désinence zéro `-ø` et `e` mobile (*warzyw*, *truskawek*), prix et âges (*złotych*, *groszy*, *lat*), irréguliers fréquents (*pieniędzy, dzieci, ludzi, miesięcy, dni*).
 - **Tableau aide-mémoire interactif** : consultation à tout moment des terminaisons régulières, exceptions, questions de cas (*Kogo? Co?*, *Kim? Czym?*...) et exemples concrets.
 - **Explications pédagogiques instantanées** après chaque validation.
 
@@ -36,24 +38,31 @@ Entraînement contextualisé pour maîtriser les 4 déclinaisons fondamentales :
 
 ### 2. 👥 Module Adjectifs Possessifs (*Zaimki dzierżawcze*)
 Module dédié à l'apprentissage et à la manipulation des possessifs :
-- **62 défis interactifs** couvrant toutes les personnes : **mój**, **twój**, **jego**, **jej**, **nasz**, **wasz**, **ich** ainsi que le réfléchi indispensable **swój**.
-- Intégration complète de l'**Exercice 6b (cours du 29/10)** : *moja mama, mój ojciec, jego siostra, jego brat, jej dzieci, jej mąż Stefan, twój długopis, nasz autobus, wasza córka, wasz syn, ich nauczycielka*.
+- **66 défis interactifs** couvrant toutes les personnes : **mój**, **twój**, **jego**, **jej**, **nasz**, **wasz**, **ich** ainsi que le réfléchi indispensable **swój**.
+- **Filtre dédié « ✨ Nouveautés 03/11 »** pour travailler immédiatement les tournures du nouveau cours (*Moja siostra ma 35 lat*, *Mój brat mieszka po lewej stronie domu*, *Moja ulubiona kuzynka ma 22 lata*, *Ich siostra jest chora*).
+- Intégration de l'**Exercice 6b** et des phrases d'application familiale.
 - Déclinaison par cas (Nominatif, Accusatif, Instrumental, Locatif, Génitif) et par genre (masculin animé/inanimé/viril, féminin, neutre, pluriels).
 - **Filtres par niveau et catégorie** :
   - Niveaux : *Tous*, *Débutant (Nominatif de base)*, *Intermédiaire (Accusatif / Instrumental)*, *Avancé (Locatif / Génitif / Pluriels)*.
   - Personnes : *Tous*, *1re & 2e pers. (mój, twój, nasz, wasz)*, *3e pers. (jego, jej, ich)*, *Réfléchi (swój)*.
+  - Nouveautés : *✨ Nouveautés 03/11 (4 défis)*.
 - **Tableau de synthèse complet des possessifs** accessible en un clic.
 
 ---
 
 ### 3. 🎯 Mode Quiz & Flashcards de Vocabulaire
-- **Base riche de 330 cartes de vocabulaire** réparties par thématiques pratiques :
-  - *La Famille* (30 cartes complètes issues de l'arbre généalogique du 29/10 : *prababcia, pradziadek, babcia, dziadek, mama, tata, wujek, ciocia, brat, siostra, mąż, żona, kuzyn, kuzynka, syn, córka, bratanek, bratanica, siostrzeniec, siostrzenica, jedynak, jedynaczka*, etc.)
-  - *Magasin d'alimentation & Dialogue* (*Szukam chleba, Owoce są obok warzyw, Poproszę kilogram jabłek, Ile kosztują jabłka?, obok, po prawej stronie, niektórzy, myśleć*)
-  - *Phrases, Travail & Quotidien* (*Pracujesz dzisiaj? Tak, pracuję, to zależy, mniej więcej, Urodziłem się w 1999, Uczę się polskiego, bo moja dziewczyna jest Polką, Jestem Francuzem / Polakiem*)
-  - *Fruits & Légumes* (20 cartes complètes avec fraise, framboise, pastèque, poivron, etc.)
-  - *Nombres* (39 cartes : dizaines, centaines, milliers, années 1999/2026 et calculs)
-  - *Voyage & Aéroport*, *Nourriture & Café*, *Objets du quotidien*, *Adjectifs*, *Couleurs*, *La Poste*...
+- **Base riche de 407 cartes de vocabulaire** organisées et datées par leçon :
+  - **📅 Suivi & Filtre par Date d'Import** : chaque carte possède désormais sa date d'importation (cours du 03/11, 29/10, 27/10, 21/10, 19/10, 16/10).
+  - **🚀 Raccourci « ✨ Nouveautés 03/11 (77) »** : permet en un clic de concentrer instantanément sa session de révision (QCM, Flashcards, Écriture) sur les 77 nouveaux éléments du cours du 03/11 !
+  - **🏷️ Badges de date dynamiques** affichés sur chaque carte (`📅 03/11`, `📅 29/10`...) et filtre par date dans le Gestionnaire de deck.
+  - *Vêtements & Mode (25 cartes)* : *ubrania, koszula, czapka z daszkiem, krawat, marynarka, zegarek, spodnie, sweter, bluza, krótkie spodenki, skarpetki, trampki, buty zimowe, kapelusz, koszulka, okulary przeciwsłoneczne, sukienka, płaszcz, strój kąpielowy, kurtka, majtki, pasek, spódnica, torebka, szpilki*.
+  - *Dialogue Téléphonique & Rendez-vous (18 cartes)* : *Dzwonię w sprawie spotkania we wtorek, Niestety nie mogę być na tym spotkaniu, O szkoda, Może w innym terminie, Tak proponuję środę, Cały dzień jestem zajęty, Więc może czwartek?, Doskonale, Nic nie szkodzi / nic się nie stało, dzwonić, spotkanie, termin, proponować, zajęty, może vs morze vs on może*.
+  - *Supermarché Lidl, Prix & Promotions (12 cartes)* : *olej rzepakowy, banany luzem, pomidory truskawkowe, ser gouda w plastrach, łopatka wieprzowa, taniej, aż, 5.89 zł (pięć złotych osiemdziesiąt dziewięć groszy), 3.49 zł, 7.99 zł, złoty / złote / złotych, grosz / grosze / groszy*.
+  - *La Famille (30 cartes)* : *prababcia, pradziadek, babcia, dziadek, mama, tata, wujek, ciocia, brat, siostra, mąż, żona, kuzyn, kuzynka, syn, córka, bratanek, bratanica, siostrzeniec, siostrzenica, jedynak, jedynaczka*...
+  - *Saisons & Adjectifs dérivés* : *jesień (jesienny), zima (zimowy), wiosna (wiosenny), lato (letni)*.
+  - *Jours de la semaine avec préposition temporelle* : *we wtorek, w środę, w czwartek, w poniedziałek, w piątek...*
+  - *Phrases & Quotidien* : *Mam duży plecak, Wyjście jest tam, Ten długopis jest nieprzydatny, Nie działa, Ile godzin pracujesz?, Mam dwóch braci i jedną siostrę, Moja siostra ma 35 lat, Mąż Marii ma na imię Pierre, Moja ulubiona kuzynka ma 22 lata, Mój brat mieszka po lewej stronie domu, Myślę że pomidor to owoc*...
+  - *Nombres (42 cartes)*, *Fruits & Légumes (20 cartes)*, *Voyage & Aéroport*, *Nourriture & Café*, *Objets du quotidien*, *Adjectifs*, *Couleurs*, *La Poste*...
 - **Quiz QCM 4 choix** : 1 bonne réponse et 3 faux choix crédibles (distracteurs intelligents générés par catégorie).
 - **Flashcards 3D** : animation fluide de bascule recto/verso avec auto-évaluation (*Je savais* / *À revoir*).
 - **Mode Écriture** : saisie avec clavier virtuel de caractères polonais cliquables (`ą`, `ć`, `ę`, `ł`, `ń`, `ó`, `ś`, `ź`, `ż`).

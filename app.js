@@ -4,6 +4,9 @@ const LEGACY_STORAGE_KEY = "nauka_polskiego_cards_v7";
 // État global de l'application
 let cards = [];
 let currentCategory = "all";
+let currentLessonDate = "all"; // "all", "latest", ou date "YYYY-MM-DD"
+let caseLatestOnly = false;
+let possLatestOnly = false;
 let currentDirection = "mixed"; // "pl-fr", "fr-pl", "mixed"
 let algorithmMode = "adaptive"; // "adaptive" (priorité erreurs), "mistakes-only", "random"
 let autoAudio = false;
@@ -77,7 +80,7 @@ function registerServiceWorker() {
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
       navigator.serviceWorker
-        .register("./sw.js?v=21")
+        .register("./sw.js?v=22")
         .then((reg) => {
           console.log("PWA Service Worker actif :", reg.scope);
           // Forcer la recherche de mise à jour à chaque ouverture (vital sur iOS PWA)
@@ -133,6 +136,7 @@ function loadCards() {
     saveCards();
   }
   updateCategoryDropdowns();
+  updateLessonDropdowns();
 }
 
 /**
@@ -152,6 +156,7 @@ function synchronizeWithDefaultCards() {
       const lvl = (c.level || 0) === 0 && sc > 0 ? Math.min(5, Math.max(1, sc - mc)) : (c.level || 0);
       return {
         ...def,
+        date: def.date || c.date || "2026-10-16",
         successCount: sc,
         mistakeCount: mc,
         level: lvl,
@@ -164,6 +169,7 @@ function synchronizeWithDefaultCards() {
     const lvl = (c.level || 0) === 0 && sc > 0 ? Math.min(5, Math.max(1, sc - mc)) : (c.level || 0);
     return {
       ...c,
+      date: c.date || "2026-10-16",
       successCount: sc,
       mistakeCount: mc,
       level: lvl,
@@ -304,6 +310,13 @@ function initSettings() {
       currentDirection = e.target.value;
       startNewQuizQuestion();
       initFlashcards();
+    });
+  }
+
+  const lessonSelect = document.getElementById("lesson-select");
+  if (lessonSelect) {
+    lessonSelect.addEventListener("change", (e) => {
+      setLessonFilter(e.target.value);
     });
   }
 
@@ -539,14 +552,102 @@ function updateCategoryDropdowns() {
 }
 
 function getFilteredCards() {
+  let filtered = cards;
+
+  // 1. Filtrer par date / leçon si sélectionnée
+  if (currentLessonDate === "latest") {
+    const latest = window.LATEST_IMPORT_DATE || "2026-11-03";
+    filtered = filtered.filter(c => c.date === latest);
+  } else if (currentLessonDate && currentLessonDate !== "all") {
+    filtered = filtered.filter(c => c.date === currentLessonDate);
+  }
+
+  // 2. Filtrer par catégorie
   if (currentCategory === "all") {
-    return cards;
+    return filtered;
   }
   if (currentCategory === "time-and-numbers") {
     const specialCategories = ["Nombres", "Jours de la semaine", "Saisons", "Mois de l'année"];
-    return cards.filter(c => specialCategories.includes(c.category));
+    return filtered.filter(c => specialCategories.includes(c.category));
   }
-  return cards.filter(c => c.category === currentCategory);
+  return filtered.filter(c => c.category === currentCategory);
+}
+
+function setLessonFilter(dateVal) {
+  currentLessonDate = dateVal;
+  const lessonSelect = document.getElementById("lesson-select");
+  if (lessonSelect) {
+    lessonSelect.value = dateVal;
+  }
+  updateQuickExercisePills();
+  startNewQuizQuestion();
+  initFlashcards();
+  startNewTypingQuestion();
+}
+
+function updateLessonDropdowns() {
+  const lessonSelect = document.getElementById("lesson-select");
+  const tableDateSelect = document.getElementById("table-filter-date");
+  if (!lessonSelect && !tableDateSelect) return;
+
+  const dates = Array.from(new Set(cards.map(c => c.date).filter(Boolean))).sort().reverse();
+  const latestDate = window.LATEST_IMPORT_DATE || "2026-11-03";
+  const latestCount = cards.filter(c => c.date === latestDate).length;
+
+  if (lessonSelect) {
+    const currentVal = lessonSelect.value || currentLessonDate;
+    let html = `
+      <option value="all">🌟 Toutes les leçons (${cards.length})</option>
+      <option value="latest" style="font-weight:700; color:#dc2626;">✨ Nouveau cours : 03/11 (${latestCount})</option>
+      <optgroup label="Par date de cours">
+    `;
+
+    dates.forEach(d => {
+      const count = cards.filter(c => c.date === d).length;
+      html += `<option value="${d}">${formatLessonDateOption(d, count)}</option>`;
+    });
+
+    html += `</optgroup>`;
+    lessonSelect.innerHTML = html;
+    if (dates.includes(currentVal) || currentVal === "all" || currentVal === "latest") {
+      lessonSelect.value = currentVal;
+    }
+  }
+
+  if (tableDateSelect) {
+    const currentVal = tableDateSelect.value;
+    let html = `<option value="all">Toutes les dates (${cards.length})</option>`;
+    dates.forEach(d => {
+      const count = cards.filter(c => c.date === d).length;
+      html += `<option value="${d}">${formatLessonDateShort(d)} (${count})</option>`;
+    });
+    tableDateSelect.innerHTML = html;
+    if (currentVal) tableDateSelect.value = currentVal;
+  }
+
+  updateQuickExercisePills();
+}
+
+function formatLessonDateOption(d, count) {
+  if (d === "2026-11-03") return `✨ 03/11/2026 - Vêtements, Rdv & Lidl (${count})`;
+  if (d === "2026-10-29") return `📅 29/10/2026 - Famille & Magasin (${count})`;
+  if (d === "2026-10-27") return `📅 27/10/2026 - Nombres, Légumes & Taxi (${count})`;
+  if (d === "2026-10-21") return `📅 21/10/2026 - Aéroport, Café & Ville (${count})`;
+  if (d === "2026-10-19") return `📅 19/10/2026 - Objets, Couleurs & Goûts (${count})`;
+  if (d === "2026-10-16") return `📅 16/10/2026 - Bases, Saisons & Jours (${count})`;
+  return `📅 ${d} (${count})`;
+}
+
+function formatLessonDateShort(d) {
+  if (!d) return "Base";
+  const parts = d.split("-");
+  return parts.length === 3 ? `${parts[2]}/${parts[1]}` : d;
+}
+
+function formatLessonBadge(d) {
+  const latestDate = window.LATEST_IMPORT_DATE || "2026-11-03";
+  if (d === latestDate) return "✨ 03/11 (Nouveau)";
+  return `📅 ${formatLessonDateShort(d)}`;
 }
 
 function setQuickExercise(mode) {
@@ -564,8 +665,28 @@ function setQuickExercise(mode) {
 function updateQuickExercisePills() {
   const btnTimeNumbers = document.getElementById("btn-quick-time-numbers");
   const btnAll = document.getElementById("btn-quick-all");
+  const btnLatest = document.getElementById("btn-quick-latest");
+  const latestCountEl = document.getElementById("btn-quick-latest-count");
+  const allCountEl = document.getElementById("btn-quick-all-count");
+
+  const latestDate = window.LATEST_IMPORT_DATE || "2026-11-03";
+  if (latestCountEl) {
+    latestCountEl.innerText = cards.filter(c => c.date === latestDate).length;
+  }
+  if (allCountEl) {
+    allCountEl.innerText = cards.length;
+  }
+
+  if (btnLatest) {
+    const isLatestActive = currentLessonDate === "latest" || currentLessonDate === latestDate;
+    btnLatest.classList.toggle("active", isLatestActive);
+  }
+
   if (btnTimeNumbers && btnAll) {
-    if (currentCategory === "time-and-numbers") {
+    if (currentLessonDate === "latest" || currentLessonDate === latestDate) {
+      btnAll.classList.remove("active");
+      btnTimeNumbers.classList.remove("active");
+    } else if (currentCategory === "time-and-numbers") {
       btnTimeNumbers.classList.add("active");
       btnAll.classList.remove("active");
     } else if (currentCategory === "all") {
@@ -685,6 +806,10 @@ function startNewQuizQuestion() {
   const targetLang = isPlToFr ? "fr" : "pl";
 
   document.getElementById("quiz-category-tag").innerText = currentQuizCard.category || "Général";
+  const quizLessonTag = document.getElementById("quiz-lesson-tag");
+  if (quizLessonTag) {
+    quizLessonTag.innerText = formatLessonBadge(currentQuizCard.date);
+  }
   document.getElementById("quiz-question-text").innerText = questionText;
   
   // Badge de maîtrise de la carte
@@ -966,6 +1091,10 @@ function renderFlashcard() {
 
   document.getElementById("fc-front-category").innerText = current.category || "Général";
   document.getElementById("fc-back-category").innerText = current.category || "Général";
+  const fcFrontLesson = document.getElementById("fc-front-lesson");
+  const fcBackLesson = document.getElementById("fc-back-lesson");
+  if (fcFrontLesson) fcFrontLesson.innerText = formatLessonBadge(current.date);
+  if (fcBackLesson) fcBackLesson.innerText = formatLessonBadge(current.date);
 
   // Badge de maîtrise sur la flashcard
   const fcMasteryEl = document.getElementById("fc-card-mastery");
@@ -1053,6 +1182,10 @@ function startNewTypingQuestion() {
 
   document.getElementById("typing-prompt").innerText = typingCard.fr;
   document.getElementById("typing-category").innerText = typingCard.category || "Général";
+  const typingLessonTag = document.getElementById("typing-lesson-tag");
+  if (typingLessonTag) {
+    typingLessonTag.innerText = formatLessonBadge(typingCard.date);
+  }
 
   // Badge de maîtrise de la carte
   const masteryBadge = document.getElementById("typing-card-mastery");
@@ -1351,6 +1484,11 @@ function updateCaseCounts() {
   if (typeof CASE_CHALLENGES === "undefined") return;
 
   if (elAll) elAll.innerText = CASE_CHALLENGES.length;
+  const elLatestCase = document.getElementById("case-count-latest");
+  const latestDate = window.LATEST_IMPORT_DATE || "2026-11-03";
+  if (elLatestCase) {
+    elLatestCase.innerText = CASE_CHALLENGES.filter(c => c.date === latestDate).length;
+  }
   if (elBiernik) elBiernik.innerText = CASE_CHALLENGES.filter(c => isSameCase(c.caseName, "Biernik")).length;
   if (elNarzednik) elNarzednik.innerText = CASE_CHALLENGES.filter(c => isSameCase(c.caseName, "Narzednik") || isSameCase(c.caseName, "Narzędnik")).length;
   if (elMiejscownik) elMiejscownik.innerText = CASE_CHALLENGES.filter(c => isSameCase(c.caseName, "Miejscownik")).length;
@@ -1392,10 +1530,24 @@ function setCaseTypeFilter(typeName) {
   startNewCaseQuestion();
 }
 
+function toggleCaseLatestFilter() {
+  caseLatestOnly = !caseLatestOnly;
+  const btn = document.getElementById("case-pill-latest");
+  if (btn) {
+    btn.classList.toggle("active", caseLatestOnly);
+  }
+  startNewCaseQuestion();
+}
+
 function getFilteredCaseChallenges() {
   if (typeof CASE_CHALLENGES === "undefined" || CASE_CHALLENGES.length === 0) return [];
 
+  const latestDate = window.LATEST_IMPORT_DATE || "2026-11-03";
+
   return CASE_CHALLENGES.filter(c => {
+    // Filtre sur les nouveautés de cours
+    if (caseLatestOnly && c.date !== latestDate) return false;
+
     // 1. Filtre par cas
     const caseMatch = currentCaseFilter === "all" || isSameCase(c.caseName, currentCaseFilter);
     if (!caseMatch) return false;
@@ -1891,6 +2043,8 @@ function renderCardsTable() {
   const filterText = (searchInput ? searchInput.value : "").toLowerCase();
   const masterySelect = document.getElementById("table-filter-mastery");
   const masteryFilter = masterySelect ? masterySelect.value : "all";
+  const dateSelect = document.getElementById("table-filter-date");
+  const dateFilter = dateSelect ? dateSelect.value : "all";
 
   if (!tbody) return;
   tbody.innerHTML = "";
@@ -1907,6 +2061,8 @@ function renderCardsTable() {
       const info = getCardMasteryInfo(c);
       if (info.status !== masteryFilter) return false;
     }
+
+    if (dateFilter !== "all" && c.date !== dateFilter) return false;
 
     return true;
   });
@@ -1935,6 +2091,7 @@ function renderCardsTable() {
       </td>
       <td>${c.fr}</td>
       <td><span class="table-badge">${c.category || "Général"}</span></td>
+      <td><span class="badge-lesson" style="${c.date === (window.LATEST_IMPORT_DATE || '2026-11-03') ? 'background:#fee2e2; color:#991b1b; border-color:#fca5a5;' : ''}">${formatLessonBadge(c.date)}</span></td>
       <td><span class="badge-mastery ${masteryInfo.class}">${masteryInfo.label}</span></td>
       <td style="font-size:0.85rem; font-weight:600; white-space:nowrap;">
         <span style="color:var(--success);">✅ ${c.successCount || 0}</span> / <span style="color:var(--danger);">❌ ${c.mistakeCount || 0}</span>
@@ -1996,6 +2153,7 @@ function handleAddCardSubmit(e) {
 
   const newCard = {
     id: "custom-" + Date.now(),
+    date: new Date().toISOString().split("T")[0],
     pl,
     fr,
     category: category || "Général",
@@ -2018,6 +2176,7 @@ function handleAddCardSubmit(e) {
   if (newCatInput) newCatInput.value = "";
 
   updateCategoryDropdowns();
+  updateLessonDropdowns();
   renderCardsTable();
 
   alert(`La carte "${pl}" a bien été ajoutée !`);
@@ -2356,6 +2515,11 @@ function updatePossCounts() {
   const countL2 = document.getElementById("poss-count-l2");
 
   if (countAll) countAll.innerText = total;
+  const elLatestPoss = document.getElementById("poss-count-latest");
+  const latestDate = window.LATEST_IMPORT_DATE || "2026-11-03";
+  if (elLatestPoss) {
+    elLatestPoss.innerText = POSSESSIVE_CHALLENGES.filter(c => c.date === latestDate).length;
+  }
   if (countL1) countL1.innerText = l1Count;
   if (countL2) countL2.innerText = l2Count;
 
@@ -2415,10 +2579,24 @@ function setPossCategoryFilter(category) {
   startNewPossQuestion();
 }
 
+function togglePossLatestFilter() {
+  possLatestOnly = !possLatestOnly;
+  const btn = document.getElementById("poss-pill-latest");
+  if (btn) {
+    btn.classList.toggle("active", possLatestOnly);
+  }
+  startNewPossQuestion();
+}
+
 function getFilteredPossChallenges() {
   if (typeof POSSESSIVE_CHALLENGES === "undefined" || POSSESSIVE_CHALLENGES.length === 0) return [];
 
+  const latestDate = window.LATEST_IMPORT_DATE || "2026-11-03";
+
   return POSSESSIVE_CHALLENGES.filter(c => {
+    // Filtre sur les nouveautés de cours
+    if (possLatestOnly && c.date !== latestDate) return false;
+
     // Filtre de niveau (1 ou 2)
     if (currentPossLevelFilter !== "all" && c.level !== currentPossLevelFilter) {
       return false;

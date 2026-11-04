@@ -9,12 +9,18 @@
  * - Gestion des genres (m/f/n) pour les adjectifs
  */
 
+
+const LATEST_IMPORT_DATE = "2026-11-03";
+if (typeof window !== "undefined") {
+  window.LATEST_IMPORT_DATE = LATEST_IMPORT_DATE;
+}
 const INITIAL_CARDS = [
   // ==========================================
   // 1. PHRASES & QUOTIDIEN
   // ==========================================
   {
     id: "phr-1",
+    date: "2026-10-19",
     pl: "Ile jest stopni?",
     fr: "Combien de degrés fait-il ?",
     category: "Phrases & Quotidien",
@@ -25,6 +31,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-2",
+    date: "2026-10-19",
     pl: "Jest 16 stopni.",
     fr: "Il fait 16 degrés.",
     category: "Phrases & Quotidien",
@@ -35,6 +42,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-3",
+    date: "2026-10-19",
     pl: "Nie wiem.",
     fr: "Je ne sais pas.",
     category: "Phrases & Quotidien",
@@ -45,6 +53,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-4",
+    date: "2026-10-19",
     pl: "Nie znam.",
     fr: "Je ne connais pas.",
     category: "Phrases & Quotidien",
@@ -55,6 +64,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-5",
+    date: "2026-10-19",
     pl: "Mój ulubiony zespół to U2.",
     fr: "Mon groupe préféré est U2.",
     category: "Phrases & Quotidien",
@@ -65,6 +75,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-6",
+    date: "2026-10-19",
     pl: "Chciałbym zupę i herbatę, proszę.",
     fr: "Je voudrais une soupe et un thé, s'il vous plaît.",
     category: "Phrases & Quotidien",
@@ -82,6 +93,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-7",
+    date: "2026-10-19",
     pl: "Chcę wysłać list do Francji.",
     fr: "Je veux envoyer une lettre en France.",
     category: "Phrases & Quotidien",
@@ -92,6 +104,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-8",
+    date: "2026-10-19",
     pl: "perfekcyjnie!",
     fr: "Parfait !",
     category: "Phrases & Quotidien",
@@ -102,6 +115,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-9",
+    date: "2026-10-19",
     pl: "Mam syna.",
     fr: "J'ai un fils.",
     category: "Phrases & Quotidien",
@@ -112,6 +126,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-10",
+    date: "2026-10-19",
     pl: "Mieszkam niedaleko Nicei.",
     fr: "J'habite près de Nice.",
     category: "Phrases & Quotidien",
@@ -122,6 +137,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-11",
+    date: "2026-10-19",
     pl: "Gdzie mieszkasz?",
     fr: "Où habites-tu ?",
     category: "Phrases & Quotidien",
@@ -132,6 +148,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-12",
+    date: "2026-10-19",
     pl: "Moje hobby to język polski.",
     fr: "Mon hobby est la langue polonaise.",
     category: "Phrases & Quotidien",
@@ -142,6 +159,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-13",
+    date: "2026-10-19",
     pl: "Dziś jest zimno.",
     fr: "Il fait froid aujourd'hui.",
     category: "Phrases & Quotidien",
@@ -152,6 +170,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-14",
+    date: "2026-10-19",
     pl: "Mam 49 lat.",
     fr: "J'ai 49 ans.",
     category: "Phrases & Quotidien",
@@ -162,6 +181,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-15",
+    date: "2026-10-19",
     pl: "To mój brat.",
     fr: "C'est mon frère.",
     category: "Phrases & Quotidien",
@@ -172,6 +192,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-16",
+    date: "2026-10-19",
     pl: "Jaka jest pogoda?",
     fr: "Quel temps fait-il ?",
     category: "Phrases & Quotidien",
@@ -182,6 +203,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-17",
+    date: "2026-10-19",
     pl: "Pogoda jest świetna.",
     fr: "Le temps est superbe.",
     category: "Phrases & Quotidien",
@@ -192,6 +214,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-18",
+    date: "2026-10-19",
     pl: "ponieważ",
     fr: "parce que",
     category: "Phrases & Quotidien",
@@ -202,6 +225,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-19",
+    date: "2026-10-19",
     pl: "tylko",
     fr: "seulement",
     category: "Phrases & Quotidien",
@@ -216,6 +240,7 @@ const INITIAL_CARDS = [
   // ==========================================
   {
     id: "obj-1",
+    date: "2026-10-19",
     pl: "jabłko",
     fr: "pomme",
     category: "Objets du quotidien",
@@ -226,6 +251,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "obj-2",
+    date: "2026-10-19",
     pl: "zeszyt",
     fr: "cahier",
     category: "Objets du quotidien",
@@ -236,6 +262,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "obj-3",
+    date: "2026-10-19",
     pl: "laptop",
     fr: "ordinateur portable",
     category: "Objets du quotidien",
@@ -246,6 +273,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "obj-4",
+    date: "2026-10-19",
     pl: "butelka",
     fr: "bouteille",
     category: "Objets du quotidien",
@@ -256,6 +284,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "obj-5",
+    date: "2026-10-19",
     pl: "długopis",
     fr: "stylo",
     category: "Objets du quotidien",
@@ -266,6 +295,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "obj-6",
+    date: "2026-10-19",
     pl: "książka",
     fr: "livre",
     category: "Objets du quotidien",
@@ -276,6 +306,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "obj-7",
+    date: "2026-10-19",
     pl: "chleb",
     fr: "pain",
     category: "Objets du quotidien",
@@ -286,6 +317,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "obj-8",
+    date: "2026-10-19",
     pl: "marchewka",
     fr: "carotte",
     category: "Objets du quotidien",
@@ -296,6 +328,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "obj-9",
+    date: "2026-10-19",
     pl: "kwiat",
     fr: "fleur",
     category: "Objets du quotidien",
@@ -306,6 +339,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "obj-10",
+    date: "2026-10-19",
     pl: "krzesło",
     fr: "chaise",
     category: "Objets du quotidien",
@@ -316,6 +350,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "obj-11",
+    date: "2026-10-19",
     pl: "ładowarka",
     fr: "chargeur",
     category: "Objets du quotidien",
@@ -326,6 +361,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "obj-12",
+    date: "2026-10-19",
     pl: "kubek",
     fr: "tasse / mug",
     category: "Objets du quotidien",
@@ -340,6 +376,7 @@ const INITIAL_CARDS = [
   // ==========================================
   {
     id: "num-0",
+    date: "2026-10-16",
     pl: "zero",
     fr: "zéro (0)",
     category: "Nombres",
@@ -350,6 +387,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-1",
+    date: "2026-10-16",
     pl: "jeden",
     fr: "un (1)",
     category: "Nombres",
@@ -360,6 +398,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-2",
+    date: "2026-10-16",
     pl: "dwa",
     fr: "deux (2)",
     category: "Nombres",
@@ -370,6 +409,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-3",
+    date: "2026-10-16",
     pl: "trzy",
     fr: "trois (3)",
     category: "Nombres",
@@ -380,6 +420,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-4",
+    date: "2026-10-16",
     pl: "cztery",
     fr: "quatre (4)",
     category: "Nombres",
@@ -390,6 +431,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-5",
+    date: "2026-10-16",
     pl: "pięć",
     fr: "cinq (5)",
     category: "Nombres",
@@ -400,6 +442,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-6",
+    date: "2026-10-16",
     pl: "sześć",
     fr: "six (6)",
     category: "Nombres",
@@ -410,6 +453,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-7",
+    date: "2026-10-16",
     pl: "siedem",
     fr: "sept (7)",
     category: "Nombres",
@@ -420,6 +464,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-8",
+    date: "2026-10-16",
     pl: "osiem",
     fr: "huit (8)",
     category: "Nombres",
@@ -430,6 +475,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-9",
+    date: "2026-10-16",
     pl: "dziewięć",
     fr: "neuf (9)",
     category: "Nombres",
@@ -440,6 +486,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-10",
+    date: "2026-10-16",
     pl: "dziesięć",
     fr: "dix (10)",
     category: "Nombres",
@@ -454,6 +501,7 @@ const INITIAL_CARDS = [
   // ==========================================
   {
     id: "day-1",
+    date: "2026-10-16",
     pl: "poniedziałek",
     fr: "lundi",
     category: "Jours de la semaine",
@@ -464,6 +512,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "day-2",
+    date: "2026-10-16",
     pl: "wtorek",
     fr: "mardi",
     category: "Jours de la semaine",
@@ -474,6 +523,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "day-3",
+    date: "2026-10-16",
     pl: "środa",
     fr: "mercredi",
     category: "Jours de la semaine",
@@ -484,6 +534,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "day-4",
+    date: "2026-10-16",
     pl: "czwartek",
     fr: "jeudi",
     category: "Jours de la semaine",
@@ -494,6 +545,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "day-5",
+    date: "2026-10-16",
     pl: "piątek",
     fr: "vendredi",
     category: "Jours de la semaine",
@@ -504,6 +556,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "day-6",
+    date: "2026-10-16",
     pl: "sobota",
     fr: "samedi",
     category: "Jours de la semaine",
@@ -514,6 +567,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "day-7",
+    date: "2026-10-16",
     pl: "niedziela",
     fr: "dimanche",
     category: "Jours de la semaine",
@@ -524,6 +578,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "day-8",
+    date: "2026-10-16",
     pl: "weekend",
     fr: "week-end",
     category: "Jours de la semaine",
@@ -538,6 +593,7 @@ const INITIAL_CARDS = [
   // ==========================================
   {
     id: "seas-1",
+    date: "2026-10-16",
     pl: "wiosna",
     fr: "printemps",
     category: "Saisons",
@@ -548,6 +604,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "seas-2",
+    date: "2026-10-16",
     pl: "lato",
     fr: "été",
     category: "Saisons",
@@ -558,6 +615,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "seas-3",
+    date: "2026-10-16",
     pl: "jesień",
     fr: "automne",
     category: "Saisons",
@@ -568,6 +626,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "seas-4",
+    date: "2026-10-16",
     pl: "zima",
     fr: "hiver",
     category: "Saisons",
@@ -582,6 +641,7 @@ const INITIAL_CARDS = [
   // ==========================================
   {
     id: "month-1",
+    date: "2026-10-16",
     pl: "styczeń",
     fr: "janvier",
     category: "Mois de l'année",
@@ -592,6 +652,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "month-2",
+    date: "2026-10-16",
     pl: "luty",
     fr: "février",
     category: "Mois de l'année",
@@ -602,6 +663,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "month-3",
+    date: "2026-10-16",
     pl: "marzec",
     fr: "mars",
     category: "Mois de l'année",
@@ -612,6 +674,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "month-4",
+    date: "2026-10-16",
     pl: "kwiecień",
     fr: "avril",
     category: "Mois de l'année",
@@ -622,6 +685,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "month-5",
+    date: "2026-10-16",
     pl: "maj",
     fr: "mai",
     category: "Mois de l'année",
@@ -632,6 +696,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "month-6",
+    date: "2026-10-16",
     pl: "czerwiec",
     fr: "juin",
     category: "Mois de l'année",
@@ -642,6 +707,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "month-7",
+    date: "2026-10-16",
     pl: "lipiec",
     fr: "juillet",
     category: "Mois de l'année",
@@ -652,6 +718,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "month-8",
+    date: "2026-10-16",
     pl: "sierpień",
     fr: "août",
     category: "Mois de l'année",
@@ -662,6 +729,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "month-9",
+    date: "2026-10-16",
     pl: "wrzesień",
     fr: "septembre",
     category: "Mois de l'année",
@@ -672,6 +740,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "month-10",
+    date: "2026-10-16",
     pl: "październik",
     fr: "octobre",
     category: "Mois de l'année",
@@ -682,6 +751,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "month-11",
+    date: "2026-10-16",
     pl: "listopad",
     fr: "novembre",
     category: "Mois de l'année",
@@ -692,6 +762,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "month-12",
+    date: "2026-10-16",
     pl: "grudzień",
     fr: "décembre",
     category: "Mois de l'année",
@@ -706,6 +777,7 @@ const INITIAL_CARDS = [
   // ==========================================
   {
     id: "col-1",
+    date: "2026-10-19",
     pl: "czerwony",
     fr: "rouge",
     category: "Couleurs",
@@ -717,6 +789,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "col-2",
+    date: "2026-10-19",
     pl: "niebieski",
     fr: "bleu",
     category: "Couleurs",
@@ -728,6 +801,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "col-3",
+    date: "2026-10-19",
     pl: "zielony",
     fr: "vert",
     category: "Couleurs",
@@ -739,6 +813,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "col-4",
+    date: "2026-10-19",
     pl: "żółty",
     fr: "jaune",
     category: "Couleurs",
@@ -750,6 +825,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "col-5",
+    date: "2026-10-19",
     pl: "czarny",
     fr: "noir",
     category: "Couleurs",
@@ -761,6 +837,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "col-6",
+    date: "2026-10-19",
     pl: "biały",
     fr: "blanc",
     category: "Couleurs",
@@ -772,6 +849,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "col-7",
+    date: "2026-10-19",
     pl: "szary",
     fr: "gris",
     category: "Couleurs",
@@ -783,6 +861,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "col-8",
+    date: "2026-10-19",
     pl: "brązowy",
     fr: "marron",
     category: "Couleurs",
@@ -794,6 +873,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "col-9",
+    date: "2026-10-19",
     pl: "różowy",
     fr: "rose",
     category: "Couleurs",
@@ -805,6 +885,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "col-10",
+    date: "2026-10-19",
     pl: "pomarańczowy",
     fr: "orange",
     category: "Couleurs",
@@ -816,6 +897,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "col-11",
+    date: "2026-10-19",
     pl: "fioletowy",
     fr: "violet",
     category: "Couleurs",
@@ -827,6 +909,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "col-12",
+    date: "2026-10-19",
     pl: "beżowy",
     fr: "beige",
     category: "Couleurs",
@@ -842,6 +925,7 @@ const INITIAL_CARDS = [
   // ==========================================
   {
     id: "adj-1",
+    date: "2026-10-19",
     pl: "nowy",
     fr: "nouveau",
     category: "Adjectifs",
@@ -853,6 +937,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-2",
+    date: "2026-10-19",
     pl: "stary",
     fr: "vieux",
     category: "Adjectifs",
@@ -864,6 +949,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-3",
+    date: "2026-10-19",
     pl: "nowoczesny",
     fr: "moderne",
     category: "Adjectifs",
@@ -875,6 +961,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-4",
+    date: "2026-10-19",
     pl: "ładny",
     fr: "joli",
     category: "Adjectifs",
@@ -886,6 +973,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-5",
+    date: "2026-10-19",
     pl: "piękny",
     fr: "beau / magnifique",
     category: "Adjectifs",
@@ -897,6 +985,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-6",
+    date: "2026-10-19",
     pl: "duży",
     fr: "grand",
     category: "Adjectifs",
@@ -908,6 +997,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-7",
+    date: "2026-10-19",
     pl: "mały",
     fr: "petit",
     category: "Adjectifs",
@@ -919,6 +1009,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-8",
+    date: "2026-10-19",
     pl: "długi",
     fr: "long",
     category: "Adjectifs",
@@ -930,6 +1021,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-9",
+    date: "2026-10-19",
     pl: "krótki",
     fr: "court",
     category: "Adjectifs",
@@ -941,6 +1033,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-10",
+    date: "2026-10-19",
     pl: "drogi",
     fr: "cher",
     category: "Adjectifs",
@@ -952,6 +1045,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-11",
+    date: "2026-10-19",
     pl: "dobry",
     fr: "bon",
     category: "Adjectifs",
@@ -963,6 +1057,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-12",
+    date: "2026-10-19",
     pl: "zły",
     fr: "mauvais",
     category: "Adjectifs",
@@ -974,6 +1069,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-13",
+    date: "2026-10-19",
     pl: "przydatny",
     fr: "utile",
     category: "Adjectifs",
@@ -985,6 +1081,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-14",
+    date: "2026-10-19",
     pl: "nieprzydatny",
     fr: "inutile",
     category: "Adjectifs",
@@ -996,6 +1093,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-15",
+    date: "2026-10-19",
     pl: "interesujący",
     fr: "intéressant",
     category: "Adjectifs",
@@ -1007,6 +1105,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-16",
+    date: "2026-10-19",
     pl: "łatwy",
     fr: "facile",
     category: "Adjectifs",
@@ -1018,6 +1117,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-17",
+    date: "2026-10-19",
     pl: "trudny",
     fr: "difficile",
     category: "Adjectifs",
@@ -1029,6 +1129,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-18",
+    date: "2026-10-19",
     pl: "czysty",
     fr: "propre",
     category: "Adjectifs",
@@ -1040,6 +1141,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-19",
+    date: "2026-10-19",
     pl: "brudny",
     fr: "sale",
     category: "Adjectifs",
@@ -1051,6 +1153,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-20",
+    date: "2026-10-19",
     pl: "wygodny",
     fr: "confortable",
     category: "Adjectifs",
@@ -1062,6 +1165,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-21",
+    date: "2026-10-19",
     pl: "ciepły",
     fr: "chaud",
     category: "Adjectifs",
@@ -1073,6 +1177,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-22",
+    date: "2026-10-19",
     pl: "zimny",
     fr: "froid",
     category: "Adjectifs",
@@ -1084,6 +1189,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-23",
+    date: "2026-10-19",
     pl: "szybki",
     fr: "rapide",
     category: "Adjectifs",
@@ -1095,6 +1201,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-24",
+    date: "2026-10-19",
     pl: "wolny",
     fr: "lent",
     category: "Adjectifs",
@@ -1106,6 +1213,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-25",
+    date: "2026-10-19",
     pl: "lekki",
     fr: "léger",
     category: "Adjectifs",
@@ -1117,6 +1225,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-26",
+    date: "2026-10-19",
     pl: "ciężki",
     fr: "lourd",
     category: "Adjectifs",
@@ -1128,6 +1237,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "adj-27",
+    date: "2026-10-19",
     pl: "świeży",
     fr: "frais",
     category: "Adjectifs",
@@ -1143,6 +1253,7 @@ const INITIAL_CARDS = [
   // ==========================================
   {
     id: "voy-1",
+    date: "2026-10-21",
     pl: "karta pokładowa",
     fr: "carte d'embarquement",
     category: "Voyage & Aéroport",
@@ -1153,6 +1264,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "voy-2",
+    date: "2026-10-21",
     pl: "lecieć",
     fr: "voler (en avion)",
     category: "Voyage & Aéroport",
@@ -1163,6 +1275,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "voy-3",
+    date: "2026-10-21",
     pl: "bramka",
     fr: "gate / porte",
     category: "Voyage & Aéroport",
@@ -1173,6 +1286,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "voy-4",
+    date: "2026-10-21",
     pl: "Dokąd pani jedzie?",
     fr: "Vers où volez-vous ? (à une femme)",
     category: "Voyage & Aéroport",
@@ -1192,6 +1306,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "voy-5",
+    date: "2026-10-21",
     pl: "plecak",
     fr: "sac a dos",
     category: "Voyage & Aéroport",
@@ -1202,6 +1317,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "voy-6",
+    date: "2026-10-21",
     pl: "Poproszę paszport.",
     fr: "Le passeport, s'il vous plaît.",
     category: "Voyage & Aéroport",
@@ -1212,6 +1328,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "voy-7",
+    date: "2026-10-21",
     pl: "walizka",
     fr: "valise",
     category: "Voyage & Aéroport",
@@ -1222,6 +1339,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "voy-8",
+    date: "2026-10-21",
     pl: "bagaż",
     fr: "bagage",
     category: "Voyage & Aéroport",
@@ -1232,6 +1350,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "voy-9",
+    date: "2026-10-21",
     pl: "Lecę do Paryża.",
     fr: "Je prends l'avion pour Paris.",
     category: "Voyage & Aéroport",
@@ -1242,6 +1361,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "voy-10",
+    date: "2026-10-21",
     pl: "Proszę położyć walizkę tutaj.",
     fr: "Veuillez poser la valise ici.",
     category: "Voyage & Aéroport",
@@ -1252,6 +1372,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "voy-11",
+    date: "2026-10-21",
     pl: "Miłego lotu!",
     fr: "Bon vol !",
     category: "Voyage & Aéroport",
@@ -1266,6 +1387,7 @@ const INITIAL_CARDS = [
   // ==========================================
   {
     id: "food-1",
+    date: "2026-10-21",
     pl: "bez mleka",
     fr: "sans lait",
     category: "Nourriture & Café",
@@ -1276,6 +1398,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "food-2",
+    date: "2026-10-21",
     pl: "mocna",
     fr: "forte",
     category: "Nourriture & Café",
@@ -1287,6 +1410,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "food-3",
+    date: "2026-10-21",
     pl: "bez cukru",
     fr: "sans sucre",
     category: "Nourriture & Café",
@@ -1297,6 +1421,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "food-4",
+    date: "2026-10-21",
     pl: "coś",
     fr: "qqch",
     category: "Nourriture & Café",
@@ -1307,6 +1432,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "food-5",
+    date: "2026-10-21",
     pl: "ciastko",
     fr: "petit-gateau, biscuit",
     category: "Nourriture & Café",
@@ -1317,6 +1443,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "food-6",
+    date: "2026-10-21",
     pl: "ciasto",
     fr: "gateau",
     category: "Nourriture & Café",
@@ -1327,6 +1454,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "food-7",
+    date: "2026-10-21",
     pl: "jabłecznik",
     fr: "tarte aux pommes",
     category: "Nourriture & Café",
@@ -1337,6 +1465,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "food-8",
+    date: "2026-10-21",
     pl: "płacić",
     fr: "payer",
     category: "Nourriture & Café",
@@ -1347,6 +1476,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "food-9",
+    date: "2026-10-21",
     pl: "czekoladowy",
     fr: "au chocolat",
     category: "Nourriture & Café",
@@ -1358,6 +1488,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "food-10",
+    date: "2026-10-21",
     pl: "ciasto czekoladowe",
     fr: "gâteau au chocolat",
     category: "Nourriture & Café",
@@ -1368,6 +1499,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "food-11",
+    date: "2026-10-21",
     pl: "dla pana za darmo",
     fr: "pour vous (à un homme) gratuit",
     category: "Nourriture & Café",
@@ -1387,6 +1519,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "food-12",
+    date: "2026-10-21",
     pl: "za darmo",
     fr: "gratuit",
     category: "Nourriture & Café",
@@ -1397,6 +1530,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "food-13",
+    date: "2026-10-21",
     pl: "Poproszę kawę.",
     fr: "Un café, s'il vous plaît.",
     category: "Nourriture & Café",
@@ -1407,6 +1541,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "food-14",
+    date: "2026-10-21",
     pl: "Co podać?",
     fr: "Que puis-je vous servir ?",
     category: "Nourriture & Café",
@@ -1417,6 +1552,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "food-15",
+    date: "2026-10-21",
     pl: "z mlekiem",
     fr: "avec du lait",
     category: "Nourriture & Café",
@@ -1427,6 +1563,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "food-16",
+    date: "2026-10-21",
     pl: "z cukrem",
     fr: "avec du sucre",
     category: "Nourriture & Café",
@@ -1437,6 +1574,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "food-17",
+    date: "2026-10-21",
     pl: "Czy chce pani coś do jedzenia?",
     fr: "Désirez-vous quelque chose à manger ?",
     category: "Nourriture & Café",
@@ -1447,6 +1585,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "food-18",
+    date: "2026-10-21",
     pl: "jedzenie",
     fr: "la nourriture",
     category: "Nourriture & Café",
@@ -1457,6 +1596,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "food-19",
+    date: "2026-10-21",
     pl: "Ile płacę?",
     fr: "Combien je vous dois ?",
     category: "Nourriture & Café",
@@ -1467,6 +1607,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "food-20",
+    date: "2026-10-21",
     pl: "Smacznego!",
     fr: "Bon appétit !",
     category: "Nourriture & Café",
@@ -1477,6 +1618,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "food-21",
+    date: "2026-10-21",
     pl: "Czy ma pani rezerwację?",
     fr: "Avez-vous une réservation ?",
     category: "Nourriture & Café",
@@ -1488,6 +1630,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "food-22",
+    date: "2026-10-21",
     pl: "Stolik dla ilu osób?",
     fr: "Une table pour combien de personnes ?",
     category: "Nourriture & Café",
@@ -1498,6 +1641,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "food-23",
+    date: "2026-10-21",
     pl: "Co pani zamawia?",
     fr: "Que commandez-vous ?",
     category: "Nourriture & Café",
@@ -1509,6 +1653,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "food-24",
+    date: "2026-10-21",
     pl: "Czy coś jeszcze?",
     fr: "Autre chose ?",
     category: "Nourriture & Café",
@@ -1519,6 +1664,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "food-25",
+    date: "2026-10-21",
     pl: "kurczak",
     fr: "poulet",
     category: "Nourriture & Café",
@@ -1533,6 +1679,7 @@ const INITIAL_CARDS = [
   // ==========================================
   {
     id: "post-1",
+    date: "2026-10-16",
     pl: "W czym mogę pomóc?",
     fr: "En quoi puis-je vous aider ?",
     category: "La Poste",
@@ -1543,6 +1690,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "post-2",
+    date: "2026-10-16",
     pl: "znaczek",
     fr: "timbre",
     category: "La Poste",
@@ -1553,6 +1701,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "post-3",
+    date: "2026-10-16",
     pl: "Ile to kosztuje?",
     fr: "Combien ça coûte ?",
     category: "La Poste",
@@ -1563,6 +1712,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "post-4",
+    date: "2026-10-16",
     pl: "paczka",
     fr: "colis",
     category: "La Poste",
@@ -1573,6 +1723,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "post-5",
+    date: "2026-10-16",
     pl: "pocztówka",
     fr: "carte postale",
     category: "La Poste",
@@ -1587,6 +1738,7 @@ const INITIAL_CARDS = [
   // ==========================================
   {
     id: "phr-21-1",
+    date: "2026-10-21",
     pl: "Skąd jesteś?",
     fr: "D'où viens-tu ?",
     category: "Phrases & Quotidien",
@@ -1597,6 +1749,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-21-2",
+    date: "2026-10-21",
     pl: "Jestem z Francji.",
     fr: "Je viens de France.",
     category: "Phrases & Quotidien",
@@ -1607,6 +1760,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-21-3",
+    date: "2026-10-21",
     pl: "Plecak jest czarny i mały.",
     fr: "Le sac à dos est noir et petit.",
     category: "Phrases & Quotidien",
@@ -1617,6 +1771,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-21-4",
+    date: "2026-10-21",
     pl: "Jabłko jest czerwone i świeże.",
     fr: "La pomme est rouge et fraîche.",
     category: "Phrases & Quotidien",
@@ -1627,6 +1782,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-21-5",
+    date: "2026-10-21",
     pl: "Jest szesnaście stopni we Francji.",
     fr: "Il fait 16 degrés en France.",
     category: "Phrases & Quotidien",
@@ -1637,6 +1793,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-21-6",
+    date: "2026-10-21",
     pl: "Kawa jest ciepła i bez cukru.",
     fr: "Le café est chaud et sans sucre.",
     category: "Phrases & Quotidien",
@@ -1647,6 +1804,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-21-7",
+    date: "2026-10-21",
     pl: "Krzesło jest stare, ale wygodne.",
     fr: "La chaise est vieille, mais confortable.",
     category: "Phrases & Quotidien",
@@ -1657,6 +1815,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-21-8",
+    date: "2026-10-21",
     pl: "Ciasto czekoladowe jest smaczne i tanie.",
     fr: "Le gâteau au chocolat est bon et pas cher.",
     category: "Phrases & Quotidien",
@@ -1667,6 +1826,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-21-9",
+    date: "2026-10-21",
     pl: "Kelnerka nosi niebieską i żółtą sukienkę.",
     fr: "La serveuse porte une robe bleue et jaune.",
     category: "Phrases & Quotidien",
@@ -1677,6 +1837,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-21-10",
+    date: "2026-10-21",
     pl: "Chciałbym dwa bilety do Nowego Jorku, proszę.",
     fr: "Je voudrais deux billets pour New York, s'il vous plaît.",
     category: "Phrases & Quotidien",
@@ -1699,6 +1860,7 @@ const INITIAL_CARDS = [
   // ==========================================
   {
     id: "voc-21-1",
+    date: "2026-10-16",
     pl: "powtórzyć",
     fr: "répéter",
     category: "Phrases & Quotidien",
@@ -1709,6 +1871,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "voc-21-2",
+    date: "2026-10-16",
     pl: "sukienka",
     fr: "robe",
     category: "Objets du quotidien",
@@ -1719,6 +1882,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "voc-21-3",
+    date: "2026-10-16",
     pl: "kelnerka",
     fr: "serveuse",
     category: "Nourriture & Café",
@@ -1729,6 +1893,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "voc-21-4",
+    date: "2026-10-16",
     pl: "tani",
     fr: "pas cher, bon marché",
     category: "Adjectifs",
@@ -1740,6 +1905,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "voc-21-5",
+    date: "2026-10-16",
     pl: "dokąd",
     fr: "vers où (direction)",
     category: "Phrases & Quotidien",
@@ -1750,6 +1916,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "voc-21-6",
+    date: "2026-10-16",
     pl: "skąd",
     fr: "d'où",
     category: "Phrases & Quotidien",
@@ -1760,6 +1927,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "voc-21-7",
+    date: "2026-10-16",
     pl: "dużo",
     fr: "beaucoup",
     category: "Phrases & Quotidien",
@@ -1770,6 +1938,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "voc-21-8",
+    date: "2026-10-16",
     pl: "niezależność",
     fr: "indépendance",
     category: "Phrases & Quotidien",
@@ -1784,6 +1953,7 @@ const INITIAL_CARDS = [
   // ==========================================
   {
     id: "taxi-1",
+    date: "2026-10-21",
     pl: "taksówka",
     fr: "taxi",
     category: "Voyage & Aéroport",
@@ -1794,6 +1964,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "taxi-2",
+    date: "2026-10-21",
     pl: "kierowca",
     fr: "chauffeur, conducteur",
     category: "Voyage & Aéroport",
@@ -1804,6 +1975,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "taxi-3",
+    date: "2026-10-21",
     pl: "Dokąd jedziemy?",
     fr: "Où allons-nous ?",
     category: "Voyage & Aéroport",
@@ -1814,6 +1986,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "taxi-4",
+    date: "2026-10-21",
     pl: "Proszę jechać na ulicę Lipową.",
     fr: "S'il vous plaît, allez rue Lipowa.",
     category: "Voyage & Aéroport",
@@ -1824,6 +1997,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "taxi-5",
+    date: "2026-10-21",
     pl: "jechać",
     fr: "aller (en véhicule), rouler",
     category: "Voyage & Aéroport",
@@ -1835,6 +2009,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "taxi-6",
+    date: "2026-10-21",
     pl: "przejazd",
     fr: "trajet, course",
     category: "Voyage & Aéroport",
@@ -1845,6 +2020,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "taxi-7",
+    date: "2026-10-21",
     pl: "Ile kosztuje przejazd?",
     fr: "Combien coûte le trajet ?",
     category: "Voyage & Aéroport",
@@ -1855,6 +2031,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "taxi-8",
+    date: "2026-10-21",
     pl: "ulica",
     fr: "rue (abrév. ul.)",
     category: "Voyage & Aéroport",
@@ -1865,6 +2042,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "taxi-9",
+    date: "2026-10-21",
     pl: "aleja",
     fr: "avenue, allée (abrév. al.)",
     category: "Voyage & Aéroport",
@@ -1875,6 +2053,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "taxi-10",
+    date: "2026-10-21",
     pl: "osiedle",
     fr: "quartier, lotissement, cité (abrév. os.)",
     category: "Voyage & Aéroport",
@@ -1885,6 +2064,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "taxi-11",
+    date: "2026-10-21",
     pl: "plac",
     fr: "place (abrév. pl.)",
     category: "Voyage & Aéroport",
@@ -1895,6 +2075,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "taxi-12",
+    date: "2026-10-21",
     pl: "Chciałbym jechać na aleję Niezależności.",
     fr: "Je voudrais aller sur l'avenue de l'Indépendance.",
     category: "Voyage & Aéroport",
@@ -1926,6 +2107,7 @@ const INITIAL_CARDS = [
   // ==========================================
   {
     id: "muz-1",
+    date: "2026-10-21",
     pl: "muzeum",
     fr: "musée",
     category: "Voyage & Aéroport",
@@ -1936,6 +2118,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "muz-2",
+    date: "2026-10-21",
     pl: "bilet normalny",
     fr: "billet plein tarif",
     category: "Voyage & Aéroport",
@@ -1946,6 +2129,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "muz-3",
+    date: "2026-10-21",
     pl: "bilet ulgowy",
     fr: "billet tarif réduit",
     category: "Voyage & Aéroport",
@@ -1956,6 +2140,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "muz-4",
+    date: "2026-10-21",
     pl: "ulgowy",
     fr: "à tarif réduit (avec réduction)",
     category: "Adjectifs",
@@ -1967,6 +2152,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "muz-5",
+    date: "2026-10-21",
     pl: "wejście",
     fr: "entrée",
     category: "Voyage & Aéroport",
@@ -1977,6 +2163,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "muz-6",
+    date: "2026-10-21",
     pl: "wyjście",
     fr: "sortie",
     category: "Voyage & Aéroport",
@@ -1987,6 +2174,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "muz-7",
+    date: "2026-10-21",
     pl: "Nie ma wyjścia.",
     fr: "Il n'y a pas d'issue (pas le choix).",
     category: "Phrases & Quotidien",
@@ -1997,6 +2185,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "muz-8",
+    date: "2026-10-21",
     pl: "Wyjście jest tam!",
     fr: "La sortie est là-bas !",
     category: "Phrases & Quotidien",
@@ -2007,6 +2196,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "muz-9",
+    date: "2026-10-21",
     pl: "po lewej stronie",
     fr: "sur le côté gauche, à gauche",
     category: "Voyage & Aéroport",
@@ -2017,6 +2207,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "muz-10",
+    date: "2026-10-21",
     pl: "po prawej stronie",
     fr: "sur le côté droit, à droite",
     category: "Voyage & Aéroport",
@@ -2027,6 +2218,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "muz-11",
+    date: "2026-10-21",
     pl: "potrzebować",
     fr: "avoir besoin de",
     category: "Phrases & Quotidien",
@@ -2037,6 +2229,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "muz-12",
+    date: "2026-10-21",
     pl: "Potrzebuje Pan pomocy?",
     fr: "Avez-vous besoin d'aide ? (à un homme)",
     category: "Phrases & Quotidien",
@@ -2048,6 +2241,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "muz-13",
+    date: "2026-10-21",
     pl: "oto",
     fr: "voici",
     category: "Phrases & Quotidien",
@@ -2061,6 +2255,7 @@ const INITIAL_CARDS = [
   // ==========================================
   {
     id: "phr-27-1",
+    date: "2026-10-27",
     pl: "Co nowego?",
     fr: "Quoi de neuf ?",
     category: "Phrases & Quotidien",
@@ -2071,6 +2266,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-27-2",
+    date: "2026-10-27",
     pl: "Nic nowego!",
     fr: "Rien de neuf !",
     category: "Phrases & Quotidien",
@@ -2081,6 +2277,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-27-3",
+    date: "2026-10-27",
     pl: "Po staremu!",
     fr: "Comme d'habitude ! / Rien de changé !",
     category: "Phrases & Quotidien",
@@ -2091,6 +2288,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-27-4",
+    date: "2026-10-27",
     pl: "Mam dwie walizki i plecak na dziś.",
     fr: "J'ai deux valises et un sac à dos pour aujourd'hui.",
     category: "Voyage & Aéroport",
@@ -2101,6 +2299,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-27-5",
+    date: "2026-10-27",
     pl: "Trzy plus cztery to siedem i dziesięć minus osiem to dwa.",
     fr: "Trois plus quatre font sept et dix moins huit font deux.",
     category: "Nombres",
@@ -2126,6 +2325,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-27-6",
+    date: "2026-10-27",
     pl: "Dzień dobry, chciałbym kupić bilet ulgowy do muzeum.",
     fr: "Bonjour, je voudrais acheter un billet à tarif réduit pour le musée.",
     category: "Voyage & Aéroport",
@@ -2153,6 +2353,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-27-7",
+    date: "2026-10-27",
     pl: "Czy potrzebuje pani pomocy?",
     fr: "Avez-vous besoin d'aide, madame ?",
     category: "Phrases & Quotidien",
@@ -2169,6 +2370,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-27-8",
+    date: "2026-10-27",
     pl: "Gdzie jest wejście, proszę? Jest po lewej, niedaleko wyjścia.",
     fr: "Où est l'entrée, s'il vous plaît ? Elle est à gauche, près de la sortie.",
     category: "Voyage & Aéroport",
@@ -2194,6 +2396,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-27-9",
+    date: "2026-10-27",
     pl: "Chciałbym powtórzyć adres : plac Centralny, numer dwadzieścia dwa.",
     fr: "Je voudrais répéter l'adresse : place Centrale, numéro vingt-deux.",
     category: "Voyage & Aéroport",
@@ -2219,6 +2422,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "phr-27-10",
+    date: "2026-10-27",
     pl: "dwadzieścia przez trzynaście (20/13)",
     fr: "vingt sur treize (adresse : numéro 20, appartement 13)",
     category: "Phrases & Quotidien",
@@ -2233,6 +2437,7 @@ const INITIAL_CARDS = [
   // ==========================================
   {
     id: "num-27-1",
+    date: "2026-10-27",
     pl: "rok",
     fr: "an, année",
     category: "Nombres",
@@ -2243,6 +2448,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-2",
+    date: "2026-10-27",
     pl: "teraz",
     fr: "maintenant",
     category: "Phrases & Quotidien",
@@ -2253,6 +2459,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-3",
+    date: "2026-10-27",
     pl: "Jaki jest teraz rok?",
     fr: "En quelle année sommes-nous maintenant ?",
     category: "Nombres",
@@ -2263,6 +2470,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-4",
+    date: "2026-10-27",
     pl: "W jakim roku się urodziłeś?",
     fr: "En quelle année es-tu né ?",
     category: "Nombres",
@@ -2274,6 +2482,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-5",
+    date: "2026-10-27",
     pl: "dwadzieścia",
     fr: "20 (vingt)",
     category: "Nombres",
@@ -2284,6 +2493,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-6",
+    date: "2026-10-27",
     pl: "trzydzieści",
     fr: "30 (trente)",
     category: "Nombres",
@@ -2294,6 +2504,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-7",
+    date: "2026-10-27",
     pl: "czterdzieści",
     fr: "40 (quarante)",
     category: "Nombres",
@@ -2304,6 +2515,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-8",
+    date: "2026-10-27",
     pl: "pięćdziesiąt",
     fr: "50 (cinquante)",
     category: "Nombres",
@@ -2314,6 +2526,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-9",
+    date: "2026-10-27",
     pl: "sześćdziesiąt",
     fr: "60 (soixante)",
     category: "Nombres",
@@ -2324,6 +2537,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-10",
+    date: "2026-10-27",
     pl: "siedemdziesiąt",
     fr: "70 (soixante-dix)",
     category: "Nombres",
@@ -2334,6 +2548,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-11",
+    date: "2026-10-27",
     pl: "osiemdziesiąt",
     fr: "80 (quatre-vingts)",
     category: "Nombres",
@@ -2344,6 +2559,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-12",
+    date: "2026-10-27",
     pl: "dziewięćdziesiąt",
     fr: "90 (quatre-vingt-dix)",
     category: "Nombres",
@@ -2354,6 +2570,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-13",
+    date: "2026-10-27",
     pl: "sto",
     fr: "100 (cent)",
     category: "Nombres",
@@ -2364,6 +2581,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-14",
+    date: "2026-10-27",
     pl: "dwieście",
     fr: "200 (deux cents)",
     category: "Nombres",
@@ -2374,6 +2592,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-15",
+    date: "2026-10-27",
     pl: "trzysta",
     fr: "300 (trois cents)",
     category: "Nombres",
@@ -2384,6 +2603,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-16",
+    date: "2026-10-27",
     pl: "czterysta",
     fr: "400 (quatre cents)",
     category: "Nombres",
@@ -2394,6 +2614,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-17",
+    date: "2026-10-27",
     pl: "pięćset",
     fr: "500 (cinq cents)",
     category: "Nombres",
@@ -2404,6 +2625,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-18",
+    date: "2026-10-27",
     pl: "sześćset",
     fr: "600 (six cents)",
     category: "Nombres",
@@ -2414,6 +2636,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-19",
+    date: "2026-10-27",
     pl: "siedemset",
     fr: "700 (sept cents)",
     category: "Nombres",
@@ -2424,6 +2647,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-20",
+    date: "2026-10-27",
     pl: "osiemset",
     fr: "800 (huit cents)",
     category: "Nombres",
@@ -2434,6 +2658,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-21",
+    date: "2026-10-27",
     pl: "dziewięćset",
     fr: "900 (neuf cents)",
     category: "Nombres",
@@ -2444,6 +2669,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-22",
+    date: "2026-10-27",
     pl: "tysiąc",
     fr: "1 000 (mille)",
     category: "Nombres",
@@ -2454,6 +2680,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-23",
+    date: "2026-10-27",
     pl: "dwa tysiące",
     fr: "2 000 (deux mille)",
     category: "Nombres",
@@ -2464,6 +2691,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-24",
+    date: "2026-10-27",
     pl: "pięć tysięcy",
     fr: "5 000 (cinq mille)",
     category: "Nombres",
@@ -2474,6 +2702,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-25",
+    date: "2026-10-27",
     pl: "sześćset siedemdziesiąt osiem",
     fr: "678 (six cent soixante-dix-huit)",
     category: "Nombres",
@@ -2484,6 +2713,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-26",
+    date: "2026-10-27",
     pl: "trzy tysiące dwieście czternaście",
     fr: "3 214 (trois mille deux cent quatorze)",
     category: "Nombres",
@@ -2494,6 +2724,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-27",
+    date: "2026-10-27",
     pl: "dwa tysiące dwadzieścia sześć",
     fr: "2 026 (deux mille vingt-six - année 2026)",
     category: "Nombres",
@@ -2504,6 +2735,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "num-27-28",
+    date: "2026-10-27",
     pl: "tysiąc dziewięćset dziewięćdziesiąt dziewięć",
     fr: "1 999 (mille neuf cent quatre-vingt-dix-neuf - année 1999)",
     category: "Nombres",
@@ -2536,6 +2768,7 @@ const INITIAL_CARDS = [
   // ==========================================
   {
     id: "ren-27-1",
+    date: "2026-10-27",
     pl: "miasto",
     fr: "ville",
     category: "Phrases & Quotidien",
@@ -2546,6 +2779,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "ren-27-2",
+    date: "2026-10-27",
     pl: "trochę",
     fr: "un peu",
     category: "Phrases & Quotidien",
@@ -2556,6 +2790,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "ren-27-3",
+    date: "2026-10-27",
     pl: "język ojczysty",
     fr: "langue maternelle",
     category: "Phrases & Quotidien",
@@ -2566,6 +2801,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "ren-27-4",
+    date: "2026-10-27",
     pl: "ojciec",
     fr: "père",
     category: "Phrases & Quotidien",
@@ -2576,6 +2812,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "ren-27-5",
+    date: "2026-10-27",
     pl: "Francuski to mój język ojczysty.",
     fr: "Le français est ma langue maternelle.",
     category: "Phrases & Quotidien",
@@ -2586,6 +2823,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "ren-27-6",
+    date: "2026-10-27",
     pl: "uczyć się",
     fr: "apprendre (pour soi-même, étudier)",
     category: "Phrases & Quotidien",
@@ -2597,6 +2835,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "ren-27-7",
+    date: "2026-10-27",
     pl: "uczyć",
     fr: "enseigner (apprendre à quelqu'un)",
     category: "Phrases & Quotidien",
@@ -2608,6 +2847,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "ren-27-8",
+    date: "2026-10-27",
     pl: "Uczę się polskiego, bo mam polską dziewczynę.",
     fr: "J'apprends le polonais parce que j'ai une copine polonaise.",
     category: "Phrases & Quotidien",
@@ -2634,6 +2874,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "ren-27-9",
+    date: "2026-10-27",
     pl: "Co lubisz jeść? Lubię jeść pierogi z mięsem i kapustą.",
     fr: "Qu'aimes-tu manger ? J'aime manger des pierogi à la viande et au chou.",
     category: "Nourriture & Café",
@@ -2659,6 +2900,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "ren-27-10",
+    date: "2026-10-27",
     pl: "już",
     fr: "déjà",
     category: "Phrases & Quotidien",
@@ -2669,6 +2911,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "ren-27-11",
+    date: "2026-10-27",
     pl: "Byłeś już w Polsce?",
     fr: "Es-tu déjà allé en Pologne ? (à un homme)",
     category: "Voyage & Aéroport",
@@ -2685,6 +2928,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "ren-27-12",
+    date: "2026-10-27",
     pl: "Byłem we Wrocławiu i w Krakowie.",
     fr: "Je suis allé à Wrocław et à Cracovie. (homme)",
     category: "Voyage & Aéroport",
@@ -2712,6 +2956,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "ren-27-13",
+    date: "2026-10-27",
     pl: "podróżować",
     fr: "voyager",
     category: "Voyage & Aéroport",
@@ -2722,6 +2967,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "ren-27-14",
+    date: "2026-10-27",
     pl: "Lubisz podróżować?",
     fr: "Aimes-tu voyager ?",
     category: "Voyage & Aéroport",
@@ -2732,6 +2978,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "ren-27-15",
+    date: "2026-10-27",
     pl: "Moje hobby to gitara.",
     fr: "Mon hobby est la guitare.",
     category: "Phrases & Quotidien",
@@ -2742,6 +2989,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "ren-27-16",
+    date: "2026-10-27",
     pl: "zwierzęta",
     fr: "les animaux",
     category: "Phrases & Quotidien",
@@ -2752,6 +3000,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "ren-27-17",
+    date: "2026-10-27",
     pl: "Masz jakieś zwierzęta? Mam dwa psy.",
     fr: "As-tu des animaux ? J'ai deux chiens.",
     category: "Phrases & Quotidien",
@@ -2774,6 +3023,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "ren-27-18",
+    date: "2026-10-27",
     pl: "Mój ulubiony owoc to truskawka.",
     fr: "Mon fruit préféré est la fraise.",
     category: "Fruits & Légumes",
@@ -2784,6 +3034,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "ren-27-19",
+    date: "2026-10-27",
     pl: "Jaki jest twój ulubiony film?",
     fr: "Quel est ton film préféré ?",
     category: "Phrases & Quotidien",
@@ -2798,6 +3049,7 @@ const INITIAL_CARDS = [
   // ==========================================
   {
     id: "veg-27-1",
+    date: "2026-10-27",
     pl: "truskawka",
     fr: "fraise",
     category: "Fruits & Légumes",
@@ -2808,6 +3060,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "veg-27-2",
+    date: "2026-10-27",
     pl: "malina",
     fr: "framboise",
     category: "Fruits & Légumes",
@@ -2818,6 +3071,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "veg-27-3",
+    date: "2026-10-27",
     pl: "arbuz",
     fr: "pastèque",
     category: "Fruits & Légumes",
@@ -2828,6 +3082,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "veg-27-4",
+    date: "2026-10-27",
     pl: "kokos",
     fr: "noix de coco",
     category: "Fruits & Légumes",
@@ -2838,6 +3093,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "veg-27-5",
+    date: "2026-10-27",
     pl: "gruszka",
     fr: "poire",
     category: "Fruits & Légumes",
@@ -2848,6 +3104,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "veg-27-6",
+    date: "2026-10-27",
     pl: "ananas",
     fr: "ananas",
     category: "Fruits & Légumes",
@@ -2858,6 +3115,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "veg-27-7",
+    date: "2026-10-27",
     pl: "banan",
     fr: "banane",
     category: "Fruits & Légumes",
@@ -2868,6 +3126,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "veg-27-8",
+    date: "2026-10-27",
     pl: "kiwi",
     fr: "kiwi",
     category: "Fruits & Légumes",
@@ -2878,6 +3137,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "veg-27-9",
+    date: "2026-10-27",
     pl: "wiśnia",
     fr: "cerise",
     category: "Fruits & Légumes",
@@ -2888,6 +3148,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "veg-27-10",
+    date: "2026-10-27",
     pl: "pomidor",
     fr: "tomate",
     category: "Fruits & Légumes",
@@ -2898,6 +3159,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "veg-27-11",
+    date: "2026-10-27",
     pl: "cebula",
     fr: "oignon",
     category: "Fruits & Légumes",
@@ -2908,6 +3170,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "veg-27-12",
+    date: "2026-10-27",
     pl: "grzyb",
     fr: "champignon",
     category: "Fruits & Légumes",
@@ -2918,6 +3181,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "veg-27-13",
+    date: "2026-10-27",
     pl: "bakłażan",
     fr: "aubergine",
     category: "Fruits & Légumes",
@@ -2928,6 +3192,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "veg-27-14",
+    date: "2026-10-27",
     pl: "kalafior",
     fr: "chou-fleur",
     category: "Fruits & Légumes",
@@ -2938,6 +3203,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "veg-27-15",
+    date: "2026-10-27",
     pl: "awokado",
     fr: "avocat (le fruit)",
     category: "Fruits & Légumes",
@@ -2948,6 +3214,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "veg-27-16",
+    date: "2026-10-27",
     pl: "papryka",
     fr: "poivron",
     category: "Fruits & Légumes",
@@ -2958,6 +3225,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "veg-27-17",
+    date: "2026-10-27",
     pl: "dynia",
     fr: "citrouille, potiron",
     category: "Fruits & Légumes",
@@ -2968,6 +3236,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "veg-27-18",
+    date: "2026-10-27",
     pl: "sałata",
     fr: "salade, laitue",
     category: "Fruits & Légumes",
@@ -2978,6 +3247,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "veg-27-19",
+    date: "2026-10-27",
     pl: "rzodkiewka",
     fr: "radis",
     category: "Fruits & Légumes",
@@ -2988,6 +3258,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-1",
+    date: "2026-10-29",
     pl: "mama",
     fr: "maman",
     category: "La Famille",
@@ -2998,6 +3269,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-2",
+    date: "2026-10-29",
     pl: "tata",
     fr: "papa",
     category: "La Famille",
@@ -3008,6 +3280,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-3",
+    date: "2026-10-29",
     pl: "babcia",
     fr: "grand-mère",
     category: "La Famille",
@@ -3018,6 +3291,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-4",
+    date: "2026-10-29",
     pl: "dziadek",
     fr: "grand-père",
     category: "La Famille",
@@ -3028,6 +3302,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-5",
+    date: "2026-10-29",
     pl: "prababcia",
     fr: "arrière-grand-mère",
     category: "La Famille",
@@ -3038,6 +3313,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-6",
+    date: "2026-10-29",
     pl: "pradziadek",
     fr: "arrière-grand-père",
     category: "La Famille",
@@ -3048,6 +3324,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-7",
+    date: "2026-10-29",
     pl: "wujek",
     fr: "oncle",
     category: "La Famille",
@@ -3058,6 +3335,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-8",
+    date: "2026-10-29",
     pl: "ciocia",
     fr: "tante",
     category: "La Famille",
@@ -3068,6 +3346,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-9",
+    date: "2026-10-29",
     pl: "brat",
     fr: "frère",
     category: "La Famille",
@@ -3078,6 +3357,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-10",
+    date: "2026-10-29",
     pl: "siostra",
     fr: "sœur",
     category: "La Famille",
@@ -3088,6 +3368,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-11",
+    date: "2026-10-29",
     pl: "mąż",
     fr: "mari, époux",
     category: "La Famille",
@@ -3098,6 +3379,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-12",
+    date: "2026-10-29",
     pl: "żona",
     fr: "femme, épouse",
     category: "La Famille",
@@ -3108,6 +3390,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-13",
+    date: "2026-10-29",
     pl: "kuzyn",
     fr: "cousin",
     category: "La Famille",
@@ -3118,6 +3401,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-14",
+    date: "2026-10-29",
     pl: "kuzynka",
     fr: "cousine",
     category: "La Famille",
@@ -3128,6 +3412,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-15",
+    date: "2026-10-29",
     pl: "żona kuzyna",
     fr: "la femme du cousin",
     category: "La Famille",
@@ -3138,6 +3423,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-16",
+    date: "2026-10-29",
     pl: "syn",
     fr: "fils",
     category: "La Famille",
@@ -3148,6 +3434,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-17",
+    date: "2026-10-29",
     pl: "córka",
     fr: "fille (enfant)",
     category: "La Famille",
@@ -3158,6 +3445,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-18",
+    date: "2026-10-29",
     pl: "bratanek",
     fr: "neveu (fils du frère)",
     category: "La Famille",
@@ -3168,6 +3456,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-19",
+    date: "2026-10-29",
     pl: "bratanica",
     fr: "nièce (fille du frère)",
     category: "La Famille",
@@ -3178,6 +3467,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-20",
+    date: "2026-10-29",
     pl: "siostrzeniec",
     fr: "neveu (fils de la sœur)",
     category: "La Famille",
@@ -3188,6 +3478,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-21",
+    date: "2026-10-29",
     pl: "siostrzenica",
     fr: "nièce (fille de la sœur)",
     category: "La Famille",
@@ -3198,6 +3489,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-22",
+    date: "2026-10-29",
     pl: "jedynak",
     fr: "fils unique",
     category: "La Famille",
@@ -3208,6 +3500,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-23",
+    date: "2026-10-29",
     pl: "jedynaczka",
     fr: "fille unique",
     category: "La Famille",
@@ -3218,6 +3511,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-24",
+    date: "2026-10-29",
     pl: "Mąż Anny ma na imię Henryk.",
     fr: "Le mari d'Anna s'appelle Henryk.",
     category: "La Famille",
@@ -3228,6 +3522,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-25",
+    date: "2026-10-29",
     pl: "Jak ma na imię mąż Anny?",
     fr: "Comment s'appelle le mari d'Anna ?",
     category: "La Famille",
@@ -3238,6 +3533,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-26",
+    date: "2026-10-29",
     pl: "Mam dwóch braci.",
     fr: "J'ai deux frères.",
     category: "La Famille",
@@ -3248,6 +3544,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-27",
+    date: "2026-10-29",
     pl: "Mam dużo kuzynów i kuzynek.",
     fr: "J'ai beaucoup de cousins et de cousines.",
     category: "La Famille",
@@ -3258,6 +3555,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-28",
+    date: "2026-10-29",
     pl: "Mój ulubiony kuzyn",
     fr: "Mon cousin préféré",
     category: "La Famille",
@@ -3268,6 +3566,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-29",
+    date: "2026-10-29",
     pl: "Moja ulubiona kuzynka",
     fr: "Ma cousine préférée",
     category: "La Famille",
@@ -3278,6 +3577,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-30",
+    date: "2026-10-29",
     pl: "Którego lubisz najbardziej?",
     fr: "Lequel préfères-tu ?",
     category: "La Famille",
@@ -3288,6 +3588,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "trav-29-1",
+    date: "2026-10-29",
     pl: "Pracujesz dzisiaj?",
     fr: "Tu travailles aujourd'hui ?",
     category: "Phrases & Quotidien",
@@ -3298,6 +3599,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "trav-29-2",
+    date: "2026-10-29",
     pl: "Tak, pracuję.",
     fr: "Oui, je travaille.",
     category: "Phrases & Quotidien",
@@ -3308,6 +3610,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "trav-29-3",
+    date: "2026-10-29",
     pl: "Ile godzin?",
     fr: "Combien d'heures ?",
     category: "Phrases & Quotidien",
@@ -3318,6 +3621,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "trav-29-4",
+    date: "2026-10-29",
     pl: "godzina",
     fr: "heure",
     category: "Phrases & Quotidien",
@@ -3328,6 +3632,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "trav-29-5",
+    date: "2026-10-29",
     pl: "to zależy",
     fr: "ça dépend",
     category: "Phrases & Quotidien",
@@ -3338,6 +3643,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "trav-29-6",
+    date: "2026-10-29",
     pl: "mniej więcej",
     fr: "plus ou moins, environ",
     category: "Phrases & Quotidien",
@@ -3348,6 +3654,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "trav-29-7",
+    date: "2026-10-29",
     pl: "do",
     fr: "jusqu'à, vers (préposition + génitif)",
     category: "Phrases & Quotidien",
@@ -3358,6 +3665,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "trav-29-8",
+    date: "2026-10-29",
     pl: "kraj",
     fr: "pays",
     category: "Phrases & Quotidien",
@@ -3368,6 +3676,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "trav-29-9",
+    date: "2026-10-29",
     pl: "Urodziłem się w tysiąc dziewięćset dziewięćdziesiąt dziewiątym.",
     fr: "Je suis né en 1999.",
     category: "Phrases & Quotidien",
@@ -3378,6 +3687,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "trav-29-10",
+    date: "2026-10-29",
     pl: "Jestem z Francji, z Nicei.",
     fr: "Je viens de France, de Nice.",
     category: "Phrases & Quotidien",
@@ -3388,6 +3698,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "trav-29-11",
+    date: "2026-10-29",
     pl: "Mieszkam w Paryżu.",
     fr: "J'habite à Paris.",
     category: "Phrases & Quotidien",
@@ -3398,6 +3709,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "trav-29-12",
+    date: "2026-10-29",
     pl: "Mówię po francusku i trochę po polsku.",
     fr: "Je parle français et un peu polonais.",
     category: "Phrases & Quotidien",
@@ -3408,6 +3720,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "trav-29-13",
+    date: "2026-10-29",
     pl: "Dlaczego uczysz się polskiego?",
     fr: "Pourquoi apprends-tu le polonais ?",
     category: "Phrases & Quotidien",
@@ -3418,6 +3731,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "trav-29-14",
+    date: "2026-10-29",
     pl: "Uczę się polskiego, bo moja dziewczyna jest Polką.",
     fr: "J'apprends le polonais parce que ma copine est polonaise.",
     category: "Phrases & Quotidien",
@@ -3428,6 +3742,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-31",
+    date: "2026-10-29",
     pl: "Polka",
     fr: "une Polonaise",
     category: "Phrases & Quotidien",
@@ -3438,6 +3753,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "fam-29-32",
+    date: "2026-10-29",
     pl: "Polak",
     fr: "un Polonais",
     category: "Phrases & Quotidien",
@@ -3448,6 +3764,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "trav-29-15",
+    date: "2026-10-29",
     pl: "Jestem Francuzem, jestem Polakiem.",
     fr: "Je suis Français, je suis Polonais (Instrumental).",
     category: "Phrases & Quotidien",
@@ -3458,6 +3775,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "trav-29-16",
+    date: "2026-10-29",
     pl: "Mam dwa psy i lubię podróżować.",
     fr: "J'ai deux chiens et j'aime voyager.",
     category: "Phrases & Quotidien",
@@ -3468,6 +3786,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "sklep-29-1",
+    date: "2026-10-29",
     pl: "Szukam chleba.",
     fr: "Je cherche du pain.",
     category: "Nourriture & Café",
@@ -3478,6 +3797,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "sklep-29-2",
+    date: "2026-10-29",
     pl: "Chleb jest tam, po prawej stronie.",
     fr: "Le pain est là-bas, sur le côté droit.",
     category: "Nourriture & Café",
@@ -3488,6 +3808,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "sklep-29-3",
+    date: "2026-10-29",
     pl: "Gdzie są owoce?",
     fr: "Où sont les fruits ?",
     category: "Nourriture & Café",
@@ -3498,6 +3819,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "sklep-29-4",
+    date: "2026-10-29",
     pl: "Owoce są obok warzyw.",
     fr: "Les fruits sont à côté des légumes.",
     category: "Nourriture & Café",
@@ -3508,6 +3830,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "sklep-29-5",
+    date: "2026-10-29",
     pl: "Poproszę kilogram jabłek.",
     fr: "Un kilo de pommes, s'il vous plaît.",
     category: "Nourriture & Café",
@@ -3518,6 +3841,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "sklep-29-6",
+    date: "2026-10-29",
     pl: "Ile kosztują jabłka?",
     fr: "Combien coûtent les pommes ?",
     category: "Nourriture & Café",
@@ -3528,6 +3852,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "sklep-29-7",
+    date: "2026-10-29",
     pl: "obok",
     fr: "à côté de (préposition + génitif)",
     category: "Nourriture & Café",
@@ -3538,6 +3863,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "sklep-29-8",
+    date: "2026-10-29",
     pl: "Szukam truskawek.",
     fr: "Je cherche des fraises.",
     category: "Nourriture & Café",
@@ -3548,6 +3874,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "sklep-29-9",
+    date: "2026-10-29",
     pl: "obok jabłek",
     fr: "à côté des pommes",
     category: "Nourriture & Café",
@@ -3558,6 +3885,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "sklep-29-10",
+    date: "2026-10-29",
     pl: "po prawej stronie",
     fr: "sur le côté droit, à droite",
     category: "Phrases & Quotidien",
@@ -3568,6 +3896,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "sklep-29-11",
+    date: "2026-10-29",
     pl: "po lewej stronie",
     fr: "sur le côté gauche, à gauche",
     category: "Phrases & Quotidien",
@@ -3578,6 +3907,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "sklep-29-12",
+    date: "2026-10-29",
     pl: "Niektórzy mówią, że pomidor to owoc.",
     fr: "Certains disent que la tomate est un fruit.",
     category: "Phrases & Quotidien",
@@ -3588,6 +3918,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "sklep-29-13",
+    date: "2026-10-29",
     pl: "niektórzy",
     fr: "certains, quelques-uns",
     category: "Phrases & Quotidien",
@@ -3598,6 +3929,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "sklep-29-14",
+    date: "2026-10-29",
     pl: "Co myślisz?",
     fr: "Qu'en penses-tu ?",
     category: "Phrases & Quotidien",
@@ -3608,6 +3940,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "sklep-29-15",
+    date: "2026-10-29",
     pl: "myśleć",
     fr: "penser, réfléchir",
     category: "Phrases & Quotidien",
@@ -3618,6 +3951,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "sklep-29-16",
+    date: "2026-10-29",
     pl: "Myślę, że...",
     fr: "Je pense que...",
     category: "Phrases & Quotidien",
@@ -3628,6 +3962,7 @@ const INITIAL_CARDS = [
   },
   {
     id: "sklep-29-17",
+    date: "2026-10-29",
     pl: "warzywa",
     fr: "les légumes",
     category: "Nourriture & Café",
@@ -3635,12 +3970,855 @@ const INITIAL_CARDS = [
     acceptedFr: ["légumes", "les légumes", "legumes"],
     distractorsPl: ["owoce", "pieczywo", "napoje"],
     distractorsFr: ["fruits", "pains", "boissons"]
+  },
+  {
+    id: "vet-3-1",
+    date: "2026-11-03",
+    pl: "ubrania",
+    fr: "vêtements, habits",
+    category: "Vêtements & Mode",
+    acceptedPl: ["ubrania"],
+    acceptedFr: ["vêtements", "habits", "les vêtements", "vetements"],
+    distractorsPl: ["buty", "akcesoria", "płaszcze"],
+    distractorsFr: ["chaussures", "accessoires", "manteaux"]
+  },
+  {
+    id: "vet-3-2",
+    date: "2026-11-03",
+    pl: "koszula",
+    fr: "chemise",
+    category: "Vêtements & Mode",
+    acceptedPl: ["koszula"],
+    acceptedFr: ["chemise", "la chemise", "une chemise"],
+    distractorsPl: ["koszulka", "sukienka", "kurtka"],
+    distractorsFr: ["t-shirt", "robe", "veste"]
+  },
+  {
+    id: "vet-3-3",
+    date: "2026-11-03",
+    pl: "czapka z daszkiem",
+    fr: "casquette",
+    category: "Vêtements & Mode",
+    acceptedPl: ["czapka z daszkiem", "czapka"],
+    acceptedFr: ["casquette", "la casquette", "une casquette"],
+    distractorsPl: ["kapelusz", "pasek", "szalik"],
+    distractorsFr: ["chapeau", "ceinture", "écharpe"]
+  },
+  {
+    id: "vet-3-4",
+    date: "2026-11-03",
+    pl: "krawat",
+    fr: "cravate",
+    category: "Vêtements & Mode",
+    acceptedPl: ["krawat"],
+    acceptedFr: ["cravate", "la cravate", "une cravate"],
+    distractorsPl: ["pasek", "szalik", "zegarek"],
+    distractorsFr: ["ceinture", "écharpe", "montre"]
+  },
+  {
+    id: "vet-3-5",
+    date: "2026-11-03",
+    pl: "marynarka",
+    fr: "veste de costume, blazer",
+    category: "Vêtements & Mode",
+    acceptedPl: ["marynarka"],
+    acceptedFr: ["veste", "veste de costume", "blazer", "la veste"],
+    distractorsPl: ["płaszcz", "kurtka", "koszula"],
+    distractorsFr: ["manteau", "blouson", "chemise"]
+  },
+  {
+    id: "vet-3-6",
+    date: "2026-11-03",
+    pl: "zegarek",
+    fr: "montre",
+    category: "Vêtements & Mode",
+    acceptedPl: ["zegarek"],
+    acceptedFr: ["montre", "la montre", "une montre"],
+    distractorsPl: ["okulary", "pasek", "telefon"],
+    distractorsFr: ["lunettes", "ceinture", "téléphone"]
+  },
+  {
+    id: "vet-3-7",
+    date: "2026-11-03",
+    pl: "spodnie",
+    fr: "pantalon",
+    category: "Vêtements & Mode",
+    acceptedPl: ["spodnie"],
+    acceptedFr: ["pantalon", "le pantalon", "un pantalon"],
+    distractorsPl: ["krótkie spodenki", "spódnica", "majtki"],
+    distractorsFr: ["short", "jupe", "culotte"]
+  },
+  {
+    id: "vet-3-8",
+    date: "2026-11-03",
+    pl: "sweter",
+    fr: "pull, pull-over",
+    category: "Vêtements & Mode",
+    acceptedPl: ["sweter"],
+    acceptedFr: ["pull", "pull-over", "le pull", "un pull"],
+    distractorsPl: ["bluza", "koszula", "kurtka"],
+    distractorsFr: ["sweat", "chemise", "veste"]
+  },
+  {
+    id: "vet-3-9",
+    date: "2026-11-03",
+    pl: "bluza",
+    fr: "sweat, sweat à capuche",
+    category: "Vêtements & Mode",
+    acceptedPl: ["bluza"],
+    acceptedFr: ["sweat", "sweat à capuche", "le sweat", "un sweat"],
+    distractorsPl: ["sweter", "kurtka", "koszulka"],
+    distractorsFr: ["pull", "veste", "t-shirt"]
+  },
+  {
+    id: "vet-3-10",
+    date: "2026-11-03",
+    pl: "krótkie spodenki",
+    fr: "short, bermuda",
+    category: "Vêtements & Mode",
+    acceptedPl: ["krótkie spodenki", "krotkie spodenki", "spodenki"],
+    acceptedFr: ["short", "le short", "bermuda", "un short"],
+    distractorsPl: ["spodnie", "spódnica", "majtki"],
+    distractorsFr: ["pantalon", "jupe", "sous-vêtements"]
+  },
+  {
+    id: "vet-3-11",
+    date: "2026-11-03",
+    pl: "skarpetki",
+    fr: "chaussettes",
+    category: "Vêtements & Mode",
+    acceptedPl: ["skarpetki"],
+    acceptedFr: ["chaussettes", "les chaussettes", "des chaussettes"],
+    distractorsPl: ["buty", "trampki", "szpilki"],
+    distractorsFr: ["chaussures", "baskets", "talons hauts"]
+  },
+  {
+    id: "vet-3-12",
+    date: "2026-11-03",
+    pl: "trampki",
+    fr: "baskets, tennis",
+    category: "Vêtements & Mode",
+    acceptedPl: ["trampki"],
+    acceptedFr: ["baskets", "tennis", "les baskets", "des baskets"],
+    distractorsPl: ["buty zimowe", "szpilki", "sandały"],
+    distractorsFr: ["chaussures d'hiver", "escarpins", "sandales"]
+  },
+  {
+    id: "vet-3-13",
+    date: "2026-11-03",
+    pl: "buty zimowe",
+    fr: "chaussures d'hiver, bottes",
+    category: "Vêtements & Mode",
+    acceptedPl: ["buty zimowe", "buty"],
+    acceptedFr: ["chaussures d'hiver", "bottes", "bottes d'hiver", "chaussures d hiver"],
+    distractorsPl: ["trampki", "szpilki", "skarpetki"],
+    distractorsFr: ["baskets", "talons", "chaussettes"]
+  },
+  {
+    id: "vet-3-14",
+    date: "2026-11-03",
+    pl: "kapelusz",
+    fr: "chapeau",
+    category: "Vêtements & Mode",
+    acceptedPl: ["kapelusz"],
+    acceptedFr: ["chapeau", "le chapeau", "un chapeau"],
+    distractorsPl: ["czapka z daszkiem", "chusta", "okulary"],
+    distractorsFr: ["casquette", "foulard", "lunettes"]
+  },
+  {
+    id: "vet-3-15",
+    date: "2026-11-03",
+    pl: "koszulka",
+    fr: "t-shirt, maillot",
+    category: "Vêtements & Mode",
+    acceptedPl: ["koszulka", "T-shirt", "t-shirt"],
+    acceptedFr: ["t-shirt", "le t-shirt", "un t-shirt", "maillot"],
+    distractorsPl: ["koszula", "bluza", "sukienka"],
+    distractorsFr: ["chemise", "sweat", "robe"]
+  },
+  {
+    id: "vet-3-16",
+    date: "2026-11-03",
+    pl: "okulary przeciwsłoneczne",
+    fr: "lunettes de soleil",
+    category: "Vêtements & Mode",
+    acceptedPl: ["okulary przeciwsłoneczne", "okulary przeciwsloneczne", "okulary"],
+    acceptedFr: ["lunettes de soleil", "les lunettes de soleil", "lunettes"],
+    distractorsPl: ["zegarek", "kapelusz", "pasek"],
+    distractorsFr: ["montre", "chapeau", "ceinture"]
+  },
+  {
+    id: "vet-3-17",
+    date: "2026-11-03",
+    pl: "sukienka",
+    fr: "robe",
+    category: "Vêtements & Mode",
+    acceptedPl: ["sukienka"],
+    acceptedFr: ["robe", "la robe", "une robe"],
+    distractorsPl: ["spódnica", "koszula", "bluza"],
+    distractorsFr: ["jupe", "chemise", "sweat"]
+  },
+  {
+    id: "vet-3-18",
+    date: "2026-11-03",
+    pl: "płaszcz",
+    fr: "manteau",
+    category: "Vêtements & Mode",
+    acceptedPl: ["płaszcz", "plasDisplay"],
+    acceptedFr: ["manteau", "le manteau", "un manteau"],
+    distractorsPl: ["kurtka", "marynarka", "sweter"],
+    distractorsFr: ["blouson", "veste", "pull"]
+  },
+  {
+    id: "vet-3-19",
+    date: "2026-11-03",
+    pl: "strój kąpielowy",
+    fr: "maillot de bain",
+    category: "Vêtements & Mode",
+    acceptedPl: ["strój kąpielowy", "stroj kapielowy"],
+    acceptedFr: ["maillot de bain", "le maillot de bain", "un maillot de bain"],
+    distractorsPl: ["krótkie spodenki", "sukienka", "majtki"],
+    distractorsFr: ["short", "robe", "culotte"]
+  },
+  {
+    id: "vet-3-20",
+    date: "2026-11-03",
+    pl: "kurtka",
+    fr: "veste, blouson",
+    category: "Vêtements & Mode",
+    acceptedPl: ["kurtka"],
+    acceptedFr: ["veste", "blouson", "la veste", "un blouson"],
+    distractorsPl: ["płaszcz", "marynarka", "sweter"],
+    distractorsFr: ["manteau", "blazer", "pull"]
+  },
+  {
+    id: "vet-3-21",
+    date: "2026-11-03",
+    pl: "majtki",
+    fr: "culotte, sous-vêtements",
+    category: "Vêtements & Mode",
+    acceptedPl: ["majtki"],
+    acceptedFr: ["culotte", "sous-vêtements", "la culotte", "les sous-vêtements"],
+    distractorsPl: ["skarpetki", "spodnie", "strój kąpielowy"],
+    distractorsFr: ["chaussettes", "pantalon", "maillot de bain"]
+  },
+  {
+    id: "vet-3-22",
+    date: "2026-11-03",
+    pl: "pasek",
+    fr: "ceinture",
+    category: "Vêtements & Mode",
+    acceptedPl: ["pasek"],
+    acceptedFr: ["ceinture", "la ceinture", "une ceinture"],
+    distractorsPl: ["krawat", "szalik", "zegarek"],
+    distractorsFr: ["cravate", "écharpe", "montre"]
+  },
+  {
+    id: "vet-3-23",
+    date: "2026-11-03",
+    pl: "spódnica",
+    fr: "jupe",
+    category: "Vêtements & Mode",
+    acceptedPl: ["spódnica", "spodnica"],
+    acceptedFr: ["jupe", "la jupe", "une jupe"],
+    distractorsPl: ["sukienka", "spodnie", "koszula"],
+    distractorsFr: ["robe", "pantalon", "chemise"]
+  },
+  {
+    id: "vet-3-24",
+    date: "2026-11-03",
+    pl: "torebka",
+    fr: "sac à main",
+    category: "Vêtements & Mode",
+    acceptedPl: ["torebka"],
+    acceptedFr: ["sac à main", "le sac à main", "un sac à main", "sac a main"],
+    distractorsPl: ["plecak", "walizka", "pasek"],
+    distractorsFr: ["sac à dos", "valise", "ceinture"]
+  },
+  {
+    id: "vet-3-25",
+    date: "2026-11-03",
+    pl: "szpilki",
+    fr: "talons hauts, escarpins",
+    category: "Vêtements & Mode",
+    acceptedPl: ["szpilki"],
+    acceptedFr: ["talons hauts", "escarpins", "les talons hauts", "chaussures à talons"],
+    distractorsPl: ["trampki", "buty zimowe", "skarpetki"],
+    distractorsFr: ["baskets", "bottes d'hiver", "chaussettes"]
+  },
+  {
+    id: "phr-3-1",
+    date: "2026-11-03",
+    pl: "Mam duży plecak.",
+    fr: "J'ai un grand sac à dos.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Mam duży plecak", "Mam duzy plecak"],
+    acceptedFr: ["J'ai un grand sac à dos", "J'ai un grand sac a dos"],
+    distractorsPl: ["Mam mały plecak.", "Mam dwie walizki.", "Gdzie jest mój plecak?"],
+    distractorsFr: ["J'ai un petit sac à dos.", "J'ai deux valises.", "Où est mon sac à dos ?"]
+  },
+  {
+    id: "phr-3-2",
+    date: "2026-11-03",
+    pl: "Wyjście jest tam.",
+    fr: "La sortie est là-bas.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Wyjście jest tam", "Wyjscie jest tam"],
+    acceptedFr: ["La sortie est là-bas", "La sortie est la-bas", "La sortie est là"],
+    distractorsPl: ["Wejście jest po lewej.", "Nie ma wyjścia.", "Gdzie jest wyjście?"],
+    distractorsFr: ["L'entrée est à gauche.", "Il n'y a pas d'issue.", "Où est la sortie ?"]
+  },
+  {
+    id: "phr-3-3",
+    date: "2026-11-03",
+    pl: "Ten długopis jest nieprzydatny.",
+    fr: "Ce stylo est inutile.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Ten długopis jest nieprzydatny", "Ten dlugopis jest nieprzydatny"],
+    acceptedFr: ["Ce stylo est inutile", "Ce stylo ne sert à rien"],
+    distractorsPl: ["Ten długopis jest nowy.", "To jest mój długopis.", "Ładowarka jest nieprzydatna."],
+    distractorsFr: ["Ce stylo est neuf.", "C'est mon stylo.", "Le chargeur est inutile."]
+  },
+  {
+    id: "phr-3-4",
+    date: "2026-11-03",
+    pl: "nieprzydatny",
+    fr: "inutile",
+    category: "Adjectifs",
+    acceptedPl: ["nieprzydatny"],
+    acceptedFr: ["inutile"],
+    distractorsPl: ["przydatny", "nowoczesny", "trudny"],
+    distractorsFr: ["utile", "moderne", "difficile"]
+  },
+  {
+    id: "phr-3-5",
+    date: "2026-11-03",
+    pl: "Nie działa.",
+    fr: "Ça ne marche pas, il ne fonctionne pas.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Nie działa", "Nie dziala"],
+    acceptedFr: ["Ça ne marche pas", "Il ne fonctionne pas", "Ca ne marche pas", "Ça ne fonctionne pas"],
+    distractorsPl: ["Wszystko działa.", "Nie wiem.", "Nie ma problemu."],
+    distractorsFr: ["Tout fonctionne.", "Je ne sais pas.", "Il n'y a pas de problème."]
+  },
+  {
+    id: "phr-3-6",
+    date: "2026-11-03",
+    pl: "niestety",
+    fr: "malheureusement",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["niestety"],
+    acceptedFr: ["malheureusement", "hélas"],
+    distractorsPl: ["na szczęście", "oczywiście", "na pewno"],
+    distractorsFr: ["heureusement", "bien sûr", "certainement"]
+  },
+  {
+    id: "phr-3-7",
+    date: "2026-11-03",
+    pl: "na szczęście",
+    fr: "heureusement, par chance",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["na szczęście", "na szczescie"],
+    acceptedFr: ["heureusement", "par chance"],
+    distractorsPl: ["niestety", "być może", "szkoda"],
+    distractorsFr: ["malheureusement", "peut-être", "dommage"]
+  },
+  {
+    id: "phr-3-8",
+    date: "2026-11-03",
+    pl: "Ile godzin pracujesz?",
+    fr: "Combien d'heures travailles-tu ?",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Ile godzin pracujesz?"],
+    acceptedFr: ["Combien d'heures travailles-tu ?", "Combien d'heures tu travailles ?"],
+    distractorsPl: ["Gdzie pracujesz?", "O której pracujesz?", "Pracujesz dzisiaj?"],
+    distractorsFr: ["Où travailles-tu ?", "À quelle heure travailles-tu ?", "Travailles-tu aujourd'hui ?"]
+  },
+  {
+    id: "phr-3-9",
+    date: "2026-11-03",
+    pl: "Mam dwóch braci i jedną siostrę.",
+    fr: "J'ai deux frères et une sœur.",
+    category: "La Famille",
+    acceptedPl: ["Mam dwóch braci i jedną siostrę", "Mam dwoch braci i jedna siostre"],
+    acceptedFr: ["J'ai deux frères et une sœur", "J'ai deux frères et une soeur", "J'ai 2 frères et 1 sœur"],
+    distractorsPl: ["Mam jednego brata i dwie siostry.", "Mam dwóch synów i jedną córkę.", "Jestem jedynakiem."],
+    distractorsFr: ["J'ai un frère et deux sœurs.", "J'ai deux fils et une fille.", "Je suis fils unique."]
+  },
+  {
+    id: "phr-3-10",
+    date: "2026-11-03",
+    pl: "Moja siostra ma trzydzieści pięć lat.",
+    fr: "Ma sœur a trente-cinq ans.",
+    category: "La Famille",
+    acceptedPl: ["Moja siostra ma trzydzieści pięć lat", "Moja siostra ma 35 lat"],
+    acceptedFr: ["Ma sœur a trente-cinq ans", "Ma sœur a 35 ans", "Ma soeur a 35 ans"],
+    distractorsPl: ["Moja siostra ma dwadzieścia dwa lata.", "Mój brat ma trzydzieści pięć lat.", "Mam trzydzieści pięć lat."],
+    distractorsFr: ["Ma sœur a 22 ans.", "Mon frère a 35 ans.", "J'ai 35 ans."]
+  },
+  {
+    id: "phr-3-11",
+    date: "2026-11-03",
+    pl: "Mąż Marii ma na imię Pierre.",
+    fr: "Le mari de Marie s'appelle Pierre.",
+    category: "La Famille",
+    acceptedPl: ["Mąż Marii ma na imię Pierre", "Maz Marii ma na imie Pierre"],
+    acceptedFr: ["Le mari de Marie s'appelle Pierre", "Le mari de Maria s'appelle Pierre"],
+    distractorsPl: ["Brat Marii ma na imię Pierre.", "Mąż Anny ma na imię Henryk.", "Syn Marii ma na imię Pierre."],
+    distractorsFr: ["Le frère de Marie s'appelle Pierre.", "Le mari d'Anna s'appelle Henryk.", "Le fils de Marie s'appelle Pierre."]
+  },
+  {
+    id: "phr-3-12",
+    date: "2026-11-03",
+    pl: "Moja ulubiona kuzynka ma dwadzieścia dwa lata.",
+    fr: "Ma cousine préférée a vingt-deux ans.",
+    category: "La Famille",
+    acceptedPl: ["Moja ulubiona kuzynka ma dwadzieścia dwa lata", "Moja ulubiona kuzynka ma 22 lata"],
+    acceptedFr: ["Ma cousine préférée a vingt-deux ans", "Ma cousine préférée a 22 ans", "Ma cousine preferee a 22 ans"],
+    distractorsPl: ["Mój ulubiony kuzyn ma dwadzieścia dwa lata.", "Moja siostra ma dwadzieścia dwa lata.", "Moja kuzynka ma trzydzieści lat."],
+    distractorsFr: ["Mon cousin préféré a 22 ans.", "Ma sœur a 22 ans.", "Ma cousine a 30 ans."]
+  },
+  {
+    id: "phr-3-13",
+    date: "2026-11-03",
+    pl: "Szukam truskawek obok jabłek.",
+    fr: "Je cherche des fraises à côté des pommes.",
+    category: "Nourriture & Café",
+    acceptedPl: ["Szukam truskawek obok jabłek", "Szukam truskawek obok jablek"],
+    acceptedFr: ["Je cherche des fraises à côté des pommes", "Je cherche des fraises a cote des pommes"],
+    distractorsPl: ["Kupuję truskawki i jabłka.", "Owoce są obok warzyw.", "Szukam chleba obok kasy."],
+    distractorsFr: ["J'achète des fraises et des pommes.", "Les fruits sont à côté des légumes.", "Je cherche du pain près de la caisse."]
+  },
+  {
+    id: "phr-3-14",
+    date: "2026-11-03",
+    pl: "Mój brat mieszka po lewej stronie domu.",
+    fr: "Mon frère habite à gauche de la maison.",
+    category: "La Famille",
+    acceptedPl: ["Mój brat mieszka po lewej stronie domu", "Moj brat mieszka po lewej stronie domu"],
+    acceptedFr: ["Mon frère habite à gauche de la maison", "Mon frere habite a gauche de la maison"],
+    distractorsPl: ["Mój brat mieszka po prawej stronie.", "Mój brat mieszka w Paryżu.", "Moja siostra mieszka blisko domu."],
+    distractorsFr: ["Mon frère habite sur le côté droit.", "Mon frère habite à Paris.", "Ma sœur habite près de la maison."]
+  },
+  {
+    id: "phr-3-15",
+    date: "2026-11-03",
+    pl: "Myślę, że pomidor to owoc.",
+    fr: "Je pense que la tomate est un fruit.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Myślę, że pomidor to owoc", "Mysle, ze pomidor to owoc"],
+    acceptedFr: ["Je pense que la tomate est un fruit", "Je trouve que la tomate est un fruit"],
+    distractorsPl: ["Wiem, że pomidor to warzywo.", "Niektórzy mówią, że pomidor to owoc.", "Pomidor to czerwone warzywo."],
+    distractorsFr: ["Je sais que la tomate est un légume.", "Certains disent que la tomate est un fruit.", "La tomate est un légume rouge."]
+  },
+  {
+    id: "dial-3-1",
+    date: "2026-11-03",
+    pl: "Dzwonię w sprawie spotkania we wtorek.",
+    fr: "J'appelle au sujet du rendez-vous de mardi.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Dzwonię w sprawie spotkania we wtorek", "Dzwonie w sprawie spotkania we wtorek"],
+    acceptedFr: ["J'appelle au sujet du rendez-vous de mardi", "J'appelle pour la réunion de mardi"],
+    distractorsPl: ["Dzwonię w sprawie pracy.", "Spotkajmy się we wtorek.", "Nie mogę przyjść w środę."],
+    distractorsFr: ["J'appelle au sujet du travail.", "Retrouvons-nous mardi.", "Je ne peux pas venir mercredi."]
+  },
+  {
+    id: "dial-3-2",
+    date: "2026-11-03",
+    pl: "Niestety, nie mogę być na tym spotkaniu.",
+    fr: "Malheureusement, je ne peux pas être à ce rendez-vous.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Niestety, nie mogę być na tym spotkaniu", "Niestety nie moge byc na tym spotkaniu"],
+    acceptedFr: ["Malheureusement, je ne peux pas être à ce rendez-vous", "Malheureusement je ne peux pas assister à cette réunion"],
+    distractorsPl: ["Chętnie przyjdę na spotkanie.", "Będę na spotkaniu o jedenastej.", "Niestety, jestem chory."],
+    distractorsFr: ["Je viendrai volontiers au rendez-vous.", "Je serai au rendez-vous à 11h.", "Malheureusement, je suis malade."]
+  },
+  {
+    id: "dial-3-3",
+    date: "2026-11-03",
+    pl: "O, szkoda.",
+    fr: "Oh, c'est dommage.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["O, szkoda", "O szkoda", "szkoda"],
+    acceptedFr: ["Oh, c'est dommage", "C'est dommage", "Quel dommage"],
+    distractorsPl: ["To świetnie!", "Doskonale!", "Nic nie szkodzi."],
+    distractorsFr: ["C'est super !", "Parfait !", "Ce n'est rien."]
+  },
+  {
+    id: "dial-3-4",
+    date: "2026-11-03",
+    pl: "Może w innym terminie ma pani czas?",
+    fr: "Peut-être avez-vous du temps à une autre date ?",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Może w innym terminie ma pani czas?", "Moze w innym terminie ma pani czas?"],
+    acceptedFr: ["Peut-être avez-vous du temps à une autre date ?", "Avez-vous du temps à un autre moment ?"],
+    distractorsPl: ["Kiedy ma pani czas?", "O której godzinie się spotkamy?", "Czy ma pani dzisiaj czas?"],
+    distractorsFr: ["Quand avez-vous du temps ?", "À quelle heure nous voyons-nous ?", "Avez-vous du temps aujourd'hui ?"]
+  },
+  {
+    id: "dial-3-5",
+    date: "2026-11-03",
+    pl: "Tak, proponuję środę.",
+    fr: "Oui, je propose mercredi.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Tak, proponuję środę", "Tak, proponuje srode"],
+    acceptedFr: ["Oui, je propose mercredi", "Oui je propose mercredi"],
+    distractorsPl: ["Proponuję czwartek.", "W środę nie mogę.", "Może w piątek?"],
+    distractorsFr: ["Je propose jeudi.", "Mercredi je ne peux pas.", "Peut-être vendredi ?"]
+  },
+  {
+    id: "dial-3-6",
+    date: "2026-11-03",
+    pl: "Niestety, w środę cały dzień jestem bardzo zajęty.",
+    fr: "Malheureusement, le mercredi toute la journée je suis très occupé.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Niestety, w środę cały dzień jestem bardzo zajęty", "Niestety w srode caly dzien jestem bardzo zajety"],
+    acceptedFr: ["Malheureusement, le mercredi toute la journée je suis très occupé", "Le mercredi je suis très occupé toute la journée"],
+    distractorsPl: ["W środę mam wolny czas.", "W czwartek jestem zajęty.", "Niestety, pracuję do późna."],
+    distractorsFr: ["Mercredi j'ai du temps libre.", "Jeudi je suis occupé.", "Malheureusement, je travaille tard."]
+  },
+  {
+    id: "dial-3-7",
+    date: "2026-11-03",
+    pl: "Więc może czwartek?",
+    fr: "Alors peut-être jeudi ?",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Więc może czwartek?", "Wiec moze czwartek?"],
+    acceptedFr: ["Alors peut-être jeudi ?", "Donc peut-être jeudi ?"],
+    distractorsPl: ["Więc może piątek?", "Kiedy pani pasuje?", "Do zobaczenia w czwartek!"],
+    distractorsFr: ["Alors peut-être vendredi ?", "Quand cela vous convient-il ?", "À jeudi !"]
+  },
+  {
+    id: "dial-3-8",
+    date: "2026-11-03",
+    pl: "Tak, w czwartek mam czas. O jedenastej?",
+    fr: "Oui, le jeudi j'ai le temps. À onze heures ?",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Tak, w czwartek mam czas. O jedenastej?", "Tak w czwartek mam czas. O jedenastej?"],
+    acceptedFr: ["Oui, le jeudi j'ai le temps. À onze heures ?", "Oui jeudi j'ai le temps. À 11h ?"],
+    distractorsPl: ["Nie, w czwartek nie mogę.", "O jedenastej mam spotkanie.", "Tak, w piątek o dziesiątej."],
+    distractorsFr: ["Non, jeudi je ne peux pas.", "À 11h j'ai une réunion.", "Oui, vendredi à 10h."]
+  },
+  {
+    id: "dial-3-9",
+    date: "2026-11-03",
+    pl: "Doskonale. Dziękuję i jeszcze raz przepraszam.",
+    fr: "Parfait. Merci et encore une fois pardon.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Doskonale. Dziękuję i jeszcze raz przepraszam", "Doskonale. Dziekuje i jeszcze raz przepraszam"],
+    acceptedFr: ["Parfait. Merci et encore une fois pardon", "Excellent. Merci et pardon encore une fois"],
+    distractorsPl: ["Bardzo dziękuję. Do widzenia.", "Nie ma za co, do zobaczenia.", "Przepraszam za spóźnienie."],
+    distractorsFr: ["Merci beaucoup. Au revoir.", "De rien, à bientôt.", "Désolé pour le retard."]
+  },
+  {
+    id: "dial-3-10",
+    date: "2026-11-03",
+    pl: "Nic nie szkodzi.",
+    fr: "Ce n'est rien, pas de souci.",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["Nic nie szkodzi"],
+    acceptedFr: ["Ce n'est rien", "Pas de souci", "Ça ne fait rien", "Ca ne fait rien"],
+    distractorsPl: ["Nie ma sprawy.", "Szkoda.", "Oczywiście."],
+    distractorsFr: ["Pas de problème.", "Dommage.", "Bien sûr."]
+  },
+  {
+    id: "dial-3-11",
+    date: "2026-11-03",
+    pl: "nic się nie stało",
+    fr: "ce n'est rien, rien de grave",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["nic się nie stało", "nic sie nie stalo"],
+    acceptedFr: ["ce n'est rien", "rien de grave", "ce n'est pas grave"],
+    distractorsPl: ["co się stało?", "wszystko w porządku", "to prawda"],
+    distractorsFr: ["que s'est-il passé ?", "tout va bien", "c'est vrai"]
+  },
+  {
+    id: "dial-3-12",
+    date: "2026-11-03",
+    pl: "dzwonić",
+    fr: "appeler, téléphoner",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["dzwonić", "dzwonic"],
+    acceptedFr: ["appeler", "téléphoner"],
+    distractorsPl: ["mówić", "pytać", "pisać"],
+    distractorsFr: ["parler", "demander", "écrire"]
+  },
+  {
+    id: "dial-3-13",
+    date: "2026-11-03",
+    pl: "spotkanie",
+    fr: "réunion, rendez-vous",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["spotkanie"],
+    acceptedFr: ["réunion", "rendez-vous", "la réunion", "le rendez-vous"],
+    distractorsPl: ["praca", "rozmowa", "wykład"],
+    distractorsFr: ["travail", "conversation", "conférence"]
+  },
+  {
+    id: "dial-3-14",
+    date: "2026-11-03",
+    pl: "termin",
+    fr: "date, créneau, échéance",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["termin"],
+    acceptedFr: ["date", "créneau", "échéance", "le créneau"],
+    distractorsPl: ["godzina", "miejsce", "adres"],
+    distractorsFr: ["heure", "lieu", "adresse"]
+  },
+  {
+    id: "dial-3-15",
+    date: "2026-11-03",
+    pl: "proponować",
+    fr: "proposer",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["proponować", "proponowac"],
+    acceptedFr: ["proposer"],
+    distractorsPl: ["pytać", "odpowiadać", "zgadzać się"],
+    distractorsFr: ["demander", "répondre", "être d'accord"]
+  },
+  {
+    id: "dial-3-16",
+    date: "2026-11-03",
+    pl: "cały dzień",
+    fr: "toute la journée",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["cały dzień", "caly dzien"],
+    acceptedFr: ["toute la journée", "toute la journee"],
+    distractorsPl: ["cały tydzień", "pół dnia", "dzisiaj rano"],
+    distractorsFr: ["toute la semaine", "une demi-journée", "ce matin"]
+  },
+  {
+    id: "dial-3-17",
+    date: "2026-11-03",
+    pl: "zajęty",
+    fr: "occupé (personne ou ligne)",
+    category: "Adjectifs",
+    acceptedPl: ["zajęty", "zajety"],
+    acceptedFr: ["occupé", "occupe"],
+    distractorsPl: ["wolny", "zmęczony", "zadowolony"],
+    distractorsFr: ["libre", "fatigué", "content"]
+  },
+  {
+    id: "dial-3-18",
+    date: "2026-11-03",
+    pl: "spotykać się",
+    fr: "se rencontrer, se voir",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["spotykać się", "spotykac sie"],
+    acceptedFr: ["se rencontrer", "se voir"],
+    distractorsPl: ["rozmawiać", "dzwonić", "widzieć"],
+    distractorsFr: ["discuter", "appeler", "voir"]
+  },
+  {
+    id: "lidl-3-1",
+    date: "2026-11-03",
+    pl: "olej rzepakowy",
+    fr: "huile de colza",
+    category: "Nourriture & Café",
+    acceptedPl: ["olej rzepakowy", "olej"],
+    acceptedFr: ["huile de colza", "l'huile de colza", "huile"],
+    distractorsPl: ["oliwa z oliwek", "masło", "mleko"],
+    distractorsFr: ["huile d'olive", "beurre", "lait"]
+  },
+  {
+    id: "lidl-3-2",
+    date: "2026-11-03",
+    pl: "banany luzem",
+    fr: "bananes en vrac",
+    category: "Nourriture & Café",
+    acceptedPl: ["banany luzem", "banany"],
+    acceptedFr: ["bananes en vrac", "bananes", "les bananes"],
+    distractorsPl: ["jabłka", "pomarańcze", "truskawki"],
+    distractorsFr: ["pommes", "oranges", "fraises"]
+  },
+  {
+    id: "lidl-3-3",
+    date: "2026-11-03",
+    pl: "luzem",
+    fr: "en vrac",
+    category: "Nourriture & Café",
+    acceptedPl: ["luzem"],
+    acceptedFr: ["en vrac"],
+    distractorsPl: ["w paczce", "w plastrach", "na wagę"],
+    distractorsFr: ["en paquet", "en tranches", "au poids"]
+  },
+  {
+    id: "lidl-3-4",
+    date: "2026-11-03",
+    pl: "pomidory truskawkowe",
+    fr: "tomates cerises allongées",
+    category: "Nourriture & Café",
+    acceptedPl: ["pomidory truskawkowe", "pomidory"],
+    acceptedFr: ["tomates cerises", "tomates cerises allongées", "tomates"],
+    distractorsPl: ["ogórki", "papryka", "marchewka"],
+    distractorsFr: ["concombres", "poivron", "carotte"]
+  },
+  {
+    id: "lidl-3-5",
+    date: "2026-11-03",
+    pl: "ser gouda w plastrach",
+    fr: "fromage gouda en tranches",
+    category: "Nourriture & Café",
+    acceptedPl: ["ser gouda w plastrach", "ser w plastrach", "gouda"],
+    acceptedFr: ["gouda en tranches", "fromage gouda en tranches", "fromage en tranches"],
+    distractorsPl: ["masło", "twaróg", "szynka"],
+    distractorsFr: ["beurre", "fromage blanc", "jambon"]
+  },
+  {
+    id: "lidl-3-6",
+    date: "2026-11-03",
+    pl: "w plastrach",
+    fr: "en tranches",
+    category: "Nourriture & Café",
+    acceptedPl: ["w plastrach"],
+    acceptedFr: ["en tranches"],
+    distractorsPl: ["w kawałku", "luzem", "w kostce"],
+    distractorsFr: ["en morceau", "en vrac", "en dés"]
+  },
+  {
+    id: "lidl-3-7",
+    date: "2026-11-03",
+    pl: "łopatka wieprzowa",
+    fr: "palette / épaule de porc",
+    category: "Nourriture & Café",
+    acceptedPl: ["łopatka wieprzowa", "lopatka wieprzowa"],
+    acceptedFr: ["palette de porc", "épaule de porc", "porc", "viande de porc"],
+    distractorsPl: ["pierś z kurczaka", "wołowina", "kiełbasa"],
+    distractorsFr: ["blanc de poulet", "bœuf", "saucisse"]
+  },
+  {
+    id: "lidl-3-8",
+    date: "2026-11-03",
+    pl: "taniej",
+    fr: "moins cher (comparatif de tanio)",
+    category: "Nourriture & Café",
+    acceptedPl: ["taniej"],
+    acceptedFr: ["moins cher", "en réduction", "meilleur marché"],
+    distractorsPl: ["drożej", "szybciej", "lepiej"],
+    distractorsFr: ["plus cher", "plus vite", "mieux"]
+  },
+  {
+    id: "lidl-3-9",
+    date: "2026-11-03",
+    pl: "pięć złotych osiemdziesiąt dziewięć groszy",
+    fr: "5,89 zł (cinq zlotys quatre-vingt-neuf groszy)",
+    category: "Nombres",
+    acceptedPl: ["pięć złotych osiemdziesiąt dziewięć groszy", "piec zlotych osiemdziesiat dziewiec groszy", "5,89 zł"],
+    acceptedFr: ["5,89 zł", "cinq zlotys quatre-vingt-neuf groszy", "cinq zloty quatre vingt neuf"],
+    distractorsPl: ["pięć złotych dziewięćdziesiąt groszy", "cztery złote osiemdziesiąt groszy", "sześć złotych osiemdziesiąt dziewięć groszy"],
+    distractorsFr: ["5,90 zł", "4,80 zł", "6,89 zł"]
+  },
+  {
+    id: "lidl-3-10",
+    date: "2026-11-03",
+    pl: "trzy złote czterdzieści dziewięć groszy",
+    fr: "3,49 zł (trois zlotys quarante-neuf groszy)",
+    category: "Nombres",
+    acceptedPl: ["trzy złote czterdzieści dziewięć groszy", "trzy zlote czterdziesci dziewiec groszy", "3,49 zł"],
+    acceptedFr: ["3,49 zł", "trois zlotys quarante-neuf groszy", "trois zloty quarante neuf"],
+    distractorsPl: ["trzy złote pięćdziesiąt groszy", "dwa złote czterdzieści dziewięć groszy", "cztery złote czterdzieści dziewięć groszy"],
+    distractorsFr: ["3,50 zł", "2,49 zł", "4,49 zł"]
+  },
+  {
+    id: "lidl-3-11",
+    date: "2026-11-03",
+    pl: "siedem złotych dziewięćdziesiąt dziewięć groszy",
+    fr: "7,99 zł (sept zlotys quatre-vingt-dix-neuf groszy)",
+    category: "Nombres",
+    acceptedPl: ["siedem złotych dziewięćdziesiąt dziewięć groszy", "siedem zlotych dziewiecdziesiat dziewiec groszy", "7,99 zł"],
+    acceptedFr: ["7,99 zł", "sept zlotys quatre-vingt-dix-neuf groszy", "sept zloty quatre vingt dix neuf"],
+    distractorsPl: ["osiem złotych", "siedem złotych osiemdziesiąt dziewięć groszy", "sześć złotych dziewięćdziesiąt dziewięć groszy"],
+    distractorsFr: ["8,00 zł", "7,89 zł", "6,99 zł"]
+  },
+  {
+    id: "lidl-3-12",
+    date: "2026-11-03",
+    pl: "aż",
+    fr: "jusqu'à, pas moins de, autant que",
+    category: "Phrases & Quotidien",
+    acceptedPl: ["aż", "az"],
+    acceptedFr: ["jusqu'à", "pas moins de", "autant que"],
+    distractorsPl: ["tylko", "prawie", "mniej"],
+    distractorsFr: ["seulement", "presque", "moins"]
+  },
+  {
+    id: "adj-3-1",
+    date: "2026-11-03",
+    pl: "jesienny",
+    fr: "automnal, d'automne",
+    category: "Adjectifs",
+    acceptedPl: ["jesienny"],
+    acceptedFr: ["automnal", "d'automne", "de l'automne"],
+    distractorsPl: ["zimowy", "wiosenny", "letni"],
+    distractorsFr: ["hivernal", "printanier", "estival"]
+  },
+  {
+    id: "adj-3-2",
+    date: "2026-11-03",
+    pl: "zimowy",
+    fr: "hivernal, d'hiver",
+    category: "Adjectifs",
+    acceptedPl: ["zimowy"],
+    acceptedFr: ["hivernal", "d'hiver", "de l'hiver"],
+    distractorsPl: ["letni", "jesienny", "wiosenny"],
+    distractorsFr: ["estival", "automnal", "printanier"]
+  },
+  {
+    id: "adj-3-3",
+    date: "2026-11-03",
+    pl: "wiosenny",
+    fr: "printanier, de printemps",
+    category: "Adjectifs",
+    acceptedPl: ["wiosenny"],
+    acceptedFr: ["printanier", "de printemps", "du printemps"],
+    distractorsPl: ["jesienny", "zimowy", "letni"],
+    distractorsFr: ["automnal", "hivernal", "estival"]
+  },
+  {
+    id: "adj-3-4",
+    date: "2026-11-03",
+    pl: "letni",
+    fr: "estival, d'été",
+    category: "Adjectifs",
+    acceptedPl: ["letni"],
+    acceptedFr: ["estival", "d'été", "de l'été"],
+    distractorsPl: ["zimowy", "jesienny", "wiosenny"],
+    distractorsFr: ["hivernal", "automnal", "printanier"]
+  },
+  {
+    id: "day-3-1",
+    date: "2026-11-03",
+    pl: "we wtorek",
+    fr: "mardi, le mardi",
+    category: "Jours de la semaine",
+    acceptedPl: ["we wtorek"],
+    acceptedFr: ["mardi", "le mardi"],
+    distractorsPl: ["w środę", "w czwartek", "w poniedziałek"],
+    distractorsFr: ["mercredi", "jeudi", "lundi"]
+  },
+  {
+    id: "day-3-2",
+    date: "2026-11-03",
+    pl: "w środę",
+    fr: "mercredi, le mercredi",
+    category: "Jours de la semaine",
+    acceptedPl: ["w środę", "w srode"],
+    acceptedFr: ["mercredi", "le mercredi"],
+    distractorsPl: ["we wtorek", "w czwartek", "w piątek"],
+    distractorsFr: ["mardi", "jeudi", "vendredi"]
+  },
+  {
+    id: "day-3-3",
+    date: "2026-11-03",
+    pl: "w czwartek",
+    fr: "jeudi, le jeudi",
+    category: "Jours de la semaine",
+    acceptedPl: ["w czwartek"],
+    acceptedFr: ["jeudi", "le jeudi"],
+    distractorsPl: ["w środę", "w piątek", "we wtorek"],
+    distractorsFr: ["mercredi", "vendredi", "mardi"]
   }
 ];
-
-// ==========================================
-// DÉFIS PÉDAGOGIQUES SUR LES CAS POLONAIS (PRZYPADKI)
-// ==========================================
 
 const CASE_CHALLENGES = [
   // ------------------------------------------
@@ -3654,6 +4832,7 @@ const CASE_CHALLENGES = [
   // ------------------------------------------
   {
     id: "case-b-1",
+    date: "2026-10-19",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -3675,6 +4854,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-b-2",
+    date: "2026-10-19",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -3696,6 +4876,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-b-3",
+    date: "2026-10-19",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -3717,6 +4898,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-b-4",
+    date: "2026-10-19",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -3738,6 +4920,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-b-5",
+    date: "2026-10-19",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -3759,6 +4942,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-b-6",
+    date: "2026-10-19",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -3780,6 +4964,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-b-7",
+    date: "2026-10-19",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -3801,6 +4986,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-b-8",
+    date: "2026-10-19",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -3822,6 +5008,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-b-9",
+    date: "2026-10-19",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -3843,6 +5030,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-b-10",
+    date: "2026-10-19",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -3864,6 +5052,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-b-11",
+    date: "2026-10-19",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -3885,6 +5074,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-b-12",
+    date: "2026-10-19",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -3914,6 +5104,7 @@ const CASE_CHALLENGES = [
   // ------------------------------------------
   {
     id: "case-n-1",
+    date: "2026-10-19",
     caseName: "Narzędnik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -3935,6 +5126,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-n-2",
+    date: "2026-10-19",
     caseName: "Narzędnik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -3956,6 +5148,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-n-3",
+    date: "2026-10-19",
     caseName: "Narzędnik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -3977,6 +5170,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-n-4",
+    date: "2026-10-19",
     caseName: "Narzędnik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -3998,6 +5192,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-n-5",
+    date: "2026-10-19",
     caseName: "Narzędnik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -4019,6 +5214,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-n-6",
+    date: "2026-10-19",
     caseName: "Narzędnik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -4040,6 +5236,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-n-7",
+    date: "2026-10-19",
     caseName: "Narzędnik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -4061,6 +5258,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-n-8",
+    date: "2026-10-19",
     caseName: "Narzędnik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -4092,6 +5290,7 @@ const CASE_CHALLENGES = [
   // ------------------------------------------
   {
     id: "case-m-1",
+    date: "2026-10-19",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -4113,6 +5312,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-m-2",
+    date: "2026-10-19",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -4134,6 +5334,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-m-3",
+    date: "2026-10-19",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -4155,6 +5356,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-m-4",
+    date: "2026-10-19",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -4176,6 +5378,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-m-5",
+    date: "2026-10-19",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -4197,6 +5400,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-m-6",
+    date: "2026-10-19",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -4218,6 +5422,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-m-7",
+    date: "2026-10-19",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -4239,6 +5444,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-m-8",
+    date: "2026-10-19",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -4269,6 +5475,7 @@ const CASE_CHALLENGES = [
   // ------------------------------------------
   {
     id: "case-d-1",
+    date: "2026-10-19",
     caseName: "Dopełniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -4290,6 +5497,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-2",
+    date: "2026-10-19",
     caseName: "Dopełniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -4311,6 +5519,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-3",
+    date: "2026-10-19",
     caseName: "Dopełniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -4332,6 +5541,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-4",
+    date: "2026-10-19",
     caseName: "Dopełniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -4353,6 +5563,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-5",
+    date: "2026-10-19",
     caseName: "Dopełniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -4374,6 +5585,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-6",
+    date: "2026-10-19",
     caseName: "Dopełniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -4395,6 +5607,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-7",
+    date: "2026-10-19",
     caseName: "Dopełniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -4416,6 +5629,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-8",
+    date: "2026-10-19",
     caseName: "Dopełniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -4437,6 +5651,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-9",
+    date: "2026-10-19",
     caseName: "Dopełniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -4458,6 +5673,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-10",
+    date: "2026-10-19",
     caseName: "Dopełniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -4479,6 +5695,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-11",
+    date: "2026-10-19",
     caseName: "Dopełniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -4500,6 +5717,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-12",
+    date: "2026-10-19",
     caseName: "Dopełniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -4521,6 +5739,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-b-13",
+    date: "2026-10-19",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -4542,6 +5761,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-b-14",
+    date: "2026-10-19",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -4563,6 +5783,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-13",
+    date: "2026-10-19",
     caseName: "Dopełniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -4588,6 +5809,7 @@ const CASE_CHALLENGES = [
   // ------------------------------------------
   {
     id: "case-m-9",
+    date: "2026-10-19",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -4609,6 +5831,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-m-10",
+    date: "2026-10-19",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -4630,6 +5853,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-m-11",
+    date: "2026-10-19",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -4651,6 +5875,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-m-12",
+    date: "2026-10-19",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -4672,6 +5897,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-m-13",
+    date: "2026-10-19",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -4693,6 +5919,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-m-14",
+    date: "2026-10-19",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -4714,6 +5941,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-m-15",
+    date: "2026-10-19",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -4735,6 +5963,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-m-16",
+    date: "2026-10-19",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -4756,6 +5985,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-m-17",
+    date: "2026-10-19",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -4781,6 +6011,7 @@ const CASE_CHALLENGES = [
   // ------------------------------------------
   {
     id: "case-n-9",
+    date: "2026-10-19",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -4802,6 +6033,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-n-10",
+    date: "2026-10-19",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -4823,6 +6055,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-n-11",
+    date: "2026-10-19",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -4844,6 +6077,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-n-12",
+    date: "2026-10-19",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -4865,6 +6099,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-n-13",
+    date: "2026-10-19",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -4886,6 +6121,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-n-14",
+    date: "2026-10-19",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -4907,6 +6143,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-n-15",
+    date: "2026-10-19",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -4928,6 +6165,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-n-16",
+    date: "2026-10-19",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -4949,6 +6187,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-n-17",
+    date: "2026-10-19",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -4974,6 +6213,7 @@ const CASE_CHALLENGES = [
   // ------------------------------------------
   {
     id: "case-b-15",
+    date: "2026-10-19",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -4995,6 +6235,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-b-16",
+    date: "2026-10-19",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -5016,6 +6257,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-b-17",
+    date: "2026-10-19",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -5037,6 +6279,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-b-18",
+    date: "2026-10-19",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -5058,6 +6301,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-b-19",
+    date: "2026-10-19",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -5079,6 +6323,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-b-20",
+    date: "2026-10-19",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -5104,6 +6349,7 @@ const CASE_CHALLENGES = [
   // ------------------------------------------
   {
     id: "case-d-14",
+    date: "2026-10-19",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -5125,6 +6371,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-15",
+    date: "2026-10-19",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -5146,6 +6393,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-16",
+    date: "2026-10-19",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -5167,6 +6415,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-17",
+    date: "2026-10-19",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -5188,6 +6437,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-18",
+    date: "2026-10-19",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -5209,6 +6459,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-19",
+    date: "2026-10-19",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -5234,6 +6485,7 @@ const CASE_CHALLENGES = [
   // ------------------------------------------
   {
     id: "case-adj-b-1",
+    date: "2026-10-27",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -5257,6 +6509,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-adj-b-2",
+    date: "2026-10-27",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -5280,6 +6533,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-adj-b-3",
+    date: "2026-10-27",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -5303,6 +6557,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-adj-b-4",
+    date: "2026-10-27",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -5326,6 +6581,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-adj-n-1",
+    date: "2026-10-27",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -5349,6 +6605,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-adj-n-2",
+    date: "2026-10-27",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -5372,6 +6629,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-adj-n-3",
+    date: "2026-10-27",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -5395,6 +6653,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-adj-m-1",
+    date: "2026-10-27",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -5418,6 +6677,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-adj-m-2",
+    date: "2026-10-27",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -5441,6 +6701,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-adj-m-3",
+    date: "2026-10-27",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -5464,6 +6725,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-adj-d-1",
+    date: "2026-10-27",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -5487,6 +6749,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-adj-d-2",
+    date: "2026-10-27",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -5510,6 +6773,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-adj-d-3",
+    date: "2026-10-27",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -5537,6 +6801,7 @@ const CASE_CHALLENGES = [
   // ------------------------------------------
   {
     id: "case-pl-b-1",
+    date: "2026-10-27",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -5561,6 +6826,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-b-2",
+    date: "2026-10-27",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -5585,6 +6851,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-n-1",
+    date: "2026-10-27",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -5609,6 +6876,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-n-2",
+    date: "2026-10-27",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -5633,6 +6901,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-n-3",
+    date: "2026-10-27",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -5657,6 +6926,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-m-1",
+    date: "2026-10-27",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -5681,6 +6951,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-m-2",
+    date: "2026-10-27",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -5705,6 +6976,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-m-3",
+    date: "2026-10-27",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -5729,6 +7001,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-d-1",
+    date: "2026-10-27",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -5753,6 +7026,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-d-2",
+    date: "2026-10-27",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -5777,6 +7051,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-d-3",
+    date: "2026-10-27",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -5801,6 +7076,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-b-3",
+    date: "2026-10-27",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -5825,6 +7101,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-b-4",
+    date: "2026-10-27",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -5852,6 +7129,7 @@ const CASE_CHALLENGES = [
   // ----------------------------------------------------
   {
     id: "case-pl-d-4",
+    date: "2026-10-27",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -5876,6 +7154,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-d-5",
+    date: "2026-10-27",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -5900,6 +7179,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-d-6",
+    date: "2026-10-27",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -5924,6 +7204,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-d-7",
+    date: "2026-10-27",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -5948,6 +7229,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-d-8",
+    date: "2026-10-27",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -5972,6 +7254,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-d-9",
+    date: "2026-10-27",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -5996,6 +7279,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-d-10",
+    date: "2026-10-27",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -6020,6 +7304,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-d-11",
+    date: "2026-10-27",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -6044,6 +7329,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-d-12",
+    date: "2026-10-27",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -6068,6 +7354,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-d-13",
+    date: "2026-10-27",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -6092,6 +7379,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-d-14",
+    date: "2026-10-27",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -6116,6 +7404,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-d-15",
+    date: "2026-10-27",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -6140,6 +7429,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-d-16",
+    date: "2026-10-27",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -6164,6 +7454,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-d-17",
+    date: "2026-10-27",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -6188,6 +7479,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-d-18",
+    date: "2026-10-27",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -6212,6 +7504,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-20",
+    date: "2026-10-19",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -6236,6 +7529,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-21",
+    date: "2026-10-19",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -6260,6 +7554,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-22",
+    date: "2026-10-19",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -6284,6 +7579,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-23",
+    date: "2026-10-19",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -6308,6 +7604,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-24",
+    date: "2026-10-19",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -6332,6 +7629,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-25",
+    date: "2026-10-19",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -6356,6 +7654,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-26",
+    date: "2026-10-19",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -6380,6 +7679,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-27",
+    date: "2026-10-19",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -6404,6 +7704,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-28",
+    date: "2026-10-19",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -6428,6 +7729,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-29",
+    date: "2026-10-19",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -6452,6 +7754,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-b-5",
+    date: "2026-10-27",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -6476,6 +7779,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-b-6",
+    date: "2026-10-27",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -6500,6 +7804,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-b-7",
+    date: "2026-10-27",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -6524,6 +7829,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-b-8",
+    date: "2026-10-27",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -6548,6 +7854,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-b-9",
+    date: "2026-10-27",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -6572,6 +7879,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-b-10",
+    date: "2026-10-27",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -6596,6 +7904,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-n-4",
+    date: "2026-10-27",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -6620,6 +7929,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-n-5",
+    date: "2026-10-27",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -6644,6 +7954,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-n-6",
+    date: "2026-10-27",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -6668,6 +7979,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-n-7",
+    date: "2026-10-27",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -6692,6 +8004,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-n-8",
+    date: "2026-10-27",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -6716,6 +8029,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-n-9",
+    date: "2026-10-27",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -6740,6 +8054,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-n-10",
+    date: "2026-10-27",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -6764,6 +8079,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-m-4",
+    date: "2026-10-27",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -6788,6 +8104,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-m-5",
+    date: "2026-10-27",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -6812,6 +8129,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-m-6",
+    date: "2026-10-27",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -6836,6 +8154,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-m-7",
+    date: "2026-10-27",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -6860,6 +8179,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-m-8",
+    date: "2026-10-27",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -6884,6 +8204,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-m-9",
+    date: "2026-10-27",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -6908,6 +8229,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-m-10",
+    date: "2026-10-27",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -6935,6 +8257,7 @@ const CASE_CHALLENGES = [
   // ----------------------------------------------------
   {
     id: "case-d-30",
+    date: "2026-10-19",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -6959,6 +8282,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-31",
+    date: "2026-10-19",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -6983,6 +8307,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-32",
+    date: "2026-10-19",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -7007,6 +8332,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-b-36",
+    date: "2026-10-19",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -7031,6 +8357,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-b-37",
+    date: "2026-10-19",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -7055,6 +8382,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-b-38",
+    date: "2026-10-19",
     caseName: "Biernik",
     caseLabelFr: "Accusatif (Biernik)",
     caseBadgeClass: "case-biernik",
@@ -7079,6 +8407,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-m-32",
+    date: "2026-10-19",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -7103,6 +8432,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-n-18",
+    date: "2026-10-19",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -7127,6 +8457,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-33",
+    date: "2026-10-29",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -7171,6 +8502,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-d-19",
+    date: "2026-10-29",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -7215,6 +8547,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-d-20",
+    date: "2026-10-29",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -7259,6 +8592,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-n-19",
+    date: "2026-10-29",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -7303,6 +8637,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-n-20",
+    date: "2026-10-29",
     caseName: "Narzednik",
     caseLabelFr: "Instrumental (Narzędnik)",
     caseBadgeClass: "case-narzednik",
@@ -7347,6 +8682,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-m-33",
+    date: "2026-10-29",
     caseName: "Miejscownik",
     caseLabelFr: "Locatif (Miejscownik)",
     caseBadgeClass: "case-miejscownik",
@@ -7391,6 +8727,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-pl-d-21",
+    date: "2026-10-29",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -7435,6 +8772,7 @@ const CASE_CHALLENGES = [
   },
   {
     id: "case-d-34",
+    date: "2026-10-29",
     caseName: "Dopelniacz",
     caseLabelFr: "Génitif (Dopełniacz)",
     caseBadgeClass: "case-dopelniacz",
@@ -7476,12 +8814,548 @@ const CASE_CHALLENGES = [
         note: "Instrumental singulier (-ą)"
       }
     ]
+  },
+  {
+    id: "case-d-35",
+    date: "2026-11-03",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "Mój brat mieszka po lewej stronie dom",
+    sentenceAfter: ".",
+    gapWord: "dom",
+    gapWordMeaning: "maison",
+    targetType: "noun",
+    isPlural: false,
+    gender: "nom masculin inanimé singulier",
+    correctEnding: "-u",
+    fullCorrectWord: "domu",
+    fullSentence: "Mój brat mieszka po lewej stronie domu.",
+    translationFr: "Mon frère habite à gauche de la maison.",
+    ruleExplanation: "L'expression de localisation <strong>po lewej stronie</strong> (sur le côté gauche de) est obligatoirement suivie du <strong>Génitif</strong> (Dopełniacz). Les noms masculins inanimés prennent le plus souvent <em>-u</em> ou <em>-a</em> ; pour <em>dom</em>, le génitif régulier est <strong>domu</strong>.",
+    options: [
+      {
+        ending: "-u",
+        word: "domu",
+        isCorrect: true,
+        note: "Génitif singulier masculin après po lewej stronie (-u)"
+      },
+      {
+        ending: "-a",
+        word: "doma",
+        isCorrect: false,
+        note: "Forme incorrecte"
+      },
+      {
+        ending: "-em",
+        word: "domem",
+        isCorrect: false,
+        note: "Instrumental singulier (-em)"
+      },
+      {
+        ending: "-ie",
+        word: "domie",
+        isCorrect: false,
+        note: "Locatif désuet"
+      }
+    ]
+  },
+  {
+    id: "case-d-36",
+    date: "2026-11-03",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "Mąż Mari",
+    sentenceAfter: " ma na imię Pierre.",
+    gapWord: "Maria",
+    gapWordMeaning: "Marie (Maria)",
+    targetType: "noun",
+    isPlural: false,
+    gender: "nom propre féminin singulier",
+    correctEnding: "-i",
+    fullCorrectWord: "Marii",
+    fullSentence: "Mąż Marii ma na imię Pierre.",
+    translationFr: "Le mari de Marie s'appelle Pierre.",
+    ruleExplanation: "Pour marquer la possession (le mari <em>de Marie</em>), on utilise le <strong>Génitif</strong>. Les prénoms et noms féminins terminés par <strong>-ia</strong> (comme <em>Maria, Zofia, Julia</em>) prennent un double <strong>-ii</strong> au génitif : <em>Maria</em> &rarr; <strong>Marii</strong>.",
+    options: [
+      {
+        ending: "-i",
+        word: "Marii",
+        isCorrect: true,
+        note: "Génitif singulier féminin des noms en -ia (-ii)"
+      },
+      {
+        ending: "-y",
+        word: "Mary",
+        isCorrect: false,
+        note: "Forme incorrecte"
+      },
+      {
+        ending: "-ę",
+        word: "Marię",
+        isCorrect: false,
+        note: "Accusatif singulier (-ę)"
+      },
+      {
+        ending: "-ą",
+        word: "Marią",
+        isCorrect: false,
+        note: "Instrumental singulier (-ą)"
+      }
+    ]
+  },
+  {
+    id: "case-b-39",
+    date: "2026-11-03",
+    caseName: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    caseBadgeClass: "case-biernik",
+    sentenceBefore: "Mam dwóch braci i jedn",
+    sentenceAfter: " siostrę.",
+    gapWord: "jedna",
+    gapWordMeaning: "une (adjectif numéral)",
+    targetType: "adj",
+    isPlural: false,
+    gender: "adjectif féminin singulier",
+    correctEnding: "-ą",
+    fullCorrectWord: "jedną",
+    fullSentence: "Mam dwóch braci i jedną siostrę.",
+    translationFr: "J'ai deux frères et une sœur.",
+    ruleExplanation: "Le verbe <strong>mieć (mam)</strong> régit l'<strong>Accusatif</strong> (Biernik). À l'accusatif féminin singulier, l'adjectif ou numéral prend <strong>-ą</strong> et le nom prend <strong>-ę</strong> : <em>jedna siostra</em> &rarr; <strong>jedną siostrę</strong>.",
+    options: [
+      {
+        ending: "-ą",
+        word: "jedną",
+        isCorrect: true,
+        note: "Accusatif singulier féminin après mam (-ą)"
+      },
+      {
+        ending: "-a",
+        word: "jedna",
+        isCorrect: false,
+        note: "Nominatif singulier (-a)"
+      },
+      {
+        ending: "-ej",
+        word: "jednej",
+        isCorrect: false,
+        note: "Génitif / Locatif singulier (-ej)"
+      },
+      {
+        ending: "-e",
+        word: "jedne",
+        isCorrect: false,
+        note: "Pluriel non-viril (-e)"
+      }
+    ]
+  },
+  {
+    id: "case-pl-b-11",
+    date: "2026-11-03",
+    caseName: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    caseBadgeClass: "case-biernik",
+    sentenceBefore: "W mojej rodzinie mam dwóch brac",
+    sentenceAfter: " i jedną siostrę.",
+    gapWord: "bracia",
+    gapWordMeaning: "frères (pluriel viril)",
+    targetType: "noun",
+    isPlural: true,
+    gender: "nom masculin personnel pluriel",
+    correctEnding: "-i",
+    fullCorrectWord: "braci",
+    fullSentence: "W mojej rodzinie mam dwóch braci i jedną siostrę.",
+    translationFr: "Dans ma famille, j'ai deux frères et une sœur.",
+    ruleExplanation: "Pour les êtres humains masculins (genre viril / masculin personnel), la règle fondamentale est <strong>Accusatif pluriel = Génitif pluriel</strong>. Le mot <em>brat</em> fait au génitif/accusatif pluriel <strong>braci</strong> (avec numéral viril : <em>dwóch braci</em>).",
+    options: [
+      {
+        ending: "-i",
+        word: "braci",
+        isCorrect: true,
+        note: "Accusatif pluriel viril égal au génitif (dwóch braci)"
+      },
+      {
+        ending: "-ia",
+        word: "bracia",
+        isCorrect: false,
+        note: "Nominatif pluriel viril (moi bracia)"
+      },
+      {
+        ending: "-iów",
+        word: "braciów",
+        isCorrect: false,
+        note: "Forme incorrecte"
+      },
+      {
+        ending: "-iom",
+        word: "braciom",
+        isCorrect: false,
+        note: "Datif pluriel (-om)"
+      }
+    ]
+  },
+  {
+    id: "case-pl-d-22",
+    date: "2026-11-03",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "Moja siostra ma trzydzieści pięć l",
+    sentenceAfter: ".",
+    gapWord: "rok",
+    gapWordMeaning: "ans / années",
+    targetType: "noun",
+    isPlural: true,
+    gender: "nom masculin inanimé pluriel",
+    correctEnding: "-at",
+    fullCorrectWord: "lat",
+    fullSentence: "Moja siostra ma trzydzieści pięć lat.",
+    translationFr: "Ma sœur a trente-cinq ans.",
+    ruleExplanation: "Les nombres terminés par 5, 6, 7, 8, 9, 0 ainsi que 11 à 14 exigent le <strong>Génitif pluriel</strong>. Pour compter les années après ces nombres, le polonais emploie la forme irrégulière <strong>lat</strong> (<em>35 lat</em>).",
+    options: [
+      {
+        ending: "-at",
+        word: "lat",
+        isCorrect: true,
+        note: "Génitif pluriel irrégulier après 5-21, 25-31... (lat)"
+      },
+      {
+        ending: "-ata",
+        word: "lata",
+        isCorrect: false,
+        note: "Utilisé seulement après 2, 3, 4 et composés"
+      },
+      {
+        ending: "-ok",
+        word: "rok",
+        isCorrect: false,
+        note: "Singulier après 1 (1 rok)"
+      },
+      {
+        ending: "-atów",
+        word: "latów",
+        isCorrect: false,
+        note: "Forme inexistante"
+      }
+    ]
+  },
+  {
+    id: "case-pl-d-23",
+    date: "2026-11-03",
+    caseName: "Biernik",
+    caseLabelFr: "Accusatif / Nominatif (Pluriel)",
+    caseBadgeClass: "case-biernik",
+    sentenceBefore: "Moja ulubiona kuzynka ma dwadzieścia dwa lat",
+    sentenceAfter: ".",
+    gapWord: "rok",
+    gapWordMeaning: "ans / années",
+    targetType: "noun",
+    isPlural: true,
+    gender: "nom masculin inanimé pluriel",
+    correctEnding: "-a",
+    fullCorrectWord: "lata",
+    fullSentence: "Moja ulubiona kuzynka ma dwadzieścia dwa lata.",
+    translationFr: "Ma cousine préférée a vingt-deux ans.",
+    ruleExplanation: "Les nombres composés se terminant par 2, 3 ou 4 (comme <em>22, 23, 24, 32</em>... sauf 12, 13, 14) régissent le <strong>Nominatif / Accusatif pluriel</strong>, donc <strong>lata</strong> : <em>dwadzieścia dwa lata</em>.",
+    options: [
+      {
+        ending: "-a",
+        word: "lata",
+        isCorrect: true,
+        note: "Accusatif/Nominatif pluriel après 2, 3, 4 et composés (lata)"
+      },
+      {
+        ending: "-ø",
+        word: "lat",
+        isCorrect: false,
+        note: "Génitif pluriel (après 5+)"
+      },
+      {
+        ending: "-ok",
+        word: "rok",
+        isCorrect: false,
+        note: "Singulier (1 rok)"
+      },
+      {
+        ending: "-y",
+        word: "roki",
+        isCorrect: false,
+        note: "Forme incorrecte"
+      }
+    ]
+  },
+  {
+    id: "case-d-37",
+    date: "2026-11-03",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "Dzień dobry, dzwonię w sprawie spotkani",
+    sentenceAfter: " we wtorek.",
+    gapWord: "spotkanie",
+    gapWordMeaning: "réunion / rendez-vous",
+    targetType: "noun",
+    isPlural: false,
+    gender: "nom neutre singulier",
+    correctEnding: "-a",
+    fullCorrectWord: "spotkania",
+    fullSentence: "Dzień dobry, dzwonię w sprawie spotkania we wtorek.",
+    translationFr: "Bonjour, j'appelle au sujet du rendez-vous de mardi.",
+    ruleExplanation: "La locution prépositionnelle <strong>w sprawie</strong> (au sujet de, concernant) régit obligatoirement le <strong>Génitif</strong> (Dopełniacz). Les noms neutres en <em>-e</em> prennent la terminaison <strong>-a</strong> : <em>spotkanie</em> &rarr; <strong>spotkania</strong>.",
+    options: [
+      {
+        ending: "-a",
+        word: "spotkania",
+        isCorrect: true,
+        note: "Génitif singulier neutre après w sprawie (-a)"
+      },
+      {
+        ending: "-u",
+        word: "spotkaniu",
+        isCorrect: false,
+        note: "Locatif singulier (-u)"
+      },
+      {
+        ending: "-em",
+        word: "spotkaniem",
+        isCorrect: false,
+        note: "Instrumental singulier (-em)"
+      },
+      {
+        ending: "-e",
+        word: "spotkanie",
+        isCorrect: false,
+        note: "Nominatif singulier (-e)"
+      }
+    ]
+  },
+  {
+    id: "case-m-34",
+    date: "2026-11-03",
+    caseName: "Miejscownik",
+    caseLabelFr: "Locatif (Miejscownik)",
+    caseBadgeClass: "case-miejscownik",
+    sentenceBefore: "Niestety, nie mogę być na tym spotkani",
+    sentenceAfter: ".",
+    gapWord: "spotkanie",
+    gapWordMeaning: "réunion / rendez-vous",
+    targetType: "noun",
+    isPlural: false,
+    gender: "nom neutre singulier",
+    correctEnding: "-u",
+    fullCorrectWord: "spotkaniu",
+    fullSentence: "Niestety, nie mogę być na tym spotkaniu.",
+    translationFr: "Malheureusement, je ne peux pas être à ce rendez-vous.",
+    ruleExplanation: "Pour exprimer la présence à un événement avec la préposition <strong>na</strong> (à / sur), on emploie le <strong>Locatif</strong> (Miejscownik). Les noms neutres terminés par <em>-e</em> précédé d'une consonne douce prennent la terminaison <strong>-u</strong> : <em>spotkanie</em> &rarr; <strong>na spotkaniu</strong>.",
+    options: [
+      {
+        ending: "-u",
+        word: "spotkaniu",
+        isCorrect: true,
+        note: "Locatif singulier neutre après na (-u)"
+      },
+      {
+        ending: "-a",
+        word: "spotkania",
+        isCorrect: false,
+        note: "Génitif singulier (-a)"
+      },
+      {
+        ending: "-e",
+        word: "spotkanie",
+        isCorrect: false,
+        note: "Nominatif / Accusatif (-e)"
+      },
+      {
+        ending: "-em",
+        word: "spotkaniem",
+        isCorrect: false,
+        note: "Instrumental singulier (-em)"
+      }
+    ]
+  },
+  {
+    id: "case-b-40",
+    date: "2026-11-03",
+    caseName: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    caseBadgeClass: "case-biernik",
+    sentenceBefore: "Jeśli wtorek pani nie pasuje, proponuję środ",
+    sentenceAfter: ".",
+    gapWord: "środa",
+    gapWordMeaning: "mercredi",
+    targetType: "noun",
+    isPlural: false,
+    gender: "nom féminin singulier",
+    correctEnding: "-ę",
+    fullCorrectWord: "środę",
+    fullSentence: "Jeśli wtorek pani nie pasuje, proponuję środę.",
+    translationFr: "Si mardi ne vous convient pas, je propose mercredi.",
+    ruleExplanation: "Le verbe <strong>proponować</strong> (proposer) exige un COD à l'<strong>Accusatif</strong> (Biernik). Les noms féminins singuliers en <em>-a</em> prennent la terminaison <strong>-ę</strong> : <em>środa</em> &rarr; <strong>środę</strong>.",
+    options: [
+      {
+        ending: "-ę",
+        word: "środę",
+        isCorrect: true,
+        note: "Accusatif singulier féminin après proponuję (-ę)"
+      },
+      {
+        ending: "-y",
+        word: "środy",
+        isCorrect: false,
+        note: "Génitif singulier (-y)"
+      },
+      {
+        ending: "-ą",
+        word: "środą",
+        isCorrect: false,
+        note: "Instrumental singulier (-ą)"
+      },
+      {
+        ending: "-zie",
+        word: "środzie",
+        isCorrect: false,
+        note: "Locatif singulier (-zie)"
+      }
+    ]
+  },
+  {
+    id: "case-pl-d-24",
+    date: "2026-11-03",
+    caseName: "Dopelniacz",
+    caseLabelFr: "Génitif (Dopełniacz)",
+    caseBadgeClass: "case-dopelniacz",
+    sentenceBefore: "Olej kosztuje pięć złot",
+    sentenceAfter: " i osiemdziesiąt dziewięć groszy.",
+    gapWord: "złoty",
+    gapWordMeaning: "zloty (monnaie polonaise)",
+    targetType: "noun",
+    isPlural: true,
+    gender: "nom masculin inanimé pluriel",
+    correctEnding: "-ych",
+    fullCorrectWord: "złotych",
+    fullSentence: "Olej kosztuje pięć złotych i osiemdziesiąt dziewięć groszy.",
+    translationFr: "L'huile coûte cinq zlotys et quatre-vingt-neuf groszy.",
+    ruleExplanation: "Après les chiffres 5 et au-delà, les unités de monnaie prennent le <strong>Génitif pluriel</strong> : <em>złoty</em> (adjectif substantivé) devient <strong>złotych</strong> (-ych), et <em>grosz</em> devient <strong>groszy</strong> (-y). (1 złoty, 2-4 złote, 5+ złotych).",
+    options: [
+      {
+        ending: "-ych",
+        word: "złotych",
+        isCorrect: true,
+        note: "Génitif pluriel après 5+ (-ych)"
+      },
+      {
+        ending: "-e",
+        word: "złote",
+        isCorrect: false,
+        note: "Après 2, 3, 4 (2 złote)"
+      },
+      {
+        ending: "-y",
+        word: "złoty",
+        isCorrect: false,
+        note: "Singulier après 1 (1 złoty)"
+      },
+      {
+        ending: "-om",
+        word: "złotom",
+        isCorrect: false,
+        note: "Datif pluriel (-om)"
+      }
+    ]
+  },
+  {
+    id: "case-b-41",
+    date: "2026-11-03",
+    caseName: "Biernik",
+    caseLabelFr: "Accusatif (Biernik)",
+    caseBadgeClass: "case-biernik",
+    sentenceBefore: "Tak, w czwart",
+    sentenceAfter: " mam czas o jedenastej.",
+    gapWord: "czwartek",
+    gapWordMeaning: "jeudi",
+    targetType: "noun",
+    isPlural: false,
+    gender: "nom masculin inanimé singulier",
+    correctEnding: "-ek",
+    fullCorrectWord: "czwartek",
+    fullSentence: "Tak, w czwartek mam czas o jedenastej.",
+    translationFr: "Oui, le jeudi j'ai le temps à onze heures.",
+    ruleExplanation: "Pour exprimer le jour précis où se tient un événement, on utilise la préposition <em>w / we</em> + <strong>Accusatif temporel</strong>. Pour les noms masculins inanimés, l'accusatif reste identique au nominatif : <em>czwartek</em> &rarr; <strong>w czwartek</strong> (alors que le féminin s'incline en <em>-ę</em> : <em>w środę</em>).",
+    options: [
+      {
+        ending: "-ek",
+        word: "czwartek",
+        isCorrect: true,
+        note: "Accusatif temporel masculin identique au nominatif (w czwartek)"
+      },
+      {
+        ending: "-ku",
+        word: "czwartku",
+        isCorrect: false,
+        note: "Génitif singulier (-u)"
+      },
+      {
+        ending: "-kiem",
+        word: "czwartkiem",
+        isCorrect: false,
+        note: "Instrumental singulier (-iem)"
+      },
+      {
+        ending: "-ce",
+        word: "czwartce",
+        isCorrect: false,
+        note: "Forme inexistante"
+      }
+    ]
+  },
+  {
+    id: "case-adj-m-4",
+    date: "2026-11-03",
+    caseName: "Mianownik",
+    caseLabelFr: "Nominatif (Mianownik)",
+    caseBadgeClass: "case-mianownik",
+    sentenceBefore: "Niestety w środę cały dzień jestem bardzo zajęt",
+    sentenceAfter: ".",
+    gapWord: "zajęty",
+    gapWordMeaning: "occupé",
+    targetType: "adj",
+    isPlural: false,
+    gender: "adjectif masculin singulier",
+    correctEnding: "-y",
+    fullCorrectWord: "zajęty",
+    fullSentence: "Niestety w środę cały dzień jestem bardzo zajęty.",
+    translationFr: "Malheureusement, mercredi toute la journée je suis très occupé.",
+    ruleExplanation: "L'adjectif qualificatif décrivant un locuteur masculin singulier (Roman Styczeń) après le verbe d'état <em>być (jestem)</em> s'accorde au <strong>Nominatif singulier masculin</strong> avec la terminaison <strong>-y</strong> : <strong>zajęty</strong> (pour une femme : <em>zajęta</em>).",
+    options: [
+      {
+        ending: "-y",
+        word: "zajęty",
+        isCorrect: true,
+        note: "Nominatif singulier masculin (-y)"
+      },
+      {
+        ending: "-a",
+        word: "zajęta",
+        isCorrect: false,
+        note: "Nominatif singulier féminin (-a)"
+      },
+      {
+        ending: "-ego",
+        word: "zajętego",
+        isCorrect: false,
+        note: "Génitif / Accusatif masculin (-ego)"
+      },
+      {
+        ending: "-e",
+        word: "zajęte",
+        isCorrect: false,
+        note: "Neutre / Pluriel non-viril (-e)"
+      }
+    ]
   }
 ];
-
-// ==========================================
-// GUIDE & TABLEAUX AIDE-MÉMOIRE DES CAS POLONAIS
-// ==========================================
 
 const POLISH_CASES_GUIDE = {
   Biernik: {
@@ -7619,6 +9493,7 @@ const POSSESSIVE_CHALLENGES = [
   // ------------------------------------------
   {
     id: "poss-l1-1",
+    date: "2026-10-27",
     level: 1,
     category: "1st-sg",
     categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
@@ -7641,6 +9516,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-2",
+    date: "2026-10-27",
     level: 1,
     category: "1st-sg",
     categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
@@ -7663,6 +9539,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-3",
+    date: "2026-10-27",
     level: 1,
     category: "1st-sg",
     categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
@@ -7685,6 +9562,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-4",
+    date: "2026-10-27",
     level: 1,
     category: "1st-sg",
     categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
@@ -7707,6 +9585,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-5",
+    date: "2026-10-27",
     level: 1,
     category: "1st-sg",
     categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
@@ -7729,6 +9608,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-6",
+    date: "2026-10-27",
     level: 1,
     category: "2nd-sg",
     categoryLabelFr: "2ème pers. sg (Ton / Ta / Tes)",
@@ -7751,6 +9631,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-7",
+    date: "2026-10-27",
     level: 1,
     category: "2nd-sg",
     categoryLabelFr: "2ème pers. sg (Ton / Ta / Tes)",
@@ -7773,6 +9654,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-8",
+    date: "2026-10-27",
     level: 1,
     category: "2nd-sg",
     categoryLabelFr: "2ème pers. sg (Ton / Ta / Tes)",
@@ -7795,6 +9677,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-9",
+    date: "2026-10-27",
     level: 1,
     category: "2nd-sg",
     categoryLabelFr: "2ème pers. sg (Ton / Ta / Tes)",
@@ -7817,6 +9700,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-10",
+    date: "2026-10-27",
     level: 1,
     category: "1st-pl",
     categoryLabelFr: "1ère pers. pl (Notre / Nos)",
@@ -7839,6 +9723,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-11",
+    date: "2026-10-27",
     level: 1,
     category: "1st-pl",
     categoryLabelFr: "1ère pers. pl (Notre / Nos)",
@@ -7861,6 +9746,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-12",
+    date: "2026-10-27",
     level: 1,
     category: "1st-pl",
     categoryLabelFr: "1ère pers. pl (Notre / Nos)",
@@ -7883,6 +9769,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-13",
+    date: "2026-10-27",
     level: 1,
     category: "1st-pl",
     categoryLabelFr: "1ère pers. pl (Notre / Nos)",
@@ -7905,6 +9792,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-14",
+    date: "2026-10-27",
     level: 1,
     category: "2nd-pl",
     categoryLabelFr: "2ème pers. pl (Votre / Vos)",
@@ -7927,6 +9815,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-15",
+    date: "2026-10-27",
     level: 1,
     category: "2nd-pl",
     categoryLabelFr: "2ème pers. pl (Votre / Vos)",
@@ -7949,6 +9838,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-16",
+    date: "2026-10-27",
     level: 1,
     category: "2nd-pl",
     categoryLabelFr: "2ème pers. pl (Votre / Vos)",
@@ -7971,6 +9861,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-17",
+    date: "2026-10-27",
     level: 1,
     category: "3rd-invariable",
     categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
@@ -7993,6 +9884,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-18",
+    date: "2026-10-27",
     level: 1,
     category: "3rd-invariable",
     categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
@@ -8015,6 +9907,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-19",
+    date: "2026-10-27",
     level: 1,
     category: "3rd-invariable",
     categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
@@ -8037,6 +9930,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-20",
+    date: "2026-10-27",
     level: 1,
     category: "3rd-invariable",
     categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
@@ -8059,6 +9953,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-21",
+    date: "2026-10-27",
     level: 1,
     category: "demonstrative",
     categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
@@ -8081,6 +9976,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-22",
+    date: "2026-10-27",
     level: 1,
     category: "demonstrative",
     categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
@@ -8103,6 +9999,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-23",
+    date: "2026-10-27",
     level: 1,
     category: "demonstrative",
     categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
@@ -8125,6 +10022,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-24",
+    date: "2026-10-27",
     level: 1,
     category: "demonstrative",
     categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
@@ -8147,6 +10045,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-25",
+    date: "2026-10-27",
     level: 1,
     category: "demonstrative",
     categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
@@ -8169,6 +10068,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-26",
+    date: "2026-10-27",
     level: 1,
     category: "reflexive",
     categoryLabelFr: "Réfléchi (swój - le sien propre)",
@@ -8191,6 +10091,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-27",
+    date: "2026-10-29",
     level: 1,
     category: "1st-sg",
     categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
@@ -8229,6 +10130,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-28",
+    date: "2026-10-29",
     level: 1,
     category: "1st-sg",
     categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
@@ -8267,6 +10169,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-29",
+    date: "2026-10-29",
     level: 1,
     category: "3rd-invariable",
     categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
@@ -8305,6 +10208,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-30",
+    date: "2026-10-29",
     level: 1,
     category: "3rd-invariable",
     categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
@@ -8343,6 +10247,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-31",
+    date: "2026-10-29",
     level: 1,
     category: "3rd-invariable",
     categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
@@ -8381,6 +10286,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-32",
+    date: "2026-10-29",
     level: 1,
     category: "3rd-invariable",
     categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
@@ -8419,6 +10325,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-33",
+    date: "2026-10-29",
     level: 1,
     category: "2nd-sg",
     categoryLabelFr: "2ème pers. sg (Ton / Ta / Tes)",
@@ -8457,6 +10364,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-34",
+    date: "2026-10-29",
     level: 1,
     category: "1st-pl",
     categoryLabelFr: "1ère pers. pl (Notre / Nos)",
@@ -8495,6 +10403,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-35",
+    date: "2026-10-29",
     level: 1,
     category: "2nd-pl",
     categoryLabelFr: "2ème pers. pl (Votre / Vos)",
@@ -8533,6 +10442,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-36",
+    date: "2026-10-29",
     level: 1,
     category: "2nd-pl",
     categoryLabelFr: "2ème pers. pl (Votre / Vos)",
@@ -8571,6 +10481,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l1-37",
+    date: "2026-10-29",
     level: 1,
     category: "3rd-invariable",
     categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
@@ -8613,6 +10524,7 @@ const POSSESSIVE_CHALLENGES = [
   // ------------------------------------------
   {
     id: "poss-l2-1",
+    date: "2026-10-27",
     level: 2,
     category: "2nd-sg",
     categoryLabelFr: "2ème pers. sg (Ton / Ta / Tes)",
@@ -8635,6 +10547,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l2-2",
+    date: "2026-10-27",
     level: 2,
     category: "demonstrative",
     categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
@@ -8657,6 +10570,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l2-3",
+    date: "2026-10-27",
     level: 2,
     category: "1st-sg",
     categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
@@ -8679,6 +10593,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l2-4",
+    date: "2026-10-27",
     level: 2,
     category: "demonstrative",
     categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
@@ -8701,6 +10616,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l2-5",
+    date: "2026-10-27",
     level: 2,
     category: "reflexive",
     categoryLabelFr: "Réfléchi (swój - le sien propre)",
@@ -8723,6 +10639,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l2-6",
+    date: "2026-10-27",
     level: 2,
     category: "1st-sg",
     categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
@@ -8745,6 +10662,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l2-7",
+    date: "2026-10-27",
     level: 2,
     category: "2nd-sg",
     categoryLabelFr: "2ème pers. sg (Ton / Ta / Tes)",
@@ -8767,6 +10685,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l2-8",
+    date: "2026-10-27",
     level: 2,
     category: "demonstrative",
     categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
@@ -8789,6 +10708,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l2-9",
+    date: "2026-10-27",
     level: 2,
     category: "demonstrative",
     categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
@@ -8811,6 +10731,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l2-10",
+    date: "2026-10-27",
     level: 2,
     category: "1st-pl",
     categoryLabelFr: "1ère pers. pl (Notre / Nos)",
@@ -8833,6 +10754,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l2-11",
+    date: "2026-10-27",
     level: 2,
     category: "1st-sg",
     categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
@@ -8855,6 +10777,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l2-12",
+    date: "2026-10-27",
     level: 2,
     category: "3rd-invariable",
     categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
@@ -8877,6 +10800,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l2-13",
+    date: "2026-10-27",
     level: 2,
     category: "reflexive",
     categoryLabelFr: "Réfléchi (swój - le sien propre)",
@@ -8899,6 +10823,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l2-14",
+    date: "2026-10-27",
     level: 2,
     category: "2nd-sg",
     categoryLabelFr: "2ème pers. sg (Ton / Ta / Tes)",
@@ -8921,6 +10846,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l2-15",
+    date: "2026-10-27",
     level: 2,
     category: "1st-sg",
     categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
@@ -8943,6 +10869,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l2-16",
+    date: "2026-10-27",
     level: 2,
     category: "demonstrative",
     categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
@@ -8965,6 +10892,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l2-17",
+    date: "2026-10-27",
     level: 2,
     category: "demonstrative",
     categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
@@ -8987,6 +10915,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l2-18",
+    date: "2026-10-27",
     level: 2,
     category: "1st-pl",
     categoryLabelFr: "1ère pers. pl (Notre / Nos)",
@@ -9009,6 +10938,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l2-19",
+    date: "2026-10-27",
     level: 2,
     category: "2nd-sg",
     categoryLabelFr: "2ème pers. sg (Ton / Ta / Tes)",
@@ -9031,6 +10961,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l2-20",
+    date: "2026-10-27",
     level: 2,
     category: "3rd-invariable",
     categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
@@ -9053,6 +10984,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l2-21",
+    date: "2026-10-27",
     level: 2,
     category: "1st-sg",
     categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
@@ -9075,6 +11007,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l2-22",
+    date: "2026-10-27",
     level: 2,
     category: "demonstrative",
     categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
@@ -9097,6 +11030,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l2-23",
+    date: "2026-10-27",
     level: 2,
     category: "demonstrative",
     categoryLabelFr: "Démonstratifs (Ce / Cette / Ces)",
@@ -9119,6 +11053,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l2-24",
+    date: "2026-10-27",
     level: 2,
     category: "1st-pl",
     categoryLabelFr: "1ère pers. pl (Notre / Nos)",
@@ -9141,6 +11076,7 @@ const POSSESSIVE_CHALLENGES = [
   },
   {
     id: "poss-l2-25",
+    date: "2026-10-27",
     level: 2,
     category: "3rd-invariable",
     categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
@@ -9159,6 +11095,162 @@ const POSSESSIVE_CHALLENGES = [
       { word: "jego", isCorrect: false, note: "Possesseur masculin (à lui)" },
       { word: "swoim", isCorrect: false, note: "Réfléchi masculin (notre propre maison)" },
       { word: "ona", isCorrect: false, note: "Pronom sujet" }
+    ]
+  },
+  {
+    id: "poss-l1-38",
+    date: "2026-11-03",
+    level: 1,
+    category: "1st-sg",
+    categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "siostra (nom féminin) - possesseur ja",
+    targetMeaning: "ma",
+    sentenceBefore: "",
+    sentenceAfter: " siostra ma trzydzieści pięć lat.",
+    gapWord: "Moja",
+    fullSentence: "Moja siostra ma trzydzieści pięć lat.",
+    translationFr: "Ma sœur a trente-cinq ans.",
+    ruleExplanation: "Devant un nom féminin singulier au nominatif (<em>siostra</em>), le possessif à la 1ère personne du singulier (<em>ja</em>) s'accorde obligatoirement en <strong>moja</strong>.",
+    options: [
+      {
+        word: "Moja",
+        isCorrect: true,
+        note: "Nominatif féminin singulier"
+      },
+      {
+        word: "Mój",
+        isCorrect: false,
+        note: "Nominatif masculin singulier"
+      },
+      {
+        word: "Moje",
+        isCorrect: false,
+        note: "Nominatif neutre singulier"
+      },
+      {
+        word: "Moi",
+        isCorrect: false,
+        note: "Pluriel viril"
+      }
+    ]
+  },
+  {
+    id: "poss-l1-39",
+    date: "2026-11-03",
+    level: 1,
+    category: "1st-sg",
+    categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "brat (nom masculin) - possesseur ja",
+    targetMeaning: "mon",
+    sentenceBefore: "",
+    sentenceAfter: " brat mieszka po lewej stronie domu.",
+    gapWord: "Mój",
+    fullSentence: "Mój brat mieszka po lewej stronie domu.",
+    translationFr: "Mon frère habite à gauche de la maison.",
+    ruleExplanation: "Pour un nom masculin singulier au nominatif (<em>brat</em>), le possessif de 1ère personne est <strong>mój</strong>.",
+    options: [
+      {
+        word: "Mój",
+        isCorrect: true,
+        note: "Nominatif masculin singulier"
+      },
+      {
+        word: "Moja",
+        isCorrect: false,
+        note: "Nominatif féminin singulier"
+      },
+      {
+        word: "Moje",
+        isCorrect: false,
+        note: "Nominatif neutre singulier"
+      },
+      {
+        word: "Twój",
+        isCorrect: false,
+        note: "2ème personne (ton frère)"
+      }
+    ]
+  },
+  {
+    id: "poss-l1-40",
+    date: "2026-11-03",
+    level: 1,
+    category: "1st-sg",
+    categoryLabelFr: "1ère pers. sg (Mon / Ma / Mes)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "ulubiona kuzynka (groupe nominal féminin) - possesseur ja",
+    targetMeaning: "ma",
+    sentenceBefore: "",
+    sentenceAfter: " ulubiona kuzynka ma dwadzieścia dwa lata.",
+    gapWord: "Moja",
+    fullSentence: "Moja ulubiona kuzynka ma dwadzieścia dwa lata.",
+    translationFr: "Ma cousine préférée a vingt-deux ans.",
+    ruleExplanation: "Devant un nom féminin (<em>kuzynka</em>), le possessif au nominatif singulier prend la forme <strong>moja</strong>.",
+    options: [
+      {
+        word: "Moja",
+        isCorrect: true,
+        note: "Nominatif féminin singulier"
+      },
+      {
+        word: "Mój",
+        isCorrect: false,
+        note: "Nominatif masculin singulier"
+      },
+      {
+        word: "Moje",
+        isCorrect: false,
+        note: "Nominatif neutre singulier"
+      },
+      {
+        word: "Nasza",
+        isCorrect: false,
+        note: "1ère personne du pluriel (notre)"
+      }
+    ]
+  },
+  {
+    id: "poss-l1-41",
+    date: "2026-11-03",
+    level: 1,
+    category: "3rd-invariable",
+    categoryLabelFr: "3ème personne (Invariables : jego, jej, ich)",
+    targetCase: "Mianownik",
+    caseLabelFr: "Nominatif",
+    nounContext: "siostra (nom féminin) - possesseurs Filip i Tomasz (oni)",
+    targetMeaning: "leur",
+    sentenceBefore: "Filip i Tomasz nie mogą przyjść. ",
+    sentenceAfter: " siostra jest chora.",
+    gapWord: "Ich",
+    fullSentence: "Filip i Tomasz nie mogą przyjść. Ich siostra jest chora.",
+    translationFr: "Filip et Tomasz ne peuvent pas venir. Leur sœur est malade.",
+    ruleExplanation: "Pour un possesseur au pluriel de 3ème personne (<em>oni / one</em>), le possessif invariable <strong>ich</strong> (leur / leurs) s'utilise devant tout nom sans jamais s'accorder.",
+    options: [
+      {
+        word: "Ich",
+        isCorrect: true,
+        note: "Invariable pour possesseur pluriel (oni)"
+      },
+      {
+        word: "Jego",
+        isCorrect: false,
+        note: "Possesseur singulier masculin (il)"
+      },
+      {
+        word: "Jej",
+        isCorrect: false,
+        note: "Possesseur singulier féminin (elle)"
+      },
+      {
+        word: "Swoja",
+        isCorrect: false,
+        note: "Réfléchi"
+      }
     ]
   }
 ];
