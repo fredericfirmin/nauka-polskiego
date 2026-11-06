@@ -10,7 +10,7 @@
  */
 
 
-const LATEST_IMPORT_DATE = "2026-11-03";
+const LATEST_IMPORT_DATE = "2026-11-05";
 if (typeof window !== "undefined") {
   window.LATEST_IMPORT_DATE = LATEST_IMPORT_DATE;
 }
@@ -4817,6 +4817,1809 @@ const INITIAL_CARDS = [
     acceptedFr: ["jeudi", "le jeudi"],
     distractorsPl: ["w środę", "w piątek", "we wtorek"],
     distractorsFr: ["mercredi", "vendredi", "mardi"]
+  },
+  // ==========================================
+  // 17. COURS DU 05/11/2026 (ROUTINE, HABITS, TOUSSAINT & ANDRZEJKI)
+  // ==========================================
+  {
+    "id": "phr-5-1",
+    "date": "2026-11-05",
+    "pl": "Jadłeś śniadanie?",
+    "fr": "As-tu pris le petit-déjeuner ? (mangé)",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Jadłeś śniadanie?",
+      "Jadles sniadanie?"
+    ],
+    "acceptedFr": [
+      "As-tu pris le petit-déjeuner ?",
+      "As-tu mangé le petit-déjeuner ?",
+      "Tu as mangé le petit déjeuner ?"
+    ],
+    "distractorsPl": [
+      "Co jesz na śniadanie?",
+      "Chcesz śniadanie?",
+      "Gdzie jesz obiad?"
+    ],
+    "distractorsFr": [
+      "Que manges-tu au petit-déjeuner ?",
+      "Tu veux un petit-déjeuner ?",
+      "Où déjeunes-tu ?"
+    ]
+  },
+  {
+    "id": "phr-5-2",
+    "date": "2026-11-05",
+    "pl": "jeszcze nie",
+    "fr": "pas encore",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "jeszcze nie"
+    ],
+    "acceptedFr": [
+      "pas encore",
+      "non pas encore"
+    ],
+    "distractorsPl": [
+      "już tak",
+      "na pewno nie",
+      "teraz nie"
+    ],
+    "distractorsFr": [
+      "déjà oui",
+      "certainement pas",
+      "pas maintenant"
+    ]
+  },
+  {
+    "id": "phr-5-3",
+    "date": "2026-11-05",
+    "pl": "Nie jest źle.",
+    "fr": "Ce n'est pas mal, ça ne va pas mal.",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Nie jest źle",
+      "Nie jest zle"
+    ],
+    "acceptedFr": [
+      "Ce n'est pas mal",
+      "Ça ne va pas mal",
+      "Pas mal",
+      "Ca ne va pas mal"
+    ],
+    "distractorsPl": [
+      "Jest bardzo źle.",
+      "Wszystko w porządku.",
+      "Nie ma problemu."
+    ],
+    "distractorsFr": [
+      "C'est très mauvais.",
+      "Tout va bien.",
+      "Il n'y a pas de problème."
+    ]
+  },
+  {
+    "id": "phr-5-4",
+    "date": "2026-11-05",
+    "pl": "Jakie jest twoje ulubione zwierzę?",
+    "fr": "Quel est ton animal préféré ?",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Jakie jest twoje ulubione zwierzę?",
+      "Jakie jest twoje ulubione zwierze?"
+    ],
+    "acceptedFr": [
+      "Quel est ton animal préféré ?",
+      "Quel est votre animal préféré ?"
+    ],
+    "distractorsPl": [
+      "Masz jakieś zwierzęta?",
+      "Jaki jest twój ulubiony pies?",
+      "Czy lubisz zwierzęta?"
+    ],
+    "distractorsFr": [
+      "As-tu des animaux ?",
+      "Quel est ton chien préféré ?",
+      "Aimes-tu les animaux ?"
+    ]
+  },
+  {
+    "id": "phr-5-5",
+    "date": "2026-11-05",
+    "pl": "zwierzę",
+    "fr": "animal",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "zwierzę",
+      "zwierze"
+    ],
+    "acceptedFr": [
+      "animal",
+      "l'animal",
+      "un animal"
+    ],
+    "distractorsPl": [
+      "pies",
+      "kot",
+      "ptak"
+    ],
+    "distractorsFr": [
+      "chien",
+      "chat",
+      "oiseau"
+    ]
+  },
+  {
+    "id": "phr-5-6",
+    "date": "2026-11-05",
+    "pl": "zwierzęta",
+    "fr": "animaux, les animaux",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "zwierzęta",
+      "zwierzeta"
+    ],
+    "acceptedFr": [
+      "animaux",
+      "les animaux",
+      "des animaux"
+    ],
+    "distractorsPl": [
+      "psy",
+      "koty",
+      "ludzie"
+    ],
+    "distractorsFr": [
+      "chiens",
+      "chats",
+      "gens"
+    ]
+  },
+  {
+    "id": "phr-5-7",
+    "date": "2026-11-05",
+    "pl": "Moje ulubione zwierzęta to moje psy.",
+    "fr": "Mes animaux préférés sont mes chiens.",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Moje ulubione zwierzęta to moje psy",
+      "Moje ulubione zwierzeta to moje psy"
+    ],
+    "acceptedFr": [
+      "Mes animaux préférés sont mes chiens",
+      "Mes animaux preferes sont mes chiens"
+    ],
+    "distractorsPl": [
+      "Mój ulubiony pies to labrador.",
+      "Mam dwa koty i psa.",
+      "Lubię wszystkie zwierzęta."
+    ],
+    "distractorsFr": [
+      "Mon chien préféré est le labrador.",
+      "J'ai deux chats et un chien.",
+      "J'aime tous les animaux."
+    ]
+  },
+  {
+    "id": "phr-5-8",
+    "date": "2026-11-05",
+    "pl": "Ulica jest brudna.",
+    "fr": "La rue est sale.",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Ulica jest brudna"
+    ],
+    "acceptedFr": [
+      "La rue est sale",
+      "Une rue est sale"
+    ],
+    "distractorsPl": [
+      "Ulica jest czysta.",
+      "Ulica jest długa.",
+      "Miasto jest brudne."
+    ],
+    "distractorsFr": [
+      "La rue est propre.",
+      "La rue est longue.",
+      "La ville est sale."
+    ]
+  },
+  {
+    "id": "phr-5-9",
+    "date": "2026-11-05",
+    "pl": "zostawać",
+    "fr": "rester, demeurer",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "zostawać",
+      "zostawac"
+    ],
+    "acceptedFr": [
+      "rester",
+      "demeurer"
+    ],
+    "distractorsPl": [
+      "wychodzić",
+      "jechać",
+      "wracać"
+    ],
+    "distractorsFr": [
+      "sortir",
+      "aller en transport",
+      "revenir"
+    ]
+  },
+  {
+    "id": "phr-5-10",
+    "date": "2026-11-05",
+    "pl": "Dzisiaj pogoda nie jest ładna, więc zostaję w domu cały dzień.",
+    "fr": "Aujourd'hui le temps n'est pas beau, donc je reste à la maison toute la journée.",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Dzisiaj pogoda nie jest ładna, więc zostaję w domu cały dzień",
+      "Dzisiaj pogoda nie jest ladna, wiec zostaje w domu caly dzien"
+    ],
+    "acceptedFr": [
+      "Aujourd'hui le temps n'est pas beau, donc je reste à la maison toute la journée",
+      "Il ne fait pas beau aujourd'hui, donc je reste à la maison toute la journée"
+    ],
+    "distractorsPl": [
+      "Pogoda jest świetna, więc idę na spacer.",
+      "Dzisiaj pada deszcz, ale idę do pracy.",
+      "Zostaję w domu tylko rano."
+    ],
+    "distractorsFr": [
+      "Le temps est superbe, donc je vais me promener.",
+      "Aujourd'hui il pleut, mais je vais au travail.",
+      "Je reste à la maison seulement le matin."
+    ]
+  },
+  {
+    "id": "phr-5-11",
+    "date": "2026-11-05",
+    "pl": "w domu",
+    "fr": "à la maison, chez soi (locatif)",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "w domu"
+    ],
+    "acceptedFr": [
+      "à la maison",
+      "chez soi",
+      "a la maison"
+    ],
+    "distractorsPl": [
+      "do domu",
+      "z domu",
+      "przed domem"
+    ],
+    "distractorsFr": [
+      "vers la maison",
+      "de la maison",
+      "devant la maison"
+    ]
+  },
+  {
+    "id": "phr-5-12",
+    "date": "2026-11-05",
+    "pl": "Możesz dzwonić do Marii?",
+    "fr": "Tu peux appeler Marie ?",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Możesz dzwonić do Marii?",
+      "Mozesz dzwonic do Marii?"
+    ],
+    "acceptedFr": [
+      "Tu peux appeler Marie ?",
+      "Peux-tu téléphoner à Marie ?"
+    ],
+    "distractorsPl": [
+      "Dzwonisz do Piotra?",
+      "Czy Maria dzwoniła?",
+      "Kiedy zadzwonisz do Marii?"
+    ],
+    "distractorsFr": [
+      "Tu appelles Piotr ?",
+      "Est-ce que Marie a appelé ?",
+      "Quand appelleras-tu Marie ?"
+    ]
+  },
+  {
+    "id": "phr-5-13",
+    "date": "2026-11-05",
+    "pl": "Chcę ją spotkać w piątek.",
+    "fr": "Je veux la rencontrer vendredi.",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Chcę ją spotkać w piątek",
+      "Chce ja spotkac w piatek"
+    ],
+    "acceptedFr": [
+      "Je veux la rencontrer vendredi",
+      "Je veux la voir vendredi"
+    ],
+    "distractorsPl": [
+      "Chcę go spotkać w piątek.",
+      "Spotkamy się w sobotę.",
+      "Nie mogę jej spotkać."
+    ],
+    "distractorsFr": [
+      "Je veux le rencontrer vendredi.",
+      "Nous nous verrons samedi.",
+      "Je ne peux pas la rencontrer."
+    ]
+  },
+  {
+    "id": "phr-5-14",
+    "date": "2026-11-05",
+    "pl": "W środę mamy spotkanie o trzeciej.",
+    "fr": "Le mercredi, nous avons un rendez-vous à trois heures.",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "W środę mamy spotkanie o trzeciej",
+      "W srode mamy spotkanie o trzeciej"
+    ],
+    "acceptedFr": [
+      "Le mercredi, nous avons un rendez-vous à trois heures",
+      "Mercredi nous avons une réunion à 3h"
+    ],
+    "distractorsPl": [
+      "We wtorek mamy spotkanie o pierwszej.",
+      "W środę jestem wolny o trzeciej.",
+      "Spotkanie jest o czwartej."
+    ],
+    "distractorsFr": [
+      "Mardi nous avons une réunion à une heure.",
+      "Mercredi je suis libre à 3h.",
+      "Le rendez-vous est à quatre heures."
+    ]
+  },
+  {
+    "id": "phr-5-15",
+    "date": "2026-11-05",
+    "pl": "o pierwszej",
+    "fr": "à une heure (1h00)",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "o pierwszej"
+    ],
+    "acceptedFr": [
+      "à une heure",
+      "a une heure",
+      "à 1h"
+    ],
+    "distractorsPl": [
+      "o drugiej",
+      "o trzeciej",
+      "o jedenastej"
+    ],
+    "distractorsFr": [
+      "à deux heures",
+      "à trois heures",
+      "à onze heures"
+    ]
+  },
+  {
+    "id": "phr-5-16",
+    "date": "2026-11-05",
+    "pl": "o drugiej",
+    "fr": "à deux heures (2h00)",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "o drugiej"
+    ],
+    "acceptedFr": [
+      "à deux heures",
+      "a deux heures",
+      "à 2h"
+    ],
+    "distractorsPl": [
+      "o pierwszej",
+      "o trzeciej",
+      "o czwartej"
+    ],
+    "distractorsFr": [
+      "à une heure",
+      "à trois heures",
+      "à quatre heures"
+    ]
+  },
+  {
+    "id": "phr-5-17",
+    "date": "2026-11-05",
+    "pl": "o trzeciej",
+    "fr": "à trois heures (3h00)",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "o trzeciej"
+    ],
+    "acceptedFr": [
+      "à trois heures",
+      "a trois heures",
+      "à 3h"
+    ],
+    "distractorsPl": [
+      "o drugiej",
+      "o czwartej",
+      "o piątej"
+    ],
+    "distractorsFr": [
+      "à deux heures",
+      "à quatre heures",
+      "à cinq heures"
+    ]
+  },
+  {
+    "id": "phr-5-18",
+    "date": "2026-11-05",
+    "pl": "o czwartej",
+    "fr": "à quatre heures (4h00)",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "o czwartej"
+    ],
+    "acceptedFr": [
+      "à quatre heures",
+      "a quatre heures",
+      "à 4h"
+    ],
+    "distractorsPl": [
+      "o trzeciej",
+      "o piątej",
+      "o szóstej"
+    ],
+    "distractorsFr": [
+      "à trois heures",
+      "à cinq heures",
+      "à six heures"
+    ]
+  },
+  {
+    "id": "phr-5-19",
+    "date": "2026-11-05",
+    "pl": "o piątej",
+    "fr": "à cinq heures (5h00)",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "o piątej",
+      "o piatej"
+    ],
+    "acceptedFr": [
+      "à cinq heures",
+      "a cinq heures",
+      "à 5h"
+    ],
+    "distractorsPl": [
+      "o czwartej",
+      "o szóstej",
+      "o pierwszej"
+    ],
+    "distractorsFr": [
+      "à quatre heures",
+      "à six heures",
+      "à une heure"
+    ]
+  },
+  {
+    "id": "vet-5-1",
+    "date": "2026-11-05",
+    "pl": "nosić",
+    "fr": "porter (des vêtements régulièrement)",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "nosić",
+      "nosic"
+    ],
+    "acceptedFr": [
+      "porter",
+      "mettre"
+    ],
+    "distractorsPl": [
+      "kupować",
+      "przymierzać",
+      "mieć"
+    ],
+    "distractorsFr": [
+      "acheter",
+      "essayer",
+      "avoir"
+    ]
+  },
+  {
+    "id": "vet-5-2",
+    "date": "2026-11-05",
+    "pl": "mieć na sobie",
+    "fr": "avoir sur soi, être vêtu de",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "mieć na sobie",
+      "miec na sobie"
+    ],
+    "acceptedFr": [
+      "avoir sur soi",
+      "porter",
+      "être vêtu de"
+    ],
+    "distractorsPl": [
+      "ubierać się",
+      "kupować",
+      "nosić w torbie"
+    ],
+    "distractorsFr": [
+      "s'habiller",
+      "acheter",
+      "porter dans le sac"
+    ]
+  },
+  {
+    "id": "vet-5-3",
+    "date": "2026-11-05",
+    "pl": "W poniedziałek noszę czarne spodnie i czerwony sweter.",
+    "fr": "Le lundi, je porte un pantalon noir et un pull rouge.",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "W poniedziałek noszę czarne spodnie i czerwony sweter",
+      "W poniedzialek nosze czarne spodnie i czerwony sweter"
+    ],
+    "acceptedFr": [
+      "Le lundi, je porte un pantalon noir et un pull rouge",
+      "Lundi je porte un pantalon noir et un pull rouge"
+    ],
+    "distractorsPl": [
+      "We wtorek noszę białe spodnie i szary sweter.",
+      "W poniedziałek noszę czarną koszulę.",
+      "Lubię czerwony sweter."
+    ],
+    "distractorsFr": [
+      "Mardi je porte un pantalon blanc et un pull gris.",
+      "Lundi je porte une chemise noire.",
+      "J'aime le pull rouge."
+    ]
+  },
+  {
+    "id": "vet-5-4",
+    "date": "2026-11-05",
+    "pl": "We wtorek ona nosi niebieską sukienkę i białe buty.",
+    "fr": "Le mardi, elle porte une robe bleue et des chaussures blanches.",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "We wtorek ona nosi niebieską sukienkę i białe buty",
+      "We wtorek, ona nosi niebieska sukienke i biale buty"
+    ],
+    "acceptedFr": [
+      "Le mardi, elle porte une robe bleue et des chaussures blanches",
+      "Mardi elle porte une robe bleue et des chaussures blanches"
+    ],
+    "distractorsPl": [
+      "W środę ona nosi żółtą sukienkę.",
+      "We wtorek on nosi niebieską koszulę.",
+      "Ona lubi białe buty."
+    ],
+    "distractorsFr": [
+      "Mercredi elle porte une robe jaune.",
+      "Mardi il porte une chemise bleue.",
+      "Elle aime les chaussures blanches."
+    ]
+  },
+  {
+    "id": "vet-5-5",
+    "date": "2026-11-05",
+    "pl": "W zimę noszę szary płaszcz i zielony szalik.",
+    "fr": "En hiver, je porte un manteau gris et une écharpe verte.",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "W zimę noszę szary płaszcz i zielony szalik",
+      "W zime nosze szary plaszcz i zielony szalik"
+    ],
+    "acceptedFr": [
+      "En hiver, je porte un manteau gris et une écharpe verte",
+      "L'hiver je porte un manteau gris et une écharpe verte"
+    ],
+    "distractorsPl": [
+      "W lato noszę żółtą koszulkę.",
+      "W zimę noszę czarną kurtkę i czapkę.",
+      "Mam szary płaszcz."
+    ],
+    "distractorsFr": [
+      "En été je porte un t-shirt jaune.",
+      "En hiver je porte un blouson noir et un bonnet.",
+      "J'ai un manteau gris."
+    ]
+  },
+  {
+    "id": "vet-5-6",
+    "date": "2026-11-05",
+    "pl": "szalik",
+    "fr": "écharpe, foulard",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "szalik",
+      "szal"
+    ],
+    "acceptedFr": [
+      "écharpe",
+      "l'écharpe",
+      "une écharpe",
+      "foulard"
+    ],
+    "distractorsPl": [
+      "pasek",
+      "krawat",
+      "czapka"
+    ],
+    "distractorsFr": [
+      "ceinture",
+      "cravate",
+      "bonnet"
+    ]
+  },
+  {
+    "id": "vet-5-7",
+    "date": "2026-11-05",
+    "pl": "W lato on nosi białe szorty i żółtą koszulkę.",
+    "fr": "En été, il porte un short blanc et un tee-shirt jaune.",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "W lato on nosi białe szorty i żółtą koszulkę",
+      "W lato on nosi biale szorty i zolta koszulke"
+    ],
+    "acceptedFr": [
+      "En été, il porte un short blanc et un tee-shirt jaune",
+      "L'été il porte des shorts blancs et un t-shirt jaune"
+    ],
+    "distractorsPl": [
+      "W lato on nosi niebieskie spodnie.",
+      "W zimę on nosi ciepły sweter.",
+      "On ma żółtą koszulkę."
+    ],
+    "distractorsFr": [
+      "En été il porte un pantalon bleu.",
+      "En hiver il porte un pull chaud.",
+      "Il a un t-shirt jaune."
+    ]
+  },
+  {
+    "id": "vet-5-8",
+    "date": "2026-11-05",
+    "pl": "szorty",
+    "fr": "short, bermuda",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "szorty",
+      "krótkie spodenki"
+    ],
+    "acceptedFr": [
+      "short",
+      "le short",
+      "des shorts"
+    ],
+    "distractorsPl": [
+      "spodnie",
+      "spódnica",
+      "majtki"
+    ],
+    "distractorsFr": [
+      "pantalon",
+      "jupe",
+      "sous-vêtements"
+    ]
+  },
+  {
+    "id": "vet-5-9",
+    "date": "2026-11-05",
+    "pl": "Noszę różową spódnicę, bo lubię ten kolor.",
+    "fr": "Je porte une jupe rose parce que j'aime cette couleur.",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "Noszę różową spódnicę, bo lubię ten kolor",
+      "Nosze rozowa spodnice, bo lubie ten kolor"
+    ],
+    "acceptedFr": [
+      "Je porte une jupe rose parce que j'aime cette couleur",
+      "Je porte une jupe rose car j'aime cette couleur"
+    ],
+    "distractorsPl": [
+      "Noszę niebieską sukienkę.",
+      "Lubię czarne spódnice.",
+      "Różowy to mój ulubiony kolor."
+    ],
+    "distractorsFr": [
+      "Je porte une robe bleue.",
+      "J'aime les jupes noires.",
+      "Le rose est ma couleur préférée."
+    ]
+  },
+  {
+    "id": "vet-5-10",
+    "date": "2026-11-05",
+    "pl": "błękitny",
+    "fr": "bleu ciel, azur",
+    "category": "Couleurs",
+    "acceptedPl": [
+      "błękitny",
+      "blekitny"
+    ],
+    "acceptedFr": [
+      "bleu ciel",
+      "azur",
+      "bleu clair"
+    ],
+    "distractorsPl": [
+      "niebieski",
+      "granatowy",
+      "fioletowy"
+    ],
+    "distractorsFr": [
+      "bleu",
+      "bleu marine",
+      "violet"
+    ]
+  },
+  {
+    "id": "vet-5-11",
+    "date": "2026-11-05",
+    "pl": "torba",
+    "fr": "sac, besace, sacoche",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "torba"
+    ],
+    "acceptedFr": [
+      "sac",
+      "le sac",
+      "besace",
+      "sacoche"
+    ],
+    "distractorsPl": [
+      "torebka",
+      "plecak",
+      "walizka"
+    ],
+    "distractorsFr": [
+      "sac à main",
+      "sac à dos",
+      "valise"
+    ]
+  },
+  {
+    "id": "vet-5-12",
+    "date": "2026-11-05",
+    "pl": "On nosi błękitną koszulę, czarne buty i szarą torbę.",
+    "fr": "Il porte une chemise bleu ciel, des chaussures noires et un sac gris.",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "On nosi błękitną koszulę, czarne buty i szarą torbę",
+      "On nosi blekitna koszule, czarne buty i szara torbe",
+      "On nosi niebieską koszulę, czarne buty, szarą torbę."
+    ],
+    "acceptedFr": [
+      "Il porte une chemise bleu ciel, des chaussures noires et un sac gris",
+      "Il porte une chemise bleue, des chaussures noires et un sac gris"
+    ],
+    "distractorsPl": [
+      "On nosi białą koszulę i czarny pasek.",
+      "On ma szary plecak i czarne buty.",
+      "Ten mężczyzna nosi zieloną koszulkę."
+    ],
+    "distractorsFr": [
+      "Il porte une chemise blanche et une ceinture noire.",
+      "Il a un sac à dos gris et des chaussures noires.",
+      "Cet homme porte un t-shirt vert."
+    ]
+  },
+  {
+    "id": "vet-5-13",
+    "date": "2026-11-05",
+    "pl": "Ten mężczyzna nosi zieloną koszulkę, brązowe spodnie i czarny pasek.",
+    "fr": "Cet homme porte un t-shirt vert, un pantalon marron et une ceinture noire.",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "Ten mężczyzna nosi zieloną koszulkę, brązowe spodnie i czarny pasek",
+      "Ten mezczyzna nosi zielona koszulke, brazowe spodnie i czarny pasek"
+    ],
+    "acceptedFr": [
+      "Cet homme porte un t-shirt vert, un pantalon marron et une ceinture noire",
+      "Cet homme porte un tee-shirt vert, pantalon marron et ceinture noire"
+    ],
+    "distractorsPl": [
+      "Ten mężczyzna nosi niebieską koszulę.",
+      "On nosi czarne spodnie i zielony sweter.",
+      "Mężczyzna ma brązowe buty."
+    ],
+    "distractorsFr": [
+      "Cet homme porte une chemise bleue.",
+      "Il porte un pantalon noir et un pull vert.",
+      "L'homme a des chaussures marron."
+    ]
+  },
+  {
+    "id": "vet-5-14",
+    "date": "2026-11-05",
+    "pl": "Brunetka nosi czerwoną sukienkę, czarne szpilki i czerwoną torebkę.",
+    "fr": "La brune porte une robe rouge, des escarpins noirs et un sac à main rouge.",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "Brunetka nosi czerwoną sukienkę, czarne szpilki i czerwoną torebkę",
+      "Brunetka nosi czerwona sukienke, czarne szpilki i czerwona torebke"
+    ],
+    "acceptedFr": [
+      "La brune porte une robe rouge, des escarpins noirs et un sac à main rouge",
+      "La brune porte une robe rouge, des talons noirs et un sac rouge"
+    ],
+    "distractorsPl": [
+      "Blondynka nosi czerwoną sukienkę.",
+      "Brunetka nosi czarną spódnicę i szpilki.",
+      "Ona ma czerwoną torebkę i trampki."
+    ],
+    "distractorsFr": [
+      "La blonde porte une robe rouge.",
+      "La brune porte une jupe noire et des escarpins.",
+      "Elle a un sac à main rouge et des baskets."
+    ]
+  },
+  {
+    "id": "vet-5-15",
+    "date": "2026-11-05",
+    "pl": "brunetka",
+    "fr": "une brune, femme aux cheveux bruns",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "brunetka"
+    ],
+    "acceptedFr": [
+      "une brune",
+      "brune",
+      "femme brune"
+    ],
+    "distractorsPl": [
+      "blondynka",
+      "szatynka",
+      "dziewczyna"
+    ],
+    "distractorsFr": [
+      "une blonde",
+      "une châtaine",
+      "une fille"
+    ]
+  },
+  {
+    "id": "vet-5-16",
+    "date": "2026-11-05",
+    "pl": "blondynka",
+    "fr": "une blonde, femme aux cheveux blonds",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "blondynka"
+    ],
+    "acceptedFr": [
+      "une blonde",
+      "blonde",
+      "femme blonde"
+    ],
+    "distractorsPl": [
+      "brunetka",
+      "szatynka",
+      "kobieta"
+    ],
+    "distractorsFr": [
+      "une brune",
+      "une châtaine",
+      "une femme"
+    ]
+  },
+  {
+    "id": "vet-5-17",
+    "date": "2026-11-05",
+    "pl": "Blondynka nosi białą koszulkę, czarne spodnie i czarne buty.",
+    "fr": "La blonde porte un t-shirt blanc, un pantalon noir et des chaussures noires.",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "Blondynka nosi białą koszulkę, czarne spodnie i czarne buty",
+      "Blondynka nosi biala koszulke, czarne spodnie i czarne buty"
+    ],
+    "acceptedFr": [
+      "La blonde porte un t-shirt blanc, un pantalon noir et des chaussures noires",
+      "La fille blonde porte un t-shirt blanc et pantalon noir"
+    ],
+    "distractorsPl": [
+      "Brunetka nosi białą koszulkę.",
+      "Blondynka ma niebieską sukienkę.",
+      "Ona nosi czarny sweter i białe buty."
+    ],
+    "distractorsFr": [
+      "La brune porte un t-shirt blanc.",
+      "La blonde a une robe bleue.",
+      "Elle porte un pull noir et des chaussures blanches."
+    ]
+  },
+  {
+    "id": "cult-5-1",
+    "date": "2026-11-05",
+    "pl": "Dzień Wszystkich Świętych",
+    "fr": "La Toussaint (1er novembre en Pologne)",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "Dzień Wszystkich Świętych",
+      "Dzien Wszystkich Swietych"
+    ],
+    "acceptedFr": [
+      "La Toussaint",
+      "Toussaint",
+      "La Toussaint en Pologne"
+    ],
+    "distractorsPl": [
+      "Andrzejki",
+      "Boże Narodzenie",
+      "Wielkanoc"
+    ],
+    "distractorsFr": [
+      "La Sainte-André",
+      "Noël",
+      "Pâques"
+    ]
+  },
+  {
+    "id": "cult-5-2",
+    "date": "2026-11-05",
+    "pl": "obchodzić",
+    "fr": "célébrer, fêter (une fête)",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "obchodzić",
+      "obchodzic"
+    ],
+    "acceptedFr": [
+      "célébrer",
+      "fêter"
+    ],
+    "distractorsPl": [
+      "odwiedzać",
+      "organizować",
+      "wspominać"
+    ],
+    "distractorsFr": [
+      "visiter",
+      "organiser",
+      "évoquer le souvenir"
+    ]
+  },
+  {
+    "id": "cult-5-3",
+    "date": "2026-11-05",
+    "pl": "pierwszego listopada",
+    "fr": "le premier novembre (génitif de date)",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "pierwszego listopada",
+      "1 listopada"
+    ],
+    "acceptedFr": [
+      "le premier novembre",
+      "le 1er novembre",
+      "1er novembre"
+    ],
+    "distractorsPl": [
+      "trzydziestego listopada",
+      "pierwszego maja",
+      "drugiego listopada"
+    ],
+    "distractorsFr": [
+      "le 30 novembre",
+      "le 1er mai",
+      "le 2 novembre"
+    ]
+  },
+  {
+    "id": "cult-5-4",
+    "date": "2026-11-05",
+    "pl": "cmentarz",
+    "fr": "cimetière",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "cmentarz"
+    ],
+    "acceptedFr": [
+      "cimetière",
+      "le cimetière",
+      "un cimetière"
+    ],
+    "distractorsPl": [
+      "kościół",
+      "park",
+      "grób"
+    ],
+    "distractorsFr": [
+      "église",
+      "parc",
+      "tombe"
+    ]
+  },
+  {
+    "id": "cult-5-5",
+    "date": "2026-11-05",
+    "pl": "cmentarze",
+    "fr": "les cimetières (pluriel)",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "cmentarze"
+    ],
+    "acceptedFr": [
+      "les cimetières",
+      "cimetières",
+      "des cimetières"
+    ],
+    "distractorsPl": [
+      "groby",
+      "znicze",
+      "kościoły"
+    ],
+    "distractorsFr": [
+      "tombes",
+      "bougies",
+      "églises"
+    ]
+  },
+  {
+    "id": "cult-5-6",
+    "date": "2026-11-05",
+    "pl": "zapalać",
+    "fr": "allumer (une flamme, bougie)",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "zapalać",
+      "zapalac"
+    ],
+    "acceptedFr": [
+      "allumer"
+    ],
+    "distractorsPl": [
+      "kłaść",
+      "odwiedzać",
+      "palić"
+    ],
+    "distractorsFr": [
+      "poser",
+      "visiter",
+      "brûler"
+    ]
+  },
+  {
+    "id": "cult-5-7",
+    "date": "2026-11-05",
+    "pl": "znicz",
+    "fr": "bougie du souvenir, lumignon funéraire",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "znicz"
+    ],
+    "acceptedFr": [
+      "bougie du souvenir",
+      "lumignon",
+      "bougie de cimetière",
+      "lumignon funéraire"
+    ],
+    "distractorsPl": [
+      "świeca",
+      "kwiat",
+      "grób"
+    ],
+    "distractorsFr": [
+      "bougie classique",
+      "fleur",
+      "tombe"
+    ]
+  },
+  {
+    "id": "cult-5-8",
+    "date": "2026-11-05",
+    "pl": "znicze",
+    "fr": "les bougies du souvenir (pluriel)",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "znicze"
+    ],
+    "acceptedFr": [
+      "les bougies du souvenir",
+      "lumignons",
+      "bougies funéraires"
+    ],
+    "distractorsPl": [
+      "kwiaty",
+      "groby",
+      "światła"
+    ],
+    "distractorsFr": [
+      "fleurs",
+      "tombes",
+      "lumières"
+    ]
+  },
+  {
+    "id": "cult-5-9",
+    "date": "2026-11-05",
+    "pl": "kłaść",
+    "fr": "poser, mettre, déposer",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "kłaść",
+      "klasc"
+    ],
+    "acceptedFr": [
+      "poser",
+      "mettre",
+      "déposer"
+    ],
+    "distractorsPl": [
+      "zapalać",
+      "brać",
+      "kupować"
+    ],
+    "distractorsFr": [
+      "allumer",
+      "prendre",
+      "acheter"
+    ]
+  },
+  {
+    "id": "cult-5-10",
+    "date": "2026-11-05",
+    "pl": "grób",
+    "fr": "tombe, sépulture",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "grób",
+      "grob"
+    ],
+    "acceptedFr": [
+      "tombe",
+      "la tombe",
+      "sépulture"
+    ],
+    "distractorsPl": [
+      "cmentarz",
+      "znicz",
+      "kamień"
+    ],
+    "distractorsFr": [
+      "cimetière",
+      "lumignon",
+      "pierre"
+    ]
+  },
+  {
+    "id": "cult-5-11",
+    "date": "2026-11-05",
+    "pl": "groby",
+    "fr": "les tombes (pluriel)",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "groby"
+    ],
+    "acceptedFr": [
+      "les tombes",
+      "tombes",
+      "sépultures"
+    ],
+    "distractorsPl": [
+      "cmentarze",
+      "znicze",
+      "kwiaty"
+    ],
+    "distractorsFr": [
+      "cimetières",
+      "lumignons",
+      "fleurs"
+    ]
+  },
+  {
+    "id": "cult-5-12",
+    "date": "2026-11-05",
+    "pl": "bliscy",
+    "fr": "les proches, les êtres chers",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "bliscy"
+    ],
+    "acceptedFr": [
+      "les proches",
+      "proches",
+      "êtres chers"
+    ],
+    "distractorsPl": [
+      "znajomi",
+      "ludzie",
+      "rodzice"
+    ],
+    "distractorsFr": [
+      "connaissances",
+      "gens",
+      "parents"
+    ]
+  },
+  {
+    "id": "cult-5-13",
+    "date": "2026-11-05",
+    "pl": "wspominać",
+    "fr": "se souvenir de, évoquer la mémoire de",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "wspominać",
+      "wspominac"
+    ],
+    "acceptedFr": [
+      "se souvenir de",
+      "évoquer le souvenir de",
+      "commémorer"
+    ],
+    "distractorsPl": [
+      "zapominać",
+      "odwiedzać",
+      "myśleć o"
+    ],
+    "distractorsFr": [
+      "oublier",
+      "visiter",
+      "penser à"
+    ]
+  },
+  {
+    "id": "cult-5-14",
+    "date": "2026-11-05",
+    "pl": "żyć",
+    "fr": "vivre, être en vie",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "żyć",
+      "zyc"
+    ],
+    "acceptedFr": [
+      "vivre",
+      "être en vie"
+    ],
+    "distractorsPl": [
+      "być",
+      "mieszkać",
+      "umierać"
+    ],
+    "distractorsFr": [
+      "être",
+      "habiter",
+      "mourir"
+    ]
+  },
+  {
+    "id": "cult-5-15",
+    "date": "2026-11-05",
+    "pl": "którzy już nie żyją",
+    "fr": "qui ne vivent plus, les défunts",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "którzy już nie żyją",
+      "ktorzy juz nie zyja"
+    ],
+    "acceptedFr": [
+      "qui ne vivent plus",
+      "les défunts",
+      "qui sont décédés"
+    ],
+    "distractorsPl": [
+      "którzy żyją w Polsce",
+      "którzy są chorzy",
+      "którzy mieszkają daleko"
+    ],
+    "distractorsFr": [
+      "qui vivent en Pologne",
+      "qui sont malades",
+      "qui habitent loin"
+    ]
+  },
+  {
+    "id": "cult-5-16",
+    "date": "2026-11-05",
+    "pl": "dzień wolny od pracy",
+    "fr": "jour férié, jour chômé",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "dzień wolny od pracy",
+      "dzien wolny od pracy",
+      "dzień wolny"
+    ],
+    "acceptedFr": [
+      "jour férié",
+      "jour chômé",
+      "jour de congé"
+    ],
+    "distractorsPl": [
+      "dzień roboczy",
+      "dzień świąteczny",
+      "weekend"
+    ],
+    "distractorsFr": [
+      "jour ouvré",
+      "jour de fête",
+      "week-end"
+    ]
+  },
+  {
+    "id": "cult-5-17",
+    "date": "2026-11-05",
+    "pl": "światło",
+    "fr": "lumière",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "światło",
+      "swiatlo"
+    ],
+    "acceptedFr": [
+      "lumière",
+      "la lumière"
+    ],
+    "distractorsPl": [
+      "ogień",
+      "znicz",
+      "cień"
+    ],
+    "distractorsFr": [
+      "feu",
+      "lumignon",
+      "ombre"
+    ]
+  },
+  {
+    "id": "cult-5-18",
+    "date": "2026-11-05",
+    "pl": "światła",
+    "fr": "lumières, les feux (pluriel)",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "światła",
+      "swiatla"
+    ],
+    "acceptedFr": [
+      "lumières",
+      "les lumières"
+    ],
+    "distractorsPl": [
+      "znicze",
+      "cienie",
+      "świece"
+    ],
+    "distractorsFr": [
+      "lumignons",
+      "ombres",
+      "bougies"
+    ]
+  },
+  {
+    "id": "cult-5-19",
+    "date": "2026-11-05",
+    "pl": "Andrzejki",
+    "fr": "fête de la Sainte-André (tradition du 30 novembre)",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "Andrzejki"
+    ],
+    "acceptedFr": [
+      "la Sainte-André",
+      "fête de la Sainte-André",
+      "Andrzejki"
+    ],
+    "distractorsPl": [
+      "Dzień Wszystkich Świętych",
+      "Mikołajki",
+      "Sylwester"
+    ],
+    "distractorsFr": [
+      "La Toussaint",
+      "Saint-Nicolas",
+      "Saint-Sylvestre"
+    ]
+  },
+  {
+    "id": "cult-5-20",
+    "date": "2026-11-05",
+    "pl": "trzydziestego listopada",
+    "fr": "le trente novembre (génitif de date)",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "trzydziestego listopada",
+      "30 listopada"
+    ],
+    "acceptedFr": [
+      "le trente novembre",
+      "le 30 novembre",
+      "30 novembre"
+    ],
+    "distractorsPl": [
+      "pierwszego listopada",
+      "trzydziestego pierwszego grudnia",
+      "trzynastego listopada"
+    ],
+    "distractorsFr": [
+      "le 1er novembre",
+      "le 31 décembre",
+      "le 13 novembre"
+    ]
+  },
+  {
+    "id": "cult-5-21",
+    "date": "2026-11-05",
+    "pl": "impreza",
+    "fr": "fête, soirée, événement festif",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "impreza"
+    ],
+    "acceptedFr": [
+      "fête",
+      "soirée",
+      "la fête",
+      "une soirée"
+    ],
+    "distractorsPl": [
+      "spotkanie",
+      "praca",
+      "obiad"
+    ],
+    "distractorsFr": [
+      "réunion",
+      "travail",
+      "déjeuner"
+    ]
+  },
+  {
+    "id": "cult-5-22",
+    "date": "2026-11-05",
+    "pl": "dawniej",
+    "fr": "autrefois, dans le passé",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "dawniej"
+    ],
+    "acceptedFr": [
+      "autrefois",
+      "dans le passé",
+      "jadis"
+    ],
+    "distractorsPl": [
+      "dzisiaj",
+      "teraz",
+      "wkrótce"
+    ],
+    "distractorsFr": [
+      "aujourd'hui",
+      "maintenant",
+      "bientôt"
+    ]
+  },
+  {
+    "id": "cult-5-23",
+    "date": "2026-11-05",
+    "pl": "wróżyć",
+    "fr": "prédire l'avenir, dire la bonne aventure",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "wróżyć",
+      "wrozyc"
+    ],
+    "acceptedFr": [
+      "prédire l'avenir",
+      "dire la bonne aventure",
+      "diviner"
+    ],
+    "distractorsPl": [
+      "zgadywać",
+      "wierzyć",
+      "marzyć"
+    ],
+    "distractorsFr": [
+      "deviner",
+      "croire",
+      "rêver"
+    ]
+  },
+  {
+    "id": "cult-5-24",
+    "date": "2026-11-05",
+    "pl": "wróżba",
+    "fr": "prédiction, rituel divinatoire",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "wróżba",
+      "wrozba"
+    ],
+    "acceptedFr": [
+      "prédiction",
+      "divination",
+      "rituel divinatoire"
+    ],
+    "distractorsPl": [
+      "zabawa",
+      "tradycja",
+      "święto"
+    ],
+    "distractorsFr": [
+      "jeu",
+      "tradition",
+      "fête"
+    ]
+  },
+  {
+    "id": "cult-5-25",
+    "date": "2026-11-05",
+    "pl": "wosk",
+    "fr": "la cire (d'abeille ou de bougie)",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "wosk"
+    ],
+    "acceptedFr": [
+      "la cire",
+      "cire"
+    ],
+    "distractorsPl": [
+      "woda",
+      "olej",
+      "papier"
+    ],
+    "distractorsFr": [
+      "eau",
+      "huile",
+      "papier"
+    ]
+  },
+  {
+    "id": "cult-5-26",
+    "date": "2026-11-05",
+    "pl": "lanie wosku przez dziurkę od klucza",
+    "fr": "le coulage de cire à travers le trou de serrure (coutume d'Andrzejki)",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "lanie wosku przez dziurkę od klucza",
+      "lanie wosku"
+    ],
+    "acceptedFr": [
+      "le coulage de cire",
+      "coulage de cire à travers le trou de clé",
+      "lanie wosku"
+    ],
+    "distractorsPl": [
+      "ustawianie butów",
+      "zapalanie zniczy",
+      "wróżenie z kart"
+    ],
+    "distractorsFr": [
+      "l'alignement des chaussures",
+      "l'allumage des bougies",
+      "la divination par les cartes"
+    ]
+  },
+  {
+    "id": "cult-5-27",
+    "date": "2026-11-05",
+    "pl": "dziurka od klucza",
+    "fr": "trou de serrure, trou de la clé",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "dziurka od klucza"
+    ],
+    "acceptedFr": [
+      "trou de serrure",
+      "trou de clé",
+      "le trou de la serrure"
+    ],
+    "distractorsPl": [
+      "drzwi",
+      "zamek",
+      "klucz"
+    ],
+    "distractorsFr": [
+      "porte",
+      "serrure",
+      "clé"
+    ]
+  },
+  {
+    "id": "cult-5-28",
+    "date": "2026-11-05",
+    "pl": "cień",
+    "fr": "ombre, silhouette projetée",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "cień",
+      "cien"
+    ],
+    "acceptedFr": [
+      "ombre",
+      "l'ombre",
+      "silhouette"
+    ],
+    "distractorsPl": [
+      "światło",
+      "wosk",
+      "postać"
+    ],
+    "distractorsFr": [
+      "lumière",
+      "cire",
+      "figure"
+    ]
+  },
+  {
+    "id": "cult-5-29",
+    "date": "2026-11-05",
+    "pl": "zgadnąć",
+    "fr": "deviner",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "zgadnąć",
+      "zgadnac"
+    ],
+    "acceptedFr": [
+      "deviner"
+    ],
+    "distractorsPl": [
+      "wiedzieć",
+      "próbować",
+      "wierzyć"
+    ],
+    "distractorsFr": [
+      "savoir",
+      "essayer",
+      "croire"
+    ]
+  },
+  {
+    "id": "cult-5-30",
+    "date": "2026-11-05",
+    "pl": "wierzyć",
+    "fr": "croire",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "wierzyć",
+      "wierzyc"
+    ],
+    "acceptedFr": [
+      "croire"
+    ],
+    "distractorsPl": [
+      "wiedzieć",
+      "myśleć",
+      "widzieć"
+    ],
+    "distractorsFr": [
+      "savoir",
+      "penser",
+      "voir"
+    ]
+  },
+  {
+    "id": "cult-5-31",
+    "date": "2026-11-05",
+    "pl": "dotknąć",
+    "fr": "toucher, effleurer",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "dotknąć",
+      "dotknac"
+    ],
+    "acceptedFr": [
+      "toucher",
+      "effleurer"
+    ],
+    "distractorsPl": [
+      "otworzyć",
+      "zamknąć",
+      "widzieć"
+    ],
+    "distractorsFr": [
+      "ouvrir",
+      "fermer",
+      "voir"
+    ]
+  },
+  {
+    "id": "cult-5-32",
+    "date": "2026-11-05",
+    "pl": "drzwi",
+    "fr": "la porte (pluriel tantum en polonais)",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "drzwi"
+    ],
+    "acceptedFr": [
+      "la porte",
+      "porte",
+      "les portes"
+    ],
+    "distractorsPl": [
+      "okno",
+      "pokój",
+      "ściana"
+    ],
+    "distractorsFr": [
+      "fenêtre",
+      "chambre",
+      "mur"
+    ]
+  },
+  {
+    "id": "cult-5-33",
+    "date": "2026-11-05",
+    "pl": "wyjść za mąż",
+    "fr": "se marier (pour une femme)",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "wyjść za mąż",
+      "wyjsc za maz"
+    ],
+    "acceptedFr": [
+      "se marier",
+      "se marier (femme)",
+      "épouser un homme"
+    ],
+    "distractorsPl": [
+      "ożenić się",
+      "mieć męża",
+      "poznać męża"
+    ],
+    "distractorsFr": [
+      "se marier (homme)",
+      "avoir un mari",
+      "rencontrer un mari"
+    ]
+  },
+  {
+    "id": "cult-5-34",
+    "date": "2026-11-05",
+    "pl": "ożenić się",
+    "fr": "se marier (pour un homme)",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "ożenić się",
+      "ozenic sie"
+    ],
+    "acceptedFr": [
+      "se marier",
+      "se marier (homme)",
+      "épouser une femme"
+    ],
+    "distractorsPl": [
+      "wyjść za mąż",
+      "mieć żonę",
+      "szukać żony"
+    ],
+    "distractorsFr": [
+      "se marier (femme)",
+      "avoir une femme",
+      "chercher une femme"
+    ]
+  },
+  {
+    "id": "cult-5-35",
+    "date": "2026-11-05",
+    "pl": "zabawa",
+    "fr": "fête, divertissement, jeu",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "zabawa"
+    ],
+    "acceptedFr": [
+      "fête",
+      "divertissement",
+      "jeu",
+      "amusement"
+    ],
+    "distractorsPl": [
+      "praca",
+      "nauka",
+      "spotkanie"
+    ],
+    "distractorsFr": [
+      "travail",
+      "apprentissage",
+      "réunion"
+    ]
   }
 ];
 
@@ -9354,6 +11157,549 @@ const CASE_CHALLENGES = [
         note: "Neutre / Pluriel non-viril (-e)"
       }
     ]
+  },
+  // ------------------------------------------
+  // NOUVEAUX DÉFIS DU 05/11/2026 (ACCUSATIF, LIEUX, TEMPS, NÉGATION)
+  // ------------------------------------------
+  {
+    "id": "case-b-42",
+    "date": "2026-11-05",
+    "caseName": "Biernik",
+    "caseLabelFr": "Accusatif (Biernik)",
+    "caseBadgeClass": "case-biernik",
+    "sentenceBefore": "We wtorek ona nosi niebiesk",
+    "sentenceAfter": " sukienkę i białe buty.",
+    "gapWord": "niebieska",
+    "gapWordMeaning": "bleue",
+    "targetType": "adjective",
+    "isPlural": false,
+    "gender": "adjectif féminin singulier",
+    "correctEnding": "-ą",
+    "fullCorrectWord": "niebieską",
+    "fullSentence": "We wtorek ona nosi niebieską sukienkę i białe buty.",
+    "translationFr": "Le mardi, elle porte une robe bleue et des chaussures blanches.",
+    "ruleExplanation": "Le verbe <strong>nosić</strong> (porter un vêtement) régit l'<strong>Accusatif</strong> (Biernik). À l'accusatif féminin singulier, l'adjectif prend la terminaison <strong>-ą</strong> : <em>niebieska sukienka</em> &rarr; <strong>niebieską sukienkę</strong>.",
+    "options": [
+      {
+        "ending": "-ą",
+        "word": "niebieską",
+        "isCorrect": true,
+        "note": "Accusatif singulier féminin (-ą)"
+      },
+      {
+        "ending": "-a",
+        "word": "niebieska",
+        "isCorrect": false,
+        "note": "Nominatif singulier (-a)"
+      },
+      {
+        "ending": "-ej",
+        "word": "niebieskiej",
+        "isCorrect": false,
+        "note": "Génitif / Locatif singulier (-ej)"
+      },
+      {
+        "ending": "-e",
+        "word": "niebieskie",
+        "isCorrect": false,
+        "note": "Neutre / Pluriel non-viril (-e)"
+      }
+    ]
+  },
+  {
+    "id": "case-b-43",
+    "date": "2026-11-05",
+    "caseName": "Biernik",
+    "caseLabelFr": "Accusatif (Biernik)",
+    "caseBadgeClass": "case-biernik",
+    "sentenceBefore": "W poniedziałek noszę czarne spodnie i czerwony swet",
+    "sentenceAfter": ".",
+    "gapWord": "sweter",
+    "gapWordMeaning": "pull / pull-over",
+    "targetType": "noun",
+    "isPlural": false,
+    "gender": "nom masculin inanimé singulier",
+    "correctEnding": "-er",
+    "fullCorrectWord": "sweter",
+    "fullSentence": "W poniedziałek noszę czarne spodnie i czerwony sweter.",
+    "translationFr": "Le lundi, je porte un pantalon noir et un pull rouge.",
+    "ruleExplanation": "Pour les noms masculins inanimés (objets, vêtements comme <em>sweter, płaszcz, szalik</em>), l'<strong>Accusatif singulier est identique au Nominatif</strong> : <em>sweter</em> &rarr; <strong>sweter</strong>.",
+    "options": [
+      {
+        "ending": "-er",
+        "word": "sweter",
+        "isCorrect": true,
+        "note": "Accusatif inanimé identique au nominatif"
+      },
+      {
+        "ending": "-ra",
+        "word": "swetra",
+        "isCorrect": false,
+        "note": "Génitif singulier (-a)"
+      },
+      {
+        "ending": "-rem",
+        "word": "swetrem",
+        "isCorrect": false,
+        "note": "Instrumental singulier (-em)"
+      },
+      {
+        "ending": "-rze",
+        "word": "swetrze",
+        "isCorrect": false,
+        "note": "Locatif singulier (-e)"
+      }
+    ]
+  },
+  {
+    "id": "case-b-44",
+    "date": "2026-11-05",
+    "caseName": "Biernik",
+    "caseLabelFr": "Accusatif (Biernik)",
+    "caseBadgeClass": "case-biernik",
+    "sentenceBefore": "Ona nosi czarne spodnie i biał",
+    "sentenceAfter": " buty.",
+    "gapWord": "białe",
+    "gapWordMeaning": "blanches",
+    "targetType": "adjective",
+    "isPlural": true,
+    "gender": "adjectif pluriel non-viril",
+    "correctEnding": "-e",
+    "fullCorrectWord": "białe",
+    "fullSentence": "Ona nosi czarne spodnie i białe buty.",
+    "translationFr": "Elle porte un pantalon noir et des chaussures blanches.",
+    "ruleExplanation": "Pour les objets au pluriel non-viril (comme les chaussures <em>buty</em>), l'<strong>Accusatif pluriel est identique au Nominatif pluriel</strong> : terminaison en <strong>-e</strong> pour l'adjectif : <strong>białe buty</strong>.",
+    "options": [
+      {
+        "ending": "-e",
+        "word": "białe",
+        "isCorrect": true,
+        "note": "Accusatif pluriel non-viril (-e)"
+      },
+      {
+        "ending": "-ych",
+        "word": "białych",
+        "isCorrect": false,
+        "note": "Génitif / Locatif pluriel (-ych)"
+      },
+      {
+        "ending": "-a",
+        "word": "biała",
+        "isCorrect": false,
+        "note": "Féminin singulier (-a)"
+      },
+      {
+        "ending": "-ymi",
+        "word": "białymi",
+        "isCorrect": false,
+        "note": "Instrumental pluriel (-ymi)"
+      }
+    ]
+  },
+  {
+    "id": "case-m-35",
+    "date": "2026-11-05",
+    "caseName": "Miejscownik",
+    "caseLabelFr": "Locatif (Miejscownik)",
+    "caseBadgeClass": "case-miejscownik",
+    "sentenceBefore": "W środę mamy spotkanie o trzeci",
+    "sentenceAfter": ".",
+    "gapWord": "trzecia",
+    "gapWordMeaning": "troisième (heure)",
+    "targetType": "adjective",
+    "isPlural": false,
+    "gender": "ordinal féminin singulier",
+    "correctEnding": "-ej",
+    "fullCorrectWord": "trzeciej",
+    "fullSentence": "W środę mamy spotkanie o trzeciej.",
+    "translationFr": "Le mercredi, nous avons un rendez-vous à trois heures.",
+    "ruleExplanation": "Pour exprimer l'heure à laquelle un événement a lieu, on emploie la préposition <strong>o</strong> + le <strong>Locatif de l'adjectif ordinal féminin</strong> (s'accordant avec le mot sous-entendu <em>godzina</em>) : terminaison <strong>-ej</strong> (<em>o pierwszej, o drugiej, o trzeciej</em>).",
+    "options": [
+      {
+        "ending": "-ej",
+        "word": "trzeciej",
+        "isCorrect": true,
+        "note": "Locatif temporel des heures après 'o' (-ej)"
+      },
+      {
+        "ending": "-a",
+        "word": "trzecia",
+        "isCorrect": false,
+        "note": "Nominatif singulier (-a)"
+      },
+      {
+        "ending": "-ą",
+        "word": "trzecią",
+        "isCorrect": false,
+        "note": "Accusatif / Instrumental (-ą)"
+      },
+      {
+        "ending": "-e",
+        "word": "trzecie",
+        "isCorrect": false,
+        "note": "Neutre singulier (-e)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-38",
+    "date": "2026-11-05",
+    "caseName": "Dopelniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Możesz dzwonić do Mari",
+    "sentenceAfter": "? Chcę ją spotkać w piątek.",
+    "gapWord": "Maria",
+    "gapWordMeaning": "Marie (Maria)",
+    "targetType": "noun",
+    "isPlural": false,
+    "gender": "nom propre féminin singulier",
+    "correctEnding": "-i",
+    "fullCorrectWord": "Marii",
+    "fullSentence": "Możesz dzwonić do Marii? Chcę ją spotkać w piątek.",
+    "translationFr": "Tu peux appeler Marie ? Je veux la rencontrer vendredi.",
+    "ruleExplanation": "La préposition de direction <strong>do</strong> (vers / à) exige systématiquement le <strong>Génitif</strong>. Les prénoms féminins en <em>-ia</em> prennent la terminaison <strong>-ii</strong> : <em>Maria</em> &rarr; <strong>do Marii</strong>.",
+    "options": [
+      {
+        "ending": "-i",
+        "word": "Marii",
+        "isCorrect": true,
+        "note": "Génitif singulier féminin après 'do' (-ii)"
+      },
+      {
+        "ending": "-ę",
+        "word": "Marię",
+        "isCorrect": false,
+        "note": "Accusatif singulier (-ę)"
+      },
+      {
+        "ending": "-ą",
+        "word": "Marią",
+        "isCorrect": false,
+        "note": "Instrumental singulier (-ą)"
+      },
+      {
+        "ending": "-a",
+        "word": "Maria",
+        "isCorrect": false,
+        "note": "Nominatif de base (-a)"
+      }
+    ]
+  },
+  {
+    "id": "case-b-45",
+    "date": "2026-11-05",
+    "caseName": "Biernik",
+    "caseLabelFr": "Accusatif (Biernik)",
+    "caseBadgeClass": "case-biernik",
+    "sentenceBefore": "Bardzo lubię Annę i chcę ",
+    "sentenceAfter": " spotkać w piątek.",
+    "gapWord": "ją",
+    "gapWordMeaning": "la (pronom personnel COD d'ona)",
+    "targetType": "adjective",
+    "isPlural": false,
+    "gender": "pronom personnel féminin COD",
+    "correctEnding": "-ą",
+    "fullCorrectWord": "ją",
+    "fullSentence": "Bardzo lubię Annę i chcę ją spotkać w piątek.",
+    "translationFr": "J'aime beaucoup Anna et je veux la rencontrer vendredi.",
+    "ruleExplanation": "Le verbe <em>spotkać</em> (rencontrer) demande un COD à l'<strong>Accusatif</strong> (Biernik). Le pronom personnel féminin <em>ona</em> (elle) devient <strong>ją</strong> à l'accusatif (forme courte non accentuée).",
+    "options": [
+      {
+        "ending": "-ą",
+        "word": "ją",
+        "isCorrect": true,
+        "note": "Pronom personnel féminin COD à l'accusatif (ją = la)"
+      },
+      {
+        "ending": "-ej",
+        "word": "jej",
+        "isCorrect": false,
+        "note": "Génitif / Datif (jej)"
+      },
+      {
+        "ending": "-a",
+        "word": "ona",
+        "isCorrect": false,
+        "note": "Pronom sujet nominatif"
+      },
+      {
+        "ending": "-o",
+        "word": "jego",
+        "isCorrect": false,
+        "note": "Masculin (le)"
+      }
+    ]
+  },
+  {
+    "id": "case-m-36",
+    "date": "2026-11-05",
+    "caseName": "Miejscownik",
+    "caseLabelFr": "Locatif (Miejscownik)",
+    "caseBadgeClass": "case-miejscownik",
+    "sentenceBefore": "W Dzień Wszystkich Świętych ludzie kładą kwiaty na grob",
+    "sentenceAfter": " swoich bliskich.",
+    "gapWord": "groby",
+    "gapWordMeaning": "tombes",
+    "targetType": "noun",
+    "isPlural": true,
+    "gender": "nom masculin inanimé pluriel",
+    "correctEnding": "-ach",
+    "fullCorrectWord": "grobach",
+    "fullSentence": "W Dzień Wszystkich Świętych ludzie kładą kwiaty na grobach swoich bliskich.",
+    "translationFr": "À la Toussaint, les gens posent des fleurs sur les tombes de leurs proches.",
+    "ruleExplanation": "La préposition de localisation <strong>na</strong> (sur) régit le <strong>Locatif</strong> (Miejscownik). Au locatif pluriel, <strong>tous les genres</strong> prennent uniformément la terminaison <strong>-ach</strong> : <em>grób / groby</em> &rarr; <strong>na grobach</strong>.",
+    "options": [
+      {
+        "ending": "-ach",
+        "word": "grobach",
+        "isCorrect": true,
+        "note": "Locatif pluriel régulier universel (-ach)"
+      },
+      {
+        "ending": "-ami",
+        "word": "grobami",
+        "isCorrect": false,
+        "note": "Instrumental pluriel (-ami)"
+      },
+      {
+        "ending": "-om",
+        "word": "grobom",
+        "isCorrect": false,
+        "note": "Datif pluriel (-om)"
+      },
+      {
+        "ending": "-ów",
+        "word": "grobów",
+        "isCorrect": false,
+        "note": "Génitif pluriel (-ów)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-39",
+    "date": "2026-11-05",
+    "caseName": "Dopelniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Ludzie kładą kwiaty na grobach swo",
+    "sentenceAfter": " bliskich.",
+    "gapWord": "swoi",
+    "gapWordMeaning": "leurs (propres)",
+    "targetType": "adjective",
+    "isPlural": true,
+    "gender": "possessif réfléchi pluriel",
+    "correctEnding": "-ich",
+    "fullCorrectWord": "swoich",
+    "fullSentence": "Ludzie kładą kwiaty na grobach swoich bliskich.",
+    "translationFr": "Les gens posent des fleurs sur les tombes de leurs proches.",
+    "ruleExplanation": "Le complément de possession 'de leurs proches' est au <strong>Génitif pluriel</strong>. L'adjectif possessif réfléchi prend la terminaison <strong>-ich</strong> : <em>swój</em> &rarr; <strong>swoich bliskich</strong>.",
+    "options": [
+      {
+        "ending": "-ich",
+        "word": "swoich",
+        "isCorrect": true,
+        "note": "Génitif pluriel réfléchi (-ich)"
+      },
+      {
+        "ending": "-im",
+        "word": "swoim",
+        "isCorrect": false,
+        "note": "Locatif masculin singulier"
+      },
+      {
+        "ending": "-imi",
+        "word": "swoimi",
+        "isCorrect": false,
+        "note": "Instrumental pluriel"
+      },
+      {
+        "ending": "-e",
+        "word": "swoje",
+        "isCorrect": false,
+        "note": "Accusatif non-viril"
+      }
+    ]
+  },
+  {
+    "id": "case-d-40",
+    "date": "2026-11-05",
+    "caseName": "Dopelniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Dzień Wszystkich Świętych obchodzimy pierwsz",
+    "sentenceAfter": " listopada.",
+    "gapWord": "pierwszy",
+    "gapWordMeaning": "premier (jour)",
+    "targetType": "adjective",
+    "isPlural": false,
+    "gender": "ordinal masculin singulier",
+    "correctEnding": "-ego",
+    "fullCorrectWord": "pierwszego",
+    "fullSentence": "Dzień Wszystkich Świętych obchodzimy pierwszego listopada.",
+    "translationFr": "Nous célébrons la Toussaint le premier novembre.",
+    "ruleExplanation": "Pour exprimer une date en polonais, le quantième et le mois se mettent systématiquement au <strong>Génitif temporel</strong> : l'adjectif ordinal masculin prend la terminaison <strong>-ego</strong> : <em>pierwszy</em> &rarr; <strong>pierwszego listopada</strong>.",
+    "options": [
+      {
+        "ending": "-ego",
+        "word": "pierwszego",
+        "isCorrect": true,
+        "note": "Génitif de date masculin (-ego)"
+      },
+      {
+        "ending": "-y",
+        "word": "pierwszy",
+        "isCorrect": false,
+        "note": "Nominatif de base (-y)"
+      },
+      {
+        "ending": "-ym",
+        "word": "pierwszym",
+        "isCorrect": false,
+        "note": "Locatif / Instrumental (-ym)"
+      },
+      {
+        "ending": "-emu",
+        "word": "pierwszemu",
+        "isCorrect": false,
+        "note": "Datif singulier (-emu)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-41",
+    "date": "2026-11-05",
+    "caseName": "Dopelniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Andrzejki obchodzimy trzydziest",
+    "sentenceAfter": " listopada.",
+    "gapWord": "trzydziesty",
+    "gapWordMeaning": "trentième (jour)",
+    "targetType": "adjective",
+    "isPlural": false,
+    "gender": "ordinal masculin singulier",
+    "correctEnding": "-ego",
+    "fullCorrectWord": "trzydziestego",
+    "fullSentence": "Andrzejki obchodzimy trzydziestego listopada.",
+    "translationFr": "Nous fêtons la Sainte-André le trente novembre.",
+    "ruleExplanation": "Comme pour toutes les dates en polonais, on utilise le <strong>Génitif</strong> : <em>trzydziesty</em> (30e) prend la désinence <strong>-ego</strong> : <strong>trzydziestego listopada</strong>.",
+    "options": [
+      {
+        "ending": "-ego",
+        "word": "trzydziestego",
+        "isCorrect": true,
+        "note": "Génitif de date masculin (-ego)"
+      },
+      {
+        "ending": "-y",
+        "word": "trzydziesty",
+        "isCorrect": false,
+        "note": "Nominatif singulier (-y)"
+      },
+      {
+        "ending": "-ym",
+        "word": "trzydziestym",
+        "isCorrect": false,
+        "note": "Locatif / Instrumental (-ym)"
+      },
+      {
+        "ending": "-a",
+        "word": "trzydziesta",
+        "isCorrect": false,
+        "note": "Féminin singulier (-a)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-42",
+    "date": "2026-11-05",
+    "caseName": "Dopelniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Na cmentarzach jest dużo ludz",
+    "sentenceAfter": " i pięknych świateł.",
+    "gapWord": "ludzie",
+    "gapWordMeaning": "gens / personnes",
+    "targetType": "noun",
+    "isPlural": true,
+    "gender": "nom masculin personnel pluriel",
+    "correctEnding": "-i",
+    "fullCorrectWord": "ludzi",
+    "fullSentence": "Na cmentarzach jest dużo ludzi i pięknych świateł.",
+    "translationFr": "Dans les cimetières, il y a beaucoup de monde et de belles lumières.",
+    "ruleExplanation": "L'adverbe de quantité <strong>dużo</strong> (beaucoup de) régit toujours le <strong>Génitif pluriel</strong>. Le nom irrégulier <em>ludzie</em> (les gens) prend la forme de génitif pluriel <strong>ludzi</strong>.",
+    "options": [
+      {
+        "ending": "-i",
+        "word": "ludzi",
+        "isCorrect": true,
+        "note": "Génitif pluriel irrégulier après dużo (ludzi)"
+      },
+      {
+        "ending": "-ie",
+        "word": "ludzie",
+        "isCorrect": false,
+        "note": "Nominatif pluriel (ludzie)"
+      },
+      {
+        "ending": "-iom",
+        "word": "ludziom",
+        "isCorrect": false,
+        "note": "Datif pluriel (-om)"
+      },
+      {
+        "ending": "-iami",
+        "word": "ludziami",
+        "isCorrect": false,
+        "note": "Forme incorrecte"
+      }
+    ]
+  },
+  {
+    "id": "case-pl-d-25",
+    "date": "2026-11-05",
+    "caseName": "Dopelniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Na cmentarzu zapalono dużo piękn",
+    "sentenceAfter": " świateł.",
+    "gapWord": "piękne",
+    "gapWordMeaning": "belles",
+    "targetType": "adjective",
+    "isPlural": true,
+    "gender": "adjectif pluriel",
+    "correctEnding": "-ych",
+    "fullCorrectWord": "pięknych",
+    "fullSentence": "Na cmentarzu zapalono dużo pięknych świateł.",
+    "translationFr": "Au cimetière, on a allumé beaucoup de belles lumières.",
+    "ruleExplanation": "Après <strong>dużo</strong>, l'adjectif qualificatif pluriel se décline au <strong>Génitif pluriel</strong> avec la désinence <strong>-ych</strong> : <em>piękne światła</em> &rarr; <strong>pięknych świateł</strong> (avec e mobile pour <em>światło</em> &rarr; <em>świateł</em>).",
+    "options": [
+      {
+        "ending": "-ych",
+        "word": "pięknych",
+        "isCorrect": true,
+        "note": "Génitif pluriel de l'adjectif après dużo (-ych)"
+      },
+      {
+        "ending": "-e",
+        "word": "piękne",
+        "isCorrect": false,
+        "note": "Nominatif pluriel (-e)"
+      },
+      {
+        "ending": "-ymi",
+        "word": "pięknymi",
+        "isCorrect": false,
+        "note": "Instrumental pluriel (-ymi)"
+      },
+      {
+        "ending": "-ym",
+        "word": "pięknym",
+        "isCorrect": false,
+        "note": "Datif pluriel (-ym)"
+      }
+    ]
   }
 ];
 
@@ -11250,6 +13596,165 @@ const POSSESSIVE_CHALLENGES = [
         word: "Swoja",
         isCorrect: false,
         note: "Réfléchi"
+      }
+    ]
+  },
+  // ------------------------------------------
+  // NOUVEAUX DÉFIS DU 05/11/2026 (POSSESSIFS & DÉMONSTRATIFS)
+  // ------------------------------------------
+  {
+    "id": "poss-l1-42",
+    "date": "2026-11-05",
+    "level": 1,
+    "category": "2nd-sg",
+    "categoryLabelFr": "2ème pers. sg (Ton / Ta / Tes)",
+    "targetCase": "Mianownik",
+    "caseLabelFr": "Nominatif",
+    "nounContext": "ulubione zwierzę (nom neutre singulier) - possesseur ty",
+    "targetMeaning": "ton",
+    "sentenceBefore": "Jakie jest ",
+    "sentenceAfter": " ulubione zwierzę?",
+    "gapWord": "twoje",
+    "fullSentence": "Jakie jest twoje ulubione zwierzę?",
+    "translationFr": "Quel est ton animal préféré ?",
+    "ruleExplanation": "Le nom <em>zwierzę</em> (animal) est de genre <strong>neutre</strong> en polonais. Le possessif de 2ème personne du singulier au nominatif neutre est donc <strong>twoje</strong> (masculin : <em>twój</em>, féminin : <em>twoja</em>).",
+    "options": [
+      {
+        "word": "twoje",
+        "isCorrect": true,
+        "note": "Nominatif neutre singulier"
+      },
+      {
+        "word": "twój",
+        "isCorrect": false,
+        "note": "Nominatif masculin singulier"
+      },
+      {
+        "word": "twoja",
+        "isCorrect": false,
+        "note": "Nominatif féminin singulier"
+      },
+      {
+        "word": "twoi",
+        "isCorrect": false,
+        "note": "Pluriel viril"
+      }
+    ]
+  },
+  {
+    "id": "poss-l1-43",
+    "date": "2026-11-05",
+    "level": 1,
+    "category": "1st-sg",
+    "categoryLabelFr": "1ère pers. sg (Mon / Ma / Mes)",
+    "targetCase": "Mianownik",
+    "caseLabelFr": "Nominatif",
+    "nounContext": "ulubione zwierzęta (nom pluriel non-viril) - possesseur ja",
+    "targetMeaning": "mes",
+    "sentenceBefore": "",
+    "sentenceAfter": " ulubione zwierzęta to moje psy.",
+    "gapWord": "Moje",
+    "fullSentence": "Moje ulubione zwierzęta to moje psy.",
+    "translationFr": "Mes animaux préférés sont mes chiens.",
+    "ruleExplanation": "Au pluriel non-viril (animaux, objets, femmes), le possessif de 1ère personne au nominatif prend la désinence <strong>-e</strong> : <strong>moje</strong> (<em>moje zwierzęta, moje psy</em>).",
+    "options": [
+      {
+        "word": "Moje",
+        "isCorrect": true,
+        "note": "Nominatif pluriel non-viril (moje zwierzęta)"
+      },
+      {
+        "word": "Moi",
+        "isCorrect": false,
+        "note": "Pluriel viril (moi bracia)"
+      },
+      {
+        "word": "Mój",
+        "isCorrect": false,
+        "note": "Masculin singulier"
+      },
+      {
+        "word": "Moja",
+        "isCorrect": false,
+        "note": "Féminin singulier"
+      }
+    ]
+  },
+  {
+    "id": "poss-l2-26",
+    "date": "2026-11-05",
+    "level": 2,
+    "category": "reflexive",
+    "categoryLabelFr": "Réfléchi (swój - le sien propre)",
+    "targetCase": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "nounContext": "bliscy (nom pluriel au génitif) - possesseur le sujet ludzie (ils)",
+    "targetMeaning": "de leurs propres (proches)",
+    "sentenceBefore": "Ludzie kładą kwiaty na grobach ",
+    "sentenceAfter": " bliskich.",
+    "gapWord": "swoich",
+    "fullSentence": "Ludzie kładą kwiaty na grobach swoich bliskich.",
+    "translationFr": "Les gens posent des fleurs sur les tombes de leurs proches.",
+    "ruleExplanation": "Lorsque l'objet possédé appartient au sujet de la phrase (<em>ludzie</em>), on utilise obligatoirement le possessif réfléchi <strong>swój</strong>. Au Génitif pluriel, la forme est <strong>swoich</strong>.",
+    "options": [
+      {
+        "word": "swoich",
+        "isCorrect": true,
+        "note": "Génitif pluriel réfléchi (-ich)"
+      },
+      {
+        "word": "ich",
+        "isCorrect": false,
+        "note": "Non-réfléchi (serait les proches d'autres personnes)"
+      },
+      {
+        "word": "swoje",
+        "isCorrect": false,
+        "note": "Nominatif / Accusatif non-viril"
+      },
+      {
+        "word": "swoim",
+        "isCorrect": false,
+        "note": "Locatif / Datif singulier"
+      }
+    ]
+  },
+  {
+    "id": "poss-l1-44",
+    "date": "2026-11-05",
+    "level": 1,
+    "category": "3rd-invariable",
+    "categoryLabelFr": "3ème personne (Invariables : jego, jej, ich)",
+    "targetCase": "Mianownik",
+    "caseLabelFr": "Nominatif",
+    "nounContext": "mąż (nom masculin) - possesseurs młode dziewczyny (elles/one)",
+    "targetMeaning": "leur",
+    "sentenceBefore": "Młode dziewczyny chciały wiedzieć, kto będzie ",
+    "sentenceAfter": " mężem.",
+    "gapWord": "ich",
+    "fullSentence": "Młode dziewczyny chciały wiedzieć, kto będzie ich mężem.",
+    "translationFr": "Les jeunes filles voulaient savoir qui serait leur mari.",
+    "ruleExplanation": "Pour un possesseur au pluriel de 3ème personne (<em>one / dziewczyny</em>), le possessif est l'invariable <strong>ich</strong> (leur / leurs) quel que soit le genre ou le cas.",
+    "options": [
+      {
+        "word": "ich",
+        "isCorrect": true,
+        "note": "Invariable 3e personne pluriel (leur)"
+      },
+      {
+        "word": "jego",
+        "isCorrect": false,
+        "note": "Possesseur singulier masculin"
+      },
+      {
+        "word": "jej",
+        "isCorrect": false,
+        "note": "Possesseur singulier féminin"
+      },
+      {
+        "word": "swój",
+        "isCorrect": false,
+        "note": "Réfléchi inapproprié ici"
       }
     ]
   }

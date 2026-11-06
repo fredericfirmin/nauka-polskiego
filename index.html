@@ -17,7 +17,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192.png">
   
-  <link rel="stylesheet" href="style.css?v=22">
+  <link rel="stylesheet" href="style.css?v=23">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇵🇱</text></svg>">
 </head>
 <body>
@@ -88,7 +88,7 @@
         <label for="lesson-select">📅 Leçon :</label>
         <select id="lesson-select">
           <option value="all">🌟 Toutes les leçons</option>
-          <option value="latest">✨ Dernier cours (03/11)</option>
+          <option value="latest">✨ Dernier cours (05/11)</option>
         </select>
       </div>
 
@@ -136,8 +136,8 @@
       <span style="font-weight:600; font-size:0.85rem; color:var(--text-muted); display:inline-flex; align-items:center; gap:0.25rem;">
         ⚡ Exercices rapides :
       </span>
-      <button class="pill-filter-btn" id="btn-quick-latest" onclick="setLessonFilter('latest')" style="border-color:#fca5a5; background:#fff1f2; color:#991b1b; font-weight:700;" title="S'entraîner uniquement sur les nouveautés du cours du 03/11">
-        ✨ Nouveautés 03/11 (<span id="btn-quick-latest-count">0</span>)
+      <button class="pill-filter-btn" id="btn-quick-latest" onclick="setLessonFilter('latest')" style="border-color:#fca5a5; background:#fff1f2; color:#991b1b; font-weight:700;" title="S'entraîner uniquement sur les nouveautés du cours du 05/11">
+        ✨ Nouveautés 05/11 (<span id="btn-quick-latest-count">0</span>)
       </button>
       <button class="pill-filter-btn" id="btn-quick-mistakes" onclick="setAlgorithmMode('mistakes-only')" style="border-color:#fecaca; color:#b91c1c;" title="S'entraîner uniquement sur les mots ayant fait l'objet d'erreurs">
         🚨 Mes mots à revoir (<span id="btn-quick-mistakes-count">0</span>)
@@ -160,7 +160,7 @@
           <div class="quiz-header" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.85rem; flex-wrap:wrap; gap:0.5rem; border-bottom:1px solid var(--border); padding-bottom:0.75rem;">
             <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;">
               <span class="question-category" id="quiz-category-tag" style="margin-bottom:0;">Catégorie</span>
-              <span class="badge-lesson" id="quiz-lesson-tag">📅 03/11</span>
+              <span class="badge-lesson" id="quiz-lesson-tag">📅 05/11</span>
               <span id="quiz-card-mastery" class="badge-mastery mastery-new">Nouveau</span>
             </div>
             <span class="case-stats-badge">Score : <strong id="quiz-score-val" style="color:var(--text-main);">0 / 0</strong> <button onclick="resetQuizSessionScore()" title="Remettre le score QCM à zéro" style="background:none; border:none; cursor:pointer; padding:0 2px; font-size:0.8rem; opacity:0.65; transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.65'">🔄</button> • Série : <strong id="quiz-streak-val" class="streak-icon">0 🔥</strong></span>
@@ -210,7 +210,7 @@
           <div class="flashcard-face flashcard-front">
             <div style="display:flex; justify-content:center; gap:0.5rem; align-items:center; margin-bottom:0.5rem; flex-wrap:wrap;">
               <span class="question-category" id="fc-front-category">Général</span>
-              <span class="badge-lesson" id="fc-front-lesson">📅 03/11</span>
+              <span class="badge-lesson" id="fc-front-lesson">📅 05/11</span>
               <span id="fc-card-mastery" class="badge-mastery mastery-new">Nouveau</span>
             </div>
             <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;" id="fc-front-lang">
@@ -230,7 +230,7 @@
           <div class="flashcard-face flashcard-back">
             <div style="display:flex; justify-content:center; gap:0.5rem; align-items:center; margin-bottom:0.5rem; flex-wrap:wrap;">
               <span class="question-category" id="fc-back-category">Général</span>
-              <span class="badge-lesson" id="fc-back-lesson">📅 03/11</span>
+              <span class="badge-lesson" id="fc-back-lesson">📅 05/11</span>
             </div>
             <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;" id="fc-back-lang">
               🇫🇷 FRANÇAIS
@@ -269,7 +269,7 @@
         <div class="typing-header" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.85rem; flex-wrap:wrap; gap:0.5rem; border-bottom:1px solid var(--border); padding-bottom:0.75rem;">
           <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;">
             <span class="question-category" id="typing-category" style="margin-bottom:0;">Adjectifs</span>
-            <span class="badge-lesson" id="typing-lesson-tag">📅 03/11</span>
+            <span class="badge-lesson" id="typing-lesson-tag">📅 05/11</span>
             <span id="typing-card-mastery" class="badge-mastery mastery-new">Nouveau</span>
           </div>
           <span class="case-stats-badge">Score : <strong id="typing-score-val" style="color:var(--text-main);">0 / 0</strong> <button onclick="resetTypingSessionScore()" title="Remettre le score d'écriture à zéro" style="background:none; border:none; cursor:pointer; padding:0 2px; font-size:0.8rem; opacity:0.65; transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.65'">🔄</button> • Série : <strong id="typing-streak-val" class="streak-icon">0 🔥</strong></span>
@@ -325,8 +325,8 @@
           <button class="pill-filter-btn" id="case-pill-Dopełniacz" onclick="setCaseCategoryFilter('Dopełniacz')" title="Génitif : négation (nie mam), prépositions bez, do, dla">
             🎯 Dopełniacz - Génitif (<span id="case-count-dopelniacz">0</span>)
           </button>
-          <button class="pill-filter-btn" id="case-pill-latest" onclick="toggleCaseLatestFilter()" title="Afficher uniquement les défis du nouveau cours du 03/11">
-            ✨ Nouveautés 03/11 (<span id="case-count-latest">0</span>)
+          <button class="pill-filter-btn" id="case-pill-latest" onclick="toggleCaseLatestFilter()" title="Afficher uniquement les défis du nouveau cours du 05/11">
+            ✨ Nouveautés 05/11 (<span id="case-count-latest">0</span>)
           </button>
           <button class="pill-filter-btn btn-case-cheatsheet-trigger" id="case-cheatsheet-btn" onclick="openCaseCheatSheetModal()" title="Consulter le tableau aide-mémoire complet des cas polonais">
             📖 Tableau aide-mémoire
@@ -426,8 +426,8 @@
           <button class="pill-filter-btn" id="poss-level-pill-2" onclick="setPossLevelFilter(2)" title="Niveau 2 : Déclinaisons dans les cas (Accusatif, Instrumental, Génitif, Locatif)">
             🔵 Niveau 2 : Déclinaisons & Cas (<span id="poss-count-l2">0</span>)
           </button>
-          <button class="pill-filter-btn" id="poss-pill-latest" onclick="togglePossLatestFilter()" title="Afficher uniquement les défis possessifs introduits le 03/11">
-            ✨ Nouveautés 03/11 (<span id="poss-count-latest">0</span>)
+          <button class="pill-filter-btn" id="poss-pill-latest" onclick="togglePossLatestFilter()" title="Afficher uniquement les défis possessifs introduits le 05/11">
+            ✨ Nouveautés 05/11 (<span id="poss-count-latest">0</span>)
           </button>
           <button class="pill-filter-btn btn-case-cheatsheet-trigger" id="poss-cheatsheet-btn" onclick="openPossCheatSheetModal()" title="Consulter le tableau aide-mémoire complet des possessifs et démonstratifs">
             📖 Tableau aide-mémoire
@@ -544,6 +544,7 @@
                 <label for="card-category-input">Catégorie</label>
                 <select id="card-category-input">
                   <option value="Expressions & Phrases">Expressions & Phrases</option>
+                  <option value="Culture & Traditions">Culture & Traditions</option>
                   <option value="La Famille">La Famille</option>
                   <option value="Vêtements & Mode">Vêtements & Mode</option>
                   <option value="Couleurs">Couleurs</option>
@@ -722,8 +723,8 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="data.js?v=22"></script>
-  <script src="app.js?v=22"></script>
+  <script src="data.js?v=23"></script>
+  <script src="app.js?v=23"></script>
   <script>
     // Gestion du champ 'Autre' catégorie dans le formulaire d'ajout
     const catSelect = document.getElementById("card-category-input");
