@@ -10,7 +10,7 @@
  */
 
 
-const LATEST_IMPORT_DATE = "2026-11-05";
+const LATEST_IMPORT_DATE = "2026-11-09";
 if (typeof window !== "undefined") {
   window.LATEST_IMPORT_DATE = LATEST_IMPORT_DATE;
 }
@@ -6620,6 +6620,1928 @@ const INITIAL_CARDS = [
       "apprentissage",
       "réunion"
     ]
+  },
+  // ==========================================
+  // 18. COURS DU 09/11/2026 (WEEK-END, GÉNITIF, NÉGATION & INDÉPENDANCE)
+  // ==========================================
+  {
+    "id": "phr-9-1",
+    "date": "2026-11-09",
+    "pl": "Jaki miałeś weekend?",
+    "fr": "Comment s'est passé ton week-end ? (Quel week-end as-tu eu ?)",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Jaki miałeś weekend?",
+      "Jaki miales weekend?"
+    ],
+    "acceptedFr": [
+      "Comment s'est passé ton week-end ?",
+      "Comment s'est passe ton week-end ?",
+      "Quel week-end as-tu eu ?"
+    ],
+    "distractorsPl": [
+      "Co robisz w weekend?",
+      "Kiedy masz weekend?",
+      "Gdzie spędzasz weekend?"
+    ],
+    "distractorsFr": [
+      "Que fais-tu ce week-end ?",
+      "Quand as-tu ton week-end ?",
+      "Où passes-tu ton week-end ?"
+    ]
+  },
+  {
+    "id": "phr-9-2",
+    "date": "2026-11-09",
+    "pl": "Normalny.",
+    "fr": "Normal, ordinaire.",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Normalny"
+    ],
+    "acceptedFr": [
+      "Normal",
+      "Ordinaire",
+      "Normal, ordinaire"
+    ],
+    "distractorsPl": [
+      "Świetny.",
+      "Trudny.",
+      "Bardzo zły."
+    ],
+    "distractorsFr": [
+      "Génial.",
+      "Difficile.",
+      "Très mauvais."
+    ]
+  },
+  {
+    "id": "phr-9-3",
+    "date": "2026-11-09",
+    "pl": "Nic ciekawego.",
+    "fr": "Rien d'intéressant.",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Nic ciekawego"
+    ],
+    "acceptedFr": [
+      "Rien d'intéressant",
+      "Rien d'interessant"
+    ],
+    "distractorsPl": [
+      "Wszystko w porządku.",
+      "Dużo nowego.",
+      "Bardzo ciekawe."
+    ],
+    "distractorsFr": [
+      "Tout va bien.",
+      "Beaucoup de neuf.",
+      "Très intéressant."
+    ]
+  },
+  {
+    "id": "phr-9-4",
+    "date": "2026-11-09",
+    "pl": "nic",
+    "fr": "rien",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "nic"
+    ],
+    "acceptedFr": [
+      "rien"
+    ],
+    "distractorsPl": [
+      "coś",
+      "wszystko",
+      "zawsze"
+    ],
+    "distractorsFr": [
+      "quelque chose",
+      "tout",
+      "toujours"
+    ]
+  },
+  {
+    "id": "phr-9-5",
+    "date": "2026-11-09",
+    "pl": "ciekawy",
+    "fr": "intéressant (masc.)",
+    "category": "Adjectifs",
+    "acceptedPl": [
+      "ciekawy"
+    ],
+    "acceptedFr": [
+      "intéressant",
+      "interessant"
+    ],
+    "distractorsPl": [
+      "nudny",
+      "trudny",
+      "łatwy"
+    ],
+    "distractorsFr": [
+      "ennuyeux",
+      "difficile",
+      "facile"
+    ]
+  },
+  {
+    "id": "phr-9-6",
+    "date": "2026-11-09",
+    "pl": "Co chcesz jeść?",
+    "fr": "Que veux-tu manger ?",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Co chcesz jeść?",
+      "Co chcesz jesc?"
+    ],
+    "acceptedFr": [
+      "Que veux-tu manger ?",
+      "Qu'est-ce que tu veux manger ?"
+    ],
+    "distractorsPl": [
+      "Co lubisz pić?",
+      "Co robisz dzisiaj?",
+      "Gdzie chcesz iść?"
+    ],
+    "distractorsFr": [
+      "Qu'aimes-tu boire ?",
+      "Que fais-tu aujourd'hui ?",
+      "Où veux-tu aller ?"
+    ]
+  },
+  {
+    "id": "phr-9-7",
+    "date": "2026-11-09",
+    "pl": "Co lubisz jeść na śniadanie?",
+    "fr": "Qu'aimes-tu manger au petit-déjeuner ?",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Co lubisz jeść na śniadanie?",
+      "Co lubisz jesc na sniadanie?"
+    ],
+    "acceptedFr": [
+      "Qu'aimes-tu manger au petit-déjeuner ?",
+      "Que manges-tu au petit déjeuner ?"
+    ],
+    "distractorsPl": [
+      "O której jesz śniadanie?",
+      "Gdzie jesz obiad?",
+      "Czy jesz kolację?"
+    ],
+    "distractorsFr": [
+      "À quelle heure manges-tu ?",
+      "Où déjeunes-tu ?",
+      "Dînes-tu ?"
+    ]
+  },
+  {
+    "id": "phr-9-8",
+    "date": "2026-11-09",
+    "pl": "małe śniadanie",
+    "fr": "un petit déjeuner léger, un petit petit-déjeuner",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "małe śniadanie",
+      "male sniadanie"
+    ],
+    "acceptedFr": [
+      "un petit déjeuner léger",
+      "petit déjeuner léger",
+      "un petit déjeuner"
+    ],
+    "distractorsPl": [
+      "duży obiad",
+      "szybka kolacja",
+      "smaczna kawa"
+    ],
+    "distractorsFr": [
+      "un grand déjeuner",
+      "un dîner rapide",
+      "un bon café"
+    ]
+  },
+  {
+    "id": "phr-9-9",
+    "date": "2026-11-09",
+    "pl": "w biurze",
+    "fr": "au bureau",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "w biurze"
+    ],
+    "acceptedFr": [
+      "au bureau",
+      "dans le bureau"
+    ],
+    "distractorsPl": [
+      "w domu",
+      "w szkole",
+      "w sklepie"
+    ],
+    "distractorsFr": [
+      "à la maison",
+      "à l'école",
+      "au magasin"
+    ]
+  },
+  {
+    "id": "phr-9-10",
+    "date": "2026-11-09",
+    "pl": "Masz dużo pracy?",
+    "fr": "As-tu beaucoup de travail ?",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Masz dużo pracy?",
+      "Masz duzo pracy?"
+    ],
+    "acceptedFr": [
+      "As-tu beaucoup de travail ?",
+      "Tu as beaucoup de travail ?"
+    ],
+    "distractorsPl": [
+      "Gdzie pracujesz?",
+      "Ile godzin pracujesz?",
+      "Lubisz twoją pracę?"
+    ],
+    "distractorsFr": [
+      "Où travailles-tu ?",
+      "Combien d'heures travailles-tu ?",
+      "Aimes-tu ton travail ?"
+    ]
+  },
+  {
+    "id": "phr-9-11",
+    "date": "2026-11-09",
+    "pl": "Zobaczymy.",
+    "fr": "On va voir. / Nous verrons.",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Zobaczymy"
+    ],
+    "acceptedFr": [
+      "On va voir",
+      "Nous verrons",
+      "On verra"
+    ],
+    "distractorsPl": [
+      "Nie wiem.",
+      "Oczywiście.",
+      "Na pewno."
+    ],
+    "distractorsFr": [
+      "Je ne sais pas.",
+      "Bien sûr.",
+      "Certainement."
+    ]
+  },
+  {
+    "id": "phr-9-12",
+    "date": "2026-11-09",
+    "pl": "Pożyjemy, zobaczymy.",
+    "fr": "Qui vivra verra. (litt. nous vivrons, nous verrons)",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Pożyjemy, zobaczymy",
+      "Pozyjemy, zobaczymy",
+      "Pożyjemy zobaczymy"
+    ],
+    "acceptedFr": [
+      "Qui vivra verra",
+      "Qui vivra, verra"
+    ],
+    "distractorsPl": [
+      "Co ma być, to będzie.",
+      "Czas pokaże.",
+      "Wszystko będzie dobrze."
+    ],
+    "distractorsFr": [
+      "Advienne que pourra.",
+      "Le temps nous le dira.",
+      "Tout ira bien."
+    ]
+  },
+  {
+    "id": "phr-9-13",
+    "date": "2026-11-09",
+    "pl": "bułka z masłem",
+    "fr": "c'est du gâteau / c'est super facile (litt. petit pain au beurre)",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "bułka z masłem",
+      "bulka z maslem"
+    ],
+    "acceptedFr": [
+      "c'est du gâteau",
+      "c'est du gateau",
+      "c'est super facile",
+      "du gâteau"
+    ],
+    "distractorsPl": [
+      "chleb z szynką",
+      "kawa z mlekiem",
+      "trudna sprawa"
+    ],
+    "distractorsFr": [
+      "pain avec jambon",
+      "café au lait",
+      "affaire difficile"
+    ]
+  },
+  {
+    "id": "phr-9-14",
+    "date": "2026-11-09",
+    "pl": "łatwy",
+    "fr": "facile (masc.)",
+    "category": "Adjectifs",
+    "acceptedPl": [
+      "łatwy",
+      "latwy"
+    ],
+    "acceptedFr": [
+      "facile"
+    ],
+    "distractorsPl": [
+      "trudny",
+      "drogi",
+      "prosty"
+    ],
+    "distractorsFr": [
+      "difficile",
+      "cher",
+      "simple"
+    ]
+  },
+  {
+    "id": "phr-9-15",
+    "date": "2026-11-09",
+    "pl": "trudny",
+    "fr": "difficile (masc.)",
+    "category": "Adjectifs",
+    "acceptedPl": [
+      "trudny"
+    ],
+    "acceptedFr": [
+      "difficile"
+    ],
+    "distractorsPl": [
+      "łatwy",
+      "tani",
+      "dobry"
+    ],
+    "distractorsFr": [
+      "facile",
+      "pas cher",
+      "bon"
+    ]
+  },
+  {
+    "id": "phr-9-16",
+    "date": "2026-11-09",
+    "pl": "To prawda?",
+    "fr": "C'est vrai ?",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "To prawda?"
+    ],
+    "acceptedFr": [
+      "C'est vrai ?",
+      "Est-ce vrai ?"
+    ],
+    "distractorsPl": [
+      "Nie ma problemu?",
+      "Co to znaczy?",
+      "Dlaczego nie?"
+    ],
+    "distractorsFr": [
+      "Pas de problème ?",
+      "Qu'est-ce que ça veut dire ?",
+      "Pourquoi pas ?"
+    ]
+  },
+  {
+    "id": "phr-9-17",
+    "date": "2026-11-09",
+    "pl": "To prawda.",
+    "fr": "C'est vrai.",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "To prawda"
+    ],
+    "acceptedFr": [
+      "C'est vrai",
+      "C'est la vérité"
+    ],
+    "distractorsPl": [
+      "To nieprawda.",
+      "Może być.",
+      "Nie wiem."
+    ],
+    "distractorsFr": [
+      "Ce n'est pas vrai.",
+      "C'est possible.",
+      "Je ne sais pas."
+    ]
+  },
+  {
+    "id": "phr-9-18",
+    "date": "2026-11-09",
+    "pl": "To nieprawda.",
+    "fr": "Ce n'est pas vrai. / C'est faux.",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "To nieprawda"
+    ],
+    "acceptedFr": [
+      "Ce n'est pas vrai",
+      "C'est faux",
+      "C'est pas vrai"
+    ],
+    "distractorsPl": [
+      "To prawda.",
+      "Masz rację.",
+      "Oczywiście."
+    ],
+    "distractorsFr": [
+      "C'est vrai.",
+      "Tu as raison.",
+      "Bien sûr."
+    ]
+  },
+  {
+    "id": "cult-9-1",
+    "date": "2026-11-09",
+    "pl": "Pierwszego listopada wiele osób odwiedza cmentarze.",
+    "fr": "Le 1er novembre, beaucoup de personnes visitent les cimetières.",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "Pierwszego listopada wiele osób odwiedza cmentarze",
+      "Pierwszego listopada wiele osob odwiedza cmentarze"
+    ],
+    "acceptedFr": [
+      "Le premier novembre beaucoup de personnes visitent les cimetières",
+      "Le 1er novembre beaucoup de personnes visitent les cimetières"
+    ],
+    "distractorsPl": [
+      "Trzydziestego listopada ludzie organizują imprezy.",
+      "Pierwszego listopada sklepy są otwarte.",
+      "W listopadzie ludzie zostają w domu."
+    ],
+    "distractorsFr": [
+      "Le 30 novembre les gens organisent des fêtes.",
+      "Le 1er novembre les magasins sont ouverts.",
+      "En novembre les gens restent chez eux."
+    ]
+  },
+  {
+    "id": "cult-9-2",
+    "date": "2026-11-09",
+    "pl": "wiele osób",
+    "fr": "beaucoup de personnes, beaucoup de gens",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "wiele osób",
+      "wiele osob"
+    ],
+    "acceptedFr": [
+      "beaucoup de personnes",
+      "beaucoup de gens"
+    ],
+    "distractorsPl": [
+      "kilka osób",
+      "mało ludzi",
+      "wszyscy ludzie"
+    ],
+    "distractorsFr": [
+      "quelques personnes",
+      "peu de gens",
+      "tous les gens"
+    ]
+  },
+  {
+    "id": "cult-9-3",
+    "date": "2026-11-09",
+    "pl": "odwiedzać",
+    "fr": "visiter, rendre visite à",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "odwiedzać",
+      "odwiedzac"
+    ],
+    "acceptedFr": [
+      "visiter",
+      "rendre visite"
+    ],
+    "distractorsPl": [
+      "mieszkać",
+      "podróżować",
+      "widzieć"
+    ],
+    "distractorsFr": [
+      "habiter",
+      "voyager",
+      "voir"
+    ]
+  },
+  {
+    "id": "phr-9-19",
+    "date": "2026-11-09",
+    "pl": "Moja mama ma na sobie czarną sukienkę, czerwone buty i białą torebkę.",
+    "fr": "Ma mère porte une robe noire, des chaussures rouges et un sac blanc.",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "Moja mama ma na sobie czarną sukienkę, czerwone buty i białą torebkę",
+      "Moja mama ma na sobie czarna sukienke, czerwone buty i biala torebke"
+    ],
+    "acceptedFr": [
+      "Ma mère porte une robe noire des chaussures rouges et un sac blanc",
+      "Ma mere porte une robe noire des chaussures rouges et un sac blanc"
+    ],
+    "distractorsPl": [
+      "Moja siostra ma na sobie niebieską spódnicę i czarne buty.",
+      "Moja mama kupuje czarną sukienkę w sklepie.",
+      "Moja mama lubi czerwony sweter i białe buty."
+    ],
+    "distractorsFr": [
+      "Ma sœur porte une jupe bleue et des chaussures noires.",
+      "Ma mère achète une robe noire au magasin.",
+      "Ma mère aime le pull rouge et les chaussures blanches."
+    ]
+  },
+  {
+    "id": "cult-9-4",
+    "date": "2026-11-09",
+    "pl": "Młode dziewczyny chcą wiedzieć, kto będzie ich mężem.",
+    "fr": "Les jeunes filles veulent savoir qui sera leur mari.",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "Młode dziewczyny chcą wiedzieć, kto będzie ich mężem",
+      "Mlode dziewczyny chca wiedziec, kto bedzie ich mezem"
+    ],
+    "acceptedFr": [
+      "Les jeunes filles veulent savoir qui sera leur mari",
+      "Les jeunes filles veulent savoir qui va être leur mari"
+    ],
+    "distractorsPl": [
+      "Młode dziewczyny organizują spotkanie z rodziną.",
+      "Młodzi chłopcy szukają żony na Andrzejkach.",
+      "Kobiety wiedzą, kiedy wyjdą za mąż."
+    ],
+    "distractorsFr": [
+      "Les jeunes filles organisent une réunion de famille.",
+      "Les jeunes garçons cherchent une femme à la Sainte-André.",
+      "Les femmes savent quand elles se marieront."
+    ]
+  },
+  {
+    "id": "phr-9-20",
+    "date": "2026-11-09",
+    "pl": "Ja będę iść.",
+    "fr": "Je vais aller / marcher (futur composé).",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Ja będę iść",
+      "Ja bede isc",
+      "Będę iść"
+    ],
+    "acceptedFr": [
+      "Je vais aller",
+      "Je vais marcher",
+      "J'irai à pied"
+    ],
+    "distractorsPl": [
+      "Ja będę jechać.",
+      "Ja chcę iść.",
+      "Ja muszę iść."
+    ],
+    "distractorsFr": [
+      "Je vais y aller en voiture.",
+      "Je veux marcher.",
+      "Je dois y aller."
+    ]
+  },
+  {
+    "id": "cult-9-5",
+    "date": "2026-11-09",
+    "pl": "Zapalamy znicze i kładziemy kwiaty na grobach.",
+    "fr": "Nous allumons des bougies funéraires et nous déposons des fleurs sur les tombes.",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "Zapalamy znicze i kładziemy kwiaty na grobach",
+      "Zapalamy znicze i kladziemy kwiaty na grobach"
+    ],
+    "acceptedFr": [
+      "Nous allumons des bougies et déposons des fleurs sur les tombes",
+      "Nous allumons des bougies et mettons des fleurs sur les tombes"
+    ],
+    "distractorsPl": [
+      "Kupujemy znicze i kwiaty w sklepie.",
+      "Odwiedzamy rodzinę i jemy obiad.",
+      "Wracamy do domu po cmentarzu."
+    ],
+    "distractorsFr": [
+      "Nous achetons des bougies et des fleurs au magasin.",
+      "Nous rendons visite à la famille et déjeunons.",
+      "Nous rentrons à la maison après le cimetière."
+    ]
+  },
+  {
+    "id": "cult-9-6",
+    "date": "2026-11-09",
+    "pl": "świeczka",
+    "fr": "bougie (chandelle)",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "świeczka",
+      "swieczka"
+    ],
+    "acceptedFr": [
+      "bougie",
+      "une bougie",
+      "chandelle"
+    ],
+    "distractorsPl": [
+      "znicz",
+      "ogień",
+      "lampa"
+    ],
+    "distractorsFr": [
+      "bougie de cimetière",
+      "feu",
+      "lampe"
+    ]
+  },
+  {
+    "id": "cult-9-7",
+    "date": "2026-11-09",
+    "pl": "Trzydziestego listopada rodziny organizują imprezy z przyjaciółmi.",
+    "fr": "Le 30 novembre, les familles organisent des fêtes avec leurs amis.",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "Trzydziestego listopada rodziny organizują imprezy z przyjaciółmi",
+      "Trzydziestego listopada rodziny organizuja imprezy z przyjaciolmi"
+    ],
+    "acceptedFr": [
+      "Le 30 novembre les familles organisent des fêtes avec leurs amis",
+      "Le trente novembre les familles organisent des soirées avec leurs amis"
+    ],
+    "distractorsPl": [
+      "Pierwszego listopada rodziny odwiedzają cmentarze.",
+      "W listopadzie przyjaciele nie mają czasu.",
+      "Trzydziestego listopada wszyscy pracują."
+    ],
+    "distractorsFr": [
+      "Le 1er novembre les familles visitent les cimetières.",
+      "En novembre les amis n'ont pas le temps.",
+      "Le 30 novembre tout le monde travaille."
+    ]
+  },
+  {
+    "id": "phr-9-21",
+    "date": "2026-11-09",
+    "pl": "przyjaciele",
+    "fr": "les amis (pluriel viril)",
+    "category": "La Famille",
+    "acceptedPl": [
+      "przyjaciele"
+    ],
+    "acceptedFr": [
+      "amis",
+      "les amis",
+      "des amis"
+    ],
+    "distractorsPl": [
+      "koledzy",
+      "rodzina",
+      "ludzie"
+    ],
+    "distractorsFr": [
+      "collègues / copains",
+      "famille",
+      "gens"
+    ]
+  },
+  {
+    "id": "phr-9-22",
+    "date": "2026-11-09",
+    "pl": "impreza",
+    "fr": "fête, soirée",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "impreza"
+    ],
+    "acceptedFr": [
+      "fête",
+      "soirée",
+      "une fête",
+      "une soirée"
+    ],
+    "distractorsPl": [
+      "spotkanie",
+      "praca",
+      "zabawa"
+    ],
+    "distractorsFr": [
+      "réunion",
+      "travail",
+      "jeu / amusement"
+    ]
+  },
+  {
+    "id": "phr-9-23",
+    "date": "2026-11-09",
+    "pl": "Ta kobieta ma na sobie niebieską spódnicę, biały sweter i czarne buty.",
+    "fr": "Cette femme porte une jupe bleue, un pull blanc et des chaussures noires.",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "Ta kobieta ma na sobie niebieską spódnicę, biały sweter i czarne buty",
+      "Ta kobieta ma na sobie niebieska spodnice, bialy sweter i czarne buty"
+    ],
+    "acceptedFr": [
+      "Cette femme porte une jupe bleue un pull blanc et des chaussures noires"
+    ],
+    "distractorsPl": [
+      "Ten mężczyzna nosi czarne spodnie i czerwony sweter.",
+      "Ta dziewczyna ma na sobie czerwoną sukienkę i szpilki.",
+      "Ta kobieta kupuje białą torebkę i szalik."
+    ],
+    "distractorsFr": [
+      "Cet homme porte un pantalon noir et un pull rouge.",
+      "Cette fille porte une robe rouge et des talons.",
+      "Cette femme achète un sac blanc et une écharpe."
+    ]
+  },
+  {
+    "id": "num-9-1",
+    "date": "2026-11-09",
+    "pl": "osiem tysięcy czterysta dwadzieścia dwa",
+    "fr": "8 422 (huit mille quatre cent vingt-deux)",
+    "category": "Nombres",
+    "acceptedPl": [
+      "osiem tysięcy czterysta dwadzieścia dwa",
+      "osiem tysiecy czterysta dwadziescia dwa"
+    ],
+    "acceptedFr": [
+      "8422",
+      "8 422",
+      "huit mille quatre cent vingt-deux"
+    ],
+    "distractorsPl": [
+      "dziewięć tysięcy trzysta czterdzieści sześć",
+      "osiemset czterdzieści sześć",
+      "czterysta osiem"
+    ],
+    "distractorsFr": [
+      "9 346",
+      "846",
+      "408"
+    ]
+  },
+  {
+    "id": "num-9-2",
+    "date": "2026-11-09",
+    "pl": "pięćset sześćdziesiąt siedem",
+    "fr": "567 (cinq cent soixante-sept)",
+    "category": "Nombres",
+    "acceptedPl": [
+      "pięćset sześćdziesiąt siedem",
+      "piecset szescdziesiat siedem"
+    ],
+    "acceptedFr": [
+      "567",
+      "cinq cent soixante-sept"
+    ],
+    "distractorsPl": [
+      "sześćset pięćdziesiąt siedem",
+      "pięćset siedemdziesiąt sześć",
+      "czterysta osiem"
+    ],
+    "distractorsFr": [
+      "657",
+      "576",
+      "408"
+    ]
+  },
+  {
+    "id": "num-9-3",
+    "date": "2026-11-09",
+    "pl": "osiemset czterdzieści sześć",
+    "fr": "846 (huit cent quarante-six)",
+    "category": "Nombres",
+    "acceptedPl": [
+      "osiemset czterdzieści sześć",
+      "osiemset czterdziesci szesc"
+    ],
+    "acceptedFr": [
+      "846",
+      "huit cent quarante-six"
+    ],
+    "distractorsPl": [
+      "czterysta osiem",
+      "osiemset sześćdziesiąt cztery",
+      "trzysta pięć"
+    ],
+    "distractorsFr": [
+      "408",
+      "864",
+      "305"
+    ]
+  },
+  {
+    "id": "num-9-4",
+    "date": "2026-11-09",
+    "pl": "czterysta osiem",
+    "fr": "408 (quatre cent huit)",
+    "category": "Nombres",
+    "acceptedPl": [
+      "czterysta osiem"
+    ],
+    "acceptedFr": [
+      "408",
+      "quatre cent huit"
+    ],
+    "distractorsPl": [
+      "czterysta osiemdziesiąt",
+      "trzysta pięć",
+      "pięćset osiem"
+    ],
+    "distractorsFr": [
+      "480",
+      "305",
+      "508"
+    ]
+  },
+  {
+    "id": "num-9-5",
+    "date": "2026-11-09",
+    "pl": "dziewięć tysięcy trzysta czterdzieści sześć",
+    "fr": "9 346 (neuf mille trois cent quarante-six)",
+    "category": "Nombres",
+    "acceptedPl": [
+      "dziewięć tysięcy trzysta czterdzieści sześć",
+      "dziewiec tysiecy trzysta czterdziesci szesc"
+    ],
+    "acceptedFr": [
+      "9346",
+      "9 346",
+      "neuf mille trois cent quarante-six"
+    ],
+    "distractorsPl": [
+      "osiem tysięcy czterysta dwadzieścia dwa",
+      "dziewięćset trzydzieści cztery",
+      "trzy tysiące dziewięćset"
+    ],
+    "distractorsFr": [
+      "8 422",
+      "934",
+      "3 900"
+    ]
+  },
+  {
+    "id": "num-9-6",
+    "date": "2026-11-09",
+    "pl": "trzysta pięć",
+    "fr": "305 (trois cent cinq)",
+    "category": "Nombres",
+    "acceptedPl": [
+      "trzysta pięć",
+      "trzysta piec"
+    ],
+    "acceptedFr": [
+      "305",
+      "trois cent cinq"
+    ],
+    "distractorsPl": [
+      "trzysta pięćdziesiąt",
+      "dwieście pięć",
+      "czterysta osiem"
+    ],
+    "distractorsFr": [
+      "350",
+      "205",
+      "408"
+    ]
+  },
+  {
+    "id": "gen-9-1",
+    "date": "2026-11-09",
+    "pl": "kogo?",
+    "fr": "de qui ? (question au génitif)",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "kogo",
+      "kogo?"
+    ],
+    "acceptedFr": [
+      "de qui ?",
+      "de qui",
+      "qui (génitif)"
+    ],
+    "distractorsPl": [
+      "czego?",
+      "komu?",
+      "kim?"
+    ],
+    "distractorsFr": [
+      "de quoi ?",
+      "à qui ?",
+      "avec qui ?"
+    ]
+  },
+  {
+    "id": "gen-9-2",
+    "date": "2026-11-09",
+    "pl": "czego?",
+    "fr": "de quoi ? (question au génitif)",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "czego",
+      "czego?"
+    ],
+    "acceptedFr": [
+      "de quoi ?",
+      "de quoi",
+      "quoi (génitif)"
+    ],
+    "distractorsPl": [
+      "kogo?",
+      "czym?",
+      "co?"
+    ],
+    "distractorsFr": [
+      "de qui ?",
+      "avec quoi ?",
+      "que / quoi ?"
+    ]
+  },
+  {
+    "id": "gen-9-3",
+    "date": "2026-11-09",
+    "pl": "Nie mam czasu.",
+    "fr": "Je n'ai pas le temps. (temps au génitif : czasu)",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "Nie mam czasu"
+    ],
+    "acceptedFr": [
+      "Je n'ai pas le temps",
+      "Je n'ai pas de temps"
+    ],
+    "distractorsPl": [
+      "Mam dużo czasu.",
+      "Nie mam pracy.",
+      "Nie mam ochoty."
+    ],
+    "distractorsFr": [
+      "J'ai beaucoup de temps.",
+      "Je n'ai pas de travail.",
+      "Je n'ai pas envie."
+    ]
+  },
+  {
+    "id": "gen-9-4",
+    "date": "2026-11-09",
+    "pl": "Nie ma herbaty.",
+    "fr": "Il n'y a pas de thé. (thé au génitif : herbaty)",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "Nie ma herbaty"
+    ],
+    "acceptedFr": [
+      "Il n'y a pas de thé",
+      "Il n'y a pas de the"
+    ],
+    "distractorsPl": [
+      "Poproszę herbatę.",
+      "Herbata jest ciepła.",
+      "Nie ma kawy."
+    ],
+    "distractorsFr": [
+      "Un thé s'il vous plaît.",
+      "Le thé est chaud.",
+      "Il n'y a pas de café."
+    ]
+  },
+  {
+    "id": "gen-9-5",
+    "date": "2026-11-09",
+    "pl": "Nie mam jabłka.",
+    "fr": "Je n'ai pas de pomme. (pomme au génitif : jabłka)",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "Nie mam jabłka",
+      "Nie mam jablka"
+    ],
+    "acceptedFr": [
+      "Je n'ai pas de pomme",
+      "Je n'ai pas une pomme"
+    ],
+    "distractorsPl": [
+      "Mam czerwone jabłko.",
+      "Lubię jabłka.",
+      "Nie jem owoców."
+    ],
+    "distractorsFr": [
+      "J'ai une pomme rouge.",
+      "J'aime les pommes.",
+      "Je ne mange pas de fruits."
+    ]
+  },
+  {
+    "id": "gen-9-6",
+    "date": "2026-11-09",
+    "pl": "Nie widzę kota.",
+    "fr": "Je ne vois pas le chat. (chat au génitif : kota)",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "Nie widzę kota",
+      "Nie widze kota"
+    ],
+    "acceptedFr": [
+      "Je ne vois pas le chat",
+      "Je ne vois pas de chat"
+    ],
+    "distractorsPl": [
+      "Widzę małego psa.",
+      "Mam czarnego kota.",
+      "Gdzie jest kot?"
+    ],
+    "distractorsFr": [
+      "Je vois un petit chien.",
+      "J'ai un chat noir.",
+      "Où est le chat ?"
+    ]
+  },
+  {
+    "id": "gen-9-7",
+    "date": "2026-11-09",
+    "pl": "Nie lubię kawy.",
+    "fr": "Je n'aime pas le café. (café au génitif : kawy)",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "Nie lubię kawy",
+      "Nie lubie kawy"
+    ],
+    "acceptedFr": [
+      "Je n'aime pas le café",
+      "Je n'aime pas le cafe"
+    ],
+    "distractorsPl": [
+      "Poproszę kawę z mlekiem.",
+      "Lubię czarną kawę.",
+      "Czy pijesz kawę?"
+    ],
+    "distractorsFr": [
+      "Un café au lait s'il vous plaît.",
+      "J'aime le café noir.",
+      "Bois-tu du café ?"
+    ]
+  },
+  {
+    "id": "gen-9-8",
+    "date": "2026-11-09",
+    "pl": "dużo czasu",
+    "fr": "beaucoup de temps (quantité + génitif)",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "dużo czasu",
+      "duzo czasu"
+    ],
+    "acceptedFr": [
+      "beaucoup de temps"
+    ],
+    "distractorsPl": [
+      "mało pracy",
+      "trochę wody",
+      "cały dzień"
+    ],
+    "distractorsFr": [
+      "peu de travail",
+      "un peu d'eau",
+      "toute la journée"
+    ]
+  },
+  {
+    "id": "gen-9-9",
+    "date": "2026-11-09",
+    "pl": "trochę wody",
+    "fr": "un peu d'eau (quantité + génitif)",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "trochę wody",
+      "troche wody"
+    ],
+    "acceptedFr": [
+      "un peu d'eau"
+    ],
+    "distractorsPl": [
+      "butelka wody",
+      "dużo herbaty",
+      "szklanka soku"
+    ],
+    "distractorsFr": [
+      "une bouteille d'eau",
+      "beaucoup de thé",
+      "un verre de jus"
+    ]
+  },
+  {
+    "id": "gen-9-10",
+    "date": "2026-11-09",
+    "pl": "Nie mam energii.",
+    "fr": "Je n'ai pas d'énergie. (énergie au génitif : energii)",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "Nie mam energii"
+    ],
+    "acceptedFr": [
+      "Je n'ai pas d'énergie",
+      "Je n'ai pas d'energie"
+    ],
+    "distractorsPl": [
+      "Mam dużo siły.",
+      "Jestem zmęczony.",
+      "Nie mam ochoty."
+    ],
+    "distractorsFr": [
+      "J'ai beaucoup de force.",
+      "Je suis fatigué.",
+      "Je n'ai pas envie."
+    ]
+  },
+  {
+    "id": "gen-9-11",
+    "date": "2026-11-09",
+    "pl": "Nie ma imprezy.",
+    "fr": "Il n'y a pas de fête / soirée. (impreza au génitif : imprezy)",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "Nie ma imprezy"
+    ],
+    "acceptedFr": [
+      "Il n'y a pas de fête",
+      "Il n'y a pas de soiree",
+      "Il n'y a pas de fete"
+    ],
+    "distractorsPl": [
+      "Dzisiaj jest impreza.",
+      "Idę na spotkanie.",
+      "Kiedy jest zabawa?"
+    ],
+    "distractorsFr": [
+      "Aujourd'hui il y a une fête.",
+      "Je vais à la réunion.",
+      "Quand a lieu la fête ?"
+    ]
+  },
+  {
+    "id": "gen-9-12",
+    "date": "2026-11-09",
+    "pl": "Mam dużo pracy.",
+    "fr": "J'ai beaucoup de travail. (praca au génitif : pracy)",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "Mam dużo pracy",
+      "Mam duzo pracy"
+    ],
+    "acceptedFr": [
+      "J'ai beaucoup de travail"
+    ],
+    "distractorsPl": [
+      "Nie mam pracy.",
+      "Szukam nowej pracy.",
+      "Pracuję cały dzień."
+    ],
+    "distractorsFr": [
+      "Je n'ai pas de travail.",
+      "Je cherche un nouveau travail.",
+      "Je travaille toute la journée."
+    ]
+  },
+  {
+    "id": "gen-9-13",
+    "date": "2026-11-09",
+    "pl": "Ona nie pije kawy.",
+    "fr": "Elle ne boit pas de café. (négation + génitif : kawy)",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "Ona nie pije kawy"
+    ],
+    "acceptedFr": [
+      "Elle ne boit pas de café",
+      "Elle ne boit pas de cafe"
+    ],
+    "distractorsPl": [
+      "Ona pije czarną herbatę.",
+      "Ona lubi kawę z cukrem.",
+      "On nie pije alkoholu."
+    ],
+    "distractorsFr": [
+      "Elle boit du thé noir.",
+      "Elle aime le café sucré.",
+      "Il ne boit pas d'alcool."
+    ]
+  },
+  {
+    "id": "gen-9-14",
+    "date": "2026-11-09",
+    "pl": "Masz dużo czasu w weekend?",
+    "fr": "As-tu beaucoup de temps ce week-end ?",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "Masz dużo czasu w weekend?",
+      "Masz duzo czasu w weekend?"
+    ],
+    "acceptedFr": [
+      "As-tu beaucoup de temps ce week-end ?",
+      "Tu as beaucoup de temps ce week-end ?"
+    ],
+    "distractorsPl": [
+      "Co robisz w ten weekend?",
+      "Kiedy zaczyna się weekend?",
+      "Masz wolną sobotę?"
+    ],
+    "distractorsFr": [
+      "Que fais-tu ce week-end ?",
+      "Quand commence le week-end ?",
+      "As-tu ton samedi de libre ?"
+    ]
+  },
+  {
+    "id": "gen-9-15",
+    "date": "2026-11-09",
+    "pl": "Nie, nie mam dużo czasu w weekend.",
+    "fr": "Non, je n'ai pas beaucoup de temps ce week-end.",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "Nie, nie mam dużo czasu w weekend",
+      "Nie, nie mam duzo czasu w weekend"
+    ],
+    "acceptedFr": [
+      "Non je n'ai pas beaucoup de temps ce week-end",
+      "Non, je n'ai pas beaucoup de temps le week-end"
+    ],
+    "distractorsPl": [
+      "Tak, mam wolny cały weekend.",
+      "Pracuję tylko w sobotę rano.",
+      "W niedzielę odpoczywam."
+    ],
+    "distractorsFr": [
+      "Oui j'ai tout le week-end de libre.",
+      "Je travaille seulement samedi matin.",
+      "Le dimanche je me repose."
+    ]
+  },
+  {
+    "id": "gen-9-16",
+    "date": "2026-11-09",
+    "pl": "Masz pieniądze na wakacje?",
+    "fr": "As-tu de l'argent pour les vacances ?",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "Masz pieniądze na wakacje?",
+      "Masz pieniadze na wakacje?"
+    ],
+    "acceptedFr": [
+      "As-tu de l'argent pour les vacances ?",
+      "Tu as de l'argent pour les vacances ?"
+    ],
+    "distractorsPl": [
+      "Dokąd jedziesz na wakacje?",
+      "Kiedy masz urlop?",
+      "Ile kosztują wakacje?"
+    ],
+    "distractorsFr": [
+      "Où vas-tu en vacances ?",
+      "Quand as-tu tes congés ?",
+      "Combien coûtent les vacances ?"
+    ]
+  },
+  {
+    "id": "gen-9-17",
+    "date": "2026-11-09",
+    "pl": "Nie, nie mam pieniędzy na wakacje.",
+    "fr": "Non, je n'ai pas d'argent pour les vacances. (génitif pluriel irrégulier : pieniędzy)",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "Nie, nie mam pieniędzy na wakacje",
+      "Nie, nie mam pieniedzy na wakacje"
+    ],
+    "acceptedFr": [
+      "Non je n'ai pas d'argent pour les vacances",
+      "Non, je n'ai pas d'argent pour les vacances"
+    ],
+    "distractorsPl": [
+      "Tak, mam wystarczająco dużo pieniędzy.",
+      "Wakacje są bardzo drogie.",
+      "Nie planuję wyjazdu."
+    ],
+    "distractorsFr": [
+      "Oui j'ai suffisamment d'argent.",
+      "Les vacances sont très chères.",
+      "Je ne prévois pas de partir."
+    ]
+  },
+  {
+    "id": "gen-9-18",
+    "date": "2026-11-09",
+    "pl": "pieniądze",
+    "fr": "l'argent (nom pluriel tantum en polonais)",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "pieniądze",
+      "pieniadze"
+    ],
+    "acceptedFr": [
+      "l'argent",
+      "argent",
+      "des sous"
+    ],
+    "distractorsPl": [
+      "karta",
+      "bank",
+      "złoty"
+    ],
+    "distractorsFr": [
+      "carte",
+      "banque",
+      "złoty"
+    ]
+  },
+  {
+    "id": "gen-9-19",
+    "date": "2026-11-09",
+    "pl": "pieniędzy",
+    "fr": "d'argent (forme au génitif pluriel de pieniądze)",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "pieniędzy",
+      "pieniedzy"
+    ],
+    "acceptedFr": [
+      "d'argent",
+      "argent (génitif)"
+    ],
+    "distractorsPl": [
+      "pieniądzach",
+      "pieniądze",
+      "pieniądzom"
+    ],
+    "distractorsFr": [
+      "sur l'argent (locatif)",
+      "l'argent (nominatif)",
+      "à l'argent (datif)"
+    ]
+  },
+  {
+    "id": "gen-9-20",
+    "date": "2026-11-09",
+    "pl": "Masz jakieś plany na wakacje?",
+    "fr": "As-tu des projets pour les vacances ?",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "Masz jakieś plany na wakacje?",
+      "Masz jakies plany na wakacje?"
+    ],
+    "acceptedFr": [
+      "As-tu des projets pour les vacances ?",
+      "Tu as des plans pour les vacances ?"
+    ],
+    "distractorsPl": [
+      "Kiedy jedziesz na wakacje?",
+      "Gdzie spędzasz urlop?",
+      "Czy lubisz podróżować?"
+    ],
+    "distractorsFr": [
+      "Quand pars-tu en vacances ?",
+      "Où passes-tu tes vacances ?",
+      "Aimes-tu voyager ?"
+    ]
+  },
+  {
+    "id": "gen-9-21",
+    "date": "2026-11-09",
+    "pl": "Czy pijesz kawę?",
+    "fr": "Est-ce que tu bois du café ? (accusatif à la forme affirmative : kawę)",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "Czy pijesz kawę?",
+      "Czy pijesz kawe?"
+    ],
+    "acceptedFr": [
+      "Est-ce que tu bois du café ?",
+      "Bois-tu du café ?"
+    ],
+    "distractorsPl": [
+      "Czy lubisz herbatę?",
+      "Ile kaw pijesz dziennie?",
+      "Pijesz kawę z mlekiem?"
+    ],
+    "distractorsFr": [
+      "Aimes-tu le thé ?",
+      "Combien de cafés bois-tu par jour ?",
+      "Bois-tu le café avec du lait ?"
+    ]
+  },
+  {
+    "id": "gen-9-22",
+    "date": "2026-11-09",
+    "pl": "Czy masz dużo pracy w tym tygodniu?",
+    "fr": "Est-ce que tu as beaucoup de travail cette semaine ?",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "Czy masz dużo pracy w tym tygodniu?",
+      "Czy masz duzo pracy w tym tygodniu?"
+    ],
+    "acceptedFr": [
+      "Est-ce que tu as beaucoup de travail cette semaine ?",
+      "As-tu beaucoup de travail cette semaine ?"
+    ],
+    "distractorsPl": [
+      "Pracujesz w ten weekend?",
+      "Ile godzin dzisiaj pracujesz?",
+      "Kiedy kończysz pracę?"
+    ],
+    "distractorsFr": [
+      "Travailles-tu ce week-end ?",
+      "Combien d'heures travailles-tu aujourd'hui ?",
+      "Quand finis-tu le travail ?"
+    ]
+  },
+  {
+    "id": "gen-9-23",
+    "date": "2026-11-09",
+    "pl": "Nie mam dużo pracy w tym tygodniu.",
+    "fr": "Je n'ai pas beaucoup de travail cette semaine.",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "Nie mam dużo pracy w tym tygodniu",
+      "Nie mam duzo pracy w tym tygodniu"
+    ],
+    "acceptedFr": [
+      "Je n'ai pas beaucoup de travail cette semaine"
+    ],
+    "distractorsPl": [
+      "W tym tygodniu pracuję codziennie.",
+      "Mam bardzo zajęty tydzień.",
+      "Nie pracuję w biurze."
+    ],
+    "distractorsFr": [
+      "Cette semaine je travaille tous les jours.",
+      "J'ai une semaine très chargée.",
+      "Je ne travaille pas au bureau."
+    ]
+  },
+  {
+    "id": "gen-9-24",
+    "date": "2026-11-09",
+    "pl": "tydzień",
+    "fr": "la semaine",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "tydzień",
+      "tydzien"
+    ],
+    "acceptedFr": [
+      "semaine",
+      "la semaine",
+      "une semaine"
+    ],
+    "distractorsPl": [
+      "miesiąc",
+      "rok",
+      "dzień"
+    ],
+    "distractorsFr": [
+      "mois",
+      "an / année",
+      "jour"
+    ]
+  },
+  {
+    "id": "gen-9-25",
+    "date": "2026-11-09",
+    "pl": "w tym tygodniu",
+    "fr": "cette semaine (locatif : w tym tygodniu)",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "w tym tygodniu"
+    ],
+    "acceptedFr": [
+      "cette semaine"
+    ],
+    "distractorsPl": [
+      "w przyszłym tygodniu",
+      "w zeszłym tygodniu",
+      "w ten weekend"
+    ],
+    "distractorsFr": [
+      "la semaine prochaine",
+      "la semaine dernière",
+      "ce week-end"
+    ]
+  },
+  {
+    "id": "gen-9-26",
+    "date": "2026-11-09",
+    "pl": "Czego nie masz dzisiaj?",
+    "fr": "Qu'est-ce que tu n'as pas aujourd'hui ? (question au génitif avec czego)",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "Czego nie masz dzisiaj?"
+    ],
+    "acceptedFr": [
+      "Qu'est-ce que tu n'as pas aujourd'hui ?",
+      "Que n'as-tu pas aujourd'hui ?"
+    ],
+    "distractorsPl": [
+      "Co masz dzisiaj?",
+      "Co robisz dzisiaj?",
+      "Gdzie jesteś dzisiaj?"
+    ],
+    "distractorsFr": [
+      "Qu'as-tu aujourd'hui ?",
+      "Que fais-tu aujourd'hui ?",
+      "Où es-tu aujourd'hui ?"
+    ]
+  },
+  {
+    "id": "gen-9-27",
+    "date": "2026-11-09",
+    "pl": "Nie mam kursu chińskiego.",
+    "fr": "Je n'ai pas cours de chinois. (cours au génitif : kursu)",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "Nie mam kursu chińskiego",
+      "Nie mam kursu chinskiego"
+    ],
+    "acceptedFr": [
+      "Je n'ai pas cours de chinois",
+      "Je n'ai pas de cours de chinois"
+    ],
+    "distractorsPl": [
+      "Uczę się chińskiego.",
+      "Mam kurs polskiego.",
+      "Nie lubię języków obcych."
+    ],
+    "distractorsFr": [
+      "J'apprends le chinois.",
+      "J'ai cours de polonais.",
+      "Je n'aime pas les langues étrangères."
+    ]
+  },
+  {
+    "id": "gen-9-28",
+    "date": "2026-11-09",
+    "pl": "kurs",
+    "fr": "le cours (de langue, de formation)",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "kurs"
+    ],
+    "acceptedFr": [
+      "cours",
+      "le cours",
+      "un cours"
+    ],
+    "distractorsPl": [
+      "lekcja",
+      "szkoła",
+      "praca"
+    ],
+    "distractorsFr": [
+      "leçon",
+      "école",
+      "travail"
+    ]
+  },
+  {
+    "id": "gen-9-29",
+    "date": "2026-11-09",
+    "pl": "kościół",
+    "fr": "l'église",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "kościół",
+      "kosciol"
+    ],
+    "acceptedFr": [
+      "église",
+      "l'église",
+      "une église"
+    ],
+    "distractorsPl": [
+      "muzeum",
+      "cmentarz",
+      "szkoła"
+    ],
+    "distractorsFr": [
+      "musée",
+      "cimetière",
+      "école"
+    ]
+  },
+  {
+    "id": "gen-9-30",
+    "date": "2026-11-09",
+    "pl": "Szukam kościoła.",
+    "fr": "Je cherche une église. (verbe szukać + génitif : kościoła)",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "Szukam kościoła",
+      "Szukam kosciola"
+    ],
+    "acceptedFr": [
+      "Je cherche une église",
+      "Je cherche l'église"
+    ],
+    "distractorsPl": [
+      "Widzę stary kościół.",
+      "Gdzie jest kościół?",
+      "Idę do kościoła."
+    ],
+    "distractorsFr": [
+      "Je vois une vieille église.",
+      "Où est l'église ?",
+      "Je vais à l'église."
+    ]
+  },
+  {
+    "id": "gen-9-31",
+    "date": "2026-11-09",
+    "pl": "Potrzebuję banku.",
+    "fr": "J'ai besoin d'une banque. (verbe potrzebować + génitif : banku)",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "Potrzebuję banku",
+      "Potrzebuje banku"
+    ],
+    "acceptedFr": [
+      "J'ai besoin d'une banque",
+      "J'ai besoin de la banque"
+    ],
+    "distractorsPl": [
+      "Szukam bankomatu.",
+      "Gdzie jest bank?",
+      "Mam konto w banku."
+    ],
+    "distractorsFr": [
+      "Je cherche un distributeur.",
+      "Où est la banque ?",
+      "J'ai un compte à la banque."
+    ]
+  },
+  {
+    "id": "gen-9-32",
+    "date": "2026-11-09",
+    "pl": "bać się",
+    "fr": "avoir peur de (+ génitif)",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "bać się",
+      "bac sie"
+    ],
+    "acceptedFr": [
+      "avoir peur",
+      "avoir peur de"
+    ],
+    "distractorsPl": [
+      "martwić się",
+      "lubić",
+      "cieszyć się"
+    ],
+    "distractorsFr": [
+      "s'inquiéter",
+      "aimer",
+      "se réjouir"
+    ]
+  },
+  {
+    "id": "gen-9-33",
+    "date": "2026-11-09",
+    "pl": "boję się",
+    "fr": "j'ai peur (1re pers. singulier de bać się)",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "boję się",
+      "boje sie"
+    ],
+    "acceptedFr": [
+      "j'ai peur",
+      "je crains"
+    ],
+    "distractorsPl": [
+      "nie boję się",
+      "boisz się",
+      "wiem"
+    ],
+    "distractorsFr": [
+      "je n'ai pas peur",
+      "tu as peur",
+      "je sais"
+    ]
+  },
+  {
+    "id": "gen-9-34",
+    "date": "2026-11-09",
+    "pl": "używać",
+    "fr": "utiliser, employer (+ génitif)",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "używać",
+      "uzywac"
+    ],
+    "acceptedFr": [
+      "utiliser",
+      "employer"
+    ],
+    "distractorsPl": [
+      "mieć",
+      "szukać",
+      "robić"
+    ],
+    "distractorsFr": [
+      "avoir",
+      "chercher",
+      "faire"
+    ]
+  },
+  {
+    "id": "gen-9-35",
+    "date": "2026-11-09",
+    "pl": "próbować",
+    "fr": "essayer, goûter (+ génitif)",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "próbować",
+      "probowac"
+    ],
+    "acceptedFr": [
+      "essayer",
+      "goûter",
+      "gouter"
+    ],
+    "distractorsPl": [
+      "robić",
+      "chcieć",
+      "myśleć"
+    ],
+    "distractorsFr": [
+      "faire",
+      "vouloir",
+      "penser"
+    ]
+  },
+  {
+    "id": "gen-9-36",
+    "date": "2026-11-09",
+    "pl": "próbuję",
+    "fr": "j'essaie (1re pers. singulier de próbować)",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "próbuję",
+      "probuje"
+    ],
+    "acceptedFr": [
+      "j'essaie",
+      "j'essaye"
+    ],
+    "distractorsPl": [
+      "próbujesz",
+      "wiem",
+      "chcę"
+    ],
+    "distractorsFr": [
+      "tu essaies",
+      "je sais",
+      "je veux"
+    ]
+  },
+  {
+    "id": "gen-9-37",
+    "date": "2026-11-09",
+    "pl": "Wiesz co jest jutro?",
+    "fr": "Sais-tu ce qu'il y a demain ?",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Wiesz co jest jutro?"
+    ],
+    "acceptedFr": [
+      "Sais-tu ce qu'il y a demain ?",
+      "Tu sais ce qu'il y a demain ?"
+    ],
+    "distractorsPl": [
+      "Wiesz która jest godzina?",
+      "Co robisz jutro?",
+      "Gdzie idziesz jutro?"
+    ],
+    "distractorsFr": [
+      "Sais-tu quelle heure il est ?",
+      "Que fais-tu demain ?",
+      "Où vas-tu demain ?"
+    ]
+  },
+  {
+    "id": "cult-9-8",
+    "date": "2026-11-09",
+    "pl": "Jutro jest Dzień Niepodległości Polski.",
+    "fr": "Demain c'est la Fête de l'Indépendance de la Pologne (11 novembre).",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "Jutro jest Dzień Niepodległości Polski",
+      "Jutro jest Dzien Niepodleglosci Polski"
+    ],
+    "acceptedFr": [
+      "Demain c'est la fête de l'indépendance de la Pologne",
+      "Demain est la fête de l'indépendance de la Pologne"
+    ],
+    "distractorsPl": [
+      "Jutro jest Dzień Wszystkich Świętych.",
+      "Jutro są Andrzejki w Polsce.",
+      "Jutro jest dzień wolny od szkoły."
+    ],
+    "distractorsFr": [
+      "Demain c'est la Toussaint.",
+      "Demain c'est la Sainte-André en Pologne.",
+      "Demain est un jour sans école."
+    ]
+  },
+  {
+    "id": "cult-9-9",
+    "date": "2026-11-09",
+    "pl": "niepodległość",
+    "fr": "l'indépendance",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "niepodległość",
+      "niepodleglosc"
+    ],
+    "acceptedFr": [
+      "indépendance",
+      "l'indépendance",
+      "independance"
+    ],
+    "distractorsPl": [
+      "wolność",
+      "pokój",
+      "tradycja"
+    ],
+    "distractorsFr": [
+      "liberté",
+      "paix",
+      "tradition"
+    ]
+  },
+  {
+    "id": "cult-9-10",
+    "date": "2026-11-09",
+    "pl": "jedenastego listopada",
+    "fr": "le 11 novembre (génitif de date : jedenasty -> jedenastego)",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "jedenastego listopada"
+    ],
+    "acceptedFr": [
+      "le 11 novembre",
+      "le onze novembre",
+      "onze novembre"
+    ],
+    "distractorsPl": [
+      "pierwszego listopada",
+      "trzydziestego listopada",
+      "jedenasty listopad"
+    ],
+    "distractorsFr": [
+      "le premier novembre",
+      "le trente novembre",
+      "onze novembre (nominatif incorrect)"
+    ]
+  },
+  {
+    "id": "gen-9-38",
+    "date": "2026-11-09",
+    "pl": "jezioro",
+    "fr": "le lac (nom neutre)",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "jezioro"
+    ],
+    "acceptedFr": [
+      "lac",
+      "le lac",
+      "un lac"
+    ],
+    "distractorsPl": [
+      "morze",
+      "rzeka",
+      "góra"
+    ],
+    "distractorsFr": [
+      "mer",
+      "fleuve / rivière",
+      "montagne"
+    ]
   }
 ];
 
@@ -11700,6 +13622,729 @@ const CASE_CHALLENGES = [
         "note": "Datif pluriel (-ym)"
       }
     ]
+  },
+  // ------------------------------------------
+  // NOUVEAUX DÉFIS DU 09/11/2026 (GÉNITIF, NÉGATION, VERBES & TEMPS)
+  // ------------------------------------------
+  {
+    "id": "case-b-46",
+    "date": "2026-11-09",
+    "caseName": "Biernik",
+    "caseLabelFr": "Accusatif (Biernik)",
+    "caseBadgeClass": "case-biernik",
+    "sentenceBefore": "Moja mama ma na sobie czarn",
+    "sentenceAfter": " sukienkę, czerwone buty i białą torebkę.",
+    "gapWord": "czarna",
+    "gapWordMeaning": "noire (adj.)",
+    "targetType": "adjectif",
+    "isPlural": false,
+    "gender": "féminin",
+    "correctEnding": "-ą",
+    "fullCorrectWord": "czarną",
+    "fullSentence": "Moja mama ma na sobie czarną sukienkę, czerwone buty i białą torebkę.",
+    "translationFr": "Ma mère porte une robe noire, des chaussures rouges et un sac blanc.",
+    "ruleExplanation": "La locution <em>mieć na sobie</em> (porter sur soi) est suivie de l'<strong>Accusatif (Biernik)</strong> pour les vêtements portés. À l'accusatif singulier féminin, l'adjectif prend la terminaison nasale <strong>-ą</strong> (czarna &rarr; <strong>czarną</strong> sukienkę).",
+    "options": [
+      {
+        "ending": "-ą",
+        "word": "czarną",
+        "isCorrect": true,
+        "note": "Accusatif féminin régulier (-ą)"
+      },
+      {
+        "ending": "-a",
+        "word": "czarna",
+        "isCorrect": false,
+        "note": "Nominatif féminin (-a)"
+      },
+      {
+        "ending": "-e",
+        "word": "czarne",
+        "isCorrect": false,
+        "note": "Neutre / pluriel non-viril (-e)"
+      },
+      {
+        "ending": "-ej",
+        "word": "czarnej",
+        "isCorrect": false,
+        "note": "Génitif / Locatif féminin (-ej)"
+      }
+    ]
+  },
+  {
+    "id": "case-b-47",
+    "date": "2026-11-09",
+    "caseName": "Biernik",
+    "caseLabelFr": "Accusatif (Biernik)",
+    "caseBadgeClass": "case-biernik",
+    "sentenceBefore": "Ta kobieta ma na sobie niebiesk",
+    "sentenceAfter": " spódnicę, biały sweter i czarne buty.",
+    "gapWord": "niebieska",
+    "gapWordMeaning": "bleue (adj.)",
+    "targetType": "adjectif",
+    "isPlural": false,
+    "gender": "féminin",
+    "correctEnding": "-ą",
+    "fullCorrectWord": "niebieską",
+    "fullSentence": "Ta kobieta ma na sobie niebieską spódnicę, biały sweter i czarne buty.",
+    "translationFr": "Cette femme porte une jupe bleue, un pull blanc et des chaussures noires.",
+    "ruleExplanation": "Pour un vêtement au féminin singulier après <em>mieć na sobie</em>, l'adjectif s'accorde au <strong>Biernik (Accusatif)</strong> avec la terminaison <strong>-ą</strong> (niebieska &rarr; <strong>niebieską</strong> spódnicę).",
+    "options": [
+      {
+        "ending": "-ą",
+        "word": "niebieską",
+        "isCorrect": true,
+        "note": "Accusatif féminin régulier (-ą)"
+      },
+      {
+        "ending": "-a",
+        "word": "niebieska",
+        "isCorrect": false,
+        "note": "Nominatif féminin (-a)"
+      },
+      {
+        "ending": "-e",
+        "word": "niebieskie",
+        "isCorrect": false,
+        "note": "Neutre / pluriel non-viril (-ie)"
+      },
+      {
+        "ending": "-ej",
+        "word": "niebieskiej",
+        "isCorrect": false,
+        "note": "Génitif / Locatif féminin (-ej)"
+      }
+    ]
+  },
+  {
+    "id": "case-n-21",
+    "date": "2026-11-09",
+    "caseName": "Narzędnik",
+    "caseLabelFr": "Instrumental (Narzędnik)",
+    "caseBadgeClass": "case-narzednik",
+    "sentenceBefore": "Młode dziewczyny chcą wiedzieć, kto będzie ich męż",
+    "sentenceAfter": ".",
+    "gapWord": "mąż",
+    "gapWordMeaning": "mari (époux)",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "masculin",
+    "correctEnding": "-em",
+    "fullCorrectWord": "mężem",
+    "fullSentence": "Młode dziewczyny chcą wiedzieć, kto będzie ich mężem.",
+    "translationFr": "Les jeunes filles veulent savoir qui sera leur mari.",
+    "ruleExplanation": "Après le verbe <em>być</em> (ici au futur : <em>będzie</em>), le nom indiquant un rôle, métier, état ou statut familial se décline obligatoirement au <strong>Narzędnik (Instrumental)</strong> : pour un masculin singulier régulier, la terminaison est <strong>-em</strong> (mąż &rarr; <strong>mężem</strong>).",
+    "options": [
+      {
+        "ending": "-em",
+        "word": "mężem",
+        "isCorrect": true,
+        "note": "Instrumental masculin régulier (-em)"
+      },
+      {
+        "ending": "-a",
+        "word": "męża",
+        "isCorrect": false,
+        "note": "Génitif / Accusatif masculin (-a)"
+      },
+      {
+        "ending": "-owi",
+        "word": "mężowi",
+        "isCorrect": false,
+        "note": "Datif masculin (-owi)"
+      },
+      {
+        "ending": "-u",
+        "word": "mężu",
+        "isCorrect": false,
+        "note": "Locatif masculin (-u)"
+      }
+    ]
+  },
+  {
+    "id": "case-pl-n-11",
+    "date": "2026-11-09",
+    "caseName": "Narzędnik",
+    "caseLabelFr": "Instrumental (Narzędnik Pluriel)",
+    "caseBadgeClass": "case-narzednik",
+    "sentenceBefore": "Trzydziestego listopada rodziny organizują imprezy z przyjaciół",
+    "sentenceAfter": ".",
+    "gapWord": "przyjaciele",
+    "gapWordMeaning": "amis (pluriel)",
+    "targetType": "nom",
+    "isPlural": true,
+    "gender": "masculin pluriel viril",
+    "correctEnding": "-mi",
+    "fullCorrectWord": "przyjaciółmi",
+    "fullSentence": "Trzydziestego listopada rodziny organizują imprezy z przyjaciółmi.",
+    "translationFr": "Le 30 novembre, les familles organisent des fêtes avec leurs amis.",
+    "ruleExplanation": "La préposition <em>z / ze</em> (avec) exige l'<strong>Instrumental (Narzędnik)</strong>. Au pluriel, la terminaison universelle de l'instrumental est <strong>-ami</strong>, avec la forme douce irrégulière <strong>-mi</strong> pour <em>przyjaciele</em> &rarr; <strong>przyjaciółmi</strong>.",
+    "options": [
+      {
+        "ending": "-mi",
+        "word": "przyjaciółmi",
+        "isCorrect": true,
+        "note": "Instrumental pluriel doux irrégulier (-mi)"
+      },
+      {
+        "ending": "-ów",
+        "word": "przyjaciół",
+        "isCorrect": false,
+        "note": "Génitif pluriel (désinence zéro)"
+      },
+      {
+        "ending": "-om",
+        "word": "przyjaciołom",
+        "isCorrect": false,
+        "note": "Datif pluriel (-om)"
+      },
+      {
+        "ending": "-ach",
+        "word": "przyjaciołach",
+        "isCorrect": false,
+        "note": "Locatif pluriel (-ach)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-43",
+    "date": "2026-11-09",
+    "caseName": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Nie widzę kot",
+    "sentenceAfter": " pod stołem.",
+    "gapWord": "kot",
+    "gapWordMeaning": "chat",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "masculin animé",
+    "correctEnding": "-a",
+    "fullCorrectWord": "kota",
+    "fullSentence": "Nie widzę kota pod stołem.",
+    "translationFr": "Je ne vois pas le chat sous la table.",
+    "ruleExplanation": "<strong>Négation = Génitif obligatoire</strong> : Le verbe <em>widzieć</em> prend un COD à l'accusatif à la forme affirmative (<em>Widzę kota</em>), mais avec <em>nie</em>, le COD bascule impérativement au <strong>Génitif (Dopełniacz)</strong> : les masculins animés prennent <strong>-a</strong> (kot &rarr; <strong>kota</strong>).",
+    "options": [
+      {
+        "ending": "-a",
+        "word": "kota",
+        "isCorrect": true,
+        "note": "Génitif masculin animé (-a)"
+      },
+      {
+        "ending": "-u",
+        "word": "kotu",
+        "isCorrect": false,
+        "note": "Datif masculin (-u)"
+      },
+      {
+        "ending": "-em",
+        "word": "kotem",
+        "isCorrect": false,
+        "note": "Instrumental (-em)"
+      },
+      {
+        "ending": "-e",
+        "word": "kocie",
+        "isCorrect": false,
+        "note": "Locatif (-e)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-44",
+    "date": "2026-11-09",
+    "caseName": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Przepraszam, nie mam teraz czas",
+    "sentenceAfter": ".",
+    "gapWord": "czas",
+    "gapWordMeaning": "temps (durée)",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "masculin inanimé / abstrait",
+    "correctEnding": "-u",
+    "fullCorrectWord": "czasu",
+    "fullSentence": "Przepraszam, nie mam teraz czasu.",
+    "translationFr": "Désolé, je n'ai pas le temps en ce moment.",
+    "ruleExplanation": "L'absence et la négation avec <em>nie mam</em> entraînent le <strong>Génitif (Dopełniacz)</strong>. Pour les noms masculins inanimés abstraits (comme le temps, les sentiments), la terminaison du génitif est <strong>-u</strong> (czas &rarr; <strong>czasu</strong>).",
+    "options": [
+      {
+        "ending": "-u",
+        "word": "czasu",
+        "isCorrect": true,
+        "note": "Génitif masculin abstrait (-u)"
+      },
+      {
+        "ending": "-a",
+        "word": "czasa",
+        "isCorrect": false,
+        "note": "Forme inexistante (*czasa)"
+      },
+      {
+        "ending": "-em",
+        "word": "czasem",
+        "isCorrect": false,
+        "note": "Instrumental (parfois)"
+      },
+      {
+        "ending": "-ie",
+        "word": "czasie",
+        "isCorrect": false,
+        "note": "Locatif (-ie)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-45",
+    "date": "2026-11-09",
+    "caseName": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Nie mam jabłk",
+    "sentenceAfter": " na drugie śniadanie.",
+    "gapWord": "jabłko",
+    "gapWordMeaning": "pomme (nom neutre)",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "neutre",
+    "correctEnding": "-a",
+    "fullCorrectWord": "jabłka",
+    "fullSentence": "Nie mam jabłka na drugie śniadanie.",
+    "translationFr": "Je n'ai pas de pomme pour le goûter / le second petit-déjeuner.",
+    "ruleExplanation": "La négation <em>nie mam</em> exige le <strong>Génitif</strong>. Pour les noms neutres se terminant par <em>-o</em> ou <em>-e</em>, la terminaison au génitif singulier est <strong>-a</strong> (jabłko &rarr; <strong>jabłka</strong>, okno &rarr; <strong>okna</strong>).",
+    "options": [
+      {
+        "ending": "-a",
+        "word": "jabłka",
+        "isCorrect": true,
+        "note": "Génitif neutre régulier (-a)"
+      },
+      {
+        "ending": "-o",
+        "word": "jabłko",
+        "isCorrect": false,
+        "note": "Nominatif / Accusatif neutre (-o)"
+      },
+      {
+        "ending": "-u",
+        "word": "jabłku",
+        "isCorrect": false,
+        "note": "Datif / Locatif neutre (-u)"
+      },
+      {
+        "ending": "-em",
+        "word": "jabłkiem",
+        "isCorrect": false,
+        "note": "Instrumental neutre (-em)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-46",
+    "date": "2026-11-09",
+    "caseName": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Przepraszam, szukam kościoł",
+    "sentenceAfter": " Mariackiego.",
+    "gapWord": "kościół",
+    "gapWordMeaning": "église",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "masculin inanimé",
+    "correctEnding": "-a",
+    "fullCorrectWord": "kościoła",
+    "fullSentence": "Przepraszam, szukam kościoła Mariackiego.",
+    "translationFr": "Pardonnez-moi, je cherche l'église Sainte-Marie.",
+    "ruleExplanation": "Le verbe <strong>szukać</strong> (chercher) régit TOUJOURS le <strong>Génitif (Dopełniacz)</strong> en polonais. Le nom <em>kościół</em> prend exceptionnellement la terminaison <strong>-a</strong> avec alternance vocalique (kościół &rarr; <strong>kościoła</strong>).",
+    "options": [
+      {
+        "ending": "-a",
+        "word": "kościoła",
+        "isCorrect": true,
+        "note": "Génitif singulier (szukać + génitif)"
+      },
+      {
+        "ending": "-u",
+        "word": "kościołu",
+        "isCorrect": false,
+        "note": "Datif masculin (-u)"
+      },
+      {
+        "ending": "-em",
+        "word": "kościołem",
+        "isCorrect": false,
+        "note": "Instrumental masculin (-em)"
+      },
+      {
+        "ending": "-e",
+        "word": "kościele",
+        "isCorrect": false,
+        "note": "Locatif masculin (-e)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-47",
+    "date": "2026-11-09",
+    "caseName": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Pilnie potrzebuję bank",
+    "sentenceAfter": " lub bankomatu.",
+    "gapWord": "bank",
+    "gapWordMeaning": "banque",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "masculin inanimé",
+    "correctEnding": "-u",
+    "fullCorrectWord": "banku",
+    "fullSentence": "Pilnie potrzebuję banku lub bankomatu.",
+    "translationFr": "J'ai un besoin urgent d'une banque ou d'un distributeur.",
+    "ruleExplanation": "Le verbe <strong>potrzebować</strong> (avoir besoin de) exige impérativement le <strong>Génitif (Dopełniacz)</strong>. Pour <em>bank</em> (masculin inanimé d'emprunt), la désinence du génitif est <strong>-u</strong> (bank &rarr; <strong>banku</strong>).",
+    "options": [
+      {
+        "ending": "-u",
+        "word": "banku",
+        "isCorrect": true,
+        "note": "Génitif masculin inanimé (potrzebować + génitif)"
+      },
+      {
+        "ending": "-a",
+        "word": "banka",
+        "isCorrect": false,
+        "note": "Forme incorrecte (*banka)"
+      },
+      {
+        "ending": "-em",
+        "word": "bankiem",
+        "isCorrect": false,
+        "note": "Instrumental masculin (-em)"
+      },
+      {
+        "ending": "-owi",
+        "word": "bankowi",
+        "isCorrect": false,
+        "note": "Datif masculin (-owi)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-48",
+    "date": "2026-11-09",
+    "caseName": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Niestety w kuchni nie ma herbat",
+    "sentenceAfter": ".",
+    "gapWord": "herbata",
+    "gapWordMeaning": "thé",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "féminin",
+    "correctEnding": "-y",
+    "fullCorrectWord": "herbaty",
+    "fullSentence": "Niestety w kuchni nie ma herbaty.",
+    "translationFr": "Malheureusement, dans la cuisine il n'y a pas de thé.",
+    "ruleExplanation": "La formule d'absence <strong>nie ma</strong> (il n'y a pas) est systématiquement suivie du <strong>Génitif (Dopełniacz)</strong>. Pour les noms féminins singuliers terminés par une consonne dure + <em>-a</em>, la terminaison devient <strong>-y</strong> (herbata &rarr; <strong>herbaty</strong>).",
+    "options": [
+      {
+        "ending": "-y",
+        "word": "herbaty",
+        "isCorrect": true,
+        "note": "Génitif féminin dur (-y)"
+      },
+      {
+        "ending": "-ę",
+        "word": "herbatę",
+        "isCorrect": false,
+        "note": "Accusatif féminin (-ę, forme affirmative)"
+      },
+      {
+        "ending": "-ie",
+        "word": "herbacie",
+        "isCorrect": false,
+        "note": "Datif / Locatif féminin (-ie)"
+      },
+      {
+        "ending": "-ą",
+        "word": "herbatą",
+        "isCorrect": false,
+        "note": "Instrumental féminin (-ą)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-49",
+    "date": "2026-11-09",
+    "caseName": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Ona w ogóle nie pije kaw",
+    "sentenceAfter": ".",
+    "gapWord": "kawa",
+    "gapWordMeaning": "café",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "féminin",
+    "correctEnding": "-y",
+    "fullCorrectWord": "kawy",
+    "fullSentence": "Ona w ogóle nie pije kawy.",
+    "translationFr": "Elle ne boit pas du tout de café.",
+    "ruleExplanation": "À la forme affirmative : <em>Ona pije kawę</em> (Biernik en -ę). Mais avec la négation <em>nie pije</em>, le complément bascule obligatoirement au <strong>Génitif (Dopełniacz)</strong> en <strong>-y</strong> (kawa &rarr; <strong>kawy</strong>).",
+    "options": [
+      {
+        "ending": "-y",
+        "word": "kawy",
+        "isCorrect": true,
+        "note": "Génitif féminin de négation (-y)"
+      },
+      {
+        "ending": "-ę",
+        "word": "kawę",
+        "isCorrect": false,
+        "note": "Accusatif de l'affirmation (-ę)"
+      },
+      {
+        "ending": "-ie",
+        "word": "kawie",
+        "isCorrect": false,
+        "note": "Datif / Locatif féminin (-ie)"
+      },
+      {
+        "ending": "-ą",
+        "word": "kawą",
+        "isCorrect": false,
+        "note": "Instrumental féminin (-ą)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-50",
+    "date": "2026-11-09",
+    "caseName": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Jestem dziś zmęczony, nie mam energi",
+    "sentenceAfter": ".",
+    "gapWord": "energia",
+    "gapWordMeaning": "énergie",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "féminin",
+    "correctEnding": "-i",
+    "fullCorrectWord": "energii",
+    "fullSentence": "Jestem dziś zmęczony, nie mam energii.",
+    "translationFr": "Je suis fatigué aujourd'hui, je n'ai pas d'énergie.",
+    "ruleExplanation": "Après la négation <em>nie mam</em>, le nom féminin se met au Génitif. Pour les noms féminins en <em>-ia</em>, la terminaison est double <strong>-ii</strong> (energia &rarr; <strong>energii</strong>).",
+    "options": [
+      {
+        "ending": "-i",
+        "word": "energii",
+        "isCorrect": true,
+        "note": "Génitif féminin doux (-ii)"
+      },
+      {
+        "ending": "-y",
+        "word": "energy",
+        "isCorrect": false,
+        "note": "Orthographe impossible en polonais"
+      },
+      {
+        "ending": "-ę",
+        "word": "energię",
+        "isCorrect": false,
+        "note": "Accusatif féminin (-ę)"
+      },
+      {
+        "ending": "-ą",
+        "word": "energią",
+        "isCorrect": false,
+        "note": "Instrumental féminin (-ą)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-51",
+    "date": "2026-11-09",
+    "caseName": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Dziś jest sobota, więc mamy dużo czas",
+    "sentenceAfter": ".",
+    "gapWord": "czas",
+    "gapWordMeaning": "temps (durée)",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "masculin inanimé",
+    "correctEnding": "-u",
+    "fullCorrectWord": "czasu",
+    "fullSentence": "Dziś jest sobota, więc mamy dużo czasu.",
+    "translationFr": "Aujourd'hui c'est samedi, donc nous avons beaucoup de temps.",
+    "ruleExplanation": "Les adverbes de quantité comme <strong>dużo</strong> (beaucoup), <strong>mało</strong> (peu), <strong>trochę</strong> (un peu) sont obligatoirement complétés par le <strong>Génitif (Dopełniacz)</strong> : <em>dużo czasu</em>.",
+    "options": [
+      {
+        "ending": "-u",
+        "word": "czasu",
+        "isCorrect": true,
+        "note": "Génitif de quantité (-u)"
+      },
+      {
+        "ending": "-a",
+        "word": "czasa",
+        "isCorrect": false,
+        "note": "Terminaison inexistante"
+      },
+      {
+        "ending": "-em",
+        "word": "czasem",
+        "isCorrect": false,
+        "note": "Instrumental (parfois)"
+      },
+      {
+        "ending": "-ie",
+        "word": "czasie",
+        "isCorrect": false,
+        "note": "Locatif (-ie)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-52",
+    "date": "2026-11-09",
+    "caseName": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Poproszę trochę wod",
+    "sentenceAfter": ", proszę.",
+    "gapWord": "woda",
+    "gapWordMeaning": "eau",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "féminin",
+    "correctEnding": "-y",
+    "fullCorrectWord": "wody",
+    "fullSentence": "Poproszę trochę wody, proszę.",
+    "translationFr": "Un peu d'eau, s'il vous plaît.",
+    "ruleExplanation": "Après l'adverbe de quantité <strong>trochę</strong> (un peu de), le nom se met au <strong>Génitif</strong> : pour le nom féminin <em>woda</em>, la forme est <strong>wody</strong>.",
+    "options": [
+      {
+        "ending": "-y",
+        "word": "wody",
+        "isCorrect": true,
+        "note": "Génitif féminin de quantité (-y)"
+      },
+      {
+        "ending": "-ę",
+        "word": "wodę",
+        "isCorrect": false,
+        "note": "Accusatif COD sans quantité (wodę)"
+      },
+      {
+        "ending": "-zie",
+        "word": "wodzie",
+        "isCorrect": false,
+        "note": "Locatif féminin (-zie)"
+      },
+      {
+        "ending": "-ą",
+        "word": "wodą",
+        "isCorrect": false,
+        "note": "Instrumental féminin (-ą)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-53",
+    "date": "2026-11-09",
+    "caseName": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz Pluriel)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Niestety nie mam pieniędz",
+    "sentenceAfter": " na drogie wakacje.",
+    "gapWord": "pieniądze",
+    "gapWordMeaning": "argent (nom pluriel)",
+    "targetType": "nom",
+    "isPlural": true,
+    "gender": "masculin pluriel non-viril",
+    "correctEnding": "-y",
+    "fullCorrectWord": "pieniędzy",
+    "fullSentence": "Niestety nie mam pieniędzy na drogie wakacje.",
+    "translationFr": "Malheureusement je n'ai pas d'argent pour des vacances coûteuses.",
+    "ruleExplanation": "Le mot <em>pieniądze</em> (l'argent) est un pluriel tantum. À la négation <em>nie mam</em>, il se met au Génitif pluriel irrégulier très fréquent avec terminaison <strong>-y</strong> : <strong>pieniędzy</strong>.",
+    "options": [
+      {
+        "ending": "-y",
+        "word": "pieniędzy",
+        "isCorrect": true,
+        "note": "Génitif pluriel irrégulier (-y)"
+      },
+      {
+        "ending": "-e",
+        "word": "pieniądze",
+        "isCorrect": false,
+        "note": "Nominatif / Accusatif pluriel (-e)"
+      },
+      {
+        "ending": "-ach",
+        "word": "pieniądzach",
+        "isCorrect": false,
+        "note": "Locatif pluriel (-ach)"
+      },
+      {
+        "ending": "-om",
+        "word": "pieniądzom",
+        "isCorrect": false,
+        "note": "Datif pluriel (-om)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-54",
+    "date": "2026-11-09",
+    "caseName": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Jedenast",
+    "sentenceAfter": " listopada obchodzimy Dzień Niepodległości.",
+    "gapWord": "jedenasty",
+    "gapWordMeaning": "onzième (date)",
+    "targetType": "adjectif",
+    "isPlural": false,
+    "gender": "masculin",
+    "correctEnding": "-ego",
+    "fullCorrectWord": "Jedenastego",
+    "fullSentence": "Jedenastego listopada obchodzimy Dzień Niepodległości.",
+    "translationFr": "Le 11 novembre, nous célébrons la Fête de l'Indépendance.",
+    "ruleExplanation": "En polonais, pour exprimer le jour du mois (« le 11 novembre »), l'adjectif ordinal du quantième se met TOUJOURS au <strong>Génitif singulier masculin (-ego)</strong> : <em>jedenasty</em> &rarr; <strong>jedenastego</strong> listopada.",
+    "options": [
+      {
+        "ending": "-ego",
+        "word": "Jedenastego",
+        "isCorrect": true,
+        "note": "Génitif de date temporel (-ego)"
+      },
+      {
+        "ending": "-y",
+        "word": "Jedenasty",
+        "isCorrect": false,
+        "note": "Nominatif singulier (-y)"
+      },
+      {
+        "ending": "-ym",
+        "word": "Jedenastym",
+        "isCorrect": false,
+        "note": "Locatif / Instrumental (-ym)"
+      },
+      {
+        "ending": "-emu",
+        "word": "Jedenastemu",
+        "isCorrect": false,
+        "note": "Datif masculin (-emu)"
+      }
+    ]
   }
 ];
 
@@ -13755,6 +16400,162 @@ const POSSESSIVE_CHALLENGES = [
         "word": "swój",
         "isCorrect": false,
         "note": "Réfléchi inapproprié ici"
+      }
+    ]
+  },
+  // ------------------------------------------
+  // NOUVEAUX DÉFIS DU 09/11/2026 (POSSESSIFS & RÉFLÉCHI SWÓJ)
+  // ------------------------------------------
+  {
+    "id": "poss-l1-45",
+    "date": "2026-11-09",
+    "level": "level-1",
+    "category": "1st-2nd",
+    "categoryLabelFr": "1re & 2e personne",
+    "targetCase": "Mianownik (Nominatif)",
+    "caseLabelFr": "Nominatif (Sujet)",
+    "nounContext": "mama (féminin singulier)",
+    "targetMeaning": "ma (1re pers. singulier, fém)",
+    "sentenceBefore": "",
+    "sentenceAfter": " mama ma na sobie czarną sukienkę.",
+    "gapWord": "Moja",
+    "fullSentence": "Moja mama ma na sobie czarną sukienkę.",
+    "translationFr": "Ma mère porte une robe noire.",
+    "ruleExplanation": "Pour accorder le possessif avec le sujet féminin <em>mama</em> au Nominatif, on utilise la forme féminine en <strong>-a</strong> : <strong>Moja</strong> mama.",
+    "options": [
+      {
+        "word": "Moja",
+        "isCorrect": true,
+        "note": "Féminin singulier Nominatif"
+      },
+      {
+        "word": "Mój",
+        "isCorrect": false,
+        "note": "Masculin singulier"
+      },
+      {
+        "word": "Moje",
+        "isCorrect": false,
+        "note": "Neutre singulier"
+      },
+      {
+        "word": "Moi",
+        "isCorrect": false,
+        "note": "Pluriel viril"
+      }
+    ]
+  },
+  {
+    "id": "poss-l1-46",
+    "date": "2026-11-09",
+    "level": "level-1",
+    "category": "3rd",
+    "categoryLabelFr": "3e personne",
+    "targetCase": "Narzędnik (Instrumental)",
+    "nounContext": "mężem (masculin instrumental)",
+    "targetMeaning": "leur (3e pers. pluriel : invariable)",
+    "sentenceBefore": "Młode dziewczyny chcą wiedzieć, kto będzie ",
+    "sentenceAfter": " mężem.",
+    "gapWord": "ich",
+    "fullSentence": "Młode dziewczyny chcą wiedzieć, kto będzie ich mężem.",
+    "translationFr": "Les jeunes filles veulent savoir qui sera leur mari.",
+    "ruleExplanation": "Le possessif de 3e personne du pluriel <strong>ich</strong> (leur / leurs) est **totalement invariable** en polonais, quel que soit le cas (ici Narzędnik avec <em>mężem</em>) ou le genre du nom possédé.",
+    "options": [
+      {
+        "word": "ich",
+        "isCorrect": true,
+        "note": "3e personne pluriel invariable (leur)"
+      },
+      {
+        "word": "jego",
+        "isCorrect": false,
+        "note": "Son / sa (possesseur masculin)"
+      },
+      {
+        "word": "jej",
+        "isCorrect": false,
+        "note": "Son / sa (possesseur féminin)"
+      },
+      {
+        "word": "naszym",
+        "isCorrect": false,
+        "note": "Notre (1re pers. pluriel)"
+      }
+    ]
+  },
+  {
+    "id": "poss-l1-47",
+    "date": "2026-11-09",
+    "level": "level-1",
+    "category": "3rd",
+    "categoryLabelFr": "3e personne",
+    "targetCase": "Biernik (Accusatif)",
+    "nounContext": "sukienkę (féminin accusatif)",
+    "targetMeaning": "sa (possesseur féminin : invariable)",
+    "sentenceBefore": "Ta kobieta ma na sobie ",
+    "sentenceAfter": " ulubioną sukienkę.",
+    "gapWord": "jej",
+    "fullSentence": "Ta kobieta ma na sobie jej ulubioną sukienkę.",
+    "translationFr": "Cette femme porte sa robe préférée.",
+    "ruleExplanation": "Le possessif de 3e personne du singulier féminin <strong>jej</strong> (sa / son possesseur féminin) est strictement **invariable**, même si le nom est à l'accusatif (<em>sukienkę</em>).",
+    "options": [
+      {
+        "word": "jej",
+        "isCorrect": true,
+        "note": "3e personne féminin invariable (sa)"
+      },
+      {
+        "word": "jego",
+        "isCorrect": false,
+        "note": "Son (possesseur masculin)"
+      },
+      {
+        "word": "ich",
+        "isCorrect": false,
+        "note": "Leur (pluriel)"
+      },
+      {
+        "word": "twoją",
+        "isCorrect": false,
+        "note": "Ta (2e personne accusatif)"
+      }
+    ]
+  },
+  {
+    "id": "poss-l2-27",
+    "date": "2026-11-09",
+    "level": "level-2",
+    "category": "reflexive",
+    "categoryLabelFr": "Réfléchi (swój)",
+    "targetCase": "Narzędnik (Instrumental Pluriel)",
+    "nounContext": "przyjaciółmi (pluriel avec z)",
+    "targetMeaning": "leurs (propres amis : réfléchi)",
+    "sentenceBefore": "Trzydziestego listopada rodziny organizują imprezy ze ",
+    "sentenceAfter": " przyjaciółmi.",
+    "gapWord": "swoimi",
+    "fullSentence": "Trzydziestego listopada rodziny organizują imprezy ze swoimi przyjaciółmi.",
+    "translationFr": "Le 30 novembre, les familles organisent des fêtes avec leurs (propres) amis.",
+    "ruleExplanation": "Quand le possesseur est le sujet de la phrase (ici <em>rodziny</em>), on utilise de préférence le possessif réfléchi <strong>swój</strong>. À l'Instrumental pluriel avec la préposition <em>z / ze</em>, la terminaison est <strong>-imi / -ymi</strong> &rarr; <strong>swoimi</strong>.",
+    "options": [
+      {
+        "word": "swoimi",
+        "isCorrect": true,
+        "note": "Réfléchi Instrumental pluriel (-imi)"
+      },
+      {
+        "word": "swoich",
+        "isCorrect": false,
+        "note": "Génitif / Locatif pluriel (-ich)"
+      },
+      {
+        "word": "swoim",
+        "isCorrect": false,
+        "note": "Instrumental singulier masculin/neutre (-im)"
+      },
+      {
+        "word": "swoją",
+        "isCorrect": false,
+        "note": "Accusatif / Instrumental féminin singulier (-ą)"
       }
     ]
   }
