@@ -3656,7 +3656,7 @@ const INITIAL_CARDS = [
     id: "trav-29-7",
     date: "2026-10-29",
     pl: "do",
-    fr: "jusqu'à, vers (préposition + génitif)",
+    fr: "jusqu'à, vers",
     category: "Phrases & Quotidien",
     acceptedPl: ["do"],
     acceptedFr: ["jusqu'à", "vers", "à", "en direction de"],
@@ -3766,7 +3766,7 @@ const INITIAL_CARDS = [
     id: "trav-29-15",
     date: "2026-10-29",
     pl: "Jestem Francuzem, jestem Polakiem.",
-    fr: "Je suis Français, je suis Polonais (Instrumental).",
+    fr: "Je suis Français, je suis Polonais.",
     category: "Phrases & Quotidien",
     acceptedPl: ["Jestem Francuzem, jestem Polakiem"],
     acceptedFr: ["Je suis Français, je suis Polonais", "Je suis Francais, je suis Polonais"],
@@ -3854,7 +3854,7 @@ const INITIAL_CARDS = [
     id: "sklep-29-7",
     date: "2026-10-29",
     pl: "obok",
-    fr: "à côté de (préposition + génitif)",
+    fr: "à côté de",
     category: "Nourriture & Café",
     acceptedPl: ["obok"],
     acceptedFr: ["à côté de", "a cote de", "à côté"],
@@ -4825,7 +4825,7 @@ const INITIAL_CARDS = [
     "id": "phr-5-1",
     "date": "2026-11-05",
     "pl": "Jadłeś śniadanie?",
-    "fr": "As-tu pris le petit-déjeuner ? (mangé)",
+    "fr": "As-tu pris le petit-déjeuner ?",
     "category": "Phrases & Quotidien",
     "acceptedPl": [
       "Jadłeś śniadanie?",
@@ -5078,7 +5078,7 @@ const INITIAL_CARDS = [
     "id": "phr-5-11",
     "date": "2026-11-05",
     "pl": "w domu",
-    "fr": "à la maison, chez soi (locatif)",
+    "fr": "à la maison, chez soi",
     "category": "Phrases & Quotidien",
     "acceptedPl": [
       "w domu"
@@ -5787,7 +5787,7 @@ const INITIAL_CARDS = [
     "id": "cult-5-3",
     "date": "2026-11-05",
     "pl": "pierwszego listopada",
-    "fr": "le premier novembre (génitif de date)",
+    "fr": "le premier novembre",
     "category": "Culture & Traditions",
     "acceptedPl": [
       "pierwszego listopada",
@@ -5838,7 +5838,7 @@ const INITIAL_CARDS = [
     "id": "cult-5-5",
     "date": "2026-11-05",
     "pl": "cmentarze",
-    "fr": "les cimetières (pluriel)",
+    "fr": "les cimetières",
     "category": "Culture & Traditions",
     "acceptedPl": [
       "cmentarze"
@@ -5913,7 +5913,7 @@ const INITIAL_CARDS = [
     "id": "cult-5-8",
     "date": "2026-11-05",
     "pl": "znicze",
-    "fr": "les bougies du souvenir (pluriel)",
+    "fr": "les bougies du souvenir",
     "category": "Culture & Traditions",
     "acceptedPl": [
       "znicze"
@@ -5990,7 +5990,7 @@ const INITIAL_CARDS = [
     "id": "cult-5-11",
     "date": "2026-11-05",
     "pl": "groby",
-    "fr": "les tombes (pluriel)",
+    "fr": "les tombes",
     "category": "Culture & Traditions",
     "acceptedPl": [
       "groby"
@@ -6169,7 +6169,7 @@ const INITIAL_CARDS = [
     "id": "cult-5-18",
     "date": "2026-11-05",
     "pl": "światła",
-    "fr": "lumières, les feux (pluriel)",
+    "fr": "lumières, feux",
     "category": "Culture & Traditions",
     "acceptedPl": [
       "światła",
@@ -6219,7 +6219,7 @@ const INITIAL_CARDS = [
     "id": "cult-5-20",
     "date": "2026-11-05",
     "pl": "trzydziestego listopada",
-    "fr": "le trente novembre (génitif de date)",
+    "fr": "le trente novembre",
     "category": "Culture & Traditions",
     "acceptedPl": [
       "trzydziestego listopada",
@@ -6522,7 +6522,7 @@ const INITIAL_CARDS = [
     "id": "cult-5-32",
     "date": "2026-11-05",
     "pl": "drzwi",
-    "fr": "la porte (pluriel tantum en polonais)",
+    "fr": "la porte",
     "category": "Culture & Traditions",
     "acceptedPl": [
       "drzwi"
@@ -6628,7 +6628,7 @@ const INITIAL_CARDS = [
     "id": "phr-9-1",
     "date": "2026-11-09",
     "pl": "Jaki miałeś weekend?",
-    "fr": "Comment s'est passé ton week-end ? (Quel week-end as-tu eu ?)",
+    "fr": "Comment s'est passé ton week-end ?",
     "category": "Phrases & Quotidien",
     "acceptedPl": [
       "Jaki miałeś weekend?",
@@ -6900,7 +6900,7 @@ const INITIAL_CARDS = [
     "id": "phr-9-12",
     "date": "2026-11-09",
     "pl": "Pożyjemy, zobaczymy.",
-    "fr": "Qui vivra verra. (litt. nous vivrons, nous verrons)",
+    "fr": "Qui vivra verra.",
     "category": "Phrases & Quotidien",
     "acceptedPl": [
       "Pożyjemy, zobaczymy",
@@ -6926,7 +6926,7 @@ const INITIAL_CARDS = [
     "id": "phr-9-13",
     "date": "2026-11-09",
     "pl": "bułka z masłem",
-    "fr": "c'est du gâteau / c'est super facile (litt. petit pain au beurre)",
+    "fr": "c'est du gâteau, super facile",
     "category": "Phrases & Quotidien",
     "acceptedPl": [
       "bułka z masłem",
@@ -7198,7 +7198,7 @@ const INITIAL_CARDS = [
     "id": "phr-9-20",
     "date": "2026-11-09",
     "pl": "Ja będę iść.",
-    "fr": "Je vais aller / marcher (futur composé).",
+    "fr": "Je vais aller / marcher.",
     "category": "Phrases & Quotidien",
     "acceptedPl": [
       "Ja będę iść",
@@ -7250,7 +7250,7 @@ const INITIAL_CARDS = [
     "id": "cult-9-6",
     "date": "2026-11-09",
     "pl": "świeczka",
-    "fr": "bougie (chandelle)",
+    "fr": "bougie",
     "category": "Culture & Traditions",
     "acceptedPl": [
       "świeczka",
@@ -7301,7 +7301,7 @@ const INITIAL_CARDS = [
     "id": "phr-9-21",
     "date": "2026-11-09",
     "pl": "przyjaciele",
-    "fr": "les amis (pluriel viril)",
+    "fr": "les amis",
     "category": "La Famille",
     "acceptedPl": [
       "przyjaciele"
@@ -7527,7 +7527,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-1",
     "date": "2026-11-09",
     "pl": "kogo?",
-    "fr": "de qui ? (question au génitif)",
+    "fr": "de qui ?",
     "category": "Expressions & Phrases",
     "acceptedPl": [
       "kogo",
@@ -7536,7 +7536,7 @@ const INITIAL_CARDS = [
     "acceptedFr": [
       "de qui ?",
       "de qui",
-      "qui (génitif)"
+      "qui"
     ],
     "distractorsPl": [
       "czego?",
@@ -7553,7 +7553,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-2",
     "date": "2026-11-09",
     "pl": "czego?",
-    "fr": "de quoi ? (question au génitif)",
+    "fr": "de quoi ?",
     "category": "Expressions & Phrases",
     "acceptedPl": [
       "czego",
@@ -7562,7 +7562,7 @@ const INITIAL_CARDS = [
     "acceptedFr": [
       "de quoi ?",
       "de quoi",
-      "quoi (génitif)"
+      "quoi"
     ],
     "distractorsPl": [
       "kogo?",
@@ -7579,7 +7579,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-3",
     "date": "2026-11-09",
     "pl": "Nie mam czasu.",
-    "fr": "Je n'ai pas le temps. (temps au génitif : czasu)",
+    "fr": "Je n'ai pas le temps.",
     "category": "Expressions & Phrases",
     "acceptedPl": [
       "Nie mam czasu"
@@ -7603,7 +7603,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-4",
     "date": "2026-11-09",
     "pl": "Nie ma herbaty.",
-    "fr": "Il n'y a pas de thé. (thé au génitif : herbaty)",
+    "fr": "Il n'y a pas de thé.",
     "category": "Nourriture & Café",
     "acceptedPl": [
       "Nie ma herbaty"
@@ -7627,7 +7627,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-5",
     "date": "2026-11-09",
     "pl": "Nie mam jabłka.",
-    "fr": "Je n'ai pas de pomme. (pomme au génitif : jabłka)",
+    "fr": "Je n'ai pas de pomme.",
     "category": "Nourriture & Café",
     "acceptedPl": [
       "Nie mam jabłka",
@@ -7652,7 +7652,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-6",
     "date": "2026-11-09",
     "pl": "Nie widzę kota.",
-    "fr": "Je ne vois pas le chat. (chat au génitif : kota)",
+    "fr": "Je ne vois pas le chat.",
     "category": "Expressions & Phrases",
     "acceptedPl": [
       "Nie widzę kota",
@@ -7677,7 +7677,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-7",
     "date": "2026-11-09",
     "pl": "Nie lubię kawy.",
-    "fr": "Je n'aime pas le café. (café au génitif : kawy)",
+    "fr": "Je n'aime pas le café.",
     "category": "Nourriture & Café",
     "acceptedPl": [
       "Nie lubię kawy",
@@ -7702,7 +7702,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-8",
     "date": "2026-11-09",
     "pl": "dużo czasu",
-    "fr": "beaucoup de temps (quantité + génitif)",
+    "fr": "beaucoup de temps",
     "category": "Expressions & Phrases",
     "acceptedPl": [
       "dużo czasu",
@@ -7726,7 +7726,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-9",
     "date": "2026-11-09",
     "pl": "trochę wody",
-    "fr": "un peu d'eau (quantité + génitif)",
+    "fr": "un peu d'eau",
     "category": "Nourriture & Café",
     "acceptedPl": [
       "trochę wody",
@@ -7750,7 +7750,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-10",
     "date": "2026-11-09",
     "pl": "Nie mam energii.",
-    "fr": "Je n'ai pas d'énergie. (énergie au génitif : energii)",
+    "fr": "Je n'ai pas d'énergie.",
     "category": "Expressions & Phrases",
     "acceptedPl": [
       "Nie mam energii"
@@ -7774,7 +7774,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-11",
     "date": "2026-11-09",
     "pl": "Nie ma imprezy.",
-    "fr": "Il n'y a pas de fête / soirée. (impreza au génitif : imprezy)",
+    "fr": "Il n'y a pas de fête.",
     "category": "Expressions & Phrases",
     "acceptedPl": [
       "Nie ma imprezy"
@@ -7799,7 +7799,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-12",
     "date": "2026-11-09",
     "pl": "Mam dużo pracy.",
-    "fr": "J'ai beaucoup de travail. (praca au génitif : pracy)",
+    "fr": "J'ai beaucoup de travail.",
     "category": "Expressions & Phrases",
     "acceptedPl": [
       "Mam dużo pracy",
@@ -7823,7 +7823,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-13",
     "date": "2026-11-09",
     "pl": "Ona nie pije kawy.",
-    "fr": "Elle ne boit pas de café. (négation + génitif : kawy)",
+    "fr": "Elle ne boit pas de café.",
     "category": "Nourriture & Café",
     "acceptedPl": [
       "Ona nie pije kawy"
@@ -7922,7 +7922,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-17",
     "date": "2026-11-09",
     "pl": "Nie, nie mam pieniędzy na wakacje.",
-    "fr": "Non, je n'ai pas d'argent pour les vacances. (génitif pluriel irrégulier : pieniędzy)",
+    "fr": "Non, je n'ai pas d'argent pour les vacances.",
     "category": "Expressions & Phrases",
     "acceptedPl": [
       "Nie, nie mam pieniędzy na wakacje",
@@ -7947,7 +7947,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-18",
     "date": "2026-11-09",
     "pl": "pieniądze",
-    "fr": "l'argent (nom pluriel tantum en polonais)",
+    "fr": "l'argent",
     "category": "Expressions & Phrases",
     "acceptedPl": [
       "pieniądze",
@@ -7973,7 +7973,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-19",
     "date": "2026-11-09",
     "pl": "pieniędzy",
-    "fr": "d'argent (forme au génitif pluriel de pieniądze)",
+    "fr": "d'argent",
     "category": "Expressions & Phrases",
     "acceptedPl": [
       "pieniędzy",
@@ -7981,7 +7981,7 @@ const INITIAL_CARDS = [
     ],
     "acceptedFr": [
       "d'argent",
-      "argent (génitif)"
+      "argent"
     ],
     "distractorsPl": [
       "pieniądzach",
@@ -7989,9 +7989,9 @@ const INITIAL_CARDS = [
       "pieniądzom"
     ],
     "distractorsFr": [
-      "sur l'argent (locatif)",
-      "l'argent (nominatif)",
-      "à l'argent (datif)"
+      "sur l'argent",
+      "l'argent",
+      "à l'argent"
     ]
   },
   {
@@ -8023,7 +8023,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-21",
     "date": "2026-11-09",
     "pl": "Czy pijesz kawę?",
-    "fr": "Est-ce que tu bois du café ? (accusatif à la forme affirmative : kawę)",
+    "fr": "Est-ce que tu bois du café ?",
     "category": "Nourriture & Café",
     "acceptedPl": [
       "Czy pijesz kawę?",
@@ -8123,7 +8123,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-25",
     "date": "2026-11-09",
     "pl": "w tym tygodniu",
-    "fr": "cette semaine (locatif : w tym tygodniu)",
+    "fr": "cette semaine",
     "category": "Phrases & Quotidien",
     "acceptedPl": [
       "w tym tygodniu"
@@ -8146,7 +8146,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-26",
     "date": "2026-11-09",
     "pl": "Czego nie masz dzisiaj?",
-    "fr": "Qu'est-ce que tu n'as pas aujourd'hui ? (question au génitif avec czego)",
+    "fr": "Qu'est-ce que tu n'as pas aujourd'hui ?",
     "category": "Expressions & Phrases",
     "acceptedPl": [
       "Czego nie masz dzisiaj?"
@@ -8170,7 +8170,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-27",
     "date": "2026-11-09",
     "pl": "Nie mam kursu chińskiego.",
-    "fr": "Je n'ai pas cours de chinois. (cours au génitif : kursu)",
+    "fr": "Je n'ai pas cours de chinois.",
     "category": "Expressions & Phrases",
     "acceptedPl": [
       "Nie mam kursu chińskiego",
@@ -8195,7 +8195,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-28",
     "date": "2026-11-09",
     "pl": "kurs",
-    "fr": "le cours (de langue, de formation)",
+    "fr": "le cours (formation)",
     "category": "Expressions & Phrases",
     "acceptedPl": [
       "kurs"
@@ -8246,7 +8246,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-30",
     "date": "2026-11-09",
     "pl": "Szukam kościoła.",
-    "fr": "Je cherche une église. (verbe szukać + génitif : kościoła)",
+    "fr": "Je cherche une église.",
     "category": "Voyage & Aéroport",
     "acceptedPl": [
       "Szukam kościoła",
@@ -8271,7 +8271,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-31",
     "date": "2026-11-09",
     "pl": "Potrzebuję banku.",
-    "fr": "J'ai besoin d'une banque. (verbe potrzebować + génitif : banku)",
+    "fr": "J'ai besoin d'une banque.",
     "category": "Expressions & Phrases",
     "acceptedPl": [
       "Potrzebuję banku",
@@ -8296,7 +8296,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-32",
     "date": "2026-11-09",
     "pl": "bać się",
-    "fr": "avoir peur de (+ génitif)",
+    "fr": "avoir peur de",
     "category": "Expressions & Phrases",
     "acceptedPl": [
       "bać się",
@@ -8321,7 +8321,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-33",
     "date": "2026-11-09",
     "pl": "boję się",
-    "fr": "j'ai peur (1re pers. singulier de bać się)",
+    "fr": "j'ai peur",
     "category": "Expressions & Phrases",
     "acceptedPl": [
       "boję się",
@@ -8346,7 +8346,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-34",
     "date": "2026-11-09",
     "pl": "używać",
-    "fr": "utiliser, employer (+ génitif)",
+    "fr": "utiliser, employer",
     "category": "Expressions & Phrases",
     "acceptedPl": [
       "używać",
@@ -8371,7 +8371,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-35",
     "date": "2026-11-09",
     "pl": "próbować",
-    "fr": "essayer, goûter (+ génitif)",
+    "fr": "essayer, goûter",
     "category": "Expressions & Phrases",
     "acceptedPl": [
       "próbować",
@@ -8397,7 +8397,7 @@ const INITIAL_CARDS = [
     "id": "gen-9-36",
     "date": "2026-11-09",
     "pl": "próbuję",
-    "fr": "j'essaie (1re pers. singulier de próbować)",
+    "fr": "j'essaie",
     "category": "Expressions & Phrases",
     "acceptedPl": [
       "próbuję",
@@ -8446,7 +8446,7 @@ const INITIAL_CARDS = [
     "id": "cult-9-8",
     "date": "2026-11-09",
     "pl": "Jutro jest Dzień Niepodległości Polski.",
-    "fr": "Demain c'est la Fête de l'Indépendance de la Pologne (11 novembre).",
+    "fr": "Demain c'est la Fête de l'Indépendance de la Pologne.",
     "category": "Culture & Traditions",
     "acceptedPl": [
       "Jutro jest Dzień Niepodległości Polski",
@@ -8497,7 +8497,7 @@ const INITIAL_CARDS = [
     "id": "cult-9-10",
     "date": "2026-11-09",
     "pl": "jedenastego listopada",
-    "fr": "le 11 novembre (génitif de date : jedenasty -> jedenastego)",
+    "fr": "le 11 novembre",
     "category": "Culture & Traditions",
     "acceptedPl": [
       "jedenastego listopada"
@@ -8515,14 +8515,14 @@ const INITIAL_CARDS = [
     "distractorsFr": [
       "le premier novembre",
       "le trente novembre",
-      "onze novembre (nominatif incorrect)"
+      "le deux novembre"
     ]
   },
   {
     "id": "gen-9-38",
     "date": "2026-11-09",
     "pl": "jezioro",
-    "fr": "le lac (nom neutre)",
+    "fr": "le lac",
     "category": "Voyage & Aéroport",
     "acceptedPl": [
       "jezioro"
@@ -8550,7 +8550,7 @@ const INITIAL_CARDS = [
     "id": "tr-12-1",
     "date": "2026-11-12",
     "pl": "Jak jedziesz do biura?",
-    "fr": "Comment vas-tu au bureau ? (quel transport utilises-tu ?)",
+    "fr": "Comment vas-tu au bureau ?",
     "category": "Voyage & Aéroport",
     "acceptedPl": [
       "Jak jedziesz do biura?",
@@ -8576,7 +8576,7 @@ const INITIAL_CARDS = [
     "id": "tr-12-2",
     "date": "2026-11-12",
     "pl": "Jakim transportem?",
-    "fr": "Par quel moyen de transport ? (en quoi ?)",
+    "fr": "Par quel moyen de transport ?",
     "category": "Voyage & Aéroport",
     "acceptedPl": [
       "Jakim transportem?",
@@ -8602,7 +8602,7 @@ const INITIAL_CARDS = [
     "id": "tr-12-3",
     "date": "2026-11-12",
     "pl": "samochodem",
-    "fr": "en voiture (moyen de transport : instrumental)",
+    "fr": "en voiture",
     "category": "Voyage & Aéroport",
     "acceptedPl": [
       "samochodem"
@@ -8627,7 +8627,7 @@ const INITIAL_CARDS = [
     "id": "tr-12-4",
     "date": "2026-11-12",
     "pl": "pociągiem",
-    "fr": "en train (moyen de transport : instrumental)",
+    "fr": "en train",
     "category": "Voyage & Aéroport",
     "acceptedPl": [
       "pociągiem",
@@ -8653,7 +8653,7 @@ const INITIAL_CARDS = [
     "id": "tr-12-5",
     "date": "2026-11-12",
     "pl": "metrem",
-    "fr": "en métro (moyen de transport : instrumental)",
+    "fr": "en métro",
     "category": "Voyage & Aéroport",
     "acceptedPl": [
       "metrem"
@@ -8678,7 +8678,7 @@ const INITIAL_CARDS = [
     "id": "tr-12-6",
     "date": "2026-11-12",
     "pl": "tramwajem",
-    "fr": "en tramway (moyen de transport : instrumental)",
+    "fr": "en tramway",
     "category": "Voyage & Aéroport",
     "acceptedPl": [
       "tramwajem"
@@ -8703,7 +8703,7 @@ const INITIAL_CARDS = [
     "id": "tr-12-7",
     "date": "2026-11-12",
     "pl": "autobusem",
-    "fr": "en bus (moyen de transport : instrumental)",
+    "fr": "en bus",
     "category": "Voyage & Aéroport",
     "acceptedPl": [
       "autobusem"
@@ -8728,7 +8728,7 @@ const INITIAL_CARDS = [
     "id": "tr-12-8",
     "date": "2026-11-12",
     "pl": "rowerem",
-    "fr": "à vélo (moyen de transport : instrumental)",
+    "fr": "à vélo",
     "category": "Voyage & Aéroport",
     "acceptedPl": [
       "rowerem"
@@ -8754,7 +8754,7 @@ const INITIAL_CARDS = [
     "id": "tr-12-9",
     "date": "2026-11-12",
     "pl": "taksówką",
-    "fr": "en taxi (moyen de transport féminin : instrumental en -ą)",
+    "fr": "en taxi",
     "category": "Voyage & Aéroport",
     "acceptedPl": [
       "taksówką",
@@ -8832,7 +8832,7 @@ const INITIAL_CARDS = [
     "id": "tr-12-12",
     "date": "2026-11-12",
     "pl": "Tam można dojechać...",
-    "fr": "On peut y arriver / s'y rendre (en transport)...",
+    "fr": "On peut y arriver / s'y rendre...",
     "category": "Voyage & Aéroport",
     "acceptedPl": [
       "Tam można dojechać",
@@ -8935,7 +8935,7 @@ const INITIAL_CARDS = [
     "id": "tr-12-16",
     "date": "2026-11-12",
     "pl": "W moim mieście nie ma metra.",
-    "fr": "Dans ma ville, il n'y a pas de métro. (génitif de négation : metra)",
+    "fr": "Dans ma ville, il n'y a pas de métro.",
     "category": "Voyage & Aéroport",
     "acceptedPl": [
       "W moim mieście nie ma metra",
@@ -8960,7 +8960,7 @@ const INITIAL_CARDS = [
     "id": "tr-12-17",
     "date": "2026-11-12",
     "pl": "W twoim mieście nie ma tramwaju.",
-    "fr": "Dans ta ville, il n'y a pas de tramway. (génitif de négation : tramwaju)",
+    "fr": "Dans ta ville, il n'y a pas de tramway.",
     "category": "Voyage & Aéroport",
     "acceptedPl": [
       "W twoim mieście nie ma tramwaju",
@@ -8985,7 +8985,7 @@ const INITIAL_CARDS = [
     "id": "tr-12-18",
     "date": "2026-11-12",
     "pl": "jeździć",
-    "fr": "aller / circuler en moyen de transport (itératif)",
+    "fr": "aller, circuler (en véhicule)",
     "category": "Voyage & Aéroport",
     "acceptedPl": [
       "jeździć",
@@ -9114,7 +9114,7 @@ const INITIAL_CARDS = [
     "id": "food-12-5",
     "date": "2026-11-12",
     "pl": "parówka",
-    "fr": "saucisse de Francfort / knacki (singulier)",
+    "fr": "saucisse de Francfort, knacki",
     "category": "Nourriture & Café",
     "acceptedPl": [
       "parówka",
@@ -9140,7 +9140,7 @@ const INITIAL_CARDS = [
     "id": "food-12-6",
     "date": "2026-11-12",
     "pl": "parówki",
-    "fr": "saucisses / knackis (pluriel)",
+    "fr": "saucisses, knackis",
     "category": "Nourriture & Café",
     "acceptedPl": [
       "parówki",
@@ -9243,7 +9243,7 @@ const INITIAL_CARDS = [
     "id": "food-12-10",
     "date": "2026-11-12",
     "pl": "burak",
-    "fr": "la betterave (singulier)",
+    "fr": "la betterave",
     "category": "Nourriture & Café",
     "acceptedPl": [
       "burak"
@@ -9268,7 +9268,7 @@ const INITIAL_CARDS = [
     "id": "food-12-11",
     "date": "2026-11-12",
     "pl": "buraki",
-    "fr": "les betteraves (pluriel)",
+    "fr": "les betteraves",
     "category": "Nourriture & Café",
     "acceptedPl": [
       "buraki"
@@ -9526,7 +9526,7 @@ const INITIAL_CARDS = [
     "id": "food-12-21",
     "date": "2026-11-12",
     "pl": "pierogi ruskie",
-    "fr": "raviolis polonais farcis au fromage blanc frais (twaróg) et pommes de terre",
+    "fr": "raviolis au fromage blanc et pommes de terre",
     "category": "Culture & Traditions",
     "acceptedPl": [
       "pierogi ruskie"
@@ -9626,7 +9626,7 @@ const INITIAL_CARDS = [
     "id": "food-12-25",
     "date": "2026-11-12",
     "pl": "sałatka grecka",
-    "fr": "salade grecque (feta, tomates, olives, concombre)",
+    "fr": "salade grecque",
     "category": "Nourriture & Café",
     "acceptedPl": [
       "sałatka grecka",
@@ -9651,7 +9651,7 @@ const INITIAL_CARDS = [
     "id": "food-12-26",
     "date": "2026-11-12",
     "pl": "woleć",
-    "fr": "préférer (verbe)",
+    "fr": "préférer",
     "category": "Expressions & Phrases",
     "acceptedPl": [
       "woleć",
@@ -9726,7 +9726,7 @@ const INITIAL_CARDS = [
     "id": "food-12-29",
     "date": "2026-11-12",
     "pl": "Wolę kawę niż herbatę.",
-    "fr": "Je préfère le café au thé (que le thé).",
+    "fr": "Je préfère le café au thé.",
     "category": "Nourriture & Café",
     "acceptedPl": [
       "Wolę kawę niż herbatę",
@@ -9752,7 +9752,7 @@ const INITIAL_CARDS = [
     "id": "nat-12-1",
     "date": "2026-11-12",
     "pl": "góra",
-    "fr": "la montagne (singulier)",
+    "fr": "la montagne",
     "category": "Voyage & Aéroport",
     "acceptedPl": [
       "góra",
@@ -9778,7 +9778,7 @@ const INITIAL_CARDS = [
     "id": "nat-12-2",
     "date": "2026-11-12",
     "pl": "góry",
-    "fr": "les montagnes (pluriel)",
+    "fr": "les montagnes",
     "category": "Voyage & Aéroport",
     "acceptedPl": [
       "góry",
@@ -9804,7 +9804,7 @@ const INITIAL_CARDS = [
     "id": "nat-12-3",
     "date": "2026-11-12",
     "pl": "Jestem w górach.",
-    "fr": "Je suis à la montagne / dans les montagnes (locatif pluriel : w górach).",
+    "fr": "Je suis à la montagne.",
     "category": "Voyage & Aéroport",
     "acceptedPl": [
       "Jestem w górach",
@@ -9856,7 +9856,7 @@ const INITIAL_CARDS = [
     "id": "nat-12-5",
     "date": "2026-11-12",
     "pl": "wodospad",
-    "fr": "la cascade / chute d'eau (woda = eau, spadać = tomber)",
+    "fr": "la cascade, la chute d'eau",
     "category": "Voyage & Aéroport",
     "acceptedPl": [
       "wodospad"
@@ -9882,7 +9882,7 @@ const INITIAL_CARDS = [
     "id": "nat-12-6",
     "date": "2026-11-12",
     "pl": "spadać",
-    "fr": "tomber, chuter (verbe)",
+    "fr": "tomber, chuter",
     "category": "Expressions & Phrases",
     "acceptedPl": [
       "spadać",
@@ -9907,7 +9907,7 @@ const INITIAL_CARDS = [
     "id": "nat-12-7",
     "date": "2026-11-12",
     "pl": "Oni są nad jeziorem.",
-    "fr": "Ils sont au bord du lac (préposition nad + instrumental).",
+    "fr": "Ils sont au bord du lac.",
     "category": "Voyage & Aéroport",
     "acceptedPl": [
       "Oni są nad jeziorem",
@@ -9957,7 +9957,7 @@ const INITIAL_CARDS = [
     "id": "nat-12-9",
     "date": "2026-11-12",
     "pl": "Oni śpią w namiocie.",
-    "fr": "Ils dorment dans la tente / sous la tente (locatif : w namiocie).",
+    "fr": "Ils dorment sous la tente.",
     "category": "Voyage & Aéroport",
     "acceptedPl": [
       "Oni śpią w namiocie",
@@ -10057,7 +10057,7 @@ const INITIAL_CARDS = [
     "id": "nat-12-13",
     "date": "2026-11-12",
     "pl": "spać",
-    "fr": "dormir (verbe : ja śpię, ty śpisz, on śpi)",
+    "fr": "dormir",
     "category": "Phrases & Quotidien",
     "acceptedPl": [
       "spać",
@@ -10108,7 +10108,7 @@ const INITIAL_CARDS = [
     "id": "phr-12-2",
     "date": "2026-11-12",
     "pl": "I co robiłeś?",
-    "fr": "Et qu'as-tu fait ? (au masculin)",
+    "fr": "Et qu'as-tu fait ?",
     "category": "Phrases & Quotidien",
     "acceptedPl": [
       "I co robiłeś?",
@@ -10134,7 +10134,7 @@ const INITIAL_CARDS = [
     "id": "phr-12-3",
     "date": "2026-11-12",
     "pl": "Nic nie robiłem.",
-    "fr": "Je n'ai rien fait. (au masculin)",
+    "fr": "Je n'ai rien fait.",
     "category": "Phrases & Quotidien",
     "acceptedPl": [
       "Nic nie robiłem",
@@ -10184,7 +10184,7 @@ const INITIAL_CARDS = [
     "id": "phr-12-5",
     "date": "2026-11-12",
     "pl": "Jaką kawę pijesz?",
-    "fr": "Quel café bois-tu ? (noir, au lait, avec sucre...)",
+    "fr": "Quel café bois-tu ?",
     "category": "Nourriture & Café",
     "acceptedPl": [
       "Jaką kawę pijesz?",
@@ -10233,7 +10233,7 @@ const INITIAL_CARDS = [
     "id": "phr-12-7",
     "date": "2026-11-12",
     "pl": "Czy potrzebujesz kawy?",
-    "fr": "As-tu besoin d'un café ? (verbe potrzebować + génitif : kawy)",
+    "fr": "As-tu besoin d'un café ?",
     "category": "Nourriture & Café",
     "acceptedPl": [
       "Czy potrzebujesz kawy?"
@@ -10258,7 +10258,7 @@ const INITIAL_CARDS = [
     "id": "phr-12-8",
     "date": "2026-11-12",
     "pl": "Jeszcze nie jadłem śniadania.",
-    "fr": "Je n'ai pas encore pris de petit-déjeuner. (négation + génitif : śniadania)",
+    "fr": "Je n'ai pas encore pris de petit-déjeuner.",
     "category": "Nourriture & Café",
     "acceptedPl": [
       "Jeszcze nie jadłem śniadania",
@@ -10308,7 +10308,7 @@ const INITIAL_CARDS = [
     "id": "phr-12-10",
     "date": "2026-11-12",
     "pl": "Ten kościół jest niedaleko banku.",
-    "fr": "Cette église est près de la banque. (préposition niedaleko + génitif : banku)",
+    "fr": "Cette église est près de la banque.",
     "category": "Voyage & Aéroport",
     "acceptedPl": [
       "Ten kościół jest niedaleko banku",
@@ -10333,7 +10333,7 @@ const INITIAL_CARDS = [
     "id": "phr-12-11",
     "date": "2026-11-12",
     "pl": "kość",
-    "fr": "l'os (féminin, génitif : kości)",
+    "fr": "l'os",
     "category": "Phrases & Quotidien",
     "acceptedPl": [
       "kość",
@@ -10359,7 +10359,7 @@ const INITIAL_CARDS = [
     "id": "phr-12-12",
     "date": "2026-11-12",
     "pl": "Potrzebuję książki i długopisu.",
-    "fr": "J'ai besoin d'un livre et d'un stylo. (potrzebować + double génitif : książki i długopisu)",
+    "fr": "J'ai besoin d'un livre et d'un stylo.",
     "category": "Expressions & Phrases",
     "acceptedPl": [
       "Potrzebuję książki i długopisu",
@@ -10410,7 +10410,7 @@ const INITIAL_CARDS = [
     "id": "phr-12-14",
     "date": "2026-11-12",
     "pl": "na ulicy",
-    "fr": "dans la rue (locatif : na ulicy)",
+    "fr": "dans la rue",
     "category": "Phrases & Quotidien",
     "acceptedPl": [
       "na ulicy"
@@ -10434,7 +10434,7 @@ const INITIAL_CARDS = [
     "id": "phr-12-15",
     "date": "2026-11-12",
     "pl": "przed kawiarnią",
-    "fr": "devant le café (instrumental de lieu après przed : przed kawiarnią)",
+    "fr": "devant le café",
     "category": "Nourriture & Café",
     "acceptedPl": [
       "przed kawiarnią",
@@ -10459,7 +10459,7 @@ const INITIAL_CARDS = [
     "id": "phr-12-16",
     "date": "2026-11-12",
     "pl": "On odpoczywa.",
-    "fr": "Il se repose. (verbe odpoczywać)",
+    "fr": "Il se repose.",
     "category": "Phrases & Quotidien",
     "acceptedPl": [
       "On odpoczywa"
@@ -10483,7 +10483,7 @@ const INITIAL_CARDS = [
     "id": "phr-12-17",
     "date": "2026-11-12",
     "pl": "Wczoraj odpoczywałeś?",
-    "fr": "Tu t'es reposé hier ? (au masculin)",
+    "fr": "Tu t'es reposé hier ?",
     "category": "Phrases & Quotidien",
     "acceptedPl": [
       "Wczoraj odpoczywałeś?",
@@ -10508,7 +10508,7 @@ const INITIAL_CARDS = [
     "id": "phr-12-18",
     "date": "2026-11-12",
     "pl": "odpoczywać",
-    "fr": "se reposer (verbe)",
+    "fr": "se reposer",
     "category": "Phrases & Quotidien",
     "acceptedPl": [
       "odpoczywać",
@@ -10533,7 +10533,7 @@ const INITIAL_CARDS = [
     "id": "phr-12-19",
     "date": "2026-11-12",
     "pl": "często",
-    "fr": "souvent (adverbe de fréquence)",
+    "fr": "souvent",
     "category": "Adjectifs",
     "acceptedPl": [
       "często",
@@ -10557,7 +10557,7 @@ const INITIAL_CARDS = [
     "id": "phr-12-20",
     "date": "2026-11-12",
     "pl": "rzadko",
-    "fr": "rarement (adverbe de fréquence)",
+    "fr": "rarement",
     "category": "Adjectifs",
     "acceptedPl": [
       "rzadko"
@@ -10580,7 +10580,7 @@ const INITIAL_CARDS = [
     "id": "phr-12-21",
     "date": "2026-11-12",
     "pl": "zawsze",
-    "fr": "toujours (adverbe de fréquence)",
+    "fr": "toujours",
     "category": "Adjectifs",
     "acceptedPl": [
       "zawsze"
