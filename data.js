@@ -10,7 +10,7 @@
  */
 
 
-const LATEST_IMPORT_DATE = "2026-11-09";
+const LATEST_IMPORT_DATE = "2026-11-12";
 if (typeof window !== "undefined") {
   window.LATEST_IMPORT_DATE = LATEST_IMPORT_DATE;
 }
@@ -8542,6 +8542,2113 @@ const INITIAL_CARDS = [
       "fleuve / rivière",
       "montagne"
     ]
+  },
+  // ==========================================
+  // 19. COURS DU 12/11/2026 (TRANSPORTS, CUISINE TRADITIONNELLE & NATURE)
+  // ==========================================
+  {
+    "id": "tr-12-1",
+    "date": "2026-11-12",
+    "pl": "Jak jedziesz do biura?",
+    "fr": "Comment vas-tu au bureau ? (quel transport utilises-tu ?)",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "Jak jedziesz do biura?",
+      "Jak jedziesz do biura"
+    ],
+    "acceptedFr": [
+      "Comment vas-tu au bureau ?",
+      "Comment vas-tu au bureau",
+      "Tu vas comment au bureau ?"
+    ],
+    "distractorsPl": [
+      "O której jedziesz do biura?",
+      "Gdzie jest twoje biuro?",
+      "Czy pracujesz w biurze?"
+    ],
+    "distractorsFr": [
+      "À quelle heure vas-tu au bureau ?",
+      "Où est ton bureau ?",
+      "Travailles-tu au bureau ?"
+    ]
+  },
+  {
+    "id": "tr-12-2",
+    "date": "2026-11-12",
+    "pl": "Jakim transportem?",
+    "fr": "Par quel moyen de transport ? (en quoi ?)",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "Jakim transportem?",
+      "Jakim transportem"
+    ],
+    "acceptedFr": [
+      "Par quel moyen de transport ?",
+      "Par quel moyen de transport",
+      "Par quel transport ?"
+    ],
+    "distractorsPl": [
+      "O której godzinie?",
+      "Dokąd jedziesz?",
+      "Ile kosztuje bilet?"
+    ],
+    "distractorsFr": [
+      "À quelle heure ?",
+      "Où vas-tu ?",
+      "Combien coûte le ticket ?"
+    ]
+  },
+  {
+    "id": "tr-12-3",
+    "date": "2026-11-12",
+    "pl": "samochodem",
+    "fr": "en voiture (moyen de transport : instrumental)",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "samochodem"
+    ],
+    "acceptedFr": [
+      "en voiture",
+      "voiture",
+      "par la voiture"
+    ],
+    "distractorsPl": [
+      "pociągiem",
+      "autobusem",
+      "rowerem"
+    ],
+    "distractorsFr": [
+      "en train",
+      "en bus",
+      "à vélo"
+    ]
+  },
+  {
+    "id": "tr-12-4",
+    "date": "2026-11-12",
+    "pl": "pociągiem",
+    "fr": "en train (moyen de transport : instrumental)",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "pociągiem",
+      "pociagiem"
+    ],
+    "acceptedFr": [
+      "en train",
+      "train",
+      "par le train"
+    ],
+    "distractorsPl": [
+      "metrem",
+      "tramwajem",
+      "samochodem"
+    ],
+    "distractorsFr": [
+      "en métro",
+      "en tramway",
+      "en voiture"
+    ]
+  },
+  {
+    "id": "tr-12-5",
+    "date": "2026-11-12",
+    "pl": "metrem",
+    "fr": "en métro (moyen de transport : instrumental)",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "metrem"
+    ],
+    "acceptedFr": [
+      "en métro",
+      "en metro",
+      "par le métro"
+    ],
+    "distractorsPl": [
+      "taksówką",
+      "autobusem",
+      "rowerem"
+    ],
+    "distractorsFr": [
+      "en taxi",
+      "en bus",
+      "à vélo"
+    ]
+  },
+  {
+    "id": "tr-12-6",
+    "date": "2026-11-12",
+    "pl": "tramwajem",
+    "fr": "en tramway (moyen de transport : instrumental)",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "tramwajem"
+    ],
+    "acceptedFr": [
+      "en tramway",
+      "en tram",
+      "tramway"
+    ],
+    "distractorsPl": [
+      "samochodem",
+      "pociągiem",
+      "metrem"
+    ],
+    "distractorsFr": [
+      "en voiture",
+      "en train",
+      "en métro"
+    ]
+  },
+  {
+    "id": "tr-12-7",
+    "date": "2026-11-12",
+    "pl": "autobusem",
+    "fr": "en bus (moyen de transport : instrumental)",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "autobusem"
+    ],
+    "acceptedFr": [
+      "en bus",
+      "bus",
+      "par le bus"
+    ],
+    "distractorsPl": [
+      "rowerem",
+      "taksówką",
+      "tramwajem"
+    ],
+    "distractorsFr": [
+      "à vélo",
+      "en taxi",
+      "en tramway"
+    ]
+  },
+  {
+    "id": "tr-12-8",
+    "date": "2026-11-12",
+    "pl": "rowerem",
+    "fr": "à vélo (moyen de transport : instrumental)",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "rowerem"
+    ],
+    "acceptedFr": [
+      "à vélo",
+      "a velo",
+      "en vélo",
+      "vélo"
+    ],
+    "distractorsPl": [
+      "samochodem",
+      "metrem",
+      "pociągiem"
+    ],
+    "distractorsFr": [
+      "en voiture",
+      "en métro",
+      "en train"
+    ]
+  },
+  {
+    "id": "tr-12-9",
+    "date": "2026-11-12",
+    "pl": "taksówką",
+    "fr": "en taxi (moyen de transport féminin : instrumental en -ą)",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "taksówką",
+      "taksowka"
+    ],
+    "acceptedFr": [
+      "en taxi",
+      "taxi",
+      "par taxi"
+    ],
+    "distractorsPl": [
+      "tramwajem",
+      "autobusem",
+      "metrem"
+    ],
+    "distractorsFr": [
+      "en tramway",
+      "en bus",
+      "en métro"
+    ]
+  },
+  {
+    "id": "tr-12-10",
+    "date": "2026-11-12",
+    "pl": "Twoje biuro jest daleko?",
+    "fr": "Ton bureau est loin ?",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Twoje biuro jest daleko?",
+      "Twoje biuro jest daleko"
+    ],
+    "acceptedFr": [
+      "Ton bureau est loin ?",
+      "Ton bureau est-il loin ?",
+      "Est-ce que ton bureau est loin ?"
+    ],
+    "distractorsPl": [
+      "Gdzie jest twoje biuro?",
+      "Jak duże jest biuro?",
+      "Kiedy otwierasz biuro?"
+    ],
+    "distractorsFr": [
+      "Où est ton bureau ?",
+      "Quelle est la taille du bureau ?",
+      "Quand ouvres-tu le bureau ?"
+    ]
+  },
+  {
+    "id": "tr-12-11",
+    "date": "2026-11-12",
+    "pl": "piętnaście minut",
+    "fr": "quinze minutes (15 min)",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "piętnaście minut",
+      "pietnascie minut"
+    ],
+    "acceptedFr": [
+      "quinze minutes",
+      "15 minutes",
+      "15 min"
+    ],
+    "distractorsPl": [
+      "pięć minut",
+      "pięćdziesiąt minut",
+      "godzina"
+    ],
+    "distractorsFr": [
+      "cinq minutes",
+      "cinquante minutes",
+      "une heure"
+    ]
+  },
+  {
+    "id": "tr-12-12",
+    "date": "2026-11-12",
+    "pl": "Tam można dojechać...",
+    "fr": "On peut y arriver / s'y rendre (en transport)...",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "Tam można dojechać",
+      "Tam mozna dojechac"
+    ],
+    "acceptedFr": [
+      "On peut y aller",
+      "On peut y arriver",
+      "On peut s'y rendre"
+    ],
+    "distractorsPl": [
+      "Tam trzeba iść pieszo.",
+      "Tam nie ma drogi.",
+      "Tam jest za daleko."
+    ],
+    "distractorsFr": [
+      "Il faut y aller à pied.",
+      "Il n'y a pas de route là-bas.",
+      "C'est trop loin là-bas."
+    ]
+  },
+  {
+    "id": "tr-12-13",
+    "date": "2026-11-12",
+    "pl": "Jeździsz rowerem?",
+    "fr": "Fais-tu du vélo ? / Te déplaces-tu à vélo ?",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "Jeździsz rowerem?",
+      "Jezdzisz rowerem?"
+    ],
+    "acceptedFr": [
+      "Fais-tu du vélo ?",
+      "Te déplaces-tu à vélo ?",
+      "Tu fais du vélo ?"
+    ],
+    "distractorsPl": [
+      "Masz nowy rower?",
+      "Gdzie kupiłeś rower?",
+      "Lubisz jeździć autem?"
+    ],
+    "distractorsFr": [
+      "As-tu un nouveau vélo ?",
+      "Où as-tu acheté le vélo ?",
+      "Aimes-tu conduire une voiture ?"
+    ]
+  },
+  {
+    "id": "tr-12-14",
+    "date": "2026-11-12",
+    "pl": "Nie jeżdżę rowerem.",
+    "fr": "Je ne fais pas de vélo. / Je ne me déplace pas à vélo.",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "Nie jeżdżę rowerem",
+      "Nie jezdze rowerem"
+    ],
+    "acceptedFr": [
+      "Je ne fais pas de vélo",
+      "Je ne me déplace pas à vélo",
+      "Je ne roule pas à vélo"
+    ],
+    "distractorsPl": [
+      "Często jeżdżę rowerem.",
+      "Nie mam samochodu.",
+      "Wolę chodzić pieszo."
+    ],
+    "distractorsFr": [
+      "Je fais souvent du vélo.",
+      "Je n'ai pas de voiture.",
+      "Je préfère marcher à pied."
+    ]
+  },
+  {
+    "id": "tr-12-15",
+    "date": "2026-11-12",
+    "pl": "Od czasu do czasu jeździsz taksówką?",
+    "fr": "Prends-tu le taxi de temps en temps ?",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "Od czasu do czasu jeździsz taksówką?",
+      "Od czasu do czasu jezdzisz taksowka?"
+    ],
+    "acceptedFr": [
+      "Prends-tu le taxi de temps en temps ?",
+      "Tu prends le taxi de temps en temps ?"
+    ],
+    "distractorsPl": [
+      "Często jeździsz pociągiem?",
+      "Ile kosztuje taksówka?",
+      "Czy masz własne auto?"
+    ],
+    "distractorsFr": [
+      "Prends-tu souvent le train ?",
+      "Combien coûte le taxi ?",
+      "As-tu ta propre voiture ?"
+    ]
+  },
+  {
+    "id": "tr-12-16",
+    "date": "2026-11-12",
+    "pl": "W moim mieście nie ma metra.",
+    "fr": "Dans ma ville, il n'y a pas de métro. (génitif de négation : metra)",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "W moim mieście nie ma metra",
+      "W moim miescie nie ma metra"
+    ],
+    "acceptedFr": [
+      "Dans ma ville il n'y a pas de métro",
+      "Dans ma ville il n'y a pas de metro"
+    ],
+    "distractorsPl": [
+      "W moim mieście jest metro.",
+      "W moim mieście nie ma autobusów.",
+      "Metro jest bardzo szybkie."
+    ],
+    "distractorsFr": [
+      "Dans ma ville il y a le métro.",
+      "Dans ma ville il n'y a pas de bus.",
+      "Le métro est très rapide."
+    ]
+  },
+  {
+    "id": "tr-12-17",
+    "date": "2026-11-12",
+    "pl": "W twoim mieście nie ma tramwaju.",
+    "fr": "Dans ta ville, il n'y a pas de tramway. (génitif de négation : tramwaju)",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "W twoim mieście nie ma tramwaju",
+      "W twoim miescie nie ma tramwaju"
+    ],
+    "acceptedFr": [
+      "Dans ta ville il n'y a pas de tramway",
+      "Dans ta ville il n'y a pas de tram"
+    ],
+    "distractorsPl": [
+      "W twoim mieście jest tramwaj.",
+      "Tramwaj jest za głośny.",
+      "Lubię jeździć tramwajem."
+    ],
+    "distractorsFr": [
+      "Dans ta ville il y a le tramway.",
+      "Le tram est trop bruyant.",
+      "J'aime prendre le tramway."
+    ]
+  },
+  {
+    "id": "tr-12-18",
+    "date": "2026-11-12",
+    "pl": "jeździć",
+    "fr": "aller / circuler en moyen de transport (itératif)",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "jeździć",
+      "jezdzic"
+    ],
+    "acceptedFr": [
+      "circuler",
+      "aller en véhicule",
+      "rouler",
+      "prendre les transports"
+    ],
+    "distractorsPl": [
+      "iść",
+      "chodzić",
+      "biegać"
+    ],
+    "distractorsFr": [
+      "aller à pied (unidirectionnel)",
+      "marcher à pied (habituel)",
+      "courir"
+    ]
+  },
+  {
+    "id": "food-12-1",
+    "date": "2026-11-12",
+    "pl": "słodkie śniadanie",
+    "fr": "un petit-déjeuner sucré",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "słodkie śniadanie",
+      "slodkie sniadanie"
+    ],
+    "acceptedFr": [
+      "un petit-déjeuner sucré",
+      "petit-déjeuner sucré",
+      "un petit déjeuner sucré"
+    ],
+    "distractorsPl": [
+      "słone śniadanie",
+      "małe śniadanie",
+      "ciepły obiad"
+    ],
+    "distractorsFr": [
+      "un petit-déjeuner salé",
+      "un petit déjeuner léger",
+      "un déjeuner chaud"
+    ]
+  },
+  {
+    "id": "food-12-2",
+    "date": "2026-11-12",
+    "pl": "baton proteinowy",
+    "fr": "barre protéinée",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "baton proteinowy"
+    ],
+    "acceptedFr": [
+      "barre protéinée",
+      "une barre protéinée",
+      "barre proteinee"
+    ],
+    "distractorsPl": [
+      "czekolada z mlekiem",
+      "słodkie ciastko",
+      "owocowy sok"
+    ],
+    "distractorsFr": [
+      "chocolat au lait",
+      "biscuit sucré",
+      "jus de fruits"
+    ]
+  },
+  {
+    "id": "food-12-3",
+    "date": "2026-11-12",
+    "pl": "piekarnia",
+    "fr": "boulangerie",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "piekarnia"
+    ],
+    "acceptedFr": [
+      "boulangerie",
+      "la boulangerie",
+      "une boulangerie"
+    ],
+    "distractorsPl": [
+      "cukiernia",
+      "kawiarnia",
+      "restauracja"
+    ],
+    "distractorsFr": [
+      "pâtisserie",
+      "café",
+      "restaurant"
+    ]
+  },
+  {
+    "id": "food-12-4",
+    "date": "2026-11-12",
+    "pl": "Kupiłem trzysta gram chleba.",
+    "fr": "J'ai acheté trois cents grammes de pain.",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "Kupiłem trzysta gram chleba",
+      "Kupilem trzysta gram chleba",
+      "Kupiłem 300 gram chleba"
+    ],
+    "acceptedFr": [
+      "J'ai acheté trois cents grammes de pain",
+      "J'ai acheté 300 grammes de pain"
+    ],
+    "distractorsPl": [
+      "Kupiłem jeden bochenek chleba.",
+      "Kupiłem kilogram jabłek.",
+      "Poproszę trzysta gram sera."
+    ],
+    "distractorsFr": [
+      "J'ai acheté une miche de pain.",
+      "J'ai acheté un kilo de pommes.",
+      "300 grammes de fromage s'il vous plaît."
+    ]
+  },
+  {
+    "id": "food-12-5",
+    "date": "2026-11-12",
+    "pl": "parówka",
+    "fr": "saucisse de Francfort / knacki (singulier)",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "parówka",
+      "parowka"
+    ],
+    "acceptedFr": [
+      "saucisse",
+      "knacki",
+      "une saucisse"
+    ],
+    "distractorsPl": [
+      "kiełbasa",
+      "szynka",
+      "kotlet"
+    ],
+    "distractorsFr": [
+      "grosse saucisse polonaise",
+      "jambon",
+      "côtelette"
+    ]
+  },
+  {
+    "id": "food-12-6",
+    "date": "2026-11-12",
+    "pl": "parówki",
+    "fr": "saucisses / knackis (pluriel)",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "parówki",
+      "parowki"
+    ],
+    "acceptedFr": [
+      "saucisses",
+      "les saucisses",
+      "knackis",
+      "des saucisses"
+    ],
+    "distractorsPl": [
+      "jajka",
+      "kanapki",
+      "kluski"
+    ],
+    "distractorsFr": [
+      "œufs",
+      "sandwichs",
+      "quenelles"
+    ]
+  },
+  {
+    "id": "food-12-7",
+    "date": "2026-11-12",
+    "pl": "miód",
+    "fr": "le miel",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "miód",
+      "miod"
+    ],
+    "acceptedFr": [
+      "miel",
+      "le miel",
+      "du miel"
+    ],
+    "distractorsPl": [
+      "cukier",
+      "dżem",
+      "masło"
+    ],
+    "distractorsFr": [
+      "sucre",
+      "confiture",
+      "beurre"
+    ]
+  },
+  {
+    "id": "food-12-8",
+    "date": "2026-11-12",
+    "pl": "jajecznica",
+    "fr": "les œufs brouillés",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "jajecznica"
+    ],
+    "acceptedFr": [
+      "œufs brouillés",
+      "oeufs brouilles",
+      "des œufs brouillés"
+    ],
+    "distractorsPl": [
+      "jajko na twardo",
+      "omlet",
+      "naleśniki"
+    ],
+    "distractorsFr": [
+      "œuf dur",
+      "omelette",
+      "crêpes"
+    ]
+  },
+  {
+    "id": "food-12-9",
+    "date": "2026-11-12",
+    "pl": "szynka",
+    "fr": "le jambon",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "szynka"
+    ],
+    "acceptedFr": [
+      "jambon",
+      "le jambon",
+      "du jambon"
+    ],
+    "distractorsPl": [
+      "ser",
+      "kurczak",
+      "wołowina"
+    ],
+    "distractorsFr": [
+      "fromage",
+      "poulet",
+      "bœuf"
+    ]
+  },
+  {
+    "id": "food-12-10",
+    "date": "2026-11-12",
+    "pl": "burak",
+    "fr": "la betterave (singulier)",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "burak"
+    ],
+    "acceptedFr": [
+      "betterave",
+      "la betterave",
+      "une betterave"
+    ],
+    "distractorsPl": [
+      "marchewka",
+      "ziemniak",
+      "ogórek"
+    ],
+    "distractorsFr": [
+      "carotte",
+      "pomme de terre",
+      "concombre"
+    ]
+  },
+  {
+    "id": "food-12-11",
+    "date": "2026-11-12",
+    "pl": "buraki",
+    "fr": "les betteraves (pluriel)",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "buraki"
+    ],
+    "acceptedFr": [
+      "betteraves",
+      "les betteraves",
+      "des betteraves"
+    ],
+    "distractorsPl": [
+      "pomidory",
+      "ogórki",
+      "truskawki"
+    ],
+    "distractorsFr": [
+      "tomates",
+      "concombres",
+      "fraises"
+    ]
+  },
+  {
+    "id": "food-12-12",
+    "date": "2026-11-12",
+    "pl": "żurek",
+    "fr": "soupe traditionnelle aigrelette au levain de seigle avec saucisse et œuf",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "żurek",
+      "zurek"
+    ],
+    "acceptedFr": [
+      "żurek",
+      "zurek",
+      "soupe aigrelette polonaise",
+      "soupe de seigle"
+    ],
+    "distractorsPl": [
+      "barszcz",
+      "rosół",
+      "zupa pomidorowa"
+    ],
+    "distractorsFr": [
+      "bortsch",
+      "bouillon de poulet",
+      "soupe à la tomate"
+    ]
+  },
+  {
+    "id": "food-12-13",
+    "date": "2026-11-12",
+    "pl": "mizeria",
+    "fr": "salade de concombres râpés à la crème ou au yaourt",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "mizeria"
+    ],
+    "acceptedFr": [
+      "mizeria",
+      "salade de concombres",
+      "salade de concombre à la crème"
+    ],
+    "distractorsPl": [
+      "sałatka grecka",
+      "surówka z marchwi",
+      "kapusta kiszona"
+    ],
+    "distractorsFr": [
+      "salade grecque",
+      "salade de carottes râpées",
+      "choucroute crue"
+    ]
+  },
+  {
+    "id": "food-12-14",
+    "date": "2026-11-12",
+    "pl": "bigos",
+    "fr": "ragoût traditionnel polonais de choucroute mijotée aux viandes et champignons",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "bigos"
+    ],
+    "acceptedFr": [
+      "bigos",
+      "choucroute polonaise",
+      "choucroute garnie polonaise"
+    ],
+    "distractorsPl": [
+      "gołąbki",
+      "pierogi",
+      "gulasz"
+    ],
+    "distractorsFr": [
+      "choux farcis",
+      "raviolis polonais",
+      "goulasch"
+    ]
+  },
+  {
+    "id": "food-12-15",
+    "date": "2026-11-12",
+    "pl": "gołąbki",
+    "fr": "choux farcis à la viande et au riz, nappés de sauce tomate",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "gołąbki",
+      "golabki"
+    ],
+    "acceptedFr": [
+      "gołąbki",
+      "golabki",
+      "choux farcis",
+      "les choux farcis"
+    ],
+    "distractorsPl": [
+      "pierogi ruskie",
+      "rolada śląska",
+      "kotlet schabowy"
+    ],
+    "distractorsFr": [
+      "raviolis polonais",
+      "roulé silésien",
+      "côtelette de porc"
+    ]
+  },
+  {
+    "id": "food-12-16",
+    "date": "2026-11-12",
+    "pl": "rosół",
+    "fr": "bouillon de volaille traditionnel polonais servi avec des vermicelles",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "rosół",
+      "rosol"
+    ],
+    "acceptedFr": [
+      "rosół",
+      "rosol",
+      "bouillon de volaille",
+      "bouillon de poulet"
+    ],
+    "distractorsPl": [
+      "żurek",
+      "barszcz czerwony",
+      "zupa grzybowa"
+    ],
+    "distractorsFr": [
+      "żurek",
+      "bortsch rouge",
+      "soupe aux champignons"
+    ]
+  },
+  {
+    "id": "food-12-17",
+    "date": "2026-11-12",
+    "pl": "rolada z kluskami śląskimi",
+    "fr": "roulé de bœuf farci accompagné de quenelles silésiennes",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "rolada z kluskami śląskimi",
+      "rolada z kluskami slaskimi"
+    ],
+    "acceptedFr": [
+      "roulé de bœuf avec quenelles silésiennes",
+      "roulé silésien",
+      "rolada avec kluski"
+    ],
+    "distractorsPl": [
+      "kotlet schabowy z ziemniakami",
+      "placki ziemniaczane ze śmietaną",
+      "bigos z kiełbasą"
+    ],
+    "distractorsFr": [
+      "escalope panée avec pommes de terre",
+      "galettes de pommes de terre à la crème",
+      "bigos avec saucisse"
+    ]
+  },
+  {
+    "id": "food-12-18",
+    "date": "2026-11-12",
+    "pl": "placki ziemniaczane",
+    "fr": "galettes / criques de pommes de terre râpées frites",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "placki ziemniaczane"
+    ],
+    "acceptedFr": [
+      "galettes de pommes de terre",
+      "criques de pommes de terre",
+      "placki ziemniaczane"
+    ],
+    "distractorsPl": [
+      "frytki",
+      "puree ziemniaczane",
+      "naleśniki"
+    ],
+    "distractorsFr": [
+      "frites",
+      "purée de pommes de terre",
+      "crêpes"
+    ]
+  },
+  {
+    "id": "food-12-19",
+    "date": "2026-11-12",
+    "pl": "barszcz z krokietem",
+    "fr": "bortsch rouge de betteraves servi avec une croquette chaude roulée",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "barszcz z krokietem"
+    ],
+    "acceptedFr": [
+      "bortsch avec croquette",
+      "barszcz avec croquette",
+      "bortsch de betteraves avec croquette"
+    ],
+    "distractorsPl": [
+      "żurek z jajkiem",
+      "rosół z makaronem",
+      "zupa ogórkowa"
+    ],
+    "distractorsFr": [
+      "żurek avec œuf",
+      "bouillon aux vermicelles",
+      "soupe aux concombres marinés"
+    ]
+  },
+  {
+    "id": "food-12-20",
+    "date": "2026-11-12",
+    "pl": "kotlet de volaille",
+    "fr": "suprême de volaille pané roulé autour d'un cœur de beurre persillé fondu",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "kotlet de volaille",
+      "de volaille"
+    ],
+    "acceptedFr": [
+      "kotlet de volaille",
+      "poulet à la kiev",
+      "filet de poulet pané au beurre"
+    ],
+    "distractorsPl": [
+      "kotlet schabowy",
+      "pieczony kurczak",
+      "rolada wołowa"
+    ],
+    "distractorsFr": [
+      "côtelette de porc panée",
+      "poulet rôti",
+      "roulé de bœuf"
+    ]
+  },
+  {
+    "id": "food-12-21",
+    "date": "2026-11-12",
+    "pl": "pierogi ruskie",
+    "fr": "raviolis polonais farcis au fromage blanc frais (twaróg) et pommes de terre",
+    "category": "Culture & Traditions",
+    "acceptedPl": [
+      "pierogi ruskie"
+    ],
+    "acceptedFr": [
+      "pierogi ruskie",
+      "raviolis au fromage et pommes de terre",
+      "pierogis russes"
+    ],
+    "distractorsPl": [
+      "pierogi z mięsem",
+      "pierogi z kapustą i grzybami",
+      "pierogi z jagodami"
+    ],
+    "distractorsFr": [
+      "raviolis à la viande",
+      "raviolis au chou et champignons",
+      "raviolis aux myrtilles"
+    ]
+  },
+  {
+    "id": "food-12-22",
+    "date": "2026-11-12",
+    "pl": "twarożek z chlebem",
+    "fr": "fromage blanc frais assaisonné avec du pain",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "twarożek z chlebem",
+      "twarozek z chlebem"
+    ],
+    "acceptedFr": [
+      "fromage blanc avec du pain",
+      "fromage blanc et pain",
+      "twarożek avec pain"
+    ],
+    "distractorsPl": [
+      "kanapka z serem żółtym",
+      "jajecznica na maśle",
+      "chleb z dżemem"
+    ],
+    "distractorsFr": [
+      "tartine au fromage à pâte dure",
+      "œufs brouillés au beurre",
+      "tartine de confiture"
+    ]
+  },
+  {
+    "id": "food-12-23",
+    "date": "2026-11-12",
+    "pl": "kanapka z serem",
+    "fr": "sandwich au fromage",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "kanapka z serem"
+    ],
+    "acceptedFr": [
+      "sandwich au fromage",
+      "tartine au fromage"
+    ],
+    "distractorsPl": [
+      "kanapka z szynką",
+      "tost z masłem",
+      "bułka z dżemem"
+    ],
+    "distractorsFr": [
+      "sandwich au jambon",
+      "toast au beurre",
+      "pain au lait à la confiture"
+    ]
+  },
+  {
+    "id": "food-12-24",
+    "date": "2026-11-12",
+    "pl": "kanapka z szynką",
+    "fr": "sandwich au jambon",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "kanapka z szynką",
+      "kanapka z szynka"
+    ],
+    "acceptedFr": [
+      "sandwich au jambon",
+      "tartine au jambon"
+    ],
+    "distractorsPl": [
+      "kanapka z serem",
+      "parówki z chlebem",
+      "jajecznica z boczkiem"
+    ],
+    "distractorsFr": [
+      "sandwich au fromage",
+      "knackis avec du pain",
+      "œufs brouillés au bacon"
+    ]
+  },
+  {
+    "id": "food-12-25",
+    "date": "2026-11-12",
+    "pl": "sałatka grecka",
+    "fr": "salade grecque (feta, tomates, olives, concombre)",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "sałatka grecka",
+      "salatka grecka"
+    ],
+    "acceptedFr": [
+      "salade grecque",
+      "la salade grecque"
+    ],
+    "distractorsPl": [
+      "mizeria",
+      "surówka z białej kapusty",
+      "sałatka jarzynowa"
+    ],
+    "distractorsFr": [
+      "salade de concombres",
+      "crudités de chou blanc",
+      "salade macédoine polonaise"
+    ]
+  },
+  {
+    "id": "food-12-26",
+    "date": "2026-11-12",
+    "pl": "woleć",
+    "fr": "préférer (verbe)",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "woleć",
+      "wolec"
+    ],
+    "acceptedFr": [
+      "préférer",
+      "preferer",
+      "aimer mieux"
+    ],
+    "distractorsPl": [
+      "lubić",
+      "chcieć",
+      "musieć"
+    ],
+    "distractorsFr": [
+      "aimer",
+      "vouloir",
+      "devoir"
+    ]
+  },
+  {
+    "id": "food-12-27",
+    "date": "2026-11-12",
+    "pl": "Wolisz psy czy koty?",
+    "fr": "Préfères-tu les chiens ou les chats ?",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Wolisz psy czy koty?"
+    ],
+    "acceptedFr": [
+      "Préfères-tu les chiens ou les chats ?",
+      "Tu préfères les chiens ou les chats ?"
+    ],
+    "distractorsPl": [
+      "Masz psa czy kota?",
+      "Lubisz zwierzęta domowe?",
+      "Kiedy wyprowadzasz psa?"
+    ],
+    "distractorsFr": [
+      "As-tu un chien ou un chat ?",
+      "Aimes-tu les animaux de compagnie ?",
+      "Quand promènes-tu le chien ?"
+    ]
+  },
+  {
+    "id": "food-12-28",
+    "date": "2026-11-12",
+    "pl": "Czy wolisz kawę czy herbatę?",
+    "fr": "Préfères-tu le café ou le thé ?",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "Czy wolisz kawę czy herbatę?",
+      "Czy wolisz kawe czy herbate?"
+    ],
+    "acceptedFr": [
+      "Préfères-tu le café ou le thé ?",
+      "Tu préfères le café ou le thé ?"
+    ],
+    "distractorsPl": [
+      "Czy pijesz kawę rano?",
+      "Poproszę kawę z mlekiem.",
+      "Ile kosztuje herbata?"
+    ],
+    "distractorsFr": [
+      "Bois-tu du café le matin ?",
+      "Un café au lait s'il vous plaît.",
+      "Combien coûte le thé ?"
+    ]
+  },
+  {
+    "id": "food-12-29",
+    "date": "2026-11-12",
+    "pl": "Wolę kawę niż herbatę.",
+    "fr": "Je préfère le café au thé (que le thé).",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "Wolę kawę niż herbatę",
+      "Wole kawe niz herbate"
+    ],
+    "acceptedFr": [
+      "Je préfère le café au thé",
+      "Je préfère le café plutôt que le thé",
+      "Je prefere le cafe au the"
+    ],
+    "distractorsPl": [
+      "Nie piję kawy ani herbaty.",
+      "Zawsze rano piję sok.",
+      "Lubię gorącą herbatę."
+    ],
+    "distractorsFr": [
+      "Je ne bois ni café ni thé.",
+      "Je bois toujours du jus le matin.",
+      "J'aime le thé brûlant."
+    ]
+  },
+  {
+    "id": "nat-12-1",
+    "date": "2026-11-12",
+    "pl": "góra",
+    "fr": "la montagne (singulier)",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "góra",
+      "gora"
+    ],
+    "acceptedFr": [
+      "montagne",
+      "la montagne",
+      "une montagne"
+    ],
+    "distractorsPl": [
+      "morze",
+      "jezioro",
+      "rzeka"
+    ],
+    "distractorsFr": [
+      "mer",
+      "lac",
+      "fleuve"
+    ]
+  },
+  {
+    "id": "nat-12-2",
+    "date": "2026-11-12",
+    "pl": "góry",
+    "fr": "les montagnes (pluriel)",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "góry",
+      "gory"
+    ],
+    "acceptedFr": [
+      "montagnes",
+      "les montagnes",
+      "des montagnes"
+    ],
+    "distractorsPl": [
+      "lasy",
+      "jeziora",
+      "miasta"
+    ],
+    "distractorsFr": [
+      "forêts",
+      "lacs",
+      "villes"
+    ]
+  },
+  {
+    "id": "nat-12-3",
+    "date": "2026-11-12",
+    "pl": "Jestem w górach.",
+    "fr": "Je suis à la montagne / dans les montagnes (locatif pluriel : w górach).",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "Jestem w górach",
+      "Jestem w gorach"
+    ],
+    "acceptedFr": [
+      "Je suis à la montagne",
+      "Je suis a la montagne",
+      "Je suis dans les montagnes"
+    ],
+    "distractorsPl": [
+      "Jadę nad morze.",
+      "Mieszkam w mieście.",
+      "Odpoczywam nad jeziorem."
+    ],
+    "distractorsFr": [
+      "Je vais à la mer.",
+      "J'habite en ville.",
+      "Je me repose au bord du lac."
+    ]
+  },
+  {
+    "id": "nat-12-4",
+    "date": "2026-11-12",
+    "pl": "Oni chodzą po górach.",
+    "fr": "Ils marchent en montagne / font de la randonnée en montagne.",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "Oni chodzą po górach",
+      "Oni chodza po gorach"
+    ],
+    "acceptedFr": [
+      "Ils marchent en montagne",
+      "Ils font de la randonnée dans les montagnes",
+      "Ils se promènent en montagne"
+    ],
+    "distractorsPl": [
+      "Oni jeżdżą na nartach.",
+      "Oni śpią w namiocie.",
+      "Oni pływają w jeziorze."
+    ],
+    "distractorsFr": [
+      "Ils font du ski.",
+      "Ils dorment sous la tente.",
+      "Ils nagent dans le lac."
+    ]
+  },
+  {
+    "id": "nat-12-5",
+    "date": "2026-11-12",
+    "pl": "wodospad",
+    "fr": "la cascade / chute d'eau (woda = eau, spadać = tomber)",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "wodospad"
+    ],
+    "acceptedFr": [
+      "cascade",
+      "la cascade",
+      "chute d'eau",
+      "une cascade"
+    ],
+    "distractorsPl": [
+      "rzeka",
+      "jezioro",
+      "morze"
+    ],
+    "distractorsFr": [
+      "rivière",
+      "lac",
+      "mer"
+    ]
+  },
+  {
+    "id": "nat-12-6",
+    "date": "2026-11-12",
+    "pl": "spadać",
+    "fr": "tomber, chuter (verbe)",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "spadać",
+      "spadac"
+    ],
+    "acceptedFr": [
+      "tomber",
+      "chuter"
+    ],
+    "distractorsPl": [
+      "rosnąć",
+      "płynąć",
+      "chodzić"
+    ],
+    "distractorsFr": [
+      "grandir",
+      "couler / nager",
+      "marcher"
+    ]
+  },
+  {
+    "id": "nat-12-7",
+    "date": "2026-11-12",
+    "pl": "Oni są nad jeziorem.",
+    "fr": "Ils sont au bord du lac (préposition nad + instrumental).",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "Oni są nad jeziorem",
+      "Oni sa nad jeziorem"
+    ],
+    "acceptedFr": [
+      "Ils sont au bord du lac",
+      "Ils sont près du lac"
+    ],
+    "distractorsPl": [
+      "Oni są w górach.",
+      "Oni jadą nad morze.",
+      "Oni pływają w rzece."
+    ],
+    "distractorsFr": [
+      "Ils sont à la montagne.",
+      "Ils vont à la mer.",
+      "Ils nagent dans la rivière."
+    ]
+  },
+  {
+    "id": "nat-12-8",
+    "date": "2026-11-12",
+    "pl": "namiot",
+    "fr": "la tente",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "namiot"
+    ],
+    "acceptedFr": [
+      "tente",
+      "la tente",
+      "une tente"
+    ],
+    "distractorsPl": [
+      "hotel",
+      "pokój",
+      "dom"
+    ],
+    "distractorsFr": [
+      "hôtel",
+      "chambre",
+      "maison"
+    ]
+  },
+  {
+    "id": "nat-12-9",
+    "date": "2026-11-12",
+    "pl": "Oni śpią w namiocie.",
+    "fr": "Ils dorment dans la tente / sous la tente (locatif : w namiocie).",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "Oni śpią w namiocie",
+      "Oni spia w namiocie"
+    ],
+    "acceptedFr": [
+      "Ils dorment dans la tente",
+      "Ils dorment sous la tente"
+    ],
+    "distractorsPl": [
+      "Oni odpoczywają w hotelu.",
+      "Oni stawiają namiot.",
+      "Oni śpią w domu."
+    ],
+    "distractorsFr": [
+      "Ils se reposent à l'hôtel.",
+      "Ils montent la tente.",
+      "Ils dorment à la maison."
+    ]
+  },
+  {
+    "id": "nat-12-10",
+    "date": "2026-11-12",
+    "pl": "Lubisz spać w namiocie?",
+    "fr": "Aimes-tu dormir sous la tente ?",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "Lubisz spać w namiocie?",
+      "Lubisz spac w namiocie?"
+    ],
+    "acceptedFr": [
+      "Aimes-tu dormir sous la tente ?",
+      "Tu aimes dormir dans une tente ?"
+    ],
+    "distractorsPl": [
+      "Gdzie kupiłeś namiot?",
+      "Kiedy jedziesz na kemping?",
+      "Masz duży namiot?"
+    ],
+    "distractorsFr": [
+      "Où as-tu acheté la tente ?",
+      "Quand pars-tu en camping ?",
+      "As-tu une grande tente ?"
+    ]
+  },
+  {
+    "id": "nat-12-11",
+    "date": "2026-11-12",
+    "pl": "Często śpisz w namiocie?",
+    "fr": "Dors-tu souvent sous la tente ?",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "Często śpisz w namiocie?",
+      "Czesto spisz w namiocie?"
+    ],
+    "acceptedFr": [
+      "Dors-tu souvent sous la tente ?",
+      "Tu dors souvent dans la tente ?"
+    ],
+    "distractorsPl": [
+      "Rzadko odpoczywasz w weekend?",
+      "Czy masz śpiwór?",
+      "Gdzie lubisz biwakować?"
+    ],
+    "distractorsFr": [
+      "Te reposes-tu rarement le week-end ?",
+      "As-tu un sac de couchage ?",
+      "Où aimes-tu bivouaquer ?"
+    ]
+  },
+  {
+    "id": "nat-12-12",
+    "date": "2026-11-12",
+    "pl": "Nie, nie często śpię w namiocie.",
+    "fr": "Non, je ne dors pas souvent sous la tente.",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "Nie, nie często śpię w namiocie",
+      "Nie, nie czesto spie w namiocie"
+    ],
+    "acceptedFr": [
+      "Non je ne dors pas souvent sous la tente",
+      "Non, je ne dors pas souvent en tente"
+    ],
+    "distractorsPl": [
+      "Tak, śpię w namiocie każdego lata.",
+      "Wolę spać w dobrym hotelu.",
+      "Nigdy nie byłem pod namiotem."
+    ],
+    "distractorsFr": [
+      "Oui je dors sous la tente chaque été.",
+      "Je préfère dormir dans un bon hôtel.",
+      "Je n'ai jamais fait de camping."
+    ]
+  },
+  {
+    "id": "nat-12-13",
+    "date": "2026-11-12",
+    "pl": "spać",
+    "fr": "dormir (verbe : ja śpię, ty śpisz, on śpi)",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "spać",
+      "spac"
+    ],
+    "acceptedFr": [
+      "dormir"
+    ],
+    "distractorsPl": [
+      "odpoczywać",
+      "wstawać",
+      "budzić się"
+    ],
+    "distractorsFr": [
+      "se reposer",
+      "se lever",
+      "se réveiller"
+    ]
+  },
+  {
+    "id": "phr-12-1",
+    "date": "2026-11-12",
+    "pl": "Wczoraj był dzień wolny.",
+    "fr": "Hier était un jour férié / un jour de congé.",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Wczoraj był dzień wolny",
+      "Wczoraj byl dzien wolny"
+    ],
+    "acceptedFr": [
+      "Hier était un jour férié",
+      "Hier c'était un jour férié",
+      "Hier etait un jour ferie",
+      "Hier était un jour de congé"
+    ],
+    "distractorsPl": [
+      "Dzisiaj jest dzień wolny.",
+      "Jutro będę pracować.",
+      "W weekend mam wolne."
+    ],
+    "distractorsFr": [
+      "Aujourd'hui est un jour férié.",
+      "Demain je vais travailler.",
+      "Pendant le week-end j'ai quartier libre."
+    ]
+  },
+  {
+    "id": "phr-12-2",
+    "date": "2026-11-12",
+    "pl": "I co robiłeś?",
+    "fr": "Et qu'as-tu fait ? (au masculin)",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "I co robiłeś?",
+      "I co robiles?"
+    ],
+    "acceptedFr": [
+      "Et qu'as-tu fait ?",
+      "Et qu'est-ce que tu as fait ?",
+      "Et tu as fait quoi ?"
+    ],
+    "distractorsPl": [
+      "Gdzie byłeś?",
+      "Z kim rozmawiałeś?",
+      "O której wróciłeś?"
+    ],
+    "distractorsFr": [
+      "Où étais-tu ?",
+      "Avec qui as-tu parlé ?",
+      "À quelle heure es-tu rentré ?"
+    ]
+  },
+  {
+    "id": "phr-12-3",
+    "date": "2026-11-12",
+    "pl": "Nic nie robiłem.",
+    "fr": "Je n'ai rien fait. (au masculin)",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Nic nie robiłem",
+      "Nic nie robilem"
+    ],
+    "acceptedFr": [
+      "Je n'ai rien fait",
+      "Je n'ai rien fait du tout"
+    ],
+    "distractorsPl": [
+      "Cały dzień pracowałem.",
+      "Byłem u rodziny.",
+      "Robiłem zakupy."
+    ],
+    "distractorsFr": [
+      "J'ai travaillé toute la journée.",
+      "J'étais dans ma famille.",
+      "J'ai fait les courses."
+    ]
+  },
+  {
+    "id": "phr-12-4",
+    "date": "2026-11-12",
+    "pl": "Piłeś kawę?",
+    "fr": "As-tu bu du café ?",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "Piłeś kawę?",
+      "Piles kawe?"
+    ],
+    "acceptedFr": [
+      "As-tu bu du café ?",
+      "Tu as bu du café ?"
+    ],
+    "distractorsPl": [
+      "Jadłeś śniadanie?",
+      "Chcesz herbatę?",
+      "Lubisz kawę?"
+    ],
+    "distractorsFr": [
+      "As-tu pris ton petit-déjeuner ?",
+      "Tu veux du thé ?",
+      "Aimes-tu le café ?"
+    ]
+  },
+  {
+    "id": "phr-12-5",
+    "date": "2026-11-12",
+    "pl": "Jaką kawę pijesz?",
+    "fr": "Quel café bois-tu ? (noir, au lait, avec sucre...)",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "Jaką kawę pijesz?",
+      "Jaka kawe pijesz?"
+    ],
+    "acceptedFr": [
+      "Quel café bois-tu ?",
+      "Tu bois quel café ?"
+    ],
+    "distractorsPl": [
+      "Ile kaw pijesz?",
+      "O której pijesz kawę?",
+      "Gdzie kupujesz kawę?"
+    ],
+    "distractorsFr": [
+      "Combien de cafés bois-tu ?",
+      "À quelle heure bois-tu du café ?",
+      "Où achètes-tu le café ?"
+    ]
+  },
+  {
+    "id": "phr-12-6",
+    "date": "2026-11-12",
+    "pl": "Szukam piekarni niedaleko domu.",
+    "fr": "Je cherche une boulangerie près de chez moi / de la maison.",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "Szukam piekarni niedaleko domu"
+    ],
+    "acceptedFr": [
+      "Je cherche une boulangerie près de chez moi",
+      "Je cherche une boulangerie près de la maison"
+    ],
+    "distractorsPl": [
+      "Gdzie jest najbliższa piekarnia?",
+      "Kupuję świeży chleb w sklepie.",
+      "Piekarnia jest po prawej stronie."
+    ],
+    "distractorsFr": [
+      "Où est la boulangerie la plus proche ?",
+      "J'achète du pain frais au magasin.",
+      "La boulangerie est à droite."
+    ]
+  },
+  {
+    "id": "phr-12-7",
+    "date": "2026-11-12",
+    "pl": "Czy potrzebujesz kawy?",
+    "fr": "As-tu besoin d'un café ? (verbe potrzebować + génitif : kawy)",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "Czy potrzebujesz kawy?"
+    ],
+    "acceptedFr": [
+      "As-tu besoin d'un café ?",
+      "Tu as besoin d'un café ?",
+      "Avez-vous besoin de café ?"
+    ],
+    "distractorsPl": [
+      "Czy masz ochotę na kawę?",
+      "Czy pijesz kawę bez cukru?",
+      "Kto zrobi kawę?"
+    ],
+    "distractorsFr": [
+      "As-tu envie d'un café ?",
+      "Bois-tu le café sans sucre ?",
+      "Qui va faire le café ?"
+    ]
+  },
+  {
+    "id": "phr-12-8",
+    "date": "2026-11-12",
+    "pl": "Jeszcze nie jadłem śniadania.",
+    "fr": "Je n'ai pas encore pris de petit-déjeuner. (négation + génitif : śniadania)",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "Jeszcze nie jadłem śniadania",
+      "Jeszcze nie jadlem sniadania"
+    ],
+    "acceptedFr": [
+      "Je n'ai pas encore pris de petit-déjeuner",
+      "Je n'ai pas encore mangé de petit-déjeuner"
+    ],
+    "distractorsPl": [
+      "Zjadłem już małe śniadanie.",
+      "Nie chcę dzisiaj śniadania.",
+      "Śniadanie było bardzo dobre."
+    ],
+    "distractorsFr": [
+      "J'ai déjà pris un petit déjeuner.",
+      "Je ne veux pas de petit-déjeuner aujourd'hui.",
+      "Le petit-déjeuner était très bon."
+    ]
+  },
+  {
+    "id": "phr-12-9",
+    "date": "2026-11-12",
+    "pl": "Nie wiem, co jest w torbie.",
+    "fr": "Je ne sais pas ce qu'il y a dans le sac.",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Nie wiem, co jest w torbie",
+      "Nie wiem co jest w torbie"
+    ],
+    "acceptedFr": [
+      "Je ne sais pas ce qu'il y a dans le sac",
+      "Je ne sais pas ce qui est dans le sac"
+    ],
+    "distractorsPl": [
+      "Gdzie położyłeś moją torbę?",
+      "Moja torba jest czarna.",
+      "W torbie są książki i portfel."
+    ],
+    "distractorsFr": [
+      "Où as-tu posé mon sac ?",
+      "Mon sac est noir.",
+      "Dans le sac il y a des livres et un portefeuille."
+    ]
+  },
+  {
+    "id": "phr-12-10",
+    "date": "2026-11-12",
+    "pl": "Ten kościół jest niedaleko banku.",
+    "fr": "Cette église est près de la banque. (préposition niedaleko + génitif : banku)",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "Ten kościół jest niedaleko banku",
+      "Ten kosciol jest niedaleko banku"
+    ],
+    "acceptedFr": [
+      "Cette église est près de la banque",
+      "Cette église est non loin de la banque"
+    ],
+    "distractorsPl": [
+      "Obok kościoła jest piekarnia.",
+      "Szukam banku i kościoła.",
+      "Bank jest zamknięty dzisiaj."
+    ],
+    "distractorsFr": [
+      "À côté de l'église il y a une boulangerie.",
+      "Je cherche une banque et une église.",
+      "La banque est fermée aujourd'hui."
+    ]
+  },
+  {
+    "id": "phr-12-11",
+    "date": "2026-11-12",
+    "pl": "kość",
+    "fr": "l'os (féminin, génitif : kości)",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "kość",
+      "kosc"
+    ],
+    "acceptedFr": [
+      "os",
+      "l'os",
+      "un os"
+    ],
+    "distractorsPl": [
+      "kościół",
+      "mięso",
+      "ząb"
+    ],
+    "distractorsFr": [
+      "église",
+      "viande",
+      "dent"
+    ]
+  },
+  {
+    "id": "phr-12-12",
+    "date": "2026-11-12",
+    "pl": "Potrzebuję książki i długopisu.",
+    "fr": "J'ai besoin d'un livre et d'un stylo. (potrzebować + double génitif : książki i długopisu)",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "Potrzebuję książki i długopisu",
+      "Potrzebuje ksiazki i dlugopisu"
+    ],
+    "acceptedFr": [
+      "J'ai besoin d'un livre et d'un stylo",
+      "J'ai besoin d'un livre et de stylo"
+    ],
+    "distractorsPl": [
+      "Mam książkę i długopis w plecaku.",
+      "Gdzie kupiłeś ten długopis?",
+      "Czytasz ciekawą książkę."
+    ],
+    "distractorsFr": [
+      "J'ai un livre et un stylo dans mon sac à dos.",
+      "Où as-tu acheté ce stylo ?",
+      "Tu lis un livre intéressant."
+    ]
+  },
+  {
+    "id": "phr-12-13",
+    "date": "2026-11-12",
+    "pl": "bezdomny",
+    "fr": "sans-abri / SDF (masculin)",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "bezdomny"
+    ],
+    "acceptedFr": [
+      "sans-abri",
+      "SDF",
+      "sans abri",
+      "un sans-abri"
+    ],
+    "distractorsPl": [
+      "biedny",
+      "zmęczony",
+      "samotny"
+    ],
+    "distractorsFr": [
+      "pauvre",
+      "fatigué",
+      "seul"
+    ]
+  },
+  {
+    "id": "phr-12-14",
+    "date": "2026-11-12",
+    "pl": "na ulicy",
+    "fr": "dans la rue (locatif : na ulicy)",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "na ulicy"
+    ],
+    "acceptedFr": [
+      "dans la rue",
+      "sur la rue"
+    ],
+    "distractorsPl": [
+      "w domu",
+      "na placu",
+      "w sklepie"
+    ],
+    "distractorsFr": [
+      "à la maison",
+      "sur la place",
+      "au magasin"
+    ]
+  },
+  {
+    "id": "phr-12-15",
+    "date": "2026-11-12",
+    "pl": "przed kawiarnią",
+    "fr": "devant le café (instrumental de lieu après przed : przed kawiarnią)",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "przed kawiarnią",
+      "przed kawiarnia"
+    ],
+    "acceptedFr": [
+      "devant le café",
+      "devant le salon de café"
+    ],
+    "distractorsPl": [
+      "w kawiarni",
+      "obok kawiarni",
+      "za kawiarnią"
+    ],
+    "distractorsFr": [
+      "dans le café",
+      "à côté du café",
+      "derrière le café"
+    ]
+  },
+  {
+    "id": "phr-12-16",
+    "date": "2026-11-12",
+    "pl": "On odpoczywa.",
+    "fr": "Il se repose. (verbe odpoczywać)",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "On odpoczywa"
+    ],
+    "acceptedFr": [
+      "Il se repose",
+      "Il est en train de se reposer"
+    ],
+    "distractorsPl": [
+      "On pracuje w biurze.",
+      "On śpi w łóżku.",
+      "On czeka na autobus."
+    ],
+    "distractorsFr": [
+      "Il travaille au bureau.",
+      "Il dort dans le lit.",
+      "Il attend le bus."
+    ]
+  },
+  {
+    "id": "phr-12-17",
+    "date": "2026-11-12",
+    "pl": "Wczoraj odpoczywałeś?",
+    "fr": "Tu t'es reposé hier ? (au masculin)",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Wczoraj odpoczywałeś?",
+      "Wczoraj odpoczywales?"
+    ],
+    "acceptedFr": [
+      "Tu t'es reposé hier ?",
+      "T'es-tu reposé hier ?"
+    ],
+    "distractorsPl": [
+      "Dużo pracowałeś wczoraj?",
+      "Co robiłeś w weekend?",
+      "O której poszedłeś spać?"
+    ],
+    "distractorsFr": [
+      "As-tu beaucoup travaillé hier ?",
+      "Qu'as-tu fait ce week-end ?",
+      "À quelle heure es-tu allé dormir ?"
+    ]
+  },
+  {
+    "id": "phr-12-18",
+    "date": "2026-11-12",
+    "pl": "odpoczywać",
+    "fr": "se reposer (verbe)",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "odpoczywać",
+      "odpoczywac"
+    ],
+    "acceptedFr": [
+      "se reposer",
+      "se détendre"
+    ],
+    "distractorsPl": [
+      "pracować",
+      "uczyć się",
+      "podróżować"
+    ],
+    "distractorsFr": [
+      "travailler",
+      "étudier / apprendre",
+      "voyager"
+    ]
+  },
+  {
+    "id": "phr-12-19",
+    "date": "2026-11-12",
+    "pl": "często",
+    "fr": "souvent (adverbe de fréquence)",
+    "category": "Adjectifs",
+    "acceptedPl": [
+      "często",
+      "czesto"
+    ],
+    "acceptedFr": [
+      "souvent"
+    ],
+    "distractorsPl": [
+      "rzadko",
+      "zawsze",
+      "nigdy"
+    ],
+    "distractorsFr": [
+      "rarement",
+      "toujours",
+      "jamais"
+    ]
+  },
+  {
+    "id": "phr-12-20",
+    "date": "2026-11-12",
+    "pl": "rzadko",
+    "fr": "rarement (adverbe de fréquence)",
+    "category": "Adjectifs",
+    "acceptedPl": [
+      "rzadko"
+    ],
+    "acceptedFr": [
+      "rarement"
+    ],
+    "distractorsPl": [
+      "często",
+      "zwykle",
+      "czasem"
+    ],
+    "distractorsFr": [
+      "souvent",
+      "d'habitude",
+      "parfois"
+    ]
+  },
+  {
+    "id": "phr-12-21",
+    "date": "2026-11-12",
+    "pl": "zawsze",
+    "fr": "toujours (adverbe de fréquence)",
+    "category": "Adjectifs",
+    "acceptedPl": [
+      "zawsze"
+    ],
+    "acceptedFr": [
+      "toujours"
+    ],
+    "distractorsPl": [
+      "nigdy",
+      "czasami",
+      "często"
+    ],
+    "distractorsFr": [
+      "jamais",
+      "parfois",
+      "souvent"
+    ]
+  },
+  {
+    "id": "phr-12-22",
+    "date": "2026-11-12",
+    "pl": "od czasu do czasu",
+    "fr": "de temps en temps",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "od czasu do czasu"
+    ],
+    "acceptedFr": [
+      "de temps en temps",
+      "parfois"
+    ],
+    "distractorsPl": [
+      "cały dzień",
+      "zawsze rano",
+      "bardzo często"
+    ],
+    "distractorsFr": [
+      "toute la journée",
+      "toujours le matin",
+      "très souvent"
+    ]
+  },
+  {
+    "id": "phr-12-23",
+    "date": "2026-11-12",
+    "pl": "burza",
+    "fr": "la tempête, l'orage",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "burza"
+    ],
+    "acceptedFr": [
+      "orage",
+      "tempête",
+      "un orage",
+      "une tempête",
+      "tempete"
+    ],
+    "distractorsPl": [
+      "deszcz",
+      "wiatr",
+      "chmura"
+    ],
+    "distractorsFr": [
+      "pluie",
+      "vent",
+      "nuage"
+    ]
   }
 ];
 
@@ -14345,6 +16452,729 @@ const CASE_CHALLENGES = [
         "note": "Datif masculin (-emu)"
       }
     ]
+  },
+  // ------------------------------------------
+  // NOUVEAUX DÉFIS DU 12/11/2026 (TRANSPORTS INSTRUMENTAL, LIEUX LOCATIF & GÉNITIF)
+  // ------------------------------------------
+  {
+    "id": "case-n-22",
+    "date": "2026-11-12",
+    "caseName": "Narzędnik",
+    "caseLabelFr": "Instrumental (Narzędnik)",
+    "caseBadgeClass": "case-narzednik",
+    "sentenceBefore": "Jak jedziesz do biura? Zwykle jadę samochod",
+    "sentenceAfter": ".",
+    "gapWord": "samochód",
+    "gapWordMeaning": "voiture",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "masculin inanimé",
+    "correctEnding": "-em",
+    "fullCorrectWord": "samochodem",
+    "fullSentence": "Jak jedziesz do biura? Zwykle jadę samochodem.",
+    "translationFr": "Comment vas-tu au bureau ? D'habitude j'y vais en voiture.",
+    "ruleExplanation": "Pour exprimer le <strong>moyen de transport</strong> en polonais (en voiture, en bus, en train), on emploie obligatoirement le <strong>Narzędnik (Instrumental)</strong> sans préposition. Pour les noms masculins, la terminaison est <strong>-em</strong> (samochód &rarr; <strong>samochodem</strong>).",
+    "options": [
+      {
+        "ending": "-em",
+        "word": "samochodem",
+        "isCorrect": true,
+        "note": "Instrumental régulier du transport (-em)"
+      },
+      {
+        "ending": "-u",
+        "word": "samochodu",
+        "isCorrect": false,
+        "note": "Génitif masculin (-u)"
+      },
+      {
+        "ending": "-zie",
+        "word": "samochodzie",
+        "isCorrect": false,
+        "note": "Locatif masculin (-zie)"
+      },
+      {
+        "ending": "-a",
+        "word": "samochoda",
+        "isCorrect": false,
+        "note": "Forme inexistante"
+      }
+    ]
+  },
+  {
+    "id": "case-n-23",
+    "date": "2026-11-12",
+    "caseName": "Narzędnik",
+    "caseLabelFr": "Instrumental (Narzędnik)",
+    "caseBadgeClass": "case-narzednik",
+    "sentenceBefore": "Do centrum najszybciej dojedziesz metr",
+    "sentenceAfter": ".",
+    "gapWord": "metro",
+    "gapWordMeaning": "métro",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "neutre",
+    "correctEnding": "-em",
+    "fullCorrectWord": "metrem",
+    "fullSentence": "Do centrum najszybciej dojedziesz metrem.",
+    "translationFr": "Pour aller au centre, tu arriveras le plus vite en métro.",
+    "ruleExplanation": "Le moyen de transport se décline à l'<strong>Instrumental (Narzędnik)</strong>. Pour le mot neutre <em>metro</em>, la déclinaison donne la terminaison régulière <strong>-em</strong> (metro &rarr; <strong>metrem</strong>).",
+    "options": [
+      {
+        "ending": "-em",
+        "word": "metrem",
+        "isCorrect": true,
+        "note": "Instrumental régulier du moyen de transport (-em)"
+      },
+      {
+        "ending": "-a",
+        "word": "metra",
+        "isCorrect": false,
+        "note": "Génitif neutre de négation / absence (-a)"
+      },
+      {
+        "ending": "-o",
+        "word": "metro",
+        "isCorrect": false,
+        "note": "Nominatif / Accusatif (-o)"
+      },
+      {
+        "ending": "-ze",
+        "word": "metrze",
+        "isCorrect": false,
+        "note": "Locatif (-ze)"
+      }
+    ]
+  },
+  {
+    "id": "case-n-24",
+    "date": "2026-11-12",
+    "caseName": "Narzędnik",
+    "caseLabelFr": "Instrumental (Narzędnik)",
+    "caseBadgeClass": "case-narzednik",
+    "sentenceBefore": "Mój kolega codziennie jeździ do pracy rower",
+    "sentenceAfter": ".",
+    "gapWord": "rower",
+    "gapWordMeaning": "vélo",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "masculin inanimé",
+    "correctEnding": "-em",
+    "fullCorrectWord": "rowerem",
+    "fullSentence": "Mój kolega codziennie jeździ do pracy rowerem.",
+    "translationFr": "Mon collègue va tous les jours au travail à vélo.",
+    "ruleExplanation": "Le verbe <em>jeździć</em> (circuler / aller en moyen de transport) se combine avec l'<strong>Instrumental (Narzędnik)</strong> pour indiquer l'engin utilisé : <em>rower</em> &rarr; <strong>rowerem</strong>.",
+    "options": [
+      {
+        "ending": "-em",
+        "word": "rowerem",
+        "isCorrect": true,
+        "note": "Instrumental masculin régulier (-em)"
+      },
+      {
+        "ending": "-u",
+        "word": "roweru",
+        "isCorrect": false,
+        "note": "Génitif masculin (-u)"
+      },
+      {
+        "ending": "-ze",
+        "word": "rowerze",
+        "isCorrect": false,
+        "note": "Locatif masculin (-ze)"
+      },
+      {
+        "ending": "-a",
+        "word": "rowera",
+        "isCorrect": false,
+        "note": "Forme incorrecte"
+      }
+    ]
+  },
+  {
+    "id": "case-n-25",
+    "date": "2026-11-12",
+    "caseName": "Narzędnik",
+    "caseLabelFr": "Instrumental (Narzędnik)",
+    "caseBadgeClass": "case-narzednik",
+    "sentenceBefore": "Gdy pada deszcz, chętnie wracam taksówk",
+    "sentenceAfter": ".",
+    "gapWord": "taksówka",
+    "gapWordMeaning": "taxi",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "féminin",
+    "correctEnding": "-ą",
+    "fullCorrectWord": "taksówką",
+    "fullSentence": "Gdy pada deszcz, chętnie wracam taksówką.",
+    "translationFr": "Quand il pleut, je rentre volontiers en taxi.",
+    "ruleExplanation": "Pour un moyen de transport féminin en <em>-a</em>, la terminaison de l'<strong>Instrumental (Narzędnik)</strong> est la nasale <strong>-ą</strong> (taksówka &rarr; <strong>taksówką</strong>).",
+    "options": [
+      {
+        "ending": "-ą",
+        "word": "taksówką",
+        "isCorrect": true,
+        "note": "Instrumental féminin régulier (-ą)"
+      },
+      {
+        "ending": "-ę",
+        "word": "taksówkę",
+        "isCorrect": false,
+        "note": "Accusatif COD (-ę)"
+      },
+      {
+        "ending": "-i",
+        "word": "taksówki",
+        "isCorrect": false,
+        "note": "Génitif féminin (-i)"
+      },
+      {
+        "ending": "-ce",
+        "word": "taksówce",
+        "isCorrect": false,
+        "note": "Locatif / Datif féminin (-ce)"
+      }
+    ]
+  },
+  {
+    "id": "case-n-26",
+    "date": "2026-11-12",
+    "caseName": "Narzędnik",
+    "caseLabelFr": "Instrumental (Narzędnik)",
+    "caseBadgeClass": "case-narzednik",
+    "sentenceBefore": "W weekend oni odpoczywają nad jezior",
+    "sentenceAfter": ".",
+    "gapWord": "jezioro",
+    "gapWordMeaning": "lac",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "neutre",
+    "correctEnding": "-em",
+    "fullCorrectWord": "jeziorem",
+    "fullSentence": "W weekend oni odpoczywają nad jeziorem.",
+    "translationFr": "Pendant le week-end, ils se reposent au bord du lac.",
+    "ruleExplanation": "La préposition spatiale <strong>nad</strong> (au bord de, au-dessus de) régit l'<strong>Instrumental (Narzędnik)</strong> lorsqu'elle indique une situation sans déplacement. Pour le nom neutre <em>jezioro</em> : <strong>nad jeziorem</strong>.",
+    "options": [
+      {
+        "ending": "-em",
+        "word": "jeziorem",
+        "isCorrect": true,
+        "note": "Instrumental neutre régulier après nad (-em)"
+      },
+      {
+        "ending": "-ze",
+        "word": "jeziorze",
+        "isCorrect": false,
+        "note": "Locatif après w/na (-ze)"
+      },
+      {
+        "ending": "-a",
+        "word": "jeziora",
+        "isCorrect": false,
+        "note": "Génitif neutre (-a)"
+      },
+      {
+        "ending": "-o",
+        "word": "jezioro",
+        "isCorrect": false,
+        "note": "Nominatif / Accusatif (-o)"
+      }
+    ]
+  },
+  {
+    "id": "case-n-27",
+    "date": "2026-11-12",
+    "caseName": "Narzędnik",
+    "caseLabelFr": "Instrumental (Narzędnik)",
+    "caseBadgeClass": "case-narzednik",
+    "sentenceBefore": "Mężczyzna odpoczywa przed kawiarni",
+    "sentenceAfter": ".",
+    "gapWord": "kawiarnia",
+    "gapWordMeaning": "café (établissement)",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "féminin",
+    "correctEnding": "-ą",
+    "fullCorrectWord": "kawiarnią",
+    "fullSentence": "Mężczyzna odpoczywa przed kawiarnią.",
+    "translationFr": "L'homme se repose devant le café.",
+    "ruleExplanation": "La préposition <strong>przed</strong> (devant) régit l'<strong>Instrumental (Narzędnik)</strong> pour localiser une position statique. Pour un nom féminin singulier, la terminaison est <strong>-ą</strong> (kawiarnia &rarr; <strong>przed kawiarnią</strong>).",
+    "options": [
+      {
+        "ending": "-ą",
+        "word": "kawiarnią",
+        "isCorrect": true,
+        "note": "Instrumental féminin régulier après przed (-ą)"
+      },
+      {
+        "ending": "-i",
+        "word": "kawiarni",
+        "isCorrect": false,
+        "note": "Génitif / Locatif féminin (-i)"
+      },
+      {
+        "ending": "-ę",
+        "word": "kawiarnię",
+        "isCorrect": false,
+        "note": "Accusatif féminin (-ę)"
+      },
+      {
+        "ending": "-e",
+        "word": "kawiarnie",
+        "isCorrect": false,
+        "note": "Nominatif pluriel (-e)"
+      }
+    ]
+  },
+  {
+    "id": "case-m-37",
+    "date": "2026-11-12",
+    "caseName": "Miejscownik",
+    "caseLabelFr": "Locatif (Miejscownik)",
+    "caseBadgeClass": "case-miejscownik",
+    "sentenceBefore": "Podczas wyjazdu oni śpią w namioc",
+    "sentenceAfter": ".",
+    "gapWord": "namiot",
+    "gapWordMeaning": "tente",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "masculin inanimé",
+    "correctEnding": "-ie",
+    "fullCorrectWord": "namiocie",
+    "fullSentence": "Podczas wyjazdu oni śpią w namiocie.",
+    "translationFr": "Pendant le voyage, ils dorment dans la tente / sous la tente.",
+    "ruleExplanation": "La préposition <strong>w</strong> (dans) indiquant un lieu statique demande le <strong>Miejscownik (Locatif)</strong>. Le <em>t</em> final s'adoucit en <em>ci</em> avec la terminaison <strong>-e</strong> : namiot &rarr; <strong>w namiocie</strong>.",
+    "options": [
+      {
+        "ending": "-ie",
+        "word": "namiocie",
+        "isCorrect": true,
+        "note": "Locatif masculin avec alternance t -> ci (-ie)"
+      },
+      {
+        "ending": "-u",
+        "word": "namiotu",
+        "isCorrect": false,
+        "note": "Génitif masculin (-u)"
+      },
+      {
+        "ending": "-em",
+        "word": "namiotem",
+        "isCorrect": false,
+        "note": "Instrumental masculin (-em)"
+      },
+      {
+        "ending": "-a",
+        "word": "namiota",
+        "isCorrect": false,
+        "note": "Forme incorrecte"
+      }
+    ]
+  },
+  {
+    "id": "case-m-38",
+    "date": "2026-11-12",
+    "caseName": "Miejscownik",
+    "caseLabelFr": "Locatif (Miejscownik)",
+    "caseBadgeClass": "case-miejscownik",
+    "sentenceBefore": "Nie wiem, co jest w tej torb",
+    "sentenceAfter": ".",
+    "gapWord": "torba",
+    "gapWordMeaning": "sac / sacoche",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "féminin",
+    "correctEnding": "-ie",
+    "fullCorrectWord": "torbie",
+    "fullSentence": "Nie wiem, co jest w tej torbie.",
+    "translationFr": "Je ne sais pas ce qu'il y a dans ce sac.",
+    "ruleExplanation": "Pour exprimer le contenant statique après <em>w</em> (dans), on emploie le <strong>Locatif (Miejscownik)</strong>. Pour un nom féminin en consonne dure + <em>-a</em>, la terminaison est <strong>-ie</strong> avec adoucissement du <em>b</em> : torba &rarr; <strong>w torbie</strong>.",
+    "options": [
+      {
+        "ending": "-ie",
+        "word": "torbie",
+        "isCorrect": true,
+        "note": "Locatif féminin avec alternance b -> bi (-ie)"
+      },
+      {
+        "ending": "-y",
+        "word": "torby",
+        "isCorrect": false,
+        "note": "Génitif féminin (-y)"
+      },
+      {
+        "ending": "-ę",
+        "word": "torbę",
+        "isCorrect": false,
+        "note": "Accusatif féminin (-ę)"
+      },
+      {
+        "ending": "-ą",
+        "word": "torbą",
+        "isCorrect": false,
+        "note": "Instrumental féminin (-ą)"
+      }
+    ]
+  },
+  {
+    "id": "case-m-39",
+    "date": "2026-11-12",
+    "caseName": "Miejscownik",
+    "caseLabelFr": "Locatif (Miejscownik)",
+    "caseBadgeClass": "case-miejscownik",
+    "sentenceBefore": "Bezdomny mężczyzna siedzi na ulic",
+    "sentenceAfter": ".",
+    "gapWord": "ulica",
+    "gapWordMeaning": "rue",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "féminin",
+    "correctEnding": "-y",
+    "fullCorrectWord": "ulicy",
+    "fullSentence": "Bezdomny mężczyzna siedzi na ulicy.",
+    "translationFr": "L'homme sans-abri est assis dans la rue.",
+    "ruleExplanation": "La localisation sur une rue utilise <em>na</em> + <strong>Miejscownik (Locatif)</strong>. Après une consonne chuintante ou molle comme <em>c</em>, la terminaison du locatif féminin singulier est <strong>-y</strong> (ulica &rarr; <strong>na ulicy</strong>).",
+    "options": [
+      {
+        "ending": "-y",
+        "word": "ulicy",
+        "isCorrect": true,
+        "note": "Locatif féminin régulier après c (-y)"
+      },
+      {
+        "ending": "-ę",
+        "word": "ulicę",
+        "isCorrect": false,
+        "note": "Accusatif de direction (-ę)"
+      },
+      {
+        "ending": "-ą",
+        "word": "ulicą",
+        "isCorrect": false,
+        "note": "Instrumental de passage (-ą)"
+      },
+      {
+        "ending": "-e",
+        "word": "ulice",
+        "isCorrect": false,
+        "note": "Nominatif / Accusatif pluriel (-e)"
+      }
+    ]
+  },
+  {
+    "id": "case-pl-m-11",
+    "date": "2026-11-12",
+    "caseName": "Miejscownik",
+    "caseLabelFr": "Locatif (Miejscownik Pluriel)",
+    "caseBadgeClass": "case-miejscownik",
+    "sentenceBefore": "Latem bardzo chętnie chodzimy po gór",
+    "sentenceAfter": ".",
+    "gapWord": "góry",
+    "gapWordMeaning": "montagnes (pluriel)",
+    "targetType": "nom",
+    "isPlural": true,
+    "gender": "féminin pluriel non-viril",
+    "correctEnding": "-ach",
+    "fullCorrectWord": "górach",
+    "fullSentence": "Latem bardzo chętnie chodzimy po górach.",
+    "translationFr": "En été, nous aimons beaucoup marcher en montagne / faire de la randonnée en montagne.",
+    "ruleExplanation": "La préposition <strong>po</strong> (à travers / dans) régissant le lieu d'activité s'emploie avec le <strong>Miejscownik (Locatif)</strong>. Au pluriel, la désinence universelle du locatif est <strong>-ach</strong> pour tous les genres : góry &rarr; <strong>po górach</strong> (ou <em>w górach</em>).",
+    "options": [
+      {
+        "ending": "-ach",
+        "word": "górach",
+        "isCorrect": true,
+        "note": "Locatif pluriel universel (-ach)"
+      },
+      {
+        "ending": "-ami",
+        "word": "górami",
+        "isCorrect": false,
+        "note": "Instrumental pluriel (-ami)"
+      },
+      {
+        "ending": "-om",
+        "word": "górom",
+        "isCorrect": false,
+        "note": "Datif pluriel (-om)"
+      },
+      {
+        "ending": "-ów",
+        "word": "górów",
+        "isCorrect": false,
+        "note": "Forme incorrecte (*górów)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-55",
+    "date": "2026-11-12",
+    "caseName": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Przepraszam, szukam piekarn",
+    "sentenceAfter": " niedaleko domu.",
+    "gapWord": "piekarnia",
+    "gapWordMeaning": "boulangerie",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "féminin",
+    "correctEnding": "-i",
+    "fullCorrectWord": "piekarni",
+    "fullSentence": "Przepraszam, szukam piekarni niedaleko domu.",
+    "translationFr": "Excusez-moi, je cherche une boulangerie près de chez moi.",
+    "ruleExplanation": "Le verbe <strong>szukać</strong> (chercher) est TOUJOURS suivi du <strong>Génitif (Dopełniacz)</strong>. Pour les noms féminins en <em>-ia</em>, la terminaison du génitif singulier est <strong>-i</strong> (piekarnia &rarr; <strong>piekarni</strong>).",
+    "options": [
+      {
+        "ending": "-i",
+        "word": "piekarni",
+        "isCorrect": true,
+        "note": "Génitif féminin doux (szukać + génitif)"
+      },
+      {
+        "ending": "-ę",
+        "word": "piekarnię",
+        "isCorrect": false,
+        "note": "Accusatif (-ę, incorrect après szukać)"
+      },
+      {
+        "ending": "-ą",
+        "word": "piekarnią",
+        "isCorrect": false,
+        "note": "Instrumental féminin (-ą)"
+      },
+      {
+        "ending": "-a",
+        "word": "piekarnia",
+        "isCorrect": false,
+        "note": "Nominatif singulier (-a)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-56",
+    "date": "2026-11-12",
+    "caseName": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Czy przed wyjściem potrzebujesz gorącej kaw",
+    "sentenceAfter": "?",
+    "gapWord": "kawa",
+    "gapWordMeaning": "café",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "féminin",
+    "correctEnding": "-y",
+    "fullCorrectWord": "kawy",
+    "fullSentence": "Czy przed wyjściem potrzebujesz gorącej kawy?",
+    "translationFr": "As-tu besoin d'un café chaud avant de sortir ?",
+    "ruleExplanation": "Le verbe <strong>potrzebować</strong> (avoir besoin de) régit systématiquement le <strong>Génitif (Dopełniacz)</strong>. Pour un féminin dur se terminant en <em>-a</em>, la terminaison est <strong>-y</strong> : <strong>potrzebujesz kawy</strong>.",
+    "options": [
+      {
+        "ending": "-y",
+        "word": "kawy",
+        "isCorrect": true,
+        "note": "Génitif féminin dur (potrzebować + génitif)"
+      },
+      {
+        "ending": "-ę",
+        "word": "kawę",
+        "isCorrect": false,
+        "note": "Accusatif (-ę, faux après potrzebować)"
+      },
+      {
+        "ending": "-ie",
+        "word": "kawie",
+        "isCorrect": false,
+        "note": "Datif / Locatif (-ie)"
+      },
+      {
+        "ending": "-ą",
+        "word": "kawą",
+        "isCorrect": false,
+        "note": "Instrumental (-ą)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-57",
+    "date": "2026-11-12",
+    "caseName": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Jestem głodny, bo jeszcze nie jadłem śniadani",
+    "sentenceAfter": ".",
+    "gapWord": "śniadanie",
+    "gapWordMeaning": "petit-déjeuner",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "neutre",
+    "correctEnding": "-a",
+    "fullCorrectWord": "śniadania",
+    "fullSentence": "Jestem głodny, bo jeszcze nie jadłem śniadania.",
+    "translationFr": "J'ai faim, car je n'ai pas encore pris de petit-déjeuner.",
+    "ruleExplanation": "À la forme affirmative : <em>Jadłem śniadanie</em> (Accusatif identique au Nominatif pour les neutres). Mais avec la négation <em>nie jadłem</em>, le complément bascule obligatoirement au <strong>Génitif</strong> avec terminaison <strong>-a</strong> : <strong>nie jadłem śniadania</strong>.",
+    "options": [
+      {
+        "ending": "-a",
+        "word": "śniadania",
+        "isCorrect": true,
+        "note": "Génitif neutre de négation (-a)"
+      },
+      {
+        "ending": "-e",
+        "word": "śniadanie",
+        "isCorrect": false,
+        "note": "Accusatif de l'affirmation (-e)"
+      },
+      {
+        "ending": "-em",
+        "word": "śniadaniem",
+        "isCorrect": false,
+        "note": "Instrumental neutre (-em)"
+      },
+      {
+        "ending": "-u",
+        "word": "śniadaniu",
+        "isCorrect": false,
+        "note": "Locatif neutre (-u)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-58",
+    "date": "2026-11-12",
+    "caseName": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Do lekcji pilnie potrzebuję nowej książk",
+    "sentenceAfter": " i długopisu.",
+    "gapWord": "książka",
+    "gapWordMeaning": "livre",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "féminin",
+    "correctEnding": "-i",
+    "fullCorrectWord": "książki",
+    "fullSentence": "Do lekcji pilnie potrzebuję nowej książki i długopisu.",
+    "translationFr": "Pour la leçon, j'ai un besoin urgent d'un nouveau livre et d'un stylo.",
+    "ruleExplanation": "Après <strong>potrzebować</strong>, le complément est au <strong>Génitif</strong>. Pour un nom féminin dont le radical se termine par <em>k</em> ou <em>g</em>, l'adoucissement phonétique exige <strong>-i</strong> et non pas *-y : książka &rarr; <strong>książki</strong>.",
+    "options": [
+      {
+        "ending": "-i",
+        "word": "książki",
+        "isCorrect": true,
+        "note": "Génitif féminin régulier après k (-i)"
+      },
+      {
+        "ending": "-y",
+        "word": "książky",
+        "isCorrect": false,
+        "note": "Orthographe polonaise impossible (*ky)"
+      },
+      {
+        "ending": "-ę",
+        "word": "książkę",
+        "isCorrect": false,
+        "note": "Accusatif féminin (-ę)"
+      },
+      {
+        "ending": "-ą",
+        "word": "książką",
+        "isCorrect": false,
+        "note": "Instrumental féminin (-ą)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-59",
+    "date": "2026-11-12",
+    "caseName": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "W moim rodzinnym mieście niestety nie ma metr",
+    "sentenceAfter": ".",
+    "gapWord": "metro",
+    "gapWordMeaning": "métro",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "neutre",
+    "correctEnding": "-a",
+    "fullCorrectWord": "metra",
+    "fullSentence": "W moim rodzinnym mieście niestety nie ma metra.",
+    "translationFr": "Dans ma ville natale, il n'y a malheureusement pas de métro.",
+    "ruleExplanation": "La formule d'absence <strong>nie ma</strong> exige toujours le <strong>Génitif (Dopełniacz)</strong>. Pour les noms neutres en <em>-o</em>, la terminaison au génitif est <strong>-a</strong> : <strong>nie ma metra</strong>.",
+    "options": [
+      {
+        "ending": "-a",
+        "word": "metra",
+        "isCorrect": true,
+        "note": "Génitif neutre régulier d'absence (-a)"
+      },
+      {
+        "ending": "-o",
+        "word": "metro",
+        "isCorrect": false,
+        "note": "Nominatif invariable neutre (-o)"
+      },
+      {
+        "ending": "-u",
+        "word": "metru",
+        "isCorrect": false,
+        "note": "Datif neutre (-u)"
+      },
+      {
+        "ending": "-em",
+        "word": "metrem",
+        "isCorrect": false,
+        "note": "Instrumental du transport (-em)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-60",
+    "date": "2026-11-12",
+    "caseName": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "W tej małej dzielnicy w ogóle nie ma tramwaj",
+    "sentenceAfter": ".",
+    "gapWord": "tramwaj",
+    "gapWordMeaning": "tramway",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "masculin inanimé",
+    "correctEnding": "-u",
+    "fullCorrectWord": "tramwaju",
+    "fullSentence": "W tej małej dzielnicy w ogóle nie ma tramwaju.",
+    "translationFr": "Dans ce petit quartier, il n'y a pas du tout de tramway.",
+    "ruleExplanation": "Après <strong>nie ma</strong> (absence), le nom masculin inanimé prend la terminaison de Génitif <strong>-u</strong> : <strong>nie ma tramwaju</strong>.",
+    "options": [
+      {
+        "ending": "-u",
+        "word": "tramwaju",
+        "isCorrect": true,
+        "note": "Génitif masculin inanimé d'absence (-u)"
+      },
+      {
+        "ending": "-a",
+        "word": "tramwaja",
+        "isCorrect": false,
+        "note": "Forme incorrecte"
+      },
+      {
+        "ending": "-em",
+        "word": "tramwajem",
+        "isCorrect": false,
+        "note": "Instrumental du transport (-em)"
+      },
+      {
+        "ending": "-owi",
+        "word": "tramwajowi",
+        "isCorrect": false,
+        "note": "Datif masculin (-owi)"
+      }
+    ]
   }
 ];
 
@@ -16556,6 +19386,164 @@ const POSSESSIVE_CHALLENGES = [
         "word": "swoją",
         "isCorrect": false,
         "note": "Accusatif / Instrumental féminin singulier (-ą)"
+      }
+    ]
+  },
+  // ------------------------------------------
+  // NOUVEAUX DÉFIS DU 12/11/2026 (POSSESSIFS & RÉFLÉCHI SWÓJ)
+  // ------------------------------------------
+  {
+    "id": "poss-l1-48",
+    "date": "2026-11-12",
+    "level": "level-1",
+    "category": "1st-2nd",
+    "categoryLabelFr": "1re & 2e personne",
+    "targetCase": "Mianownik (Nominatif)",
+    "caseLabelFr": "Nominatif (Sujet)",
+    "nounContext": "biuro (neutre singulier)",
+    "targetMeaning": "ton (possesseur 2e personne, nom neutre)",
+    "sentenceBefore": "Czy ",
+    "sentenceAfter": " biuro jest daleko od centrum?",
+    "gapWord": "twoje",
+    "fullSentence": "Czy twoje biuro jest daleko od centrum?",
+    "translationFr": "Ton bureau est-il loin du centre ?",
+    "ruleExplanation": "Le nom <em>biuro</em> est neutre au Nominatif singulier. Le possessif de 2e personne prend donc la désinence neutre <strong>-e</strong> : <strong>twoje</strong> biuro.",
+    "options": [
+      {
+        "word": "twoje",
+        "isCorrect": true,
+        "note": "Neutre singulier Nominatif (-e)"
+      },
+      {
+        "word": "twój",
+        "isCorrect": false,
+        "note": "Masculin singulier Nominatif"
+      },
+      {
+        "word": "twoja",
+        "isCorrect": false,
+        "note": "Féminin singulier Nominatif"
+      },
+      {
+        "word": "twoi",
+        "isCorrect": false,
+        "note": "Pluriel viril Nominatif"
+      }
+    ]
+  },
+  {
+    "id": "poss-l1-49",
+    "date": "2026-11-12",
+    "level": "level-1",
+    "category": "1st-2nd",
+    "categoryLabelFr": "1re & 2e personne",
+    "targetCase": "Dopełniacz (Génitif)",
+    "caseLabelFr": "Génitif (après niedaleko)",
+    "nounContext": "domu (masculin inanimé génitif)",
+    "targetMeaning": "de ma (1re personne masc génitif)",
+    "sentenceBefore": "Szukam dobrej piekarni niedaleko ",
+    "sentenceAfter": " domu.",
+    "gapWord": "mojego",
+    "fullSentence": "Szukam dobrej piekarni niedaleko mojego domu.",
+    "translationFr": "Je cherche une bonne boulangerie près de ma maison.",
+    "ruleExplanation": "La préposition <em>niedaleko</em> (près de) exige le <strong>Génitif</strong>. L'accord du possessif masculin singulier prend la terminaison <strong>-ego</strong> : <strong>mojego</strong> domu.",
+    "options": [
+      {
+        "word": "mojego",
+        "isCorrect": true,
+        "note": "Génitif masculin singulier (-ego)"
+      },
+      {
+        "word": "mój",
+        "isCorrect": false,
+        "note": "Nominatif masculin"
+      },
+      {
+        "word": "moim",
+        "isCorrect": false,
+        "note": "Instrumental / Locatif (-im)"
+      },
+      {
+        "word": "mojemu",
+        "isCorrect": false,
+        "note": "Datif masculin (-emu)"
+      }
+    ]
+  },
+  {
+    "id": "poss-l1-50",
+    "date": "2026-11-12",
+    "level": "level-1",
+    "category": "1st-2nd",
+    "categoryLabelFr": "1re & 2e personne",
+    "targetCase": "Mianownik (Nominatif)",
+    "caseLabelFr": "Nominatif (Sujet)",
+    "nounContext": "samochód (masculin inanimé)",
+    "targetMeaning": "ton (possesseur 2e personne, nom masculin)",
+    "sentenceBefore": "Przepraszam, czy ten nowy samochód przed biurem to ",
+    "sentenceAfter": " samochód?",
+    "gapWord": "twój",
+    "fullSentence": "Przepraszam, czy ten nowy samochód przed biurem to twój samochód?",
+    "translationFr": "Excusez-moi, est-ce que cette nouvelle voiture devant le bureau est ta voiture ?",
+    "ruleExplanation": "Pour accorder le possessif avec un nom masculin singulier (<em>samochód</em>) au Nominatif, on utilise la forme masculine <strong>twój</strong>.",
+    "options": [
+      {
+        "word": "twój",
+        "isCorrect": true,
+        "note": "Masculin singulier Nominatif"
+      },
+      {
+        "word": "twoja",
+        "isCorrect": false,
+        "note": "Féminin singulier (-a)"
+      },
+      {
+        "word": "twoje",
+        "isCorrect": false,
+        "note": "Neutre singulier (-e)"
+      },
+      {
+        "word": "twoi",
+        "isCorrect": false,
+        "note": "Pluriel viril"
+      }
+    ]
+  },
+  {
+    "id": "poss-l2-28",
+    "date": "2026-11-12",
+    "level": "level-2",
+    "category": "reflexive",
+    "categoryLabelFr": "Réfléchi (swój)",
+    "targetCase": "Miejscownik (Locatif)",
+    "nounContext": "namiocie (masculin locatif avec w)",
+    "targetMeaning": "leur (propre tente : sujet = oni)",
+    "sentenceBefore": "Kiedy są w górach, oni zawsze śpią w ",
+    "sentenceAfter": " namiocie.",
+    "gapWord": "swoim",
+    "fullSentence": "Kiedy są w górach, oni zawsze śpią w swoim namiocie.",
+    "translationFr": "Quand ils sont à la montagne, ils dorment toujours dans leur (propre) tente.",
+    "ruleExplanation": "Lorsque l'objet possédé appartient au sujet de la phrase (<em>oni</em>), on emploie le possessif réfléchi <strong>swój</strong>. Au locatif masculin singulier après <em>w</em>, la terminaison est <strong>-im</strong> : <strong>w swoim namiocie</strong>.",
+    "options": [
+      {
+        "word": "swoim",
+        "isCorrect": true,
+        "note": "Réfléchi Locatif masculin singulier (-im)"
+      },
+      {
+        "word": "ich",
+        "isCorrect": false,
+        "note": "Non-réfléchi (tente d'autres personnes)"
+      },
+      {
+        "word": "swoją",
+        "isCorrect": false,
+        "note": "Accusatif / Instrumental féminin (-ą)"
+      },
+      {
+        "word": "swoich",
+        "isCorrect": false,
+        "note": "Génitif / Locatif pluriel (-ich)"
       }
     ]
   }

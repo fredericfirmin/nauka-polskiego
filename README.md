@@ -18,8 +18,8 @@ Il n'y a **aucune installation ni dépendance requise** !
 
 ### 1. 🏛️ Module Défi des Cas Polonais (*Przypadki*)
 Entraînement contextualisé pour maîtriser les 4 déclinaisons fondamentales :
-- **200 phrases et défis grammaticaux** rédigés en polonais courant :
-  - **Filtre dédié par date d'import** : bouton *« ✨ Nouveautés 09/11 »* pour s'entraîner uniquement sur les défis issus du dernier cours !
+- **216 phrases et défis grammaticaux** rédigés en polonais courant :
+  - **Filtre dédié par date d'import** : bouton *« ✨ Nouveautés 12/11 »* pour s'entraîner uniquement sur les défis issus du dernier cours !
   - **Biernik (Accusatif)** : complément d'objet direct (*proponuję środę*), accusatif temporel des jours (*w czwartek, w środę, we wtorek*), accusatif pluriel viril (*dwóch braci*).
   - **Narzędnik (Instrumental)** : accompagnement (*z / ze*), métier, nationalité, état après *być* (*jest Polką*, *jest owocem*, *jestem Francuzem*).
   - **Miejscownik (Locatif)** : lieu et réunions (*na tym spotkaniu*), villes (*w Paryżu*), prépositions (*w, na, o, po, przy*).
@@ -27,7 +27,7 @@ Entraînement contextualisé pour maîtriser les 4 déclinaisons fondamentales :
 - **Filtres croisés avancés** :
   - Par cas : *Tous*, *Biernik*, *Narzędnik*, *Miejscownik*, *Dopełniacz*.
   - Par catégorie grammaticale : *Tous*, *Noms singulier*, *Adjectifs*, *Pluriels*.
-  - Par nouveautés : *✨ Nouveautés 09/11 (16 défis)*.
+  - Par nouveautés : *✨ Nouveautés 12/11 (16 défis)*.
 - **Prise en charge approfondie des pluriels (56 défis)** :
   - Distinction essentielle entre **pluriel viril (masculin personnel)** et **non-viril**.
   - Génitif pluriel complet (24 défis) : masculins en `-ów`, neutres et féminins à désinence zéro `-ø` et `e` mobile (*warzyw*, *truskawek*), prix et âges (*złotych*, *groszy*, *lat*), irréguliers fréquents (*pieniędzy, dzieci, ludzi, miesięcy, dni*).
@@ -38,22 +38,26 @@ Entraînement contextualisé pour maîtriser les 4 déclinaisons fondamentales :
 
 ### 2. 👥 Module Adjectifs Possessifs (*Zaimki dzierżawcze*)
 Module dédié à l'apprentissage et à la manipulation des possessifs :
-- **74 défis interactifs** couvrant toutes les personnes : **mój**, **twój**, **jego**, **jej**, **nasz**, **wasz**, **ich** ainsi que le réfléchi indispensable **swój**.
-- **Filtre dédié « ✨ Nouveautés 09/11 »** pour travailler immédiatement les tournures du nouveau cours (*Moja mama ma na sobie czarną sukienkę*, *kto będzie ich mężem*, *Ta kobieta ma na sobie jej ulubioną sukienkę*, *rodziny organizują imprezy ze swoimi przyjaciółmi*).
+- **78 défis interactifs** couvrant toutes les personnes : **mój**, **twój**, **jego**, **jej**, **nasz**, **wasz**, **ich** ainsi que le réfléchi indispensable **swój**.
+- **Filtre dédié « ✨ Nouveautés 12/11 »** pour travailler immédiatement les tournures du nouveau cours (*Czy twoje biuro jest daleko?*, *Szukam piekarni niedaleko mojego domu*, *Oni zawsze śpią w swoim namiocie*, *Czy to jest twój samochód?*).
 - Intégration de l'**Exercice 6b** et des phrases d'application familiale.
 - Déclinaison par cas (Nominatif, Accusatif, Instrumental, Locatif, Génitif) et par genre (masculin animé/inanimé/viril, féminin, neutre, pluriels).
 - **Filtres par niveau et catégorie** :
   - Niveaux : *Tous*, *Débutant (Nominatif de base)*, *Intermédiaire (Accusatif / Instrumental)*, *Avancé (Locatif / Génitif / Pluriels)*.
   - Personnes : *Tous*, *1re & 2e pers. (mój, twój, nasz, wasz)*, *3e pers. (jego, jej, ich)*, *Réfléchi (swój)*.
-  - Nouveautés : *✨ Nouveautés 09/11 (4 défis)*.
+  - Nouveautés : *✨ Nouveautés 12/11 (4 défis)*.
 - **Tableau de synthèse complet des possessifs** accessible en un clic.
 
 ---
 
 ### 3. 🎯 Mode Quiz & Flashcards de Vocabulaire
-- **Base riche de 555 cartes de vocabulaire** organisées et datées par leçon :
-  - **📅 Suivi & Filtre par Date d'Import** : chaque carte possède sa date d'importation (cours du 09/11, 05/11, 03/11, 29/10, 27/10, 21/10, 19/10, 16/10).
-  - **🚀 Raccourci « ✨ Nouveautés 09/11 (77) »** : permet en un clic de concentrer instantanément sa session de révision (QCM, Flashcards, Écriture) sur les 77 nouveaux éléments du cours du 09/11 !
+- **Base riche de 638 cartes de vocabulaire** organisées et datées par leçon :
+  - **📅 Suivi & Filtre par Date d'Import** : chaque carte possède sa date d'importation (cours du 12/11, 09/11, 05/11, 03/11, 29/10, 27/10, 21/10, 19/10, 16/10).
+  - **🚀 Raccourci « ✨ Nouveautés 12/11 (83) »** : permet en un clic de concentrer instantanément sa session de révision (QCM, Flashcards, Écriture) sur les 83 nouveaux éléments du cours du 12/11 !
+  - *Moyens de Transport & Instrumental (18 cartes)* : *Jak jedziesz do biura?*, *Jakim transportem?*, *samochodem*, *metrem*, *pociągiem*, *tramwajem*, *autobusem*, *rowerem*, *taksówką*, *Jeździsz rowerem?*, *Nie jeżdżę rowerem*, *W moim mieście nie ma metra / tramwaju*, *jeździć*, *Tam można dojechać...*
+  - *Cuisine Polonaise Traditionnelle & Délices (29 cartes)* : *żurek, mizeria, bigos, gołąbki, rosół, rolada z kluskami śląskimi, placki ziemniaczane, barszcz z krokietem, kotlet de volaille, pierogi ruskie, twarożek z chlebem, kanapka z serem / z szynką, sałatka grecka, jajecznica, parówki, miód, buraki, piekarnia, baton proteinowy, słodkie śniadanie, woleć / wolisz psy czy koty? / wolę kawę niż herbatę*.
+  - *Nature, Randonnée & Plein Air (13 cartes)* : *góry (w górach, chodzić po górach), wodospad, jezioro (nad jeziorem), namiot (w namiocie, spać w namiocie), spać, odpoczywać*.
+  - *Routine, Expressions & Dialogues (23 cartes)* : *Wczoraj był dzień wolny, I co robiłeś?, Nic nie robiłem, Piłeś kawę?, Jaką kawę pijesz?, Szukam piekarni niedaleko domu, Czy potrzebujesz kawy?, Jeszcze nie jadłem śniadania, Nie wiem co jest w torbie, Ten kościół jest niedaleko banku, kość, bezdomny na ulicy, przed kawiarnią, burza, często, rzadko, zawsze, od czasu do czasu*.
   - *Le Grand Module du Génitif / Dopełniacz (38 cartes)* : questions *kogo?* / *czego?*, absence (*Nie mam czasu*, *Nie ma herbaty*, *Nie ma imprezy*, *Nie mam energii*), négation (*Nie widzę kota*, *Nie mam jabłka*, *Nie lubię kawy*, *Ona nie pije kawy*, *Nie mam kursu chińskiego*), quantité (*dużo czasu*, *trochę wody*, *Mam dużo pracy*), pluriel d'argent (*pieniądze* &rarr; *nie mam pieniędzy*), verbes régissant le génitif (*szukać kościoła*, *potrzebować banku*, *bać się / boję się*, *używać*, *próbować / próbuję*).
   - *Indépendance & Culture Polonaise (10 cartes)* : *Dzień Niepodległości Polski*, *niepodległość*, *jedenastego listopada*, *odwiedzać cmentarze*, *zapalamy znicze i kładziemy kwiaty na grobach*, *świeczka*, *imprezy z przyjaciółmi*.
   - *Routine, Expressions & Week-end (18 cartes)* : *Jaki miałeś weekend?*, *normalny*, *nic ciekawego*, *Co chcesz jeść?*, *małe śniadanie*, *w biurze*, *Masz dużo pracy?*, *Zobaczymy*, *Pożyjemy, zobaczymy*, *bułka z masłem*, *łatwy / trudny*, *To prawda? / To prawda / To nieprawda*, *w tym tygodniu*.
