@@ -80,7 +80,7 @@ function registerServiceWorker() {
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
       navigator.serviceWorker
-        .register("./sw.js?v=26")
+        .register("./sw.js?v=27")
         .then((reg) => {
           console.log("PWA Service Worker actif :", reg.scope);
           // Forcer la recherche de mise à jour à chaque ouverture (vital sur iOS PWA)
@@ -556,7 +556,7 @@ function getFilteredCards() {
 
   // 1. Filtrer par date / leçon si sélectionnée
   if (currentLessonDate === "latest") {
-    const latest = window.LATEST_IMPORT_DATE || "2026-11-12";
+    const latest = window.LATEST_IMPORT_DATE || "2026-11-17";
     filtered = filtered.filter(c => c.date === latest);
   } else if (currentLessonDate && currentLessonDate !== "all") {
     filtered = filtered.filter(c => c.date === currentLessonDate);
@@ -591,7 +591,7 @@ function updateLessonDropdowns() {
   if (!lessonSelect && !tableDateSelect) return;
 
   const dates = Array.from(new Set(cards.map(c => c.date).filter(Boolean))).sort().reverse();
-  const latestDate = window.LATEST_IMPORT_DATE || "2026-11-12";
+  const latestDate = window.LATEST_IMPORT_DATE || "2026-11-17";
   const latestCount = cards.filter(c => c.date === latestDate).length;
 
   if (lessonSelect) {
@@ -629,7 +629,8 @@ function updateLessonDropdowns() {
 }
 
 function formatLessonDateOption(d, count) {
-  if (d === "2026-11-12") return `✨ 12/11/2026 - Transports, Plats Polonais & Nature (${count})`;
+  if (d === "2026-11-17") return `✨ 17/11/2026 - Pharmacie, Vêtements & Santé (${count})`;
+  if (d === "2026-11-12") return `📅 12/11/2026 - Transports, Plats Polonais & Nature (${count})`;
   if (d === "2026-11-09") return `📅 09/11/2026 - Génitif, Indépendance & Nombres (${count})`;
   if (d === "2026-11-05") return `📅 05/11/2026 - Toussaint, Andrzejki & Tenues (${count})`;
   if (d === "2026-11-03") return `📅 03/11/2026 - Vêtements, Rdv & Lidl (${count})`;
@@ -648,7 +649,7 @@ function formatLessonDateShort(d) {
 }
 
 function formatLessonBadge(d) {
-  const latestDate = window.LATEST_IMPORT_DATE || "2026-11-12";
+  const latestDate = window.LATEST_IMPORT_DATE || "2026-11-17";
   if (d === latestDate) return `✨ ${formatLessonDateShort(latestDate)} (Nouveau)`;
   return `📅 ${formatLessonDateShort(d)}`;
 }
@@ -672,7 +673,7 @@ function updateQuickExercisePills() {
   const latestCountEl = document.getElementById("btn-quick-latest-count");
   const allCountEl = document.getElementById("btn-quick-all-count");
 
-  const latestDate = window.LATEST_IMPORT_DATE || "2026-11-12";
+  const latestDate = window.LATEST_IMPORT_DATE || "2026-11-17";
   if (latestCountEl) {
     latestCountEl.innerText = cards.filter(c => c.date === latestDate).length;
   }
@@ -1488,7 +1489,7 @@ function updateCaseCounts() {
 
   if (elAll) elAll.innerText = CASE_CHALLENGES.length;
   const elLatestCase = document.getElementById("case-count-latest");
-  const latestDate = window.LATEST_IMPORT_DATE || "2026-11-12";
+  const latestDate = window.LATEST_IMPORT_DATE || "2026-11-17";
   if (elLatestCase) {
     elLatestCase.innerText = CASE_CHALLENGES.filter(c => c.date === latestDate).length;
   }
@@ -1545,7 +1546,7 @@ function toggleCaseLatestFilter() {
 function getFilteredCaseChallenges() {
   if (typeof CASE_CHALLENGES === "undefined" || CASE_CHALLENGES.length === 0) return [];
 
-  const latestDate = window.LATEST_IMPORT_DATE || "2026-11-12";
+  const latestDate = window.LATEST_IMPORT_DATE || "2026-11-17";
 
   return CASE_CHALLENGES.filter(c => {
     // Filtre sur les nouveautés de cours
@@ -2094,7 +2095,7 @@ function renderCardsTable() {
       </td>
       <td>${c.fr}</td>
       <td><span class="table-badge">${c.category || "Général"}</span></td>
-      <td><span class="badge-lesson" style="${c.date === (window.LATEST_IMPORT_DATE || '2026-11-12') ? 'background:#fee2e2; color:#991b1b; border-color:#fca5a5;' : ''}">${formatLessonBadge(c.date)}</span></td>
+      <td><span class="badge-lesson" style="${c.date === (window.LATEST_IMPORT_DATE || '2026-11-17') ? 'background:#fee2e2; color:#991b1b; border-color:#fca5a5;' : ''}">${formatLessonBadge(c.date)}</span></td>
       <td><span class="badge-mastery ${masteryInfo.class}">${masteryInfo.label}</span></td>
       <td style="font-size:0.85rem; font-weight:600; white-space:nowrap;">
         <span style="color:var(--success);">✅ ${c.successCount || 0}</span> / <span style="color:var(--danger);">❌ ${c.mistakeCount || 0}</span>
@@ -2519,7 +2520,7 @@ function updatePossCounts() {
 
   if (countAll) countAll.innerText = total;
   const elLatestPoss = document.getElementById("poss-count-latest");
-  const latestDate = window.LATEST_IMPORT_DATE || "2026-11-12";
+  const latestDate = window.LATEST_IMPORT_DATE || "2026-11-17";
   if (elLatestPoss) {
     elLatestPoss.innerText = POSSESSIVE_CHALLENGES.filter(c => c.date === latestDate).length;
   }
@@ -2594,7 +2595,7 @@ function togglePossLatestFilter() {
 function getFilteredPossChallenges() {
   if (typeof POSSESSIVE_CHALLENGES === "undefined" || POSSESSIVE_CHALLENGES.length === 0) return [];
 
-  const latestDate = window.LATEST_IMPORT_DATE || "2026-11-12";
+  const latestDate = window.LATEST_IMPORT_DATE || "2026-11-17";
 
   return POSSESSIVE_CHALLENGES.filter(c => {
     // Filtre sur les nouveautés de cours

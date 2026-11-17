@@ -10,7 +10,7 @@
  */
 
 
-const LATEST_IMPORT_DATE = "2026-11-12";
+const LATEST_IMPORT_DATE = "2026-11-17";
 if (typeof window !== "undefined") {
   window.LATEST_IMPORT_DATE = LATEST_IMPORT_DATE;
 }
@@ -10649,6 +10649,1847 @@ const INITIAL_CARDS = [
       "vent",
       "nuage"
     ]
+  },
+  // ==========================================
+  // 20. COURS DU 17/11/2026 (MAGASIN DE VÊTEMENTS, PHARMACIE & SANTÉ)
+  // ==========================================
+  {
+    "id": "phr-17-1",
+    "date": "2026-11-17",
+    "pl": "poszedłem",
+    "fr": "je suis allé (homme)",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "poszedłem",
+      "poszedlem"
+    ],
+    "acceptedFr": [
+      "je suis allé",
+      "je suis alle",
+      "je suis parti"
+    ],
+    "distractorsPl": [
+      "poszłam",
+      "poszliśmy",
+      "idę"
+    ],
+    "distractorsFr": [
+      "je suis allée (femme)",
+      "nous sommes allés",
+      "je vais"
+    ]
+  },
+  {
+    "id": "phr-17-2",
+    "date": "2026-11-17",
+    "pl": "poszedłem do supermarketu",
+    "fr": "je suis allé au supermarché",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "poszedłem do supermarketu",
+      "poszedlem do supermarketu"
+    ],
+    "acceptedFr": [
+      "je suis allé au supermarché",
+      "je suis alle au supermarche"
+    ],
+    "distractorsPl": [
+      "idę do biura",
+      "jestem w sklepie",
+      "wracam z pracy"
+    ],
+    "distractorsFr": [
+      "je vais au bureau",
+      "je suis au magasin",
+      "je rentre du travail"
+    ]
+  },
+  {
+    "id": "phr-17-3",
+    "date": "2026-11-17",
+    "pl": "I co kupiłeś?",
+    "fr": "Et qu'as-tu acheté ?",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "I co kupiłeś?",
+      "I co kupiles?"
+    ],
+    "acceptedFr": [
+      "Et qu'as-tu acheté ?",
+      "Et qu'est-ce que tu as acheté ?",
+      "Et tu as acheté quoi ?"
+    ],
+    "distractorsPl": [
+      "Gdzie to kupiłeś?",
+      "Ile zapłaciłeś?",
+      "Co tam widziałeś?"
+    ],
+    "distractorsFr": [
+      "Où as-tu acheté ça ?",
+      "Combien as-tu payé ?",
+      "Qu'as-tu vu là-bas ?"
+    ]
+  },
+  {
+    "id": "food-17-1",
+    "date": "2026-11-17",
+    "pl": "jeżyki",
+    "fr": "petits hérissons (biscuits polonais au caramel et chocolat)",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "jeżyki",
+      "jezyki"
+    ],
+    "acceptedFr": [
+      "petits hérissons",
+      "biscuits jeżyki",
+      "biscuits polonais"
+    ],
+    "distractorsPl": [
+      "ciastka",
+      "pierniki",
+      "cukierki"
+    ],
+    "distractorsFr": [
+      "petits gâteaux",
+      "pains d'épices",
+      "bonbons"
+    ]
+  },
+  {
+    "id": "food-17-2",
+    "date": "2026-11-17",
+    "pl": "Kupiłem wódkę.",
+    "fr": "J'ai acheté de la vodka.",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "Kupiłem wódkę",
+      "Kupilem wodke",
+      "Kupiłem wódkę.",
+      "Kupilem wodke."
+    ],
+    "acceptedFr": [
+      "J'ai acheté de la vodka",
+      "J'ai acheté une bouteille de vodka"
+    ],
+    "distractorsPl": [
+      "Kupiłem piwo.",
+      "Kupiłem czerwone wino.",
+      "Poproszę sok."
+    ],
+    "distractorsFr": [
+      "J'ai acheté de la bière.",
+      "J'ai acheté du vin rouge.",
+      "Un jus s'il vous plaît."
+    ]
+  },
+  {
+    "id": "food-17-3",
+    "date": "2026-11-17",
+    "pl": "słodki",
+    "fr": "sucré",
+    "category": "Adjectifs",
+    "acceptedPl": [
+      "słodki",
+      "slodki"
+    ],
+    "acceptedFr": [
+      "sucré",
+      "sucre",
+      "doux"
+    ],
+    "distractorsPl": [
+      "słony",
+      "gorzki",
+      "kwaśny"
+    ],
+    "distractorsFr": [
+      "salé",
+      "amer",
+      "acide"
+    ]
+  },
+  {
+    "id": "food-17-4",
+    "date": "2026-11-17",
+    "pl": "Wolę słodkie śniadanie z miodem.",
+    "fr": "Je préfère un petit-déjeuner sucré avec du miel.",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "Wolę słodkie śniadanie z miodem",
+      "Wole slodkie sniadanie z miodem"
+    ],
+    "acceptedFr": [
+      "Je préfère un petit-déjeuner sucré avec du miel",
+      "Je prefere un petit dejeuner sucre avec du miel"
+    ],
+    "distractorsPl": [
+      "Jem kanapkę z serem i szynką.",
+      "Piję czarną kawę bez cukru.",
+      "Wolę jajecznicę na maśle."
+    ],
+    "distractorsFr": [
+      "Je mange un sandwich fromage et jambon.",
+      "Je bois du café noir sans sucre.",
+      "Je préfère des œufs brouillés au beurre."
+    ]
+  },
+  {
+    "id": "food-17-5",
+    "date": "2026-11-17",
+    "pl": "Piłeś już kawę dziś?",
+    "fr": "As-tu déjà bu un café aujourd'hui ?",
+    "category": "Nourriture & Café",
+    "acceptedPl": [
+      "Piłeś już kawę dziś?",
+      "Piles juz kawe dzis?"
+    ],
+    "acceptedFr": [
+      "As-tu déjà bu un café aujourd'hui ?",
+      "Tu as déjà bu du café aujourd'hui ?"
+    ],
+    "distractorsPl": [
+      "Chcesz jeszcze jedną herbatę?",
+      "O której pijesz kawę?",
+      "Gdzie kupiłeś tę kawę?"
+    ],
+    "distractorsFr": [
+      "Tu veux un autre thé ?",
+      "À quelle heure bois-tu du café ?",
+      "Où as-tu acheté ce café ?"
+    ]
+  },
+  {
+    "id": "vet-17-1",
+    "date": "2026-11-17",
+    "pl": "Co masz na sobie dzisiaj?",
+    "fr": "Que portes-tu aujourd'hui ?",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "Co masz na sobie dzisiaj?"
+    ],
+    "acceptedFr": [
+      "Que portes-tu aujourd'hui ?",
+      "Qu'est-ce que tu portes aujourd'hui ?",
+      "Tu portes quoi aujourd'hui ?"
+    ],
+    "distractorsPl": [
+      "Co kupiłeś w sklepie?",
+      "Gdzie są twoje ubrania?",
+      "Jaki jest twój rozmiar?"
+    ],
+    "distractorsFr": [
+      "Qu'as-tu acheté au magasin ?",
+      "Où sont tes vêtements ?",
+      "Quelle est ta taille ?"
+    ]
+  },
+  {
+    "id": "vet-17-2",
+    "date": "2026-11-17",
+    "pl": "Jakie ubrania?",
+    "fr": "Quels vêtements ?",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "Jakie ubrania?",
+      "Jakie ubrania"
+    ],
+    "acceptedFr": [
+      "Quels vêtements ?",
+      "Quels vêtements"
+    ],
+    "distractorsPl": [
+      "Jakie buty?",
+      "Jaki kolor?",
+      "Ile kosztują?"
+    ],
+    "distractorsFr": [
+      "Quelles chaussures ?",
+      "Quelle couleur ?",
+      "Combien coûtent-ils ?"
+    ]
+  },
+  {
+    "id": "phr-17-4",
+    "date": "2026-11-17",
+    "pl": "Możesz powtórzyć?",
+    "fr": "Peux-tu répéter ?",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Możesz powtórzyć?",
+      "Mozesz powtorzyc?"
+    ],
+    "acceptedFr": [
+      "Peux-tu répéter ?",
+      "Tu peux répéter ?",
+      "Pouvez-vous répéter ?"
+    ],
+    "distractorsPl": [
+      "Czy rozumiesz?",
+      "Mów wolniej, proszę.",
+      "Co powiedziałeś?"
+    ],
+    "distractorsFr": [
+      "Comprends-tu ?",
+      "Parle plus lentement s'il te plaît.",
+      "Qu'as-tu dit ?"
+    ]
+  },
+  {
+    "id": "vet-17-3",
+    "date": "2026-11-17",
+    "pl": "jeansy",
+    "fr": "le jean, les jeans",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "jeansy",
+      "dżinsy",
+      "dzinsy"
+    ],
+    "acceptedFr": [
+      "jean",
+      "le jean",
+      "les jeans",
+      "un jean"
+    ],
+    "distractorsPl": [
+      "spodnie",
+      "szorty",
+      "szpilki"
+    ],
+    "distractorsFr": [
+      "pantalon classique",
+      "shorts",
+      "talons aiguilles"
+    ]
+  },
+  {
+    "id": "vet-17-4",
+    "date": "2026-11-17",
+    "pl": "okulary",
+    "fr": "les lunettes",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "okulary"
+    ],
+    "acceptedFr": [
+      "lunettes",
+      "les lunettes",
+      "des lunettes"
+    ],
+    "distractorsPl": [
+      "zegarek",
+      "pasek",
+      "kapelusz"
+    ],
+    "distractorsFr": [
+      "montre",
+      "ceinture",
+      "chapeau"
+    ]
+  },
+  {
+    "id": "vet-17-5",
+    "date": "2026-11-17",
+    "pl": "spodnie dżinsowe",
+    "fr": "pantalon en jean",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "spodnie dżinsowe",
+      "spodnie dzinsowe"
+    ],
+    "acceptedFr": [
+      "pantalon en jean",
+      "un pantalon en jean",
+      "pantalon jean"
+    ],
+    "distractorsPl": [
+      "spodnie czarne",
+      "krótkie spodenki",
+      "długa spódnica"
+    ],
+    "distractorsFr": [
+      "pantalon noir",
+      "short court",
+      "jupe longue"
+    ]
+  },
+  {
+    "id": "vet-17-6",
+    "date": "2026-11-17",
+    "pl": "żakiet",
+    "fr": "veste de tailleur, blazer",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "żakiet",
+      "zakiet"
+    ],
+    "acceptedFr": [
+      "veste de tailleur",
+      "blazer",
+      "veste"
+    ],
+    "distractorsPl": [
+      "marynarka",
+      "kurtka",
+      "płaszcz"
+    ],
+    "distractorsFr": [
+      "veste de costume",
+      "blouson",
+      "manteau"
+    ]
+  },
+  {
+    "id": "vet-17-7",
+    "date": "2026-11-17",
+    "pl": "kostium damski",
+    "fr": "tailleur femme",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "kostium damski"
+    ],
+    "acceptedFr": [
+      "tailleur femme",
+      "tailleur pour femme",
+      "un tailleur"
+    ],
+    "distractorsPl": [
+      "garnitur",
+      "sukienka",
+      "spódnica"
+    ],
+    "distractorsFr": [
+      "costume homme",
+      "robe",
+      "jupe"
+    ]
+  },
+  {
+    "id": "vet-17-8",
+    "date": "2026-11-17",
+    "pl": "garnitur",
+    "fr": "costume (homme)",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "garnitur"
+    ],
+    "acceptedFr": [
+      "costume",
+      "le costume",
+      "un costume"
+    ],
+    "distractorsPl": [
+      "krawat",
+      "marynarka",
+      "koszula"
+    ],
+    "distractorsFr": [
+      "cravate",
+      "veste",
+      "chemise"
+    ]
+  },
+  {
+    "id": "vet-17-9",
+    "date": "2026-11-17",
+    "pl": "podkoszulek",
+    "fr": "maillot de corps, tricot de peau",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "podkoszulek"
+    ],
+    "acceptedFr": [
+      "maillot de corps",
+      "tricot de peau",
+      "débardeur"
+    ],
+    "distractorsPl": [
+      "koszulka",
+      "koszula",
+      "bluzka"
+    ],
+    "distractorsFr": [
+      "tee-shirt",
+      "chemise",
+      "blouse"
+    ]
+  },
+  {
+    "id": "vet-17-10",
+    "date": "2026-11-17",
+    "pl": "w kwiaty",
+    "fr": "à fleurs, à motif fleuri",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "w kwiaty",
+      "w kwiatki"
+    ],
+    "acceptedFr": [
+      "à fleurs",
+      "a fleurs",
+      "à motif fleuri",
+      "fleuri"
+    ],
+    "distractorsPl": [
+      "w paski",
+      "w kropki",
+      "czarny"
+    ],
+    "distractorsFr": [
+      "à rayures",
+      "à pois",
+      "noir uni"
+    ]
+  },
+  {
+    "id": "adj-17-1",
+    "date": "2026-11-17",
+    "pl": "szeroki",
+    "fr": "large",
+    "category": "Adjectifs",
+    "acceptedPl": [
+      "szeroki"
+    ],
+    "acceptedFr": [
+      "large"
+    ],
+    "distractorsPl": [
+      "wąski",
+      "długi",
+      "krótki"
+    ],
+    "distractorsFr": [
+      "étroit",
+      "long",
+      "court"
+    ]
+  },
+  {
+    "id": "adj-17-2",
+    "date": "2026-11-17",
+    "pl": "wąski",
+    "fr": "étroit",
+    "category": "Adjectifs",
+    "acceptedPl": [
+      "wąski",
+      "waski"
+    ],
+    "acceptedFr": [
+      "étroit",
+      "etroit"
+    ],
+    "distractorsPl": [
+      "szeroki",
+      "duży",
+      "gruby"
+    ],
+    "distractorsFr": [
+      "large",
+      "grand",
+      "épais"
+    ]
+  },
+  {
+    "id": "adj-17-3",
+    "date": "2026-11-17",
+    "pl": "modny",
+    "fr": "à la mode, branché",
+    "category": "Adjectifs",
+    "acceptedPl": [
+      "modny"
+    ],
+    "acceptedFr": [
+      "à la mode",
+      "a la mode",
+      "tendance",
+      "branché"
+    ],
+    "distractorsPl": [
+      "niemodny",
+      "stary",
+      "brzydki"
+    ],
+    "distractorsFr": [
+      "démodé",
+      "vieux",
+      "laid"
+    ]
+  },
+  {
+    "id": "adj-17-4",
+    "date": "2026-11-17",
+    "pl": "niemodny",
+    "fr": "démodé, passé de mode",
+    "category": "Adjectifs",
+    "acceptedPl": [
+      "niemodny"
+    ],
+    "acceptedFr": [
+      "démodé",
+      "demode",
+      "passé de mode"
+    ],
+    "distractorsPl": [
+      "modny",
+      "nowy",
+      "elegancki"
+    ],
+    "distractorsFr": [
+      "à la mode",
+      "nouveau",
+      "élégant"
+    ]
+  },
+  {
+    "id": "phr-17-5",
+    "date": "2026-11-17",
+    "pl": "Mamy to, co Ci się podoba.",
+    "fr": "Nous avons ce qui te plaît.",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Mamy to, co Ci się podoba",
+      "Mamy to, co ci sie podoba"
+    ],
+    "acceptedFr": [
+      "Nous avons ce qui te plaît",
+      "Nous avons ce qui vous plaît",
+      "On a ce qui te plait"
+    ],
+    "distractorsPl": [
+      "Kupujemy nowe ubrania.",
+      "To jest za drogie dla ciebie.",
+      "Co chcesz zamówić dzisiaj?"
+    ],
+    "distractorsFr": [
+      "Nous achetons de nouveaux vêtements.",
+      "C'est trop cher pour toi.",
+      "Que veux-tu commander aujourd'hui ?"
+    ]
+  },
+  {
+    "id": "vet-17-11",
+    "date": "2026-11-17",
+    "pl": "zobaczyć",
+    "fr": "voir, regarder",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "zobaczyć",
+      "zobaczyc"
+    ],
+    "acceptedFr": [
+      "voir",
+      "regarder"
+    ],
+    "distractorsPl": [
+      "kupić",
+      "przymierzyć",
+      "nosić"
+    ],
+    "distractorsFr": [
+      "acheter",
+      "essayer",
+      "porter"
+    ]
+  },
+  {
+    "id": "vet-17-12",
+    "date": "2026-11-17",
+    "pl": "Czy mogę zobaczyć ten zielony sweter?",
+    "fr": "Puis-je voir ce pull vert ?",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "Czy mogę zobaczyć ten zielony sweter?",
+      "Czy moge zobaczyc ten zielony sweter?"
+    ],
+    "acceptedFr": [
+      "Puis-je voir ce pull vert ?",
+      "Est-ce que je peux voir ce pull vert ?"
+    ],
+    "distractorsPl": [
+      "Czy mogę przymierzyć tę sukienkę?",
+      "Ile kosztuje ta zielona kurtka?",
+      "Gdzie są ciepłe swetry?"
+    ],
+    "distractorsFr": [
+      "Puis-je essayer cette robe ?",
+      "Combien coûte cette veste verte ?",
+      "Où sont les pulls chauds ?"
+    ]
+  },
+  {
+    "id": "vet-17-13",
+    "date": "2026-11-17",
+    "pl": "rozmiar",
+    "fr": "la taille, la pointure",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "rozmiar"
+    ],
+    "acceptedFr": [
+      "taille",
+      "la taille",
+      "pointure"
+    ],
+    "distractorsPl": [
+      "kolor",
+      "cena",
+      "materiał"
+    ],
+    "distractorsFr": [
+      "couleur",
+      "prix",
+      "matière"
+    ]
+  },
+  {
+    "id": "vet-17-14",
+    "date": "2026-11-17",
+    "pl": "Jaki rozmiar?",
+    "fr": "Quelle taille ?",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "Jaki rozmiar?",
+      "Jaki rozmiar"
+    ],
+    "acceptedFr": [
+      "Quelle taille ?",
+      "Quelle pointure ?"
+    ],
+    "distractorsPl": [
+      "Jaki kolor?",
+      "Ile to kosztuje?",
+      "Jaki model?"
+    ],
+    "distractorsFr": [
+      "Quelle couleur ?",
+      "Combien ça coûte ?",
+      "Quel modèle ?"
+    ]
+  },
+  {
+    "id": "vet-17-15",
+    "date": "2026-11-17",
+    "pl": "przymierzyć",
+    "fr": "essayer (un vêtement)",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "przymierzyć",
+      "przymierzyc"
+    ],
+    "acceptedFr": [
+      "essayer",
+      "essayer un vêtement"
+    ],
+    "distractorsPl": [
+      "kupić",
+      "sprzedać",
+      "zapłacić"
+    ],
+    "distractorsFr": [
+      "acheter",
+      "vendre",
+      "payer"
+    ]
+  },
+  {
+    "id": "vet-17-16",
+    "date": "2026-11-17",
+    "pl": "Czy mogę przymierzyć?",
+    "fr": "Puis-je essayer ?",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "Czy mogę przymierzyć?",
+      "Czy moge przymierzyc?"
+    ],
+    "acceptedFr": [
+      "Puis-je essayer ?",
+      "Est-ce que je peux essayer ?",
+      "Je peux essayer ?"
+    ],
+    "distractorsPl": [
+      "Czy mogę zapłacić kartą?",
+      "Gdzie jest kasa?",
+      "Czy to jest w promocji?"
+    ],
+    "distractorsFr": [
+      "Puis-je payer par carte ?",
+      "Où est la caisse ?",
+      "Est-ce en promotion ?"
+    ]
+  },
+  {
+    "id": "vet-17-17",
+    "date": "2026-11-17",
+    "pl": "przymierzalnia",
+    "fr": "la cabine d'essayage",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "przymierzalnia"
+    ],
+    "acceptedFr": [
+      "cabine d'essayage",
+      "la cabine d'essayage",
+      "cabine"
+    ],
+    "distractorsPl": [
+      "kasa",
+      "toaleta",
+      "wejście"
+    ],
+    "distractorsFr": [
+      "caisse",
+      "toilettes",
+      "entrée"
+    ]
+  },
+  {
+    "id": "phr-17-6",
+    "date": "2026-11-17",
+    "pl": "oczywiście",
+    "fr": "bien sûr, évidemment",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "oczywiście",
+      "oczywiscie"
+    ],
+    "acceptedFr": [
+      "bien sûr",
+      "bien sur",
+      "évidemment",
+      "naturellement"
+    ],
+    "distractorsPl": [
+      "być może",
+      "na pewno nie",
+      "niestety"
+    ],
+    "distractorsFr": [
+      "peut-être",
+      "certainement pas",
+      "malheureusement"
+    ]
+  },
+  {
+    "id": "adj-17-5",
+    "date": "2026-11-17",
+    "pl": "za duży",
+    "fr": "trop grand",
+    "category": "Adjectifs",
+    "acceptedPl": [
+      "za duży",
+      "za duzy"
+    ],
+    "acceptedFr": [
+      "trop grand"
+    ],
+    "distractorsPl": [
+      "za mały",
+      "za wąski",
+      "idealny"
+    ],
+    "distractorsFr": [
+      "trop petit",
+      "trop étroit",
+      "parfait"
+    ]
+  },
+  {
+    "id": "adj-17-6",
+    "date": "2026-11-17",
+    "pl": "mniejszy",
+    "fr": "plus petit",
+    "category": "Adjectifs",
+    "acceptedPl": [
+      "mniejszy"
+    ],
+    "acceptedFr": [
+      "plus petit"
+    ],
+    "distractorsPl": [
+      "większy",
+      "tańszy",
+      "lepszy"
+    ],
+    "distractorsFr": [
+      "plus grand",
+      "moins cher",
+      "meilleur"
+    ]
+  },
+  {
+    "id": "vet-17-18",
+    "date": "2026-11-17",
+    "pl": "Czy jest mniejszy?",
+    "fr": "Y en a-t-il un plus petit ?",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "Czy jest mniejszy?"
+    ],
+    "acceptedFr": [
+      "Y en a-t-il un plus petit ?",
+      "Est-ce qu'il y en a un plus petit ?"
+    ],
+    "distractorsPl": [
+      "Czy jest większy?",
+      "Czy jest inny kolor?",
+      "Ile kosztuje ten rozmiar?"
+    ],
+    "distractorsFr": [
+      "Y en a-t-il un plus grand ?",
+      "Y a-t-il une autre couleur ?",
+      "Combien coûte cette taille ?"
+    ]
+  },
+  {
+    "id": "adj-17-7",
+    "date": "2026-11-17",
+    "pl": "tańszy",
+    "fr": "moins cher",
+    "category": "Adjectifs",
+    "acceptedPl": [
+      "tańszy",
+      "tanszy"
+    ],
+    "acceptedFr": [
+      "moins cher",
+      "meilleur marché"
+    ],
+    "distractorsPl": [
+      "droższy",
+      "mniejszy",
+      "większy"
+    ],
+    "distractorsFr": [
+      "plus cher",
+      "plus petit",
+      "plus grand"
+    ]
+  },
+  {
+    "id": "vet-17-19",
+    "date": "2026-11-17",
+    "pl": "Czy są tańsze swetry?",
+    "fr": "Y a-t-il des pulls moins chers ?",
+    "category": "Vêtements & Mode",
+    "acceptedPl": [
+      "Czy są tańsze swetry?",
+      "Czy sa tansze swetry?"
+    ],
+    "acceptedFr": [
+      "Y a-t-il des pulls moins chers ?",
+      "Est-ce qu'il y a des pulls moins chers ?"
+    ],
+    "distractorsPl": [
+      "Czy ten sweter jest w promocji?",
+      "Czy macie swetry wełniane?",
+      "Gdzie wiszą męskie swetry?"
+    ],
+    "distractorsFr": [
+      "Ce pull est-il en promotion ?",
+      "Avez-vous des pulls en laine ?",
+      "Où sont accrochés les pulls homme ?"
+    ]
+  },
+  {
+    "id": "adj-17-8",
+    "date": "2026-11-17",
+    "pl": "za drogi",
+    "fr": "trop cher",
+    "category": "Adjectifs",
+    "acceptedPl": [
+      "za drogi"
+    ],
+    "acceptedFr": [
+      "trop cher"
+    ],
+    "distractorsPl": [
+      "bardzo tani",
+      "w sam raz",
+      "za mały"
+    ],
+    "distractorsFr": [
+      "très bon marché",
+      "juste comme il faut",
+      "trop petit"
+    ]
+  },
+  {
+    "id": "phr-17-7",
+    "date": "2026-11-17",
+    "pl": "Niestety nie ma.",
+    "fr": "Malheureusement il n'y en a pas.",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Niestety nie ma",
+      "Niestety nie ma."
+    ],
+    "acceptedFr": [
+      "Malheureusement il n'y en a pas",
+      "Malheureusement il n'y a pas",
+      "Non désolé il n'y en a pas"
+    ],
+    "distractorsPl": [
+      "Oczywiście, proszę.",
+      "Jest tam na półce.",
+      "Zostały tylko dwa."
+    ],
+    "distractorsFr": [
+      "Bien sûr, tenez.",
+      "Il est là-bas sur l'étagère.",
+      "Il n'en reste que deux."
+    ]
+  },
+  {
+    "id": "med-17-1",
+    "date": "2026-11-17",
+    "pl": "apteka",
+    "fr": "la pharmacie",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "apteka"
+    ],
+    "acceptedFr": [
+      "pharmacie",
+      "la pharmacie",
+      "une pharmacie"
+    ],
+    "distractorsPl": [
+      "szpital",
+      "przychodnia",
+      "piekarnia"
+    ],
+    "distractorsFr": [
+      "hôpital",
+      "dispensaire médical",
+      "boulangerie"
+    ]
+  },
+  {
+    "id": "med-17-2",
+    "date": "2026-11-17",
+    "pl": "w aptece",
+    "fr": "à la pharmacie",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "w aptece"
+    ],
+    "acceptedFr": [
+      "à la pharmacie",
+      "a la pharmacie",
+      "dans la pharmacie"
+    ],
+    "distractorsPl": [
+      "w szpitalu",
+      "u lekarza",
+      "w sklepie"
+    ],
+    "distractorsFr": [
+      "à l'hôpital",
+      "chez le médecin",
+      "au magasin"
+    ]
+  },
+  {
+    "id": "med-17-3",
+    "date": "2026-11-17",
+    "pl": "farmaceuta",
+    "fr": "le pharmacien",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "farmaceuta"
+    ],
+    "acceptedFr": [
+      "pharmacien",
+      "le pharmacien",
+      "un pharmacien"
+    ],
+    "distractorsPl": [
+      "lekarz",
+      "pacjent",
+      "kelner"
+    ],
+    "distractorsFr": [
+      "médecin",
+      "patient",
+      "serveur"
+    ]
+  },
+  {
+    "id": "med-17-4",
+    "date": "2026-11-17",
+    "pl": "kaszel",
+    "fr": "la toux",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "kaszel"
+    ],
+    "acceptedFr": [
+      "toux",
+      "la toux",
+      "une toux"
+    ],
+    "distractorsPl": [
+      "katar",
+      "gorączka",
+      "ból"
+    ],
+    "distractorsFr": [
+      "rhume",
+      "fièvre",
+      "douleur"
+    ]
+  },
+  {
+    "id": "med-17-5",
+    "date": "2026-11-17",
+    "pl": "Mam kaszel.",
+    "fr": "Je tousse / J'ai une toux.",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Mam kaszel",
+      "Mam kaszel."
+    ],
+    "acceptedFr": [
+      "Je tousse",
+      "J'ai une toux",
+      "J'ai de la toux"
+    ],
+    "distractorsPl": [
+      "Boli mnie gardło.",
+      "Mam gorączkę.",
+      "Jestem zmęczony."
+    ],
+    "distractorsFr": [
+      "J'ai mal à la gorge.",
+      "J'ai de la fièvre.",
+      "Je suis fatigué."
+    ]
+  },
+  {
+    "id": "med-17-6",
+    "date": "2026-11-17",
+    "pl": "Od kiedy?",
+    "fr": "Depuis quand ?",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Od kiedy?",
+      "Od kiedy"
+    ],
+    "acceptedFr": [
+      "Depuis quand ?",
+      "Depuis quand"
+    ],
+    "distractorsPl": [
+      "Do kiedy?",
+      "O której godzinie?",
+      "Jak długo?"
+    ],
+    "distractorsFr": [
+      "Jusqu'à quand ?",
+      "À quelle heure ?",
+      "Combien de temps ?"
+    ]
+  },
+  {
+    "id": "med-17-7",
+    "date": "2026-11-17",
+    "pl": "od dwóch dni",
+    "fr": "depuis deux jours",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "od dwóch dni",
+      "od dwoch dni"
+    ],
+    "acceptedFr": [
+      "depuis deux jours"
+    ],
+    "distractorsPl": [
+      "od trzech dni",
+      "od wczoraj",
+      "dwa dni temu"
+    ],
+    "distractorsFr": [
+      "depuis trois jours",
+      "depuis hier",
+      "il y a deux jours"
+    ]
+  },
+  {
+    "id": "med-17-8",
+    "date": "2026-11-17",
+    "pl": "od trzech dni",
+    "fr": "depuis trois jours",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "od trzech dni"
+    ],
+    "acceptedFr": [
+      "depuis trois jours"
+    ],
+    "distractorsPl": [
+      "od czterech dni",
+      "od tygodnia",
+      "trzy dni temu"
+    ],
+    "distractorsFr": [
+      "depuis quatre jours",
+      "depuis une semaine",
+      "il y a trois jours"
+    ]
+  },
+  {
+    "id": "med-17-9",
+    "date": "2026-11-17",
+    "pl": "od pięciu dni",
+    "fr": "depuis cinq jours",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "od pięciu dni",
+      "od pieciu dni"
+    ],
+    "acceptedFr": [
+      "depuis cinq jours"
+    ],
+    "distractorsPl": [
+      "od sześciu dni",
+      "od dziesięciu dni",
+      "pięć dni temu"
+    ],
+    "distractorsFr": [
+      "depuis six jours",
+      "depuis dix jours",
+      "il y a cinq jours"
+    ]
+  },
+  {
+    "id": "med-17-10",
+    "date": "2026-11-17",
+    "pl": "gorączka",
+    "fr": "la fièvre",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "gorączka",
+      "goraczka"
+    ],
+    "acceptedFr": [
+      "fièvre",
+      "la fièvre",
+      "de la fièvre",
+      "fievre"
+    ],
+    "distractorsPl": [
+      "temperatura",
+      "katar",
+      "syrop"
+    ],
+    "distractorsFr": [
+      "température",
+      "rhume",
+      "sirop"
+    ]
+  },
+  {
+    "id": "med-17-11",
+    "date": "2026-11-17",
+    "pl": "Czy ma pan gorączkę?",
+    "fr": "Avez-vous de la fièvre ? (à un homme)",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Czy ma pan gorączkę?",
+      "Czy ma pan goraczke?"
+    ],
+    "acceptedFr": [
+      "Avez-vous de la fièvre ?",
+      "Vous avez de la fièvre ?",
+      "As-tu de la fièvre ?"
+    ],
+    "distractorsPl": [
+      "Czy ma pan receptę?",
+      "Czy boli pana głowa?",
+      "Od kiedy pan kaszle?"
+    ],
+    "distractorsFr": [
+      "Avez-vous une ordonnance ?",
+      "Avez-vous mal à la tête ?",
+      "Depuis quand toussez-vous ?"
+    ]
+  },
+  {
+    "id": "med-17-12",
+    "date": "2026-11-17",
+    "pl": "Nie, nie mam gorączki.",
+    "fr": "Non, je n'ai pas de fièvre.",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Nie, nie mam gorączki",
+      "Nie, nie mam goraczki"
+    ],
+    "acceptedFr": [
+      "Non je n'ai pas de fièvre",
+      "Non, je n'ai pas de fievre"
+    ],
+    "distractorsPl": [
+      "Tak, mam wysoką gorączkę.",
+      "Mam małą temperaturę.",
+      "Czuję się bardzo źle."
+    ],
+    "distractorsFr": [
+      "Oui j'ai une forte fièvre.",
+      "J'ai un peu de température.",
+      "Je me sens très mal."
+    ]
+  },
+  {
+    "id": "med-17-13",
+    "date": "2026-11-17",
+    "pl": "Mam temperaturę.",
+    "fr": "J'ai de la température.",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Mam temperaturę",
+      "Mam temperature"
+    ],
+    "acceptedFr": [
+      "J'ai de la température",
+      "J'ai de la fievre"
+    ],
+    "distractorsPl": [
+      "Jest mi zimno.",
+      "Mam 36 stopni.",
+      "Nie mam termometru."
+    ],
+    "distractorsFr": [
+      "J'ai froid.",
+      "J'ai 36 degrés.",
+      "Je n'ai pas de thermomètre."
+    ]
+  },
+  {
+    "id": "med-17-14",
+    "date": "2026-11-17",
+    "pl": "syrop",
+    "fr": "le sirop",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "syrop"
+    ],
+    "acceptedFr": [
+      "sirop",
+      "le sirop",
+      "du sirop"
+    ],
+    "distractorsPl": [
+      "tabletki",
+      "krople",
+      "herbata"
+    ],
+    "distractorsFr": [
+      "comprimés",
+      "gouttes",
+      "thé"
+    ]
+  },
+  {
+    "id": "med-17-15",
+    "date": "2026-11-17",
+    "pl": "tabletki",
+    "fr": "les comprimés, les pastilles",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "tabletki"
+    ],
+    "acceptedFr": [
+      "comprimés",
+      "les comprimés",
+      "pastilles",
+      "des cachets"
+    ],
+    "distractorsPl": [
+      "syrop",
+      "witamina",
+      "recepta"
+    ],
+    "distractorsFr": [
+      "sirop",
+      "vitamine",
+      "ordonnance"
+    ]
+  },
+  {
+    "id": "med-17-16",
+    "date": "2026-11-17",
+    "pl": "ból",
+    "fr": "la douleur, le mal",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "ból",
+      "bol"
+    ],
+    "acceptedFr": [
+      "douleur",
+      "la douleur",
+      "mal",
+      "le mal"
+    ],
+    "distractorsPl": [
+      "choroba",
+      "lek",
+      "gorączka"
+    ],
+    "distractorsFr": [
+      "maladie",
+      "médicament",
+      "fièvre"
+    ]
+  },
+  {
+    "id": "med-17-17",
+    "date": "2026-11-17",
+    "pl": "ból głowy",
+    "fr": "mal de tête",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "ból głowy",
+      "bol glowy"
+    ],
+    "acceptedFr": [
+      "mal de tête",
+      "mal de tete",
+      "le mal de tête"
+    ],
+    "distractorsPl": [
+      "ból gardła",
+      "ból brzucha",
+      "ból zęba"
+    ],
+    "distractorsFr": [
+      "mal de gorge",
+      "mal de ventre",
+      "mal de dent"
+    ]
+  },
+  {
+    "id": "med-17-18",
+    "date": "2026-11-17",
+    "pl": "gardło",
+    "fr": "la gorge",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "gardło",
+      "gardlo"
+    ],
+    "acceptedFr": [
+      "gorge",
+      "la gorge"
+    ],
+    "distractorsPl": [
+      "głowa",
+      "ucho",
+      "nos"
+    ],
+    "distractorsFr": [
+      "tête",
+      "oreille",
+      "nez"
+    ]
+  },
+  {
+    "id": "med-17-19",
+    "date": "2026-11-17",
+    "pl": "ból gardła",
+    "fr": "mal de gorge",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "ból gardła",
+      "bol gardla"
+    ],
+    "acceptedFr": [
+      "mal de gorge",
+      "le mal de gorge"
+    ],
+    "distractorsPl": [
+      "ból głowy",
+      "kaszel",
+      "gorączka"
+    ],
+    "distractorsFr": [
+      "mal de tête",
+      "toux",
+      "fièvre"
+    ]
+  },
+  {
+    "id": "med-17-20",
+    "date": "2026-11-17",
+    "pl": "potwierdzenie",
+    "fr": "la confirmation, le reçu",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "potwierdzenie"
+    ],
+    "acceptedFr": [
+      "confirmation",
+      "reçu",
+      "le reçu",
+      "la confirmation"
+    ],
+    "distractorsPl": [
+      "paragon",
+      "faktura",
+      "recepta"
+    ],
+    "distractorsFr": [
+      "ticket de caisse",
+      "facture",
+      "ordonnance"
+    ]
+  },
+  {
+    "id": "med-17-21",
+    "date": "2026-11-17",
+    "pl": "Drukować potwierdzenie?",
+    "fr": "Imprimer le reçu ?",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Drukować potwierdzenie?",
+      "Drukowac potwierdzenie?"
+    ],
+    "acceptedFr": [
+      "Imprimer le reçu ?",
+      "Faut-il imprimer le reçu ?"
+    ],
+    "distractorsPl": [
+      "Dać paragon?",
+      "Płaci pan kartą?",
+      "Czy to wszystko?"
+    ],
+    "distractorsFr": [
+      "Donner le ticket de caisse ?",
+      "Payez-vous par carte ?",
+      "Est-ce tout ?"
+    ]
+  },
+  {
+    "id": "med-17-22",
+    "date": "2026-11-17",
+    "pl": "paragon",
+    "fr": "le ticket de caisse",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "paragon"
+    ],
+    "acceptedFr": [
+      "ticket de caisse",
+      "le ticket de caisse",
+      "ticket"
+    ],
+    "distractorsPl": [
+      "bilet",
+      "rachunek",
+      "pieniądze"
+    ],
+    "distractorsFr": [
+      "ticket de transport",
+      "addition / compte",
+      "argent"
+    ]
+  },
+  {
+    "id": "med-17-23",
+    "date": "2026-11-17",
+    "pl": "Dać paragon?",
+    "fr": "Voulez-vous le ticket de caisse ?",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Dać paragon?",
+      "Dac paragon?"
+    ],
+    "acceptedFr": [
+      "Voulez-vous le ticket de caisse ?",
+      "Donner le ticket de caisse ?"
+    ],
+    "distractorsPl": [
+      "Drukować potwierdzenie?",
+      "Czy ma pan kartę?",
+      "Ile reszty?"
+    ],
+    "distractorsFr": [
+      "Imprimer le reçu ?",
+      "Avez-vous la carte ?",
+      "Combien de monnaie ?"
+    ]
+  },
+  {
+    "id": "phr-17-8",
+    "date": "2026-11-17",
+    "pl": "Wczoraj nic nie robiłem, bo był dzień wolny.",
+    "fr": "Hier je n'ai rien fait, car c'était un jour férié.",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Wczoraj nic nie robiłem, bo był dzień wolny",
+      "Wczoraj nic nie robilem, bo byl dzien wolny"
+    ],
+    "acceptedFr": [
+      "Hier je n'ai rien fait car c'était un jour férié",
+      "Hier je n'ai rien fait parce que c'était un jour férié"
+    ],
+    "distractorsPl": [
+      "Dzisiaj odpoczywam w domu.",
+      "Jutro będę miał dużo pracy.",
+      "W weekend pracowałem w biurze."
+    ],
+    "distractorsFr": [
+      "Aujourd'hui je me repose à la maison.",
+      "Demain j'aurai beaucoup de travail.",
+      "Pendant le week-end j'ai travaillé au bureau."
+    ]
+  },
+  {
+    "id": "tr-17-1",
+    "date": "2026-11-17",
+    "pl": "Jak jedziesz do biura: samochodem czy metrem?",
+    "fr": "Comment vas-tu au bureau : en voiture ou en métro ?",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "Jak jedziesz do biura: samochodem czy metrem?",
+      "Jak jedziesz do biura samochodem czy metrem?"
+    ],
+    "acceptedFr": [
+      "Comment vas-tu au bureau en voiture ou en métro ?",
+      "Comment vas-tu au bureau : en voiture ou en métro ?"
+    ],
+    "distractorsPl": [
+      "O której godzinie jedziesz do biura?",
+      "Ile czasu jedziesz autobusem?",
+      "Czy twoje biuro jest daleko?"
+    ],
+    "distractorsFr": [
+      "À quelle heure vas-tu au bureau ?",
+      "Combien de temps mets-tu en bus ?",
+      "Ton bureau est-il loin ?"
+    ]
+  },
+  {
+    "id": "tr-17-2",
+    "date": "2026-11-17",
+    "pl": "Moje biuro jest piętnaście minut od mojego domu.",
+    "fr": "Mon bureau est à quinze minutes de chez moi.",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Moje biuro jest piętnaście minut od mojego domu",
+      "Moje biuro jest pietnascie minut od mojego domu"
+    ],
+    "acceptedFr": [
+      "Mon bureau est à quinze minutes de chez moi",
+      "Mon bureau est à 15 minutes de chez moi"
+    ],
+    "distractorsPl": [
+      "Mój dom jest bardzo blisko biura.",
+      "Do pracy jadę pół godziny.",
+      "Pracuję zdalnie z domu."
+    ],
+    "distractorsFr": [
+      "Ma maison est très près du bureau.",
+      "Je mets une demi-heure pour aller au travail.",
+      "Je télétravaille depuis chez moi."
+    ]
+  },
+  {
+    "id": "phr-17-9",
+    "date": "2026-11-17",
+    "pl": "ode mnie",
+    "fr": "de chez moi, de moi",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "ode mnie"
+    ],
+    "acceptedFr": [
+      "de chez moi",
+      "de moi"
+    ],
+    "distractorsPl": [
+      "od ciebie",
+      "do mnie",
+      "u mnie"
+    ],
+    "distractorsFr": [
+      "de chez toi",
+      "vers moi / chez moi",
+      "chez moi (statique)"
+    ]
+  },
+  {
+    "id": "phr-17-10",
+    "date": "2026-11-17",
+    "pl": "od ciebie",
+    "fr": "de chez toi, de toi",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "od ciebie"
+    ],
+    "acceptedFr": [
+      "de chez toi",
+      "de toi"
+    ],
+    "distractorsPl": [
+      "ode mnie",
+      "do ciebie",
+      "u ciebie"
+    ],
+    "distractorsFr": [
+      "de chez moi",
+      "vers chez toi",
+      "chez toi (statique)"
+    ]
+  },
+  {
+    "id": "phr-17-11",
+    "date": "2026-11-17",
+    "pl": "Odpoczywają przed restauracją, na ulicy.",
+    "fr": "Ils se reposent devant un restaurant, dans la rue.",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "Odpoczywają przed restauracją, na ulicy",
+      "Odpoczywaja przed restauracja, na ulicy"
+    ],
+    "acceptedFr": [
+      "Ils se reposent devant un restaurant dans la rue"
+    ],
+    "distractorsPl": [
+      "Jedzą obiad w restauracji.",
+      "Czekają na stolik w kawiarni.",
+      "Spacerują po starym mieście."
+    ],
+    "distractorsFr": [
+      "Ils déjeunent au restaurant.",
+      "Ils attendent une table au café.",
+      "Ils se promènent dans la vieille ville."
+    ]
+  },
+  {
+    "id": "phr-17-12",
+    "date": "2026-11-17",
+    "pl": "oni czytają",
+    "fr": "ils lisent",
+    "category": "Phrases & Quotidien",
+    "acceptedPl": [
+      "oni czytają",
+      "oni czytaja"
+    ],
+    "acceptedFr": [
+      "ils lisent",
+      "elles lisent"
+    ],
+    "distractorsPl": [
+      "oni piszą",
+      "oni mówią",
+      "oni śpią"
+    ],
+    "distractorsFr": [
+      "ils écrivent",
+      "ils parlent",
+      "ils dorment"
+    ]
+  },
+  {
+    "id": "nat-17-1",
+    "date": "2026-11-17",
+    "pl": "Lubisz spać w namiocie blisko jeziora?",
+    "fr": "Aimes-tu dormir dans une tente près d'un lac ?",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "Lubisz spać w namiocie blisko jeziora?",
+      "Lubisz spac w namiocie blisko jeziora?"
+    ],
+    "acceptedFr": [
+      "Aimes-tu dormir dans une tente près d'un lac ?",
+      "Tu aimes dormir en tente près du lac ?"
+    ],
+    "distractorsPl": [
+      "Często jeździsz nad morze?",
+      "Lubisz chodzić po górach?",
+      "Gdzie kupiłeś ten namiot?"
+    ],
+    "distractorsFr": [
+      "Vas-tu souvent à la mer ?",
+      "Aimes-tu marcher en montagne ?",
+      "Où as-tu acheté cette tente ?"
+    ]
+  },
+  {
+    "id": "nat-17-2",
+    "date": "2026-11-17",
+    "pl": "blisko jeziora",
+    "fr": "près du lac",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "blisko jeziora"
+    ],
+    "acceptedFr": [
+      "près du lac",
+      "pres du lac",
+      "proche du lac"
+    ],
+    "distractorsPl": [
+      "nad morzem",
+      "w górach",
+      "daleko od wody"
+    ],
+    "distractorsFr": [
+      "au bord de la mer",
+      "en montagne",
+      "loin de l'eau"
+    ]
+  },
+  {
+    "id": "nat-17-3",
+    "date": "2026-11-17",
+    "pl": "spaść",
+    "fr": "tomber, chuter (d'en haut)",
+    "category": "Expressions & Phrases",
+    "acceptedPl": [
+      "spaść",
+      "spasc"
+    ],
+    "acceptedFr": [
+      "tomber",
+      "chuter"
+    ],
+    "distractorsPl": [
+      "spać",
+      "wstać",
+      "biec"
+    ],
+    "distractorsFr": [
+      "dormir",
+      "se lever",
+      "courir"
+    ]
+  },
+  {
+    "id": "tr-17-3",
+    "date": "2026-11-17",
+    "pl": "W moim mieście nie ma metra, ale są autobusy i tramwaje.",
+    "fr": "Dans ma ville il n'y a pas de métro, mais il y a des bus et des tramways.",
+    "category": "Voyage & Aéroport",
+    "acceptedPl": [
+      "W moim mieście nie ma metra, ale są autobusy i tramwaje",
+      "W moim miescie nie ma metra, ale sa autobusy i tramwaje"
+    ],
+    "acceptedFr": [
+      "Dans ma ville il n'y a pas de métro mais il y a des bus et des tramways"
+    ],
+    "distractorsPl": [
+      "W moim mieście jest tylko jedna linia metra.",
+      "Tramwaje i autobusy są za drogie.",
+      "Codziennie jeżdżę samochodem do centrum."
+    ],
+    "distractorsFr": [
+      "Dans ma ville il n'y a qu'une seule ligne de métro.",
+      "Les trams et bus sont trop chers.",
+      "Je vais tous les jours en voiture au centre."
+    ]
   }
 ];
 
@@ -17175,6 +19016,549 @@ const CASE_CHALLENGES = [
         "note": "Datif masculin (-owi)"
       }
     ]
+  },
+  // ------------------------------------------
+  // NOUVEAUX DÉFIS DU 17/11/2026 (SANTÉ, APTEKA, SHOPPING & PRÉPOSITIONS)
+  // ------------------------------------------
+  {
+    "id": "case-d-61",
+    "date": "2026-11-17",
+    "caseName": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Mam lekki kaszel, ale na szczęście nie mam gorączk",
+    "sentenceAfter": ".",
+    "gapWord": "gorączka",
+    "gapWordMeaning": "fièvre",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "féminin",
+    "correctEnding": "-i",
+    "fullCorrectWord": "gorączki",
+    "fullSentence": "Mam lekki kaszel, ale na szczęście nie mam gorączki.",
+    "translationFr": "J'ai une légère toux, mais heureusement je n'ai pas de fièvre.",
+    "ruleExplanation": "La formule négative <em>nie mam</em> est systématiquement suivie du <strong>Génitif (Dopełniacz)</strong>. Pour un nom féminin dont la consonne finale est <em>k</em> (gorączka), la désinence est adoucie en <strong>-i</strong> : <strong>nie mam gorączki</strong>.",
+    "options": [
+      {
+        "ending": "-i",
+        "word": "gorączki",
+        "isCorrect": true,
+        "note": "Génitif féminin régulier après k (-i)"
+      },
+      {
+        "ending": "-ę",
+        "word": "gorączkę",
+        "isCorrect": false,
+        "note": "Accusatif de l'affirmation (-ę)"
+      },
+      {
+        "ending": "-y",
+        "word": "gorączky",
+        "isCorrect": false,
+        "note": "Orthographe polonaise interdite (*ky)"
+      },
+      {
+        "ending": "-ą",
+        "word": "gorączką",
+        "isCorrect": false,
+        "note": "Instrumental féminin (-ą)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-62",
+    "date": "2026-11-17",
+    "caseName": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Panie doktorze, mam ten męczący kaszel od dwóch dn",
+    "sentenceAfter": ".",
+    "gapWord": "dzień",
+    "gapWordMeaning": "jour",
+    "targetType": "nom",
+    "isPlural": true,
+    "gender": "masculin inanimé",
+    "correctEnding": "-i",
+    "fullCorrectWord": "dni",
+    "fullSentence": "Panie doktorze, mam ten męczący kaszel od dwóch dni.",
+    "translationFr": "Docteur, j'ai cette toux fatigante depuis deux jours.",
+    "ruleExplanation": "La préposition temporelle <strong>od</strong> (depuis) régit toujours le <strong>Génitif (Dopełniacz)</strong>. Après les nombres 2, 3, 4 au génitif (<em>dwóch, trzech, czterech</em>), la forme plurielle est <strong>dni</strong> (ou <em>dwa dni</em> au nominatif).",
+    "options": [
+      {
+        "ending": "-i",
+        "word": "dni",
+        "isCorrect": true,
+        "note": "Génitif pluriel après od dwóch (-i)"
+      },
+      {
+        "ending": "-ia",
+        "word": "dnia",
+        "isCorrect": false,
+        "note": "Génitif singulier (od jednego dnia)"
+      },
+      {
+        "ending": "-iom",
+        "word": "dniom",
+        "isCorrect": false,
+        "note": "Datif pluriel (-om)"
+      },
+      {
+        "ending": "-iami",
+        "word": "dniami",
+        "isCorrect": false,
+        "note": "Instrumental pluriel (-ami)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-63",
+    "date": "2026-11-17",
+    "caseName": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Od wczoraj mam silny ból gardł",
+    "sentenceAfter": " i nie mogę mówić.",
+    "gapWord": "gardło",
+    "gapWordMeaning": "gorge",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "neutre",
+    "correctEnding": "-a",
+    "fullCorrectWord": "gardła",
+    "fullSentence": "Od wczoraj mam silny ból gardła i nie mogę mówić.",
+    "translationFr": "Depuis hier j'ai un fort mal de gorge et je ne peux pas parler.",
+    "ruleExplanation": "Pour exprimer le complément du nom (la douleur *de* quelque chose : mal de tête, mal de gorge), on emploie le <strong>Génitif</strong>. Pour le mot neutre <em>gardło</em>, la terminaison est <strong>-a</strong> : <strong>ból gardła</strong> (de même que <em>ból głowy</em>).",
+    "options": [
+      {
+        "ending": "-a",
+        "word": "gardła",
+        "isCorrect": true,
+        "note": "Génitif neutre complément du nom (-a)"
+      },
+      {
+        "ending": "-o",
+        "word": "gardło",
+        "isCorrect": false,
+        "note": "Nominatif / Accusatif neutre (-o)"
+      },
+      {
+        "ending": "-em",
+        "word": "gardłem",
+        "isCorrect": false,
+        "note": "Instrumental neutre (-em)"
+      },
+      {
+        "ending": "-u",
+        "word": "gardłu",
+        "isCorrect": false,
+        "note": "Datif neutre (-u)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-64",
+    "date": "2026-11-17",
+    "caseName": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Moje nowe biuro jest zaledwie piętnaście minut od moj",
+    "sentenceAfter": " domu.",
+    "gapWord": "mój",
+    "gapWordMeaning": "mon (adjectif possessif)",
+    "targetType": "adjectif",
+    "isPlural": false,
+    "gender": "masculin",
+    "correctEnding": "-ego",
+    "fullCorrectWord": "mojego",
+    "fullSentence": "Moje nowe biuro jest zaledwie piętnaście minut od mojego domu.",
+    "translationFr": "Mon nouveau bureau est à seulement quinze minutes de ma maison.",
+    "ruleExplanation": "La préposition <strong>od</strong> (à partir de, de) demande le <strong>Génitif (Dopełniacz)</strong>. L'adjectif possessif masculin singulier prend la désinence <strong>-ego</strong> : <strong>od mojego domu</strong>.",
+    "options": [
+      {
+        "ending": "-ego",
+        "word": "mojego",
+        "isCorrect": true,
+        "note": "Génitif masculin singulier (-ego)"
+      },
+      {
+        "ending": "-im",
+        "word": "moim",
+        "isCorrect": false,
+        "note": "Locatif / Instrumental (-im)"
+      },
+      {
+        "ending": "-emu",
+        "word": "mojemu",
+        "isCorrect": false,
+        "note": "Datif masculin (-emu)"
+      },
+      {
+        "ending": "-a",
+        "word": "moja",
+        "isCorrect": false,
+        "note": "Nominatif féminin (-a)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-65",
+    "date": "2026-11-17",
+    "caseName": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Latem chętnie rozbijamy namiot blisko czystego jezior",
+    "sentenceAfter": ".",
+    "gapWord": "jezioro",
+    "gapWordMeaning": "lac",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "neutre",
+    "correctEnding": "-a",
+    "fullCorrectWord": "jeziora",
+    "fullSentence": "Latem chętnie rozbijamy namiot blisko czystego jeziora.",
+    "translationFr": "En été, nous montons volontiers la tente près d'un lac propre.",
+    "ruleExplanation": "La préposition spatiale <strong>blisko</strong> (près de) régit toujours le <strong>Génitif (Dopełniacz)</strong>. Pour le nom neutre <em>jezioro</em>, la terminaison est <strong>-a</strong> : <strong>blisko jeziora</strong>.",
+    "options": [
+      {
+        "ending": "-a",
+        "word": "jeziora",
+        "isCorrect": true,
+        "note": "Génitif neutre régulier après blisko (-a)"
+      },
+      {
+        "ending": "-em",
+        "word": "jeziorem",
+        "isCorrect": false,
+        "note": "Instrumental après nad (-em)"
+      },
+      {
+        "ending": "-ze",
+        "word": "jeziorze",
+        "isCorrect": false,
+        "note": "Locatif après w/na (-ze)"
+      },
+      {
+        "ending": "-o",
+        "word": "jezioro",
+        "isCorrect": false,
+        "note": "Nominatif neutre (-o)"
+      }
+    ]
+  },
+  {
+    "id": "case-d-66",
+    "date": "2026-11-17",
+    "caseName": "Dopełniacz",
+    "caseLabelFr": "Génitif (Dopełniacz)",
+    "caseBadgeClass": "case-dopelniacz",
+    "sentenceBefore": "Wczoraj po pracy poszedłem do supermarket",
+    "sentenceAfter": ".",
+    "gapWord": "supermarket",
+    "gapWordMeaning": "supermarché",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "masculin inanimé",
+    "correctEnding": "-u",
+    "fullCorrectWord": "supermarketu",
+    "fullSentence": "Wczoraj po pracy poszedłem do supermarketu.",
+    "translationFr": "Hier après le travail, je suis allé au supermarché.",
+    "ruleExplanation": "La préposition de direction <strong>do</strong> (vers, à) régit le <strong>Génitif (Dopełniacz)</strong>. Pour un nom masculin inanimé d'origine étrangère ou désignant un lieu/édifice, la désinence est <strong>-u</strong> : <strong>do supermarketu</strong>.",
+    "options": [
+      {
+        "ending": "-u",
+        "word": "supermarketu",
+        "isCorrect": true,
+        "note": "Génitif masculin de lieu après do (-u)"
+      },
+      {
+        "ending": "-a",
+        "word": "supermarketa",
+        "isCorrect": false,
+        "note": "Forme incorrecte (*supermarketa)"
+      },
+      {
+        "ending": "-em",
+        "word": "supermarketem",
+        "isCorrect": false,
+        "note": "Instrumental (-em)"
+      },
+      {
+        "ending": "-zie",
+        "word": "supermarkecie",
+        "isCorrect": false,
+        "note": "Locatif après w (-ie)"
+      }
+    ]
+  },
+  {
+    "id": "case-n-28",
+    "date": "2026-11-17",
+    "caseName": "Narzędnik",
+    "caseLabelFr": "Instrumental (Narzędnik)",
+    "caseBadgeClass": "case-narzednik",
+    "sentenceBefore": "Rano wolę zjeść słodkie śniadanie z miod",
+    "sentenceAfter": ".",
+    "gapWord": "miód",
+    "gapWordMeaning": "miel",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "masculin inanimé",
+    "correctEnding": "-em",
+    "fullCorrectWord": "miodem",
+    "fullSentence": "Rano wolę zjeść słodkie śniadanie z miodem.",
+    "translationFr": "Le matin je préfère prendre un petit-déjeuner sucré avec du miel.",
+    "ruleExplanation": "La préposition <strong>z</strong> (avec) indiquant l'accompagnement ou l'ingrédient régit l'<strong>Instrumental (Narzędnik)</strong>. Pour un nom masculin singulier, la terminaison est <strong>-em</strong> : <em>miód</em> &rarr; <strong>z miodem</strong>.",
+    "options": [
+      {
+        "ending": "-em",
+        "word": "miodem",
+        "isCorrect": true,
+        "note": "Instrumental masculin régulier avec z (-em)"
+      },
+      {
+        "ending": "-u",
+        "word": "miodu",
+        "isCorrect": false,
+        "note": "Génitif masculin (-u)"
+      },
+      {
+        "ending": "-zie",
+        "word": "miodzie",
+        "isCorrect": false,
+        "note": "Locatif masculin (-zie)"
+      },
+      {
+        "ending": "-a",
+        "word": "mioda",
+        "isCorrect": false,
+        "note": "Forme incorrecte"
+      }
+    ]
+  },
+  {
+    "id": "case-n-29",
+    "date": "2026-11-17",
+    "caseName": "Narzędnik",
+    "caseLabelFr": "Instrumental (Narzędnik)",
+    "caseBadgeClass": "case-narzednik",
+    "sentenceBefore": "Oni chętnie odpoczywają przed restauracj",
+    "sentenceAfter": ", na świeżym powietrzu.",
+    "gapWord": "restauracja",
+    "gapWordMeaning": "restaurant",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "féminin",
+    "correctEnding": "-ą",
+    "fullCorrectWord": "restauracją",
+    "fullSentence": "Oni chętnie odpoczywają przed restauracją, na świeżym powietrzu.",
+    "translationFr": "Ils se reposent volontiers devant le restaurant, en plein air.",
+    "ruleExplanation": "La préposition de localisation statique <strong>przed</strong> (devant) exige l'<strong>Instrumental (Narzędnik)</strong>. Pour les noms féminins singuliers en <em>-a</em>, la terminaison est <strong>-ą</strong> : <strong>przed restauracją</strong>.",
+    "options": [
+      {
+        "ending": "-ą",
+        "word": "restauracją",
+        "isCorrect": true,
+        "note": "Instrumental féminin régulier après przed (-ą)"
+      },
+      {
+        "ending": "-i",
+        "word": "restauracji",
+        "isCorrect": false,
+        "note": "Génitif / Locatif féminin (-i)"
+      },
+      {
+        "ending": "-ę",
+        "word": "restaurację",
+        "isCorrect": false,
+        "note": "Accusatif de mouvement (-ę)"
+      },
+      {
+        "ending": "-e",
+        "word": "restauracje",
+        "isCorrect": false,
+        "note": "Pluriel nominatif (-e)"
+      }
+    ]
+  },
+  {
+    "id": "case-b-48",
+    "date": "2026-11-17",
+    "caseName": "Biernik",
+    "caseLabelFr": "Accusatif (Biernik)",
+    "caseBadgeClass": "case-biernik",
+    "sentenceBefore": "Czy w tym sklepie mogę zobaczyć ten zielon",
+    "sentenceAfter": " sweter z wystawy?",
+    "gapWord": "zielony",
+    "gapWordMeaning": "vert (adjectif)",
+    "targetType": "adjectif",
+    "isPlural": false,
+    "gender": "masculin inanimé",
+    "correctEnding": "-y",
+    "fullCorrectWord": "zielony",
+    "fullSentence": "Czy w tym sklepie mogę zobaczyć ten zielony sweter z wystawy?",
+    "translationFr": "Dans ce magasin, puis-je voir ce pull vert de la vitrine ?",
+    "ruleExplanation": "Pour les compléments d'objet direct de genre <strong>masculin inanimé</strong> (objets, vêtements), le <strong>Biernik (Accusatif)</strong> est strictement identique au <strong>Mianownik (Nominatif)</strong> : <em>ten zielony sweter</em>.",
+    "options": [
+      {
+        "ending": "-y",
+        "word": "zielony",
+        "isCorrect": true,
+        "note": "Accusatif masculin inanimé identique au nominatif (-y)"
+      },
+      {
+        "ending": "-ego",
+        "word": "zielonego",
+        "isCorrect": false,
+        "note": "Accusatif masculin animé / Génitif (-ego)"
+      },
+      {
+        "ending": "-ym",
+        "word": "zielonym",
+        "isCorrect": false,
+        "note": "Locatif / Instrumental (-ym)"
+      },
+      {
+        "ending": "-ą",
+        "word": "zieloną",
+        "isCorrect": false,
+        "note": "Accusatif féminin (-ą)"
+      }
+    ]
+  },
+  {
+    "id": "case-b-49",
+    "date": "2026-11-17",
+    "caseName": "Biernik",
+    "caseLabelFr": "Accusatif (Biernik)",
+    "caseBadgeClass": "case-biernik",
+    "sentenceBefore": "Przepraszam, czy mogę przymierzyć ",
+    "sentenceAfter": " czerwoną sukienkę?",
+    "gapWord": "ta",
+    "gapWordMeaning": "cette (démonstratif féminin)",
+    "targetType": "pronom / déterminant",
+    "isPlural": false,
+    "gender": "féminin",
+    "correctEnding": "-ę",
+    "fullCorrectWord": "tę",
+    "fullSentence": "Przepraszam, czy mogę przymierzyć tę czerwoną sukienkę?",
+    "translationFr": "Pardonnez-moi, puis-je essayer cette robe rouge ?",
+    "ruleExplanation": "Le déterminant démonstratif féminin <em>ta</em> prend la forme <strong>tę</strong> (ou familièrement <em>tą</em>) à l'<strong>Accusatif singulier (Biernik)</strong> pour s'accorder avec le COD : <strong>tę czerwoną sukienkę</strong>.",
+    "options": [
+      {
+        "ending": "-ę",
+        "word": "tę",
+        "isCorrect": true,
+        "note": "Accusatif féminin régulier (tę sukienkę)"
+      },
+      {
+        "ending": "-a",
+        "word": "ta",
+        "isCorrect": false,
+        "note": "Nominatif féminin (ta)"
+      },
+      {
+        "ending": "-ej",
+        "word": "tej",
+        "isCorrect": false,
+        "note": "Génitif / Locatif féminin (tej)"
+      },
+      {
+        "ending": "-e",
+        "word": "te",
+        "isCorrect": false,
+        "note": "Pluriel non-viril (te)"
+      }
+    ]
+  },
+  {
+    "id": "case-b-50",
+    "date": "2026-11-17",
+    "caseName": "Biernik",
+    "caseLabelFr": "Accusatif (Biernik)",
+    "caseBadgeClass": "case-biernik",
+    "sentenceBefore": "Wczoraj w supermarkecie kupiłem wódk",
+    "sentenceAfter": " na weekendową imprezę.",
+    "gapWord": "wódka",
+    "gapWordMeaning": "vodka",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "féminin",
+    "correctEnding": "-ę",
+    "fullCorrectWord": "wódkę",
+    "fullSentence": "Wczoraj w supermarkecie kupiłem wódkę na weekendową imprezę.",
+    "translationFr": "Hier au supermarché j'ai acheté de la vodka pour la fête du week-end.",
+    "ruleExplanation": "À la forme affirmative, le verbe transitif <em>kupić</em> régit l'<strong>Accusatif (Biernik)</strong>. Pour un nom féminin singulier terminé en <em>-a</em>, la terminaison est <strong>-ę</strong> : wódka &rarr; <strong>kupiłem wódkę</strong>.",
+    "options": [
+      {
+        "ending": "-ę",
+        "word": "wódkę",
+        "isCorrect": true,
+        "note": "Accusatif féminin régulier COD (-ę)"
+      },
+      {
+        "ending": "-i",
+        "word": "wódki",
+        "isCorrect": false,
+        "note": "Génitif féminin (-i)"
+      },
+      {
+        "ending": "-ą",
+        "word": "wódką",
+        "isCorrect": false,
+        "note": "Instrumental féminin (-ą)"
+      },
+      {
+        "ending": "-ce",
+        "word": "wódce",
+        "isCorrect": false,
+        "note": "Locatif / Datif féminin (-ce)"
+      }
+    ]
+  },
+  {
+    "id": "case-m-40",
+    "date": "2026-11-17",
+    "caseName": "Miejscownik",
+    "caseLabelFr": "Locatif (Miejscownik)",
+    "caseBadgeClass": "case-miejscownik",
+    "sentenceBefore": "Gdy mam ból gardła, natychmiast kupuję syrop w aptec",
+    "sentenceAfter": ".",
+    "gapWord": "apteka",
+    "gapWordMeaning": "pharmacie",
+    "targetType": "nom",
+    "isPlural": false,
+    "gender": "féminin",
+    "correctEnding": "-e",
+    "fullCorrectWord": "aptece",
+    "fullSentence": "Gdy mam ból gardła, natychmiast kupuję syrop w aptece.",
+    "translationFr": "Quand j'ai mal à la gorge, j'achète immédiatement du sirop à la pharmacie.",
+    "ruleExplanation": "La localisation statique après <em>w</em> (dans / à) demande le <strong>Miejscownik (Locatif)</strong>. Le <em>k</em> dur final s'adoucit en <em>c</em> avec la terminaison <strong>-e</strong> : apteka &rarr; <strong>w aptece</strong>.",
+    "options": [
+      {
+        "ending": "-e",
+        "word": "aptece",
+        "isCorrect": true,
+        "note": "Locatif féminin avec alternance k -> c (-e)"
+      },
+      {
+        "ending": "-i",
+        "word": "apteki",
+        "isCorrect": false,
+        "note": "Génitif féminin (-i)"
+      },
+      {
+        "ending": "-ę",
+        "word": "aptekę",
+        "isCorrect": false,
+        "note": "Accusatif féminin (-ę)"
+      },
+      {
+        "ending": "-ą",
+        "word": "apteką",
+        "isCorrect": false,
+        "note": "Instrumental féminin (-ą)"
+      }
+    ]
   }
 ];
 
@@ -19544,6 +21928,163 @@ const POSSESSIVE_CHALLENGES = [
         "word": "swoich",
         "isCorrect": false,
         "note": "Génitif / Locatif pluriel (-ich)"
+      }
+    ]
+  },
+  // ------------------------------------------
+  // NOUVEAUX DÉFIS DU 17/11/2026 (PRONOMS RÉFLÉCHIS & POSSESSIFS)
+  // ------------------------------------------
+  {
+    "id": "poss-l1-51",
+    "date": "2026-11-17",
+    "level": "level-1",
+    "category": "1st-2nd",
+    "categoryLabelFr": "1re & 2e personne",
+    "targetCase": "Dopełniacz (Génitif)",
+    "caseLabelFr": "Génitif (après od / ode)",
+    "nounContext": "pronom 1re personne (ja)",
+    "targetMeaning": "de moi, de chez moi",
+    "sentenceBefore": "Nowe biuro jest zaledwie piętnaście minut ode ",
+    "sentenceAfter": ".",
+    "gapWord": "mnie",
+    "fullSentence": "Nowe biuro jest zaledwie piętnaście minut ode mnie.",
+    "translationFr": "Le nouveau bureau est à seulement quinze minutes de chez moi.",
+    "ruleExplanation": "Après la préposition <em>ode</em> (variante euphonique de <em>od</em>), le pronom personnel de 1re personne se met au Génitif : <strong>ode mnie</strong> (de chez moi).",
+    "options": [
+      {
+        "word": "mnie",
+        "isCorrect": true,
+        "note": "Génitif du pronom de 1re personne (ode mnie)"
+      },
+      {
+        "word": "ciebie",
+        "isCorrect": false,
+        "note": "2e personne (od ciebie)"
+      },
+      {
+        "word": "nas",
+        "isCorrect": false,
+        "note": "Pluriel (od nas)"
+      },
+      {
+        "word": "mi",
+        "isCorrect": false,
+        "note": "Datif court (mi)"
+      }
+    ]
+  },
+  {
+    "id": "poss-l1-52",
+    "date": "2026-11-17",
+    "level": "level-1",
+    "category": "1st-2nd",
+    "categoryLabelFr": "1re & 2e personne",
+    "targetCase": "Dopełniacz (Génitif)",
+    "caseLabelFr": "Génitif (après od)",
+    "nounContext": "domu (masculin génitif)",
+    "targetMeaning": "de ton (2e personne masc génitif)",
+    "sentenceBefore": "Czy ta apteka jest bardzo daleko od ",
+    "sentenceAfter": " domu?",
+    "gapWord": "twojego",
+    "fullSentence": "Czy ta apteka jest bardzo daleko od twojego domu?",
+    "translationFr": "Cette pharmacie est-elle très loin de ta maison ?",
+    "ruleExplanation": "La préposition <em>od</em> (de) régit le Génitif. L'accord du possessif de 2e personne singulier masculin prend la désinence <strong>-ego</strong> : <strong>od twojego domu</strong>.",
+    "options": [
+      {
+        "word": "twojego",
+        "isCorrect": true,
+        "note": "Génitif masculin singulier (-ego)"
+      },
+      {
+        "word": "twój",
+        "isCorrect": false,
+        "note": "Nominatif masculin"
+      },
+      {
+        "word": "twoim",
+        "isCorrect": false,
+        "note": "Locatif / Instrumental (-im)"
+      },
+      {
+        "word": "twojemu",
+        "isCorrect": false,
+        "note": "Datif masculin (-emu)"
+      }
+    ]
+  },
+  {
+    "id": "poss-l1-53",
+    "date": "2026-11-17",
+    "level": "level-1",
+    "category": "reflexive",
+    "categoryLabelFr": "Réfléchi (siebie)",
+    "targetCase": "Miejscownik (Locatif)",
+    "nounContext": "locution 'mieć na sobie'",
+    "targetMeaning": "sur soi (porter sur soi)",
+    "sentenceBefore": "Jaki ciepły sweter masz dzisiaj na ",
+    "sentenceAfter": "?",
+    "gapWord": "sobie",
+    "fullSentence": "Jaki ciepły sweter masz dzisiaj na sobie?",
+    "translationFr": "Quel pull chaud portes-tu sur toi aujourd'hui ?",
+    "ruleExplanation": "L'expression polonaise pour « porter des vêtements » est <strong>mieć na sobie</strong>. Le pronom réfléchi <em>siebie</em> prend la forme <strong>sobie</strong> au Locatif après la préposition <em>na</em>.",
+    "options": [
+      {
+        "word": "sobie",
+        "isCorrect": true,
+        "note": "Locatif réfléchi (na sobie)"
+      },
+      {
+        "word": "siebie",
+        "isCorrect": false,
+        "note": "Génitif / Accusatif réfléchi"
+      },
+      {
+        "word": "tobie",
+        "isCorrect": false,
+        "note": "2e personne non-réfléchie"
+      },
+      {
+        "word": "sobą",
+        "isCorrect": false,
+        "note": "Instrumental réfléchi (ze sobą)"
+      }
+    ]
+  },
+  {
+    "id": "poss-l2-29",
+    "date": "2026-11-17",
+    "level": "level-2",
+    "category": "reflexive",
+    "categoryLabelFr": "Réfléchi (swój)",
+    "targetCase": "Biernik (Accusatif Pluriel)",
+    "nounContext": "ubrania (pluriel non-viril accusatif)",
+    "targetMeaning": "leurs (propres vêtements : sujet = oni)",
+    "sentenceBefore": "Wszyscy klienci w przymierzalni chętnie oglądają ",
+    "sentenceAfter": " nowe ubrania.",
+    "gapWord": "swoje",
+    "fullSentence": "Wszyscy klienci w przymierzalni chętnie oglądają swoje nowe ubrania.",
+    "translationFr": "Tous les clients dans la cabine d'essayage regardent volontiers leurs nouveaux vêtements.",
+    "ruleExplanation": "Lorsque la possession renvoie au sujet de la phrase (<em>klienci</em>), on emploie le possessif réfléchi <strong>swój</strong>. À l'Accusatif pluriel non-viril (avec <em>ubrania</em>), la forme est <strong>swoje</strong>.",
+    "options": [
+      {
+        "word": "swoje",
+        "isCorrect": true,
+        "note": "Accusatif pluriel non-viril réfléchi (swoje)"
+      },
+      {
+        "word": "ich",
+        "isCorrect": false,
+        "note": "Non-réfléchi (vêtements d'autrui)"
+      },
+      {
+        "word": "swoich",
+        "isCorrect": false,
+        "note": "Génitif pluriel (-ich)"
+      },
+      {
+        "word": "swoją",
+        "isCorrect": false,
+        "note": "Accusatif singulier féminin (-ą)"
       }
     ]
   }
