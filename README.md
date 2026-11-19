@@ -18,16 +18,16 @@ Il n'y a **aucune installation ni dépendance requise** !
 
 ### 1. 🏛️ Module Défi des Cas Polonais (*Przypadki*)
 Entraînement contextualisé pour maîtriser les 4 déclinaisons fondamentales :
-- **228 phrases et défis grammaticaux** rédigés en polonais courant :
-  - **Filtre dédié par date d'import** : bouton *« ✨ Nouveautés 17/11 »* pour s'entraîner uniquement sur les défis issus du dernier cours !
-  - **Biernik (Accusatif)** : complément d'objet direct (*proponuję środę*), accusatif temporel des jours (*w czwartek, w środę, we wtorek*), accusatif pluriel viril (*dwóch braci*).
-  - **Narzędnik (Instrumental)** : accompagnement (*z / ze*), métier, nationalité, état après *być* (*jest Polką*, *jest owocem*, *jestem Francuzem*).
-  - **Miejscownik (Locatif)** : lieu et réunions (*na tym spotkaniu*), villes (*w Paryżu*), prépositions (*w, na, o, po, przy*).
+- **242 phrases et défis grammaticaux** rédigés en polonais courant :
+  - **Filtre dédié par date d'import** : bouton *« ✨ Nouveautés 19/11 »* pour s'entraîner uniquement sur les défis issus du dernier cours !
+  - **Biernik (Accusatif)** : complément d'objet direct (*proponuję środę*, *przymierzyć tę sukienkę*), accusatif temporel des jours (*w czwartek, w środę, we wtorek*), accusatif pluriel viril (*dwóch braci*, *dwóch lekarzy*).
+  - **Narzędnik (Instrumental)** : accompagnement (*z / ze*), métier, nationalité, état après *być* (*jest lekarzem*, *jest pielęgniarką*, *jest nauczycielką*, *jest studentem*, *jest inżynierem*, *chciałabym być tłumaczką*, *jest Polką*, *jestem Francuzem*).
+  - **Miejscownik (Locatif)** : lieu et réunions (*na tym spotkaniu*), lieux d'exercice professionnel (*w szpitalu*, *w szkole*, *w salonie fryzjerskim*, *w klinice*, *na wsi*, *na farmie*), villes (*w Paryżu*), prépositions (*w, na, o, po, przy*).
   - **Dopełniacz (Génitif)** : après *po lewej stronie* (*po lewej stronie domu*), prénoms féminins en *-ia* (*mąż Marii*), locution *w sprawie* (*w sprawie spotkania*), unités monétaires après 5+ (*złotych, groszy*), années (*35 lat* vs *22 lata*), négation (*nie ma*), recherche (*szukać chleba / truskawek*), prépositions (*obok warzyw / jabłek*).
 - **Filtres croisés avancés** :
   - Par cas : *Tous*, *Biernik*, *Narzędnik*, *Miejscownik*, *Dopełniacz*.
   - Par catégorie grammaticale : *Tous*, *Noms singulier*, *Adjectifs*, *Pluriels*.
-  - Par nouveautés : *✨ Nouveautés 17/11 (12 défis)*.
+  - Par nouveautés : *✨ Nouveautés 19/11 (14 défis)*.
 - **Prise en charge approfondie des pluriels (56 défis)** :
   - Distinction essentielle entre **pluriel viril (masculin personnel)** et **non-viril**.
   - Génitif pluriel complet (24 défis) : masculins en `-ów`, neutres et féminins à désinence zéro `-ø` et `e` mobile (*warzyw*, *truskawek*), prix et âges (*złotych*, *groszy*, *lat*), irréguliers fréquents (*pieniędzy, dzieci, ludzi, miesięcy, dni*).
@@ -38,22 +38,24 @@ Entraînement contextualisé pour maîtriser les 4 déclinaisons fondamentales :
 
 ### 2. 👥 Module Adjectifs Possessifs (*Zaimki dzierżawcze*)
 Module dédié à l'apprentissage et à la manipulation des possessifs :
-- **82 défis interactifs** couvrant toutes les personnes : **mój**, **twój**, **jego**, **jej**, **nasz**, **wasz**, **ich** ainsi que le réfléchi indispensable **swój**.
-- **Filtre dédié « ✨ Nouveautés 17/11 »** pour travailler immédiatement les tournures du nouveau cours (*Nowe biuro jest piętnaście minut ode mnie*, *Czy ta apteka jest daleko od twojego domu?*, *Jaki sweter masz dzisiaj na sobie?*, *Wszyscy oglądają swoje nowe ubrania*).
+- **86 défis interactifs** couvrant toutes les personnes : **mój**, **twój**, **jego**, **jej**, **nasz**, **wasz**, **ich** ainsi que le réfléchi indispensable **swój**.
+- **Filtre dédié « ✨ Nouveautés 19/11 »** pour travailler immédiatement les tournures du nouveau cours (*Nowe biuro jest piętnaście minut ode mnie*, *Czy ta apteka jest daleko od twojego domu?*, *Jaki sweter masz dzisiaj na sobie?*, *Wszyscy oglądają swoje nowe ubrania*).
 - Intégration de l'**Exercice 6b** et des phrases d'application familiale.
 - Déclinaison par cas (Nominatif, Accusatif, Instrumental, Locatif, Génitif) et par genre (masculin animé/inanimé/viril, féminin, neutre, pluriels).
 - **Filtres par niveau et catégorie** :
   - Niveaux : *Tous*, *Débutant (Nominatif de base)*, *Intermédiaire (Accusatif / Instrumental)*, *Avancé (Locatif / Génitif / Pluriels)*.
   - Personnes : *Tous*, *1re & 2e pers. (mój, twój, nasz, wasz)*, *3e pers. (jego, jej, ich)*, *Réfléchi (swój)*.
-  - Nouveautés : *✨ Nouveautés 17/11 (4 défis)*.
+  - Nouveautés : *✨ Nouveautés 19/11 (4 défis)*.
 - **Tableau de synthèse complet des possessifs** accessible en un clic.
 
 ---
 
 ### 3. 🎯 Mode Quiz & Flashcards de Vocabulaire
-- **Base riche de 711 cartes de vocabulaire** organisées et datées par leçon :
-  - **📅 Suivi & Filtre par Date d'Import** : chaque carte possède sa date d'importation (cours du 17/11, 12/11, 09/11, 05/11, 03/11, 29/10, 27/10, 21/10, 19/10, 16/10).
-  - **🚀 Raccourci « ✨ Nouveautés 17/11 (73) »** : permet en un clic de concentrer instantanément sa session de révision (QCM, Flashcards, Écriture) sur les 73 nouveaux éléments du cours du 17/11 !
+- **Base riche de 790 cartes de vocabulaire** organisées et datées par leçon :
+  - **📅 Suivi & Filtre par Date d'Import** : chaque carte possède sa date d'importation (cours du 19/11, 17/11, 12/11, 09/11, 05/11, 03/11, 29/10, 27/10, 21/10, 19/10, 16/10).
+  - **🚀 Raccourci « ✨ Nouveautés 19/11 (79) »** : permet en un clic de concentrer instantanément sa session de révision (QCM, Flashcards, Écriture) sur les 79 nouveaux éléments du cours du 19/11 !
+  - *Métiers & Professions (Zawody) & Lieux d'exercice (56 cartes)* : *zawód*, *Kim pan/pani jest z zawodu?*, *nauczyciel / nauczycielka*, *aktor / aktorka*, *kelner / kelnerka*, *poeta / poetka*, *dentysta / dentystka*, *artysta / artystka*, *dziennikarz / dziennikarka*, *lekarz / lekarka*, *urzędnik / urzędniczka*, *muzyk*, *rolnik / rolniczka*, *architekt*, *inżynier*, *kierowca / kierowczyni*, *szofer*, *profesor*, *fotograf / fotografka*, *prezydent*, *minister*, *biznesmen*, *emeryt / emerytka*, *bezrobotny / bezrobotna*, *student / studentka*, *kucharka / kucharz*, *fryzjerka / fryzjer*, *tłumacz / tłumaczka*, *projektować domy*, *gotować pyszny obiad*, *pomagać chorym ludziom*, *obcinać włosy*, *w salonie fryzjerskim*, *na wsi / na farmie*, *robić zdjęcia / fotografować*, *w klinice dentystycznej*, *nauka*, *języki obce*.
+  - *Routine, Magasin, Tailles & Comparatifs (23 cartes)* : *Nie mam planów na weekend*, *To prawda? Byłeś wczoraj w supermarkecie?*, *Piłem*, *Jadłeś coś?*, *Kupiłem trzysta kwiatów*, *Ile kosztują te buty?*, *Chciałbym przymierzyć tę sukienkę, ale jest za droga*, *Niestety nie ma mniejszego rozmiaru*, *najmniejszy*, *starszy*.
   - *À la Pharmacie & Santé (23 cartes)* : *apteka / w aptece*, *farmaceuta*, *kaszel (mam kaszel)*, *gorączka (nie mam gorączki, mam temperaturę)*, *syrop*, *tabletki*, *ból (ból głowy, ból gardła)*, *gardło*, *potwierdzenie (drukować potwierdzenie?)*, *paragon (dać paragon?)*, *od kiedy? (od dwóch / trzech / pięciu dni)*.
   - *Magasin de Vêtements, Tailles & Comparatifs (19 cartes)* : *zobaczyć ten zielony sweter*, *przymierzyć*, *przymierzalnia*, *Jaki rozmiar?*, *za duży / mniejszy*, *za drogi / tańszy*, *jeansy*, *okulary*, *spodnie dżinsowe*, *żakiet*, *kostium damski*, *garnitur*, *podkoszulek*, *w kwiaty*, *szeroki / wąski*, *modny / niemodny*, *Mamy to, co Ci się podoba*.
   - *Passé, Achats & Alimentation (8 cartes)* : *poszedłem do supermarketu*, *I co kupiłeś?*, *jeżyki*, *Kupiłem wódkę*, *słodki*, *Wolę słodkie śniadanie z miodem*, *Piłeś już kawę dziś?*.
